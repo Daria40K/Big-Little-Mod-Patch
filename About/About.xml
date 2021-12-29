@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Big Little Mod Patch</name>
+	<author>Daria40K</author>
+	<packageId>Daria40K.BigLittleModPatch</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>
+Patchs for multiable mod and there linkables
+	</description>
+	<loadAfter>
+		<!-- <li>Daniledman.FastRegen</li> -->
+		<li>Daniledman.MechalitCore</li><!-- Mechalit Core v2 -->
+		<li>vanillaexpanded.vfecore</li><!-- Vanilla Furniture Expanded -->
+		<li>vanillaexpanded.vfespacer</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+		<li>vanillaexpanded.vfemedical</li><!-- Vanilla Furniture Expanded - Medical Module -->
+		<li>mlie.medicalsupplements</li><!-- Medical Supplements -->
+		<li>aelanna.eccentrictech.core</li><!-- Eccentric Tech - Core -->
+		<li>albion.sparklingworlds.full</li><!-- Sparkling Worlds - Full Mod -->
+		<li>explodoboy.snsambitioncosmic</li><!-- Science Never Stops: Ambition of the Cosmic -->
+		<li>mlie.morefurniture</li><!-- More Furniture -->
+	</loadAfter>
+</ModMetaData>

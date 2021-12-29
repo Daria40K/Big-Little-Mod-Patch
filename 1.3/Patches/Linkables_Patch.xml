@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "RGK_bedSingle"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+		<value>
+			<li>EndTable</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
+		<value>
+			<li>EliteDresserMeh</li><!-- Mechalit Core v2 -->
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="EndTable"]</xpath>
+		<value>
+			<li>MS_DStand</li><!-- Medical Supplements -->
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
+		<value>
+			<li>MS_DStand</li><!-- Medical Supplements -->
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
+		<value>
+			<li>EccentricAuroraCore</li><!-- Eccentric Tech - Core -->
+			<li>ComputingSystemSW</li><!-- Sparkling Worlds - Full Mod -->
+			<li>SNS_Linkable_Unlocker_GenI</li><!-- Science Never Stops: Ambition of the Cosmic -->
+			<li>SNS_Linkable_Unlocker_GenII</li><!-- Science Never Stops: Ambition of the Cosmic -->
+			<li>SNS_Linkable_Unlocker_GenIII</li><!-- Science Never Stops: Ambition of the Cosmic -->
+			<li>SNS_Linkable_Unlocker_POC</li><!-- Science Never Stops: Ambition of the Cosmic -->
+			<li>Anon2FileCabinet</li><!-- More Furniture -->
+		</value>
+	</Operation>
+
+</Patch>

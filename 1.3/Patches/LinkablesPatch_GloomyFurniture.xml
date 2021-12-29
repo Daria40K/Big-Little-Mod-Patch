@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
+					<value>
+						<li>RGK_Dresser</li><!-- GloomyFurniture -->
+						<li>WardrobeA</li><!-- GloomyFurniture -->
+                        <li>WardrobeB</li><!-- GloomyFurniture -->
+                        <li>GL_Teddy</li><!-- GloomyFurniture -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="EndTable"]</xpath>
+					<value>
+						<li>RGK_EndTable</li><!-- GloomyFurniture -->
+			            <li>RGK_EndTableWithLamp</li><!-- GloomyFurniture -->
+			            <li>RGK_EndTableWithLampE</li><!-- GloomyFurniture -->
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RGK_bedSingle"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RGK_bedSingleB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RGK_bedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RGK_bedDoubleB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+			<li>Vanilla Furniture Expanded</li>
+			<li>Vanilla Furniture Expanded - Spacer Module</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RGK_bedSingle"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RGK_bedSingleB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RGK_bedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RGK_bedDoubleB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
