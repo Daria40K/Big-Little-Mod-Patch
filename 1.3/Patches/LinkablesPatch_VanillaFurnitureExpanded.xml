@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Furniture Expanded</li>
@@ -8,7 +7,6 @@
 
 		<match Class="PatchOperationSequence">
 			<operations>
-
 				<li Class="PatchOperationInsert">
 					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
 					<value>
@@ -27,24 +25,22 @@
 					</value>
 				</li>
 
-				<Operation Class="PatchOperationInsert">
+				<li Class="PatchOperationInsert">
 					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
 					<value>
 						<li>Facility_VitalsCentre</li><!-- Vanilla Furniture Expanded - Medical Module -->
 						<li>Facility_IVDrip</li><!-- Vanilla Furniture Expanded - Medical Module -->
 					</value>
-				</Operation>
+				</li>
 
-				<Operation Class="PatchOperationInsert">
+				<li Class="PatchOperationInsert">
 					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
 					<value>
 						<li>Misc_FileCabinet</li><!-- Vanilla Furniture Expanded -->
 						<li>Facility_ResearchCounter</li><!-- Vanilla Furniture Expanded - Medical Module -->
 					</value>
-				</Operation>
-			
+				</li>
 			</operations>
 		</match>
 	</Operation>
-
 </Patch>

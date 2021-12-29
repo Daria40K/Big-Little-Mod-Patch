@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Mechalit Core v2</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
+					<value>
+						<li>EliteDresserMeh</li><!-- Mechalit Core v2 -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
