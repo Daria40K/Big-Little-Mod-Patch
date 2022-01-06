@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[O21] Clutter Furniture</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSleepingPod" or defName = "ClutterSleepingPod_Medical" or defName = "ClutterSleepingPod_Prisoner" or defName = "ClutterSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EndTable</li>
+						<li>Dresser</li>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleEkieBed" or defName = "ClutterDoubleSleepingPod_Medical" or defName = "ClutterDoubleSleepingPod_Prisoner" or defName = "ClutterDoubleSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EndTable</li>
+						<li>Dresser</li>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSlabBed" or defName = "ClutterSlabBed_HelloKitty" or defName = "ClutterSlabBed_JollyRoger" or defName = "ClutterSlabBed_Medical" or defName = "ClutterSlabBed_Prisoner" or defName = "ClutterSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EndTable</li>
+						<li>Dresser</li>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleSlabBed" or defName = "ClutterDoubleSlabBed_Medical" or defName = "ClutterDoubleSlabBed_Prisoner" or defName = "ClutterDoubleSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EndTable</li>
+						<li>Dresser</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Vanilla Furniture Expanded -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[O21] Clutter Furniture</li>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSleepingPod" or defName = "ClutterSleepingPod_Medical" or defName = "ClutterSleepingPod_Prisoner" or defName = "ClutterSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_LightEndTable</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleEkieBed" or defName = "ClutterDoubleSleepingPod_Medical" or defName = "ClutterDoubleSleepingPod_Prisoner" or defName = "ClutterDoubleSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_LightEndTable</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSlabBed" or defName = "ClutterSlabBed_HelloKitty" or defName = "ClutterSlabBed_JollyRoger" or defName = "ClutterSlabBed_Medical" or defName = "ClutterSlabBed_Prisoner" or defName = "ClutterSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_LightEndTable</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleSlabBed" or defName = "ClutterDoubleSlabBed_Medical" or defName = "ClutterDoubleSlabBed_Prisoner" or defName = "ClutterDoubleSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_LightEndTable</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Vanilla Furniture Expanded - Spacer Module -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[O21] Clutter Furniture</li>
+			<li>Vanilla Furniture Expanded</li>
+			<li>Vanilla Furniture Expanded - Spacer Module</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSleepingPod" or defName = "ClutterSleepingPod_Medical" or defName = "ClutterSleepingPod_Prisoner" or defName = "ClutterSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleEkieBed" or defName = "ClutterDoubleSleepingPod_Medical" or defName = "ClutterDoubleSleepingPod_Prisoner" or defName = "ClutterDoubleSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSlabBed" or defName = "ClutterSlabBed_HelloKitty" or defName = "ClutterSlabBed_JollyRoger" or defName = "ClutterSlabBed_Medical" or defName = "ClutterSlabBed_Prisoner" or defName = "ClutterSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleSlabBed" or defName = "ClutterDoubleSlabBed_Medical" or defName = "ClutterDoubleSlabBed_Prisoner" or defName = "ClutterDoubleSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Rim-Effect: Core -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[O21] Clutter Furniture</li>
+			<li>Rim-Effect: Core</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSleepingPod" or defName = "ClutterSleepingPod_Medical" or defName = "ClutterSleepingPod_Prisoner" or defName = "ClutterSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleEkieBed" or defName = "ClutterDoubleSleepingPod_Medical" or defName = "ClutterDoubleSleepingPod_Prisoner" or defName = "ClutterDoubleSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSlabBed" or defName = "ClutterSlabBed_HelloKitty" or defName = "ClutterSlabBed_JollyRoger" or defName = "ClutterSlabBed_Medical" or defName = "ClutterSlabBed_Prisoner" or defName = "ClutterSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleSlabBed" or defName = "ClutterDoubleSlabBed_Medical" or defName = "ClutterDoubleSlabBed_Prisoner" or defName = "ClutterDoubleSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Mechalit Core v2 -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[O21] Clutter Furniture</li>
+			<li>>Mechalit Core v2</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSleepingPod" or defName = "ClutterSleepingPod_Medical" or defName = "ClutterSleepingPod_Prisoner" or defName = "ClutterSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EliteDresserMeh</li><!-- Mechalit Core v2 -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleEkieBed" or defName = "ClutterDoubleSleepingPod_Medical" or defName = "ClutterDoubleSleepingPod_Prisoner" or defName = "ClutterDoubleSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EliteDresserMeh</li><!-- Mechalit Core v2 -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSlabBed" or defName = "ClutterSlabBed_HelloKitty" or defName = "ClutterSlabBed_JollyRoger" or defName = "ClutterSlabBed_Medical" or defName = "ClutterSlabBed_Prisoner" or defName = "ClutterSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EliteDresserMeh</li><!-- Mechalit Core v2 -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleSlabBed" or defName = "ClutterDoubleSlabBed_Medical" or defName = "ClutterDoubleSlabBed_Prisoner" or defName = "ClutterDoubleSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EliteDresserMeh</li><!-- Mechalit Core v2 -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- More Furniture -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[O21] Clutter Furniture</li>
+			<li>More Furniture</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSleepingPod" or defName = "ClutterSleepingPod_Medical" or defName = "ClutterSleepingPod_Prisoner" or defName = "ClutterSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Anon2Dresser</li><!-- More Furniture -->
+						<li>Anon2EndTable</li><!-- More Furniture -->
+                        <li>Anon2EndTableLight</li><!-- More Furniture -->
+			            <li>Anon2RoyalEndTable</li><!-- More Furniture -->
+                        <li>Anon2RoyalEndTableLight</li><!-- More Furniture -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleEkieBed" or defName = "ClutterDoubleSleepingPod_Medical" or defName = "ClutterDoubleSleepingPod_Prisoner" or defName = "ClutterDoubleSleepingPod_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Anon2Dresser</li><!-- More Furniture -->
+						<li>Anon2EndTable</li><!-- More Furniture -->
+                        <li>Anon2EndTableLight</li><!-- More Furniture -->
+			            <li>Anon2RoyalEndTable</li><!-- More Furniture -->
+                        <li>Anon2RoyalEndTableLight</li><!-- More Furniture -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterSlabBed" or defName = "ClutterSlabBed_HelloKitty" or defName = "ClutterSlabBed_JollyRoger" or defName = "ClutterSlabBed_Medical" or defName = "ClutterSlabBed_Prisoner" or defName = "ClutterSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Anon2Dresser</li><!-- More Furniture -->
+						<li>Anon2EndTable</li><!-- More Furniture -->
+                        <li>Anon2EndTableLight</li><!-- More Furniture -->
+			            <li>Anon2RoyalEndTable</li><!-- More Furniture -->
+                        <li>Anon2RoyalEndTableLight</li><!-- More Furniture -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ClutterDoubleSlabBed" or defName = "ClutterDoubleSlabBed_Medical" or defName = "ClutterDoubleSlabBed_Prisoner" or defName = "ClutterDoubleSlabBed_PrisonerMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Anon2Dresser</li><!-- More Furniture -->
+						<li>Anon2EndTable</li><!-- More Furniture -->
+                        <li>Anon2EndTableLight</li><!-- More Furniture -->
+			            <li>Anon2RoyalEndTable</li><!-- More Furniture -->
+                        <li>Anon2RoyalEndTableLight</li><!-- More Furniture -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

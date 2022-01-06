@@ -9,6 +9,18 @@
 	<description>
 Patchs for multiable mod and there linkables
 	</description>
+	<modDependencies>
+		<li><packageId>Daniledman.MechalitCore</packageId></li>
+		<li><packageId>vanillaexpanded.vfecore</packageId></li>
+		<li><packageId>vanillaexpanded.vfespacer</packageId></li>
+		<li><packageId>vanillaexpanded.vfemedical</packageId></li> 
+		<li><packageId>mlie.medicalsupplements</packageId></li>
+		<li><packageId>aelanna.eccentrictech.core</packageId></li> 
+		<li><packageId>albion.sparklingworlds.full</packageId></li>
+		<li><packageId>explodoboy.snsambitioncosmic</packageId></li> 
+		<li><packageId>vanillaexpanded.outposts</packageId></li>
+		<li><packageId>mlie.morefurniture</packageId></li> 
+	</modDependencies>
 	<loadAfter>
 		<!-- <li>Daniledman.FastRegen</li> -->
 		<li>Daniledman.MechalitCore</li><!-- Mechalit Core v2 -->

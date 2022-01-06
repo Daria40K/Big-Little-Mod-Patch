@@ -6,6 +6,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationInsert">
 					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>

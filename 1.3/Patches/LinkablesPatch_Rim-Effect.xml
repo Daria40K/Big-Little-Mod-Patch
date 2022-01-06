@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vanilla Furniture Expanded</li>
+			<li>Rim-Effect: Core</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
-
 				<li Class="PatchOperationInsert">
 					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
 					<value>
@@ -26,9 +25,14 @@
 						<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
 					</value>
 				</li>
-			
+
+				<li Class="PatchOperationInsert">
+                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
+                    <value>
+                        <li>RE_AllianceTerminal</li><!-- Rim-Effect: Core -->
+                    </value>
+                </li>
 			</operations>
 		</match>
 	</Operation>
-
 </Patch>

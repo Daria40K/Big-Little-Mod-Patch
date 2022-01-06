@@ -2,28 +2,19 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Medical Supplements (Continued)</li>
-		</mods>
-
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationInsert">
-                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
-                    <value>
-                        <li>MS_DStand</li><!-- Medical Supplements -->
-                    </value>
-                </li>
-			</operations>
-		</match>
-	</Operation>
-
-    <Operation Class="PatchOperationFindMod">
-		<mods>
 			<li>Medical Supplements</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
+				<li Class="PatchOperationInsert">
+                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="EndTable"]</xpath>
+                    <value>
+                        <li>MS_DStand</li><!-- Medical Supplements -->
+                    </value>
+                </li>
+
 				<li Class="PatchOperationInsert">
                     <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
                     <value>
