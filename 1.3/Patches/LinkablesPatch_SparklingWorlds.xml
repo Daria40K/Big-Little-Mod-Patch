@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Sparkling Worlds - Full Mod</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
+					<value>
+						<li>ComputingSystemSW</li><!-- Sparkling Worlds - Full Mod -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
