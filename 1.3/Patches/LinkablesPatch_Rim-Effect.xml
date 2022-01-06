@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+	RE_PrefabBed = prefab bed
+	RE_PrefabDoubleBed = prefab double bed
+	RE_PrefabDresser = prefab dresser
+	RE_PrefabWardrobe = prefab wardrobe
+	RE_PrefabEndTable = prefab end tab
+	RE_PrefabEndTableWithLamp = prefab end tab with lamp
+	RE_PrefabBedsideTable = prefab bedside table
+	RE_PrefabBedsideTableLamp = prefab bedside table with lamp
+	RE_AllianceTerminal = alliance terminal
+-->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>

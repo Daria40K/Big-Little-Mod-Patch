@@ -6,31 +6,20 @@
 	<supportedVersions>
 		<li>1.3</li>
 	</supportedVersions>
-	<description>
-Patchs for multiable mod and there linkables
+	<description>This patch applys multiable patches to allow furniture from other mods to link with each other.
+
+Mods Patched:
+- Eccentric Tech - Core
+- GloomyFurniture
+- Mechalit Core v2
+- Medical Supplements
+- More Furniture
+- Rim-Effect: Core
+- Rim-Effect: Asari and Reapers
+- Science Never Stops: Ambition of the Cosmic
+- Sparkling Worlds - Full Mod
+- Vanilla Furniture Expanded
+- Vanilla Furniture Expanded - Medical Module
+- Vanilla Furniture Expanded - Spacer Module
 	</description>
-	<modDependencies>
-		<li><packageId>Daniledman.MechalitCore</packageId></li>
-		<li><packageId>vanillaexpanded.vfecore</packageId></li>
-		<li><packageId>vanillaexpanded.vfespacer</packageId></li>
-		<li><packageId>vanillaexpanded.vfemedical</packageId></li> 
-		<li><packageId>mlie.medicalsupplements</packageId></li>
-		<li><packageId>aelanna.eccentrictech.core</packageId></li> 
-		<li><packageId>albion.sparklingworlds.full</packageId></li>
-		<li><packageId>explodoboy.snsambitioncosmic</packageId></li> 
-		<li><packageId>vanillaexpanded.outposts</packageId></li>
-		<li><packageId>mlie.morefurniture</packageId></li> 
-	</modDependencies>
-	<loadAfter>
-		<!-- <li>Daniledman.FastRegen</li> -->
-		<li>Daniledman.MechalitCore</li><!-- Mechalit Core v2 -->
-		<li>vanillaexpanded.vfecore</li><!-- Vanilla Furniture Expanded -->
-		<li>vanillaexpanded.vfespacer</li><!-- Vanilla Furniture Expanded - Spacer Module -->
-		<li>vanillaexpanded.vfemedical</li><!-- Vanilla Furniture Expanded - Medical Module -->
-		<li>mlie.medicalsupplements</li><!-- Medical Supplements -->
-		<li>aelanna.eccentrictech.core</li><!-- Eccentric Tech - Core -->
-		<li>albion.sparklingworlds.full</li><!-- Sparkling Worlds - Full Mod -->
-		<li>explodoboy.snsambitioncosmic</li><!-- Science Never Stops: Ambition of the Cosmic -->
-		<li>mlie.morefurniture</li><!-- More Furniture -->
-	</loadAfter>
 </ModMetaData>

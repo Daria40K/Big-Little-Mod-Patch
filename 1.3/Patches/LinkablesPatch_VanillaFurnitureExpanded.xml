@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+	Bed_Ergonomic = ergonomic bed
+	Bed_DoubleErgonomic = ergonomic double bed
+	Bed_Kingsize = royal poster bed
+	Table_RoyalDresser = royal dresser
+	Table_Wardrobe = wardrobe
+	Table_RoyalEndTable = royal end table
+	Table_LightEndTable = royal dresser
+-->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -12,7 +21,6 @@
 					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
 					<value>
 						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
-						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
 						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
 					</value>
 				</li>
@@ -22,15 +30,6 @@
 					<value>
 						<li>Table_LightEndTable</li><!-- Vanilla Furniture Expanded -->
 						<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
-						<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
-					</value>
-				</li>
-
-				<li Class="PatchOperationInsert">
-					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
-					<value>
-						<li>Facility_VitalsCentre</li><!-- Vanilla Furniture Expanded - Medical Module -->
-						<li>Facility_IVDrip</li><!-- Vanilla Furniture Expanded - Medical Module -->
 					</value>
 				</li>
 
@@ -38,7 +37,6 @@
 					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
 					<value>
 						<li>Misc_FileCabinet</li><!-- Vanilla Furniture Expanded -->
-						<li>Facility_ResearchCounter</li><!-- Vanilla Furniture Expanded - Medical Module -->
 					</value>
 				</li>
 			</operations>
