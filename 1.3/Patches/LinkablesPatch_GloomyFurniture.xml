@@ -35,14 +35,6 @@
                 </li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "RGK_bedSingle" or defName = "RGK_bedSingleB" or defName = "RGK_bedDouble" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-						<li>EndTable</li><!-- RimWorld -->
-						<li>Dresser</li><!-- RimWorld -->
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>GL_Cupboard</li><!-- GloomyFurniture -->

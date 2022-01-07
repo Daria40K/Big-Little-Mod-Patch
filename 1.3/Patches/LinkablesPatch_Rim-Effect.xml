@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+	rimeffect.core = Rim-Effect: Core
+
 	RE_PrefabBed = prefab bed
 	RE_PrefabDoubleBed = prefab double bed
 	RE_PrefabDresser = prefab dresser
