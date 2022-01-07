@@ -70,7 +70,7 @@
 				</li>
 
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName = "DankPyon_AdvancedResearchBench" or defName = "SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>MultiAnalyzer</li><!-- RimWorld -->
 					</value>

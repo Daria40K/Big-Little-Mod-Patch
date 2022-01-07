@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    dankpyon.medieval.overhaul = Medieval Overhaul
+
+    === Beds
+    DankPyon_BedWicker = wicker bed
+    DankPyon_BedWickerDouble = double wicker bed
+    DankPyon_StrawBed = straw bed
+    DankPyon_StrawBedDouble = double straw bed
+    DankPyon_BedFur = fur bed
+    DankPyon_BedFurDouble = double fur bed
+    DankPyon_RoyalTudorBed = royal tudor bed
+
+    === End Table
+    DankPyon_RusticEndTable = end table
+    DankPyon_RoyalEndTable = royal end table
+
+    === Dressers
+    DankPyon_RusticDresser = dresser
+    DankPyon_RoyalDresser = royal dresser
+    DankPyon_RusticChest = chest
+    DankPyon_MetalStrongbox = metal strongbox
+    DankPyon_RoyalChest = royal chest
+    DankPyon_RusticCloset = closet
+    DankPyon_RoyalCloset = royal closet
+
+    === Research
+    DankPyon_RusticBookshelf = bookshelf
+
+    === Tool Cabinet
+    DankPyon_QuenchingBucket = quenching bucket
+    DankPyon_Bellows = bellows
+    DankPyon_ToolRack = tool rack
+    DankPyon_Grinder = grinding wheel
+
+    DankPyon_AdvancedResearchBench = advanced research bench
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
+					<value>
+                        <li>DankPyon_RusticDresser</li><!-- Medieval Overhaul -->
+                        <li>DankPyon_RoyalDresser</li><!-- Medieval Overhaul -->
+                        <li>DankPyon_RusticChest</li><!-- Medieval Overhaul -->
+                        <li>DankPyon_MetalStrongbox</li><!-- Medieval Overhaul -->
+                        <li>DankPyon_RoyalChest</li><!-- Medieval Overhaul -->
+                        <li>DankPyon_RusticCloset</li><!-- Medieval Overhaul -->
+                        <li>DankPyon_RoyalCloset</li><!-- Medieval Overhaul -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="EndTable"]</xpath>
+					<value>
+						<li>DankPyon_RusticEndTable</li><!-- Medieval Overhaul -->
+						<li>DankPyon_RoyalEndTable</li><!-- Medieval Overhaul -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationInsert">
+                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
+                    <value>
+                        <li>DankPyon_RusticBookshelf</li><!-- Medieval Overhaul -->
+                    </value>
+                </li>
+
+                <li Class="PatchOperationInsert">
+                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="ToolCabinet"]</xpath>
+                    <value>
+                        <li>DankPyon_ToolRack</li><!-- Medieval Overhaul -->
+                    </value>
+                </li>
+
+                <!-- RimWorld -->
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>DankPyon_RusticCookingTools</li><!-- Medieval Overhaul -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ElectricSmithy" or defName = "FueledSmithy" or defName = "TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+                        <li>DankPyon_QuenchingBucket</li><!-- Medieval Overhaul -->
+                        <li>DankPyon_Bellows</li><!-- Medieval Overhaul -->
+                        <li>DankPyon_Grinder</li><!-- Medieval Overhaul -->
+					</value>
+				</li>
+
+                <!-- Medieval Overhaul -->
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "DankPyon_Anvil" or defName = "DankPyon_Workbench" or defName = "DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+                        <li>ToolCabinet</li><!-- RimWorld -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

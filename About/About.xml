@@ -23,4 +23,7 @@ Mods Patched:
 - Vanilla Furniture Expanded - Medical Module
 - Vanilla Furniture Expanded - Spacer Module
 	</description>
+	<loadAfter>
+		<li>dankpyon.medieval.overhaul</li>
+	</loadAfter>
 </ModMetaData>
