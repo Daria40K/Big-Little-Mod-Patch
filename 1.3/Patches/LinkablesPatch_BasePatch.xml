@@ -4,10 +4,6 @@
 -->
 <Patch>
     <!-- RimWorld -->
-    
-
-    <!-- Add /comps/li/compClass if there are no comps yet. -->
-    <!-- Add /li/compClass to /comps if exists (i.e. other mod already added the comps field first) -->
     <Operation Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps</xpath>
         <nomatch Class="PatchOperationAdd">
@@ -75,6 +71,40 @@
 						<li>MultiAnalyzer</li><!-- RimWorld -->
 					</value>
 				</li>
+			</operations>
+		</match>
+	</Operation>
+
+    <!-- UN-Furniture -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>UN-Furniture (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "SadjuukBedAA" or defName = "SadjuukBedAB" or defName = "SadjuukBedAC" or defName = "SadjuukBedBA" or defName = "SadjuukBedBB" or defName = "SadjuukBedBC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>EndTable</li><!-- RimWorld -->
+						<li>Dresser</li><!-- RimWorld -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThingDef[defName = "SadjuukSurgeryBA" or defName = "SadjuukSurgeryBB" or defName = "SadjuukSurgeryBC" or defName = "SadjuukSurgeryBD"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li>VitalsMonitor</li><!-- RimWorld -->
+                    </value>
+                </li>
+
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThingDef[defName = "SadjuukResearchAA" or defName = "SadjuukResearchAB" or defName = "SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li>MultiAnalyzer</li><!-- RimWorld -->
+                    </value>
+                </li>
 			</operations>
 		</match>
 	</Operation>

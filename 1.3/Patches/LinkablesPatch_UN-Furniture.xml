@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    === Beds
+    SadjuukBedAA = wood logs bed
+    SadjuukBedAB = wooden bed
+    SadjuukBedAC = steel bed
+    SadjuukBedBA = double logs bed
+    SadjuukBedBB = double wooden bed
+    SadjuukBedBC = double steel bed
+
+    SadjuukFurnitureAA = wooden chest
+    SadjuukFurnitureAB = wooden nightstand
+    SadjuukFurnitureAC = steel chest
+    SadjuukFurnitureBA = wooden storage
+    SadjuukFurnitureBB = wooden wardrobe
+    SadjuukFurnitureBC = steel lockers
+
+    === Medical
+    SadjuukSurgeryBA = medecine table
+    SadjuukSurgeryBB = wooden medical bed
+    SadjuukSurgeryBC = steel medical bed
+    SadjuukSurgeryBD = operating table
+
+    SadjuukSurgeryAA = rustic surgery tools
+    SadjuukSurgeryAB = basic surgery tools
+    SadjuukSurgeryAC = steel surgery tools
+    SadjuukSurgeryAD = surgery lights
+
+    === Research
+    SadjuukResearchAA = research spot
+    SadjuukResearchAB = research desk
+    SadjuukResearchAC = research table
+
+    SadjuukResearchBA = tribal calendar
+    SadjuukResearchBB = research library
+    SadjuukResearchBC = blueprint table
+    SadjuukResearchBD = archival cabinet
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>UN-Furniture (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
+					<value>
+						<li>SadjuukFurnitureBA</li><!-- UN-Furniture -->
+						<li>SadjuukFurnitureBB</li><!-- UN-Furniture -->
+                        <li>SadjuukFurnitureBC</li><!-- UN-Furniture -->
+					</value>
+				</li>
+
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="EndTable"]</xpath>
+					<value>
+						<li>SadjuukFurnitureAA</li><!-- UN-Furniture -->
+						<li>SadjuukFurnitureAB</li><!-- UN-Furniture -->
+                        <li>SadjuukFurnitureAC</li><!-- UN-Furniture -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationInsert">
+                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
+                    <value>
+                        <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
+                        <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
+                        <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
+                        <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                    </value>
+                </li>
+
+                <li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
+					<value>
+						<li>SadjuukResearchBA</li><!-- UN-Furniture -->
+                        <li>SadjuukResearchBB</li><!-- UN-Furniture -->
+                        <li>SadjuukResearchBC</li><!-- UN-Furniture -->
+                        <li>SadjuukResearchBD</li><!-- UN-Furniture -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
