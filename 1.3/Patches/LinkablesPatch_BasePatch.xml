@@ -58,7 +58,7 @@
 			<success>Always</success>
 			<operations>
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "DankPyon_StrawBed" or defName = "DankPyon_StrawBedDouble" or defName = "DankPyon_BedFur" or defName = "DankPyon_BedFurDouble" or defName = "DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName = "DankPyon_StrawBed" or defName = "DankPyon_StrawBedDouble" or defName = "DankPyon_BedFur" or defName = "DankPyon_BedFurDouble" or defName = "DankPyon_RoyalTudorBed" or defName = "DankPyon_BedWicker" or defName = "DankPyon_BedWickerDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>EndTable</li><!-- RimWorld -->
 						<li>Dresser</li><!-- RimWorld -->
@@ -84,8 +84,8 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-                <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "SadjuukBedAA" or defName = "SadjuukBedAB" or defName = "SadjuukBedAC" or defName = "SadjuukBedBA" or defName = "SadjuukBedBB" or defName = "SadjuukBedBC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <li Class="PatchOperationInsert">
+					<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[1]</xpath>
 					<value>
 						<li>EndTable</li><!-- RimWorld -->
 						<li>Dresser</li><!-- RimWorld -->
@@ -93,14 +93,14 @@
 				</li>
 
                 <li Class="PatchOperationInsert">
-                    <xpath>/Defs/ThingDef[defName = "SadjuukSurgeryBA" or defName = "SadjuukSurgeryBB" or defName = "SadjuukSurgeryBC" or defName = "SadjuukSurgeryBD"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <xpath>/Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[1]</xpath>
                     <value>
                         <li>VitalsMonitor</li><!-- RimWorld -->
                     </value>
                 </li>
 
                 <li Class="PatchOperationInsert">
-                    <xpath>/Defs/ThingDef[defName = "SadjuukResearchAA" or defName = "SadjuukResearchAB" or defName = "SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <xpath>/Defs/ThingDef[@Name="SadjuukResearchBaseA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[1]</xpath>
                     <value>
                         <li>MultiAnalyzer</li><!-- RimWorld -->
                     </value>

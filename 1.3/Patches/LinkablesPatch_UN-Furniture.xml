@@ -82,6 +82,24 @@
                         <li>SadjuukResearchBD</li><!-- UN-Furniture -->
 					</value>
 				</li>
+
+                <!-- Ideology [Official DLC] -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ideology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationInsert">
+								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[1]</xpath>
+								<value>
+									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

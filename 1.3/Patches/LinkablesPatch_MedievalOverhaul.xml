@@ -105,7 +105,7 @@
 						<success>Always</success>
 						<operations>
 							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_StrawBed" or defName = "DankPyon_StrawBedDouble" or defName = "DankPyon_BedFur" or defName = "DankPyon_BedFurDouble" or defName = "DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName = "DankPyon_StrawBed" or defName = "DankPyon_StrawBedDouble" or defName = "DankPyon_BedFur" or defName = "DankPyon_BedFurDouble" or defName = "DankPyon_RoyalTudorBed" or defName = "DankPyon_BedWicker" or defName = "DankPyon_BedWickerDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
 								</value>
