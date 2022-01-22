@@ -79,16 +79,39 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[
+                        defName = "DankPyon_Anvil" or 
+                        defName = "DankPyon_Workbench" or 
+                        defName = "DankPyon_TailorsBench" or 
+                        defName = "DankPyon_Furnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+                        <li>ToolCabinet</li><!-- RimWorld -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Anon2FileCabinet</li><!-- RimWorld -->
+					</value>
+				</li>
+
                 <!-- RimWorld -->
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[
+                        defName = "ElectricStove" or 
+                        defName = "FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>DankPyon_RusticCookingTools</li><!-- Medieval Overhaul -->
 					</value>
 				</li>
 
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "ElectricSmithy" or defName = "FueledSmithy" or defName = "TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[
+                        defName = "ElectricSmithy" or 
+                        defName = "FueledSmithy" or 
+                        defName = "TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>DankPyon_QuenchingBucket</li><!-- Medieval Overhaul -->
                         <li>DankPyon_Bellows</li><!-- Medieval Overhaul -->
@@ -105,21 +128,20 @@
 						<success>Always</success>
 						<operations>
 							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_StrawBed" or defName = "DankPyon_StrawBedDouble" or defName = "DankPyon_BedFur" or defName = "DankPyon_BedFurDouble" or defName = "DankPyon_RoyalTudorBed" or defName = "DankPyon_BedWicker" or defName = "DankPyon_BedWickerDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[
+                                    defName = "DankPyon_StrawBed" or 
+                                    defName = "DankPyon_StrawBedDouble" or 
+                                    defName = "DankPyon_BedFur" or 
+                                    defName = "DankPyon_BedFurDouble" or 
+                                    defName = "DankPyon_RoyalTudorBed" or 
+                                    defName = "DankPyon_BedWicker" or 
+                                    defName = "DankPyon_BedWickerDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
 								</value>
 							</li>
 						</operations>
 					</match>
-				</li>
-
-                <!-- Medieval Overhaul -->
-                <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "DankPyon_Anvil" or defName = "DankPyon_Workbench" or defName = "DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-                        <li>ToolCabinet</li><!-- RimWorld -->
-					</value>
 				</li>
 			</operations>
 		</match>

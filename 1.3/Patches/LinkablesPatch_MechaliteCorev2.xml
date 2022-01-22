@@ -27,7 +27,10 @@
 						<success>Always</success>
 						<operations>
 							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[
+									defName = "EliteBed" or 
+									defName = "EliteDoubleBed" or 
+									defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
 								</value>

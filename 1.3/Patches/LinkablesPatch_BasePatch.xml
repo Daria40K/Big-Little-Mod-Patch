@@ -5,9 +5,13 @@
 <Patch>
     <!-- RimWorld -->
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps</xpath>
+        <xpath>/Defs/ThingDef[
+            defName = "ElectricStove" or 
+            defName = "FueledStove"]/comps</xpath>
         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]</xpath>
+            <xpath>/Defs/ThingDef[
+                defName = "ElectricStove" or 
+                defName = "FueledStove"]</xpath>
             <value>
                 <comps>
                     <li Class="CompProperties_AffectedByFacilities">
@@ -18,7 +22,9 @@
             </value>
         </nomatch>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps</xpath>
+            <xpath>/Defs/ThingDef[
+                defName = "ElectricStove" or 
+                defName = "FueledStove"]/comps</xpath>
             <value>
                 <li Class="CompProperties_AffectedByFacilities">
                     <linkableFacilities>
@@ -38,7 +44,12 @@
 			<success>Always</success>
 			<operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName = "RGK_bedSingle" or defName = "RGK_bedSingleB" or defName = "RGK_bedDouble" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <xpath>/Defs/ThingDef[
+                        defName = "RGK_bedSingle" or 
+                        defName = "RGK_bedSingleB" or 
+                        defName = "RGK_bedDouble" or 
+                        defName = "RGK_bedDoubleB" or 
+                        defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
                         <li>EndTable</li><!-- RimWorld -->
                         <li>Dresser</li><!-- RimWorld -->
@@ -58,7 +69,15 @@
 			<success>Always</success>
 			<operations>
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "DankPyon_StrawBed" or defName = "DankPyon_StrawBedDouble" or defName = "DankPyon_BedFur" or defName = "DankPyon_BedFurDouble" or defName = "DankPyon_RoyalTudorBed" or defName = "DankPyon_BedWicker" or defName = "DankPyon_BedWickerDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[
+                        defName = "DankPyon_StrawBed" or 
+                        defName = "DankPyon_StrawBedDouble" or 
+                        defName = "DankPyon_BedFur" or 
+                        defName = "DankPyon_BedFurDouble" or 
+                        defName = "DankPyon_RoyalTudorBed" or 
+                        defName = "DankPyon_BedWicker" or 
+                        defName = "DankPyon_BedWickerDouble"
+                        ]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>EndTable</li><!-- RimWorld -->
 						<li>Dresser</li><!-- RimWorld -->
@@ -66,7 +85,8 @@
 				</li>
 
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "DankPyon_AdvancedResearchBench" or defName = "SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName = "DankPyon_AdvancedResearchBench" or 
+                        defName = "SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>MultiAnalyzer</li><!-- RimWorld -->
 					</value>

@@ -51,6 +51,24 @@
 						</operations>
 					</match>
 				</li>
+
+                <!-- Medieval Overhaul -->
+                <li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_RusticCookingTools</li><!-- Medieval Overhaul -->
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

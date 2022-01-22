@@ -55,7 +55,12 @@
 						<success>Always</success>
 						<operations>
 							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "RE_PrefabBed" or defName = "RE_PrefabDoubleBed" or defName = "RE_PrefabMedicalBed" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[
+									defName = "RE_PrefabBed" or 
+									defName = "RE_PrefabDoubleBed" or 
+									defName = "RE_PrefabMedicalBed" or 
+									defName = "RGK_bedDoubleB" or 
+									defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
 								</value>

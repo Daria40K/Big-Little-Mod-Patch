@@ -35,7 +35,9 @@
                 </li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[
+						defName = "ElectricStove" or 
+						defName = "FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>GL_Cupboard</li><!-- GloomyFurniture -->
 						<li>GL_TablewareShelf</li><!-- GloomyFurniture -->
@@ -51,7 +53,12 @@
 						<success>Always</success>
 						<operations>
 							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "RGK_bedSingle" or defName = "RGK_bedSingleB" or defName = "RGK_bedDouble" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[
+									defName = "RGK_bedSingle" or 
+									defName = "RGK_bedSingleB" or 
+									defName = "RGK_bedDouble" or 
+									defName = "RGK_bedDoubleB" or 
+									defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
 								</value>
@@ -69,7 +76,12 @@
 						<success>Always</success>
 						<operations>
 							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_Grill" or defName = "DankPyon_RusticCookingTable" or defName = "DankPyon_StoneOven" or defName = "DankPyon_StewPot" or defName = "DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[
+									defName = "DankPyon_Grill" or 
+									defName = "DankPyon_RusticCookingTable" or 
+									defName = "DankPyon_StoneOven" or 
+									defName = "DankPyon_StewPot" or 
+									defName = "DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Cupboard</li><!-- GloomyFurniture -->
 									<li>GL_TablewareShelf</li><!-- GloomyFurniture -->

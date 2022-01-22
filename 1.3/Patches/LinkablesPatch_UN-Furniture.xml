@@ -92,7 +92,10 @@
 						<success>Always</success>
 						<operations>
 							<li Class="PatchOperationInsert">
-								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[1]</xpath>
+								<xpath>/Defs/ThingDef[
+                                        @Name="SadjuukBedBaseA" or 
+                                        @Name="SadjuukBedBaseB"
+                                    ]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[1]</xpath>
 								<value>
 									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
 								</value>
