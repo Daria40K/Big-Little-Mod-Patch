@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	daylight.rimlifeexfurmod = RimLife Expansion Furniture
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimLife Expansion Furniture</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
+					<value>
+						<li>RLE_KazariKatana</li><!-- RimLife Expansion Furniture -->
+						<li>RLE_Kouro</li><!-- RimLife Expansion Furniture -->
+					</value>
+				</li>
+
+                <li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
+					<value>
+						<li>RLE_AirCondition</li><!-- RimLife Expansion Furniture -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
