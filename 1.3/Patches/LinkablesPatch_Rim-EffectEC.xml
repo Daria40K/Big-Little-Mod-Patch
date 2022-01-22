@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	rimeffect.extendedcut = Rim-Effect: Extended Cut
+
+	RE_PreFabStove = prefab stove
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rim-Effect: Extended Cut</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+                        <value>
+                            <linkableFacilities>
+                            </linkableFacilities>
+                        </value>
+                    </match>
+                </li>
+
+                <!-- GloomyFurniture -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
+                                    <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
