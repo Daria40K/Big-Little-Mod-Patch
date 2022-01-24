@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Knight.MedicalIVs = Medical IVs
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medical IVs</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
+					<value>
+						<li>IV_Blood</li><!-- Medical IVs -->
+                        <li>IV_Nutrition</li><!-- Medical IVs -->
+                        <li>IV_Painkiller</li><!-- Medical IVs -->
+                        <li>IV_Antibiotics</li><!-- Medical IVs -->
+                        <li>IV_Anesthetic</li><!-- Medical IVs -->
+                        <li>IV_Blood_Electric</li><!-- Medical IVs -->
+                        <li>IV_Nutrition_Electric</li><!-- Medical IVs -->
+                        <li>IV_Painkiller_Electric</li><!-- Medical IVs -->
+                        <li>IV_Antibiotics_Electric</li><!-- Medical IVs -->
+                        <li>IV_Anesthetic_Electric</li><!-- Medical IVs -->
+                        <li>IV_Multi_Electric</li><!-- Medical IVs -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
