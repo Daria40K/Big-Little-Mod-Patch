@@ -128,4 +128,23 @@
 			</operations>
 		</match>
 	</Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Linkables</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="VitalsMonitor"]</xpath>
+					<value>
+						<li>SurgicalLamp</li><!-- More Linkables -->
+						<li>SurgicalInstruments</li><!-- More Linkables -->
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>
