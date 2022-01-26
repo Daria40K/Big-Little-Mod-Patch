@@ -68,6 +68,30 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock" or defName = "DankPyon_StonecuttingSpot" or defName = "DankPyon_SpinningWheel"]/comps</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock" or defName = "DankPyon_StonecuttingSpot" or defName = "DankPyon_SpinningWheel"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities>
+                                    </linkableFacilities>
+                                </li>
+                            </comps>
+                        </value>
+                    </nomatch>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock" or defName = "DankPyon_StonecuttingSpot" or defName = "DankPyon_SpinningWheel"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </match>
+                </li>
+
                 <li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[
                         defName = "DankPyon_StrawBed" or 

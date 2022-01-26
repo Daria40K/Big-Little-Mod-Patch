@@ -143,6 +143,65 @@
 						</operations>
 					</match>
 				</li>
+
+                <!-- WorkBench Support - More Linkable Facilities - -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName = "DankPyon_Grill" or defName = "DankPyon_RusticCookingTable" or defName = "DankPyon_StoneOven" or defName = "DankPyon_StewPot" or defName = "DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_KitchenGoods</li><!-- WorkBench Support - More Linkable Facilities - -->
+            						<li>Link_KitchenBoost</li><!-- WorkBench Support - More Linkable Facilities - -->
+								</value>
+							</li>
+
+                            <li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName = "DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_TailorGoods</li><!-- WorkBench Support - More Linkable Facilities - -->
+            						<li>Link_TailorBoost</li><!-- WorkBench Support - More Linkable Facilities - -->
+								</value>
+							</li>
+
+                            <!--<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_ButcherGoods</li>
+                                    <li>Link_ButcherBoost</li>
+								</value>
+							</li>-->
+
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName = "DankPyon_StonecuttingSpot"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_StoneCutterGoods</li>
+            						<li>Link_StoneCutterBoost</li>
+								</value>
+							</li>
+
+                            <li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName = "DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_StoneCutterGoods</li>
+            						<li>Link_StoneCutterBoost</li>
+								</value>
+							</li>
+
+                            <!--<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName = "DankPyon_SpinningWheel" or defName = "DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_TailorGoods</li>
+            						<li>Link_TailorBoost</li>
+								</value>
+							</li>-->
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

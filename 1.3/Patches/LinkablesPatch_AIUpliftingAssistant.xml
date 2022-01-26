@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>AI Uplifting Assistant</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
+					<value>
+						<li>AIUpliftAssistantAUA</li><!-- AI Uplifting Assistant -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
