@@ -59,6 +59,44 @@
 		</match>
 	</Operation>
 
+    
+
+    <!-- Clockwork And Steam -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Clockwork And Steam</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName = "AlloyFurnace"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "AlloyFurnace"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                        <value>
+                            <li>Link_KitchenGoods</li>
+                            <li>Link_KitchenBoost</li>
+                            <li>Link_UniversalCabinet</li>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "AlloyFurnace"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                    <li>Link_KitchenGoods</li>
+                                    <li>Link_KitchenBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+			</operations>
+		</match>
+	</Operation>
+
     <!-- Medieval Overhaul -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -153,6 +191,7 @@
 		</match>
 	</Operation>
 
+    <!-- More Linkables -->
     <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>More Linkables</li>
