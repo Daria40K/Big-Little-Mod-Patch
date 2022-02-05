@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    dankpyon.medieval.overhaul = Medieval Overhaul
+    ========== Medieval Overhaul ==========
 
     === Beds
     DankPyon_BedWicker = wicker bed
@@ -44,165 +44,414 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<li Class="PatchOperationInsert">
-					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
-					<value>
-                        <li>DankPyon_RusticDresser</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RoyalDresser</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RusticChest</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_MetalStrongbox</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RoyalChest</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RusticCloset</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RoyalCloset</li><!-- Medieval Overhaul -->
-					</value>
-				</li>
+                <!-- DankPyon_ButchersBlock -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="DankPyon_ButchersBlock"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="DankPyon_ButchersBlock"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities>
 
-				<li Class="PatchOperationInsert">
-					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="EndTable"]</xpath>
-					<value>
-						<li>DankPyon_RusticEndTable</li><!-- Medieval Overhaul -->
-						<li>DankPyon_RoyalEndTable</li><!-- Medieval Overhaul -->
-					</value>
-				</li>
+                                    </linkableFacilities>
+                                </li>
+                            </comps>
+                        </value>
+                    </nomatch>
+                </li>
 
-				<li Class="PatchOperationInsert">
-                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- DankPyon_SpinningWheel -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="DankPyon_SpinningWheel"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="DankPyon_SpinningWheel"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities>
+                                        <li>ToolCabinet</li>
+                                    </linkableFacilities>
+                                </li>
+                            </comps>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName = "DankPyon_SpinningWheel"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "DankPyon_SpinningWheel"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- DankPyon_TailorsBench -->
+                <li Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
-                        <li>DankPyon_RusticBookshelf</li><!-- Medieval Overhaul -->
+                        <li>ToolCabinet</li>
                     </value>
                 </li>
 
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="ToolCabinet"]</xpath>
+                <!-- DankPyon_Furnace -->
+                <li Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="DankPyon_Furnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
-                        <li>DankPyon_ToolRack</li><!-- Medieval Overhaul -->
+                        <li>ToolCabinet</li>
                     </value>
                 </li>
 
+                <!-- DankPyon_Anvil -->
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[
-                        defName = "DankPyon_Anvil" or 
-                        defName = "DankPyon_Workbench" or 
-                        defName = "DankPyon_TailorsBench" or 
-                        defName = "DankPyon_Furnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-                        <li>ToolCabinet</li><!-- RimWorld -->
-					</value>
-				</li>
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="DankPyon_Anvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li>ToolCabinet</li>
+                    </value>
+                </li>
 
+                <!-- DankPyon_Workbench -->
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-						<li>Anon2FileCabinet</li><!-- RimWorld -->
-					</value>
-				</li>
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li>ToolCabinet</li>
+                    </value>
+                </li>
 
-                <!-- RimWorld -->
+                <!-- DankPyon_StonecuttingSpot -->
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[
-                        defName = "ElectricStove" or 
-                        defName = "FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-						<li>DankPyon_RusticCookingTools</li><!-- Medieval Overhaul -->
-					</value>
-				</li>
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="DankPyon_StonecuttingSpot"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li>DankPyon_ToolRack</li>
+                    </value>
+                </li>
 
-                <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[
-                        defName = "ElectricSmithy" or 
-                        defName = "FueledSmithy" or 
-                        defName = "TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-                        <li>DankPyon_QuenchingBucket</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_Bellows</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_Grinder</li><!-- Medieval Overhaul -->
-					</value>
-				</li>
+                <!-- ========== Clockwork And Steam ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Clockwork And Steam</li>
+                    </mods>
 
-                <!-- Ideology [Official DLC] -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Ideology</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[
-                                    defName = "DankPyon_StrawBed" or 
-                                    defName = "DankPyon_StrawBedDouble" or 
-                                    defName = "DankPyon_BedFur" or 
-                                    defName = "DankPyon_BedFurDouble" or 
-                                    defName = "DankPyon_RoyalTudorBed" or 
-                                    defName = "DankPyon_BedWicker" or 
-                                    defName = "DankPyon_BedWickerDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-                <!-- WorkBench Support - More Linkable Facilities - -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WorkBench Support - More Linkable Facilities -</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_Grill" or defName = "DankPyon_RusticCookingTable" or defName = "DankPyon_StoneOven" or defName = "DankPyon_StewPot" or defName = "DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_KitchenGoods</li><!-- WorkBench Support - More Linkable Facilities - -->
-            						<li>Link_KitchenBoost</li><!-- WorkBench Support - More Linkable Facilities - -->
-								</value>
-							</li>
-
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_AdvancedResearchBench -->
                             <li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_TailorGoods</li><!-- WorkBench Support - More Linkable Facilities - -->
-            						<li>Link_TailorBoost</li><!-- WorkBench Support - More Linkable Facilities - -->
-								</value>
-							</li>
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ElectromechanicalComputer</li><!-- Clockwork And Steam -->
+                                    <li>AnalyticalStack</li><!-- Clockwork And Steam -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
-                            <!--<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_ButcherGoods</li>
+                <!-- ========== Eccentric Tech - Core ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Eccentric Tech - Core</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_AdvancedResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>EccentricAuroraCore</li><!-- Eccentric Tech - Core -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== GloomyFurniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>GloomyFurniture</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Cupboard</li>
+                                    <li>GL_TablewareShelf</li>
+                                </value>
+                            </li>
+
+                            <!-- DankPyon_AdvancedResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Bookshelf</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== More Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Furniture</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_AdvancedResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Anon2FileCabinet</li><!-- More Furniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>KitchenCupboard</li>
+                                </value>
+                            </li>
+
+                            <!-- DankPyon_ButchersBlock -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>KitchenCupboard</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Rim-Effect: Core ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Rim-Effect: Core</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_AdvancedResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>RE_AllianceTerminal</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Rim-Effect: Asari and Reapers ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Rim-Effect: Asari and Reapers</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_AdvancedResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>RE_AsariTerminal</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_AdvancedResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukResearchBA</li>
+                                    <li>SadjuukResearchBB</li>
+                                    <li>SadjuukResearchBC</li>
+                                    <li>SadjuukResearchBD</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_AdvancedResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Misc_FileCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_KitchenGoods</li>
+                                    <li>Link_KitchenBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- DankPyon_ButchersBlock -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_ButcherGoods</li>
                                     <li>Link_ButcherBoost</li>
-								</value>
-							</li>-->
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
 
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_StonecuttingSpot"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_StoneCutterGoods</li>
-            						<li>Link_StoneCutterBoost</li>
-								</value>
-							</li>
-
+                            <!-- DankPyon_SpinningWheel | DankPyon_TailorsBench-->
                             <li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_StoneCutterGoods</li>
-            						<li>Link_StoneCutterBoost</li>
-								</value>
-							</li>
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "DankPyon_SpinningWheel" or defName = "DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_TailorGoods</li>
+                                    <li>Link_TailorBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
 
-                            <!--<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[defName = "DankPyon_SpinningWheel" or defName = "DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_TailorGoods</li>
-            						<li>Link_TailorBoost</li>
-								</value>
-							</li>-->
-						</operations>
-					</match>
-				</li>
-			</operations>
-		</match>
-	</Operation>
+                            <!-- DankPyon_StonecuttingSpot -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "DankPyon_StonecuttingSpot"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_StoneCutterGoods</li>
+                                    <li>Link_StoneCutterBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- DankPyon_AdvancedResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_ResearchGoods</li>
+                                    <li>Link_ResearchBoost</li>
+                                </value>
+                            </li>
+
+                            <!-- DankPyon_Furnace -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_Furnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- DankPyon_Anvil -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_Anvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- DankPyon_Workbench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
 </Patch>

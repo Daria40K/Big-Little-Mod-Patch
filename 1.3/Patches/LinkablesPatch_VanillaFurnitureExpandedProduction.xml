@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Production</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- ========== GloomyFurniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>GloomyFurniture</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- VFE_TableStoveLarge -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
+						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medieval Overhaul ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- VFE_TableStonecutterElectric -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+                            
+                            <!-- VFE_TableButcherElectric -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+
+                            <!-- VFE_FueledSmelter -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_QuenchingBucket</li>
+                                    <li>DankPyon_Bellows</li>
+                                    <li>DankPyon_ToolRack</li>
+                                    <li>DankPyon_Grinder</li>
+								</value>
+							</li>
+
+                            <!-- VFE_TableStoveLarge -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
+								</value>
+							</li>
+
+                            <!-- VFE_TableSmithyLarge -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="VFE_TableSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_QuenchingBucket</li>
+                                    <li>DankPyon_Bellows</li>
+                                    <li>DankPyon_ToolRack</li>
+                                    <li>DankPyon_Grinder</li>
+                                </value>
+                            </li>
+
+                            <!-- VFE_TableMachiningLarge -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="VFE_TableMachiningLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_QuenchingBucket</li>
+                                    <li>DankPyon_Bellows</li>
+                                    <li>DankPyon_ToolRack</li>
+                                    <li>DankPyon_Grinder</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- VFE_FueledSmelter -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+								</value>
+							</li>
+
+                            <!-- VFE_TableSmithyLarge -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="VFE_TableSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                    <li>SadjuukWeldingRobot</li>
+                                    <li>SadjuukAssemblyRobot</li>
+                                </value>
+                            </li>
+
+                            <!-- VFE_TableMachiningLarge -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="VFE_TableMachiningLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                    <li>SadjuukWeldingRobot</li>
+                                    <li>SadjuukAssemblyRobot</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ========== Fast regen 1.3 ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fast regen 1.3</li>
+            <li>Fast regen [1.3]</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- ========== Ideology [Official DLC] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ideology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== [sd] medicaddons (unofficial) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[sd] medicaddons (unofficial)</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>sd_medicaddons_medieval_surg_washpan</li>
+                                    <li>sd_medicaddons_medieval_surg_instruments</li>
+                                    <li>sd_medicaddons_medieval_surg_lamp</li>
+                                    <li>sd_medicaddons_industrial_surg_instruments</li>
+                                    <li>sd_medicaddons_industrial_surg_lamp</li>
+                                    <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                                    <li>sd_medicaddons_spacer_surg_instruments</li>
+                                    <li>sd_medicaddons_spacer_surg_lamp</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical IVs ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical IVs</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>IV_Blood</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic</li><!-- Medical IVs -->
+                                    <li>IV_Blood_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Multi_Electric</li><!-- Medical IVs -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical Supplements ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical Supplements</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>MS_DStand</li><!-- Medical Supplements -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Medical Module</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Facility_VitalsCentre</li>
+                                    <li>Facility_IVDrip</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

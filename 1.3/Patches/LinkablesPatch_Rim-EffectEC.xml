@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	rimeffect.extendedcut = Rim-Effect: Extended Cut
+	========== Rim-Effect: Extended Cut ==========
 
 	RE_PreFabStove = prefab stove
 -->
@@ -13,63 +13,142 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+                <!-- RE_PreFabStove -->
                 <li Class="PatchOperationConditional">
-                    <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps</xpath>
+                        <success>Always</success>
+                        <xpath>/Defs/ThingDef[defName="RE_PreFabStove"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
+
                                 </linkableFacilities>
                             </li>
                         </value>
                     </nomatch>
-                    <match Class="PatchOperationAdd">
-                        <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/placeWorkers</xpath>
                         <value>
-                            <linkableFacilities>
-                            </linkableFacilities>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
                         </value>
+                    </nomatch>
+                </li>
+
+                <!-- ========== GloomyFurniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>GloomyFurniture</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PreFabStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
+						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+                        </operations>
                     </match>
                 </li>
 
-                <!-- GloomyFurniture -->
+                <!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>GloomyFurniture</li>
+						<li>Medieval Overhaul</li>
 					</mods>
+			
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
+							<!-- RE_PreFabStove -->
 							<li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
-                                    <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
-                                </value>
-                            </li>
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
 
-                <!-- Medieval Overhaul -->
+                <!-- ========== More Linkables ========== -->
                 <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PreFabStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>KitchenCupboard</li><!-- More Linkables -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Medieval Overhaul</li>
+						<li>Vanilla Furniture Expanded - Production</li>
 					</mods>
+			
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
+							<!-- RE_PreFabStove -->
 							<li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>DankPyon_RusticCookingTools</li><!-- Medieval Overhaul -->
-                                </value>
-                            </li>
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_KitchenSinkCabinet</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
-			</operations>
-		</match>
-	</Operation>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PreFabStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_KitchenGoods</li>
+                                    <li>Link_KitchenBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>

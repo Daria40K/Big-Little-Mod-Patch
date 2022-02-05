@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	rimeffect.core = Rim-Effect: Core
+	========== Rim-Effect: Core ==========
 
+    === Beds
 	RE_PrefabBed = prefab bed
 	RE_PrefabDoubleBed = prefab double bed
+
+    === Medical Bed
+    RE_PrefabMedicalBed = prefab medical bed
+
+    === Reaearch
+    RE_SpacerTechResearchBench
+
+    === Bed Linkables
 	RE_PrefabDresser = prefab dresser
 	RE_PrefabWardrobe = prefab wardrobe
 	RE_PrefabEndTable = prefab end tab
 	RE_PrefabEndTableWithLamp = prefab end tab with lamp
 	RE_PrefabBedsideTable = prefab bedside table
 	RE_PrefabBedsideTableLamp = prefab bedside table with lamp
+
+    === Research Linkables
 	RE_AllianceTerminal = alliance terminal
 -->
 <Patch>
@@ -21,32 +32,7 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<li Class="PatchOperationInsert">
-					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="Dresser"]</xpath>
-					<value>
-						<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
-					</value>
-				</li>
-
-				<li Class="PatchOperationInsert">
-					<xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="EndTable"]</xpath>
-					<value>
-						<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
-					</value>
-				</li>
-
-				<li Class="PatchOperationInsert">
-                    <xpath>Defs/ThingDef/comps/li/linkableFacilities/li[text()="MultiAnalyzer"]</xpath>
-                    <value>
-                        <li>RE_AllianceTerminal</li><!-- Rim-Effect: Core -->
-                    </value>
-                </li>
-
-				<!-- Ideology [Official DLC] -->
+                <!-- ========== Ideology [Official DLC] ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Ideology</li>
@@ -54,13 +40,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/ThingDef[
-									defName = "RE_PrefabBed" or 
-									defName = "RE_PrefabDoubleBed" or 
-									defName = "RE_PrefabMedicalBed" or 
-									defName = "RGK_bedDoubleB" or 
-									defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed | RE_PrefabMedicalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed" or defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
 								</value>
@@ -68,7 +51,362 @@
 						</operations>
 					</match>
 				</li>
-			</operations>
-		</match>
-	</Operation>
+
+                <!-- ========== AI Uplifting Assistant ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>AI Uplifting Assistant</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>AIUpliftAssistantAUA</li><!-- AI Uplifting Assistant -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Clockwork And Steam ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Clockwork And Steam</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ElectromechanicalComputer</li><!-- Clockwork And Steam -->
+                                    <li>AnalyticalStack</li><!-- Clockwork And Steam -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Eccentric Tech - Core ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Eccentric Tech - Core</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>EccentricAuroraCore</li><!-- Eccentric Tech - Core -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== GloomyFurniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>GloomyFurniture</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PrefabBed | RE_PrefabDoubleBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>RGK_Dresser</li><!-- GloomyFurniture -->
+                                    <li>WardrobeA</li><!-- GloomyFurniture -->
+                                    <li>WardrobeB</li><!-- GloomyFurniture -->
+                                    <li>GL_Teddy</li><!-- GloomyFurniture -->
+                                    <li>RGK_EndTable</li><!-- GloomyFurniture -->
+                                    <li>RGK_EndTableWithLamp</li><!-- GloomyFurniture -->
+                                    <li>RGK_EndTableWithLampE</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Bookshelf</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== [sd] medicaddons (unofficial) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[sd] medicaddons (unofficial)</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PrefabMedicalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>sd_medicaddons_medieval_surg_washpan</li>
+                                    <li>sd_medicaddons_medieval_surg_instruments</li>
+                                    <li>sd_medicaddons_medieval_surg_lamp</li>
+                                    <li>sd_medicaddons_industrial_surg_instruments</li>
+                                    <li>sd_medicaddons_industrial_surg_lamp</li>
+                                    <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                                    <li>sd_medicaddons_spacer_surg_instruments</li>
+                                    <li>sd_medicaddons_spacer_surg_lamp</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical IVs ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical IVs</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PrefabMedicalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>IV_Blood</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic</li><!-- Medical IVs -->
+                                    <li>IV_Blood_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Multi_Electric</li><!-- Medical IVs -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical Supplements ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical Supplements</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PrefabMedicalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>MS_DStand</li><!-- Medical Supplements -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medieval Overhaul ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PrefabBed | RE_PrefabDoubleBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_RusticDresser</li>
+                                    <li>DankPyon_RoyalDresser</li>
+                                    <li>DankPyon_RusticChest</li>
+                                    <li>DankPyon_MetalStrongbox</li>
+                                    <li>DankPyon_RoyalChest</li>
+                                    <li>DankPyon_RusticCloset</li>
+                                    <li>DankPyon_RoyalCloset</li>
+                                </value>
+                            </li>
+
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_RusticBookshelf</li>
+                                    <li>DankPyon_RoyalBookshelf</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Science Never Stops: Ambition of the Cosmic ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Science Never Stops: Ambition of the Cosmic</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SNS_Linkable_Unlocker_GenI</li>
+                                    <li>SNS_Linkable_Unlocker_GenII</li>
+                                    <li>SNS_Linkable_Unlocker_GenIII</li>
+                                    <li>SNS_Linkable_Unlocker_POC</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Sparkling Worlds - Full Mod ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Sparkling Worlds - Full Mod</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ComputingSystemSW</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_PrefabBed | RE_PrefabDoubleBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukFurnitureAA</li><!-- UN-Furniture -->
+                                    <li>SadjuukFurnitureAB</li><!-- UN-Furniture -->
+                                    <li>SadjuukFurnitureAC</li><!-- UN-Furniture -->
+                                    <li>SadjuukFurnitureBA</li><!-- UN-Furniture -->
+                                    <li>SadjuukFurnitureBB</li><!-- UN-Furniture -->
+                                    <li>SadjuukFurnitureBC</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+                            
+                            <!-- RE_PrefabMedicalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukResearchBA</li><!-- UN-Furniture -->
+                                    <li>SadjuukResearchBB</li><!-- UN-Furniture -->
+                                    <li>SadjuukResearchBC</li><!-- UN-Furniture -->
+                                    <li>SadjuukResearchBD</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                 <!-- ========== Vanilla Furniture Expanded ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Misc_FileCabinet</li><!-- Vanilla Furniture Expanded -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RE_SpacerTechResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_ResearchGoods</li><!-- WorkBench Support - More Linkable Facilities - -->
+                                    <li>Link_ResearchBoost</li><!-- WorkBench Support - More Linkable Facilities - -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
 </Patch>
