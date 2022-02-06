@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- ========== Fast regen 1.3 ========== -->
+    <!--
+        ========== Fast regen 1.3 ==========
+
+        HerbBede | MedBed | IIMed
+        AnimalMedic | AnimalMedicRobo
+    -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Fast regen 1.3</li>
@@ -10,6 +15,60 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+                <!-- AnimalMedic -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="AnimalMedic"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AnimalMedic"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                    <li>VitalsMonitor</li>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName = "AnimalMedic"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "AnimalMedic"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- AnimalMedicRobo -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="AnimalMedicRobo"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AnimalMedicRobo"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                    <li>VitalsMonitor</li>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName = "AnimalMedicRobo"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "AnimalMedicRobo"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
                 <!-- ========== Ideology [Official DLC] ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -53,6 +112,22 @@
                                     <li>sd_medicaddons_spacer_surg_lamp</li>
                                 </value>
                             </li>
+
+                            <!-- AnimalMedic | AnimalMedicRobo -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>sd_medicaddons_medieval_surg_washpan</li>
+                                    <li>sd_medicaddons_medieval_surg_instruments</li>
+                                    <li>sd_medicaddons_medieval_surg_lamp</li>
+                                    <li>sd_medicaddons_industrial_surg_instruments</li>
+                                    <li>sd_medicaddons_industrial_surg_lamp</li>
+                                    <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                                    <li>sd_medicaddons_spacer_surg_instruments</li>
+                                    <li>sd_medicaddons_spacer_surg_lamp</li>
+                                </value>
+                            </li>
                         </operations>
                     </match>
                 </li>
@@ -70,6 +145,25 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>IV_Blood</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic</li><!-- Medical IVs -->
+                                    <li>IV_Blood_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Multi_Electric</li><!-- Medical IVs -->
+                                </value>
+                            </li>
+
+                            <!-- AnimalMedic | AnimalMedicRobo -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>IV_Blood</li><!-- Medical IVs -->
                                     <li>IV_Nutrition</li><!-- Medical IVs -->
@@ -105,6 +199,15 @@
                                     <li>MS_DStand</li><!-- Medical Supplements -->
                                 </value>
                             </li>
+
+                            <!-- AnimalMedic | AnimalMedicRobo -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>MS_DStand</li><!-- Medical Supplements -->
+                                </value>
+                            </li>
                         </operations>
                     </match>
                 </li>
@@ -129,6 +232,18 @@
                                     <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
                                 </value>
                             </li>
+
+                            <!-- AnimalMedic | AnimalMedicRobo -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
                         </operations>
                     </match>
                 </li>
@@ -146,6 +261,16 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Facility_VitalsCentre</li>
+                                    <li>Facility_IVDrip</li>
+                                </value>
+                            </li>
+
+                            <!-- AnimalMedic | AnimalMedicRobo -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Facility_VitalsCentre</li>
                                     <li>Facility_IVDrip</li>
