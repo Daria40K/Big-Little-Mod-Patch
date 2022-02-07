@@ -81,6 +81,15 @@
                                     <li>DankPyon_RoyalCloset</li><!-- Medieval Overhaul -->
                                 </value>
                             </li>
+
+                            <!-- Gasconverter | MechaLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="Gasconverter" or defName="MechaLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
                         </operations>
                     </match>
                 </li>
@@ -153,6 +162,18 @@
                                     <li>SadjuukFurnitureBA</li><!-- UN-Furniture -->
                                     <li>SadjuukFurnitureBB</li><!-- UN-Furniture -->
                                     <li>SadjuukFurnitureBC</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+
+                            <!-- Gasconverter | MechaLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="Gasconverter" or defName="MechaLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
                                 </value>
                             </li>
                         </operations>

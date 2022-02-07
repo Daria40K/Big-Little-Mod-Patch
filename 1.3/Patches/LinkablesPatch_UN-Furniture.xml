@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!-- ========== UN-Furniture (Continued) ========== -->
+	<!--
+        ========== UN-Furniture (Continued) ==========
+
+        SadjuukBedBaseA | SadjuukBedBaseB
+        SadjuukSurgeryBaseB
+        SadjuukResearchAB | SadjuukResearchAC
+    -->
     <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>UN-Furniture (Continued)</li>

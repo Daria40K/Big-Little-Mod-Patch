@@ -199,6 +199,21 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
+                            <!-- DankPyon_RoyalTudorBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>RGK_Dresser</li><!-- GloomyFurniture -->
+                                    <li>WardrobeA</li><!-- GloomyFurniture -->
+                                    <li>WardrobeB</li><!-- GloomyFurniture -->
+                                    <li>GL_Teddy</li><!-- GloomyFurniture -->
+                                    <li>RGK_EndTable</li><!-- GloomyFurniture -->
+                                    <li>RGK_EndTableWithLamp</li><!-- GloomyFurniture -->
+                                    <li>RGK_EndTableWithLampE</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+
                             <!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
