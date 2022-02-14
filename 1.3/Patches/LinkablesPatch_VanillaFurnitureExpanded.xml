@@ -10,55 +10,55 @@
 			<success>Always</success>
 			<operations>
 				<!-- ========== GloomyFurniture ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>GloomyFurniture</li>
-                    </mods>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture</li>
+					</mods>
 
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
-                            <li Class="PatchOperationAdd">
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
+							<li Class="PatchOperationAdd">
 								<success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>RGK_Dresser</li><!-- GloomyFurniture -->
-                                    <li>WardrobeA</li><!-- GloomyFurniture -->
-                                    <li>WardrobeB</li><!-- GloomyFurniture -->
-                                    <li>GL_Teddy</li><!-- GloomyFurniture -->
-                                    <li>RGK_EndTable</li><!-- GloomyFurniture -->
-                                    <li>RGK_EndTableWithLamp</li><!-- GloomyFurniture -->
-                                    <li>RGK_EndTableWithLampE</li><!-- GloomyFurniture -->
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RGK_Dresser</li>
+									<li>WardrobeA</li>
+									<li>WardrobeB</li>
+									<li>GL_Teddy</li>
+									<li>RGK_EndTable</li>
+									<li>RGK_EndTableWithLamp</li>
+									<li>RGK_EndTableWithLampE</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Medieval Overhaul</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
 							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
-                            <li Class="PatchOperationAdd">
+							<li Class="PatchOperationAdd">
 								<success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-									<li>DankPyon_RusticEndTable</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalEndTable</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticDresser</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalDresser</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticChest</li><!-- Medieval Overhaul -->
-									<li>DankPyon_MetalStrongbox</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalChest</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticCloset</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalCloset</li><!-- Medieval Overhaul -->
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RusticDresser</li>
+									<li>DankPyon_RoyalDresser</li>
+									<li>DankPyon_RusticChest</li>
+									<li>DankPyon_MetalStrongbox</li>
+									<li>DankPyon_RoyalChest</li>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RoyalCloset</li>
 								</value>
 							</li>
 						</operations>
@@ -70,21 +70,21 @@
 					<mods>
 						<li>Rim-Effect: Core</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
 							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
-                            <li Class="PatchOperationAdd">
+							<li Class="PatchOperationAdd">
 								<success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-									<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RE_PrefabDresser</li>
+									<li>RE_PrefabEndTable</li>
+									<li>RE_PrefabEndTableWithLamp</li>
+									<li>RE_PrefabBedsideTable</li>
+									<li>RE_PrefabBedsideTableLamp</li>
+									<li>RE_PrefabWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -96,17 +96,39 @@
 					<mods>
 						<li>RimLife Expansion Furniture</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
 							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
-                            <li Class="PatchOperationAdd">
+							<li Class="PatchOperationAdd">
 								<success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-									<li>RLE_KazariKatana</li><!-- RimLife Expansion Furniture -->
-									<li>RLE_Kouro</li><!-- RimLife Expansion Furniture -->
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_KazariKatana</li>
+									<li>RLE_Kouro</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== StuffedDoll ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>StuffedDoll</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>StuffedDollSmall</li>
+									<li>StuffedDollLarge</li>
 								</value>
 							</li>
 						</operations>
@@ -118,27 +140,27 @@
 					<mods>
 						<li>UN-Furniture (Continued)</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
 							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
-                            <li Class="PatchOperationAdd">
+							<li Class="PatchOperationAdd">
 								<success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-									<li>SadjuukFurnitureAA</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureAB</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureAC</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureBA</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureBB</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureBC</li><!-- UN-Furniture -->
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
 								</value>
 							</li>
 						</operations>
 					</match>
 				</li>
-            </operations>
-        </match>
-    </Operation>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

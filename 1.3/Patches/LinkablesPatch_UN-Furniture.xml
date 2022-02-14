@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<!--
-        ========== UN-Furniture (Continued) ==========
+		========== UN-Furniture (Continued) ==========
 
-        SadjuukBedBaseA | SadjuukBedBaseB
-        SadjuukSurgeryBaseB
-        SadjuukResearchAB | SadjuukResearchAC
-    -->
-    <Operation Class="PatchOperationFindMod">
+		SadjuukBedBaseA | SadjuukBedBaseB
+		SadjuukSurgeryBaseB
+		SadjuukResearchAB | SadjuukResearchAC
+	-->
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>UN-Furniture (Continued)</li>
 		</mods>
@@ -38,7 +38,7 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
+									<li>SleepAccelerator</li>
 								</value>
 							</li>
 
@@ -47,7 +47,7 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
+									<li>SleepAccelerator</li>
 								</value>
 							</li>
 						</operations>
@@ -55,75 +55,75 @@
 				</li>
 
 				<!-- ========== AI Uplifting Assistant ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>AI Uplifting Assistant</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>AIUpliftAssistantAUA</li><!-- AI Uplifting Assistant -->
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>AI Uplifting Assistant</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AIUpliftAssistantAUA</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== Clockwork And Steam ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Clockwork And Steam</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukResearchAB | SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>ElectromechanicalComputer</li><!-- Clockwork And Steam -->
-                                    <li>AnalyticalStack</li><!-- Clockwork And Steam -->
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Clockwork And Steam</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAB | SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ElectromechanicalComputer</li>
+									<li>AnalyticalStack</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== Eccentric Tech - Core ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Eccentric Tech - Core</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>EccentricAuroraCore</li><!-- Eccentric Tech - Core -->
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Eccentric Tech - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EccentricAuroraCore</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== GloomyFurniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>GloomyFurniture</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
@@ -132,114 +132,114 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>RGK_Dresser</li><!-- GloomyFurniture -->
-									<li>WardrobeA</li><!-- GloomyFurniture -->
-									<li>WardrobeB</li><!-- GloomyFurniture -->
-									<li>GL_Teddy</li><!-- GloomyFurniture -->
-									<li>RGK_EndTable</li><!-- GloomyFurniture -->
-									<li>RGK_EndTableWithLamp</li><!-- GloomyFurniture -->
-									<li>RGK_EndTableWithLampE</li><!-- GloomyFurniture -->
+									<li>RGK_Dresser</li>
+									<li>WardrobeA</li>
+									<li>WardrobeB</li>
+									<li>GL_Teddy</li>
+									<li>RGK_EndTable</li>
+									<li>RGK_EndTableWithLamp</li>
+									<li>RGK_EndTableWithLampE</li>
 								</value>
 							</li>
 
 							<!-- SadjuukResearchAB | SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>GL_Bookshelf</li><!-- GloomyFurniture -->
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Bookshelf</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
 
 				<!-- ========== [sd] medicaddons (unofficial) ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>[sd] medicaddons (unofficial)</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukSurgeryBaseB -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-                                    <li>sd_medicaddons_medieval_surg_washpan</li>
-                                    <li>sd_medicaddons_medieval_surg_instruments</li>
-                                    <li>sd_medicaddons_medieval_surg_lamp</li>
-                                    <li>sd_medicaddons_industrial_surg_instruments</li>
-                                    <li>sd_medicaddons_industrial_surg_lamp</li>
-                                    <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
-                                    <li>sd_medicaddons_spacer_surg_instruments</li>
-                                    <li>sd_medicaddons_spacer_surg_lamp</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[sd] medicaddons (unofficial)</li>
+					</mods>
 
-                <!-- ========== Medical IVs ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Medical IVs</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukSurgeryBaseB -->
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukSurgeryBaseB -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>IV_Blood</li><!-- Medical IVs -->
-                                    <li>IV_Nutrition</li><!-- Medical IVs -->
-                                    <li>IV_Painkiller</li><!-- Medical IVs -->
-                                    <li>IV_Antibiotics</li><!-- Medical IVs -->
-                                    <li>IV_Anesthetic</li><!-- Medical IVs -->
-                                    <li>IV_Blood_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Nutrition_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Painkiller_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Antibiotics_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Anesthetic_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Multi_Electric</li><!-- Medical IVs -->
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+									<li>sd_medicaddons_medieval_surg_washpan</li>
+									<li>sd_medicaddons_medieval_surg_instruments</li>
+									<li>sd_medicaddons_medieval_surg_lamp</li>
+									<li>sd_medicaddons_industrial_surg_instruments</li>
+									<li>sd_medicaddons_industrial_surg_lamp</li>
+									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+									<li>sd_medicaddons_spacer_surg_instruments</li>
+									<li>sd_medicaddons_spacer_surg_lamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
-                <!-- ========== Medical Supplements ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Medical Supplements</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukSurgeryBaseB -->
+				<!-- ========== Medical IVs ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IVs</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukSurgeryBaseB -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>MS_DStand</li><!-- Medical Supplements -->
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+									<li>IV_Blood</li>
+									<li>IV_Nutrition</li>
+									<li>IV_Painkiller</li>
+									<li>IV_Antibiotics</li>
+									<li>IV_Anesthetic</li>
+									<li>IV_Blood_Electric</li>
+									<li>IV_Nutrition_Electric</li>
+									<li>IV_Painkiller_Electric</li>
+									<li>IV_Antibiotics_Electric</li>
+									<li>IV_Anesthetic_Electric</li>
+									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Medical Supplements ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical Supplements</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukSurgeryBaseB -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MS_DStand</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Medieval Overhaul</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
@@ -248,27 +248,27 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>DankPyon_RusticEndTable</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalEndTable</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticDresser</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalDresser</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticChest</li><!-- Medieval Overhaul -->
-									<li>DankPyon_MetalStrongbox</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalChest</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticCloset</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalCloset</li><!-- Medieval Overhaul -->
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RusticDresser</li>
+									<li>DankPyon_RoyalDresser</li>
+									<li>DankPyon_RusticChest</li>
+									<li>DankPyon_MetalStrongbox</li>
+									<li>DankPyon_RoyalChest</li>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RoyalCloset</li>
 								</value>
 							</li>
 
 							<!-- SadjuukResearchAB | SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>DankPyon_RusticBookshelf</li>
-                                    <li>DankPyon_RoyalBookshelf</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RoyalBookshelf</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -278,7 +278,7 @@
 					<mods>
 						<li>Rim-Effect: Core</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
@@ -287,12 +287,12 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
+									<li>RE_PrefabDresser</li>
+									<li>RE_PrefabEndTable</li>
+									<li>RE_PrefabEndTableWithLamp</li>
+									<li>RE_PrefabBedsideTable</li>
+									<li>RE_PrefabBedsideTableLamp</li>
+									<li>RE_PrefabWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -300,56 +300,56 @@
 				</li>
 
 				<!-- ========== Science Never Stops: Ambition of the Cosmic ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Science Never Stops: Ambition of the Cosmic</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>SNS_Linkable_Unlocker_GenI</li>
-                                    <li>SNS_Linkable_Unlocker_GenII</li>
-                                    <li>SNS_Linkable_Unlocker_GenIII</li>
-                                    <li>SNS_Linkable_Unlocker_POC</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
-
-				<!-- ========== Sparkling Worlds - Full Mod ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Sparkling Worlds - Full Mod</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>ComputingSystemSW</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
-
-				<!-- ========== Vanilla Furniture Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Vanilla Furniture Expanded</li>
+						<li>Science Never Stops: Ambition of the Cosmic</li>
 					</mods>
-			
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unlocker_GenI</li>
+									<li>SNS_Linkable_Unlocker_GenII</li>
+									<li>SNS_Linkable_Unlocker_GenIII</li>
+									<li>SNS_Linkable_Unlocker_POC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Sparkling Worlds - Full Mod ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Full Mod</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== StuffedDoll ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>StuffedDoll</li>
+					</mods>
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
@@ -358,46 +358,68 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
-									<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
-									<li>Table_LightEndTable</li><!-- Vanilla Furniture Expanded -->
-									<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+									<li>StuffedDollSmall</li>
+									<li>StuffedDollLarge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_RoyalDresser</li>
+									<li>Table_RoyalEndTable</li>
+									<li>Table_LightEndTable</li>
+									<li>Table_Wardrobe</li>
 								</value>
 							</li>
 
 							<!-- SadjuukResearchAB | SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Misc_FileCabinet</li><!-- Vanilla Furniture Expanded -->
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
 
 				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Vanilla Furniture Expanded - Medical Module</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukSurgeryBaseB -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Medical Module</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukSurgeryBaseB -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>Facility_VitalsCentre</li>
-                                    <li>Facility_IVDrip</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+									<li>Facility_VitalsCentre</li>
+									<li>Facility_IVDrip</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
 				<li Class="PatchOperationFindMod">
@@ -413,8 +435,8 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
-									<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+									<li>Table_IlluminatedEndTable</li>
+									<li>Table_IlluminatedDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -422,26 +444,26 @@
 				</li>
 
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>WorkBench Support - More Linkable Facilities -</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- SadjuukResearchAB | SadjuukResearchAC -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Link_ResearchGoods</li><!-- WorkBench Support - More Linkable Facilities - -->
-                                    <li>Link_ResearchBoost</li><!-- WorkBench Support - More Linkable Facilities - -->
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
-            </operations>
-        </match>
-    </Operation>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAB | SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_ResearchGoods</li>
+									<li>Link_ResearchBoost</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>
