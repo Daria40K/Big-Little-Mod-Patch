@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ========== [LTS]Furnishing ==========
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[LTS]Furnishing</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Ideology [Official DLC] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ideology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- LTS_HangingBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SleepAccelerator</li>									<!-- Ideology [Official DLC] -->
+								</value>
+							</li>
+
+							<!-- ========== GloomyFurniture ========== -->
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>GloomyFurniture</li>
+								</mods>
+
+								<match Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<!-- LTS_HangingBed -->
+										<li Class="PatchOperationAdd">
+											<success>Always</success>
+											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+											<value>
+												<li>RGK_Dresser</li>												<!-- GloomyFurniture -->
+												<li>WardrobeA</li>												<!-- GloomyFurniture -->
+												<li>WardrobeB</li>												<!-- GloomyFurniture -->
+												<li>GL_Teddy</li>												<!-- GloomyFurniture -->
+												<li>RGK_EndTable</li>												<!-- GloomyFurniture -->
+												<li>RGK_EndTableWithLamp</li>												<!-- GloomyFurniture -->
+												<li>RGK_EndTableWithLampE</li>												<!-- GloomyFurniture -->
+											</value>
+										</li>
+									</operations>
+								</match>
+							</li>
+
+							<!-- ========== Medieval Overhaul ========== -->
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>Medieval Overhaul</li>
+								</mods>
+
+								<match Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<!-- LTS_HangingBed -->
+										<li Class="PatchOperationAdd">
+											<success>Always</success>
+											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+											<value>
+												<li>DankPyon_RusticDresser</li>
+												<li>DankPyon_RoyalDresser</li>
+												<li>DankPyon_RusticChest</li>
+												<li>DankPyon_MetalStrongbox</li>
+												<li>DankPyon_RoyalChest</li>
+												<li>DankPyon_RusticCloset</li>
+												<li>DankPyon_RoyalCloset</li>
+											</value>
+										</li>
+									</operations>
+								</match>
+							</li>
+
+							<!-- ========== Rim-Effect: Core ========== -->
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>Rim-Effect: Core</li>
+								</mods>
+
+								<match Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<!-- LTS_HangingBed -->
+										<li Class="PatchOperationAdd">
+											<success>Always</success>
+											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+											<value>
+												<li>RE_PrefabDresser</li>												<!-- Rim-Effect: Core -->
+												<li>RE_PrefabEndTable</li>												<!-- Rim-Effect: Core -->
+												<li>RE_PrefabEndTableWithLamp</li>												<!-- Rim-Effect: Core -->
+												<li>RE_PrefabBedsideTable</li>												<!-- Rim-Effect: Core -->
+												<li>RE_PrefabBedsideTableLamp</li>												<!-- Rim-Effect: Core -->
+												<li>RE_PrefabWardrobe</li>												<!-- Rim-Effect: Core -->
+											</value>
+										</li>
+									</operations>
+								</match>
+							</li>
+
+							<!-- ========== Vanilla Furniture Expanded ========== -->
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>Vanilla Furniture Expanded</li>
+								</mods>
+
+								<match Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<!-- LTS_HangingBed -->
+										<li Class="PatchOperationAdd">
+											<success>Always</success>
+											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+											<value>
+												<li>Table_RoyalDresser</li>												<!-- Vanilla Furniture Expanded -->
+												<li>Table_RoyalEndTable</li>												<!-- Vanilla Furniture Expanded -->
+												<li>Table_LightEndTable</li>												<!-- Vanilla Furniture Expanded -->
+												<li>Table_Wardrobe</li>												<!-- Vanilla Furniture Expanded -->
+											</value>
+										</li>
+									</operations>
+								</match>
+							</li>
+
+							<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>Vanilla Furniture Expanded - Spacer Module</li>
+								</mods>
+
+								<match Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<!-- LTS_HangingBed -->
+										<li Class="PatchOperationAdd">
+											<success>Always</success>
+											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+											<value>
+												<li>Table_IlluminatedEndTable</li>												<!-- Vanilla Furniture Expanded - Spacer Module -->
+												<li>Table_IlluminatedDresser</li>												<!-- Vanilla Furniture Expanded - Spacer Module -->
+											</value>
+										</li>
+									</operations>
+								</match>
+							</li>
+
+
+							<!-- ========== UN-Furniture ========== -->
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>UN-Furniture (Continued)</li>
+								</mods>
+
+								<match Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<!-- LTS_HangingBed -->
+										<li Class="PatchOperationAdd">
+											<success>Always</success>
+											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+											<value>
+												<li>SadjuukFurnitureAA</li>												<!-- UN-Furniture -->
+												<li>SadjuukFurnitureAB</li>												<!-- UN-Furniture -->
+												<li>SadjuukFurnitureAC</li>												<!-- UN-Furniture -->
+												<li>SadjuukFurnitureBA</li>												<!-- UN-Furniture -->
+												<li>SadjuukFurnitureBB</li>												<!-- UN-Furniture -->
+												<li>SadjuukFurnitureBC</li>												<!-- UN-Furniture -->
+											</value>
+										</li>
+									</operations>
+								</match>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
