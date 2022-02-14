@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ========== [LTS]Furnishing ==========
+<!--
+    ========== RIMkea ==========
+
+    SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[LTS]Furnishing</li>
+			<li>RIMkea</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -18,10 +21,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -36,11 +39,11 @@
 								<match Class="PatchOperationSequence">
 									<success>Always</success>
 									<operations>
-										<!-- LTS_HangingBed -->
-										<li Class="PatchOperationAdd">
-											<success>Always</success>
-											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-											<value>
+										<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							            <li Class="PatchOperationAdd">
+								            <success>Always</success>
+								            <xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								            <value>
 												<li>RGK_Dresser</li>
 												<li>WardrobeA</li>
 												<li>WardrobeB</li>
@@ -63,11 +66,11 @@
 								<match Class="PatchOperationSequence">
 									<success>Always</success>
 									<operations>
-										<!-- LTS_HangingBed -->
-										<li Class="PatchOperationAdd">
-											<success>Always</success>
-											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-											<value>
+										<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							            <li Class="PatchOperationAdd">
+								            <success>Always</success>
+								            <xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								            <value>
 												<li>DankPyon_RusticDresser</li>
 												<li>DankPyon_RoyalDresser</li>
 												<li>DankPyon_RusticChest</li>
@@ -90,11 +93,11 @@
 								<match Class="PatchOperationSequence">
 									<success>Always</success>
 									<operations>
-										<!-- LTS_HangingBed -->
-										<li Class="PatchOperationAdd">
-											<success>Always</success>
-											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-											<value>
+										<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							            <li Class="PatchOperationAdd">
+								            <success>Always</success>
+								            <xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								            <value>
 												<li>RE_PrefabDresser</li>
 												<li>RE_PrefabEndTable</li>
 												<li>RE_PrefabEndTableWithLamp</li>
@@ -116,11 +119,11 @@
 								<match Class="PatchOperationSequence">
 									<success>Always</success>
 									<operations>
-										<!-- LTS_HangingBed -->
-										<li Class="PatchOperationAdd">
-											<success>Always</success>
-											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-											<value>
+										<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							            <li Class="PatchOperationAdd">
+								            <success>Always</success>
+								            <xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								            <value>
 												<li>RLE_KazariKatana</li><!-- RimLife Expansion Furniture -->
 												<li>RLE_Kouro</li><!-- RimLife Expansion Furniture -->
 											</value>
@@ -138,11 +141,11 @@
 								<match Class="PatchOperationSequence">
 									<success>Always</success>
 									<operations>
-										<!-- LTS_HangingBed -->
-										<li Class="PatchOperationAdd">
-											<success>Always</success>
-											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-											<value>
+										<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							            <li Class="PatchOperationAdd">
+								            <success>Always</success>
+								            <xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								            <value>
 												<li>StuffedDollSmall</li>
 												<li>StuffedDollLarge</li>
 											</value>
@@ -160,11 +163,11 @@
 								<match Class="PatchOperationSequence">
 									<success>Always</success>
 									<operations>
-										<!-- LTS_HangingBed -->
-										<li Class="PatchOperationAdd">
-											<success>Always</success>
-											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-											<value>
+										<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							            <li Class="PatchOperationAdd">
+								            <success>Always</success>
+								            <xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								            <value>
 												<li>Table_RoyalDresser</li>
 												<li>Table_RoyalEndTable</li>
 												<li>Table_LightEndTable</li>
@@ -184,11 +187,11 @@
 								<match Class="PatchOperationSequence">
 									<success>Always</success>
 									<operations>
-										<!-- LTS_HangingBed -->
-										<li Class="PatchOperationAdd">
-											<success>Always</success>
-											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-											<value>
+										<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							            <li Class="PatchOperationAdd">
+								            <success>Always</success>
+								            <xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								            <value>
 												<li>Table_IlluminatedEndTable</li>
 												<li>Table_IlluminatedDresser</li>
 											</value>
@@ -206,11 +209,11 @@
 								<match Class="PatchOperationSequence">
 									<success>Always</success>
 									<operations>
-										<!-- LTS_HangingBed -->
-										<li Class="PatchOperationAdd">
-											<success>Always</success>
-											<xpath>/Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-											<value>
+										<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							            <li Class="PatchOperationAdd">
+								            <success>Always</success>
+								            <xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								            <value>
 												<li>SadjuukFurnitureAA</li>
 												<li>SadjuukFurnitureAB</li>
 												<li>SadjuukFurnitureAC</li>

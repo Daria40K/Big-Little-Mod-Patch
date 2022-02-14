@@ -110,6 +110,28 @@
 								</match>
 							</li>
 
+							<!-- ========== RimLife Expansion Furnitures ========== -->
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>RimLife Expansion Furniture</li>
+								</mods>
+
+								<match Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<!-- Bed_AdvBed | Bed_AdvDoubleBed -->
+										<li Class="PatchOperationAdd">
+											<success>Always</success>
+											<xpath>/Defs/ThingDef[defName="Bed_AdvBed" or defName="Bed_AdvDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+											<value>
+												<li>RLE_KazariKatana</li><!-- RimLife Expansion Furniture -->
+												<li>RLE_Kouro</li><!-- RimLife Expansion Furniture -->
+											</value>
+										</li>
+									</operations>
+								</match>
+							</li>
+
 							<!-- ========== StuffedDoll ========== -->
 							<li Class="PatchOperationFindMod">
 								<mods>
