@@ -379,6 +379,27 @@
 					</match>
 				</li>
 
+                <!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Factions Expanded - Ancients</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HospitalBedVault -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>VFEA_AncientVitalsMonitor</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
                 <!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -390,6 +411,7 @@
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
+                                <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Facility_VitalsCentre</li>
@@ -411,6 +433,7 @@
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
+                                <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>

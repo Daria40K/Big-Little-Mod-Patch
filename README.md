@@ -37,6 +37,7 @@
 - [UN-Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2019774854) (Furniture, Production & Research links)
 - [Vanilla Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519) (Production links)
 - [Vanilla Cooking Expanded - Sushi](https://steamcommunity.com/sharedfiles/filedetails/?id=2158539170) (Production links)
+- [Vanilla Factions Expanded - Ancients](https://steamcommunity.com/sharedfiles/filedetails/?id=2654846754) (Furniture & Production links)
 - [Vanilla Furniture Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143) (Furniture links)
 - [Vanilla Furniture Expanded - Medical Module](https://steamcommunity.com/sharedfiles/filedetails/?id=1718191613) (Furniture links)
 - [Vanilla Furniture Expanded - Production](https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632) (Production links)
