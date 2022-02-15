@@ -182,10 +182,10 @@
                     </match>
                 </li>
 
-                <!-- ========== Medical Supplements ========== -->
+                <!-- ========== Medical Supplements (Continued) ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
-                        <li>Medical Supplements</li>
+                        <li>Medical Supplements (Continued)</li>
                     </mods>
             
                     <match Class="PatchOperationSequence">
@@ -195,7 +195,7 @@
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="VFEA_AncientCryptosleepSuspender"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>MS_DStand</li><!-- Medical Supplements -->
+                                    <li>MS_DStand</li><!-- Medical Supplements (Continued) -->
                                 </value>
                             </li>
                         </operations>

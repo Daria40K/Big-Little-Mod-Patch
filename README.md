@@ -8,6 +8,7 @@
 - [Clockwork And Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1736127702) (Production & Research links - partial support)
 - [Comigo's Adequate Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2553865508) (Production links)
 - [Comigo's Nutrition](https://steamcommunity.com/sharedfiles/filedetails/?id=2546863371) (Production links)
+- [CTS - Complete Tech Solutions (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2291310971) (Furniture links)
 - [Eccentric Tech - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2552623545) (Research links)
 - [Fast regen 1.3](https://steamcommunity.com/sharedfiles/filedetails/?id=943925765) (Furniture links)
 - [Glitter Tech](https://steamcommunity.com/sharedfiles/filedetails/?id=2558099206) (Production links)

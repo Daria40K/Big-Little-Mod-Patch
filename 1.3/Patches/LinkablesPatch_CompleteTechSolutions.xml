@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--
+        ========== CTS - Complete Tech Solutions (Continued) ==========
+
+        CTSHiTechHospitalBed
+
+        CTSAdvancedMedicineLab
+    -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>CTS - Complete Tech Solutions (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- CTSAdvancedMedicineLab -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>/Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                    <li>ToolCabinet</li>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName = "CTSAdvancedMedicineLab"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>/Defs/ThingDef[defName = "CTSAdvancedMedicineLab"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- ========== Ideology [Official DLC] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ideology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== [sd] medicaddons (unofficial) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[sd] medicaddons (unofficial)</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>sd_medicaddons_medieval_surg_washpan</li>
+                                    <li>sd_medicaddons_medieval_surg_instruments</li>
+                                    <li>sd_medicaddons_medieval_surg_lamp</li>
+                                    <li>sd_medicaddons_industrial_surg_instruments</li>
+                                    <li>sd_medicaddons_industrial_surg_lamp</li>
+                                    <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                                    <li>sd_medicaddons_spacer_surg_instruments</li>
+                                    <li>sd_medicaddons_spacer_surg_lamp</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical IVs ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical IVs</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>IV_Blood</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic</li><!-- Medical IVs -->
+                                    <li>IV_Blood_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Multi_Electric</li><!-- Medical IVs -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical Supplements (Continued) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical Supplements (Continued)</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>MS_DStand</li><!-- Medical Supplements -->
+                                </value>
+                            </li>
+
+                            <!-- CTSAdvancedMedicineLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DrugCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                 <!-- ========== Medieval Overhaul ========== -->
+                 <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSAdvancedMedicineLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Factions Expanded - Ancients</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>VFEA_AncientVitalsMonitor</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Medical Module</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>Facility_VitalsCentre</li>
+                                    <li>Facility_IVDrip</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSAdvancedMedicineLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_DrugCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vault-Tec - Handy things for your vault!</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>Vaultmedical</li>
+                                    <li>Vaultmedicallamp</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CTSAdvancedMedicineLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_DrugLabGoods</li>
+                                    <li>Link_DrugLabBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

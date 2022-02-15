@@ -88,6 +88,25 @@
 					</match>
 				</li>
 
+                <!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>CTS - Complete Tech Solutions (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== [sd] medicaddons (unofficial) ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -182,10 +201,10 @@
                     </match>
                 </li>
 
-                <!-- ========== Medical Supplements ========== -->
+                <!-- ========== Medical Supplements (Continued) ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
-                        <li>Medical Supplements</li>
+                        <li>Medical Supplements (Continued)</li>
                     </mods>
             
                     <match Class="PatchOperationSequence">
@@ -196,7 +215,7 @@
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>MS_DStand</li><!-- Medical Supplements -->
+                                    <li>MS_DStand</li><!-- Medical Supplements (Continued) -->
                                 </value>
                             </li>
 
@@ -205,7 +224,7 @@
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>MS_DStand</li><!-- Medical Supplements -->
+                                    <li>MS_DStand</li><!-- Medical Supplements (Continued) -->
                                 </value>
                             </li>
                         </operations>
