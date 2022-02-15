@@ -247,6 +247,33 @@
 						</operations>
 					</match>
 				</li>
+
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>vt_curio</li>
+									<li>vt_EndTable</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxcommode</li>
+									<li>VaultWardrobeB</li>
+									<li>VaultWardrobeA</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

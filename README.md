@@ -3,8 +3,8 @@
 ![](https://github.com/dave40k/Big-Little-Mod-Patch/blob/main/About/Preview.png)
 
 ## Mod Support
-- [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
 - [Advanced Electric Stove](https://steamcommunity.com/sharedfiles/filedetails/?id=2054487688) (Production links)
+- [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
 - [Clockwork And Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1736127702) (Production & Research links - partial support)
 - [Comigo's Adequate Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2553865508) (Production links)
 - [Comigo's Nutrition](https://steamcommunity.com/sharedfiles/filedetails/?id=2546863371) (Production links)
@@ -22,6 +22,7 @@
 - [Medieval Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067) (Furniture, Production & Research links)
 - [More Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2565302299) (Furniture links)
 - [More Linkables](https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207) (Production & Research links)
+- [Modern Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2430249387) (Furniture links)
 - [Rim-Effect: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2479560240) (Research links)
 - [Rim-Effect: Asari and Reapers](https://steamcommunity.com/sharedfiles/filedetails/?id=2651149728) (Research links)
 - [Rim-Effect: Extended Cut](https://steamcommunity.com/sharedfiles/filedetails/?id=2479492267) (Production links)
@@ -40,4 +41,5 @@
 - [Vanilla Furniture Expanded - Medical Module](https://steamcommunity.com/sharedfiles/filedetails/?id=1718191613) (Furniture links)
 - [Vanilla Furniture Expanded - Production](https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632) (Production links)
 - [Vanilla Furniture Expanded - Spacer Module](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079) (Furniture links)
+- [Vault-Tec - Handy things for your vault!](https://steamcommunity.com/sharedfiles/filedetails/?id=1888778429) (Furniture & Production links)
 - [WorkBench Support - More Linkable Facilities -](https://steamcommunity.com/sharedfiles/filedetails/?id=2238610692) (Production & Research links)

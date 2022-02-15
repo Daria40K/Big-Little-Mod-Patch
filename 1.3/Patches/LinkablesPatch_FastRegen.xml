@@ -81,7 +81,7 @@
                             <li Class="PatchOperationAdd">
                                 <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>SleepAccelerator</li><!-- Ideology [Official DLC] -->
+									<li>SleepAccelerator</li>
 								</value>
 							</li>
 						</operations>
@@ -274,6 +274,38 @@
                                 <value>
                                     <li>Facility_VitalsCentre</li>
                                     <li>Facility_IVDrip</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vault-Tec - Handy things for your vault!</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Vaultmedical</li>
+                                    <li>Vaultmedicallamp</li>
+                                </value>
+                            </li>
+
+                            <!-- AnimalMedic | AnimalMedicRobo -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Vaultmedical</li>
+                                    <li>Vaultmedicallamp</li>
                                 </value>
                             </li>
                         </operations>
