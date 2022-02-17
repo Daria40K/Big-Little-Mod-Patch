@@ -5,6 +5,7 @@
 ## Mod Support
 - [Advanced Electric Stove](https://steamcommunity.com/sharedfiles/filedetails/?id=2054487688) (Production links)
 - [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
+- [Akeron Decorations](https://steamcommunity.com/sharedfiles/filedetails/?id=2755025925) (Furniture & Production links)
 - [Clockwork And Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1736127702) (Production & Research links - partial support)
 - [Comigo's Adequate Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2553865508) (Production links)
 - [Comigo's Nutrition](https://steamcommunity.com/sharedfiles/filedetails/?id=2546863371) (Production links)

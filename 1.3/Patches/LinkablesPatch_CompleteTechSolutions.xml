@@ -64,6 +64,26 @@
 					</match>
 				</li>
 
+                <!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- CTSHiTechHospitalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_RestoringPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== [sd] medicaddons (unofficial) ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
