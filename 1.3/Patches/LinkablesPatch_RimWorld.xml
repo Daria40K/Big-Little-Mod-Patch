@@ -219,10 +219,10 @@
 		</match>
 	</Operation>
 
-    <!-- ========== More Furniture ========== -->
+    <!-- ========== More Furniture (Continued) ========== -->
     <Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>More Furniture</li>
+			<li>More Furniture (Continued)</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -236,6 +236,39 @@
                         <li>Anon2FileCabinet</li><!-- More Furniture -->
                     </value>
                 </li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- ========== [O21] Outland - Core ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[O21] Outland - Core</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- Bed | DoubleBed | RoyalBed -->
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Outland_Dresser</li>
+						<li>Outland_EndTable</li>
+						<li>Outland_EndTableWithLamp</li>
+						<li>Outland_Wardrobe</li>
+					</value>
+				</li>
+
+				<!-- HiTechResearchBench -->
+                <li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>Outland_Bookshelf</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

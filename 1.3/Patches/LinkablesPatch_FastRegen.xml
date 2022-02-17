@@ -98,8 +98,18 @@
 						<operations>
 							<!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
+                                <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+
+                            <!-- AnimalMedic | AnimalMedicRobo -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
 									<li>CTSAdvancedVitalsMonitor</li>
 								</value>
 							</li>

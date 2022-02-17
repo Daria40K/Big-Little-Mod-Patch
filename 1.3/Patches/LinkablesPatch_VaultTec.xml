@@ -286,6 +286,30 @@
                     </match>
                 </li>
 
+                <!-- ========== [O21] Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[O21] Outland - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Dresser</li>
+									<li>Outland_EndTable</li>
+									<li>Outland_EndTableWithLamp</li>
+									<li>Outland_Wardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== Rim-Effect: Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -297,6 +321,7 @@
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
+                                <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
@@ -322,6 +347,7 @@
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
+                                <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
@@ -343,6 +369,7 @@
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
+                                <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
@@ -364,6 +391,7 @@
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
+                                <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
@@ -387,6 +415,7 @@
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
+                                <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_RoyalDresser</li>

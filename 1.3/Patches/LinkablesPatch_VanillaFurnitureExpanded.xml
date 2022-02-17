@@ -86,6 +86,30 @@
 					</match>
 				</li>
 
+				<!-- ========== [O21] Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[O21] Outland - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Dresser</li>
+									<li>Outland_EndTable</li>
+									<li>Outland_EndTableWithLamp</li>
+									<li>Outland_Wardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Rim-Effect: Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

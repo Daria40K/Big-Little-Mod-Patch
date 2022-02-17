@@ -108,6 +108,30 @@
 					</match>
 				</li>
 
+				<!-- ========== [O21] Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[O21] Outland - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Dresser</li>
+									<li>Outland_EndTable</li>
+									<li>Outland_EndTableWithLamp</li>
+									<li>Outland_Wardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Rim-Effect: Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
