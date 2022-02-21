@@ -17,7 +17,7 @@
 - [GloomyFurniture](https://steamcommunity.com/sharedfiles/filedetails/?id=1558635181) (Furniture & Production links)
 - [[sd] Goodnight (Continued)](url=https://steamcommunity.com/sharedfiles/filedetails/?id=2019045154) (Furniture links)
 - [[LTS]Furnishing](https://steamcommunity.com/sharedfiles/filedetails/?id=2567438519) (Furniture links)
-- Ideology [Official DLC]
+- [Ideology [Official DLC]](https://store.steampowered.com/app/1392840/RimWorld__Ideology/)
 - [Life Support (Fan Update)](https://steamcommunity.com/sharedfiles/filedetails/?id=2036610942) (Furniture links)
 - [Mechalit Core v2](https://steamcommunity.com/sharedfiles/filedetails/?id=2659987145) (Furniture links)
 - [[sd] medicaddons (unofficial)](https://steamcommunity.com/sharedfiles/filedetails/?id=2012914831) (Furniture links)
@@ -27,6 +27,7 @@
 - [More Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2565302299) (Furniture links)
 - [More Linkables](https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207) (Production & Research links)
 - [Modern Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2430249387) (Furniture links)
+- [Nanotech Overpower](https://steamcommunity.com/sharedfiles/filedetails/?id=2547371232) (Production links)
 - [[O21] Outland - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2755501685) (Production & Research links)
 - [Rim-Effect: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2479560240) (Research links)
 - [Rim-Effect: Asari and Reapers](https://steamcommunity.com/sharedfiles/filedetails/?id=2651149728) (Research links)

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+		<modNameReadable>Big Little Mod Patch</modNameReadable>
+		<modIdentifier>Daria40K.BigLittleModPatch</modIdentifier>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2710382569</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	
+    <!-- v2.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_0</defName>
+		<assemblyVersion>2.0</assemblyVersion>
+		<content>Rewrote all the patch file to be more targeted patching rather then global patching.|Added Support for OverPowered Gaming, Tiny Workbenchs (Continued) and Vanilla Furniture Expanded - Production</content>
+	</HugsLib.UpdateFeatureDef>
+	
+    <!-- v2.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_1</defName>
+		<assemblyVersion>2.1</assemblyVersion>
+		<content>Added support for Vanilla Cooking Expanded and Vanilla Cooking Expanded - Sushi</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.2 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_2</defName>
+		<assemblyVersion>2.2</assemblyVersion>
+		<content>Added support for Comigo's Adequate Cooking Expanded, Comigo's Nutrition and Glitter Tech</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.3 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_3</defName>
+		<assemblyVersion>2.3</assemblyVersion>
+		<content>Add support for AnimalMedic and AnimalMedicRobo from Fast regen 1.3 to allow medical linkables.</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.4 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_4</defName>
+		<assemblyVersion>2.4</assemblyVersion>
+		<content>Added support for Rimsenal - Core, Rimsenal - Federation Faction Pack and Rimsenal - Feral Faction Pack|Minor support changes</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.4.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_4_1</defName>
+		<assemblyVersion>2.4.1</assemblyVersion>
+		<content>Update About.xml</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.5 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_5</defName>
+		<assemblyVersion>2.5</assemblyVersion>
+		<content>Added support for [LTS]Furnishing</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.6 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_6</defName>
+		<assemblyVersion>2.6</assemblyVersion>
+		<content>Added support for StuffedDoll</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.7 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_7</defName>
+		<assemblyVersion>2.7</assemblyVersion>
+		<content>Added support for RIMkea</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.8 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_8</defName>
+		<assemblyVersion>2.8</assemblyVersion>
+		<content>Added support for Advanced Electric Stove and [sd] Goodnight (Continued)|Update LinkablesPatch_GloomyFurniture.xml and LinkablesPatch_UN-Furniture.xml</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.9 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_9</defName>
+		<assemblyVersion>2.9</assemblyVersion>
+		<content>Added support for Modern Bed and Vault-Tec - Handy things for your vault!|Fixed some xml issues</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.10 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_10</defName>
+		<assemblyVersion>2.10</assemblyVersion>
+		<content>Added support for Vanilla Factions Expanded - Ancients</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.11 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_11</defName>
+		<assemblyVersion>2.11</assemblyVersion>
+		<content>Added support for CTS - Complete Tech Solutions (Continued)</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.12 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_12</defName>
+		<assemblyVersion>2.12</assemblyVersion>
+		<content>Added support for [O21] Outland - Core</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.13 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_13</defName>
+		<assemblyVersion>2.13</assemblyVersion>
+		<content>Added support for Akeron Decorations|Fixed some xml issues</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.14 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_14</defName>
+		<assemblyVersion>2.14</assemblyVersion>
+		<content>Added support for Erin's Japanese Furniture, Life Support (Fan Update) and [1.2, 1.3] Tank Beds (Fast Sleep)</content>
+	</HugsLib.UpdateFeatureDef>
+
+    <!-- v2.15 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_15</defName>
+		<assemblyVersion>2.15</assemblyVersion>
+		<content>Added support for Nanotech Overpower</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>
