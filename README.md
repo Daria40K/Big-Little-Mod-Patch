@@ -27,6 +27,7 @@
 - [More Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2565302299) (Furniture links)
 - [More Linkables](https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207) (Production & Research links)
 - [Modern Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2430249387) (Furniture links)
+- [Moyo-From the depth](https://steamcommunity.com/workshop/filedetails/?id=2182305386) (Production links)
 - [Nanotech Overpower](https://steamcommunity.com/sharedfiles/filedetails/?id=2547371232) (Production links)
 - [[O21] Outland - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2755501685) (Production & Research links)
 - [Rim-Effect: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2479560240) (Research links)

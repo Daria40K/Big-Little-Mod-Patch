@@ -122,6 +122,13 @@
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
 		<defName>BigLittleModPatch_2_15</defName>
 		<assemblyVersion>2.15</assemblyVersion>
-		<content>Added support for Nanotech Overpower</content>
+		<content>Added support for Nanotech Overpower|Added news updated via HugsLib</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.16 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_16</defName>
+		<assemblyVersion>2.16</assemblyVersion>
+		<content>Added support for Moyo-From the depth</content>
 	</HugsLib.UpdateFeatureDef>
 </Defs>
