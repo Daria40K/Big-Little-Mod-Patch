@@ -1,6 +1,6 @@
 # Big Little Mod Patch
 
-![](https://github.com/dave40k/Big-Little-Mod-Patch/blob/main/About/Preview.png)
+![](https://github.com/Daria40K/Big-Little-Mod-Patch/blob/main/About/Preview.png)
 
 ## Mod Support
 - [Advanced Electric Stove](https://steamcommunity.com/sharedfiles/filedetails/?id=2054487688) (Production links)
