@@ -138,4 +138,11 @@
 		<assemblyVersion>2.17</assemblyVersion>
 		<content>Added support for Archotech Re-Expanded, Commercial Server, Research Assistants and Tech Raiding [1.1](continued)|Fixed some xml issues</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.18 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_18</defName>
+		<assemblyVersion>2.18</assemblyVersion>
+		<content>Added support for RimVali: Far From Avalon</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

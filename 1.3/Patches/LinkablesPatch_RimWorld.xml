@@ -351,6 +351,27 @@
 		</match>
 	</Operation>
 
+	<!-- ========== RimVali: Far From Avalon ========== -->
+	<li Class="PatchOperationFindMod">
+		<mods>
+			<li>RimVali: Far From Avalon</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- Bed | DoubleBed | RoyalBed -->
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>IlluminateEndTable</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</li>
+
     <!-- ========== UN-Furniture ========== -->
     <Operation Class="PatchOperationFindMod">
 		<mods>

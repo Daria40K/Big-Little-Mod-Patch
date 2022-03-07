@@ -40,6 +40,7 @@
 - [Rimsenal - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=725947920) (Production links)
 - [Rimsenal - Federation Faction Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=736172213) (Production links)
 - [Rimsenal - Feral Faction Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=736207111) (Production links)
+- [RimVali: Far From Avalon](https://steamcommunity.com/sharedfiles/filedetails/?id=2180380125) (Furniture, Production & Research links)
 - [Science Never Stops: Ambition of the Cosmic](https://steamcommunity.com/sharedfiles/filedetails/?id=1802857253) (Research links)
 - [Sparkling Worlds - Full Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1123043922) (Research links)
 - [StuffedDoll](https://steamcommunity.com/sharedfiles/filedetails/?id=1937192602) (Furniture links)

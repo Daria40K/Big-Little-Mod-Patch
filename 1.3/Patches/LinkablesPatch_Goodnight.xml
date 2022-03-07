@@ -160,6 +160,27 @@
 					</match>
 				</li>
 
+				<!-- ========== RimVali: Far From Avalon ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimVali: Far From Avalon</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SDBuildingBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== StuffedDoll ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
