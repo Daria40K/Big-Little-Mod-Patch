@@ -352,7 +352,7 @@
 	</Operation>
 
 	<!-- ========== RimVali: Far From Avalon ========== -->
-	<li Class="PatchOperationFindMod">
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>RimVali: Far From Avalon</li>
 		</mods>
@@ -370,7 +370,7 @@
 				</li>
 			</operations>
 		</match>
-	</li>
+	</Operation>
 
     <!-- ========== UN-Furniture ========== -->
     <Operation Class="PatchOperationFindMod">
