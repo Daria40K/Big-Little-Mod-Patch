@@ -143,12 +143,12 @@
 					</match>
 				</li>
 
-				<!-- ========== More Furniture ========== -->
+				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>More Furniture</li>
+						<li>More Furniture (Continued)</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
@@ -157,7 +157,7 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Anon2FileCabinet</li><!-- More Furniture -->
+									<li>Anon2FileCabinet</li>
 								</value>
 							</li>
 						</operations>
