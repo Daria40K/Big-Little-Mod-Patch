@@ -152,4 +152,11 @@
 		<assemblyVersion>2.18.1</assemblyVersion>
 		<content>Fixed some xml issues</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.19 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_19</defName>
+		<assemblyVersion>2.19</assemblyVersion>
+		<content>Added support for More Archotech Garbage Reupload|Fixed some xml issues</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

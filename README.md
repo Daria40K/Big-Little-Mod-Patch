@@ -26,6 +26,7 @@
 - [Medical IVs](https://steamcommunity.com/sharedfiles/filedetails/?id=1424438685) (Furniture links)
 - [Medical Supplements](https://steamcommunity.com/sharedfiles/filedetails/?id=2195037369) (Furniture links)
 - [Medieval Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067) (Furniture, Production & Research links)
+- [More Archotech Garbage Reupload](https://steamcommunity.com/sharedfiles/filedetails/?id=2391102796) (Research links)
 - [More Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2565302299) (Furniture links)
 - [More Linkables](https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207) (Production & Research links)
 - [Modern Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2430249387) (Furniture links)

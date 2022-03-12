@@ -277,10 +277,10 @@
 					</match>
 				</li>
 
-				<!-- ========== More Furniture ========== -->
+				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>More Furniture</li>
+						<li>More Furniture (Continued)</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">

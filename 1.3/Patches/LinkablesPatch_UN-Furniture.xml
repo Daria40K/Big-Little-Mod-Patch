@@ -258,31 +258,6 @@
 					</match>
 				</li>
 
-				<!-- ========== More Furniture (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Furniture (Continued)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Anon2RoyalEndTableLight</li>
-									<li>Anon2EndTableLight</li>
-									<li>Anon2RoyalEndTable</li>
-									<li>Anon2EndTable</li>
-									<li>Anon2Dresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
 				<!-- ========== [sd] medicaddons (unofficial) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -417,6 +392,82 @@
 								<value>
 									<li>DankPyon_RusticBookshelf</li>
 									<li>DankPyon_RoyalBookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== More Archotech Garbage Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage Reupload</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2RoyalEndTableLight</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2Dresser</li>
+								</value>
+							</li>
+
+							<!-- SadjuukResearchAB | SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Moyo-From the depth ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Moyo-From the depth</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MoyoGRModule</li>
 								</value>
 							</li>
 						</operations>

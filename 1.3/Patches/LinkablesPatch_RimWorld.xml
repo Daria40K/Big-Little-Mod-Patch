@@ -372,6 +372,29 @@
 		</match>
 	</Operation>
 
+	<!-- ========== Tech Raiding [1.1](continued) ========== -->
+	<li Class="PatchOperationFindMod">
+		<mods>
+			<li>Tech Raiding [1.1](continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- HiTechResearchBench -->
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>LostAnalyzer</li>
+						<li>BrutalAnalyzer</li>
+						<li>MechaAnalyzer</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</li>
+
     <!-- ========== UN-Furniture ========== -->
     <Operation Class="PatchOperationFindMod">
 		<mods>
