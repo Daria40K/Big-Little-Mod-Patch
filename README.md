@@ -47,6 +47,7 @@
 - [StuffedDoll](https://steamcommunity.com/sharedfiles/filedetails/?id=1937192602) (Furniture links)
 - [[1.2, 1.3] Tank Beds (Fast Sleep)](https://steamcommunity.com/sharedfiles/filedetails/?id=2020858426) (Furniture links)
 - [Tech Raiding [1.1] (continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2103664182) (Research links)
+- [[JDS] The Forge - Anvil](https://steamcommunity.com/sharedfiles/filedetails/?id=1967561500) (Production links)
 - [Tiny Workbenchs (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2387981423) (Production links)
 - [UN-Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2019774854) (Furniture, Production & Research links)
 - [Vanilla Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519) (Production links)
