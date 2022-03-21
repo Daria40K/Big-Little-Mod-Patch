@@ -129,6 +129,30 @@
 		</match>
 	</Operation>
 
+	<!-- ========== Gloomy Extra - Kitchen ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Gloomy Extra - Kitchen</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- FueledStove | ElectricStove-->
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName = "FueledStove" or defName = "ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>SM_Sink</li>
+						<li>SM_KitchenCupboard_A</li>
+						<li>SM_KitchenCupboard_B</li>
+						<li>SM_KitchenCupboard_C</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
     <!-- ========== Medieval Overhaul ========== -->
     <Operation Class="PatchOperationFindMod">
 		<mods>

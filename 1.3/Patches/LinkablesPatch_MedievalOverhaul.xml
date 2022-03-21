@@ -256,6 +256,43 @@
 					</match>
 				</li>
 
+				<!-- ========== Gloomy Extra - Kitchen ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Gloomy Extra - Kitchen</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>SM_Sink</li>
+						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_B</li>
+                                    <li>SM_KitchenCupboard_C</li>
+                                </value>
+                            </li>
+
+							<!-- DankPyon_ButchersBlock -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="DankPyon_ButchersBlock"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_ButcherShelf</li>
+						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_B</li>
+                                    <li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
+                        </operations>
+                    </match>
+                </li>
+
 				<!-- ========== Mechalit Core v2 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

@@ -173,4 +173,11 @@
 		<assemblyVersion>2.20</assemblyVersion>
 		<content>Added support for [JDS] The Forge - Anvil</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.21 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_21</defName>
+		<assemblyVersion>2.21</assemblyVersion>
+		<content>Added support for Gloomy Extra - Kitchen</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
