@@ -187,4 +187,11 @@
 		<assemblyVersion>2.22</assemblyVersion>
 		<content>Added support for Expanded Materials - Metals, [LITE]Expanded Materials - Metals, Expanded Materials Add-On - Minimalist Production and Expanded Materials - Plastics</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.23 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_23</defName>
+		<assemblyVersion>2.23</assemblyVersion>
+		<content>Added support for Mechanoid Bench 3</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

@@ -27,6 +27,7 @@
 - [Ideology [Official DLC]](https://store.steampowered.com/app/1392840/RimWorld__Ideology/)
 - [Life Support (Fan Update)](https://steamcommunity.com/sharedfiles/filedetails/?id=2036610942) (Furniture links)
 - [Mechalit Core v2](https://steamcommunity.com/sharedfiles/filedetails/?id=2659987145) (Furniture links)
+- [Mechanoid Bench 3](https://steamcommunity.com/sharedfiles/filedetails/?id=2793336382) (Production links)
 - [[sd] medicaddons (unofficial)](https://steamcommunity.com/sharedfiles/filedetails/?id=2012914831) (Furniture links)
 - [Medical IVs](https://steamcommunity.com/sharedfiles/filedetails/?id=1424438685) (Furniture links)
 - [Medical Supplements](https://steamcommunity.com/sharedfiles/filedetails/?id=2195037369) (Furniture links)
