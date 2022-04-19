@@ -194,4 +194,11 @@
 		<assemblyVersion>2.23</assemblyVersion>
 		<content>Added support for Mechanoid Bench 3</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.24 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_24</defName>
+		<assemblyVersion>2.24</assemblyVersion>
+		<content>Added support for Rimputers</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

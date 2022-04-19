@@ -609,6 +609,32 @@
 					</match>
 				</li>
 
+				<!-- ========== Rimputers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers</li>
+					</mods>
+			
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SadjuukResearchAB | SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+									<li>RP_Server</li>
+									<li>RP_SuperComputer</li>
+									<li>Rimputer_quantumcomputer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== RimVali: Far From Avalon ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

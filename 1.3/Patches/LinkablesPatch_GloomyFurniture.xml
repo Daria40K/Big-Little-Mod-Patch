@@ -282,6 +282,29 @@
 					</match>
 				</li>
 
+				<!-- ========== Rimputers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers</li>
+					</mods>
+			
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- RGK_SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== RimVali: Far From Avalon ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

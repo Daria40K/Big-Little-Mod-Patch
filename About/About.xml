@@ -6,6 +6,9 @@
 	<supportedVersions>
 		<li>1.3</li>
 	</supportedVersions>
+	<loadAfter>
+		<li>dankpyon.medieval.overhaul</li>
+	</loadAfter>
 	<description>This patch applys multiable patches to allow furniture from other mods to link with each other.
 
 Mods Patched:
@@ -53,6 +56,7 @@ Mods Patched:
 - Rimsenal - Core
 - Rimsenal - Federation Faction Pack
 - Rimsenal - Feral Faction Pack
+- Rimputers
 - RimVali: Far From Avalon
 - Science Never Stops: Ambition of the Cosmic
 - Sparkling Worlds - Full Mod

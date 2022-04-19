@@ -1,33 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-	========== Medieval Overhaul ==========
-
-	=== Beds
+<!-- ========== Medieval Overhaul ========== === Beds
 	DankPyon_BedWicker = wicker bed
 	DankPyon_BedWickerDouble = double wicker bed
 	DankPyon_StrawBed = straw bed
 	DankPyon_StrawBedDouble = double straw bed
 	DankPyon_BedFur = fur bed
 	DankPyon_BedFurDouble = double fur bed
-	DankPyon_RoyalTudorBed = royal tudor bed
-
-	=== End Table
+	DankPyon_RoyalTudorBed = royal tudor bed === End Table
 	DankPyon_RusticEndTable = end table
-	DankPyon_RoyalEndTable = royal end table
-
-	=== Dressers
+	DankPyon_RoyalEndTable = royal end table === Dressers
 	DankPyon_RusticDresser = dresser
 	DankPyon_RoyalDresser = royal dresser
 	DankPyon_RusticChest = chest
 	DankPyon_MetalStrongbox = metal strongbox
 	DankPyon_RoyalChest = royal chest
 	DankPyon_RusticCloset = closet
-	DankPyon_RoyalCloset = royal closet
-
-	=== Research
-	DankPyon_RusticBookshelf = bookshelf
-
-	=== Tool Cabinet
+	DankPyon_RoyalCloset = royal closet === Research
+	DankPyon_RusticBookshelf = bookshelf === Tool Cabinet
 	DankPyon_QuenchingBucket = quenching bucket
 	DankPyon_Bellows = bellows
 	DankPyon_ToolRack = tool rack
@@ -257,25 +246,25 @@
 				</li>
 
 				<!-- ========== Gloomy Extra - Kitchen ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Gloomy Extra - Kitchen</li>
-                    </mods>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen</li>
+					</mods>
 
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>SM_Sink</li>
-						            <li>SM_KitchenCupboard_A</li>
-                                    <li>SM_KitchenCupboard_B</li>
-                                    <li>SM_KitchenCupboard_C</li>
-                                </value>
-                            </li>
+									<li>SM_Sink</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
 
 							<!-- DankPyon_ButchersBlock -->
 							<li Class="PatchOperationAdd">
@@ -284,14 +273,14 @@
 								<value>
 									<li>SM_Sink</li>
 									<li>SM_ButcherShelf</li>
-						            <li>SM_KitchenCupboard_A</li>
-                                    <li>SM_KitchenCupboard_B</li>
-                                    <li>SM_KitchenCupboard_C</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
 								</value>
 							</li>
-                        </operations>
-                    </match>
-                </li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== Mechalit Core v2 ========== -->
 				<li Class="PatchOperationFindMod">
@@ -483,6 +472,43 @@
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Rimputers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+								</value>
+							</li>
+
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+									<li>RP_Server</li>
+									<li>RP_SuperComputer</li>
+									<li>Rimputer_quantumcomputer</li>
 								</value>
 							</li>
 						</operations>
