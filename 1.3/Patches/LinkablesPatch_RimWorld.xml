@@ -585,8 +585,8 @@
 					<success>Always</success>
 					<xpath>/Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
-						<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+						<li>Table_IlluminatedEndTable</li>
+						<li>Table_IlluminatedDresser</li>
 					</value>
 				</li>
 			</operations>
@@ -606,8 +606,8 @@
 					<success>Always</success>
 					<xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>Link_ResearchGoods</li><!-- WorkBench Support - More Linkable Facilities - -->
-                        <li>Link_ResearchBoost</li><!-- WorkBench Support - More Linkable Facilities - -->
+						<li>Link_ResearchGoods</li>
+                        <li>Link_ResearchBoost</li>
 					</value>
 				</li>
 			</operations>

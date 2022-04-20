@@ -279,7 +279,7 @@
                 <!-- ========== Vanilla Furniture Expanded - Production ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
-                        <li>WorkBench Support - More Linkable Facilities -</li>
+                        <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
                         <success>Always</success>

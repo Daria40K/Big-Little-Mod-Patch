@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    ========== [JDS] The Forge - Anvil ==========
+    ========== Powerful Smelte ==========
 
-    JDSForgeBenchBase
-    JDSAnvil
-    JDSWorkBench
-    JDSForge
-    JDSForgeFabricationbench
+    RLE_SmelterTable
 -->
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>[JDS] The Forge - Anvil</li>
-		</mods>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Powerful Smelter</li>
+        </mods>
 
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -26,10 +24,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- JDSForgeBenchBase -->
+                            <!-- RLE_SmelterTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name = "JDSForgeBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[@Name="RLE_SmelterTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_QuenchingBucket</li>
                                     <li>DankPyon_Bellows</li>
@@ -41,20 +39,24 @@
                     </match>
                 </li>
 
-                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+                <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
-                        <li>Vanilla Furniture Expanded - Production</li>
+                        <li>UN-Furniture (Continued)</li>
                     </mods>
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- JDSForgeBenchBase -->
+                            <!-- RLE_SmelterTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name = "JDSForgeBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[@Name="RLE_SmelterTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>VFE_SmithyCabinet</li>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
                                 </value>
                             </li>
                         </operations>
@@ -69,10 +71,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- JDSForgeBenchBase -->
+                            <!-- RLE_SmelterTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name = "JDSForgeBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[@Name="RLE_SmelterTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_SmelterGoods</li>
                                     <li>Link_SmelterBoost</li>

@@ -39,6 +39,8 @@
 - [Moyo-From the depth](https://steamcommunity.com/workshop/filedetails/?id=2182305386) (Production links)
 - [Nanotech Overpower](https://steamcommunity.com/sharedfiles/filedetails/?id=2547371232) (Production links)
 - [[O21] Outland - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2755501685) (Production & Research links)
+- [Powerful Kitchen](https://steamcommunity.com/sharedfiles/filedetails/?id=2310644681) (Production links)
+- [Powerful Smelter](https://steamcommunity.com/sharedfiles/filedetails/?id=2331001560) (Production links)
 - [Research Assistants](https://steamcommunity.com/sharedfiles/filedetails/?id=2659862896) (Research links)
 - [Rim-Effect: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2479560240) (Research links)
 - [Rim-Effect: Asari and Reapers](https://steamcommunity.com/sharedfiles/filedetails/?id=2651149728) (Research links)

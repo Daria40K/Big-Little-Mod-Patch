@@ -201,4 +201,11 @@
 		<assemblyVersion>2.24</assemblyVersion>
 		<content>Added support for Rimputers</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.25 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_25</defName>
+		<assemblyVersion>2.25</assemblyVersion>
+		<content>Added support for Powerful Kitchen and Powerful Smelter</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
