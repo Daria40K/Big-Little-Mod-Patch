@@ -208,4 +208,11 @@
 		<assemblyVersion>2.25</assemblyVersion>
 		<content>Added support for Powerful Kitchen and Powerful Smelter</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.26 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_26</defName>
+		<assemblyVersion>2.26</assemblyVersion>
+		<content>Added support for Smokeleaf Industry Reborn</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
