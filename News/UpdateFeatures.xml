@@ -214,5 +214,12 @@
 		<defName>BigLittleModPatch_2_26</defName>
 		<assemblyVersion>2.26</assemblyVersion>
 		<content>Added support for Smokeleaf Industry Reborn</content>
+	</HugsLib.UpdateFeatureDef>Area Rugs 2.0
+
+	<!-- v2.27 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_27</defName>
+		<assemblyVersion>2.27</assemblyVersion>
+		<content>Added support for Area Rugs 2.0</content>
 	</HugsLib.UpdateFeatureDef>
 </Defs>

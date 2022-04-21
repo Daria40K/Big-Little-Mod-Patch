@@ -7,6 +7,7 @@
 - [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
 - [Akeron Decorations](https://steamcommunity.com/sharedfiles/filedetails/?id=2755025925) (Furniture & Production links)
 - [Archotech Re-Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2351084803) (Research links)
+- [Area Rugs 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=1988111624) (Production links)
 - [Clockwork And Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1736127702) (Production & Research links - partial support)
 - [Comigo's Adequate Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2553865508) (Production links)
 - [Comigo's Nutrition](https://steamcommunity.com/sharedfiles/filedetails/?id=2546863371) (Production links)
