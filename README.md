@@ -77,3 +77,5 @@
 - [Vault-Tec - Handy things for your vault!](https://steamcommunity.com/sharedfiles/filedetails/?id=1888778429) (Furniture & Production links)
 - [What the hack?!](https://steamcommunity.com/sharedfiles/filedetails/?id=1505914869) (Production links)
 - [WorkBench Support - More Linkable Facilities -](https://steamcommunity.com/sharedfiles/filedetails/?id=2238610692) (Production & Research links)
+- [Xenite Industries](https://steamcommunity.com/sharedfiles/filedetails/?id=2008073296) (Production links)
+- [Xenite Industries: Mechanite District](https://steamcommunity.com/sharedfiles/filedetails/?id=2008073831) (Production links)

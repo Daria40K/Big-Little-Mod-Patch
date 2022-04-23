@@ -6,6 +6,10 @@
 		SadjuukBedBaseA | SadjuukBedBaseB
 		SadjuukSurgeryBaseB
 		SadjuukResearchAB | SadjuukResearchAC
+
+		SadjuukBessemerConverter | SadjuukOpenHearthFurnace | SadjuukElectricArcFurnace
+		SadjuukMetalworkingLineB | SadjuukConstructionMachinery
+		SadjuukMetalworkingBench | SadjuukRefineryA | SadjuukRefineryB | SadjuukRefineryC
 	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>

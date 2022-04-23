@@ -11,6 +11,9 @@
 	=== Reaearch
 	RE_SpacerTechResearchBench
 
+	=== machining
+	RE_ManufacturingBench
+
 	=== Bed Linkables
 	RE_PrefabDresser = prefab dresser
 	RE_PrefabWardrobe = prefab wardrobe

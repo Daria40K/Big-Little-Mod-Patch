@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+    <!--
+        ========== Vanilla Furniture Expanded - Production ==========
+
+        VFE_TableStoveLarge
+        VFE_TableButcherElectric
+        VFE_TableStonecutterElectric
+        VFE_TableSmithyLarge
+        VFE_TableMachiningLarge
+        VFE_TableTailorLarge
+        VFE_FueledSmelter
+        VFE_ComponentFabricationBench
+        VFE_TableButcherElectric
+        VFE_TableDrugLabElectric
+    -->
     <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Furniture Expanded - Production</li>
