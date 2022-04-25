@@ -617,6 +617,7 @@
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Rimputers</li>
+						<li>Rimputers (No Dubs Bad Hygiene)</li>
 					</mods>
 			
 					<match Class="PatchOperationSequence">

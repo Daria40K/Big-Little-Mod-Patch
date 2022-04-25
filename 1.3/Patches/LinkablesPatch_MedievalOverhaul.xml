@@ -396,6 +396,24 @@
 									<li>Outland_Bookshelf</li>
 								</value>
 							</li>
+
+							<!-- DankPyon_Furnace -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[@Name="DankPyon_Furnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+
+							<!-- DankPyon_Anvil -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[@Name="DankPyon_Anvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
 						</operations>
 					</match>
 				</li>
@@ -482,6 +500,7 @@
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Rimputers</li>
+						<li>Rimputers (No Dubs Bad Hygiene)</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">

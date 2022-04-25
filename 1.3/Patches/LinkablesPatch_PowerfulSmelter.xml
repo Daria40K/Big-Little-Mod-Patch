@@ -13,8 +13,6 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
-
-
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -33,6 +31,27 @@
                                     <li>DankPyon_Bellows</li>
                                     <li>DankPyon_ToolRack</li>
                                     <li>DankPyon_Grinder</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== [O21] Outland - Core ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[O21] Outland - Core</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- RLE_SmelterTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[@Name="RLE_SmelterTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
                                 </value>
                             </li>
                         </operations>

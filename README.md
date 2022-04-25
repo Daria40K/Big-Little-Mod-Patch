@@ -56,6 +56,7 @@
 - [Rimsenal - Federation Faction Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=736172213) (Production links)
 - [Rimsenal - Feral Faction Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=736207111) (Production links)
 - [Rimputers](https://steamcommunity.com/sharedfiles/filedetails/?id=2795070262) (Research links)
+- [Rimputers (No Dubs Bad Hygiene)](https://steamcommunity.com/sharedfiles/filedetails/?id=2798666741) (Research links)
 - [RimVali: Far From Avalon](https://steamcommunity.com/sharedfiles/filedetails/?id=2180380125) (Furniture, Production & Research links)
 - [Science Never Stops: Ambition of the Cosmic](https://steamcommunity.com/sharedfiles/filedetails/?id=1802857253) (Research links)
 - [Smokeleaf Industry Reborn](https://steamcommunity.com/sharedfiles/filedetails/?id=2018570327) (Production links)

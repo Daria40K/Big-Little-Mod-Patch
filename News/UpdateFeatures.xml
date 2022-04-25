@@ -236,4 +236,11 @@
 		<assemblyVersion>2.29</assemblyVersion>
 		<content>Added support for Xenite Industries and Xenite Industries: Mechanite District</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.30 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_30</defName>
+		<assemblyVersion>2.30</assemblyVersion>
+		<content>Added support for Rimputers (No Dubs Bad Hygiene) and updated support for [O21] Outland - Core</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
