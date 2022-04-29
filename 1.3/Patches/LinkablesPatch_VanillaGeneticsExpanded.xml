@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ========== Vanilla Genetics Expanded ==========
+
+    GR_TissueGrowingVat
+
+    GR_GeneticsTinkeringTable
+    GR_GeneticExtractionTable
+    GR_GeneRecombinator
+
+    GR_TissueGrinder
+
+    GR_NutrientVat
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Genetics Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- ========== RimWorld ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Core</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Expanded Prosthetics and Organ Engineering - Forked</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GR_TissueGrowingVat -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="GR_TissueGrowingVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>TableBionics</li>
+                                    <li>TableOrgans</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Production</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_FabricationCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+                            
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_FabricationBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
