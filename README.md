@@ -2,10 +2,15 @@
 
 ![](https://github.com/Daria40K/Big-Little-Mod-Patch/blob/main/About/Preview.png)
 
+## Download
+- [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2710382569)
+- [GitHub](https://github.com/Daria40K/Big-Little-Mod-Patch/releases)
+
 ## Mod Support
 - [Advanced Electric Stove](https://steamcommunity.com/sharedfiles/filedetails/?id=2054487688) (Production links)
 - [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
 - [Akeron Decorations](https://steamcommunity.com/sharedfiles/filedetails/?id=2755025925) (Furniture & Production links)
+- [Animal Medical Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2016958187) (Furniture links)
 - [Archotech Re-Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2351084803) (Research links)
 - [Area Rugs 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=1988111624) (Production links)
 - [Clockwork And Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1736127702) (Production & Research links - partial support)
