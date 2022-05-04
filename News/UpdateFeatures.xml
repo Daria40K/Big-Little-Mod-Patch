@@ -251,10 +251,17 @@
 		<content>Added support for Expanded Prosthetics and Organ Engineering - Forked and Vanilla Genetics Expanded</content>
 	</HugsLib.UpdateFeatureDef>
 
-	<!-- v2.31 -->
+	<!-- v2.32 -->
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
 		<defName>BigLittleModPatch_2_32</defName>
 		<assemblyVersion>2.32</assemblyVersion>
 		<content>Added support for Animal Medical Bed</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.33 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_33</defName>
+		<assemblyVersion>2.33</assemblyVersion>
+		<content>Added support for Geyser Cooking Revived (Continued)</content>
 	</HugsLib.UpdateFeatureDef>
 </Defs>
