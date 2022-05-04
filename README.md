@@ -28,6 +28,7 @@
 - [Expanded Materials - Plastics](https://steamcommunity.com/sharedfiles/filedetails/?id=2465263608) (Production links)
 - [Expanded Prosthetics and Organ Engineering - Forked](https://steamcommunity.com/sharedfiles/filedetails/?id=1949064302) (Production links)
 - [Fast regen 1.3](https://steamcommunity.com/sharedfiles/filedetails/?id=943925765) (Furniture links)
+- [Geyser Cooking Revived (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2803663308) (Production links)
 - [Glitter Tech](https://steamcommunity.com/sharedfiles/filedetails/?id=2558099206) (Production links)
 - [GloomyFurniture](https://steamcommunity.com/sharedfiles/filedetails/?id=1558635181) (Furniture & Production links)
 - [Gloomy Extra - Kitchen](https://steamcommunity.com/sharedfiles/filedetails/?id=1730938407) (Production links)
