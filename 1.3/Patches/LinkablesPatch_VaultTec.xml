@@ -6,8 +6,11 @@
     vt_workbench
     VTElectricStove
 
-    HospitalBedVault
-    Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault
+	Bed_Vault | #bed
+	Bed_DoubleVault | #bed
+	Bed_luxDoubleVault | #bed
+    HospitalBedVault | #medical
+    
     vt_curio | vt_EndTable | vt_luxEndTable | vt_commode | vt_luxcommode | VaultWardrobeB | VaultWardrobeA
 -->
 <Patch>
@@ -357,6 +360,31 @@
                     </match>
                 </li>
 
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2RoyalEndTableLight</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== [O21] Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -481,6 +509,20 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
@@ -490,6 +532,27 @@
                                     <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
                                     <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
                                     <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+				<!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Factions Expanded - Ancients</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HospitalBedVault -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>VFEA_AncientVitalsMonitor</li>
                                 </value>
                             </li>
                         </operations>
@@ -519,27 +582,6 @@
 						</operations>
 					</match>
 				</li>
-
-                <!-- ========== Vanilla Factions Expanded - Ancients ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Vanilla Factions Expanded - Ancients</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- HospitalBedVault -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-                                    <li>VFEA_AncientVitalsMonitor</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
 
                 <!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
                 <li Class="PatchOperationFindMod">

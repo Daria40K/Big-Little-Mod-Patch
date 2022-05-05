@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!-- ========== Mechalit Core v2 ========== -->
+	<!--
+		========== Mechalit Core v2 ==========
+
+		EliteBed | #bed
+		EliteDoubleBed | #bed
+		FirstClassBed | #bed
+	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Mechalit Core v2</li>
@@ -94,6 +100,31 @@
 					</match>
 				</li>
 
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2RoyalEndTableLight</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== [O21] Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -166,6 +197,27 @@
 					</match>
 				</li>
 
+				<!-- ========== RimVali: Far From Avalon ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimVali: Far From Avalon</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== StuffedDoll ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -182,27 +234,6 @@
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== RimVali: Far From Avalon ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimVali: Far From Avalon</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>IlluminateEndTable</li>
 								</value>
 							</li>
 						</operations>

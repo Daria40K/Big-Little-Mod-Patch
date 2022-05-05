@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-	Vanilla Furniture Expanded - Spacer Module
+	========== Vanilla Furniture Expanded - Spacer Module ==========
 
-	Bed_AdvBed | Bed_AdvDoubleBed
+	Bed_AdvBed | #bed
+	Bed_AdvDoubleBed | #bed
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -103,6 +104,31 @@
 									<li>DankPyon_RoyalChest</li>
 									<li>DankPyon_RusticCloset</li>
 									<li>DankPyon_RoyalCloset</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_AdvBed | Bed_AdvDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Bed_AdvBed" or defName="Bed_AdvDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2RoyalEndTableLight</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2Dresser</li>
 								</value>
 							</li>
 						</operations>
@@ -224,6 +250,32 @@
 					</match>
 				</li>
 
+				<!-- ========== UN-Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_AdvBed | Bed_AdvDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Bed_AdvBed" or defName="Bed_AdvDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Vanilla Furniture Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -291,32 +343,6 @@
 									<li>vt_luxcommode</li>
 									<li>VaultWardrobeB</li>
 									<li>VaultWardrobeA</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== UN-Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Furniture (Continued)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- Bed_AdvBed | Bed_AdvDoubleBed -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="Bed_AdvBed" or defName="Bed_AdvDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukFurnitureAA</li>
-									<li>SadjuukFurnitureAB</li>
-									<li>SadjuukFurnitureAC</li>
-									<li>SadjuukFurnitureBA</li>
-									<li>SadjuukFurnitureBB</li>
-									<li>SadjuukFurnitureBC</li>
 								</value>
 							</li>
 						</operations>

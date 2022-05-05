@@ -2,7 +2,8 @@
 <!--
 	========== Geyser Cooking Revived (Continued) ==========
 
-	GCS_Stove | GCS_advStove
+	GCS_Stove | #cooking
+    GCS_advStove | #cooking
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">

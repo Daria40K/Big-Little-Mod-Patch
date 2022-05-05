@@ -2,7 +2,8 @@
 <!--
 	========== Modern Bed ==========
 
-	SC_ModernBed | SC_ModernBedDouble
+	SC_ModernBed | #bed
+	SC_ModernBedDouble | #bed
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -13,6 +14,26 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- ========== Ideology [Official DLC] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ideology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SC_ModernBed | SC_ModernBedDouble -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== GloomyFurniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -82,6 +103,31 @@
 									<li>DankPyon_RoyalChest</li>
 									<li>DankPyon_RusticCloset</li>
 									<li>DankPyon_RoyalCloset</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SC_ModernBed | SC_ModernBedDouble -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2RoyalEndTableLight</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2Dresser</li>
 								</value>
 							</li>
 						</operations>
@@ -203,6 +249,32 @@
 					</match>
 				</li>
 
+				<!-- ========== UN-Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SC_ModernBed | SC_ModernBedDouble -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Vanilla Furniture Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -270,32 +342,6 @@
 									<li>vt_luxcommode</li>
 									<li>VaultWardrobeB</li>
 									<li>VaultWardrobeA</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== UN-Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Furniture (Continued)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- SC_ModernBed | SC_ModernBedDouble -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukFurnitureAA</li>
-									<li>SadjuukFurnitureAB</li>
-									<li>SadjuukFurnitureAC</li>
-									<li>SadjuukFurnitureBA</li>
-									<li>SadjuukFurnitureBB</li>
-									<li>SadjuukFurnitureBC</li>
 								</value>
 							</li>
 						</operations>

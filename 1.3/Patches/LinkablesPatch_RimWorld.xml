@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- ========== RimWorld ========== -->
+    <!--
+		========== RimWorld ==========
+	-->
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "ElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+        <xpath>/Defs/ThingDef[defName="ElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "ElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <xpath>/Defs/ThingDef[defName="ElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
             <value>
 
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "ElectricStove"]/comps</xpath>
+            <xpath>/Defs/ThingDef[defName="ElectricStove"]/comps</xpath>
             <value>
                 <li Class="CompProperties_AffectedByFacilities">
                     <linkableFacilities>
@@ -22,15 +24,15 @@
     </Operation>
   
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+        <xpath>/Defs/ThingDef[defName="FueledStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <xpath>/Defs/ThingDef[defName="FueledStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
             <value>
 
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "FueledStove"]/comps</xpath>
+            <xpath>/Defs/ThingDef[defName="FueledStove"]/comps</xpath>
             <value>
                 <li Class="CompProperties_AffectedByFacilities">
                     <linkableFacilities>
@@ -111,7 +113,7 @@
 				<!-- FueledStove | ElectricStove-->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "FueledStove" or defName = "ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>GL_Cupboard</li><!-- GloomyFurniture -->
 						<li>GL_TablewareShelf</li><!-- GloomyFurniture -->
@@ -141,7 +143,7 @@
 				<!-- FueledStove | ElectricStove-->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "FueledStove" or defName = "ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>SM_Sink</li>
 						<li>SM_KitchenCupboard_A</li>
@@ -182,7 +184,7 @@
 				<!-- FueledStove | ElectricStove-->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "FueledStove" or defName = "ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>DankPyon_RusticCookingTools</li><!-- Medieval Overhaul -->
 					</value>
@@ -191,7 +193,7 @@
 				<!-- FueledSmithy | ElectricSmithy | TableMachining-->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "FueledSmithy" or defName = "ElectricSmithy" or defName = "TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>DankPyon_QuenchingBucket</li>
 						<li>DankPyon_Bellows</li>
@@ -203,7 +205,7 @@
 				<!-- HandTailoringBench | ElectricTailoringBench-->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "HandTailoringBench" or defName = "ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName="HandTailoringBench" or defName="ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>DankPyon_ToolRack</li>
 					</value>
@@ -495,7 +497,7 @@
 				<!-- FueledSmithy | ElectricSmithy | TableMachining-->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName = "FueledSmithy" or defName = "ElectricSmithy" or defName = "TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>SadjuukShaper</li>
 						<li>SadjuukGrinding</li>

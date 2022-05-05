@@ -2,7 +2,7 @@
 <!--
 	========== Advanced Electric Stove ==========
 
-	TableAdvancedElectricStove
+	TableAdvancedElectricStove | #cooking
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">

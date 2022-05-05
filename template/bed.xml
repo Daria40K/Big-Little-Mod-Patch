@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-	========== [sd] Goodnight (Continued) ==========
-
-	SDBuildingBase | #bed
--->
 <Patch>
+	<!--
+		========== #TemplateBedMod# ==========
+
+		#TemplateBed# | #bed
+	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[sd] Goodnight (Continued)</li>
+			<li>#TemplateBedMod#</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-                <!-- ========== Ideology [Official DLC] ========== -->
+				<!-- ========== Ideology [Official DLC] ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Ideology</li>
@@ -21,11 +21,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>SleepAccelerator</li>
 								</value>
 							</li>
@@ -33,7 +33,7 @@
 					</match>
 				</li>
 
-                <!-- ========== GloomyFurniture ========== -->
+				<!-- ========== GloomyFurniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>GloomyFurniture</li>
@@ -42,11 +42,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>RGK_Dresser</li>
 									<li>WardrobeA</li>
 									<li>WardrobeB</li>
@@ -60,7 +60,7 @@
 					</match>
 				</li>
 
-				<!-- ========== Mechalit Core v2 ========== -->
+                <!-- ========== Mechalit Core v2 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Mechalit Core v2</li>
@@ -69,11 +69,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+							<!-- #TemplateBed# -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>EliteDresserMeh</li>
 								</value>
 							</li>
@@ -81,7 +81,7 @@
 					</match>
 				</li>
 
-                <!-- ========== Medieval Overhaul ========== -->
+				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Medieval Overhaul</li>
@@ -90,11 +90,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
 									<li>DankPyon_RusticDresser</li>
@@ -110,7 +110,7 @@
 					</match>
 				</li>
 
-				<!-- ========== More Furniture (Continued) ========== -->
+                <!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>More Furniture (Continued)</li>
@@ -119,11 +119,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>Anon2RoyalEndTableLight</li>
 									<li>Anon2EndTableLight</li>
 									<li>Anon2RoyalEndTable</li>
@@ -144,11 +144,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>Outland_Dresser</li>
 									<li>Outland_EndTable</li>
 									<li>Outland_EndTableWithLamp</li>
@@ -168,38 +168,17 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
 									<li>RE_PrefabEndTableWithLamp</li>
 									<li>RE_PrefabBedsideTable</li>
 									<li>RE_PrefabBedsideTableLamp</li>
 									<li>RE_PrefabWardrobe</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== RimVali: Far From Avalon ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimVali: Far From Avalon</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- SDBuildingBase -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-									<li>IlluminateEndTable</li>
 								</value>
 							</li>
 						</operations>
@@ -215,11 +194,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
 								</value>
@@ -228,7 +207,7 @@
 					</match>
 				</li>
 
-				<!-- ========== RimVali: Far From Avalon ========== -->
+                <!-- ========== RimVali: Far From Avalon ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>RimVali: Far From Avalon</li>
@@ -237,11 +216,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>IlluminateEndTable</li>
 								</value>
 							</li>
@@ -249,7 +228,7 @@
 					</match>
 				</li>
 
-                <!-- ========== StuffedDoll ========== -->
+				<!-- ========== StuffedDoll ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>StuffedDoll</li>
@@ -258,11 +237,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
 								</value>
@@ -280,11 +259,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
 									<li>SadjuukFurnitureAC</li>
@@ -297,7 +276,7 @@
 					</match>
 				</li>
 
-                <!-- ========== Vanilla Furniture Expanded ========== -->
+				<!-- ========== Vanilla Furniture Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Furniture Expanded</li>
@@ -306,11 +285,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>Table_RoyalDresser</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_LightEndTable</li>
@@ -321,7 +300,7 @@
 					</match>
 				</li>
 
-                <!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
+				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Furniture Expanded - Spacer Module</li>
@@ -330,11 +309,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
 								</value>
@@ -352,11 +331,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SDBuildingBase -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>*/ThingDef[defName = "sd_basebed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>vt_curio</li>
 									<li>vt_EndTable</li>
 									<li>vt_luxEndTable</li>
@@ -369,7 +348,7 @@
 						</operations>
 					</match>
 				</li>
-            </operations>
-        </match>
-    </Operation>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

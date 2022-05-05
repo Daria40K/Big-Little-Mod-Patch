@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ========== Medieval Overhaul ========== === Beds
-	DankPyon_BedWicker = wicker bed
-	DankPyon_BedWickerDouble = double wicker bed
-	DankPyon_StrawBed = straw bed
-	DankPyon_StrawBedDouble = double straw bed
-	DankPyon_BedFur = fur bed
-	DankPyon_BedFurDouble = double fur bed
-	DankPyon_RoyalTudorBed = royal tudor bed === End Table
+	DankPyon_BedWicker | #bed
+	DankPyon_BedWickerDouble | #bed
+	DankPyon_StrawBed | #bed
+	DankPyon_StrawBedDouble | #bed
+	DankPyon_BedFur | #bed
+	DankPyon_BedFurDouble | #bed
+	DankPyon_RoyalTudorBed | #bed
+
+	=== End Table
 	DankPyon_RusticEndTable = end table
-	DankPyon_RoyalEndTable = royal end table === Dressers
+	DankPyon_RoyalEndTable = royal end table
+
+	=== Dressers
 	DankPyon_RusticDresser = dresser
 	DankPyon_RoyalDresser = royal dresser
 	DankPyon_RusticChest = chest
 	DankPyon_MetalStrongbox = metal strongbox
 	DankPyon_RoyalChest = royal chest
 	DankPyon_RusticCloset = closet
-	DankPyon_RoyalCloset = royal closet === Research
-	DankPyon_RusticBookshelf = bookshelf === Tool Cabinet
+	DankPyon_RoyalCloset = royal closet
+
+	=== Research
+	DankPyon_RusticBookshelf = bookshelf
+
+	=== Tool Cabinet
 	DankPyon_QuenchingBucket = quenching bucket
 	DankPyon_Bellows = bellows
 	DankPyon_ToolRack = tool rack
@@ -577,6 +585,32 @@
 					</match>
 				</li>
 
+				<!-- ========== UN-Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- DankPyon_BedWicker |  DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Vanilla Furniture Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -680,32 +714,6 @@
 					</match>
 				</li>
 
-				<!-- ========== UN-Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Furniture (Continued)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- DankPyon_BedWicker |  DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukFurnitureAA</li>
-									<li>SadjuukFurnitureAB</li>
-									<li>SadjuukFurnitureAC</li>
-									<li>SadjuukFurnitureBA</li>
-									<li>SadjuukFurnitureBB</li>
-									<li>SadjuukFurnitureBC</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -797,7 +805,6 @@
 						</operations>
 					</match>
 				</li>
-
 			</operations>
 		</match>
 	</Operation>

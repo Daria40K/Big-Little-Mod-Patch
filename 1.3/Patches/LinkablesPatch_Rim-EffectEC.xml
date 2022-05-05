@@ -2,7 +2,7 @@
 <!--
 	========== Rim-Effect: Extended Cut ==========
 
-	RE_PreFabStove = prefab stove
+	RE_PreFabStove | #cooking
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -108,6 +108,27 @@
 						</operations>
 					</match>
 				</li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- #TemplateCooking# -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="#TemplateCooking#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>KitchenCupboard</li><!-- More Linkables -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">

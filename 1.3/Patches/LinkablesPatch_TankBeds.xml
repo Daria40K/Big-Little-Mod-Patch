@@ -2,7 +2,9 @@
 <!--
     ========== [1.2, 1.3] Tank Beds (Fast Sleep) ==========
 
-    TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype
+    TB_TankBed | #bed
+	TB_TankBedDouble | #bed
+	TB_TankBedPrototype | #bed
 
     TB_TankBedMedical
 -->
@@ -260,6 +262,31 @@
 					</match>
 				</li>
 
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2RoyalEndTableLight</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== [O21] Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -375,6 +402,65 @@
 					</match>
 				</li>
 
+				<!-- ========== UN-Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+
+                            <!-- TB_TankBedMedical -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="TB_TankBedMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Factions Expanded - Ancients</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- TB_TankBedMedical -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="TB_TankBedMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>VFEA_AncientVitalsMonitor</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
 				<!-- ========== Vanilla Furniture Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -421,92 +507,6 @@
 					</match>
 				</li>
 
-				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vault-Tec - Handy things for your vault!</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>vt_curio</li>
-									<li>vt_EndTable</li>
-									<li>vt_luxEndTable</li>
-									<li>vt_commode</li>
-									<li>vt_luxcommode</li>
-									<li>VaultWardrobeB</li>
-									<li>VaultWardrobeA</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== UN-Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Furniture (Continued)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukFurnitureAA</li>
-									<li>SadjuukFurnitureAB</li>
-									<li>SadjuukFurnitureAC</li>
-									<li>SadjuukFurnitureBA</li>
-									<li>SadjuukFurnitureBB</li>
-									<li>SadjuukFurnitureBC</li>
-								</value>
-							</li>
-
-                            <!-- TB_TankBedMedical -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="TB_TankBedMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
-                                </value>
-                            </li>
-						</operations>
-					</match>
-				</li>
-
-                <!-- ========== Vanilla Factions Expanded - Ancients ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Vanilla Factions Expanded - Ancients</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- TB_TankBedMedical -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="TB_TankBedMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-                                    <li>VFEA_AncientVitalsMonitor</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
-
                 <!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -538,6 +538,21 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
+							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>vt_curio</li>
+									<li>vt_EndTable</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxcommode</li>
+									<li>VaultWardrobeB</li>
+									<li>VaultWardrobeA</li>
+								</value>
+							</li>
+
                             <!-- TB_TankBedMedical -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>

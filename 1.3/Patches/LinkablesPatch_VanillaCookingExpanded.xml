@@ -2,7 +2,10 @@
 <!--
 	========== Vanilla Cooking Expanded ==========
 
-	VCE_Grill | VCE_DeepFrier | VCE_CanningMachine | VCE_CondimentPrepTable
+	VCE_Grill | #cooking
+    VCE_DeepFrier | #cooking
+    VCE_CanningMachine | #cooking
+    VCE_CondimentPrepTable | #cooking
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -79,6 +82,27 @@
 						</operations>
 					</match>
 				</li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- VCE_Grill | VCE_DeepFrier | VCE_CanningMachine | VCE_CondimentPrepTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="VCE_Grill" or defName="VCE_DeepFrier"or defName="VCE_CanningMachine"or defName="VCE_CondimentPrepTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>KitchenCupboard</li><!-- More Linkables -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">

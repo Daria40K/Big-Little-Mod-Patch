@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!-- ========== Vanilla Furniture Expanded ========== -->
+	<!--
+		========== Vanilla Furniture Expanded ==========
+
+		Bed_Ergonomic | #bed
+		Bed_DoubleErgonomic | #bed
+		Bed_Kingsize | #bed
+	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Furniture Expanded</li>
@@ -9,6 +15,26 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- ========== Ideology [Official DLC] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ideology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== GloomyFurniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -201,10 +227,10 @@
 					</match>
 				</li>
 
-				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<!-- ========== RimVali: Far From Avalon ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Vault-Tec - Handy things for your vault!</li>
+						<li>RimVali: Far From Avalon</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">
@@ -215,13 +241,7 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>vt_curio</li>
-									<li>vt_EndTable</li>
-									<li>vt_luxEndTable</li>
-									<li>vt_commode</li>
-									<li>vt_luxcommode</li>
-									<li>VaultWardrobeB</li>
-									<li>VaultWardrobeA</li>
+									<li>IlluminateEndTable</li>
 								</value>
 							</li>
 						</operations>
@@ -248,6 +268,33 @@
 									<li>SadjuukFurnitureBA</li>
 									<li>SadjuukFurnitureBB</li>
 									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Bed_Ergonomic | Bed_DoubleErgonomic | Bed_Kingsize -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Kingsize"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>vt_curio</li>
+									<li>vt_EndTable</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxcommode</li>
+									<li>VaultWardrobeB</li>
+									<li>VaultWardrobeA</li>
 								</value>
 							</li>
 						</operations>

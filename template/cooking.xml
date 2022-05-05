@@ -1,79 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
-	========== Comigo's Adequate Cooking Expanded ==========
+	========== #TemplateCookingMod# ==========
 
-	COMIGO_ElectricMill | #cooking
-    COMIGO_Quernstone | #cooking
+	#TemplateCooking# | #cooking
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Comigo's Adequate Cooking Expanded</li>
+			<li>#TemplateCookingMod#</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-                <!-- COMIGO_ElectricMill -->
-                <li Class="PatchOperationConditional">
-                    <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="COMIGO_ElectricMill"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-                    <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName="COMIGO_ElectricMill"]/comps</xpath>
-                        <value>
-                            <li Class="CompProperties_AffectedByFacilities">
-                                <linkableFacilities>
-
-                                </linkableFacilities>
-                            </li>
-                        </value>
-                    </nomatch>
-                </li>
-
-                <li Class="PatchOperationConditional">
-                    <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName = "COMIGO_ElectricMill"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
-                    <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName = "COMIGO_ElectricMill"]/placeWorkers</xpath>
-                        <value>
-                            <li>PlaceWorker_ShowFacilitiesConnections</li>
-                        </value>
-                    </nomatch>
-                </li>
-
-                <!-- COMIGO_Quernstone -->
-                <li Class="PatchOperationConditional">
-                    <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="COMIGO_Quernstone"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-                    <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName="COMIGO_Quernstone"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities>
-
-                                    </linkableFacilities>
-                                </li>
-                            </comps>
-                        </value>
-                    </nomatch>
-                </li>
-
-                <li Class="PatchOperationConditional">
-                    <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName = "COMIGO_Quernstone"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
-                    <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName = "COMIGO_Quernstone"]/placeWorkers</xpath>
-                        <value>
-                            <li>PlaceWorker_ShowFacilitiesConnections</li>
-                        </value>
-                    </nomatch>
-                </li>
-
                 <!-- ========== GloomyFurniture ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -83,10 +21,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- COMIGO_ElectricMill | COMIGO_Quernstone -->
+                            <!-- #TemplateCooking# -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="COMIGO_ElectricMill" or defName="COMIGO_Quernstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="#TemplateCooking#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li><!-- GloomyFurniture -->
 						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
@@ -105,10 +43,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- COMIGO_ElectricMill | COMIGO_Quernstone -->
+                            <!-- #TemplateCooking# -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="COMIGO_ElectricMill" or defName="COMIGO_Quernstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="#TemplateCooking#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
 						            <li>SM_KitchenCupboard_A</li>
@@ -129,10 +67,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- COMIGO_ElectricMill | COMIGO_Quernstone -->
+							<!-- #TemplateCooking# -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="COMIGO_ElectricMill" or defName="COMIGO_Quernstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="#TemplateCooking#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
@@ -150,10 +88,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- COMIGO_ElectricMill | COMIGO_Quernstone -->
+                            <!-- #TemplateCooking# -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="COMIGO_ElectricMill" or defName="COMIGO_Quernstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="#TemplateCooking#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>KitchenCupboard</li><!-- More Linkables -->
                                 </value>
@@ -171,10 +109,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- COMIGO_ElectricMill | COMIGO_Quernstone -->
+							<!-- #TemplateCooking# -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="COMIGO_ElectricMill" or defName="COMIGO_Quernstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="#TemplateCooking#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>
@@ -191,10 +129,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- COMIGO_ElectricMill | COMIGO_Quernstone -->
+                            <!-- #TemplateCooking# -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="COMIGO_ElectricMill" or defName="COMIGO_Quernstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="#TemplateCooking#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
                                     <li>Link_KitchenBoost</li>

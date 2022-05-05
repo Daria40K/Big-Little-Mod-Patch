@@ -2,7 +2,11 @@
 <!--
     ========== RIMkea ==========
 
-    SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed
+    SNOREGGSingle | #bed
+	KRUDNEPPSingle | #bed
+	SNOREGGDouble | #bed
+	SLABNEPPDouble | #bed
+	PILFURBed | #bed
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -108,6 +112,31 @@
 					</match>
 				</li>
 
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2RoyalEndTableLight</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== [O21] Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -172,8 +201,8 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>RLE_KazariKatana</li>									<!-- RimLife Expansion Furniture -->
-									<li>RLE_Kouro</li>									<!-- RimLife Expansion Furniture -->
+									<li>RLE_KazariKatana</li>
+									<li>RLE_Kouro</li>
 								</value>
 							</li>
 						</operations>
@@ -217,6 +246,32 @@
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== UN-Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
 								</value>
 							</li>
 						</operations>
@@ -269,26 +324,27 @@
 					</match>
 				</li>
 
-				<!-- ========== UN-Furniture ========== -->
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>UN-Furniture (Continued)</li>
+						<li>Vault-Tec - Handy things for your vault!</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							<!-- #TemplateBed# -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="#TemplateBed#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>SadjuukFurnitureAA</li>
-									<li>SadjuukFurnitureAB</li>
-									<li>SadjuukFurnitureAC</li>
-									<li>SadjuukFurnitureBA</li>
-									<li>SadjuukFurnitureBB</li>
-									<li>SadjuukFurnitureBC</li>
+									<li>vt_curio</li>
+									<li>vt_EndTable</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxcommode</li>
+									<li>VaultWardrobeB</li>
+									<li>VaultWardrobeA</li>
 								</value>
 							</li>
 						</operations>

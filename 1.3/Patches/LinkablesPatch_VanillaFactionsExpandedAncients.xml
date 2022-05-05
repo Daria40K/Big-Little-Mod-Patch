@@ -3,8 +3,8 @@
     <!--
         ========== Vanilla Factions Expanded - Ancients ==========
 
-        VFEA_AncientBed
-        VFEA_AncientCryptosleepSuspender
+        VFEA_AncientBed | #bed
+        VFEA_AncientCryptosleepSuspender | #bed
 
         VFEA_AncientVitalsMonitor
 
@@ -98,6 +98,30 @@
                                 <value>
                                     <li>GL_Cupboard</li><!-- GloomyFurniture -->
 						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Gloomy Extra - Kitchen ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Gloomy Extra - Kitchen</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- VFEA_AncientBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VFEA_AncientBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>SM_Sink</li>
+						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_B</li>
+                                    <li>SM_KitchenCupboard_C</li>
                                 </value>
                             </li>
                         </operations>

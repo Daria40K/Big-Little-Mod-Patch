@@ -2,8 +2,8 @@
 <!--
 	========== Powerful Kitchen ==========
 
-	RLE_ElectButcher
-    RLE_KitchenTable
+	RLE_ElectButcher | 
+    RLE_KitchenTable | #cooking
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">

@@ -3,16 +3,16 @@
     <!--
         ========== Vanilla Furniture Expanded - Production ==========
 
-        VFE_TableStoveLarge
-        VFE_TableButcherElectric
-        VFE_TableStonecutterElectric
-        VFE_TableSmithyLarge
-        VFE_TableMachiningLarge
-        VFE_TableTailorLarge
-        VFE_FueledSmelter
-        VFE_ComponentFabricationBench
-        VFE_TableButcherElectric
-        VFE_TableDrugLabElectric
+        VFE_TableStoveLarge | #cooking
+        VFE_TableButcherElectric | #butcher
+        VFE_TableStonecutterElectric | #toolcabinet #stonecutter 
+        VFE_TableSmithyLarge | #toolcabinet #smithy
+        VFE_TableMachiningLarge | #toolcabinet #machining
+        VFE_TableTailorLarge | #toolcabinet #tailor
+        VFE_FueledSmelter | #toolcabinet #smelter
+        VFE_ComponentFabricationBench | #toolcabinet
+        VFE_TableButcherElectric | #butcher
+        VFE_TableDrugLabElectric | #toolcabinet #drug
     -->
     <Operation Class="PatchOperationFindMod">
 		<mods>
@@ -156,6 +156,27 @@
                     </match>
                 </li>
 
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- VFE_TableStonecutterElectric -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>KitchenCupboard</li><!-- More Linkables -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -202,6 +223,28 @@
                                     <li>SadjuukMilling</li>
                                     <li>SadjuukWeldingRobot</li>
                                     <li>SadjuukAssemblyRobot</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- VFE_TableStonecutterElectric -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>Link_KitchenGoods</li>
+                                    <li>Link_KitchenBoost</li>
+                                    <li>Link_UniversalCabinet</li>
                                 </value>
                             </li>
                         </operations>
