@@ -22,6 +22,7 @@
 - [Cyber Fauna 1.3](https://steamcommunity.com/sharedfiles/filedetails/?id=1548649032) (Production links)
 - [Eccentric Tech - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2552623545) (Research links)
 - [Erin's Japanese Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2354938860) (Furniture links)
+- [EverythingTable](https://steamcommunity.com/sharedfiles/filedetails/?id=2803969589) (Production links)
 - [Expanded Materials Add-On - Minimalist Production](https://steamcommunity.com/sharedfiles/filedetails/?id=2564410016) (Production links)
 - [Expanded Materials - Metals](https://steamcommunity.com/sharedfiles/filedetails/?id=2259837114) (Production links)
 - [[LITE]Expanded Materials - Metals](https://steamcommunity.com/sharedfiles/filedetails/?id=2434786884) (Production links)

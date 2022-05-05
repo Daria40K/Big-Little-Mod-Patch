@@ -88,6 +88,15 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+                            <li Class="PatchOperationAdd">
+								<success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_ComfortingPlush</li>
+								</value>
+							</li>
+
 							<!-- HospitalBedVault -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>

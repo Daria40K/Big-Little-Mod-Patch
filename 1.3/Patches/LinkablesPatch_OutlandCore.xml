@@ -3,7 +3,7 @@
 	========== [O21] Outland - Core ==========
 
 	Outland_BedSingle | #bed
-	utland_BedDouble | #bed
+	Outland_BedDouble | #bed
 
 	Outland_Forge
 -->
@@ -30,6 +30,26 @@
 								<xpath>/Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- Outland_BedSingle | Outland_BedDouble -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_ComfortingPlush</li>
 								</value>
 							</li>
 						</operations>

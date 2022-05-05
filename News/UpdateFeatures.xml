@@ -271,4 +271,11 @@
 		<assemblyVersion>2.33.1</assemblyVersion>
 		<content>Fixed some xml issues|Fixed missing content</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.34 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_34</defName>
+		<assemblyVersion>2.34</assemblyVersion>
+		<content>Added support for EverythingTable</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
