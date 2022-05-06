@@ -190,10 +190,11 @@
                     </match>
                 </li>
 
-				<!-- ========== Life Support (Fan Update) ========== -->
+				<!-- ========== Life Support ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Life Support (Fan Update)</li>
+						<li>Life Support Continued [1.1+]</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">
@@ -656,6 +657,27 @@
 						</operations>
 					</match>
 				</li>
+
+				<!-- ========== Wall Vitals Monitor ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Wall Vitals Monitor</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- HospitalBedVault -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Wall_M_VitalsMonitor</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">

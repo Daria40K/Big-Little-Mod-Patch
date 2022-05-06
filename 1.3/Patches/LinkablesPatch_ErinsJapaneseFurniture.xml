@@ -83,29 +83,6 @@
 					</match>
 				</li>
 
-				<!-- ========== GlitterNet ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GlitterNet</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GNBasicBedIntegrator</li>
-									<li>GNImprovedBedIntegrator</li>
-									<li>GNAdvancedBedIntegrator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
 				<!-- ========== Mechalit Core v2 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

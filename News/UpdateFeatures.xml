@@ -278,4 +278,11 @@
 		<assemblyVersion>2.34</assemblyVersion>
 		<content>Added support for EverythingTable</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.35 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_35</defName>
+		<assemblyVersion>2.35</assemblyVersion>
+		<content>Added support for Life Support Continued [1.1+], NeuTech Advanced Medical Pod and Wall Vitals Monitor</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

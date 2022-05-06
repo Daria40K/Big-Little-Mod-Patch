@@ -53,10 +53,11 @@
 					</match>
 				</li>
 
-                <!-- ========== Life Support (Fan Update) ========== -->
+                <!-- ========== Life Support ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Life Support (Fan Update)</li>
+                        <li>Life Support Continued [1.1+]</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">
