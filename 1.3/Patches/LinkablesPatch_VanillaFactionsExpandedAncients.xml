@@ -8,7 +8,7 @@
 
         VFEA_AncientVitalsMonitor
 
-        VFEA_AncientCookingStation
+        VFEA_AncientCookingStation | #cooking
         VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop
     -->
 	<Operation Class="PatchOperationFindMod">

@@ -3,7 +3,7 @@
     <!--
         ========== Animal Medical Bed ==========
 
-        SUN_MedicalAnimalBed
+        SUN_MedicalAnimalBed | #medical
     -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>

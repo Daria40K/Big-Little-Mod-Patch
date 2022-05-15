@@ -285,4 +285,11 @@
 		<assemblyVersion>2.35</assemblyVersion>
 		<content>Added support for Life Support Continued [1.1+], NeuTech Advanced Medical Pod and Wall Vitals Monitor</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.35.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_35_1</defName>
+		<assemblyVersion>2.35.1</assemblyVersion>
+		<content>Updated support for Akeron Decorations</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

@@ -2,7 +2,7 @@
 <!-- 
     ========== #TemplateResearchMod# ==========
 
-    #TemplateResearch# | #bed
+    #TemplateResearch# | #advresearch
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -38,6 +38,30 @@
 								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AIUpliftAssistantAUA</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- #TemplateResearch# -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_WallPapersA</li>
+									<li>AKN_WallPapersB</li>
+									<li>AKN_PaperNotesA</li>
+									<li>AKN_PaperNotesB</li>
+									<li>AKN_PaperNotesC</li>
 								</value>
 							</li>
 						</operations>

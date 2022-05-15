@@ -2,7 +2,7 @@
 <!-- 
     ========== #TemplateResearchMod# ==========
 
-    #TemplateResearch# | #bed
+    #TemplateResearch# | #research
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -21,6 +21,30 @@
 					<value>
 						<li>MultiAnalyzer</li>
 					</value>
+				</li>
+
+				<!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- #TemplateResearch# -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_WallPapersA</li>
+									<li>AKN_WallPapersB</li>
+									<li>AKN_PaperNotesA</li>
+									<li>AKN_PaperNotesB</li>
+									<li>AKN_PaperNotesC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
 				</li>
 
 				<!-- ========== Clockwork And Steam ========== -->
@@ -136,7 +160,7 @@
 						<li>Rimputers</li>
 						<li>Rimputers (No Dubs Bad Hygiene)</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>

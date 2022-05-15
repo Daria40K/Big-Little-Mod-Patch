@@ -4,7 +4,7 @@
 
 	Vt_server | vtcompter
     vt_workbench
-    VTElectricStove
+    VTElectricStove | #cooking
 
 	Bed_Vault | #bed
 	Bed_DoubleVault | #bed

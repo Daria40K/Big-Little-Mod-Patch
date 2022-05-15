@@ -60,6 +60,19 @@
 									<li>AKN_ComfortingPlush</li>
 								</value>
 							</li>
+
+							<!-- RGK_SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_WallPapersA</li>
+									<li>AKN_WallPapersB</li>
+									<li>AKN_PaperNotesA</li>
+									<li>AKN_PaperNotesB</li>
+									<li>AKN_PaperNotesC</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
