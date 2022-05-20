@@ -1,17 +1,20 @@
-<!--
-	========== EverythingTable ==========
-
-	ET_CraftingTable | #toolcabinet #cooking #drug #bionic #tailor #smelter #smithy
--->
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>EverythingTable</li>
-		</mods>
+    <!-- ========== Vanilla Furniture Expanded - Power ==========
 
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
+        VPE_GasCrematorium
+        VPE_GasSmelter
+        VPE_GasStove | #cooking
+        VPE_GasSmithy
+	-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Power</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
                 <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -20,10 +23,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasSmelter | VPE_GasStove | VPE_GasSmithy -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="VPE_GasSmelter" or defName="VPE_GasStove" or defName="VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -31,28 +34,6 @@
 						</operations>
 					</match>
 				</li>
-
-                <!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Expanded Prosthetics and Organ Engineering - Forked</li>
-                    </mods>
-            
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- ET_CraftingTable -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>TableBionics</li>
-                                    <li>TableOrgans</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
 
                 <!-- ========== GloomyFurniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -63,13 +44,13 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasStove -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="VPE_GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
-						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                    <li>GL_Cupboard</li>
+                                    <li>GL_TablewareShelf</li>
                                 </value>
                             </li>
                         </operations>
@@ -85,13 +66,13 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasStove -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="VPE_GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
-						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_A</li>
                                     <li>SM_KitchenCupboard_B</li>
                                     <li>SM_KitchenCupboard_C</li>
                                 </value>
@@ -100,51 +81,50 @@
                     </match>
                 </li>
 
-                <!-- ========== Medical Supplements (Continued) ========== -->
+                <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
-                        <li>Medical Supplements (Continued)</li>
+                        <li>Medieval Overhaul</li>
                     </mods>
-            
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasStove -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="VPE_GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>DrugCabinet</li>
+                                    <li>DankPyon_RusticCookingTools</li>
+                                </value>
+                            </li>
+
+                            <!-- VPE_GasSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_QuenchingBucket</li>
+                                    <li>DankPyon_Bellows</li>
+                                    <li>DankPyon_ToolRack</li>
+                                    <li>DankPyon_Grinder</li>
+                                </value>
+                            </li>
+
+                            <!-- VPE_GasSmelter -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_QuenchingBucket</li>
+                                    <li>DankPyon_Bellows</li>
+                                    <li>DankPyon_ToolRack</li>
+                                    <li>DankPyon_Grinder</li>
                                 </value>
                             </li>
                         </operations>
                     </match>
                 </li>
-
-                <!-- ========== Medieval Overhaul ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medieval Overhaul</li>
-					</mods>
-			
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- ET_CraftingTable -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-									<li>DankPyon_RusticCookingTools</li>
-                                    <li>DankPyon_QuenchingBucket</li>
-                                    <li>DankPyon_Bellows</li>
-                                    <li>DankPyon_ToolRack</li>
-                                    <li>DankPyon_Grinder</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 
                 <!-- ========== More Linkables ========== -->
                 <li Class="PatchOperationFindMod">
@@ -155,12 +135,12 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasStove -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="VPE_GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>KitchenCupboard</li><!-- More Linkables -->
+                                    <li>KitchenCupboard</li>
                                 </value>
                             </li>
                         </operations>
@@ -176,10 +156,19 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasSmithy -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+
+                            <!-- VPE_GasSmelter -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
                                 </value>
@@ -197,10 +186,22 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasSmithy -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName = "ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                </value>
+                            </li>
+
+                            <!-- VPE_GasSmelter -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
                                     <li>SadjuukGrinding</li>
@@ -213,45 +214,29 @@
                 </li>
 
                 <!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-			
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- ET_CraftingTable -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-									<li>VFE_KitchenSinkCabinet</li>
-                                    <li>VFE_TailorCabinet</li>
-                                    <li>VFE_MachiningCabinet</li>
-                                    <li>VFE_DrugCabinet</li>
-                                    <li>VFE_SmithyCabinet</li>
-                                    <li>VFE_FabricationCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-                <!-- ========== Vanilla Genetics Expanded ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
-                        <li>Vanilla Genetics Expanded</li>
+                        <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasStove -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="VPE_GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>GR_NutrientVat</li>
+                                    <li>VFE_KitchenSinkCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- VPE_GasSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                               <value>
+                                    <li>VFE_SmithyCabinet</li>
                                 </value>
                             </li>
                         </operations>
@@ -266,25 +251,35 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- ET_CraftingTable -->
+                            <!-- VPE_GasStove -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="VPE_GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
                                     <li>Link_KitchenBoost</li>
-                                    <li>Link_TailorGoods</li>
-                                    <li>Link_TailorBoost</li>
-                                    <li>Link_SmithingGoods</li>
-                                    <li>Link_SmithingBoost</li>
-                                    <li>Link_StoneCutterGoods</li>
-                                    <li>Link_StoneCutterBoost</li>
-                                    <li>Link_MachiningGoods</li>
-                                    <li>Link_MachiningBoost</li>
-                                    <li>Link_DrugLabGoods</li>
-                                    <li>Link_DrugLabBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- VPE_GasSmelter -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>Link_SmelterGoods</li>
                                     <li>Link_SmelterBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- VPE_GasSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_SmithingGoods</li>
+                                    <li>Link_SmithingBoost</li>
                                     <li>Link_UniversalCabinet</li>
                                 </value>
                             </li>

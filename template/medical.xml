@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <!--
-        ========== #TemplateMedicalMod# ==========
+        ========== __TemplateMedicalMod__ ==========
 
-        #TemplateMedical# | #medical
+        __TemplateMedical__ | #medical
     -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>#TemplateMedicalMod#</li>
+			<li>__TemplateMedicalMod__</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -21,10 +21,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateMedical# -->
+							<!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -41,10 +41,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>AKN_RestoringPlush</li>
 								</value>
@@ -61,10 +61,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>CTSAdvancedVitalsMonitor</li>
 								</value>
@@ -83,10 +83,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>QE_LifeSupportSystem</li>
 								</value>
@@ -104,10 +104,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>sd_medicaddons_medieval_surg_washpan</li>
                                     <li>sd_medicaddons_medieval_surg_instruments</li>
@@ -132,10 +132,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>IV_Blood</li>
                                     <li>IV_Nutrition</li>
@@ -163,12 +163,35 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>MS_DStand</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+							<!-- __TemplateMedical__ -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SurgicalLamp</li>
+									<li>SurgicalInstruments</li>
+									<li>ToolCabinetC</li>
                                 </value>
                             </li>
                         </operations>
@@ -184,10 +207,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukSurgeryAA</li>
                                     <li>SadjuukSurgeryAB</li>
@@ -208,10 +231,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFEA_AncientVitalsMonitor</li>
                                 </value>
@@ -229,10 +252,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Facility_VitalsCentre</li>
                                     <li>Facility_IVDrip</li>
@@ -251,10 +274,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Vaultmedical</li>
                                     <li>Vaultmedicallamp</li>
@@ -273,10 +296,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- __TemplateMedical__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Wall_M_VitalsMonitor</li>
                                 </value>

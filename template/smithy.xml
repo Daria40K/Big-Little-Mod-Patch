@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<!--
-		========== __TemplateToolcabinetMod__ ==========
+		========== __TemplateSmithyMod__ ==========
 
-		__TemplateToolcabinet__ | #toolcabinet
+		__TemplateSmithy__ | #smithy
 	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>__TemplateToolcabinetMod__</li>
+			<li>__TemplateSmithyMod__</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -21,10 +21,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateToolcabinet__ -->
+                            <!-- __TemplateSmithy__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateSmithy__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -42,12 +42,15 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateToolcabinet__ -->
+                            <!-- __TemplateSmithy__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateSmithy__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>DankPyon_QuenchingBucket</li>
+									<li>DankPyon_Bellows</li>
 									<li>DankPyon_ToolRack</li>
+									<li>DankPyon_Grinder</li>
 								</value>
 							</li>
 						</operations>
@@ -63,10 +66,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateToolcabinet__ -->
+                            <!-- __TemplateSmithy__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateSmithy__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -86,12 +89,57 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateToolcabinet__ -->
+							<!-- __TemplateSmithy__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateSmithy__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== UN-Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- __TemplateSmithy__ -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="__TemplateSmithy__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+			
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- __TemplateSmithy__ -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="__TemplateSmithy__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_SmithyCabinet</li>
                                 </value>
                             </li>
 						</operations>
@@ -106,11 +154,13 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateToolcabinet__ -->
+							<!-- __TemplateSmithy__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateSmithy__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
+                                    <li>Link_SmithingGoods</li>
+                                    <li>Link_SmithingBoost</li>
                                     <li>Link_UniversalCabinet</li>
                                 </value>
                             </li>

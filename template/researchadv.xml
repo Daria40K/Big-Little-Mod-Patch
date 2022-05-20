@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-    ========== #TemplateResearchMod# ==========
+    ========== __TemplateResearchAdvMod__ ==========
 
-    #TemplateResearch# | #advresearch
+    #TemplateResearchAdv# | #researchadv
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>#TemplateResearchMod#</li>
+			<li>__TemplateResearchAdvMod__</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
 				<!-- ========== RimWorld ========== -->
-				<!-- #TemplateResearch# -->
+				<!-- __TemplateResearchAdv__ -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>MultiAnalyzer</li>
 					</value>
@@ -32,10 +32,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AIUpliftAssistantAUA</li>
 								</value>
@@ -52,10 +52,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_WallPapersA</li>
 									<li>AKN_WallPapersB</li>
@@ -77,10 +77,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchoAnalyzer</li>
 								</value>
@@ -98,10 +98,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ElectromechanicalComputer</li>
 									<li>AnalyticalStack</li>
@@ -120,10 +120,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ServerSilver</li>
 									<li>ServerGold</li>
@@ -142,10 +142,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricAuroraCore</li>
 								</value>
@@ -163,10 +163,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Bookshelf</li>
 								</value>
@@ -184,10 +184,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticBookshelf</li>
 									<li>DankPyon_RoyalBookshelf</li>
@@ -206,10 +206,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchoDecipherAI</li>
 								</value>
@@ -227,10 +227,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2FileCabinet</li>
 								</value>
@@ -238,6 +238,27 @@
 						</operations>
 					</match>
 				</li>
+
+				<!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- __TemplateResearchAdv__ -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetC</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
 				<!-- ========== Moyo-From the depth ========== -->
 				<li Class="PatchOperationFindMod">
@@ -248,10 +269,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MoyoGRModule</li>
 								</value>
@@ -269,10 +290,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Bookshelf</li>
 								</value>
@@ -290,10 +311,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ResearchPad</li>
 									<li>ResearchComputer</li>
@@ -314,10 +335,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_AllianceTerminal</li>
 								</value>
@@ -335,10 +356,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_AsariTerminal</li>
 								</value>
@@ -357,10 +378,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RP_MechanicalCalculator</li>
 									<li>RP_DifferenceEngine</li>
@@ -383,10 +404,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unlocker_GenI</li>
 									<li>SNS_Linkable_Unlocker_GenII</li>
@@ -407,10 +428,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ComputingSystemSW</li>
 								</value>
@@ -428,10 +449,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LostAnalyzer</li>
 									<li>BrutalAnalyzer</li>
@@ -451,10 +472,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukResearchBA</li>
 									<li>SadjuukResearchBB</li>
@@ -475,10 +496,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Misc_FileCabinet</li>
 								</value>
@@ -496,10 +517,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Facility_ResearchCounter</li>
 								</value>
@@ -516,10 +537,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- #TemplateResearch# -->
+							<!-- __TemplateResearchAdv__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="#TemplateResearch#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateResearchAdv__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_ResearchGoods</li>
 									<li>Link_ResearchBoost</li>

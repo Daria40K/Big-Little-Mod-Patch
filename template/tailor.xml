@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<!--
-		========== __TemplateToolcabinetMod__ ==========
+		========== __TemplateTailorMod__ ==========
 
-		__TemplateToolcabinet__ | #toolcabinet
+		__TemplateTailor__ | #tailor
 	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>__TemplateToolcabinetMod__</li>
+			<li>__TemplateTailorMod__</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -21,10 +21,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateToolcabinet__ -->
+                            <!-- __TemplateTailor__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -42,10 +42,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateToolcabinet__ -->
+                            <!-- __TemplateTailor__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>/Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -63,10 +63,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateToolcabinet__ -->
+                            <!-- __TemplateTailor__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -86,10 +86,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateToolcabinet__ -->
+							<!-- __TemplateTailor__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
                                 </value>
@@ -106,10 +106,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateToolcabinet__ -->
+							<!-- __TemplateTailor__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_UniversalCabinet</li>
                                 </value>

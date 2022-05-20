@@ -292,4 +292,11 @@
 		<assemblyVersion>2.35.1</assemblyVersion>
 		<content>Updated support for Akeron Decorations</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.36 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_35_1</defName>
+		<assemblyVersion>2.35.1</assemblyVersion>
+		<content>Updated support for Vanilla Furniture Expanded - Power (Don't know now i missed it but i did)|Fixed some xml issues|Fixed missing content</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

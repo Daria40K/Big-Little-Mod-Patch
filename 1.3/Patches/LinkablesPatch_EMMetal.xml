@@ -2,9 +2,9 @@
 <!--
     ========== Expanded Materials - Metals ==========
 
-    VMEu_MetalSmelter = alloy smelter
-    VMEu_ElectricMetalSmelter = electric alloy smelter
-    VMEu_AdvancedSmelter = advanced alloy smelter
+    VMEu_MetalSmelter | #smelter
+    VMEu_ElectricMetalSmelte | #smelter
+    VMEu_AdvancedSmelter | #smelter
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -16,6 +16,26 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+                <!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -34,6 +54,27 @@
                                     <li>DankPyon_Bellows</li>
                                     <li>DankPyon_ToolRack</li>
                                     <li>DankPyon_Grinder</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== [O21] Outland - Core ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[O21] Outland - Core</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
                                 </value>
                             </li>
                         </operations>

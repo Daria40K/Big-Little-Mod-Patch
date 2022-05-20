@@ -43,6 +43,26 @@
         </nomatch>
     </Operation>
 
+	<!-- ========== Akeron Decorations ========== -->
+	<li Class="PatchOperationFindMod">
+		<mods>
+			<li>Akeron Decorations</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- BiofuelRefinery -->
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[@Name="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>AKN_ComfortingPlush</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</li>
+
     <!-- ========== Clockwork And Steam ========== -->
     <Operation Class="PatchOperationFindMod">
 		<mods>

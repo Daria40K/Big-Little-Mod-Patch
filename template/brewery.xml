@@ -1,12 +1,12 @@
 <!--
-	========== __TemplateCookingMod__ ==========
+	========== __TemplateBreweryMod__ ==========
 
-	__TemplateCooking__ | #cooking
+	__TemplateBrewery__ | #brewery
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>__TemplateCookingMod__</li>
+			<li>__TemplateBreweryMod__</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -21,10 +21,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- __TemplateBrewery__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateBrewery__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li>
 						            <li>GL_TablewareShelf</li>
@@ -43,10 +43,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- __TemplateBrewery__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateBrewery__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
 						            <li>SM_KitchenCupboard_A</li>
@@ -67,10 +67,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateCooking__ -->
+							<!-- __TemplateBrewery__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateBrewery__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
@@ -88,10 +88,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- __TemplateBrewery__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateBrewery__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>KitchenCupboard</li>
                                 </value>
@@ -109,10 +109,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateCooking__ -->
+							<!-- __TemplateBrewery__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateBrewery__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>
@@ -129,10 +129,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- __TemplateBrewery__ -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>/Defs/ThingDef[defName="__TemplateBrewery__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
                                     <li>Link_KitchenBoost</li>

@@ -254,6 +254,15 @@
                                     <li>KitchenCupboard</li><!-- More Linkables -->
                                 </value>
                             </li>
+
+							<!-- RGK_SimpleResearchBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetC</li>
+                                </value>
+                            </li>
                         </operations>
                     </match>
                 </li>

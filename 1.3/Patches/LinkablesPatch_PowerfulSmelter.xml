@@ -2,7 +2,7 @@
 <!--
     ========== Powerful Smelte ==========
 
-    RLE_SmelterTable
+    RLE_SmelterTable | #smelter
 -->
 <Patch>
     <Operation Class="PatchOperationFindMod">
@@ -13,6 +13,26 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
+                <!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- RLE_SmelterTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[@Name="RLE_SmelterTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
