@@ -44,7 +44,7 @@
     </Operation>
 
 	<!-- ========== Akeron Decorations ========== -->
-	<li Class="PatchOperationFindMod">
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Akeron Decorations</li>
 		</mods>
@@ -61,7 +61,7 @@
 				</li>
 			</operations>
 		</match>
-	</li>
+	</Operation>
 
     <!-- ========== Clockwork And Steam ========== -->
     <Operation Class="PatchOperationFindMod">
