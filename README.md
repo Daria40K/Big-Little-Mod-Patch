@@ -75,6 +75,7 @@
 - [[SZ]Super Mechneko - 超级机械猫娘](https://steamcommunity.com/sharedfiles/filedetails/?id=2128611954) (Production links)
 - [[1.2, 1.3] Tank Beds (Fast Sleep)](https://steamcommunity.com/sharedfiles/filedetails/?id=2020858426) (Furniture links)
 - [Tech Raiding [1.1] (continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2103664182) (Research links)
+- [The Complete Drug Overhaul (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2810368217) (Production links)
 - [[JDS] The Forge - Anvil](https://steamcommunity.com/sharedfiles/filedetails/?id=1967561500) (Production links)
 - [Tiny Workbenchs (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2387981423) (Production links)
 - [UN-Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2019774854) (Furniture, Production & Research links)
