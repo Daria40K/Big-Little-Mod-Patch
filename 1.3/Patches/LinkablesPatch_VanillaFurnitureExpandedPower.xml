@@ -3,9 +3,9 @@
     <!-- ========== Vanilla Furniture Expanded - Power ==========
 
         VPE_GasCrematorium
-        VPE_GasSmelter
+        VPE_GasSmelter | #smelter
         VPE_GasStove | #cooking
-        VPE_GasSmithy
+        VPE_GasSmithy | #smithy
 	-->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -23,6 +23,15 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
+                            <!-- VPE_GasStove -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VPE_GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+
                             <!-- VPE_GasSmelter | VPE_GasStove | VPE_GasSmithy -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>

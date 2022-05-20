@@ -299,4 +299,11 @@
 		<assemblyVersion>2.36</assemblyVersion>
 		<content>Updated support for Vanilla Furniture Expanded - Power (Don't know now i missed it but i did)|Fixed some xml issues|Fixed missing content</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.37 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_37</defName>
+		<assemblyVersion>2.37</assemblyVersion>
+		<content>Updated support for Vanilla Genetics Expanded - More Lab Stuff|Fixed some xml issues</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

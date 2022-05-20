@@ -13,6 +13,26 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+                <!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- Moyo_FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -22,17 +42,61 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- Matterfab | Electrolyzer | RobAssem -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+                            <!-- Moyo_FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
                                     <li>DankPyon_ToolRack</li>
                                 </value>
                             </li>
                         </operations>
                     </match>
                 </li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Moyo_FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== [O21] Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[O21] Outland - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Moyo_FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								 <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
 
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -43,11 +107,11 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- Matterfab | Electrolyzer | RobAssem -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+                            <!-- Moyo_FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
                                     <li>SadjuukShaper</li>
                                     <li>SadjuukGrinding</li>
                                     <li>SadjuukLathe</li>
@@ -66,11 +130,11 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- Matterfab | Electrolyzer | RobAssem -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+                            <!-- Moyo_FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
                                     <li>VFE_MachiningCabinet</li>
                                 </value>
                             </li>
@@ -86,11 +150,11 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- Matterfab | Electrolyzer | RobAssem -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+                            <!-- Moyo_FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
                                     <li>Link_MachiningGoods</li>
                                     <li>Link_MachiningBoost</li>
                                     <li>Link_UniversalCabinet</li>

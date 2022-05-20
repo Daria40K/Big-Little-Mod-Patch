@@ -120,6 +120,15 @@
 									<li>AKN_PaperNotesC</li>
 								</value>
 							</li>
+
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -422,6 +431,15 @@
 									<li>DankPyon_RoyalBookshelf</li>
 								</value>
 							</li>
+
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -490,6 +508,17 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
+							<!-- RE_ManufacturingBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+                                </value>
+                            </li>
+
                             <!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
@@ -552,6 +581,15 @@
 									<li>Outland_Bookshelf</li>
 								</value>
 							</li>
+
+							<!-- RE_ManufacturingBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
 						</operations>
 					</match>
 				</li>
@@ -786,6 +824,18 @@
 									<li>SadjuukResearchBD</li>
 								</value>
 							</li>
+
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -871,6 +921,27 @@
 									<li>Facility_ResearchCounter</li>
 								</value>
 							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+			
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- RE_ManufacturingBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName = "RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_MachiningCabinet</li>
+                                </value>
+                            </li>
 						</operations>
 					</match>
 				</li>
@@ -972,6 +1043,17 @@
 									<li>Link_ResearchBoost</li>
 								</value>
 							</li>
+
+							<!-- RE_ManufacturingBench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_MachiningGoods</li>
+                                    <li>Link_MachiningBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
 						</operations>
 					</match>
 				</li>

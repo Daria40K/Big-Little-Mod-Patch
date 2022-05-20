@@ -87,6 +87,7 @@
 - [Vanilla Furniture Expanded - Production](https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632) (Production links)
 - [Vanilla Furniture Expanded - Spacer Module](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079) (Furniture links)
 - [Vanilla Genetics Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2801160906) (Production links)
+- [Vanilla Genetics Expanded - More Lab Stuff](https://steamcommunity.com/sharedfiles/filedetails/?id=2810324444) (Production links)
 - [Vault-Tec - Handy things for your vault!](https://steamcommunity.com/sharedfiles/filedetails/?id=1888778429) (Furniture & Production links)
 - [Wall Vitals Monitor](https://steamcommunity.com/sharedfiles/filedetails/?id=1334289344) (Furniture links)
 - [What the hack?!](https://steamcommunity.com/sharedfiles/filedetails/?id=1505914869) (Production links)

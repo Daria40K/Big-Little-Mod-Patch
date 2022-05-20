@@ -3,7 +3,7 @@
 	<!--
 		========== __TemplateFabricationMod__ ==========
 
-		__TemplateFabrication__ | #toolcabinet
+		__TemplateFabrication__ | #fabrication
 	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>

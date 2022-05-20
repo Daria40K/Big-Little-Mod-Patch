@@ -338,12 +338,23 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- #TemplateCooking# -->
-                            <li Class="PatchOperationAdd">
+                            <!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
+							<li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="#TemplateCooking#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+								<xpath>/Defs/ThingDef[defName="TWB_FueledStoveMini" or defName="TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								 <value>
                                     <li>KitchenCupboard</li><!-- More Linkables -->
+                                </value>
+                            </li>
+
+                            <!-- TWB_TableSculptingMini | TWB_TableButcherMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableMachiningMini | TWB_TableStonecutterMini | TWB_BreweryMini | TWB_DrugLabMini | TWB_ElectricSmelterMini -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="TWB_TableSculptingMini" or defName="TWB_TableButcherMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableStonecutterMini" or defName="TWB_BreweryMini" or defName="TWB_DrugLabMini" or defName="TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
                                 </value>
                             </li>
                         </operations>

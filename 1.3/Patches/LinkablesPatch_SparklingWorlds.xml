@@ -7,102 +7,19 @@
         MechaniteAssemblySW
         TableWeaverSW
     -->
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Sparkling Worlds - Full Mod</li>
-		</mods>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Sparkling Worlds - Full Mod</li>
+        </mods>
 
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
                 <!-- ========== Ideology [Official DLC] ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Ideology</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- GlitterworldHospitalBedSW -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SleepAccelerator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-                <!-- ========== Akeron Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- GlitterworldHospitalBedSW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_RestoringPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-                <!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>CTS - Complete Tech Solutions (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- GlitterworldHospitalBedSW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CTSAdvancedVitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-                <!-- ========== Life Support ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Life Support (Fan Update)</li>
-                        <li>Life Support Continued [1.1+]</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- GlitterworldHospitalBedSW -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>QE_LifeSupportSystem</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-                <!-- ========== [sd] medicaddons (unofficial) ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
-                        <li>[sd] medicaddons (unofficial)</li>
+                        <li>Ideology</li>
                     </mods>
-            
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
@@ -110,7 +27,99 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
+                                    <li>SleepAccelerator</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Akeron Decorations ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Akeron Decorations</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GlitterworldHospitalBedSW -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>AKN_RestoringPlush</li>
+                                </value>
+                            </li>
+
+                            <!-- MechaniteAssemblySW | TableWeaverSW -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>AKN_MotivatingPlush</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>CTS - Complete Tech Solutions (Continued)</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GlitterworldHospitalBedSW -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>CTSAdvancedVitalsMonitor</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Life Support ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Life Support (Fan Update)</li>
+                        <li>Life Support Continued [1.1+]</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GlitterworldHospitalBedSW -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>QE_LifeSupportSystem</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== [sd] medicaddons (unofficial) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[sd] medicaddons (unofficial)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GlitterworldHospitalBedSW -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>sd_medicaddons_medieval_surg_washpan</li>
                                     <li>sd_medicaddons_medieval_surg_instruments</li>
                                     <li>sd_medicaddons_medieval_surg_lamp</li>
@@ -130,7 +139,7 @@
                     <mods>
                         <li>Medical IVs</li>
                     </mods>
-            
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
@@ -138,7 +147,7 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>IV_Blood</li>
                                     <li>IV_Nutrition</li>
                                     <li>IV_Painkiller</li>
@@ -161,7 +170,7 @@
                     <mods>
                         <li>Medical Supplements (Continued)</li>
                     </mods>
-            
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
@@ -169,7 +178,7 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>MS_DStand</li>
                                 </value>
                             </li>
@@ -178,34 +187,57 @@
                 </li>
 
                 <!-- ========== Medieval Overhaul ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medieval Overhaul</li>
-					</mods>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
 
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- MechaniteAssemblySW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_ToolRack</li>
-								</value>
-							</li>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MechaniteAssemblySW -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
 
                             <!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_ToolRack</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MechaniteAssemblySW | TableWeaverSW -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetA</li>
+                                    <li>ToolCabinetB</li>
+                                    <li>ToolCabinetC</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -220,7 +252,7 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>SadjuukSurgeryAA</li>
                                     <li>SadjuukSurgeryAB</li>
                                     <li>SadjuukSurgeryAC</li>
@@ -229,16 +261,16 @@
                             </li>
 
                             <!-- MechaniteAssemblySW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukShaper</li>
-									<li>SadjuukGrinding</li>
-									<li>SadjuukLathe</li>
-									<li>SadjuukMilling</li>
-								</value>
-							</li>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                </value>
+                            </li>
                         </operations>
                     </match>
                 </li>
@@ -248,7 +280,7 @@
                     <mods>
                         <li>Vanilla Factions Expanded - Ancients</li>
                     </mods>
-            
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
@@ -256,7 +288,7 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>VFEA_AncientVitalsMonitor</li>
                                 </value>
                             </li>
@@ -269,7 +301,7 @@
                     <mods>
                         <li>Vanilla Furniture Expanded - Medical Module</li>
                     </mods>
-            
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
@@ -277,7 +309,7 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>Facility_VitalsCentre</li>
                                     <li>Facility_IVDrip</li>
                                 </value>
@@ -295,19 +327,19 @@
                         <success>Always</success>
                         <operations>
                             <!-- MechaniteAssemblySW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>VFE_MachiningCabinet</li>
                                 </value>
                             </li>
 
                             <!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>VFE_TailorCabinet</li>
                                 </value>
                             </li>
@@ -320,7 +352,7 @@
                     <mods>
                         <li>Vault-Tec - Handy things for your vault!</li>
                     </mods>
-            
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
@@ -328,7 +360,7 @@
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>Vaultmedical</li>
                                     <li>Vaultmedicallamp</li>
                                 </value>
@@ -342,7 +374,7 @@
                     <mods>
                         <li>Wall Vitals Monitor</li>
                     </mods>
-            
+
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
@@ -367,10 +399,10 @@
                         <success>Always</success>
                         <operations>
                             <!-- MechaniteAssemblySW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>Link_MachiningGoods</li>
                                     <li>Link_MachiningBoost</li>
                                     <li>Link_UniversalCabinet</li>
@@ -378,10 +410,10 @@
                             </li>
 
                             <!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>Link_TailorGoods</li>
                                     <li>Link_TailorBoost</li>
                                     <li>Link_UniversalCabinet</li>

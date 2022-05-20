@@ -180,6 +180,15 @@
 									<li>AKN_ComfortingPlush</li>
 								</value>
 							</li>
+
+							<!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone | DankPyon_ButchersBlock | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_StonecuttingSpot | DankPyon_Furnace | DankPyon_Anvil | DankPyon_Workbench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone" or defName = "DankPyon_ButchersBlock" or defName = "DankPyon_SpinningWheel" or defName = "DankPyon_TailorsBench" or defName = "DankPyon_StonecuttingSpot" or defName="DankPyon_Furnace or defName="DankPyon_Anvil" or defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>

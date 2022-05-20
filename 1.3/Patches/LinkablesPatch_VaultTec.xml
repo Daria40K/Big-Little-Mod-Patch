@@ -105,6 +105,24 @@
 									<li>AKN_RestoringPlush</li>
 								</value>
 							</li>
+
+							<!-- VTElectricStove -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+
+							<!-- vt_workbench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -345,6 +363,15 @@
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
 							</li>
+
+							<!-- vt_workbench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>/Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -364,6 +391,17 @@
 								<xpath>/Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>KitchenCupboard</li><!-- More Linkables -->
+                                </value>
+                            </li>
+
+							<!-- vt_workbench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
                                 </value>
                             </li>
                         </operations>
@@ -415,6 +453,15 @@
 									<li>Outland_Wardrobe</li>
 								</value>
 							</li>
+
+							<!-- vt_workbench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
 						</operations>
 					</match>
 				</li>
@@ -538,10 +585,10 @@
                                 <success>Always</success>
                                 <xpath>/Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAA</li>
+                                    <li>SadjuukSurgeryAB</li>
+                                    <li>SadjuukSurgeryAC</li>
+                                    <li>SadjuukSurgeryAD</li>
                                 </value>
                             </li>
                         </operations>
@@ -694,6 +741,15 @@
                                 <value>
                                     <li>Link_KitchenGoods</li>
                                     <li>Link_KitchenBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+							<!-- vt_workbench -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>Link_UniversalCabinet</li>
                                 </value>
                             </li>

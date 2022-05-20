@@ -207,17 +207,17 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[defName="TB_TankBedMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>IV_Blood</li><!-- Medical IVs -->
-                                    <li>IV_Nutrition</li><!-- Medical IVs -->
-                                    <li>IV_Painkiller</li><!-- Medical IVs -->
-                                    <li>IV_Antibiotics</li><!-- Medical IVs -->
-                                    <li>IV_Anesthetic</li><!-- Medical IVs -->
-                                    <li>IV_Blood_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Nutrition_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Painkiller_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Antibiotics_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Anesthetic_Electric</li><!-- Medical IVs -->
-                                    <li>IV_Multi_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Blood</li>
+                                    <li>IV_Nutrition</li>
+                                    <li>IV_Painkiller</li>
+                                    <li>IV_Antibiotics</li>
+                                    <li>IV_Anesthetic</li>
+                                    <li>IV_Blood_Electric</li>
+                                    <li>IV_Nutrition_Electric</li>
+                                    <li>IV_Painkiller_Electric</li>
+                                    <li>IV_Antibiotics_Electric</li>
+                                    <li>IV_Anesthetic_Electric</li>
+                                    <li>IV_Multi_Electric</li>
                                 </value>
                             </li>
                         </operations>
@@ -238,7 +238,7 @@
 								<success>Always</success>
 								<xpath>/Defs/ThingDef[defName="TB_TankBedMedical"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>MS_DStand</li><!-- Medical Supplements (Continued) -->
+                                    <li>MS_DStand</li>
                                 </value>
                             </li>
                         </operations>

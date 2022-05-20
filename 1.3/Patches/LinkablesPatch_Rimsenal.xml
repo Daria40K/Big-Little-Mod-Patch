@@ -13,6 +13,26 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+                <!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- GDTable | YPTable | JITable | TETable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/thingDef[defName = "GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -33,6 +53,50 @@
                         </operations>
                     </match>
                 </li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GDTable | YPTable | JITable | TETable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/thingDef[defName = "GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+				<!-- ========== [O21] Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[O21] Outland - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- GDTable | YPTable | JITable | TETable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/thingDef[defName = "GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
 
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -57,6 +121,26 @@
                         </operations>
                     </match>
                 </li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- GDTable | YPTable | JITable | TETable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>/Defs/thingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
             </operations>
         </match>
     </Operation>
