@@ -311,6 +311,13 @@
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
 		<defName>BigLittleModPatch_2_38</defName>
 		<assemblyVersion>2.38</assemblyVersion>
-		<content>Updated support for The Complete Drug Overhaul (Continued)</content>
+		<content>Added support for The Complete Drug Overhaul (Continued)</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.39 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_39</defName>
+		<assemblyVersion>2.39</assemblyVersion>
+		<content>Added support for [RWY]Advanced Mechanoid Warfare</content>
 	</HugsLib.UpdateFeatureDef>
 </Defs>
