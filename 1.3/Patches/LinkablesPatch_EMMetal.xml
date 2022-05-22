@@ -27,7 +27,7 @@
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -48,7 +48,7 @@
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_QuenchingBucket</li>
                                     <li>DankPyon_Bellows</li>
@@ -72,7 +72,7 @@
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
                                 </value>
@@ -93,7 +93,7 @@
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
                                     <li>SadjuukGrinding</li>
@@ -116,7 +116,7 @@
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_SmelterGoods</li>
                                     <li>Link_SmelterBoost</li>

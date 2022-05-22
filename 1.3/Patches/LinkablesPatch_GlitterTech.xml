@@ -17,10 +17,10 @@
                 <!-- Matterfab -->
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="Matterfab"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <xpath>Defs/ThingDef[defName="Matterfab"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName="Matterfab"]/comps</xpath>
+                        <xpath>Defs/ThingDef[defName="Matterfab"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
@@ -33,10 +33,10 @@
 
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName = "Matterfab"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <xpath>Defs/ThingDef[defName = "Matterfab"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName = "Matterfab"]/placeWorkers</xpath>
+                        <xpath>Defs/ThingDef[defName = "Matterfab"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
                         </value>
@@ -46,10 +46,10 @@
                 <!-- Electrolyzer -->
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="Electrolyzer"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <xpath>Defs/ThingDef[defName="Electrolyzer"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName="Electrolyzer"]/comps</xpath>
+                        <xpath>Defs/ThingDef[defName="Electrolyzer"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
@@ -62,10 +62,10 @@
 
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName = "Electrolyzer"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <xpath>Defs/ThingDef[defName = "Electrolyzer"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName = "Electrolyzer"]/placeWorkers</xpath>
+                        <xpath>Defs/ThingDef[defName = "Electrolyzer"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
                         </value>
@@ -75,10 +75,10 @@
                 <!-- RobAssem -->
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="RobAssem"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <xpath>Defs/ThingDef[defName="RobAssem"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName="RobAssem"]/comps</xpath>
+                        <xpath>Defs/ThingDef[defName="RobAssem"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
@@ -91,10 +91,10 @@
 
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName = "RobAssem"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <xpath>Defs/ThingDef[defName = "RobAssem"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <success>Always</success>
-                        <xpath>/Defs/ThingDef[defName = "RobAssem"]/placeWorkers</xpath>
+                        <xpath>Defs/ThingDef[defName = "RobAssem"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
                         </value>
@@ -113,7 +113,7 @@
                             <!-- PharmaTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DrugCabinet</li>
                                 </value>
@@ -134,7 +134,7 @@
                             <!-- Matterfab | Electrolyzer | RobAssem -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_ToolRack</li>
                                 </value>
@@ -155,7 +155,7 @@
                             <!-- Matterfab | Electrolyzer | RobAssem -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
                                     <li>SadjuukGrinding</li>
@@ -178,7 +178,7 @@
                             <!-- Matterfab | Electrolyzer | RobAssem -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_MachiningCabinet</li>
                                 </value>
@@ -187,7 +187,7 @@
                             <!-- PharmaTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_DrugCabinet</li>
                                 </value>
@@ -207,7 +207,7 @@
                             <!-- Matterfab | Electrolyzer | RobAssem -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_MachiningGoods</li>
                                     <li>Link_MachiningBoost</li>
@@ -218,7 +218,7 @@
                             <!-- PharmaTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_DrugLabGoods</li>
                                     <li>Link_DrugLabBoost</li>

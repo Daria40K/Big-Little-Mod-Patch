@@ -26,7 +26,7 @@
                             <!-- RLE_KitchenTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li><!-- GloomyFurniture -->
 						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
@@ -48,7 +48,7 @@
                             <!-- RLE_KitchenTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
 						            <li>SM_KitchenCupboard_A</li>
@@ -60,7 +60,7 @@
                             <!-- RLE_ElectButcher -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName="RLE_ElectButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RLE_ElectButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SM_Sink</li>
 									<li>SM_ButcherShelf</li>
@@ -85,7 +85,7 @@
 							<!-- RLE_KitchenTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
@@ -106,7 +106,7 @@
 							<!-- RLE_KitchenTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>KitchenCupboard</li>
 								</value>
@@ -115,7 +115,7 @@
 							<!-- RLE_ElectButcher -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName = "RLE_ElectButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "RLE_ElectButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>KitchenCupboard</li>
 								</value>
@@ -136,7 +136,7 @@
 							<!-- RLE_KitchenTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>
@@ -156,7 +156,7 @@
                             <!-- RLE_KitchenTable -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
                                     <li>Link_KitchenBoost</li>
@@ -167,7 +167,7 @@
                             <!-- RLE_ElectButcher -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>/Defs/ThingDef[defName = "RLE_ElectButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "RLE_ElectButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_ButcherGoods</li>
 									<li>Link_ButcherBoost</li>

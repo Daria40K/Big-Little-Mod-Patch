@@ -21,9 +21,9 @@
                 <!-- AnimalMedic -->
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="AnimalMedic"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <xpath>Defs/ThingDef[defName="AnimalMedic"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <xpath>/Defs/ThingDef[defName="AnimalMedic"]/comps</xpath>
+                        <xpath>Defs/ThingDef[defName="AnimalMedic"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
@@ -36,9 +36,9 @@
 
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName = "AnimalMedic"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <xpath>Defs/ThingDef[defName = "AnimalMedic"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <xpath>/Defs/ThingDef[defName = "AnimalMedic"]/placeWorkers</xpath>
+                        <xpath>Defs/ThingDef[defName = "AnimalMedic"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
                         </value>
@@ -48,9 +48,9 @@
                 <!-- AnimalMedicRobo -->
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="AnimalMedicRobo"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <xpath>Defs/ThingDef[defName="AnimalMedicRobo"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <xpath>/Defs/ThingDef[defName="AnimalMedicRobo"]/comps</xpath>
+                        <xpath>Defs/ThingDef[defName="AnimalMedicRobo"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
@@ -63,9 +63,9 @@
 
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName = "AnimalMedicRobo"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <xpath>Defs/ThingDef[defName = "AnimalMedicRobo"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <xpath>/Defs/ThingDef[defName = "AnimalMedicRobo"]/placeWorkers</xpath>
+                        <xpath>Defs/ThingDef[defName = "AnimalMedicRobo"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
                         </value>
@@ -82,7 +82,7 @@
 						<operations>
 							<!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -102,7 +102,7 @@
 							<!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_RestoringPlush</li>
 								</value>
@@ -111,7 +111,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>AKN_RestoringPlush</li>
 								</value>
@@ -131,7 +131,7 @@
 							<!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CTSAdvancedVitalsMonitor</li>
 								</value>
@@ -140,7 +140,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>CTSAdvancedVitalsMonitor</li>
 								</value>
@@ -162,7 +162,7 @@
 							<!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>QE_LifeSupportSystem</li>
 								</value>
@@ -171,7 +171,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>QE_LifeSupportSystem</li>
 								</value>
@@ -192,7 +192,7 @@
                             <!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>sd_medicaddons_medieval_surg_washpan</li>
                                     <li>sd_medicaddons_medieval_surg_instruments</li>
@@ -208,7 +208,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>sd_medicaddons_medieval_surg_washpan</li>
                                     <li>sd_medicaddons_medieval_surg_instruments</li>
@@ -236,7 +236,7 @@
                             <!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>IV_Blood</li><!-- Medical IVs -->
                                     <li>IV_Nutrition</li><!-- Medical IVs -->
@@ -255,7 +255,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>IV_Blood</li><!-- Medical IVs -->
                                     <li>IV_Nutrition</li><!-- Medical IVs -->
@@ -286,7 +286,7 @@
                             <!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>MS_DStand</li><!-- Medical Supplements (Continued) -->
                                 </value>
@@ -295,7 +295,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>MS_DStand</li><!-- Medical Supplements (Continued) -->
                                 </value>
@@ -316,7 +316,7 @@
                             <!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
                                     <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
@@ -328,7 +328,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
                                     <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
@@ -352,7 +352,7 @@
                             <!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFEA_AncientVitalsMonitor</li>
                                 </value>
@@ -361,7 +361,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFEA_AncientVitalsMonitor</li>
                                 </value>
@@ -382,7 +382,7 @@
                             <!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Facility_VitalsCentre</li>
                                     <li>Facility_IVDrip</li>
@@ -392,7 +392,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Facility_VitalsCentre</li>
                                     <li>Facility_IVDrip</li>
@@ -414,7 +414,7 @@
                             <!-- HerbBede | MedBed | IIMed -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Vaultmedical</li>
                                     <li>Vaultmedicallamp</li>
@@ -424,7 +424,7 @@
                             <!-- AnimalMedic | AnimalMedicRobo -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>/Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Vaultmedical</li>
                                     <li>Vaultmedicallamp</li>

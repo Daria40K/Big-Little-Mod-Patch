@@ -320,4 +320,11 @@
 		<assemblyVersion>2.39</assemblyVersion>
 		<content>Added support for [RWY]Advanced Mechanoid Warfare</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.40 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_40</defName>
+		<assemblyVersion>2.40</assemblyVersion>
+		<content>Increased patching performance (by removing 1020 /'s)</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
