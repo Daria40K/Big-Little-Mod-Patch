@@ -69,7 +69,7 @@
 - [Rimputers](https://steamcommunity.com/sharedfiles/filedetails/?id=2795070262) (Research links)
 - [Rimputers (No Dubs Bad Hygiene)](https://steamcommunity.com/sharedfiles/filedetails/?id=2798666741) (Research links)
 - [RimVali: Far From Avalon](https://steamcommunity.com/sharedfiles/filedetails/?id=2180380125) (Furniture, Production & Research links)
-- [Science Never Stops: Ambition of the Cosmic](https://steamcommunity.com/sharedfiles/filedetails/?id=1802857253) (Research links)
+- [Science Never Stops: Ambition of the Cosmic](https://steamcommunity.com/sharedfiles/filedetails/?id=1802857253) (Production & Research links)
 - [Smokeleaf Industry Reborn](https://steamcommunity.com/sharedfiles/filedetails/?id=2018570327) (Production links)
 - [Sparkling Worlds - Full Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1123043922) (Research links)
 - [StuffedDoll](https://steamcommunity.com/sharedfiles/filedetails/?id=1937192602) (Furniture links)

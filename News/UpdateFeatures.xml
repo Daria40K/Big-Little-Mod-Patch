@@ -327,4 +327,11 @@
 		<assemblyVersion>2.40</assemblyVersion>
 		<content>Increased patching performance (by removing 1020 /'s)</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.41 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_41</defName>
+		<assemblyVersion>2.41</assemblyVersion>
+		<content>Updated support for Science Never Stops: Ambition of the Cosmic</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
