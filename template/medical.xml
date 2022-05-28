@@ -221,6 +221,27 @@
                         </operations>
                     </match>
                 </li>
+                
+                <!-- ========== Ushankas Luciferium Expansion ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Ushankas Luciferium Expansion</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- __TemplateMedical__ -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="__TemplateMedical__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>USH_LuciferiumMedicalSimulator</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== Vanilla Factions Expanded - Ancients ========== -->
                 <li Class="PatchOperationFindMod">

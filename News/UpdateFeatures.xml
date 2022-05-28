@@ -334,4 +334,11 @@
 		<assemblyVersion>2.41</assemblyVersion>
 		<content>Updated support for Science Never Stops: Ambition of the Cosmic</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.42 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_42</defName>
+		<assemblyVersion>2.42</assemblyVersion>
+		<content>Added support for Ushankas Luciferium Expansion</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

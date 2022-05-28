@@ -80,6 +80,7 @@
 - [[JDS] The Forge - Anvil](https://steamcommunity.com/sharedfiles/filedetails/?id=1967561500) (Production links)
 - [Tiny Workbenchs (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2387981423) (Production links)
 - [UN-Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2019774854) (Furniture, Production & Research links)
+- [Ushankas Luciferium Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2809422332) (Production links)
 - [Vanilla Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519) (Production links)
 - [Vanilla Cooking Expanded - Sushi](https://steamcommunity.com/sharedfiles/filedetails/?id=2158539170) (Production links)
 - [Vanilla Factions Expanded - Ancients](https://steamcommunity.com/sharedfiles/filedetails/?id=2654846754) (Furniture & Production links)
