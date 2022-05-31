@@ -341,4 +341,11 @@
 		<assemblyVersion>2.42</assemblyVersion>
 		<content>Added support for Ushankas Luciferium Expansion</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.43 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_43</defName>
+		<assemblyVersion>2.43</assemblyVersion>
+		<content>Added support for A Rim Reborn - Core</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

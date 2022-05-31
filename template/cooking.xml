@@ -121,6 +121,27 @@
 					</match>
 				</li>
 
+                <!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- __TemplateCooking__ -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Vt_server</li>
+									<li>vtcompter</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>

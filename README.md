@@ -14,6 +14,7 @@
 - [Animal Medical Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2016958187) (Furniture links)
 - [Archotech Re-Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2351084803) (Research links)
 - [Area Rugs 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=1988111624) (Production links)
+- [A Rim Reborn - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2659227786) (Production links)
 - [Clockwork And Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1736127702) (Production & Research links - partial support)
 - [Comigo's Adequate Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2553865508) (Production links)
 - [Comigo's Nutrition](https://steamcommunity.com/sharedfiles/filedetails/?id=2546863371) (Production links)
