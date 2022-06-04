@@ -62,6 +62,29 @@
 					</match>
 				</li>
 
+                <!-- ========== Apini Playable Race, Continued! ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Apini Playable Race, Continued!</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- GR_TissueGrowingVat -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ApiniNectarStill</li>
+                                    <li>ApiniProstheticsTable</li>
+                                    <li>ApitechTable</li>
+                                    <li>ApitechSynthesizer</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
                 <!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>

@@ -348,4 +348,11 @@
 		<assemblyVersion>2.43</assemblyVersion>
 		<content>Added support for A Rim Reborn - Core</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.44 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_44</defName>
+		<assemblyVersion>2.44</assemblyVersion>
+		<content>Added support for Apini Playable Race, Continued! and RimBees</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
