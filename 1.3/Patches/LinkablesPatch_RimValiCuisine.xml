@@ -1,17 +1,46 @@
 <!--
-	========== __TemplateCookingMod__ ==========
+	========== RimVali: Cuisine ==========
 
-	__TemplateCooking__ | #cooking
+	AvaliCookingStation | #cooking
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>__TemplateCookingMod__</li>
+			<li>RimVali: Cuisine</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+                <!-- AvaliCookingStation -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName = "AvaliCookingStation"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName = "AvaliCookingStation"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
                 <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -20,10 +49,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- AvaliCookingStation -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -41,10 +70,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li>
 						            <li>GL_TablewareShelf</li>
@@ -63,10 +92,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
 						            <li>SM_KitchenCupboard_A</li>
@@ -87,10 +116,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateCooking__ -->
+							<!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
@@ -108,10 +137,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>KitchenCupboard</li>
                                 </value>
@@ -129,10 +158,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateCooking__ -->
+							<!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>
@@ -149,10 +178,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- __TemplateCooking__ -->
+							<!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Vt_server</li>
 									<li>vtcompter</li>
@@ -170,10 +199,10 @@
                     <match Class="PatchOperationSequence">
                         <success>Always</success>
                         <operations>
-                            <!-- __TemplateCooking__ -->
+                            <!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateCooking__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
                                     <li>Link_KitchenBoost</li>

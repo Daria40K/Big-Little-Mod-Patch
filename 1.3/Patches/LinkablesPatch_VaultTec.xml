@@ -127,6 +127,27 @@
 					</match>
 				</li>
 
+				<!-- ========== Clockwork And Steam ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Clockwork And Steam</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- HospitalBedVault -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>CarbolicAcidSprayer</li>
+                                    <li>OperatingTheatreNotes</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

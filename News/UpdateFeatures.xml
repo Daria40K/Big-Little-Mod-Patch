@@ -355,4 +355,11 @@
 		<assemblyVersion>2.44</assemblyVersion>
 		<content>Added support for Apini Playable Race, Continued! and RimBees</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.45 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_45</defName>
+		<assemblyVersion>2.45</assemblyVersion>
+		<content>Added support for RimVali: Cuisine and Swords (Continued)|Updated support for Clockwork And Steam</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

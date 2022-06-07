@@ -163,6 +163,16 @@
 									<li>AnalyticalStack</li>
 								</value>
 							</li>
+
+							<!-- SadjuukSurgeryBaseB -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>CarbolicAcidSprayer</li>
+                                    <li>OperatingTheatreNotes</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>

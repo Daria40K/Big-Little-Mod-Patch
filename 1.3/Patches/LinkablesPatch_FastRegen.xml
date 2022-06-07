@@ -120,6 +120,37 @@
 					</match>
 				</li>
 
+                <!-- ========== Clockwork And Steam ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Clockwork And Steam</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- HerbBede | MedBed | IIMed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CarbolicAcidSprayer</li>
+                                    <li>OperatingTheatreNotes</li>
+								</value>
+							</li>
+
+                            <!-- AnimalMedic | AnimalMedicRobo -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>CarbolicAcidSprayer</li>
+                                    <li>OperatingTheatreNotes</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
