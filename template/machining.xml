@@ -21,7 +21,7 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateMachining__ -->
+							<!-- __TemplateMachining__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -42,7 +42,7 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateMachining__ -->
+							<!-- __TemplateMachining__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -55,27 +55,27 @@
 				</li>
 
 				<!-- ========== More Linkables ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>More Linkables</li>
-                    </mods>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
 
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- __TemplateMachining__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>ToolCabinetA</li>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- __TemplateMachining__ -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== [O21] Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
@@ -87,18 +87,44 @@
 						<success>Always</success>
 						<operations>
 							<!-- __TemplateMachining__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Outland_Grindstone</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
 
-                <!-- ========== UN-Furniture ========== -->
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- __TemplateToolcabinet__ -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_wrench</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== UN-Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>UN-Furniture (Continued)</li>
@@ -107,7 +133,7 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateMachining__ -->
+							<!-- __TemplateMachining__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -122,23 +148,23 @@
 					</match>
 				</li>
 
-                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Furniture Expanded - Production</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
 							<!-- __TemplateMachining__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName = "__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>VFE_MachiningCabinet</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName = "__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -152,14 +178,14 @@
 						<success>Always</success>
 						<operations>
 							<!-- __TemplateMachining__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Vt_server</li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
 									<li>vtcompter</li>
-                                </value>
-                            </li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -173,15 +199,15 @@
 						<success>Always</success>
 						<operations>
 							<!-- __TemplateMachining__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Link_MachiningGoods</li>
-                                    <li>Link_MachiningBoost</li>
-                                    <li>Link_UniversalCabinet</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateMachining__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>

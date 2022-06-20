@@ -286,6 +286,26 @@
                     </match>
                 </li>
 
+                <!-- ========== Wall Vitals Monitor ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Wall Vitals Monitor</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Wall_M_VitalsMonitor</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
             </operations>
         </match>
     </Operation>

@@ -21,7 +21,7 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateTailor__ -->
+							<!-- __TemplateTailor__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -42,7 +42,7 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- __TemplateTailor__ -->
+							<!-- __TemplateTailor__ -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -55,27 +55,27 @@
 				</li>
 
 				<!-- ========== More Linkables ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>More Linkables</li>
-                    </mods>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
 
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- __TemplateTailor__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>ToolCabinetA</li>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- __TemplateTailor__ -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== [O21] Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
@@ -87,36 +87,61 @@
 						<success>Always</success>
 						<operations>
 							<!-- __TemplateTailor__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Outland_Grindstone</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- __TemplateToolcabinet__ -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateToolcabinet__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_measure</li>
+									<li>ucp_scraps</li>
+									<li>ucp_textileroll</li>
+									<li>ucp_pencil</li>
+									<li>ucp_toolbox</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
 
 				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Vanilla Furniture Expanded - Production</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- __TemplateTailor__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>VFE_TailorCabinet</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- __TemplateTailor__ -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_TailorCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
 				<li Class="PatchOperationFindMod">
@@ -127,14 +152,14 @@
 						<success>Always</success>
 						<operations>
 							<!-- __TemplateTailor__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Vt_server</li>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
 									<li>vtcompter</li>
-                                </value>
-                            </li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -148,15 +173,15 @@
 						<success>Always</success>
 						<operations>
 							<!-- __TemplateTailor__ -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="__TemplateTailor__"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>Link_TailorGoods</li>
-                                    <li>Link_TailorBoost</li>
-                                    <li>Link_UniversalCabinet</li>
-                                </value>
-                            </li>
+									<li>Link_TailorBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>

@@ -229,6 +229,77 @@
                     </match>
                 </li>
 
+                <!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- VFE_TableMachiningLarge -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="VFE_TableMachiningLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_wrench</li>
+								</value>
+							</li>
+
+                            <!-- VFE_TableSmithyLarge | VFE_FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="VFE_TableSmithyLarge" or defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+									<li>ucp_toolbox</li>
+								</value>
+							</li>
+
+                            <!-- VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_measure</li>
+									<li>ucp_scraps</li>
+									<li>ucp_textileroll</li>
+									<li>ucp_pencil</li>
+									<li>ucp_toolbox</li>
+								</value>
+							</li>
+
+                            <!-- VFE_ComponentFabricationBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="VFE_ComponentFabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_roboarm</li>
+									<li>ucp_toolbox</li>
+								</value>
+							</li>
+
+                            <!-- VFE_TableStonecutterElectric | VFE_TableDrugLabElectric -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric" or defName="VFE_TableDrugLabElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_toolbox</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -280,6 +351,26 @@
                         </operations>
                     </match>
                 </li>
+
+                <!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- VFE_TableMachiningLarge | VFE_TableSmithyLarge | VFE_FueledSmelter | VFE_TableTailorLarge | VFE_ComponentFabricationBench | VFE_TableStonecutterElectric | VFE_TableDrugLabElectric -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="VFE_TableMachiningLarge" or defName="VFE_TableSmithyLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableTailorLarge" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableDrugLabElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
 
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">

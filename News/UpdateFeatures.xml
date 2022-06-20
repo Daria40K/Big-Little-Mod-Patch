@@ -362,4 +362,18 @@
 		<assemblyVersion>2.45</assemblyVersion>
 		<content>Added support for RimVali: Cuisine and Swords (Continued)|Updated support for Clockwork And Steam</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.46 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_46</defName>
+		<assemblyVersion>2.46</assemblyVersion>
+		<content>Added support for Rah's Bionics and Surgery Expansion</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.47 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_47</defName>
+		<assemblyVersion>2.47</assemblyVersion>
+		<content>Added support for Tabletop Decorations and WallStuff</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
