@@ -7,6 +7,7 @@
 - [GitHub](https://github.com/Daria40K/Big-Little-Mod-Patch/releases)
 
 ## Mod Support
+- [Advanced Brewery](https://github.com/StarterCraft/Rimworld-Advanced-Brewery) (Production links)
 - [Advanced Electric Stove](https://steamcommunity.com/sharedfiles/filedetails/?id=2054487688) (Production links)
 - [[RWY]Advanced Mechanoid Warfare](https://steamcommunity.com/sharedfiles/filedetails/?id=2119930282) (Production links)
 - [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
