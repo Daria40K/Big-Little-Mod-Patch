@@ -383,4 +383,11 @@
 		<assemblyVersion>2.48</assemblyVersion>
 		<content>Added support for Advanced Brewery</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.49 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_49</defName>
+		<assemblyVersion>2.49</assemblyVersion>
+		<content>Added support for Australden's Fusion Weapons Pack Remastered</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

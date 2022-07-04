@@ -17,6 +17,7 @@
 - [Area Rugs 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=1988111624) (Production links)
 - [Apini Playable Race, Continued!](https://steamcommunity.com/sharedfiles/filedetails/?id=2204437968) (Furniture & Production links)
 - [A Rim Reborn - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2659227786) (Production links)
+- [Australden's Fusion Weapons Pack Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2560174265) (Production links)
 - [Clockwork And Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1736127702) (Production & Research links - partial support)
 - [Comigo's Adequate Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2553865508) (Production links)
 - [Comigo's Nutrition](https://steamcommunity.com/sharedfiles/filedetails/?id=2546863371) (Production links)
