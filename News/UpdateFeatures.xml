@@ -397,4 +397,11 @@
 		<assemblyVersion>2.50</assemblyVersion>
 		<content>Added support for HALO - UNSC Faction</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.51 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_51</defName>
+		<assemblyVersion>2.51</assemblyVersion>
+		<content>Added support for [JPT] Soft Warm Beds</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
