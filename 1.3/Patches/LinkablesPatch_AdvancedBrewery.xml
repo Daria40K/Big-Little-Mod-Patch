@@ -1,25 +1,24 @@
-<!--
-	========== Advanced Brewery ==========
+<!-- ========== Advanced Brewery ==========
 
 	ElectricBrewery | #brewery
     HiTechBrewery | #brewery
 -->
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Advanced Brewery</li>
-		</mods>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Advanced Brewery</li>
+        </mods>
 
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
                 <!-- ElectricBrewery -->
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="ElectricBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <match Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="ElectricBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                         <value>
-            
+
                         </value>
                     </match>
                     <nomatch Class="PatchOperationAdd">
@@ -27,7 +26,7 @@
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
-            
+
                                 </linkableFacilities>
                             </li>
                         </value>
@@ -51,7 +50,7 @@
                     <match Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="HiTechBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                         <value>
-            
+
                         </value>
                     </match>
                     <nomatch Class="PatchOperationAdd">
@@ -59,7 +58,7 @@
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
-            
+
                                 </linkableFacilities>
                             </li>
                         </value>
@@ -78,24 +77,24 @@
                 </li>
 
                 <!-- ========== Akeron Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Akeron Decorations</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
                             <!-- ElectricBrewery | HiTechBrewery -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>AKN_MotivatingPlush</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== GloomyFurniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -107,12 +106,12 @@
                         <success>Always</success>
                         <operations>
                             <!-- ElectricBrewery | HiTechBrewery -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>GL_Cupboard</li>
-						            <li>GL_TablewareShelf</li>
+                                    <li>GL_TablewareShelf</li>
                                 </value>
                             </li>
                         </operations>
@@ -129,12 +128,12 @@
                         <success>Always</success>
                         <operations>
                             <!-- ElectricBrewery | HiTechBrewery -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>SM_Sink</li>
-						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_A</li>
                                     <li>SM_KitchenCupboard_B</li>
                                     <li>SM_KitchenCupboard_C</li>
                                 </value>
@@ -144,25 +143,25 @@
                 </li>
 
                 <!-- ========== Medieval Overhaul ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medieval Overhaul</li>
-					</mods>
-			
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- ElectricBrewery | HiTechBrewery -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_RusticCookingTools</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- ElectricBrewery | HiTechBrewery -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_RusticCookingTools</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== More Linkables ========== -->
                 <li Class="PatchOperationFindMod">
@@ -174,10 +173,10 @@
                         <success>Always</success>
                         <operations>
                             <!-- ElectricBrewery | HiTechBrewery -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>KitchenCupboard</li>
                                 </value>
                             </li>
@@ -186,46 +185,46 @@
                 </li>
 
                 <!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-			
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- ElectricBrewery | HiTechBrewery -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFE_KitchenSinkCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Production</li>
+                    </mods>
 
-                <!-- ========== Vault-Tec - Handy things for your vault! ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vault-Tec - Handy things for your vault!</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- ElectricBrewery | HiTechBrewery -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-                                    <li>Vt_server</li>
-									<li>vtcompter</li>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- ElectricBrewery | HiTechBrewery -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_KitchenSinkCabinet</li>
                                 </value>
                             </li>
-						</operations>
-					</match>
-				</li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vault-Tec - Handy things for your vault!</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- ElectricBrewery | HiTechBrewery -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Vt_server</li>
+                                    <li>vtcompter</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">
@@ -236,10 +235,10 @@
                         <success>Always</success>
                         <operations>
                             <!-- ElectricBrewery | HiTechBrewery -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ElectricBrewery" or defName="HiTechBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
                                     <li>Link_KitchenGoods</li>
                                     <li>Link_KitchenBoost</li>
                                     <li>Link_UniversalCabinet</li>

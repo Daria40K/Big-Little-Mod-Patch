@@ -13,6 +13,7 @@
 - [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
 - [Akeron Decorations](https://steamcommunity.com/sharedfiles/filedetails/?id=2755025925) (Furniture & Production links)
 - [Animal Medical Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2016958187) (Furniture links)
+- [Appliances Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2869098359) (Production links)
 - [Archotech Re-Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2351084803) (Research links)
 - [Area Rugs 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=1988111624) (Production links)
 - [Apini Playable Race, Continued!](https://steamcommunity.com/sharedfiles/filedetails/?id=2204437968) (Furniture & Production links)

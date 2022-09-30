@@ -404,4 +404,11 @@
 		<assemblyVersion>2.51</assemblyVersion>
 		<content>Added support for [JPT] Soft Warm Beds</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.52 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_52</defName>
+		<assemblyVersion>2.52</assemblyVersion>
+		<content>Added support for Appliances Expanded</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
