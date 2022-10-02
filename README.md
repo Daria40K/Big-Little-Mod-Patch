@@ -43,8 +43,6 @@
 - [[sd] Goodnight (Continued)](url=https://steamcommunity.com/sharedfiles/filedetails/?id=2019045154) (Furniture links)
 - [HALO - UNSC Faction](https://steamcommunity.com/sharedfiles/filedetails/?id=2851992615) (Production & Research links)
 - [Ideology [Official DLC]](https://store.steampowered.com/app/1392840/RimWorld__Ideology/)
-- [Life Support (Fan Update)](https://steamcommunity.com/sharedfiles/filedetails/?id=2036610942) (Furniture links)
-- [Life Support Continued [1.1+]](https://steamcommunity.com/sharedfiles/filedetails/?id=2213696082) (Furniture links)
 - [Mechalit Core v2](https://steamcommunity.com/sharedfiles/filedetails/?id=2659987145) (Furniture links)
 - [Mechalit Faction v2](https://steamcommunity.com/sharedfiles/filedetails/?id=2660600094) (Production links)
 - [Mechanoid Bench 3](https://steamcommunity.com/sharedfiles/filedetails/?id=2793336382) (Production links)

@@ -94,28 +94,6 @@
 					</match>
 				</li>
 
-                <!-- ========== Life Support ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Life Support (Fan Update)</li>
-                        <li>Life Support Continued [1.1+]</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-                            <!-- NeuTechAdvMedPod -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="NeuTechAdvMedPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-									<li>QE_LifeSupportSystem</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
                 <!-- ========== [sd] medicaddons (unofficial) ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
