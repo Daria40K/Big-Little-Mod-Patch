@@ -236,6 +236,29 @@
 					</match>
 				</li>
 
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- DankPyon_BedWicker |  DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_IdanasD</li>
+									<li>LTS_IdanasN</li>
+									<li>LTS_KoppangD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== GloomyFurniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -319,10 +342,10 @@
 					</match>
 				</li>
 
-				<!-- ========== Mechalit Core v2 ========== -->
+				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Mechalit Core v2</li>
+						<li>Mechalit Core v2 (1.4)</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	========== Comigo's Nutrition ==========
+
+	COMIGO_SmallerElectricStove
+    COMIGO_SmallerBrewery
+    COMIGO_SmallerButcherTable
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Comigo's Nutrition</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- COMIGO_SmallerElectricStove -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName = "COMIGO_SmallerElectricStove"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName = "COMIGO_SmallerElectricStove"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- COMIGO_SmallerBrewery -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities>
+
+                                    </linkableFacilities>
+                                </li>
+                            </comps>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName = "COMIGO_SmallerBrewery"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName = "COMIGO_SmallerBrewery"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- ========== GloomyFurniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>GloomyFurniture</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- COMIGO_SmallerElectricStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
+						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Gloomy Extra - Kitchen ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Gloomy Extra - Kitchen</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- COMIGO_SmallerElectricStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SM_Sink</li>
+						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_B</li>
+                                    <li>SM_KitchenCupboard_C</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+			
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- COMIGO_SmallerElectricStove -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
+								</value>
+							</li>
+
+                            <!-- COMIGO_SmallerButcherTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "COMIGO_SmallerButcherTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- COMIGO_SmallerElectricStove | COMIGO_SmallerBrewery -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove" or defName="COMIGO_SmallerBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>KitchenCupboard</li><!-- More Linkables -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+			
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- COMIGO_SmallerElectricStove -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_KitchenSinkCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- COMIGO_SmallerElectricStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_KitchenGoods</li>
+                                    <li>Link_KitchenBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- COMIGO_SmallerButcherTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "COMIGO_SmallerButcherTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_ButcherGoods</li>
+                                    <li>Link_ButcherBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- COMIGO_SmallerBrewery -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "COMIGO_SmallerBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_BreweryGoods</li>
+                                    <li>Link_BreweryBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

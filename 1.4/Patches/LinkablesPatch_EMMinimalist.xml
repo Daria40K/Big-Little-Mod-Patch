@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ========== Expanded Materials Add-On - Minimalist Production ==========
+
+    MP_SmallButchering = small butcher table
+    MP_SmallStoneworkerTable = small stoneworker table
+    MP_SmallStove = small stove
+    MP_SmallTailoringTable = small tailoring bench
+    MP_SmallSmithy = small electric smithy
+    MP_SmallMachiningTable = small multi-purpose fabrication bench
+    MP_SmallBrewery = small brewery
+    MP_SmallDrugLab = small drug lab
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Materials Add-On - Minimalist Production</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- MP_SmallStove -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName = "MP_SmallStove"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName = "MP_SmallStove"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- MP_SmallBrewery -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="MP_SmallBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="MP_SmallBrewery"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities>
+
+                                    </linkableFacilities>
+                                </li>
+                            </comps>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName = "MP_SmallBrewery"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName = "MP_SmallBrewery"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- ========== GloomyFurniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>GloomyFurniture</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MP_SmallStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
+						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Gloomy Extra - Kitchen ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Gloomy Extra - Kitchen</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MP_SmallStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SM_Sink</li>
+						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_B</li>
+                                    <li>SM_KitchenCupboard_C</li>
+                                </value>
+                            </li>
+
+							<!-- MP_SmallButchering -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallButchering"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>SM_Sink</li>
+									<li>SM_ButcherShelf</li>
+						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_B</li>
+                                    <li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical Supplements (Continued) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical Supplements (Continued)</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MP_SmallDrugLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="MP_SmallDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DrugCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medieval Overhaul ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MP_SmallStove -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
+								</value>
+							</li>
+
+                            <!-- MP_SmallButchering -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallButchering"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallTailoringTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
+
+                            <!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini-->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "TWB_FueledSmithyMini" or defName = "TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_QuenchingBucket</li>
+                                    <li>DankPyon_Bellows</li>
+                                    <li>DankPyon_ToolRack</li>
+                                    <li>DankPyon_Grinder</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallStoneworkerTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallStoneworkerTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallMachiningTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_QuenchingBucket</li>
+                                    <li>DankPyon_Bellows</li>
+                                    <li>DankPyon_ToolRack</li>
+                                    <li>DankPyon_Grinder</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_QuenchingBucket</li>
+                                    <li>DankPyon_Bellows</li>
+                                    <li>DankPyon_ToolRack</li>
+                                    <li>DankPyon_Grinder</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MP_SmallStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>KitchenCupboard</li><!-- More Linkables -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- MP_SmallMachiningTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_wrench</li>
+								</value>
+							</li>
+
+							<!-- MP_SmallSmithy -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="MP_SmallSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+									<li>ucp_toolbox</li>
+								</value>
+							</li>
+
+                            <!-- MP_SmallTailoringTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_measure</li>
+									<li>ucp_scraps</li>
+									<li>ucp_textileroll</li>
+									<li>ucp_pencil</li>
+									<li>ucp_toolbox</li>
+								</value>
+							</li>
+
+                            <!-- MP_SmallStoneworkerTable | MP_SmallDrugLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="MP_SmallStoneworkerTable" or defName="MP_SmallDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_toolbox</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MP_SmallMachiningTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Production</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MP_SmallStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_KitchenSinkCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallTailoringTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_TailorCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallMachiningTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_MachiningCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallDrugLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_DrugCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_SmithyCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- MP_SmallTailoringTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallStoneworkerTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallStoneworkerTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallMachiningTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallDrugLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- MP_SmallStove -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_KitchenGoods</li>
+                                    <li>Link_KitchenBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallButchering -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallButchering"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_ButcherGoods</li>
+                                    <li>Link_ButcherBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallTailoringTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_TailorGoods</li>
+                                    <li>Link_TailorBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_SmithingGoods</li>
+                                    <li>Link_SmithingBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallStoneworkerTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallStoneworkerTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_StoneCutterGoods</li>
+                                    <li>Link_StoneCutterBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallMachiningTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_MachiningGoods</li>
+                                    <li>Link_MachiningBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallDrugLab -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_DrugLabGoods</li>
+                                    <li>Link_DrugLabBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallBrewery -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "MP_SmallBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_BreweryGoods</li>
+                                    <li>Link_BreweryBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

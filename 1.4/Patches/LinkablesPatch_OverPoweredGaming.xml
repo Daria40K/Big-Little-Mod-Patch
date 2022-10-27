@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ========== OverPowered Gaming ========== -->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>OverPowered Gaming</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+			
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- CB745_Table_Core | CB745_Table_Mods_I | CB745_Table_Mods_II  -->
+							<li Class="PatchOperationAdd">
+                                <success>Always</success>
+								<xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini" or defName = "TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- CB745_Table_Core | CB745_Table_Mods_I | CB745_Table_Mods_II  -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini" or defName = "TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

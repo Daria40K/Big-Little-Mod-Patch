@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ========== Rimsenal - Federation Faction Pack ==========
+
+    FedTable
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimsenal - Federation Faction Pack</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- FedTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="FedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== Medieval Overhaul ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- FedTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="FedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- FedTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="FedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== [O21] Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[O21] Outland - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- FedTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="FedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- FedTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="FedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_wrench</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- FedTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="FedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- FedTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="FedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- FedTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="FedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ========== Glitter Tech ==========
+
+    Matterfab | Electrolyzer | RobAssem
+    PharmaTable
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Glitter Tech</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- Matterfab -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Matterfab"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="Matterfab"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                    <li>ToolCabinet</li>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName = "Matterfab"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName = "Matterfab"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- Electrolyzer -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Electrolyzer"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="Electrolyzer"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                    <li>ToolCabinet</li>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName = "Electrolyzer"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName = "Electrolyzer"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- RobAssem -->
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="RobAssem"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="RobAssem"]/comps</xpath>
+                        <value>
+                            <li Class="CompProperties_AffectedByFacilities">
+                                <linkableFacilities>
+                                    <li>ToolCabinet</li>
+                                </linkableFacilities>
+                            </li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName = "RobAssem"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName = "RobAssem"]/placeWorkers</xpath>
+                        <value>
+                            <li>PlaceWorker_ShowFacilitiesConnections</li>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <!-- ========== Medical Supplements (Continued) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical Supplements (Continued)</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- PharmaTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DrugCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medieval Overhaul ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Matterfab | Electrolyzer | RobAssem -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>DankPyon_ToolRack</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Matterfab | Electrolyzer | RobAssem -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_wrench</li>
+								</value>
+							</li>
+
+                            <!-- PharmaTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_toolbox</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Matterfab | Electrolyzer | RobAssem -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Production</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Matterfab | Electrolyzer | RobAssem -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_MachiningCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- PharmaTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFE_DrugCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Matterfab | Electrolyzer | RobAssem | PharmaTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem" or defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Matterfab | Electrolyzer | RobAssem -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_MachiningGoods</li>
+                                    <li>Link_MachiningBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- PharmaTable -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_DrugLabGoods</li>
+                                    <li>Link_DrugLabBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

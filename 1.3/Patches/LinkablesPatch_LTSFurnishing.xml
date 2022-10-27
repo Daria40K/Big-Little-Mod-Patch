@@ -2,7 +2,7 @@
 <!--
 	========== [LTS]Furnishing ==========
 
-	LTS_HangingBed | #bed
+	LTS_BedBase | #bed
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -21,10 +21,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -41,11 +41,11 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- #TemplateMedical# -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+                            <!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
 							</li>
@@ -62,10 +62,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>WardrobeA</li>
@@ -80,19 +80,19 @@
 					</match>
 				</li>
 
-				<!-- ========== Mechalit Core v2 ========== -->
+				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Mechalit Core v2</li>
+						<li>Mechalit Core v2 (1.4)</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -110,10 +110,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
@@ -137,10 +137,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2RoyalEndTableLight</li>
 									<li>Anon2EndTableLight</li>
@@ -162,10 +162,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Dresser</li>
 									<li>Outland_EndTable</li>
@@ -186,10 +186,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -212,10 +212,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -234,10 +234,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IlluminateEndTable</li>
 								</value>
@@ -255,10 +255,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
@@ -277,10 +277,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -303,10 +303,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_RoyalDresser</li>
 									<li>Table_RoyalEndTable</li>
@@ -327,10 +327,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -349,10 +349,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- LTS_HangingBed -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>vt_EndTable</li>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--
+        ========== Animal Medical Bed ==========
+
+        SUN_MedicalAnimalBed | #medical
+    -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Animal Medical Bed</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>AKN_RestoringPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== Clockwork And Steam ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Clockwork And Steam</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>CarbolicAcidSprayer</li>
+                                    <li>OperatingTheatreNotes</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>CTS - Complete Tech Solutions (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== [sd] medicaddons (unofficial) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[sd] medicaddons (unofficial)</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>sd_medicaddons_medieval_surg_washpan</li>
+                                    <li>sd_medicaddons_medieval_surg_instruments</li>
+                                    <li>sd_medicaddons_medieval_surg_lamp</li>
+                                    <li>sd_medicaddons_industrial_surg_instruments</li>
+                                    <li>sd_medicaddons_industrial_surg_lamp</li>
+                                    <li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                                    <li>sd_medicaddons_spacer_surg_instruments</li>
+                                    <li>sd_medicaddons_spacer_surg_lamp</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical IVs ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical IVs</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>IV_Blood</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic</li><!-- Medical IVs -->
+                                    <li>IV_Blood_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Nutrition_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Painkiller_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Antibiotics_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Anesthetic_Electric</li><!-- Medical IVs -->
+                                    <li>IV_Multi_Electric</li><!-- Medical IVs -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Medical Supplements (Continued) ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medical Supplements (Continued)</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>MS_DStand</li><!-- Medical Supplements (Continued) -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Ushankas Luciferium Expansion ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Ushankas Luciferium Expansion</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>USH_LuciferiumMedicalSimulator</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Factions Expanded - Ancients</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>VFEA_AncientVitalsMonitor</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Medical Module</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Facility_VitalsCentre</li>
+                                    <li>Facility_IVDrip</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vault-Tec - Handy things for your vault!</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Vaultmedical</li>
+                                    <li>Vaultmedicallamp</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Wall Vitals Monitor ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Wall Vitals Monitor</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- SUN_MedicalAnimalBed -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Wall_M_VitalsMonitor</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

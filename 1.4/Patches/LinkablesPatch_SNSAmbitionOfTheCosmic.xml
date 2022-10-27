@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--
+		========== Science Never Stops: Ambition of the Cosmic ==========
+
+		__TemplateToolcabinet__ | #toolcabinet
+        Table_SNS_Unobtainer
+        Table_SNS_Constructor
+        Table_SNS_CosmicDrawer
+        Table_SNS_CosmicCall
+        Table_SNS_PinnacleFabricator
+
+        Table_SNS_BionicCraftingStation_GenI
+        Table_SNS_BionicCraftingStation_GenII
+        Table_SNS_BionicCraftingStation_GenIII
+
+        Table_SNS_NutrientProcessor
+	-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Science Never Stops: Ambition of the Cosmic</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- ========== RimWorld ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Core</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+				<!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+
+                            <!-- Table_SNS_NutrientProcessor -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_NutrientProcessor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Expanded Prosthetics and Organ Engineering - Forked</li>
+                    </mods>
+            
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>TableBionics</li>
+                                    <li>TableOrgans</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== GloomyFurniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>GloomyFurniture</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Table_SNS_NutrientProcessor -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_NutrientProcessor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>GL_Cupboard</li>
+						            <li>GL_TablewareShelf</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Gloomy Extra - Kitchen ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Gloomy Extra - Kitchen</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Table_SNS_NutrientProcessor -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_NutrientProcessor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>SM_Sink</li>
+						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_B</li>
+                                    <li>SM_KitchenCupboard_C</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+                            <!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+
+                            <!-- Table_SNS_NutrientProcessor -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_NutrientProcessor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>DankPyon_RusticCookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>More Linkables</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_NutrientProcessor -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_NutrientProcessor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>KitchenCupboard</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+				<!-- ========== [O21] Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[O21] Outland - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_toolbox</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_toolbox</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+			
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Table_SNS_NutrientProcessor -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_NutrientProcessor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>VFE_KitchenSinkCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Vt_server</li>
+									<li>vtcompter</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Vt_server</li>
+									<li>vtcompter</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_Unobtainer | Table_SNS_Constructor | Table_SNS_CosmicDrawer | Table_SNS_CosmicCall -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_Unobtainer" or defName="Table_SNS_Constructor" or defName="Table_SNS_CosmicDrawer" or defName="Table_SNS_CosmicCall"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+
+                            <!-- Table_SNS_NutrientProcessor -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="Table_SNS_NutrientProcessor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>Link_KitchenGoods</li>
+                                    <li>Link_KitchenBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

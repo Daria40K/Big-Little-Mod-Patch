@@ -41,12 +41,35 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- #TemplateMedical# -->
+                            <!-- SDBuildingBase -->
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="#TemplateMedical#"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="SDBuildingBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>AKN_ComfortingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SDBuildingBase -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="SDBuildingBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>LTS_IdanasD</li>
+									<li>LTS_IdanasN</li>
+									<li>LTS_KoppangD</li>
 								</value>
 							</li>
 						</operations>
@@ -80,10 +103,10 @@
 					</match>
 				</li>
 
-				<!-- ========== Mechalit Core v2 ========== -->
+				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Mechalit Core v2</li>
+						<li>Mechalit Core v2 (1.4)</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">

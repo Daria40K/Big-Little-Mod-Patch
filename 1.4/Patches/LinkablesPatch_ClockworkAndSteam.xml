@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    ========== Clockwork And Steam ==========
+
+    SteamResearchBench | #researchadv
+    ClockworkBenchBase
+    OperatingTheatreTable | #medical
+-->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Clockwork And Steam</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== AI Uplifting Assistant ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>AI Uplifting Assistant</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AIUpliftAssistantAUA</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Akeron Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_WallPapersA</li>
+									<li>AKN_WallPapersB</li>
+									<li>AKN_PaperNotesA</li>
+									<li>AKN_PaperNotesB</li>
+									<li>AKN_PaperNotesC</li>
+								</value>
+							</li>
+
+							<!-- ClockworkBenchBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[@Name="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_RestoringPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Archotech Re-Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Archotech Re-Expanded</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Commercial Server ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Commercial Server</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ServerSilver</li>
+									<li>ServerGold</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>CTS - Complete Tech Solutions (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Eccentric Tech - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Eccentric Tech - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EccentricAuroraCore</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== GloomyFurniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Bookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== HALO - UNSC Faction ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>HALO - UNSC Faction</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HALO_UNSC_ResearchTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				
+				<!-- ========== [sd] medicaddons (unofficial) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[sd] medicaddons (unofficial)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>sd_medicaddons_medieval_surg_washpan</li>
+									<li>sd_medicaddons_medieval_surg_instruments</li>
+									<li>sd_medicaddons_medieval_surg_lamp</li>
+									<li>sd_medicaddons_industrial_surg_instruments</li>
+									<li>sd_medicaddons_industrial_surg_lamp</li>
+									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+									<li>sd_medicaddons_spacer_surg_instruments</li>
+									<li>sd_medicaddons_spacer_surg_lamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Medical IVs ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IVs</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IV_Blood</li>
+									<li>IV_Nutrition</li>
+									<li>IV_Painkiller</li>
+									<li>IV_Antibiotics</li>
+									<li>IV_Anesthetic</li>
+									<li>IV_Blood_Electric</li>
+									<li>IV_Nutrition_Electric</li>
+									<li>IV_Painkiller_Electric</li>
+									<li>IV_Antibiotics_Electric</li>
+									<li>IV_Anesthetic_Electric</li>
+									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Medical Supplements (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical Supplements (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MS_DStand</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RoyalBookshelf</li>
+								</value>
+							</li>
+
+							<!-- ClockworkBenchBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[@Name="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== More Archotech Garbage Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage Reupload</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+
+							<!-- ClockworkBenchBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[@Name="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SurgicalLamp</li>
+									<li>SurgicalInstruments</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Moyo-From the depth ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Moyo-From the depth</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MoyoGRModule</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== [O21] Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[O21] Outland - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Bookshelf</li>
+								</value>
+							</li>
+
+							<!-- ClockworkBenchBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[@Name="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Research Assistants ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Research Assistants</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchPad</li>
+									<li>ResearchComputer</li>
+									<li>ResearchSubAIComputer</li>
+									<li>ResearchAIComputer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Rim-Effect: Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rim-Effect: Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RE_AllianceTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Rim-Effect: Asari and Reapers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rim-Effect: Asari and Reapers</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RE_AsariTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Rimputers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers</li>
+						<li>Rimputers (No Dubs Bad Hygiene)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+									<li>RP_Server</li>
+									<li>RP_SuperComputer</li>
+									<li>Rimputer_quantumcomputer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Science Never Stops: Ambition of the Cosmic ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Science Never Stops: Ambition of the Cosmic</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unlocker_GenI</li>
+									<li>SNS_Linkable_Unlocker_GenII</li>
+									<li>SNS_Linkable_Unlocker_GenIII</li>
+									<li>SNS_Linkable_Unlocker_POC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Sparkling Worlds - Full Mod ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Full Mod</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- ClockworkBenchBase -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_toolbox</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Tech Raiding [1.1](continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tech Raiding [1.1](continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LostAnalyzer</li>
+									<li>BrutalAnalyzer</li>
+									<li>MechaAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== UN-Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukResearchBA</li>
+									<li>SadjuukResearchBB</li>
+									<li>SadjuukResearchBC</li>
+									<li>SadjuukResearchBD</li>
+								</value>
+							</li>
+
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukSurgeryAA</li>
+									<li>SadjuukSurgeryAB</li>
+									<li>SadjuukSurgeryAC</li>
+									<li>SadjuukSurgeryAD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Ushankas Luciferium Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ushankas Luciferium Expansion</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>USH_LuciferiumMedicalSimulator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Ancients</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEA_AncientVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Medical Module</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Facility_ResearchCounter</li>
+								</value>
+							</li>
+
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Facility_VitalsCentre</li>
+									<li>Facility_IVDrip</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- ClockworkBenchBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[@Name="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- ClockworkBenchBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[@Name="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vaultmedical</li>
+									<li>Vaultmedicallamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- ClockworkBenchBase -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Wall Vitals Monitor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Vitals Monitor</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- OperatingTheatreTable -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="OperatingTheatreTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wall_M_VitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_ResearchGoods</li>
+									<li>Link_ResearchBoost</li>
+								</value>
+							</li>
+
+							<!-- ClockworkBenchBase -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[@Name="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
