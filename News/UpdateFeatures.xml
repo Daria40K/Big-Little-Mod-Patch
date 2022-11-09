@@ -432,4 +432,11 @@
 		<assemblyVersion>2.52.3</assemblyVersion>
 		<content>Fix support for Fast regen 1.4, [LTS]Furnishing, Mechalit Core v2 (1.4) and Mechalit Faction v2 (1.4)</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.53.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_53.0</defName>
+		<assemblyVersion>2.53.0</assemblyVersion>
+		<content>Added support for Obsidia Expansion</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
