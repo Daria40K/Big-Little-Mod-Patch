@@ -446,4 +446,11 @@
 		<assemblyVersion>2.54.0</assemblyVersion>
 		<content>Added support for TOT's RimNewEast</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.54.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_54.1</defName>
+		<assemblyVersion>2.54.1</assemblyVersion>
+		<content>Fix support for RimWorld Beds</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

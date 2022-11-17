@@ -115,10 +115,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RGK_Dresser</li><!-- GloomyFurniture -->
 						<li>WardrobeA</li><!-- GloomyFurniture -->
@@ -184,10 +184,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>DankPyon_RusticEndTable</li><!-- Medieval Overhaul -->
 						<li>DankPyon_RoyalEndTable</li><!-- Medieval Overhaul -->
@@ -295,10 +295,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Outland_Dresser</li>
 						<li>Outland_EndTable</li>
@@ -328,10 +328,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
 						<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
@@ -384,10 +384,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RLE_KazariKatana</li><!-- RimLife Expansion Furniture -->
 						<li>RLE_Kouro</li><!-- RimLife Expansion Furniture -->
@@ -444,10 +444,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>IlluminateEndTable</li>
 					</value>
@@ -488,10 +488,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>SadjuukFurnitureAA</li><!-- UN-Furniture -->
 						<li>SadjuukFurnitureAB</li><!-- UN-Furniture -->
@@ -570,10 +570,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
 						<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
@@ -603,10 +603,10 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Bed | DoubleBed | RoyalBed -->
+				<!-- BasicBedBase -->
 				<li Class="PatchOperationAdd">
 					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Table_IlluminatedEndTable</li>
 						<li>Table_IlluminatedDresser</li>
