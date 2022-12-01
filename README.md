@@ -91,6 +91,7 @@
 - [[JDS] The Forge - Anvil](https://steamcommunity.com/sharedfiles/filedetails/?id=1967561500) (Production links)
 - [Tiny Workbenchs (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2387981423) (Production links)
 - [TOT's RimNewEast](https://steamcommunity.com/sharedfiles/filedetails/?id=2889214085) (Production links)
+- [UN-Colony Vanilla (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2894831795) (Furniture, Production & Research links)
 - [UN-Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2019774854) (Furniture, Production & Research links)
 - [Ushankas Luciferium Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2809422332) (Production links)
 - [Vanilla Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519) (Production links)
