@@ -460,4 +460,11 @@
 		<assemblyVersion>2.55.0</assemblyVersion>
 		<content>Added support for UN-Colony Vanilla (Continued)</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.56.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_56.0</defName>
+		<assemblyVersion>2.56.0</assemblyVersion>
+		<content>Added support for Outland - Furniture &amp; Decor</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

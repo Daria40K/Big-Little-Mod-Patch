@@ -60,6 +60,7 @@
 - [NeuTech Advanced Medical Pod](https://steamcommunity.com/sharedfiles/filedetails/?id=2560301153) (Furniture links)
 - [Obsidia Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2519492373) (Production links)
 - [[O21] Outland - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2755501685) (Production & Research links)
+- [Outland - Furniture & Decor](https://steamcommunity.com/sharedfiles/filedetails/?id=2897435739) (Furniture & Research links)
 - [Powerful Kitchen](https://steamcommunity.com/sharedfiles/filedetails/?id=2310644681) (Production links)
 - [Powerful Smelter](https://steamcommunity.com/sharedfiles/filedetails/?id=2331001560) (Production links)
 - [Rah's Bionics and Surgery Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=850429707) (Production links)

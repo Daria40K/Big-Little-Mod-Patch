@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-	========== [O21] Outland - Core ==========
-
-	Outland_BedSingle | #bed
-	Outland_BedDouble | #bed
-
-	Outland_Forge | #smelter
--->
 <Patch>
+	<!--
+		========== Outland - Furniture & Decor ==========
+
+		OutlandArtableBedBase | #bed
+	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[O21] Outland - Core</li>
+			<li>Outland - Furniture &amp; Decor</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -24,10 +21,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -36,7 +33,7 @@
 					</match>
 				</li>
 
-				<!-- ========== Akeron Decorations ========== -->
+                <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Akeron Decorations</li>
@@ -44,21 +41,12 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-                            <!-- Outland_BedSingle | Outland_BedDouble -->
+                            <!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
-								</value>
-							</li>
-
-							<!-- Outland_Forge -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
 								</value>
 							</li>
 						</operations>
@@ -74,10 +62,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasD</li>
 									<li>LTS_IdanasN</li>
@@ -97,10 +85,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>WardrobeA</li>
@@ -115,7 +103,7 @@
 					</match>
 				</li>
 
-				<!-- ========== Mechalit Core v2 (1.4) ========== -->
+                <!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Mechalit Core v2 (1.4)</li>
@@ -124,10 +112,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<!-- OutlandArtableBedBase -->
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -145,11 +133,13 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RoyalEndTable</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 									<li>DankPyon_RusticChest</li>
@@ -159,23 +149,11 @@
 									<li>DankPyon_RoyalCloset</li>
 								</value>
 							</li>
-
-							<!-- Outland_Forge -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName = "Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>DankPyon_QuenchingBucket</li>
-                                    <li>DankPyon_Bellows</li>
-                                    <li>DankPyon_ToolRack</li>
-                                    <li>DankPyon_Grinder</li>
-                                </value>
-                            </li>
 						</operations>
 					</match>
 				</li>
 
-				<!-- ========== More Furniture (Continued) ========== -->
+                <!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>More Furniture (Continued)</li>
@@ -184,10 +162,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2RoyalEndTableLight</li>
 									<li>Anon2EndTableLight</li>
@@ -200,7 +178,7 @@
 					</match>
 				</li>
 
-                <!-- ========== [O21] Outland - Core ========== -->
+				<!-- ========== [O21] Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>[O21] Outland - Core</li>
@@ -209,43 +187,15 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Dresser</li>
 									<li>Outland_EndTable</li>
 									<li>Outland_EndTableWithLamp</li>
 									<li>Outland_Wardrobe</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outland - Furniture & Decor ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outland - Furniture &amp; Decor</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Outland_EndTable</li>
-									<li>Outland_EndTableWithLamp</li>
-									<li>Outland_Dresser</li>
-									<li>Outland_Wardrobe</li>
-									<li>Outland_StoneEndTable</li>
-									<li>Outland_StoneEndTableWithLamp</li>
-									<li>Outland_StoneDresser</li>
-									<li>Outland_StoneWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -261,10 +211,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -287,10 +237,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -300,7 +250,7 @@
 					</match>
 				</li>
 
-				<!-- ========== RimVali: Far From Avalon ========== -->
+                <!-- ========== RimVali: Far From Avalon ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>RimVali: Far From Avalon</li>
@@ -309,10 +259,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IlluminateEndTable</li>
 								</value>
@@ -330,36 +280,13 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Tabletop Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tabletop Decorations</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- Outland_Forge -->
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_tongs</li>
-									<li>ucp_ballpeen</li>
-									<li>ucp_toolbox</li>
 								</value>
 							</li>
 						</operations>
@@ -375,10 +302,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -398,7 +325,7 @@
 						</operations>
 					</match>
 				</li>
-
+				
 				<!-- ========== UN-Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -408,10 +335,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -434,10 +361,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_RoyalDresser</li>
 									<li>Table_RoyalEndTable</li>
@@ -458,10 +385,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -480,10 +407,10 @@
 					<match Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<!-- Outland_BedSingle | Outland_BedDouble -->
+							<!-- OutlandArtableBedBase -->
 							<li Class="PatchOperationAdd">
 								<success>Always</success>
-								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>vt_EndTable</li>
@@ -497,48 +424,6 @@
 						</operations>
 					</match>
 				</li>
-
-				<!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<!-- Outland_Forge -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>WallToolBoard</li>
-                                </value>
-                            </li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>WorkBench Support - More Linkable Facilities -</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <!-- Outland_Forge -->
-                            <li Class="PatchOperationAdd">
-                                <success>Always</success>
-                                <xpath>Defs/ThingDef[defName = "Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Link_SmelterGoods</li>
-                                    <li>Link_SmelterBoost</li>
-                                    <li>Link_UniversalCabinet</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
 			</operations>
 		</match>
 	</Operation>
