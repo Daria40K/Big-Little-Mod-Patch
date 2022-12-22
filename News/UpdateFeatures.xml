@@ -467,4 +467,11 @@
 		<assemblyVersion>2.56.0</assemblyVersion>
 		<content>Added support for Outland - Furniture &amp; Decor</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.57.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_57.0</defName>
+		<assemblyVersion>2.57.0</assemblyVersion>
+		<content>Added support for Prefab Animal Medical Bed</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

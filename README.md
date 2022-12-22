@@ -63,6 +63,7 @@
 - [Outland - Furniture & Decor](https://steamcommunity.com/sharedfiles/filedetails/?id=2897435739) (Furniture & Research links)
 - [Powerful Kitchen](https://steamcommunity.com/sharedfiles/filedetails/?id=2310644681) (Production links)
 - [Powerful Smelter](https://steamcommunity.com/sharedfiles/filedetails/?id=2331001560) (Production links)
+- [Prefab Animal Medical Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2706396418) (Furniture links)
 - [Rah's Bionics and Surgery Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=850429707) (Production links)
 - [Research Assistants](https://steamcommunity.com/sharedfiles/filedetails/?id=2659862896) (Research links)
 - [RimBees](https://steamcommunity.com/sharedfiles/filedetails/?id=1558161673) (Production links)
