@@ -106,6 +106,29 @@
 		</match>
 	</Operation>
 
+	<!-- ========== [LTS]Furnishing ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[LTS]Furnishing</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- BasicBedBase -->
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>LTS_IdanasD</li>
+						<li>LTS_IdanasN</li>
+						<li>LTS_KoppangD</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
     <!-- ========== GloomyFurniture ========== -->
     <Operation Class="PatchOperationFindMod">
 		<mods>
