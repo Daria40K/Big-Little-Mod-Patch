@@ -652,6 +652,28 @@
                     </match>
                 </li>
 
+				<!-- ========== Vanilla Furniture Expanded Pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded Pack</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- VFEA_AncientBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="VFEA_AncientBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>FFE_Mirror</li>
+									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

@@ -481,4 +481,11 @@
 		<assemblyVersion>2.57.1</assemblyVersion>
 		<content>Fixed [LTS]Furnishing linkables not linking to RimWorld beds</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.58.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_58.0</defName>
+		<assemblyVersion>2.58.0</assemblyVersion>
+		<content>Added support for Vanilla Furniture Expanded Pack</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

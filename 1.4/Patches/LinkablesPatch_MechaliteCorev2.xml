@@ -406,6 +406,28 @@
 					</match>
 				</li>
 
+				<!-- ========== Vanilla Furniture Expanded Pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded Pack</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>FFE_Mirror</li>
+									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

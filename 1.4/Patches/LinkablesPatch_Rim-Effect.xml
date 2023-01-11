@@ -1094,6 +1094,28 @@
 					</match>
 				</li>
 
+				<!-- ========== Vanilla Furniture Expanded Pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded Pack</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>FFE_Mirror</li>
+									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
