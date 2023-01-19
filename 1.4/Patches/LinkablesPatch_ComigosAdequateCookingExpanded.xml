@@ -127,7 +127,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- COMIGO_ElectricMill | COMIGO_Quernstone -->
                             <li Class="PatchOperationAdd">
@@ -169,7 +168,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- COMIGO_ElectricMill | COMIGO_Quernstone -->
                             <li Class="PatchOperationAdd">

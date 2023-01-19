@@ -21,11 +21,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- PoweredCultivationBench | SmokeleafAutoTrimmer | MedicinalsLab -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="PoweredCultivationBench" or defName="SmokeleafAutoTrimmer" or defName="MedicinalsLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -97,7 +95,6 @@
                         <operations>
                             <!-- PoweredCultivationBench | SmokeleafAutoTrimmer | MedicinalsLab -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="PoweredCultivationBench" or defName="SmokeleafAutoTrimmer" or defName="MedicinalsLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>ToolCabinetA</li>
@@ -116,11 +113,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- PoweredCultivationBench | SmokeleafAutoTrimmer | MedicinalsLab -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="PoweredCultivationBench" or defName="SmokeleafAutoTrimmer" or defName="MedicinalsLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>ucp_toolbox</li>
@@ -156,11 +151,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- PoweredCultivationBench | SmokeleafAutoTrimmer | MedicinalsLab -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="PoweredCultivationBench" or defName="SmokeleafAutoTrimmer" or defName="MedicinalsLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>WallToolBoard</li>

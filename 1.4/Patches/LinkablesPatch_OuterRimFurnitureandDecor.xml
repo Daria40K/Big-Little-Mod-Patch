@@ -3,9 +3,20 @@
 	<!--
 		========== Mechalit Core v2 (1.4) ==========
 
-		EliteBed | #bed
-		EliteDoubleBed | #bed
-		FirstClassBed | #bed
+		OuterRim_CoruscantBed | #bed
+		OuterRim_CoruscantDoubleBed | #bed
+
+        OuterRim_GenericBed
+
+        OuterRim_TatooineBed
+        OuterRim_TatooineDoubleBed
+
+        OuterRim_CorellianDresser
+        OuterRim_CorellianEndTable
+        OuterRim_CoruscantDresser
+        OuterRim_CoruscantEndTable
+        OuterRim_TatooineDresser
+        OuterRim_TatooineEndTable
 	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -22,9 +33,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -40,9 +51,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-                            <!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+                            <!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
@@ -59,9 +70,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasD</li>
 									<li>LTS_IdanasN</li>
@@ -80,9 +91,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>WardrobeA</li>
@@ -105,9 +116,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
@@ -140,39 +151,15 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2RoyalEndTableLight</li>
 									<li>Anon2EndTableLight</li>
 									<li>Anon2RoyalEndTable</li>
 									<li>Anon2EndTable</li>
 									<li>Anon2Dresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Furniture and Decor ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Furniture and Decor</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_CorellianDresser</li>
-									<li>OuterRim_CorellianEndTable</li>
-									<li>OuterRim_CoruscantDresser</li>
-									<li>OuterRim_CoruscantEndTable</li>
-									<li>OuterRim_TatooineDresser</li>
-									<li>OuterRim_TatooineEndTable</li>
 								</value>
 							</li>
 						</operations>
@@ -187,9 +174,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Dresser</li>
 									<li>Outland_EndTable</li>
@@ -209,9 +196,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_EndTable</li>
 									<li>Outland_EndTableWithLamp</li>
@@ -235,9 +222,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -259,9 +246,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -279,9 +266,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IlluminateEndTable</li>
 								</value>
@@ -298,9 +285,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
@@ -318,9 +305,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -349,9 +336,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -384,9 +371,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_RoyalDresser</li>
 									<li>Table_RoyalEndTable</li>
@@ -406,9 +393,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -426,9 +413,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -446,9 +433,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>vt_EndTable</li>

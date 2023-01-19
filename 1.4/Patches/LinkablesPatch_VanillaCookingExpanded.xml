@@ -22,7 +22,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- VCE_Grill | VCE_DeepFrier | VCE_CanningMachine | VCE_CondimentPrepTable -->
                             <li Class="PatchOperationAdd">
@@ -89,7 +88,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VCE_Grill | VCE_DeepFrier | VCE_CanningMachine | VCE_CondimentPrepTable -->
                             <li Class="PatchOperationAdd">
@@ -131,7 +129,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VCE_Grill | VCE_DeepFrier | VCE_CanningMachine | VCE_CondimentPrepTable -->
                             <li Class="PatchOperationAdd">

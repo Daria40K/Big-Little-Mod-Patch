@@ -22,11 +22,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -43,11 +41,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
@@ -64,11 +60,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
@@ -87,11 +81,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Grindstone</li>
@@ -108,11 +100,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -134,11 +124,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
@@ -158,11 +146,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_MachiningCabinet</li>
@@ -178,11 +164,9 @@
 						<li>Vault-Tec - Handy things for your vault!</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
@@ -199,11 +183,9 @@
 						<li>WorkBench Support - More Linkable Facilities -</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- OE_PersonaTable | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_MachiningGoods</li>

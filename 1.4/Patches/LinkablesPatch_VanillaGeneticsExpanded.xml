@@ -48,7 +48,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
@@ -137,7 +136,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
@@ -177,7 +175,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">

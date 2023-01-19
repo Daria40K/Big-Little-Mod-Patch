@@ -125,7 +125,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">
@@ -167,7 +166,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">

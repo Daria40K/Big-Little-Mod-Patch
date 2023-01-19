@@ -50,7 +50,6 @@
 						<li>Ideology</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
@@ -70,7 +69,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
@@ -90,7 +88,6 @@
 						<li>Clockwork And Steam</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
@@ -222,7 +219,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSAdvancedMedicineLab -->
                             <li Class="PatchOperationAdd">
@@ -243,7 +239,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
@@ -421,7 +416,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSAdvancedMedicineLab -->
                             <li Class="PatchOperationAdd">

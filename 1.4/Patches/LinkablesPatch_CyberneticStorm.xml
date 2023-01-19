@@ -45,7 +45,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CS_NanoTech_Bench | CS_MaterialsBench -->
                             <li Class="PatchOperationAdd">
@@ -114,7 +113,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CS_NanoTech_Bench | CS_MaterialsBench -->
                             <li Class="PatchOperationAdd">

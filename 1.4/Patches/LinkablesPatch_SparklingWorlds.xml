@@ -70,7 +70,6 @@
 						<li>Clockwork And Steam</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- GlitterworldHospitalBedSW -->
                             <li Class="PatchOperationAdd">
@@ -245,11 +244,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- MechaniteAssemblySW -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -263,7 +260,6 @@
 
                             <!-- TableWeaverSW -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_measure</li>
@@ -284,7 +280,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GlitterworldHospitalBedSW -->
                             <li Class="PatchOperationAdd">
@@ -460,7 +455,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- MechaniteAssemblySW | TableWeaverSW -->
                             <li Class="PatchOperationAdd">
