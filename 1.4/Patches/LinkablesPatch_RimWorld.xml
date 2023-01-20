@@ -77,8 +77,8 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>ElectromechanicalComputer</li><!-- Clockwork And Steam -->
-                        <li>AnalyticalStack</li><!-- Clockwork And Steam -->
+						<li>ElectromechanicalComputer</li>
+                        <li>AnalyticalStack</li>
 					</value>
 				</li>
 			</operations>
@@ -99,7 +99,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>EccentricAuroraCore</li><!-- Eccentric Tech - Core -->
+						<li>EccentricAuroraCore</li>
 					</value>
 				</li>
 			</operations>
@@ -143,13 +143,13 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>RGK_Dresser</li><!-- GloomyFurniture -->
-						<li>WardrobeA</li><!-- GloomyFurniture -->
-                        <li>WardrobeB</li><!-- GloomyFurniture -->
-                        <li>GL_Teddy</li><!-- GloomyFurniture -->
-						<li>RGK_EndTable</li><!-- GloomyFurniture -->
-			            <li>RGK_EndTableWithLamp</li><!-- GloomyFurniture -->
-			            <li>RGK_EndTableWithLampE</li><!-- GloomyFurniture -->
+						<li>RGK_Dresser</li>
+						<li>WardrobeA</li>
+                        <li>WardrobeB</li>
+                        <li>GL_Teddy</li>
+						<li>RGK_EndTable</li>
+			            <li>RGK_EndTableWithLamp</li>
+			            <li>RGK_EndTableWithLampE</li>
 					</value>
 				</li>
 
@@ -158,8 +158,8 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>GL_Cupboard</li><!-- GloomyFurniture -->
-						<li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+						<li>GL_Cupboard</li>
+						<li>GL_TablewareShelf</li>
 					</value>
 				</li>
 
@@ -167,7 +167,7 @@
                 <li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="SimpleResearchBench" or defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-                        <li>GL_Bookshelf</li><!-- GloomyFurniture -->
+                        <li>GL_Bookshelf</li>
                     </value>
                 </li>
 			</operations>
@@ -212,15 +212,15 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>DankPyon_RusticEndTable</li><!-- Medieval Overhaul -->
-						<li>DankPyon_RoyalEndTable</li><!-- Medieval Overhaul -->
-						<li>DankPyon_RusticDresser</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RoyalDresser</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RusticChest</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_MetalStrongbox</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RoyalChest</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RusticCloset</li><!-- Medieval Overhaul -->
-                        <li>DankPyon_RoyalCloset</li><!-- Medieval Overhaul -->
+						<li>DankPyon_RusticEndTable</li>
+						<li>DankPyon_RoyalEndTable</li>
+						<li>DankPyon_RusticDresser</li>
+                        <li>DankPyon_RoyalDresser</li>
+                        <li>DankPyon_RusticChest</li>
+                        <li>DankPyon_MetalStrongbox</li>
+                        <li>DankPyon_RoyalChest</li>
+                        <li>DankPyon_RusticCloset</li>
+                        <li>DankPyon_RoyalCloset</li>
 					</value>
 				</li>
 
@@ -229,7 +229,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>DankPyon_RusticCookingTools</li><!-- Medieval Overhaul -->
+						<li>DankPyon_RusticCookingTools</li>
 					</value>
 				</li>
 
@@ -302,7 +302,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-                        <li>Anon2FileCabinet</li><!-- More Furniture -->
+                        <li>Anon2FileCabinet</li>
                     </value>
                 </li>
 			</operations>
@@ -473,12 +473,12 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
-						<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
+						<li>RE_PrefabDresser</li>
+						<li>RE_PrefabEndTable</li>
+						<li>RE_PrefabEndTableWithLamp</li>
+						<li>RE_PrefabBedsideTable</li>
+						<li>RE_PrefabBedsideTableLamp</li>
+						<li>RE_PrefabWardrobe</li>
 					</value>
 				</li>
 
@@ -487,7 +487,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>RE_AllianceTerminal</li><!-- Rim-Effect: Core -->
+						<li>RE_AllianceTerminal</li>
                     </value>
                 </li>
 			</operations>
@@ -508,7 +508,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>RE_AsariTerminal</li><!-- Rim-Effect: Asari and Reapers -->
+						<li>RE_AsariTerminal</li>
                     </value>
                 </li>
 			</operations>
@@ -529,8 +529,8 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>RLE_KazariKatana</li><!-- RimLife Expansion Furniture -->
-						<li>RLE_Kouro</li><!-- RimLife Expansion Furniture -->
+						<li>RLE_KazariKatana</li>
+						<li>RLE_Kouro</li>
 					</value>
 				</li>
 			</operations>
@@ -708,12 +708,12 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>SadjuukFurnitureAA</li><!-- UN-Furniture -->
-						<li>SadjuukFurnitureAB</li><!-- UN-Furniture -->
-                        <li>SadjuukFurnitureAC</li><!-- UN-Furniture -->
-						<li>SadjuukFurnitureBA</li><!-- UN-Furniture -->
-						<li>SadjuukFurnitureBB</li><!-- UN-Furniture -->
-                        <li>SadjuukFurnitureBC</li><!-- UN-Furniture -->
+						<li>SadjuukFurnitureAA</li>
+						<li>SadjuukFurnitureAB</li>
+                        <li>SadjuukFurnitureAC</li>
+						<li>SadjuukFurnitureBA</li>
+						<li>SadjuukFurnitureBB</li>
+                        <li>SadjuukFurnitureBC</li>
 					</value>
 				</li>
 				
@@ -722,10 +722,10 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
-                        <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
-                        <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
-                        <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+						<li>SadjuukSurgeryAA</li>
+                        <li>SadjuukSurgeryAB</li>
+                        <li>SadjuukSurgeryAC</li>
+                        <li>SadjuukSurgeryAD</li>
 					</value>
 				</li>
 
@@ -758,8 +758,8 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="SimpleResearchBench" or defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>SadjuukResearchBA</li><!-- UN-Furniture -->
-                        <li>SadjuukResearchBB</li><!-- UN-Furniture -->
+						<li>SadjuukResearchBA</li>
+                        <li>SadjuukResearchBB</li>
 					</value>
 				</li>
 
@@ -768,8 +768,8 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-                        <li>SadjuukResearchBC</li><!-- UN-Furniture -->
-                        <li>SadjuukResearchBD</li><!-- UN-Furniture -->
+                        <li>SadjuukResearchBC</li>
+                        <li>SadjuukResearchBD</li>
 					</value>
 				</li>
 			</operations>
@@ -790,10 +790,10 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
-						<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
-						<li>Table_LightEndTable</li><!-- Vanilla Furniture Expanded -->
-						<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+						<li>Table_RoyalDresser</li>
+						<li>Table_RoyalEndTable</li>
+						<li>Table_LightEndTable</li>
+						<li>Table_Wardrobe</li>
 					</value>
 				</li>
 
@@ -802,7 +802,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<li>Misc_FileCabinet</li><!-- Vanilla Furniture Expanded -->
+						<li>Misc_FileCabinet</li>
 					</value>
 				</li>
 			</operations>

@@ -159,15 +159,15 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "RGK_bedSingle" or defName = "RGK_bedSingleB" or defName = "RGK_bedDouble" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>DankPyon_RusticEndTable</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalEndTable</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticDresser</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalDresser</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticChest</li><!-- Medieval Overhaul -->
-									<li>DankPyon_MetalStrongbox</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalChest</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RusticCloset</li><!-- Medieval Overhaul -->
-									<li>DankPyon_RoyalCloset</li><!-- Medieval Overhaul -->
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RusticDresser</li>
+									<li>DankPyon_RoyalDresser</li>
+									<li>DankPyon_RusticChest</li>
+									<li>DankPyon_MetalStrongbox</li>
+									<li>DankPyon_RoyalChest</li>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RoyalCloset</li>
 								</value>
 							</li>
 
@@ -316,7 +316,7 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Outland_Bookshelf</li><!-- More Furniture -->
+									<li>Outland_Bookshelf</li>
 								</value>
 							</li>
 						</operations>
@@ -370,12 +370,12 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "RGK_bedSingle" or defName = "RGK_bedSingleB" or defName = "RGK_bedDouble" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabEndTable</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabEndTableWithLamp</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabBedsideTable</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabBedsideTableLamp</li><!-- Rim-Effect: Core -->
-									<li>RE_PrefabWardrobe</li><!-- Rim-Effect: Core -->
+									<li>RE_PrefabDresser</li>
+									<li>RE_PrefabEndTable</li>
+									<li>RE_PrefabEndTableWithLamp</li>
+									<li>RE_PrefabBedsideTable</li>
+									<li>RE_PrefabBedsideTableLamp</li>
+									<li>RE_PrefabWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -394,8 +394,8 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "RGK_bedSingle" or defName = "RGK_bedSingleB" or defName = "RGK_bedDouble" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>RLE_KazariKatana</li><!-- RimLife Expansion Furniture -->
-									<li>RLE_Kouro</li><!-- RimLife Expansion Furniture -->
+									<li>RLE_KazariKatana</li>
+									<li>RLE_Kouro</li>
 								</value>
 							</li>
 						</operations>
@@ -550,12 +550,12 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "RGK_bedSingle" or defName = "RGK_bedSingleB" or defName = "RGK_bedDouble" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>SadjuukFurnitureAA</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureAB</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureAC</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureBA</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureBB</li><!-- UN-Furniture -->
-									<li>SadjuukFurnitureBC</li><!-- UN-Furniture -->
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
 								</value>
 							</li>
 
@@ -563,8 +563,8 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>SadjuukResearchBA</li><!-- UN-Furniture -->
-                        			<li>SadjuukResearchBB</li><!-- UN-Furniture -->
+									<li>SadjuukResearchBA</li>
+                        			<li>SadjuukResearchBB</li>
 								</value>
 							</li>
 						</operations>
@@ -583,10 +583,10 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "RGK_bedSingle" or defName = "RGK_bedSingleB" or defName = "RGK_bedDouble" or defName = "RGK_bedDoubleB" or defName = "GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
-									<li>Table_RoyalEndTable</li><!-- Vanilla Furniture Expanded -->
-									<li>Table_LightEndTable</li><!-- Vanilla Furniture Expanded -->
-									<li>Table_Wardrobe</li><!-- Vanilla Furniture Expanded -->
+									<li>Table_RoyalDresser</li>
+									<li>Table_RoyalEndTable</li>
+									<li>Table_LightEndTable</li>
+									<li>Table_Wardrobe</li>
 								</value>
 							</li>
 
@@ -594,7 +594,7 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Misc_FileCabinet</li><!-- Vanilla Furniture Expanded -->
+									<li>Misc_FileCabinet</li>
 								</value>
 							</li>
 						</operations>

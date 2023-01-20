@@ -133,8 +133,8 @@
                                 <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VFEA_AncientCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
-						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                    <li>GL_Cupboard</li>
+						            <li>GL_TablewareShelf</li>
                                 </value>
                             </li>
                         </operations>
@@ -560,10 +560,10 @@
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="VFEA_AncientCryptosleepSuspender"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAA</li>
+                                    <li>SadjuukSurgeryAB</li>
+                                    <li>SadjuukSurgeryAC</li>
+                                    <li>SadjuukSurgeryAD</li>
                                 </value>
                             </li>
 
