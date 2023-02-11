@@ -402,6 +402,44 @@
 					</match>
 				</li>
 
+				<!-- ========== Outer Rim - Chiss Ascendancy ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Chiss Ascendancy</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_RewardChissAscendancy</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Outer Rim - Mandalore ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Mandalore</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_ResearchCore_Mandalorian</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Outer Rim - Galactic Empire ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -415,6 +453,26 @@
 								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_ResearchCore_GalacticEmpire</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Outer Rim - Old Republic ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Old Republic</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SteamResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_ResearchCore_SithEmpire</li>
+									<li>OuterRim_ResearchCore_OldRepublic</li>
 								</value>
 							</li>
 						</operations>
