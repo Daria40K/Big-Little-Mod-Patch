@@ -19,7 +19,6 @@
 						<li>Ideology</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- NeuTechAdvMedPod -->
                             <li Class="PatchOperationAdd">
@@ -39,7 +38,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- NeuTechAdvMedPod -->
                             <li Class="PatchOperationAdd">
@@ -59,7 +57,6 @@
 						<li>Clockwork And Steam</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- NeuTechAdvMedPod -->
                             <li Class="PatchOperationAdd">
@@ -80,7 +77,6 @@
 						<li>CTS - Complete Tech Solutions (Continued)</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- NeuTechAdvMedPod -->
                             <li Class="PatchOperationAdd">
@@ -181,7 +177,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- NeuTechAdvMedPod -->
                             <li Class="PatchOperationAdd">

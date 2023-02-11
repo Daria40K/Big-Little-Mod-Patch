@@ -86,8 +86,8 @@
                                 <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GCS_Stove" or defName="GCS_advStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
-						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                    <li>GL_Cupboard</li>
+						            <li>GL_TablewareShelf</li>
                                 </value>
                             </li>
                         </operations>
@@ -125,7 +125,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">
@@ -167,7 +166,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">

@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-	========== Modern Bed (1.4) ==========
-
-	SC_ModernBed | #bed
-	SC_ModernBedMetal | #bed
-	SC_ModernBedDouble | #bed
-	SC_ModernBedDoubleMetal | #bed
--->
 <Patch>
+	<!--
+		========== Mechalit Core v2 (1.4) ==========
+
+		OuterRim_CoruscantBed | #bed
+		OuterRim_CoruscantDoubleBed | #bed
+
+        OuterRim_GenericBed
+
+        OuterRim_TatooineBed
+        OuterRim_TatooineDoubleBed
+
+        OuterRim_CorellianDresser
+        OuterRim_CorellianEndTable
+        OuterRim_CoruscantDresser
+        OuterRim_CoruscantEndTable
+        OuterRim_TatooineDresser
+        OuterRim_TatooineEndTable
+	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Modern Bed (1.4)</li>
+			<li>Mechalit Core v2 (1.4)</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -23,9 +33,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -41,9 +51,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-                            <!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+                            <!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
@@ -60,9 +70,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasD</li>
 									<li>LTS_IdanasN</li>
@@ -81,9 +91,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>WardrobeA</li>
@@ -98,25 +108,6 @@
 					</match>
 				</li>
 
-				<!-- ========== Mechalit Core v2 (1.4) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Mechalit Core v2 (1.4)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>EliteDresserMeh</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -125,10 +116,12 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RoyalEndTable</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 									<li>DankPyon_RusticChest</li>
@@ -136,6 +129,14 @@
 									<li>DankPyon_RoyalChest</li>
 									<li>DankPyon_RusticCloset</li>
 									<li>DankPyon_RoyalCloset</li>
+								</value>
+							</li>
+
+							<!-- Gasconverter | MechaLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Gasconverter" or defName="MechaLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -150,39 +151,15 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2RoyalEndTableLight</li>
 									<li>Anon2EndTableLight</li>
 									<li>Anon2RoyalEndTable</li>
 									<li>Anon2EndTable</li>
 									<li>Anon2Dresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Furniture and Decor ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Furniture and Decor</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_CorellianDresser</li>
-									<li>OuterRim_CorellianEndTable</li>
-									<li>OuterRim_CoruscantDresser</li>
-									<li>OuterRim_CoruscantEndTable</li>
-									<li>OuterRim_TatooineDresser</li>
-									<li>OuterRim_TatooineEndTable</li>
 								</value>
 							</li>
 						</operations>
@@ -197,9 +174,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Dresser</li>
 									<li>Outland_EndTable</li>
@@ -219,9 +196,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_EndTable</li>
 									<li>Outland_EndTableWithLamp</li>
@@ -245,9 +222,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -269,9 +246,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -289,9 +266,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IlluminateEndTable</li>
 								</value>
@@ -308,9 +285,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
@@ -328,9 +305,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -359,9 +336,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -369,6 +346,17 @@
 									<li>SadjuukFurnitureBA</li>
 									<li>SadjuukFurnitureBB</li>
 									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+
+							<!-- Gasconverter | MechaLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Gasconverter" or defName="MechaLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
 								</value>
 							</li>
 						</operations>
@@ -383,9 +371,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_RoyalDresser</li>
 									<li>Table_RoyalEndTable</li>
@@ -405,9 +393,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -425,9 +413,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -445,9 +433,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>vt_EndTable</li>

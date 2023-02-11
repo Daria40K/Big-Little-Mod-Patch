@@ -90,8 +90,8 @@
                                 <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
-						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                    <li>GL_Cupboard</li>
+						            <li>GL_TablewareShelf</li>
                                 </value>
                             </li>
                         </operations>
@@ -167,8 +167,7 @@
                         <operations>
                             <!-- MP_SmallStove -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
@@ -268,11 +267,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- MP_SmallMachiningTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -286,7 +283,6 @@
 
 							<!-- MP_SmallSmithy -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="MP_SmallSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_tongs</li>
@@ -297,7 +293,6 @@
 
                             <!-- MP_SmallTailoringTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_measure</li>
@@ -418,7 +413,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- MP_SmallTailoringTable -->
                             <li Class="PatchOperationAdd">

@@ -19,7 +19,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- SUN_MedicalAnimalBed -->
                             <li Class="PatchOperationAdd">
@@ -39,7 +38,6 @@
 						<li>Clockwork And Steam</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- SUN_MedicalAnimalBed -->
                             <li Class="PatchOperationAdd">
@@ -60,7 +58,6 @@
 						<li>CTS - Complete Tech Solutions (Continued)</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- SUN_MedicalAnimalBed -->
                             <li Class="PatchOperationAdd">
@@ -161,7 +158,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- SUN_MedicalAnimalBed -->
                             <li Class="PatchOperationAdd">
@@ -195,10 +191,10 @@
                                 <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="SUN_MedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAB</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAC</li><!-- UN-Furniture -->
-                                    <li>SadjuukSurgeryAD</li><!-- UN-Furniture -->
+                                    <li>SadjuukSurgeryAA</li>
+                                    <li>SadjuukSurgeryAB</li>
+                                    <li>SadjuukSurgeryAC</li>
+                                    <li>SadjuukSurgeryAD</li>
                                 </value>
                             </li>
                         </operations>

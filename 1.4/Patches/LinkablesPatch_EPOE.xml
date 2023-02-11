@@ -45,7 +45,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- TableSimpleProsthetic | TableBionics | TableOrgans -->
                             <li Class="PatchOperationAdd">
@@ -108,7 +107,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- TableSimpleProsthetic | TableBionics | TableOrgans -->
                             <li Class="PatchOperationAdd">

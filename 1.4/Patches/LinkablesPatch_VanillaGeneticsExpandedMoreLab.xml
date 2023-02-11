@@ -40,7 +40,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- GR_GenetrainerBench -->
                             <li Class="PatchOperationAdd">
@@ -84,7 +83,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GR_GenetrainerBench -->
                             <li Class="PatchOperationAdd">
@@ -124,7 +122,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GR_GenetrainerBench -->
                             <li Class="PatchOperationAdd">
