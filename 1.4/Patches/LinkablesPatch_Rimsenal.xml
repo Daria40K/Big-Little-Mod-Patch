@@ -19,7 +19,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- GDTable | YPTable | JITable | TETable -->
                             <li Class="PatchOperationAdd">
@@ -84,7 +83,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GDTable | YPTable | JITable | TETable -->
                             <li Class="PatchOperationAdd">
@@ -105,7 +103,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GDTable | YPTable | JITable | TETable -->
                             <li Class="PatchOperationAdd">
@@ -154,7 +151,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GDTable | YPTable | JITable | TETable -->
                             <li Class="PatchOperationAdd">
@@ -174,7 +170,6 @@
 						<li>WorkBench Support - More Linkable Facilities -</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GDTable | YPTable | JITable | TETable -->
                             <li Class="PatchOperationAdd">

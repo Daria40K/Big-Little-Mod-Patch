@@ -60,7 +60,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
                             <li Class="PatchOperationAdd">
@@ -167,7 +166,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
                             <li Class="PatchOperationAdd">
@@ -249,7 +247,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
                             <li Class="PatchOperationAdd">
@@ -279,7 +276,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
                             <li Class="PatchOperationAdd">
@@ -309,7 +305,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Table_SNS_NutrientProcessor -->
                             <li Class="PatchOperationAdd">
@@ -329,7 +324,6 @@
 						<li>Vault-Tec - Handy things for your vault!</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
                             <li Class="PatchOperationAdd">
@@ -360,7 +354,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
                             <li Class="PatchOperationAdd">
@@ -389,7 +382,6 @@
 						<li>WorkBench Support - More Linkable Facilities -</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
                             <li Class="PatchOperationAdd">

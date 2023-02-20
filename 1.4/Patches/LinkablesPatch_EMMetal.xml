@@ -22,7 +22,6 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
@@ -88,7 +87,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
@@ -134,7 +132,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">

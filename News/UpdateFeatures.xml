@@ -488,4 +488,18 @@
 		<assemblyVersion>2.58.0</assemblyVersion>
 		<content>Added support for Vanilla Furniture Expanded Pack</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.59.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_59_0</defName>
+		<assemblyVersion>2.59.0</assemblyVersion>
+		<content>Added support for Modern Bed (1.4)</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.60.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_60_0</defName>
+		<assemblyVersion>2.60.0</assemblyVersion>
+		<content>Added support for Outer Rim - Core, Outer Rim - Chiss Ascendancy, Outer Rim - Galactic Empire, Outer Rim - Furniture and Decor, Outer Rim - Mandalore, Outer Rim - Old Republic and Outer Rim - Rebel Alliance</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

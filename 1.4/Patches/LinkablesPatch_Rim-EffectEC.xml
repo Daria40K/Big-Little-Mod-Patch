@@ -48,11 +48,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- RE_PreFabStove -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -76,8 +74,8 @@
                                 <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
-						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                    <li>GL_Cupboard</li>
+						            <li>GL_TablewareShelf</li>
                                 </value>
                             </li>
                         </operations>
@@ -115,12 +113,10 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- RE_PreFabStove -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
@@ -157,12 +153,10 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- RE_PreFabStove -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>

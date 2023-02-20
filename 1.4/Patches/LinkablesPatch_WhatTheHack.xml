@@ -19,11 +19,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- WTH_TableMechanoidWorkshop -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="WTH_TableMechanoidWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -87,7 +85,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- WTH_TableMechanoidWorkshop -->
                             <li Class="PatchOperationAdd">
@@ -108,11 +105,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- WTH_TableMechanoidWorkshop -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="WTH_TableMechanoidWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -177,7 +172,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- WTH_TableMechanoidWorkshop -->
                             <li Class="PatchOperationAdd">

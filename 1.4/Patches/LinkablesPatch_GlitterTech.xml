@@ -150,7 +150,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Matterfab | Electrolyzer | RobAssem -->
                             <li Class="PatchOperationAdd">
@@ -237,7 +236,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Matterfab | Electrolyzer | RobAssem | PharmaTable -->
                             <li Class="PatchOperationAdd">

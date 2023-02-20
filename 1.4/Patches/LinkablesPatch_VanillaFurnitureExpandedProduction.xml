@@ -28,11 +28,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- VFE_TableStoveLarge | VFE_TableButcherElectric | VFE_TableStonecutterElectric | VFE_TableSmithyLarge | VFE_TableMachiningLarge | VFE_TableTailorLarge | VFE_FueledSmelter | VFE_ComponentFabricationBench | VFE_TableButcherElectric | VFE_TableDrugLabElectric -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge" or defName="VFE_TableButcherElectric" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableSmithyLarge" or defName="VFE_TableMachiningLarge" or defName="VFE_TableTailorLarge" or defName="VFE_FueledSmelter" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableButcherElectric" or defName="VFE_TableDrugLabElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -56,8 +54,8 @@
                                 <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>GL_Cupboard</li><!-- GloomyFurniture -->
-						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                    <li>GL_Cupboard</li>
+						            <li>GL_TablewareShelf</li>
                                 </value>
                             </li>
                         </operations>
@@ -87,8 +85,7 @@
 
                             <!-- VFE_TableButcherElectric -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SM_Sink</li>
 									<li>SM_ButcherShelf</li>
@@ -112,8 +109,7 @@
                         <operations>
                             <!-- VFE_TableStonecutterElectric -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -121,8 +117,7 @@
                             
                             <!-- VFE_TableButcherElectric -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -130,8 +125,7 @@
 
                             <!-- VFE_FueledSmelter -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_QuenchingBucket</li>
                                     <li>DankPyon_Bellows</li>
@@ -142,8 +136,7 @@
 
                             <!-- VFE_TableStoveLarge -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
@@ -187,8 +180,7 @@
                         <operations>
                             <!-- VFE_TableStoveLarge -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>KitchenCupboard</li><!-- More Linkables -->
                                 </value>
@@ -196,7 +188,6 @@
 
                             <!-- VFE_TableStoveLarge | VFE_TableButcherElectric | VFE_TableStonecutterElectric | VFE_TableSmithyLarge | VFE_TableMachiningLarge | VFE_TableTailorLarge | VFE_FueledSmelter | VFE_ComponentFabricationBench | VFE_TableButcherElectric | VFE_TableDrugLabElectric -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge" or defName="VFE_TableButcherElectric" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableSmithyLarge" or defName="VFE_TableMachiningLarge" or defName="VFE_TableTailorLarge" or defName="VFE_FueledSmelter" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableButcherElectric" or defName="VFE_TableDrugLabElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>ToolCabinetA</li>
@@ -236,11 +227,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VFE_TableMachiningLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VFE_TableMachiningLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -254,7 +243,6 @@
 
                             <!-- VFE_TableSmithyLarge | VFE_FueledSmelter -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VFE_TableSmithyLarge" or defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_tongs</li>
@@ -265,7 +253,6 @@
 
                             <!-- VFE_TableTailorLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_measure</li>
@@ -278,7 +265,6 @@
 
                             <!-- VFE_ComponentFabricationBench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VFE_ComponentFabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_aerosol</li>
@@ -311,8 +297,7 @@
                         <operations>
                             <!-- VFE_FueledSmelter -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
-								<xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
                                     <li>SadjuukGrinding</li>
@@ -358,7 +343,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VFE_TableMachiningLarge | VFE_TableSmithyLarge | VFE_FueledSmelter | VFE_TableTailorLarge | VFE_ComponentFabricationBench | VFE_TableStonecutterElectric | VFE_TableDrugLabElectric -->
                             <li Class="PatchOperationAdd">

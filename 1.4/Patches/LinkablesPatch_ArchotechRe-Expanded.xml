@@ -20,11 +20,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ArchotechStation -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ArchotechStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
@@ -41,11 +39,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ArchotechStation -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ArchotechStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -67,11 +63,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ArchotechStation -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ArchotechStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
@@ -94,7 +88,6 @@
                         <operations>
                             <!-- ArchotechStation -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ArchotechStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>VFE_MachiningCabinet</li>
@@ -110,7 +103,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ArchotechStation -->
                             <li Class="PatchOperationAdd">
@@ -134,7 +126,6 @@
                         <operations>
                             <!-- ArchotechStation -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ArchotechStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Link_MachiningGoods</li>

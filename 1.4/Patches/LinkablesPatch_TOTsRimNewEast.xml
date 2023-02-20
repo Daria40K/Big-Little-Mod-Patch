@@ -86,7 +86,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- NEStove -->
                             <li Class="PatchOperationAdd">
@@ -128,7 +127,6 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- NEStove -->
                             <li Class="PatchOperationAdd">

@@ -47,11 +47,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- XIrefinery -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="XIrefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -112,7 +110,6 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- XIrefinery -->
                             <li Class="PatchOperationAdd">
@@ -132,7 +129,6 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- XIrefinery -->
                             <li Class="PatchOperationAdd">
