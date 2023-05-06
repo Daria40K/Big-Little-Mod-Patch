@@ -502,4 +502,11 @@
 		<assemblyVersion>2.60.0</assemblyVersion>
 		<content>Added support for Outer Rim - Core, Outer Rim - Chiss Ascendancy, Outer Rim - Galactic Empire, Outer Rim - Furniture and Decor, Outer Rim - Mandalore, Outer Rim - Old Republic and Outer Rim - Rebel Alliance</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.61.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_61_0</defName>
+		<assemblyVersion>2.61.0</assemblyVersion>
+		<content>Added support for Curious Curios</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

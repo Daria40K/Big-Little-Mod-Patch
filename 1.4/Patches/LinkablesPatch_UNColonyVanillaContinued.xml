@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!--
-		========== UN-Colony Vanilla (Continued) ==========
+	<!-- ========== UN-Colony Vanilla (Continued) ==========
 
         SadjuukBedroomBase | #bed
         SadjuukHospitalBase | #medical
@@ -180,6 +179,27 @@
 								<xpath>Defs/ThingDef[@Name="SadjuukHospitalBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Curious Curios ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Curious Curios</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchAA | SadjuukResearchBA | SadjuukResearchCA -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchAA" or defName="SadjuukResearchBA" or defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PotatoBattery</li>
+									<li>HeartInAJar</li>
+									<li>CC_RoyalJelly</li>
+									<li>Thrumbone</li>
 								</value>
 							</li>
 						</operations>
@@ -748,7 +768,7 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-                            <!-- SadjuukResearchBA -->
+							<!-- SadjuukResearchBA -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="SadjuukResearchBA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>

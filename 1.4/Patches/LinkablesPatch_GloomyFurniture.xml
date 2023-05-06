@@ -72,6 +72,27 @@
 					</match>
 				</li>
 
+				<!-- ========== Curious Curios ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Curious Curios</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PotatoBattery</li>
+									<li>HeartInAJar</li>
+									<li>CC_RoyalJelly</li>
+									<li>Thrumbone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

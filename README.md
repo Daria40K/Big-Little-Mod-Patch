@@ -24,6 +24,7 @@
 - [Comigo's Nutrition](https://steamcommunity.com/sharedfiles/filedetails/?id=2546863371) (Production links)
 - [Commercial Server](https://steamcommunity.com/sharedfiles/filedetails/?id=1714455977) (Research links)
 - [CTS - Complete Tech Solutions (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2291310971) (Furniture links)
+- [Curious Curios](https://steamcommunity.com/sharedfiles/filedetails/?id=2877810737) (Research links)
 - [Cybernetic Storm](https://steamcommunity.com/sharedfiles/filedetails/?id=959147004) (Production links)
 - [Cyber Fauna 1.3](https://steamcommunity.com/sharedfiles/filedetails/?id=1548649032) (Production links)
 - [Eccentric Tech - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2552623545) (Research links)
