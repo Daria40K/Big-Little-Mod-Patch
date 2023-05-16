@@ -7,7 +7,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
@@ -16,11 +15,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CB745_Table_Core | CB745_Table_Mods_I | CB745_Table_Mods_II  -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
 								<xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini" or defName = "TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_ToolRack</li>
@@ -36,11 +33,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CB745_Table_Core | CB745_Table_Mods_I | CB745_Table_Mods_II  -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini" or defName = "TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_UniversalCabinet</li>

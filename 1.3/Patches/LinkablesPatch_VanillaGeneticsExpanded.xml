@@ -19,7 +19,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== RimWorld ========== -->
                 <li Class="PatchOperationFindMod">
@@ -28,11 +27,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinet</li>
@@ -48,11 +45,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>AKN_MotivatingPlush</li>
@@ -68,11 +63,9 @@
                         <li>Apini Playable Race, Continued!</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GR_TissueGrowingVat -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ApiniNectarStill</li>
@@ -92,11 +85,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GR_TissueGrowingVat -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>TableBionics</li>
@@ -114,11 +105,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
@@ -137,11 +126,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ucp_toolbox</li>
@@ -157,11 +144,9 @@
                         <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_FabricationCabinet</li>
@@ -177,11 +162,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -198,11 +181,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GR_TissueGrowingVat | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrinder -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GR_TissueGrowingVat" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrinder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_FabricationBoost</li>

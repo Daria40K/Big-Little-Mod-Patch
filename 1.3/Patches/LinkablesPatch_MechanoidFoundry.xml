@@ -11,7 +11,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
@@ -19,11 +18,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- MF_MechanoidFoundry -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="MF_MechanoidFoundry"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -40,11 +37,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- MF_MechanoidFoundry -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="MF_MechanoidFoundry"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_QuenchingBucket</li>
@@ -64,11 +59,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- MF_MechanoidFoundry -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="MF_MechanoidFoundry"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
@@ -87,11 +80,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- MF_MechanoidFoundry -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="MF_MechanoidFoundry"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -113,11 +104,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- MF_MechanoidFoundry -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="MF_MechanoidFoundry"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
@@ -136,11 +125,9 @@
                         <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- MF_MechanoidFoundry -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="MF_MechanoidFoundry"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_MachiningCabinet</li>
@@ -156,11 +143,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- MF_MechanoidFoundry -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="MF_MechanoidFoundry"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -176,11 +161,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- MF_MechanoidFoundry -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="MF_MechanoidFoundry"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_MachiningGoods</li>

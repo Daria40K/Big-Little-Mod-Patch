@@ -20,14 +20,11 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- VTElectricStove -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName="VTElectricStove"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
@@ -40,10 +37,8 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName = "VTElectricStove"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName = "VTElectricStove"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -57,11 +52,9 @@
 						<li>Ideology</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-								<success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
@@ -70,7 +63,6 @@
 
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-								<success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
@@ -86,11 +78,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-								<success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
@@ -99,7 +89,6 @@
 
 							<!-- HospitalBedVault -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[@Name="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_RestoringPlush</li>
@@ -108,7 +97,6 @@
 
 							<!-- VTElectricStove -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -117,7 +105,6 @@
 
 							<!-- vt_workbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -133,11 +120,9 @@
 						<li>Clockwork And Steam</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>CarbolicAcidSprayer</li>
@@ -154,11 +139,9 @@
 						<li>CTS - Complete Tech Solutions (Continued)</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- HospitalBedVault -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[@Name="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CTSAdvancedVitalsMonitor</li>
@@ -175,11 +158,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-								<success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasD</li>
@@ -198,11 +179,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-								<success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
@@ -217,7 +196,6 @@
 
                             <!-- VTElectricStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li><!-- GloomyFurniture -->
@@ -235,11 +213,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VTElectricStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
@@ -259,11 +235,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-								<success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>sd_medicaddons_medieval_surg_washpan</li>
@@ -287,11 +261,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-								<success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>IV_Blood</li><!-- Medical IVs -->
@@ -318,11 +290,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-								<success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>MS_DStand</li><!-- Medical Supplements (Continued) -->
@@ -339,11 +309,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
@@ -360,11 +328,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticDresser</li>
@@ -379,7 +345,6 @@
 
                             <!-- VTElectricStove -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
 								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
@@ -388,7 +353,6 @@
 
 							<!-- vt_workbench -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
@@ -405,11 +369,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VTElectricStove -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
 								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>KitchenCupboard</li><!-- More Linkables -->
@@ -418,7 +380,6 @@
 
 							<!-- vt_workbench -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
@@ -437,11 +398,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2RoyalEndTableLight</li>
@@ -462,11 +421,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Dresser</li>
@@ -478,7 +435,6 @@
 
 							<!-- vt_workbench -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -495,11 +451,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
@@ -521,11 +475,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
@@ -543,11 +495,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IlluminateEndTable</li>
@@ -564,11 +514,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
@@ -586,11 +534,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- vt_workbench -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ucp_toolbox</li>
@@ -607,11 +553,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
@@ -625,7 +569,6 @@
 
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>SadjuukSurgeryAA</li>
@@ -645,11 +588,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>USH_LuciferiumMedicalSimulator</li>
@@ -666,11 +607,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>VFEA_AncientVitalsMonitor</li>
@@ -687,11 +626,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_RoyalDresser</li>
@@ -711,11 +648,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Facility_VitalsCentre</li>
@@ -733,11 +668,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
@@ -755,11 +688,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VTElectricStove -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
 								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_KitchenSinkCabinet</li>
@@ -776,11 +707,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- HospitalBedVault -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Wall_M_VitalsMonitor</li>
@@ -796,11 +725,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VTElectricStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
@@ -811,7 +738,6 @@
 
 							<!-- vt_workbench -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_UniversalCabinet</li>

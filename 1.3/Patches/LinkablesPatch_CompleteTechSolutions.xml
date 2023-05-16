@@ -13,14 +13,11 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- CTSAdvancedMedicineLab -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
@@ -33,10 +30,8 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName = "CTSAdvancedMedicineLab"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName = "CTSAdvancedMedicineLab"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -50,11 +45,9 @@
 						<li>Ideology</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
@@ -70,11 +63,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_RestoringPlush</li>
@@ -90,11 +81,9 @@
 						<li>Clockwork And Steam</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>CarbolicAcidSprayer</li>
@@ -112,11 +101,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>sd_medicaddons_medieval_surg_washpan</li>
@@ -140,11 +127,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>IV_Blood</li><!-- Medical IVs -->
@@ -171,11 +156,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>MS_DStand</li><!-- Medical Supplements -->
@@ -184,7 +167,6 @@
 
                             <!-- CTSAdvancedMedicineLab -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DrugCabinet</li>
@@ -201,11 +183,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSAdvancedMedicineLab -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_ToolRack</li>
@@ -222,11 +202,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSAdvancedMedicineLab -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ucp_toolbox</li>
@@ -243,11 +221,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
@@ -267,11 +243,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>USH_LuciferiumMedicalSimulator</li>
@@ -289,11 +263,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>VFEA_AncientVitalsMonitor</li>
@@ -310,11 +282,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Facility_VitalsCentre</li>
@@ -331,11 +301,9 @@
                         <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSAdvancedMedicineLab -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_DrugCabinet</li>
@@ -352,11 +320,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Vaultmedical</li>
@@ -374,11 +340,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSHiTechHospitalBed -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Wall_M_VitalsMonitor</li>
@@ -394,11 +358,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CTSAdvancedMedicineLab -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -414,11 +376,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CTSAdvancedMedicineLab -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_DrugLabGoods</li>

@@ -18,7 +18,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- OuterRim_HypertechFabricator -->
 				<li Class="PatchOperationConditional">

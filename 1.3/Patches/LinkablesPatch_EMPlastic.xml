@@ -13,7 +13,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
@@ -22,11 +21,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VMEu_PlasticProcessor | VMEu_SynthWeaver | VMEu_OilDistiller -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
 								<xpath>Defs/ThingDef[defName="VMEu_PlasticProcessor" or defName="VMEu_SynthWeaver" or defName="VMEu_OilDistiller"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
@@ -43,11 +40,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VMEu_PlasticProcessor | VMEu_OilDistiller -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VMEu_PlasticProcessor" or defName="VMEu_OilDistiller"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -61,7 +56,6 @@
 
                             <!-- VMEu_SynthWeaver -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VMEu_SynthWeaver"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_measure</li>
@@ -81,11 +75,9 @@
                         <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VMEu_SynthWeaver-->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_SynthWeaver"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_TailorCabinet</li>
@@ -94,7 +86,6 @@
 
                             <!-- VMEu_PlasticProcessor | VMEu_OilDistiller -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VMEu_PlasticProcessor" or defName="VMEu_OilDistiller"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>VFE_MachiningCabinet</li>
@@ -110,11 +101,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VMEu_SynthWeaver | VMEu_PlasticProcessor | VMEu_OilDistiller -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VMEu_SynthWeaver" or defName="VMEu_PlasticProcessor" or defName="VMEu_OilDistiller"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -130,11 +119,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VMEu_SynthWeaver -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_SynthWeaver"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_TailorGoods</li>
@@ -145,7 +132,6 @@
 
                             <!-- VMEu_PlasticProcessor | VMEu_OilDistiller -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="VMEu_PlasticProcessor" or defName="VMEu_OilDistiller"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Link_MachiningGoods</li>

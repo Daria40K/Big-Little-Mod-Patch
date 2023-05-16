@@ -22,11 +22,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- TWB_FueledStoveMini -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="TWB_FueledStoveMini"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="TWB_FueledStoveMini"]/comps</xpath>
@@ -41,7 +39,6 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini"]/placeWorkers</xpath>
@@ -53,7 +50,6 @@
                 
                 <!-- TWB_ElectricStoveMini -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="TWB_ElectricStoveMini"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="TWB_ElectricStoveMini"]/comps</xpath>
@@ -68,7 +64,6 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName = "TWB_ElectricStoveMini"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName = "TWB_ElectricStoveMini"]/placeWorkers</xpath>
@@ -80,7 +75,6 @@
 
                 <!-- TWB_BreweryMini -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="TWB_BreweryMini"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="TWB_BreweryMini"]</xpath>
@@ -97,7 +91,6 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName = "TWB_BreweryMini"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName = "TWB_BreweryMini"]/placeWorkers</xpath>
@@ -109,7 +102,6 @@
 
                 <!-- TWB_ElectricSmelterMini -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="TWB_ElectricSmelterMini"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="TWB_ElectricSmelterMini"]/comps</xpath>
@@ -124,7 +116,6 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName = "TWB_ElectricSmelterMini"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName = "TWB_ElectricSmelterMini"]</xpath>
@@ -142,11 +133,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- TWB_TableSculptingMini | TWB_TableButcherMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableMachiningMini | TWB_FueledStoveMini | TWB_ElectricStoveMini | TWB_TableStonecutterMini | TWB_BreweryMini | TWB_DrugLabMini | TWB_ElectricSmelterMini -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="TWB_TableSculptingMini" or defName="TWB_TableButcherMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableMachiningMini" or defName="TWB_FueledStoveMini" or defName="TWB_ElectricStoveMini" or defName="TWB_TableStonecutterMini" or defName="TWB_BreweryMini" or defName="TWB_DrugLabMini" or defName="TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -163,11 +152,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini" or defName = "TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li><!-- GloomyFurniture -->
@@ -185,11 +172,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini" or defName = "TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
@@ -201,7 +186,6 @@
 
 							<!-- TWB_TableButcherMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableButcherMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>SM_Sink</li>
@@ -222,11 +206,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_DrugLabMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DrugCabinet</li>
@@ -243,11 +225,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
 								<xpath>Defs/ThingDef[defName="TWB_FueledStoveMini" or defName="TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
@@ -256,7 +236,6 @@
 
                             <!-- TWB_TableSculptingMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableSculptingMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_ToolRack</li>
@@ -265,7 +244,6 @@
 
                             <!-- TWB_TableButcherMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableButcherMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_ToolRack</li>
@@ -274,7 +252,6 @@
 
                             <!-- TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini-->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_HandTailoringBenchMini" or defName = "TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_ToolRack</li>
@@ -283,7 +260,6 @@
 
                             <!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini-->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledSmithyMini" or defName = "TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_QuenchingBucket</li>
@@ -295,7 +271,6 @@
 
                             <!-- TWB_TableStonecutterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableStonecutterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_ToolRack</li>
@@ -304,7 +279,6 @@
 
                             <!-- TWB_TableMachiningMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_QuenchingBucket</li>
@@ -316,7 +290,6 @@
 
                             <!-- TWB_ElectricSmelterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_QuenchingBucket</li>
@@ -336,11 +309,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
 							<li Class="PatchOperationAdd">
-                                <success>Always</success>
 								<xpath>Defs/ThingDef[defName="TWB_FueledStoveMini" or defName="TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								 <value>
                                     <li>KitchenCupboard</li><!-- More Linkables -->
@@ -349,7 +320,6 @@
 
                             <!-- TWB_TableSculptingMini | TWB_TableButcherMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableMachiningMini | TWB_TableStonecutterMini | TWB_BreweryMini | TWB_DrugLabMini | TWB_ElectricSmelterMini -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="TWB_TableSculptingMini" or defName="TWB_TableButcherMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableStonecutterMini" or defName="TWB_BreweryMini" or defName="TWB_DrugLabMini" or defName="TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>ToolCabinetA</li>
@@ -368,11 +338,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_TableMachiningMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -381,7 +349,6 @@
 
                             <!-- TWB_ElectricSmelterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -390,7 +357,6 @@
 
                             <!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledSmithyMini" or defName = "TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -407,11 +373,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_ElectricSmelterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>ucp_tongs</li>
@@ -422,7 +386,6 @@
 
                             <!-- TWB_TableMachiningMini -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -436,7 +399,6 @@
 
                             <!-- TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_HandTailoringBenchMini" or defName = "TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>ucp_measure</li>
@@ -449,7 +411,6 @@
 
                             <!-- TWB_TableSculptingMini | TWB_TableStonecutterMini | TWB_DrugLabMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="TWB_TableSculptingMini" or defName="TWB_TableStonecutterMini" or defName="TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ucp_toolbox</li>
@@ -466,11 +427,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_TableMachiningMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
@@ -482,7 +441,6 @@
 
                             <!-- TWB_ElectricSmelterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
@@ -494,7 +452,6 @@
 
                             <!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini-->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledSmithyMini" or defName = "TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
@@ -513,11 +470,9 @@
                         <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="TWB_FueledStoveMini" or defName="TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_KitchenSinkCabinet</li>
@@ -526,7 +481,6 @@
 
                             <!-- TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini-->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_HandTailoringBenchMini" or defName = "TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_TailorCabinet</li>
@@ -535,7 +489,6 @@
 
                             <!-- TWB_TableMachiningMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_MachiningCabinet</li>
@@ -544,7 +497,6 @@
 
                             <!-- TWB_DrugLabMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_DrugCabinet</li>
@@ -553,7 +505,6 @@
 
                             <!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini-->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledSmithyMini" or defName = "TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_SmithyCabinet</li>
@@ -569,11 +520,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini" or defName = "TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -582,7 +531,6 @@
 
                             <!-- TWB_TableSculptingMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableSculptingMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -591,7 +539,6 @@
 
                             <!-- TWB_TableButcherMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableButcherMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -600,7 +547,6 @@
 
                             <!-- TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_HandTailoringBenchMini" or defName = "TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -609,7 +555,6 @@
 
                             <!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledSmithyMini" or defName = "TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -618,7 +563,6 @@
 
                             <!-- TWB_TableStonecutterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableStonecutterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -627,7 +571,6 @@
 
                             <!-- TWB_TableMachiningMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -636,7 +579,6 @@
 
                             <!-- TWB_DrugLabMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -645,7 +587,6 @@
 
                             <!-- TWB_BreweryMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_BreweryMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -654,7 +595,6 @@
 
                             <!-- TWB_ElectricSmelterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -670,11 +610,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledStoveMini" or defName = "TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
@@ -685,7 +623,6 @@
 
                             <!-- TWB_TableSculptingMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableSculptingMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_ArtGoods</li>
@@ -696,7 +633,6 @@
 
                             <!-- TWB_TableButcherMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableButcherMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_ButcherGoods</li>
@@ -707,7 +643,6 @@
 
                             <!-- TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_HandTailoringBenchMini" or defName = "TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_TailorGoods</li>
@@ -718,7 +653,6 @@
 
                             <!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_FueledSmithyMini" or defName = "TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_SmithingGoods</li>
@@ -729,7 +663,6 @@
 
                             <!-- TWB_TableStonecutterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableStonecutterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_StoneCutterGoods</li>
@@ -740,7 +673,6 @@
 
                             <!-- TWB_TableMachiningMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_MachiningGoods</li>
@@ -751,7 +683,6 @@
 
                             <!-- TWB_DrugLabMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_DrugLabGoods</li>
@@ -762,7 +693,6 @@
 
                             <!-- TWB_BreweryMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_BreweryMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_BreweryGoods</li>
@@ -773,7 +703,6 @@
 
                             <!-- TWB_ElectricSmelterMini -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_SmelterGoods</li>

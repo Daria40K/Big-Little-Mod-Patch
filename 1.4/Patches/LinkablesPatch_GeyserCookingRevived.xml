@@ -12,14 +12,11 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- GCS_Stove -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GCS_Stove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName="GCS_Stove"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
@@ -32,10 +29,8 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GCS_Stove"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName="COMIGCS_StoveGO_SmallerElectricStove"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -45,10 +40,8 @@
 
                 <!-- GCS_advStove -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GCS_advStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName="GCS_advStove"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
@@ -61,10 +54,8 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GCS_advStove"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName="GCS_advStove"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -79,11 +70,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GCS_Stove" or defName="GCS_advStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li>
@@ -101,11 +90,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GCS_Stove" or defName="GCS_advStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
@@ -128,7 +115,6 @@
 						<operations>
 							<!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GCS_Stove" or defName="GCS_advStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_RusticCookingTools</li>
@@ -145,11 +131,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GCS_Stove" or defName="GCS_advStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>KitchenCupboard</li><!-- More Linkables -->
@@ -169,7 +153,6 @@
 						<operations>
 							<!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GCS_Stove" or defName="GCS_advStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>VFE_KitchenSinkCabinet</li>
@@ -185,11 +168,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- GCS_Stove | GCS_advStove -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="GCS_Stove" or defName="GCS_advStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>

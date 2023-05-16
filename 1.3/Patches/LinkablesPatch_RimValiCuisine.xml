@@ -10,14 +10,11 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- AvaliCookingStation -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
@@ -30,10 +27,8 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName = "AvaliCookingStation"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName = "AvaliCookingStation"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -47,11 +42,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- AvaliCookingStation -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -68,11 +61,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li>
@@ -90,11 +81,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
@@ -114,11 +103,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_RusticCookingTools</li>
@@ -135,11 +122,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>KitchenCupboard</li>
@@ -156,11 +141,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>VFE_KitchenSinkCabinet</li>
@@ -176,11 +159,9 @@
 						<li>Vault-Tec - Handy things for your vault!</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Vt_server</li>
@@ -197,11 +178,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- AvaliCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="AvaliCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>

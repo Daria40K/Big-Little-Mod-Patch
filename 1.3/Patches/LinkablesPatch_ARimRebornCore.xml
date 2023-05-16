@@ -16,11 +16,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]</xpath>
@@ -37,7 +35,6 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/placeWorkers</xpath>
@@ -53,11 +50,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked | ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_AetherMachineTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked" or defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -74,11 +69,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li>
@@ -96,11 +89,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
@@ -120,11 +111,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_RusticCookingTools</li>
@@ -133,7 +122,6 @@
 
                             <!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_AetherMachineTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
@@ -150,11 +138,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>KitchenCupboard</li>
@@ -163,7 +149,6 @@
 
                             <!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_AetherMachineTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>ToolCabinetA</li>
@@ -182,11 +167,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_AetherMachineTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Outland_Grindstone</li>
@@ -203,11 +186,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ARR_AetherMachineTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
@@ -221,7 +202,6 @@
 
                             <!-- ARR_AetherTailorTable | ARR_AetherTailorTableLinked -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_measure</li>
@@ -234,7 +214,6 @@
 
                             <!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ucp_toolbox</li>
@@ -251,11 +230,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- ARR_AetherMachineTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
@@ -275,11 +252,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>VFE_KitchenSinkCabinet</li>
@@ -288,7 +263,6 @@
 
                             <!-- ARR_AetherMachineTable -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_MachiningCabinet</li>
@@ -297,7 +271,6 @@
 
                             <!-- ARR_AetherTailorTable | ARR_AetherTailorTableLinked -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>VFE_TailorCabinet</li>
@@ -313,11 +286,9 @@
 						<li>Vault-Tec - Handy things for your vault!</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_AetherMachineTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Vt_server</li>
@@ -334,11 +305,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -347,7 +316,6 @@
 
                             <!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>WallToolBoard</li>
@@ -356,7 +324,6 @@
 
                             <!-- ARR_AetherMachineTable -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -365,7 +332,6 @@
 
                             <!-- ARR_AetherTailorTable | ARR_AetherTailorTableLinked -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
@@ -381,11 +347,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
@@ -396,7 +360,6 @@
 
                             <!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Link_UniversalCabinet</li>
@@ -405,7 +368,6 @@
 
                             <!-- ARR_AetherMachineTable -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_MachiningGoods</li>
@@ -416,7 +378,6 @@
 
                             <!-- ARR_AetherTailorTable | ARR_AetherTailorTableLinked -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_TailorGoods</li>

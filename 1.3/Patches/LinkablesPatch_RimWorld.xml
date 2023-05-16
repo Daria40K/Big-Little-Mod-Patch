@@ -2,6 +2,9 @@
 <Patch>
     <!--
 		========== RimWorld ==========
+
+		#research
+		#researchadv
 	-->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
@@ -49,11 +52,9 @@
 			<li>Akeron Decorations</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- BiofuelRefinery -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>AKN_ComfortingPlush</li>
@@ -70,11 +71,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- HiTechResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>ElectromechanicalComputer</li><!-- Clockwork And Steam -->
@@ -92,11 +91,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- HiTechResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>EccentricAuroraCore</li><!-- Eccentric Tech - Core -->
@@ -113,11 +110,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RGK_Dresser</li><!-- GloomyFurniture -->
@@ -132,7 +127,6 @@
 
 				<!-- FueledStove | ElectricStove-->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>GL_Cupboard</li><!-- GloomyFurniture -->
@@ -158,11 +152,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- FueledStove | ElectricStove-->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>SM_Sink</li>
@@ -182,11 +174,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>DankPyon_RusticEndTable</li><!-- Medieval Overhaul -->
@@ -203,7 +193,6 @@
 
 				<!-- FueledStove | ElectricStove-->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>DankPyon_RusticCookingTools</li><!-- Medieval Overhaul -->
@@ -212,7 +201,6 @@
 
 				<!-- FueledSmithy | ElectricSmithy | TableMachining-->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>DankPyon_QuenchingBucket</li>
@@ -224,7 +212,6 @@
 
 				<!-- HandTailoringBench | ElectricTailoringBench-->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HandTailoringBench" or defName="ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>DankPyon_ToolRack</li>
@@ -233,7 +220,6 @@
 				
 				<!-- TableStonecutter -->
                 <li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="TableStonecutter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>DankPyon_ToolRack</li>
@@ -242,7 +228,6 @@
 
 				<!-- ElectricSmelter -->
                 <li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="ElectricSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>DankPyon_QuenchingBucket</li>
@@ -254,7 +239,6 @@
 
 				<!-- HiTechResearchBench -->
                 <li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>DankPyon_RusticBookshelf</li>
@@ -272,11 +256,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- HiTechResearchBench -->
                 <li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>Anon2FileCabinet</li><!-- More Furniture -->
@@ -293,11 +275,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Outland_Dresser</li>
@@ -309,7 +289,6 @@
 
 				<!-- HiTechResearchBench -->
                 <li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Outland_Bookshelf</li>
@@ -326,11 +305,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RE_PrefabDresser</li><!-- Rim-Effect: Core -->
@@ -344,7 +321,6 @@
 
 				<!-- HiTechResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RE_AllianceTerminal</li><!-- Rim-Effect: Core -->
@@ -361,11 +337,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- HiTechResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RE_AsariTerminal</li><!-- Rim-Effect: Asari and Reapers -->
@@ -382,11 +356,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RLE_KazariKatana</li><!-- RimLife Expansion Furniture -->
@@ -405,11 +377,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- SimpleResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RP_MechanicalCalculator</li>
@@ -420,7 +390,6 @@
 
 				<!-- HiTechResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>RP_MechanicalCalculator</li>
@@ -442,11 +411,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>IlluminateEndTable</li>
@@ -463,11 +430,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- HiTechResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>LostAnalyzer</li>
@@ -486,11 +451,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>SadjuukFurnitureAA</li><!-- UN-Furniture -->
@@ -504,7 +467,6 @@
 				
 				<!-- HospitalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>SadjuukSurgeryAA</li><!-- UN-Furniture -->
@@ -516,7 +478,6 @@
 
 				<!-- FueledSmithy | ElectricSmithy | TableMachining-->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>SadjuukShaper</li>
@@ -528,7 +489,6 @@
 
 				<!-- ElectricSmelter -->
                 <li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="ElectricSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>SadjuukShaper</li>
@@ -540,7 +500,6 @@
 
 				<!-- SimpleResearchBench | HiTechResearchBench -->
                 <li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="SimpleResearchBench" or defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>SadjuukResearchBA</li><!-- UN-Furniture -->
@@ -550,7 +509,6 @@
 
 				<!-- HiTechResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
                         <li>SadjuukResearchBC</li><!-- UN-Furniture -->
@@ -568,11 +526,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Table_RoyalDresser</li><!-- Vanilla Furniture Expanded -->
@@ -584,7 +540,6 @@
 
 				<!-- HiTechResearchBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Misc_FileCabinet</li><!-- Vanilla Furniture Expanded -->
@@ -601,11 +556,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- Bed | DoubleBed | RoyalBed -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Table_IlluminatedEndTable</li>
@@ -622,11 +575,9 @@
 			<li>WorkBench Support - More Linkable Facilities -</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- HiTechResearchBench -->
                 <li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>Link_ResearchGoods</li>

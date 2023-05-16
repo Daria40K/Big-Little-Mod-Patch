@@ -20,12 +20,10 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- ========== RimWorld ========== -->
 				<!-- SadjuukResearchAB | SadjuukResearchAC -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="SadjuukResearchAB" or defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>MultiAnalyzer</li>
@@ -153,7 +151,6 @@
 
 							<!-- SadjuukSurgeryBaseB -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>CarbolicAcidSprayer</li>
@@ -480,7 +477,6 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- SadjuukResearchAB | SadjuukResearchAC -->
 							<li Class="PatchOperationAdd">
@@ -942,7 +938,6 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- SadjuukSurgeryBaseB -->
 							<li Class="PatchOperationAdd">
@@ -992,7 +987,6 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- SadjuukSurgeryBaseB -->
 							<li Class="PatchOperationAdd">
@@ -1114,11 +1108,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- SadjuukSurgeryBaseB -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Wall_M_VitalsMonitor</li>

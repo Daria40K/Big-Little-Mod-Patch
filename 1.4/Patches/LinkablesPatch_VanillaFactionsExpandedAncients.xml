@@ -17,14 +17,11 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- VFEA_AncientCookingStation -->
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEA_AncientCookingStation"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName="VFEA_AncientCookingStation"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
@@ -37,10 +34,8 @@
                 </li>
 
                 <li Class="PatchOperationConditional">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName = "VFEA_AncientCookingStation"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
                     <nomatch Class="PatchOperationAdd">
-                        <success>Always</success>
                         <xpath>Defs/ThingDef[defName = "VFEA_AncientCookingStation"]/placeWorkers</xpath>
                         <value>
                             <li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -112,7 +107,6 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientBed -->
 							<li Class="PatchOperationAdd">
@@ -130,7 +124,6 @@
                             
                             <!-- VFEA_AncientCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VFEA_AncientCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li>
@@ -148,7 +141,6 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientBed -->
 							<li Class="PatchOperationAdd">
@@ -190,7 +182,6 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientCryptosleepSuspender -->
                             <li Class="PatchOperationAdd">
@@ -217,7 +208,6 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientCryptosleepSuspender -->
                             <li Class="PatchOperationAdd">
@@ -247,7 +237,6 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientCryptosleepSuspender -->
                             <li Class="PatchOperationAdd">
@@ -292,7 +281,6 @@
 
                             <!-- VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VFEA_ElectricMendingStation" or defName = "VFEA_FueledMendingStation" or defName = "VFEA_AncientWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_ToolRack</li>
@@ -309,11 +297,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VFEA_AncientCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>KitchenCupboard</li><!-- More Linkables -->
@@ -488,7 +474,6 @@
 						<operations>
 							<!-- VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VFEA_ElectricMendingStation" or defName = "VFEA_FueledMendingStation" or defName = "VFEA_AncientWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>ucp_vise</li>
@@ -541,7 +526,6 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientBed -->
 							<li Class="PatchOperationAdd">
@@ -569,7 +553,6 @@
 
                             <!-- VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VFEA_ElectricMendingStation" or defName = "VFEA_FueledMendingStation" or defName = "VFEA_AncientWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
@@ -589,11 +572,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientCryptosleepSuspender -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VFEA_AncientCryptosleepSuspender"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>VFEA_AncientVitalsMonitor</li>
@@ -632,7 +613,6 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientCryptosleepSuspender -->
                             <li Class="PatchOperationAdd">
@@ -684,7 +664,6 @@
 
                             <!-- VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VFEA_ElectricMendingStation" or defName = "VFEA_FueledMendingStation" or defName = "VFEA_AncientWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_MachiningCabinet</li>
@@ -721,7 +700,6 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientBed -->
 							<li Class="PatchOperationAdd">
@@ -758,7 +736,6 @@
 						<operations>
 							<!-- VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VFEA_ElectricMendingStation" or defName = "VFEA_FueledMendingStation" or defName = "VFEA_AncientWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -774,11 +751,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VFEA_AncientCookingStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VFEA_AncientCookingStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
@@ -789,7 +764,6 @@
 
                             <!-- VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VFEA_ElectricMendingStation" or defName = "VFEA_FueledMendingStation" or defName = "VFEA_AncientWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_MachiningGoods</li>

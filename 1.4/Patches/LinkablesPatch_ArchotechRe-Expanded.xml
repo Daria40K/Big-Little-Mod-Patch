@@ -11,7 +11,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
@@ -84,7 +83,6 @@
                         <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ArchotechStation -->
 							<li Class="PatchOperationAdd">
@@ -106,7 +104,6 @@
 						<operations>
 							<!-- ArchotechStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ArchotechStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -122,7 +119,6 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ArchotechStation -->
 							<li Class="PatchOperationAdd">

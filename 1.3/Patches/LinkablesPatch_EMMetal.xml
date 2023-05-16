@@ -14,7 +14,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
@@ -22,11 +21,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>AKN_MotivatingPlush</li>
@@ -43,11 +40,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>DankPyon_QuenchingBucket</li>
@@ -67,11 +62,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -88,11 +81,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>ucp_tongs</li>
@@ -111,11 +102,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SadjuukShaper</li>
@@ -134,11 +123,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -154,11 +141,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- VMEu_MetalSmelter | VMEu_ElectricMetalSmelter | VMEu_AdvancedSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName = "VMEu_MetalSmelter" or defName = "VMEu_ElectricMetalSmelter" or defName = "VMEu_AdvancedSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_SmelterGoods</li>

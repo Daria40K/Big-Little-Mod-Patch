@@ -16,7 +16,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Ideology [Official DLC] ========== -->
 				<li Class="PatchOperationFindMod">
@@ -45,7 +44,6 @@
 						<operations>
                             <!-- ApiniNectarStill | ApiniProstheticsTable | ApitechTable | ApitechSynthesizer -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>AKN_MotivatingPlush</li>
@@ -70,11 +68,9 @@
                     </mods>
             
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ApiniNectarStill | ApiniProstheticsTable | ApitechTable | ApitechSynthesizer -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>TableBionics</li>
@@ -186,11 +182,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ApiniNectarStill | ApiniProstheticsTable | ApitechTable | ApitechSynthesizer -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
@@ -359,11 +353,9 @@
                         <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ApiniNectarStill | ApiniProstheticsTable | ApitechTable | ApitechSynthesizer -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_FabricationCabinet</li>
@@ -399,11 +391,9 @@
                         <li>Vanilla Genetics Expanded</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ApiniNectarStill | ApiniProstheticsTable | ApitechTable | ApitechSynthesizer -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GR_NutrientVat</li>
@@ -437,7 +427,6 @@
 
                             <!-- ApiniNectarStill | ApiniProstheticsTable | ApitechTable | ApitechSynthesizer -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Vt_server</li>
@@ -455,11 +444,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- ApiniNectarStill | ApiniProstheticsTable | ApitechTable | ApitechSynthesizer -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_FabricationBoost</li>

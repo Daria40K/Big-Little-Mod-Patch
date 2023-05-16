@@ -11,7 +11,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
@@ -38,7 +37,6 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- Moyo_FabricationBench -->
 							<li Class="PatchOperationAdd">
@@ -58,7 +56,6 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- Moyo_FabricationBench -->
 							<li Class="PatchOperationAdd">
@@ -121,7 +118,6 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- Moyo_FabricationBench -->
 							<li Class="PatchOperationAdd">
@@ -143,7 +139,6 @@
                         <li>Vanilla Furniture Expanded - Production</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- Moyo_FabricationBench -->
 							<li Class="PatchOperationAdd">
@@ -165,7 +160,6 @@
 						<operations>
 							<!-- Moyo_FabricationBench -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -181,7 +175,6 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- Moyo_FabricationBench -->
 							<li Class="PatchOperationAdd">

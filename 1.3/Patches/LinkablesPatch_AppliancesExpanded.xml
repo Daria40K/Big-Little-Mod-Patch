@@ -17,7 +17,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
@@ -25,11 +24,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- CE_ChemfuelStove | CA_ChemfuelStoveLarge | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CA_ChemfuelStoveLarge" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -38,7 +35,6 @@
 
                             <!-- CA_ChemfuelSmelter -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -47,7 +43,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -64,11 +59,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CE_ChemfuelStove | CA_ChemfuelStoveLarge | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CA_ChemfuelStoveLarge" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>GL_Cupboard</li>
@@ -86,11 +79,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CE_ChemfuelStove | CA_ChemfuelStoveLarge | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CA_ChemfuelStoveLarge" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>SM_Sink</li>
@@ -110,11 +101,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CE_ChemfuelStove | CA_ChemfuelStoveLarge | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CA_ChemfuelStoveLarge" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
@@ -123,7 +112,6 @@
 
                             <!-- CA_ChemfuelSmelter -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_QuenchingBucket</li>
@@ -135,7 +123,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_QuenchingBucket</li>
@@ -155,11 +142,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CE_ChemfuelStove | CA_ChemfuelStoveLarge | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CA_ChemfuelStoveLarge" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>KitchenCupboard</li>
@@ -168,7 +153,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>ToolCabinetA</li>
@@ -187,11 +171,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CA_ChemfuelSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -200,7 +182,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Outland_Grindstone</li>
@@ -217,11 +198,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CA_ChemfuelSmelter -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_tongs</li>
@@ -232,7 +211,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_tongs</li>
@@ -251,11 +229,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- CA_ChemfuelSmelter -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
@@ -267,7 +243,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
@@ -287,11 +262,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CE_ChemfuelStove | CA_ChemfuelStoveLarge | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CA_ChemfuelStoveLarge" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_KitchenSinkCabinet</li>
@@ -300,7 +273,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>VFE_SmithyCabinet</li>
@@ -316,11 +288,9 @@
 						<li>Vault-Tec - Handy things for your vault!</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- CE_ChemfuelStove | CA_ChemfuelStoveLarge | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CA_ChemfuelStoveLarge" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Vt_server</li>
@@ -330,7 +300,6 @@
 
                             <!-- CA_ChemfuelSmelter -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Vt_server</li>
@@ -340,7 +309,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Vt_server</li>
@@ -357,11 +325,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- CE_ChemfuelStove | CA_ChemfuelStoveLarge | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CA_ChemfuelStoveLarge" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Link_KitchenGoods</li>
@@ -372,7 +338,6 @@
 
                             <!-- CA_ChemfuelSmelter -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Link_SmelterGoods</li>
@@ -383,7 +348,6 @@
 
                             <!-- CA_ChemfuelSmithy | CE_FueledSmithyLarge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Link_SmithingGoods</li>

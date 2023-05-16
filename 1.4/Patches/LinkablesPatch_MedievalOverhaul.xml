@@ -30,7 +30,7 @@
 	DankPyon_ToolRack = tool rack
 	DankPyon_Grinder = grinding wheel
 
-	DankPyon_AdvancedResearchBench = advanced research bench
+	DankPyon_AdvancedResearchBench | #research
 -->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -39,11 +39,9 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- DankPyon_ButchersBlock -->
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock"]</xpath>
@@ -60,7 +58,6 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/placeWorkers</xpath>
@@ -72,7 +69,6 @@
 
 				<!-- DankPyon_SpinningWheel -->
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="DankPyon_SpinningWheel"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName="DankPyon_SpinningWheel"]</xpath>
@@ -89,7 +85,6 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName = "DankPyon_SpinningWheel"]/placeWorkers/li[text()="PlaceWorker_ShowFacilitiesConnections"]</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName = "DankPyon_SpinningWheel"]/placeWorkers</xpath>
@@ -101,7 +96,6 @@
 
 				<!-- DankPyon_TailorsBench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>ToolCabinet</li>
@@ -110,7 +104,6 @@
 
 				<!-- DankPyon_Furnace -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="DankPyon_Furnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>ToolCabinet</li>
@@ -119,7 +112,6 @@
 
 				<!-- DankPyon_Anvil -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="DankPyon_Anvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>ToolCabinet</li>
@@ -128,7 +120,6 @@
 
 				<!-- DankPyon_Workbench -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>ToolCabinet</li>
@@ -137,7 +128,6 @@
 
 				<!-- DankPyon_StonecuttingSpot -->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="DankPyon_StonecuttingSpot"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
 						<li>DankPyon_ToolRack</li>
@@ -156,6 +146,25 @@
 								<xpath>Defs/ThingDef[defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== AI Uplifting Assistant ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>AI Uplifting Assistant</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AIUpliftAssistantAUA</li>
 								</value>
 							</li>
 						</operations>
@@ -184,6 +193,37 @@
 									<li>AKN_MotivatingPlush</li>
 								</value>
 							</li>
+
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_WallPapersA</li>
+									<li>AKN_WallPapersB</li>
+									<li>AKN_PaperNotesA</li>
+									<li>AKN_PaperNotesB</li>
+									<li>AKN_PaperNotesC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Archotech Re-Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Archotech Re-Expanded</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoAnalyzer</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -208,21 +248,41 @@
 					</match>
 				</li>
 
-				<!-- ========== [LTS]Furnishing ========== -->
+				<!-- ========== Commercial Server ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>[LTS]Furnishing</li>
+						<li>Commercial Server</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- DankPyon_BedWicker |  DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<!-- DankPyon_AdvancedResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>LTS_IdanasD</li>
-									<li>LTS_IdanasN</li>
-									<li>LTS_KoppangD</li>
+									<li>ServerSilver</li>
+									<li>ServerGold</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Curious Curios ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Curious Curios</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PotatoBattery</li>
+									<li>HeartInAJar</li>
+									<li>CC_RoyalJelly</li>
+									<li>Thrumbone</li>
 								</value>
 							</li>
 						</operations>
@@ -242,6 +302,27 @@
 								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricAuroraCore</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedWicker |  DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_IdanasD</li>
+									<li>LTS_IdanasN</li>
+									<li>LTS_KoppangD</li>
 								</value>
 							</li>
 						</operations>
@@ -324,6 +405,25 @@
 					</match>
 				</li>
 
+				<!-- ========== HALO - UNSC Faction ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>HALO - UNSC Faction</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HALO_UNSC_ResearchTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -374,6 +474,25 @@
 					</match>
 				</li>
 
+				<!-- ========== More Archotech Garbage Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage Reupload</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -395,6 +514,71 @@
 								<xpath>Defs/ThingDef[defName = "DankPyon_ButchersBlock"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>KitchenCupboard</li>
+								</value>
+							</li>
+
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Moyo-From the depth ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Moyo-From the depth</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MoyoGRModule</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Outer Rim - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Core</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_HypertechTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Outer Rim - Chiss Ascendancy ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Chiss Ascendancy</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_RewardChissAscendancy</li>
 								</value>
 							</li>
 						</operations>
@@ -419,6 +603,83 @@
 									<li>OuterRim_CoruscantEndTable</li>
 									<li>OuterRim_TatooineDresser</li>
 									<li>OuterRim_TatooineEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Outer Rim - Mandalore ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Mandalore</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_ResearchCore_Mandalorian</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Outer Rim - Galactic Empire ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Galactic Empire</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_ResearchCore_GalacticEmpire</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Outer Rim - Old Republic ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Old Republic</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_ResearchCore_SithEmpire</li>
+									<li>OuterRim_ResearchCore_OldRepublic</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Outer Rim - Rebel Alliance ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outer Rim - Rebel Alliance</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OuterRim_ResearchCore_RebelAlliance</li>
 								</value>
 							</li>
 						</operations>
@@ -454,7 +715,6 @@
 
 							<!-- DankPyon_Furnace -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="DankPyon_Furnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -463,7 +723,6 @@
 
 							<!-- DankPyon_Anvil -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="DankPyon_Anvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -493,6 +752,37 @@
 									<li>Outland_StoneEndTableWithLamp</li>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneWardrobe</li>
+								</value>
+							</li>
+
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Bookshelf</li>
+									<li>Outland_StoneBookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Research Assistants ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Research Assistants</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchPad</li>
+									<li>ResearchComputer</li>
+									<li>ResearchSubAIComputer</li>
+									<li>ResearchAIComputer</li>
 								</value>
 							</li>
 						</operations>
@@ -579,16 +869,6 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SimpleResearchBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RP_MechanicalCalculator</li>
-									<li>RP_DifferenceEngine</li>
-									<li>RP_TapeStorage</li>
-								</value>
-							</li>
-
 							<!-- DankPyon_AdvancedResearchBench -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -669,6 +949,68 @@
 									<li>SadjuukBedroomUpgradeCF</li>
 									<li>SadjuukBedroomUpgradeCC</li>
 									<li>SadjuukBedroomUpgradeCD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Science Never Stops: Ambition of the Cosmic ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Science Never Stops: Ambition of the Cosmic</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unlocker_GenI</li>
+									<li>SNS_Linkable_Unlocker_GenII</li>
+									<li>SNS_Linkable_Unlocker_GenIII</li>
+									<li>SNS_Linkable_Unlocker_POC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Sparkling Worlds - Full Mod ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Full Mod</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Tech Raiding [1.1](continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tech Raiding [1.1](continued)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AdvancedResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LostAnalyzer</li>
+									<li>BrutalAnalyzer</li>
+									<li>MechaAnalyzer</li>
 								</value>
 							</li>
 						</operations>

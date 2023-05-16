@@ -13,7 +13,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
                 <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
@@ -21,11 +20,9 @@
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
                             <!-- RB_Beekeeping_Workbench_Building | RB_Honey_Centrifuge | RB_Advanced_Honey_Centrifuge | RB_BeeResearchTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building" or defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge" or defName="RB_BeeResearchTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
@@ -42,11 +39,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- RB_Beekeeping_Workbench_Building -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li>
@@ -64,11 +59,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- RB_Beekeeping_Workbench_Building -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
@@ -88,11 +81,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- RB_Beekeeping_Workbench_Building -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>DankPyon_RusticCookingTools</li>
@@ -109,11 +100,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- RB_Beekeeping_Workbench_Building -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>KitchenCupboard</li>
@@ -122,7 +111,6 @@
 
                             <!-- RB_Honey_Centrifuge | RB_Advanced_Honey_Centrifuge | RB_BeeResearchTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge" or defName="RB_BeeResearchTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>ToolCabinetA</li>
@@ -141,11 +129,9 @@
 					</mods>
 
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- RB_Honey_Centrifuge | RB_Advanced_Honey_Centrifuge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_aerosol</li>
@@ -165,11 +151,9 @@
 					</mods>
 			
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- RB_Beekeeping_Workbench_Building -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>VFE_KitchenSinkCabinet</li>
@@ -185,11 +169,9 @@
                         <li>Vanilla Genetics Expanded</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- RB_Honey_Centrifuge | RB_Advanced_Honey_Centrifuge -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GR_NutrientVat</li>
@@ -205,11 +187,9 @@
 						<li>Vault-Tec - Handy things for your vault!</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- RB_Beekeeping_Workbench_Building | RB_Honey_Centrifuge | RB_Advanced_Honey_Centrifuge | RB_BeeResearchTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building" or defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge" or defName="RB_BeeResearchTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Vt_server</li>
@@ -226,11 +206,9 @@
 						<li>WallStuff</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
 						<operations>
 							<!-- RB_Beekeeping_Workbench_Building | RB_Honey_Centrifuge | RB_Advanced_Honey_Centrifuge | RB_BeeResearchTable -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building" or defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge" or defName="RB_BeeResearchTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>WallToolBoard</li>
@@ -246,11 +224,9 @@
                         <li>WorkBench Support - More Linkable Facilities -</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- RB_Beekeeping_Workbench_Building -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_KitchenGoods</li>
@@ -261,7 +237,6 @@
 
                             <!-- RB_Honey_Centrifuge | RB_Advanced_Honey_Centrifuge -->
 							<li Class="PatchOperationAdd">
-								<success>Always</success>
 								<xpath>Defs/ThingDef[defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
                                     <li>Link_FabricationBoost</li>
@@ -271,7 +246,6 @@
 
                             <!-- RB_BeeResearchTable -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_BeeResearchTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_UniversalCabinet</li>

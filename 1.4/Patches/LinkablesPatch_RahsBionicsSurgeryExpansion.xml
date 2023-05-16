@@ -12,7 +12,6 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
@@ -38,7 +37,6 @@
                         <li>Apini Playable Race, Continued!</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- BionicWorkbench |  AdvancedMedicalStation -->
 							<li Class="PatchOperationAdd">
@@ -80,11 +78,9 @@
                     </mods>
 
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- BionicWorkbench |  AdvancedMedicalStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="BionicWorkbench" or defName="AdvancedMedicalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
@@ -106,7 +102,6 @@
 						<operations>
 							<!-- BionicWorkbench |  AdvancedMedicalStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="BionicWorkbench" or defName="AdvancedMedicalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
@@ -126,7 +121,6 @@
 						<operations>
 							<!-- BionicWorkbench |  AdvancedMedicalStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="BionicWorkbench" or defName="AdvancedMedicalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>ucp_vise</li>
@@ -173,7 +167,6 @@
 						<operations>
 							<!-- BionicWorkbench |  AdvancedMedicalStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="BionicWorkbench" or defName="AdvancedMedicalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>VFE_FabricationCabinet</li>
@@ -189,11 +182,9 @@
                         <li>Vanilla Genetics Expanded</li>
                     </mods>
                     <match Class="PatchOperationSequence">
-                        <success>Always</success>
                         <operations>
                             <!-- BionicWorkbench |  AdvancedMedicalStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="BionicWorkbench" or defName="AdvancedMedicalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GR_NutrientVat</li>
@@ -212,7 +203,6 @@
 						<operations>
 							<!-- BionicWorkbench |  AdvancedMedicalStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="BionicWorkbench" or defName="AdvancedMedicalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Vt_server</li>
@@ -232,7 +222,6 @@
 						<operations>
 							<!-- BionicWorkbench |  AdvancedMedicalStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="BionicWorkbench" or defName="AdvancedMedicalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
@@ -251,7 +240,6 @@
 						<operations>
 							<!-- BionicWorkbench |  AdvancedMedicalStation -->
                             <li Class="PatchOperationAdd">
-                                <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="BionicWorkbench" or defName="AdvancedMedicalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Link_UniversalCabinet</li>
