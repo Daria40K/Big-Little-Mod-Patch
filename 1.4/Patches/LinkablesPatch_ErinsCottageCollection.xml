@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<!--
-		========== Outland - Furniture & Decor ==========
+		========== Erin's Cottage Collection ==========
 
-		OutlandArtableBedBase | #bed
+        CCol_QuiltedBed | #bed
+        CCol_QuiltedDoubleBed | #bed
+
+        CCot_CottageEndTable
+        CCot_CottageDresser
 	-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Outland - Furniture &amp; Decor</li>
+			<li>Erin's Cottage Collection</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -19,9 +23,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -30,37 +34,18 @@
 					</match>
 				</li>
 
-                <!-- ========== Akeron Decorations ========== -->
+				<!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Akeron Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-                            <!-- OutlandArtableBedBase -->
+                            <!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Erin's Cottage Collection ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Erin's Cottage Collection</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- OutlandArtableBedBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CCot_CottageEndTable</li>
-									<li>CCot_CottageDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -75,9 +60,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasD</li>
 									<li>LTS_IdanasN</li>
@@ -88,7 +73,7 @@
 					</match>
 				</li>
 
-				<!-- ========== GloomyFurniture ========== -->
+                <!-- ========== GloomyFurniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>GloomyFurniture</li>
@@ -96,9 +81,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>WardrobeA</li>
@@ -113,7 +98,7 @@
 					</match>
 				</li>
 
-                <!-- ========== Mechalit Core v2 (1.4) ========== -->
+				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Mechalit Core v2 (1.4)</li>
@@ -121,9 +106,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -137,12 +122,12 @@
 					<mods>
 						<li>Medieval Overhaul</li>
 					</mods>
-
+			
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
@@ -159,7 +144,7 @@
 					</match>
 				</li>
 
-                <!-- ========== More Furniture (Continued) ========== -->
+				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>More Furniture (Continued)</li>
@@ -167,9 +152,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2RoyalEndTableLight</li>
 									<li>Anon2EndTableLight</li>
@@ -190,9 +175,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -214,9 +199,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Dresser</li>
 									<li>Outland_EndTable</li>
@@ -228,17 +213,43 @@
 					</match>
 				</li>
 
+				<!-- ========== Outland - Furniture & Decor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Furniture &amp; Decor</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_EndTable</li>
+									<li>Outland_EndTableWithLamp</li>
+									<li>Outland_Dresser</li>
+									<li>Outland_Wardrobe</li>
+									<li>Outland_StoneEndTable</li>
+									<li>Outland_StoneEndTableWithLamp</li>
+									<li>Outland_StoneDresser</li>
+									<li>Outland_StoneWardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Rim-Effect: Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Rim-Effect: Core</li>
 					</mods>
-
+			
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -257,12 +268,12 @@
 					<mods>
 						<li>RimLife Expansion Furniture</li>
 					</mods>
-
+			
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -272,7 +283,7 @@
 					</match>
 				</li>
 
-                <!-- ========== RimVali: Far From Avalon ========== -->
+				<!-- ========== RimVali: Far From Avalon ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>RimVali: Far From Avalon</li>
@@ -280,9 +291,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IlluminateEndTable</li>
 								</value>
@@ -299,9 +310,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
@@ -319,9 +330,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -341,18 +352,18 @@
 						</operations>
 					</match>
 				</li>
-				
+
 				<!-- ========== UN-Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>UN-Furniture (Continued)</li>
 					</mods>
-
+			
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -371,12 +382,12 @@
 					<mods>
 						<li>Vanilla Furniture Expanded</li>
 					</mods>
-
+			
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_RoyalDresser</li>
 									<li>Table_RoyalEndTable</li>
@@ -396,9 +407,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -407,21 +418,21 @@
 						</operations>
 					</match>
 				</li>
-
+			
 				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Furniture Expanded - Spacer Module</li>
 					</mods>
-
+			
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Table_IlluminatedEndTable</li>
-									<li>Table_IlluminatedDresser</li>
+									<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+									<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
 								</value>
 							</li>
 						</operations>
@@ -436,9 +447,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OutlandArtableBedBase -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OutlandArtableBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>vt_EndTable</li>
@@ -452,7 +463,7 @@
 						</operations>
 					</match>
 				</li>
-			</operations>
-		</match>
-	</Operation>
+            </operations>
+        </match>
+    </Operation>
 </Patch>
