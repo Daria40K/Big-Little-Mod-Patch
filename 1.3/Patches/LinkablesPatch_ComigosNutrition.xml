@@ -13,6 +13,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- COMIGO_SmallerElectricStove -->
                 <li Class="PatchOperationConditional">

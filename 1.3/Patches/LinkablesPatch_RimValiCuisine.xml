@@ -10,6 +10,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- AvaliCookingStation -->
                 <li Class="PatchOperationConditional">

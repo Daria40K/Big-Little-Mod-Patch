@@ -516,4 +516,11 @@
 		<assemblyVersion>2.62.0</assemblyVersion>
 		<content>Added support for Erin's Cottage Collection|Removed &lt;success&gt;Always&lt;/success&gt; from all the patches since it doesn't do anything</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.62.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_62_1</defName>
+		<assemblyVersion>2.62.1</assemblyVersion>
+		<content>Fixed the errors from v2.62.0</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

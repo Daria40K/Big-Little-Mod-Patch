@@ -17,6 +17,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- VFEA_AncientCookingStation -->
                 <li Class="PatchOperationConditional">

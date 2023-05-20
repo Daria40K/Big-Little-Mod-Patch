@@ -13,24 +13,25 @@
         </mods>
 
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <!-- ========== Akeron Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Akeron Decorations</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
                             <!-- VPE_GasSmelter | VPE_GasStove | VPE_GasSmithy -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VPE_GasSmelter" or defName="VPE_GasStove" or defName="VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VPE_GasSmelter" or defName="VPE_GasStove" or defName="VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>AKN_MotivatingPlush</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== GloomyFurniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -93,7 +94,7 @@
                             <!-- VPE_GasSmithy | VPE_GasSmelter -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="VPE_GasSmithy" or defName="VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>DankPyon_QuenchingBucket</li>
                                     <li>DankPyon_Bellows</li>
                                     <li>DankPyon_ToolRack</li>
@@ -134,7 +135,7 @@
                             <!-- VPE_GasSmithy | VPE_GasSmelter -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="VPE_GasSmithy" or defName="VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>Outland_Grindstone</li>
                                 </value>
                             </li>
@@ -143,25 +144,25 @@
                 </li>
 
                 <!-- ========== Tabletop Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tabletop Decorations</li>
-					</mods>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Tabletop Decorations</li>
+                    </mods>
 
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VPE_GasSmithy | VPE_GasSmelter -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VPE_GasSmithy" or defName="VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_tongs</li>
-									<li>ucp_ballpeen</li>
-									<li>ucp_toolbox</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- VPE_GasSmithy | VPE_GasSmelter -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VPE_GasSmithy" or defName="VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_tongs</li>
+                                    <li>ucp_ballpeen</li>
+                                    <li>ucp_toolbox</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -174,7 +175,7 @@
                             <!-- VPE_GasSmithy | VPE_GasSmelter -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="VPE_GasSmithy" or defName="VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>SadjuukShaper</li>
                                     <li>SadjuukGrinding</li>
                                     <li>SadjuukLathe</li>
@@ -204,7 +205,7 @@
                             <!-- VPE_GasSmithy -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName = "VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                               <value>
+                                <value>
                                     <li>VFE_SmithyCabinet</li>
                                 </value>
                             </li>
@@ -213,22 +214,22 @@
                 </li>
 
                 <!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VPE_GasSmithy | VPE_GasSmelter -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WallStuff</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- VPE_GasSmithy | VPE_GasSmelter -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="VPE_GasSmithy" or defName="VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+                                <value>
                                     <li>WallToolBoard</li>
                                 </value>
                             </li>
-						</operations>
-					</match>
-				</li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">

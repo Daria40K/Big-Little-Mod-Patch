@@ -13,6 +13,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- ========== Apini Playable Race, Continued! ========== -->
                 <li Class="PatchOperationFindMod">

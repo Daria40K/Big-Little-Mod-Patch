@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!--
-		========== Erin's Cottage Collection ==========
+	<!-- ========== Erin's Cottage Collection ==========
 
         CCol_QuiltedBed | #bed
         CCol_QuiltedDoubleBed | #bed
@@ -15,6 +14,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 				<!-- ========== Ideology [Official DLC] ========== -->
 				<li Class="PatchOperationFindMod">
@@ -41,7 +41,7 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-                            <!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
@@ -73,7 +73,7 @@
 					</match>
 				</li>
 
-                <!-- ========== GloomyFurniture ========== -->
+				<!-- ========== GloomyFurniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>GloomyFurniture</li>
@@ -122,7 +122,7 @@
 					<mods>
 						<li>Medieval Overhaul</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
@@ -244,7 +244,7 @@
 					<mods>
 						<li>Rim-Effect: Core</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
@@ -268,7 +268,7 @@
 					<mods>
 						<li>RimLife Expansion Furniture</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
@@ -358,7 +358,7 @@
 					<mods>
 						<li>UN-Furniture (Continued)</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
@@ -382,7 +382,7 @@
 					<mods>
 						<li>Vanilla Furniture Expanded</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
@@ -418,21 +418,21 @@
 						</operations>
 					</match>
 				</li>
-			
+
 				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Furniture Expanded - Spacer Module</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Table_IlluminatedEndTable</li><!-- Vanilla Furniture Expanded - Spacer Module -->
-									<li>Table_IlluminatedDresser</li><!-- Vanilla Furniture Expanded - Spacer Module -->
+									<li>Table_IlluminatedEndTable</li>
+									<li>Table_IlluminatedDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -463,7 +463,7 @@
 						</operations>
 					</match>
 				</li>
-            </operations>
-        </match>
-    </Operation>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

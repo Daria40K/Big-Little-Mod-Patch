@@ -12,6 +12,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">

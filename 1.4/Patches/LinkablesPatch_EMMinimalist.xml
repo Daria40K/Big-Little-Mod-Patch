@@ -18,6 +18,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- MP_SmallStove -->
                 <li Class="PatchOperationConditional">

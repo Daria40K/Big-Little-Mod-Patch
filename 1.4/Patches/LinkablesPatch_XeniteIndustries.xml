@@ -10,6 +10,7 @@
         </mods>
 
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <!-- XIrefinery -->
                 <li Class="PatchOperationConditional">
@@ -37,22 +38,22 @@
                 </li>
 
                 <!-- ========== Akeron Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Akeron Decorations</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
                             <!-- XIrefinery -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XIrefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="XIrefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>AKN_MotivatingPlush</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
@@ -86,8 +87,8 @@
                                 <xpath>Defs/ThingDef[defName="XIrefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
-									<li>ToolCabinetB</li>
-									<li>ToolCabinetC</li>
+                                    <li>ToolCabinetB</li>
+                                    <li>ToolCabinetC</li>
                                 </value>
                             </li>
                         </operations>
@@ -95,41 +96,41 @@
                 </li>
 
                 <!-- ========== Tabletop Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tabletop Decorations</li>
-					</mods>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Tabletop Decorations</li>
+                    </mods>
 
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- XIrefinery -->
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- XIrefinery -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="XIrefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ucp_toolbox</li>
                                 </value>
                             </li>
-						</operations>
-					</match>
-				</li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- XIrefinery -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WallStuff</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- XIrefinery -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="XIrefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
                                 </value>
                             </li>
-						</operations>
-					</match>
-				</li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">

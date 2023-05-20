@@ -10,6 +10,7 @@
         </mods>
 
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <!-- ElectricBrewery -->
                 <li Class="PatchOperationConditional">

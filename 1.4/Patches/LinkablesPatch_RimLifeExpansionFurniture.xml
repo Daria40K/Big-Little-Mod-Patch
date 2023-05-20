@@ -21,6 +21,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 				<!-- REL_Bed | RLE_DoubleBed -->
 				<li Class="PatchOperationAdd">

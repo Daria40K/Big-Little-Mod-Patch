@@ -20,6 +20,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- VTElectricStove -->
                 <li Class="PatchOperationConditional">

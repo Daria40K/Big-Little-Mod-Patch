@@ -12,6 +12,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- Matterfab -->
                 <li Class="PatchOperationConditional">

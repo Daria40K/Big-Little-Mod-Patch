@@ -17,6 +17,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 				<!-- CA_ChemfuelSmelter | CA_ChemfuelCrematorium -->
 				<li Class="PatchOperationConditional">

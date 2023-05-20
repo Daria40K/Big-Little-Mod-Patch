@@ -39,6 +39,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 				<!-- DankPyon_ButchersBlock -->
 				<li Class="PatchOperationConditional">

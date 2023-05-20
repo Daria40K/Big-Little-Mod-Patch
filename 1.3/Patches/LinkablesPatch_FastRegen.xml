@@ -16,6 +16,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- AnimalMedic -->
                 <li Class="PatchOperationConditional">

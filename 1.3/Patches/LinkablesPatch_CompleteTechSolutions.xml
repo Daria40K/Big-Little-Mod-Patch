@@ -13,6 +13,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- CTSAdvancedMedicineLab -->
                 <li Class="PatchOperationConditional">

@@ -12,6 +12,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
                 <!-- GCS_Stove -->
                 <li Class="PatchOperationConditional">

@@ -10,6 +10,7 @@
         </mods>
 
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <!-- MDadvAssembler -->
                 <li Class="PatchOperationConditional">
@@ -37,22 +38,22 @@
                 </li>
 
                 <!-- ========== Akeron Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Akeron Decorations</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
                             <!-- MDadvAssembler -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MDadvAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="MDadvAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>AKN_MotivatingPlush</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
@@ -86,8 +87,8 @@
                                 <xpath>Defs/ThingDef[defName="MDadvAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>ToolCabinetA</li>
-									<li>ToolCabinetB</li>
-									<li>ToolCabinetC</li>
+                                    <li>ToolCabinetB</li>
+                                    <li>ToolCabinetC</li>
                                 </value>
                             </li>
                         </operations>
@@ -95,47 +96,47 @@
                 </li>
 
                 <!-- ========== [O21] Outland - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[O21] Outland - Core</li>
-					</mods>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[O21] Outland - Core</li>
+                    </mods>
 
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- MDadvAssembler -->
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- MDadvAssembler -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="MDadvAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>Outland_Grindstone</li>
                                 </value>
                             </li>
-						</operations>
-					</match>
-				</li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== Tabletop Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tabletop Decorations</li>
-					</mods>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Tabletop Decorations</li>
+                    </mods>
 
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- MDadvAssembler -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MDadvAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_vise</li>
-									<li>ucp_toolbox</li>
-									<li>ucp_screwdrivers</li>
-									<li>ucp_hammer</li>
-									<li>ucp_aerosol</li>
-									<li>ucp_wrench</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- MDadvAssembler -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="MDadvAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_vise</li>
+                                    <li>ucp_toolbox</li>
+                                    <li>ucp_screwdrivers</li>
+                                    <li>ucp_hammer</li>
+                                    <li>ucp_aerosol</li>
+                                    <li>ucp_wrench</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -178,22 +179,22 @@
                 </li>
 
                 <!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- MDadvAssembler -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WallStuff</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- MDadvAssembler -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="MDadvAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
                                 </value>
                             </li>
-						</operations>
-					</match>
-				</li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">
@@ -213,7 +214,7 @@
                             </li>
                         </operations>
                     </match>
-                </li>     
+                </li>
             </operations>
         </match>
     </Operation>

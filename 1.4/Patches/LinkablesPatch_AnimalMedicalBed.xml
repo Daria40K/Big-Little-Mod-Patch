@@ -11,6 +11,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+            <success>Always</success>
 			<operations>
                 <!-- ========== Akeron Decorations ========== -->
 				<li Class="PatchOperationFindMod">

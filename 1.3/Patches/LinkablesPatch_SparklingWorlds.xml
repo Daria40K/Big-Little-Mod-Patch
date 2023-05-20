@@ -13,6 +13,7 @@
         </mods>
 
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <!-- ========== Ideology [Official DLC] ========== -->
                 <li Class="PatchOperationFindMod">
@@ -59,23 +60,23 @@
                 </li>
 
                 <!-- ========== Clockwork And Steam ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Clockwork And Steam</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Clockwork And Steam</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
                             <!-- GlitterworldHospitalBedSW -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-									<li>CarbolicAcidSprayer</li>
+                                    <li>CarbolicAcidSprayer</li>
                                     <li>OperatingTheatreNotes</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
                 <li Class="PatchOperationFindMod">
@@ -218,40 +219,40 @@
                 </li>
 
                 <!-- ========== Tabletop Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tabletop Decorations</li>
-					</mods>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Tabletop Decorations</li>
+                    </mods>
 
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- MechaniteAssemblySW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_vise</li>
-									<li>ucp_toolbox</li>
-									<li>ucp_screwdrivers</li>
-									<li>ucp_hammer</li>
-									<li>ucp_aerosol</li>
-									<li>ucp_wrench</li>
-								</value>
-							</li>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- MechaniteAssemblySW -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_vise</li>
+                                    <li>ucp_toolbox</li>
+                                    <li>ucp_screwdrivers</li>
+                                    <li>ucp_hammer</li>
+                                    <li>ucp_aerosol</li>
+                                    <li>ucp_wrench</li>
+                                </value>
+                            </li>
 
                             <!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_measure</li>
-									<li>ucp_scraps</li>
-									<li>ucp_textileroll</li>
-									<li>ucp_pencil</li>
-									<li>ucp_toolbox</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_measure</li>
+                                    <li>ucp_scraps</li>
+                                    <li>ucp_textileroll</li>
+                                    <li>ucp_pencil</li>
+                                    <li>ucp_toolbox</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -391,22 +392,22 @@
                 </li>
 
                 <!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WallStuff</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- MechaniteAssemblySW | TableWeaverSW -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
                                 </value>
                             </li>
-						</operations>
-					</match>
-				</li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== Wall Vitals Monitor ========== -->
                 <li Class="PatchOperationFindMod">
