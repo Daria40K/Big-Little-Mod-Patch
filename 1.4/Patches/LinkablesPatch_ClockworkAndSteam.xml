@@ -34,10 +34,10 @@
 					</match>
 				</li>
 
-				<!-- ========== Akeron Decorations ========== -->
+				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Akeron Decorations</li>
+						<li>Akeron - Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
@@ -206,7 +206,7 @@
 						</operations>
 					</match>
 				</li>
-				
+
 				<!-- ========== [sd] medicaddons (unofficial) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -360,6 +360,7 @@
 								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetC</li>
+									<li>AdvancedMultiAnalyzer</li>
 								</value>
 							</li>
 
@@ -417,102 +418,20 @@
 								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_HypertechTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Chiss Ascendancy ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Chiss Ascendancy</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SteamResearchBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_RewardChissAscendancy</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Mandalore ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Mandalore</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SteamResearchBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_ResearchCore_Mandalorian</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Galactic Empire ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Galactic Empire</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SteamResearchBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_ResearchCore_GalacticEmpire</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Old Republic ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Old Republic</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SteamResearchBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_ResearchCore_SithEmpire</li>
-									<li>OuterRim_ResearchCore_OldRepublic</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Rebel Alliance ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Rebel Alliance</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SteamResearchBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteamResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_ResearchCore_RebelAlliance</li>
+									<li>OuterRim_HypertechTerminalWide</li>
+									<li MayRequire="Neronix17.OuterRim.GalacticEmpire">OuterRim_ResearchCore_GalacticEmpire</li>
+									<li MayRequire="Neronix17.OuterRim.RebelAlliance">OuterRim_ResearchCore_RebelAlliance</li>
+									<li MayRequire="Neronix17.OuterRim.Csilla">OuterRim_ResearchCore_ChissAscendancy</li>
+									<li MayRequire="Neronix17.OuterRim.Mandalore">OuterRim_ResearchCore_Mandalorian</li>
+									<li MayRequire="Neronix17.OuterRim.OldRepublic">OuterRim_ResearchCore_OldRepublic</li>
+									<li MayRequire="Neronix17.OuterRim.OldRepublic">OuterRim_ResearchCore_SithEmpire</li>
+									<li MayRequire="Neronix17.OuterRim.GalacticRepublic">OuterRim_ResearchCore_GalacticRepublic</li>
+									<li MayRequire="Neronix17.OuterRim.Seperatists">OuterRim_ResearchCore_Seperatists</li>
+									<li MayRequire="Neronix17.OuterRim.Naboo">OuterRim_ResearchCore_Naboo</li>
+									<li MayRequire="Neronix17.OuterRim.Naboo">OuterRim_ResearchCore_Gungan</li>
+									<li MayRequire="Neronix17.OuterRim.Umbara">OuterRim_ResearchCore_Umbran</li>
+									<li MayRequire="Neronix17.OuterRim.Geonosis">OuterRim_ResearchCore_Geonosian</li>
+									<li MayRequire="Neronix17.OuterRim.Dathomir">OuterRim_ResearchCore_Nightsister</li>
 								</value>
 							</li>
 						</operations>
@@ -701,12 +620,12 @@
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- ClockworkBenchBase -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[defName="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>ucp_toolbox</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -945,12 +864,12 @@
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- ClockworkBenchBase -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[defName="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>WallToolBoard</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>

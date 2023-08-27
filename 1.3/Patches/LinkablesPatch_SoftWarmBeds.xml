@@ -31,10 +31,10 @@
 					</match>
 				</li>
 
-                <!-- ========== Akeron Decorations ========== -->
+                <!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Akeron Decorations</li>
+						<li>Akeron - Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>

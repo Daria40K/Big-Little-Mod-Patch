@@ -61,10 +61,10 @@
 					</match>
 				</li>
 
-				<!-- ========== Akeron Decorations ========== -->
+				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Akeron Decorations</li>
+						<li>Akeron - Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
@@ -200,6 +200,28 @@
 									<li>HeartInAJar</li>
 									<li>CC_RoyalJelly</li>
 									<li>Thrumbone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Daily furniture 塔林家具 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Daily furniture 塔林家具</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedroomBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedroomBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ADH_clock_A_A_FURNITURE</li>
+									<li>ADH_book_A_A_FURNITURE</li>
+									<li>ADH_light_A_A_FURNITURE</li>
+									<li>ADH_light_B_A_FURNITURE</li>
+									<li>ADH_EndTable_A_A_FURNITURE</li>
 								</value>
 							</li>
 						</operations>
@@ -507,6 +529,7 @@
 								<xpath>Defs/ThingDef[defName="SadjuukResearchAA" or defName="SadjuukResearchBA" or defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetC</li>
+									<li>AdvancedMultiAnalyzer</li>
 								</value>
 							</li>
 						</operations>
@@ -545,25 +568,20 @@
 								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_HypertechTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Chiss Ascendancy ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Chiss Ascendancy</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SadjuukResearchCA -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_RewardChissAscendancy</li>
+									<li>OuterRim_HypertechTerminalWide</li>
+									<li MayRequire="Neronix17.OuterRim.GalacticEmpire">OuterRim_ResearchCore_GalacticEmpire</li>
+									<li MayRequire="Neronix17.OuterRim.RebelAlliance">OuterRim_ResearchCore_RebelAlliance</li>
+									<li MayRequire="Neronix17.OuterRim.Csilla">OuterRim_ResearchCore_ChissAscendancy</li>
+									<li MayRequire="Neronix17.OuterRim.Mandalore">OuterRim_ResearchCore_Mandalorian</li>
+									<li MayRequire="Neronix17.OuterRim.OldRepublic">OuterRim_ResearchCore_OldRepublic</li>
+									<li MayRequire="Neronix17.OuterRim.OldRepublic">OuterRim_ResearchCore_SithEmpire</li>
+									<li MayRequire="Neronix17.OuterRim.GalacticRepublic">OuterRim_ResearchCore_GalacticRepublic</li>
+									<li MayRequire="Neronix17.OuterRim.Seperatists">OuterRim_ResearchCore_Seperatists</li>
+									<li MayRequire="Neronix17.OuterRim.Naboo">OuterRim_ResearchCore_Naboo</li>
+									<li MayRequire="Neronix17.OuterRim.Naboo">OuterRim_ResearchCore_Gungan</li>
+									<li MayRequire="Neronix17.OuterRim.Umbara">OuterRim_ResearchCore_Umbran</li>
+									<li MayRequire="Neronix17.OuterRim.Geonosis">OuterRim_ResearchCore_Geonosian</li>
+									<li MayRequire="Neronix17.OuterRim.Dathomir">OuterRim_ResearchCore_Nightsister</li>
 								</value>
 							</li>
 						</operations>
@@ -588,83 +606,6 @@
 									<li>OuterRim_CoruscantEndTable</li>
 									<li>OuterRim_TatooineDresser</li>
 									<li>OuterRim_TatooineEndTable</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Mandalore ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Mandalore</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SadjuukResearchCA -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_ResearchCore_Mandalorian</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Galactic Empire ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Galactic Empire</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SadjuukResearchCA -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_ResearchCore_GalacticEmpire</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Old Republic ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Old Republic</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SadjuukResearchCA -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_ResearchCore_SithEmpire</li>
-									<li>OuterRim_ResearchCore_OldRepublic</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Rebel Alliance ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Rebel Alliance</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SadjuukResearchCA -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_ResearchCore_RebelAlliance</li>
 								</value>
 							</li>
 						</operations>

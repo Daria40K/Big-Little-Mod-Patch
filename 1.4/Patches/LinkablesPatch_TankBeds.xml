@@ -43,10 +43,10 @@
 					</match>
 				</li>
 
-                <!-- ========== Akeron Decorations ========== -->
+                <!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Akeron Decorations</li>
+						<li>Akeron - Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
@@ -119,6 +119,28 @@
 								<value>
 									<li>CCot_CottageEndTable</li>
 									<li>CCot_CottageDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Daily furniture 塔林家具 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Daily furniture 塔林家具</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ADH_clock_A_A_FURNITURE</li>
+									<li>ADH_book_A_A_FURNITURE</li>
+									<li>ADH_light_A_A_FURNITURE</li>
+									<li>ADH_light_B_A_FURNITURE</li>
+									<li>ADH_EndTable_A_A_FURNITURE</li>
 								</value>
 							</li>
 						</operations>

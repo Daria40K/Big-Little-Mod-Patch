@@ -11,7 +11,7 @@
 - [Advanced Electric Stove](https://steamcommunity.com/sharedfiles/filedetails/?id=2054487688) (Production links)
 - [[RWY]Advanced Mechanoid Warfare](https://steamcommunity.com/sharedfiles/filedetails/?id=2119930282) (Production links)
 - [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
-- [Akeron Decorations](https://steamcommunity.com/sharedfiles/filedetails/?id=2755025925) (Furniture & Production links)
+- [Akeron - Decorations](https://steamcommunity.com/sharedfiles/filedetails/?id=2755025925) (Furniture & Production links)
 - [Animal Medical Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2016958187) (Furniture links)
 - [Appliances Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2869098359) (Production links)
 - [Archotech Re-Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2351084803) (Research links)

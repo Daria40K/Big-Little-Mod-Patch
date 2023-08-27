@@ -31,10 +31,10 @@
 					</match>
 				</li>
 
-                <!-- ========== Akeron Decorations ========== -->
+                <!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Akeron Decorations</li>
+						<li>Akeron - Decorations</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
@@ -43,6 +43,28 @@
 								<xpath>Defs/ThingDef[defName="Rede"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Daily furniture 塔林家具 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Daily furniture 塔林家具</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Rede -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Rede"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ADH_clock_A_A_FURNITURE</li>
+									<li>ADH_book_A_A_FURNITURE</li>
+									<li>ADH_light_A_A_FURNITURE</li>
+									<li>ADH_light_B_A_FURNITURE</li>
+									<li>ADH_EndTable_A_A_FURNITURE</li>
 								</value>
 							</li>
 						</operations>
