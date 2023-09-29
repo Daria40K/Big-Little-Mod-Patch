@@ -534,7 +534,14 @@
 	<!-- v2.63.1 -->
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
 		<defName>BigLittleModPatch_2_63_1</defName>
-		<assemblyVersion>2.63.</assemblyVersion>
+		<assemblyVersion>2.63.1</assemblyVersion>
 		<content>Mod to loadAfter Curious Curios|Added Ambition of the Cosmic research linkables to Rim-Effect: Core and Outer Rim - Core|Added Mechalit Core v2 (1.4) dresser to RimWorld bed|Added all the Outer Rim research linkables to Rimworld HiTech Research Bench|Added Ushankas Glitterworld Uprising research linkables to Outer Rim - Core and Rim-Effect: Core</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.63.2 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_63_2</defName>
+		<assemblyVersion>2.63.2</assemblyVersion>
+		<content>Forgot to add changelog</content>
 	</HugsLib.UpdateFeatureDef>
 </Defs>
