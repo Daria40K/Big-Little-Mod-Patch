@@ -9,6 +9,7 @@
 	</supportedVersions>
 	<loadAfter>
 		<li>dankpyon.medieval.overhaul</li>
+		<li>drenzyme.curiouscurios</li>
 	</loadAfter>
 	<description>This patch applys multiable patches to allow furniture and workbenchs from other mods to allow linkables from other mods.</description>
 </ModMetaData>

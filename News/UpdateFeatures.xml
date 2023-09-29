@@ -530,4 +530,11 @@
 		<assemblyVersion>2.63.0</assemblyVersion>
 		<content>Added support for Daily furniture 塔林家具|Fixed support for Akeron - Decorations and Outer Rim - Furniture and Decor</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.63.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_63_1</defName>
+		<assemblyVersion>2.63.</assemblyVersion>
+		<content>Mod to loadAfter Curious Curios|Added Ambition of the Cosmic research linkables to Rim-Effect: Core and Outer Rim - Core|Added Mechalit Core v2 (1.4) dresser to RimWorld bed|Added all the Outer Rim research linkables to Rimworld HiTech Research Bench|Added Ushankas Glitterworld Uprising research linkables to Outer Rim - Core and Rim-Effect: Core</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

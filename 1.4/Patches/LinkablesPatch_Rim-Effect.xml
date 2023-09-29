@@ -112,6 +112,28 @@
 					</match>
 				</li>
 
+				<!-- ========== Ambition of the Cosmic ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ambition of the Cosmic</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_SpacerTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unlocker_GenI</li>
+									<li>SNS_Linkable_Unlocker_GenII</li>
+									<li>SNS_Linkable_Unlocker_GenIII</li>
+									<li>SNS_Linkable_Unlocker_POC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Archotech Re-Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1018,6 +1040,33 @@
 									<li>SadjuukGrinding</li>
 									<li>SadjuukLathe</li>
 									<li>SadjuukMilling</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Ushankas Glitterworld Uprising ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ushankas Glitterworld Uprising</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_PrefabMedicalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>USH_DesensitizingModule</li>
+								</value>
+							</li>
+
+							<!-- RE_SpacerTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>USH_LocalComputor</li>
 								</value>
 							</li>
 						</operations>
