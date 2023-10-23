@@ -36,6 +36,9 @@
                     </match>
                 </li>
 
+                <!-- ========== Even More Linkables ========== -->
+                <!-- Already has support for this mod -->
+
                 <!-- ========== Tabletop Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

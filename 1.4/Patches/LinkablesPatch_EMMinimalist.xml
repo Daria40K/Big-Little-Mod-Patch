@@ -72,6 +72,96 @@
                     </nomatch>
                 </li>
 
+                <!-- ========== Even More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+                            <!-- MP_SmallTailoringTable -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName = "MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallSmithy -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName = "MP_SmallSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallStoneworkerTable -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName = "MP_SmallStoneworkerTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallMachiningTable -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName = "MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
+                                </value>
+                            </li>
+
+                            <!-- MP_SmallDrugLab -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName = "MP_SmallDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== GloomyFurniture ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>

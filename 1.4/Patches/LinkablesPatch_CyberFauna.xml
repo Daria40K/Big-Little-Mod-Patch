@@ -5,14 +5,40 @@
     AnimalLab
 -->
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Cyber Fauna 1.3</li>
-		</mods>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Cyber Fauna 1.3</li>
+        </mods>
 
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <!-- ========== Even More Linkables ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Even More Linkables</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- AnimalLab -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName = "AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>HobbesLink_CNCMachine</li>
+                                    <li>HobbesLink_3DPrinter</li>
+                                    <li>HobbesLink_RobotAssistant</li>
+                                    <li>HobbesLink_Lathe</li>
+                                    <li>HobbesLink_Vice</li>
+                                    <li>HobbesLink_Autoclave</li>
+                                    <li>HobbesLink_Centrifuge</li>
+                                    <li>HobbesLink_LaserEngraver</li>
+                                    <li>HobbesLink_Incinerator</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
                 <!-- ========== Medieval Overhaul ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
@@ -36,28 +62,28 @@
                 </li>
 
                 <!-- ========== Tabletop Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tabletop Decorations</li>
-					</mods>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Tabletop Decorations</li>
+                    </mods>
 
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- AnimalLab -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_vise</li>
-									<li>ucp_toolbox</li>
-									<li>ucp_screwdrivers</li>
-									<li>ucp_hammer</li>
-									<li>ucp_aerosol</li>
-									<li>ucp_wrench</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- AnimalLab -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+                                    <li>ucp_vise</li>
+                                    <li>ucp_toolbox</li>
+                                    <li>ucp_screwdrivers</li>
+                                    <li>ucp_hammer</li>
+                                    <li>ucp_aerosol</li>
+                                    <li>ucp_wrench</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== UN-Furniture ========== -->
                 <li Class="PatchOperationFindMod">
@@ -98,24 +124,24 @@
                         </operations>
                     </match>
                 </li>
-                
+
                 <!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- AnimalLab -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WallStuff</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- AnimalLab -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>WallToolBoard</li>
                                 </value>
                             </li>
-						</operations>
-					</match>
-				</li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">

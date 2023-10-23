@@ -62,6 +62,32 @@
 					</match>
 				</li>
 
+				<!-- ========== Even More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AMW_Salvager -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>

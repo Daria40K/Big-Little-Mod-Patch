@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!--
-		========== [RWY]Advanced Mechanoid Warfare ==========
+	<!-- ========== [RWY]Advanced Mechanoid Warfare ==========
 
 		AMW_Salvager | #toolcabinet
 	-->
@@ -20,11 +19,37 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-                            <!-- AMW_Salvager -->
+							<!-- AMW_Salvager -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Even More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AMW_Salvager -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 						</operations>
@@ -39,7 +64,7 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-                            <!-- AMW_Salvager -->
+							<!-- AMW_Salvager -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
@@ -51,25 +76,25 @@
 				</li>
 
 				<!-- ========== More Linkables ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>More Linkables</li>
-                    </mods>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
 
-                    <match Class="PatchOperationSequence">
-                        <operations>
-                            <!-- AMW_Salvager -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>ToolCabinetA</li>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AMW_Salvager -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
 				<!-- ========== [O21] Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
@@ -80,17 +105,17 @@
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- AMW_Salvager -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Outland_Grindstone</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
 
-                <!-- ========== UN-Furniture ========== -->
+				<!-- ========== UN-Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>UN-Furniture (Continued)</li>
@@ -98,7 +123,7 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-                            <!-- AMW_Salvager -->
+							<!-- AMW_Salvager -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
@@ -112,21 +137,21 @@
 					</match>
 				</li>
 
-                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Furniture Expanded - Production</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- AMW_Salvager -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[defName = "AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>VFE_MachiningCabinet</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -139,13 +164,13 @@
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- AMW_Salvager -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Vt_server</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
 									<li>vtcompter</li>
-                                </value>
-                            </li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -158,14 +183,14 @@
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- AMW_Salvager -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Link_MachiningGoods</li>
-                                    <li>Link_MachiningBoost</li>
-                                    <li>Link_UniversalCabinet</li>
-                                </value>
-                            </li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AMW_Salvager"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>

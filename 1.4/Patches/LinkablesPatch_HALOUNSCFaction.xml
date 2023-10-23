@@ -31,6 +31,9 @@
 					</match>
 				</li>
 
+				<!-- ========== Even More Linkables ========== -->
+                <!-- Already has support for this mod -->
+
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

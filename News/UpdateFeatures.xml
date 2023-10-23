@@ -544,4 +544,11 @@
 		<assemblyVersion>2.63.2</assemblyVersion>
 		<content>Forgot to add changelog</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.64.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_64_0</defName>
+		<assemblyVersion>2.64.0</assemblyVersion>
+		<content>Added support for Even More Linkables</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

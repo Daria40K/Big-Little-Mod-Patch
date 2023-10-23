@@ -63,6 +63,32 @@
 					</match>
 				</li>
 
+                <!-- ========== Even More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ARR_AetherPrepTable | ARR_AetherPrepTableLinked | ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_AetherMachineTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked" or defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
                 <!-- ========== GloomyFurniture ========== -->
                 <li Class="PatchOperationFindMod">
                     <mods>
