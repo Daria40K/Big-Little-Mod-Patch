@@ -551,4 +551,11 @@
 		<assemblyVersion>2.64.0</assemblyVersion>
 		<content>Added support for Even More Linkables</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.65.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_65_0</defName>
+		<assemblyVersion>2.65.0</assemblyVersion>
+		<content>Added support for Vanilla Helixien Gas Expanded, Helixien Gas Production, VGP Garden Fabrics and VGP Garden Fabrics Simplified</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
