@@ -75,6 +75,25 @@
 					</match>
 				</li>
 
+				<!-- ========== Eccentric Tech - Spacer Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Eccentric Tech - Spacer Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SNOREGGSingle | KRUDNEPPSingle | SNOREGGDouble | SLABNEPPDouble | PILFURBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SNOREGGSingle" or defName="KRUDNEPPSingle" or defName="SNOREGGDouble" or defName="PILFURBed" or defName="LTS_HangingBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EccentricFurniture_EndTable</li>
+									<li>EccentricFurniture_EndTableIlluminated</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Erin's Cottage Collection ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

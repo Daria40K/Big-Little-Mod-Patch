@@ -331,6 +331,25 @@
 					</match>
 				</li>
 
+				<!-- ========== Eccentric Tech - Spacer Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Eccentric Tech - Spacer Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedWicker |  DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EccentricFurniture_EndTable</li>
+									<li>EccentricFurniture_EndTableIlluminated</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Erin's Cottage Collection ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

@@ -14,20 +14,12 @@
             <operations>
                 <!-- ElectricBrewery -->
                 <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="ElectricBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ElectricBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                        <value>
-
-                        </value>
-                    </match>
+                    <xpath>Defs/ThingDef[defName="ElectricBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="ElectricBrewery"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
-                                <linkableFacilities>
-
-                                </linkableFacilities>
+                                <linkableFacilities/>
                             </li>
                         </value>
                     </nomatch>
@@ -46,19 +38,11 @@
                 <!-- HiTechBrewery -->
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="HiTechBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="HiTechBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                        <value>
-
-                        </value>
-                    </match>
                     <nomatch Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="HiTechBrewery"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
-                                <linkableFacilities>
-
-                                </linkableFacilities>
+                                <linkableFacilities/>
                             </li>
                         </value>
                     </nomatch>

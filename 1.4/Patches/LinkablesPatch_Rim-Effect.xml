@@ -282,6 +282,25 @@
 					</match>
 				</li>
 
+				<!-- ========== Eccentric Tech - Spacer Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Eccentric Tech - Spacer Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EccentricFurniture_EndTable</li>
+									<li>EccentricFurniture_EndTableIlluminated</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Erin's Cottage Collection ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -289,9 +308,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RE_SpacerTechResearchBench -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageEndTable</li>
 									<li>CCot_CottageDresser</li>

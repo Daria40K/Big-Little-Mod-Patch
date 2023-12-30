@@ -40,7 +40,7 @@
 						<operations>
                             <!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Def/ThingDef[@Name = "LTS_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name = "LTS_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
@@ -58,13 +58,32 @@
 						<operations>
 							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Def/ThingDef[@Name = "LTS_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name = "LTS_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>ADH_clock_A_A_FURNITURE</li>
 									<li>ADH_book_A_A_FURNITURE</li>
 									<li>ADH_light_A_A_FURNITURE</li>
 									<li>ADH_light_B_A_FURNITURE</li>
 									<li>ADH_EndTable_A_A_FURNITURE</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+				<!-- ========== Eccentric Tech - Spacer Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Eccentric Tech - Spacer Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
+									<li>EccentricFurniture_EndTable</li>
+									<li>EccentricFurniture_EndTableIlluminated</li>
 								</value>
 							</li>
 						</operations>
@@ -80,7 +99,7 @@
 						<operations>
 							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Def/ThingDef[@Name = "LTS_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name = "LTS_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
 									<li>CCot_CottageEndTable</li>
 									<li>CCot_CottageDresser</li>

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Patch>
-	<!-- ========== Mechalit Core v2 (1.4) ==========
+<!--
+	========== Eccentric Tech - Spacer Furniture ==========
 
-		EliteBed | #bed
-		EliteDoubleBed | #bed
-		FirstClassBed | #bed
-	-->
+	EccentricFurniture_BedSingle | #bed
+    EccentricFurniture_BedDouble | #bed
+
+    EccentricFurniture_EndTable
+    EccentricFurniture_EndTableIlluminated
+-->
+<Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Mechalit Core v2 (1.4)</li>
+			<li>Eccentric Tech - Spacer Furniture</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -21,9 +24,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -39,10 +42,10 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+                            <!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
 							</li>
@@ -57,34 +60,15 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
 									<li>ADH_clock_A_A_FURNITURE</li>
 									<li>ADH_book_A_A_FURNITURE</li>
 									<li>ADH_light_A_A_FURNITURE</li>
 									<li>ADH_light_B_A_FURNITURE</li>
 									<li>ADH_EndTable_A_A_FURNITURE</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Eccentric Tech - Spacer Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Eccentric Tech - Spacer Furniture</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>EccentricFurniture_EndTable</li>
-									<li>EccentricFurniture_EndTableIlluminated</li>
 								</value>
 							</li>
 						</operations>
@@ -98,10 +82,10 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                                <value>
 									<li>CCot_CottageEndTable</li>
 									<li>CCot_CottageDresser</li>
 								</value>
@@ -118,9 +102,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasD</li>
 									<li>LTS_IdanasN</li>
@@ -139,9 +123,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>WardrobeA</li>
@@ -157,12 +141,22 @@
 				</li>
 
 				<!-- ========== Mechalit Core v2 (1.4) ========== -->
-				<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-						<li>EliteDresserMeh</li>
-					</value>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (1.4)</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
 				</li>
 
 				<!-- ========== Medieval Overhaul ========== -->
@@ -173,12 +167,10 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>DankPyon_RusticEndTable</li>
-									<li>DankPyon_RoyalEndTable</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 									<li>DankPyon_RusticChest</li>
@@ -186,14 +178,6 @@
 									<li>DankPyon_RoyalChest</li>
 									<li>DankPyon_RusticCloset</li>
 									<li>DankPyon_RoyalCloset</li>
-								</value>
-							</li>
-
-							<!-- Gasconverter | MechaLab -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Gasconverter" or defName="MechaLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -208,9 +192,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2RoyalEndTableLight</li>
 									<li>Anon2EndTableLight</li>
@@ -231,9 +215,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -255,9 +239,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_Dresser</li>
 									<li>Outland_EndTable</li>
@@ -277,9 +261,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_EndTable</li>
 									<li>Outland_EndTableWithLamp</li>
@@ -303,9 +287,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -327,9 +311,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -347,9 +331,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IlluminateEndTable</li>
 								</value>
@@ -366,9 +350,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
@@ -386,9 +370,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -417,9 +401,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -427,17 +411,6 @@
 									<li>SadjuukFurnitureBA</li>
 									<li>SadjuukFurnitureBB</li>
 									<li>SadjuukFurnitureBC</li>
-								</value>
-							</li>
-
-							<!-- Gasconverter | MechaLab -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Gasconverter" or defName="MechaLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukShaper</li>
-									<li>SadjuukGrinding</li>
-									<li>SadjuukLathe</li>
-									<li>SadjuukMilling</li>
 								</value>
 							</li>
 						</operations>
@@ -452,9 +425,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_RoyalDresser</li>
 									<li>Table_RoyalEndTable</li>
@@ -474,9 +447,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -494,9 +467,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -514,9 +487,9 @@
 
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<!-- EccentricFurniture_BedSingle | EccentricFurniture_BedDouble -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName = "EliteBed" or defName = "EliteDoubleBed" or defName = "FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EccentricFurniture_BedSingle" or defName="EccentricFurniture_BedDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>vt_EndTable</li>

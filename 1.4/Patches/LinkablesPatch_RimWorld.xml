@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
 		<operations>
-			<!-- ========== RimWorld ========== -->
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
-				<match Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-
-					</value>
-				</match>
 				<nomatch Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="ElectricStove"]/comps</xpath>
 					<value>
 						<li Class="CompProperties_AffectedByFacilities">
-							<linkableFacilities>
-
-							</linkableFacilities>
+							<linkableFacilities />
 						</li>
 					</value>
 				</nomatch>
@@ -26,39 +16,91 @@
 
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
-				<match Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
-
-					</value>
-				</match>
 				<nomatch Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="FueledStove"]/comps</xpath>
 					<value>
 						<li Class="CompProperties_AffectedByFacilities">
-							<linkableFacilities>
-
-							</linkableFacilities>
+							<linkableFacilities />
 						</li>
 					</value>
 				</nomatch>
 			</li>
 
 			<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
-				<match Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>
+				<xpath>Defs/ThingDef[defName="Brewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
 
-					</value>
-				</match>
-				<nomatch Class="PatchOperationAdd">
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Brewery"]/comps</xpath>
+
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Brewery"]/comps</xpath>
+						<value>
+							<li Class="CompProperties_AffectedByFacilities">
+								<linkableFacilities />
+							</li>
+						</value>
+					</match>
+
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Brewery"]</xpath>
+						<value>
+							<comps>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</comps>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+
+				<nomatch Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps</xpath>
+
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps</xpath>
+						<value>
+							<li Class="CompProperties_AffectedByFacilities">
+								<linkableFacilities />
+							</li>
+						</value>
+					</match>
+
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
+						<value>
+							<comps>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</comps>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BiofuelRefinery"]/comps</xpath>
 					<value>
 						<li Class="CompProperties_AffectedByFacilities">
-							<linkableFacilities>
+							<linkableFacilities />
+						</li>
+					</value>
+				</nomatch>
+			</li>
 
-							</linkableFacilities>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="ElectricSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ElectricSmelter"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_AffectedByFacilities">
+							<linkableFacilities />
 						</li>
 					</value>
 				</nomatch>
@@ -69,13 +111,14 @@
 				<mods>
 					<li>Akeron - Decorations</li>
 				</mods>
+
 				<match Class="PatchOperationSequence">
 					<operations>
-						<!-- BiofuelRefinery -->
+						<!-- BiofuelRefinery | Brewery -->
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[@Name="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<xpath>Defs/ThingDef[defName="BiofuelRefinery" or defName="Brewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 							<value>
-								<li>AKN_ComfortingPlush</li>
+								<li>AKN_MotivatingPlush</li>
 							</value>
 						</li>
 					</operations>
@@ -130,9 +173,9 @@
 				</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-						<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
+						<!-- BasicBedBase -->
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName = "CCol_QuiltedBed" or defName = "CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 							<value>
 								<li>ADH_clock_A_A_FURNITURE</li>
 								<li>ADH_book_A_A_FURNITURE</li>
@@ -158,6 +201,25 @@
 							<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 							<value>
 								<li>EccentricAuroraCore</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+
+			<!-- ========== Eccentric Tech - Spacer Furniture ========== -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Eccentric Tech - Spacer Furniture</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<!-- BasicBedBase -->
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<value>
+								<li>EccentricFurniture_EndTable</li>
+								<li>EccentricFurniture_EndTableIlluminated</li>
 							</value>
 						</li>
 					</operations>
@@ -499,13 +561,13 @@
 						</li>
 
 						<!-- SimpleResearchBench | HiTechResearchBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SimpleResearchBench" or defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Outland_Bookshelf</li>
-									<li>Outland_StoneBookshelf</li>
-								</value>
-							</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="SimpleResearchBench" or defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<value>
+								<li>Outland_Bookshelf</li>
+								<li>Outland_StoneBookshelf</li>
+							</value>
+						</li>
 					</operations>
 				</match>
 			</li>
@@ -536,6 +598,14 @@
 							<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 							<value>
 								<li>RE_AllianceTerminal</li>
+							</value>
+						</li>
+
+						<!-- Crib -->
+						<li Class="PatchOperationAdd" MayRequire="ludeon.rimworld.biotech">
+							<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<value>
+								<li>RE_PrefabWardrobe</li>
 							</value>
 						</li>
 					</operations>
@@ -627,6 +697,14 @@
 						<!-- BasicBedBase -->
 						<li Class="PatchOperationAdd">
 							<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<value>
+								<li>IlluminateEndTable</li>
+							</value>
+						</li>
+
+						<!-- Crib -->
+						<li Class="PatchOperationAdd" MayRequire="ludeon.rimworld.biotech">
+							<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 							<value>
 								<li>IlluminateEndTable</li>
 							</value>
@@ -827,6 +905,34 @@
 								<li>Misc_FileCabinet</li>
 							</value>
 						</li>
+
+						<!-- Crib -->
+						<li Class="PatchOperationAdd" MayRequire="ludeon.rimworld.biotech">
+							<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<value>
+								<li>Table_Wardrobe</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+
+			<!-- ========== Vanilla Furniture Expanded Pack ========== -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Furniture Expanded Pack</li>
+				</mods>
+
+				<match Class="PatchOperationSequence">
+					<operations>
+						<!-- BasicBedBase -->
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<value>
+								<li>FFE_Mirror</li>
+								<li>FFE_Divider</li>
+							</value>
+						</li>
 					</operations>
 				</match>
 			</li>
@@ -869,445 +975,31 @@
 					</operations>
 				</match>
 			</li>
+
+			<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vault-Tec - Handy things for your vault!</li>
+				</mods>
+
+				<match Class="PatchOperationSequence">
+					<operations>
+						<!-- BasicBedBase -->
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<value>
+								<li>vt_curio</li>
+								<li>vt_EndTable</li>
+								<li>vt_luxEndTable</li>
+								<li>vt_commode</li>
+								<li>vt_luxcommode</li>
+								<li>VaultWardrobeB</li>
+								<li>VaultWardrobeA</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
 		</operations>
-	</Operation>
-
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Royalty [Official DLC]</li>
-		</mods>
-
-		<match Class="PatchOperationSequence">
-			<operations>
-				<!-- ========== Akeron - Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron - Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_ComfortingPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== [LTS]Furnishing ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[LTS]Furnishing</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LTS_IdanasD</li>
-									<li>LTS_IdanasN</li>
-									<li>LTS_KoppangD</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== GloomyFurniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GloomyFurniture</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RGK_Dresser</li>
-									<li>WardrobeA</li>
-									<li>WardrobeB</li>
-									<li>GL_Teddy</li>
-									<li>RGK_EndTable</li>
-									<li>RGK_EndTableWithLamp</li>
-									<li>RGK_EndTableWithLampE</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Mechalit Core v2 (1.4) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Mechalit Core v2 (1.4)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>EliteDresserMeh</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Medieval Overhaul ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medieval Overhaul</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_RusticDresser</li>
-									<li>DankPyon_RoyalDresser</li>
-									<li>DankPyon_RusticChest</li>
-									<li>DankPyon_MetalStrongbox</li>
-									<li>DankPyon_RoyalChest</li>
-									<li>DankPyon_RusticCloset</li>
-									<li>DankPyon_RoyalCloset</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== More Furniture (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Furniture (Continued)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Anon2RoyalEndTableLight</li>
-									<li>Anon2EndTableLight</li>
-									<li>Anon2RoyalEndTable</li>
-									<li>Anon2EndTable</li>
-									<li>Anon2Dresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outer Rim - Furniture and Decor ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Furniture and Decor</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_CorellianDresser</li>
-									<li>OuterRim_CorellianEndTable</li>
-									<li>OuterRim_CoruscantDresser</li>
-									<li>OuterRim_CoruscantEndTable</li>
-									<li>OuterRim_TatooineDresser</li>
-									<li>OuterRim_TatooineEndTable</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== [O21] Outland - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[O21] Outland - Core</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Outland_Dresser</li>
-									<li>Outland_EndTable</li>
-									<li>Outland_EndTableWithLamp</li>
-									<li>Outland_Wardrobe</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Outland - Furniture & Decor ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outland - Furniture &amp; Decor</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Outland_EndTable</li>
-									<li>Outland_EndTableWithLamp</li>
-									<li>Outland_Dresser</li>
-									<li>Outland_Wardrobe</li>
-									<li>Outland_StoneEndTable</li>
-									<li>Outland_StoneEndTableWithLamp</li>
-									<li>Outland_StoneDresser</li>
-									<li>Outland_StoneWardrobe</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Rim-Effect: Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rim-Effect: Core</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RE_PrefabDresser</li>
-									<li>RE_PrefabEndTable</li>
-									<li>RE_PrefabEndTableWithLamp</li>
-									<li>RE_PrefabBedsideTable</li>
-									<li>RE_PrefabBedsideTableLamp</li>
-									<li>RE_PrefabWardrobe</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== RimLife Expansion Furnitures ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimLife Expansion Furniture</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RLE_KazariKatana</li>
-									<li>RLE_Kouro</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== RimVali: Far From Avalon ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimVali: Far From Avalon</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>IlluminateEndTable</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== StuffedDoll ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>StuffedDoll</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>StuffedDollSmall</li>
-									<li>StuffedDollLarge</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Colony Vanilla (Continued)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukBedroomUpgradeAA</li>
-									<li>SadjuukBedroomUpgradeAB</li>
-									<li>SadjuukBedroomUpgradeAF</li>
-									<li>SadjuukBedroomUpgradeAC</li>
-									<li>SadjuukBedroomUpgradeBA</li>
-									<li>SadjuukBedroomUpgradeBB</li>
-									<li>SadjuukBedroomUpgradeBF</li>
-									<li>SadjuukBedroomUpgradeBC</li>
-									<li>SadjuukBedroomUpgradeCA</li>
-									<li>SadjuukBedroomUpgradeCB</li>
-									<li>SadjuukBedroomUpgradeCF</li>
-									<li>SadjuukBedroomUpgradeCC</li>
-									<li>SadjuukBedroomUpgradeCD</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== UN-Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Furniture (Continued)</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukFurnitureAA</li>
-									<li>SadjuukFurnitureAB</li>
-									<li>SadjuukFurnitureAC</li>
-									<li>SadjuukFurnitureBA</li>
-									<li>SadjuukFurnitureBB</li>
-									<li>SadjuukFurnitureBC</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Vanilla Furniture Expanded ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Table_RoyalDresser</li>
-									<li>Table_RoyalEndTable</li>
-									<li>Table_LightEndTable</li>
-									<li>Table_Wardrobe</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Vanilla Furniture Expanded Pack ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded Pack</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>FFE_Mirror</li>
-									<li>FFE_Divider</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Spacer Module</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Table_IlluminatedEndTable</li>
-									<li>Table_IlluminatedDresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-
-				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vault-Tec - Handy things for your vault!</li>
-					</mods>
-
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Crib -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>vt_curio</li>
-									<li>vt_EndTable</li>
-									<li>vt_luxEndTable</li>
-									<li>vt_commode</li>
-									<li>vt_luxcommode</li>
-									<li>VaultWardrobeB</li>
-									<li>VaultWardrobeA</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-			</operations>
-		</match>
 	</Operation>
 </Patch>

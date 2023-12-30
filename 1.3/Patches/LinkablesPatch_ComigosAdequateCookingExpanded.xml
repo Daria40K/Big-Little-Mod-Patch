@@ -21,9 +21,7 @@
                         <xpath>Defs/ThingDef[defName="COMIGO_ElectricMill"]/comps</xpath>
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
-                                <linkableFacilities>
-
-                                </linkableFacilities>
+                                <linkableFacilities/>
                             </li>
                         </value>
                     </nomatch>
@@ -47,9 +45,7 @@
                         <value>
                             <comps>
                                 <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities>
-
-                                    </linkableFacilities>
+                                    <linkableFacilities/>
                                 </li>
                             </comps>
                         </value>
@@ -79,7 +75,7 @@
                                 <xpath>Defs/ThingDef[defName="COMIGO_ElectricMill" or defName="COMIGO_Quernstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li><!-- GloomyFurniture -->
-						            <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
+                                    <li>GL_TablewareShelf</li><!-- GloomyFurniture -->
                                 </value>
                             </li>
                         </operations>
