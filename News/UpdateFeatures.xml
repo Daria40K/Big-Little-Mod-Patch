@@ -565,4 +565,11 @@
 		<assemblyVersion>2.66.0</assemblyVersion>
 		<content>Added support for Eccentric Tech - Spacer Furniture|Fixed support for vanilla beds</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.67.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_67_0</defName>
+		<assemblyVersion>2.67.0</assemblyVersion>
+		<content>Added support for Vanilla Recycling Expanded</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

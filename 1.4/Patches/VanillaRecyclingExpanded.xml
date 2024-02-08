@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--
+        ========== Vanilla Recycling Expanded ==========
+
+        VRecyclingE_RecyclingWorkbench
+        VRecyclingE_ElectricRecyclingWorkbench
+    -->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Recycling Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+                <!-- ========== Even More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VRecyclingE_RecyclingWorkbench | VRecyclingE_ElectricRecyclingWorkbench -->
+							<li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VRecyclingE_RecyclingWorkbench" or defName="VRecyclingE_ElectricRecyclingWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== Medieval Overhaul ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- VRecyclingE_RecyclingWorkbench | VRecyclingE_ElectricRecyclingWorkbench -->
+							<li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VRecyclingE_RecyclingWorkbench" or defName="VRecyclingE_ElectricRecyclingWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== [O21] Outland - Core ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>[O21] Outland - Core</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- VRecyclingE_RecyclingWorkbench | VRecyclingE_ElectricRecyclingWorkbench -->
+							<li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VRecyclingE_RecyclingWorkbench" or defName="VRecyclingE_ElectricRecyclingWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>Outland_Grindstone</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<operations>
+                            <!-- VRecyclingE_RecyclingWorkbench | VRecyclingE_ElectricRecyclingWorkbench -->
+							<li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VRecyclingE_RecyclingWorkbench" or defName="VRecyclingE_ElectricRecyclingWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_roboarm</li>
+									<li>ucp_toolbox</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== UN-Furniture ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>UN-Furniture (Continued)</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- VRecyclingE_RecyclingWorkbench | VRecyclingE_ElectricRecyclingWorkbench -->
+							<li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VRecyclingE_RecyclingWorkbench" or defName="VRecyclingE_ElectricRecyclingWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>SadjuukShaper</li>
+                                    <li>SadjuukGrinding</li>
+                                    <li>SadjuukLathe</li>
+                                    <li>SadjuukMilling</li>
+                                    <li>SadjuukWeldingRobot</li>
+                                    <li>SadjuukAssemblyRobot</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+                <!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VRecyclingE_RecyclingWorkbench | VRecyclingE_ElectricRecyclingWorkbench -->
+							<li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VRecyclingE_RecyclingWorkbench" or defName="VRecyclingE_ElectricRecyclingWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>WallToolBoard</li>
+                                </value>
+                            </li>
+						</operations>
+					</match>
+				</li>
+
+                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>WorkBench Support - More Linkable Facilities -</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- VRecyclingE_RecyclingWorkbench | VRecyclingE_ElectricRecyclingWorkbench -->
+							<li Class="PatchOperationAdd">
+                                <xpath>Defs/ThingDef[defName="VRecyclingE_RecyclingWorkbench" or defName="VRecyclingE_ElectricRecyclingWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+                                    <li>Link_MachiningGoods</li>
+                                    <li>Link_MachiningBoost</li>
+                                    <li>Link_UniversalCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
