@@ -24,16 +24,23 @@
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName = "AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-                                    <li>HobbesLink_CNCMachine</li>
-                                    <li>HobbesLink_3DPrinter</li>
-                                    <li>HobbesLink_RobotAssistant</li>
-                                    <li>HobbesLink_Lathe</li>
-                                    <li>HobbesLink_Vice</li>
-                                    <li>HobbesLink_Autoclave</li>
-                                    <li>HobbesLink_Centrifuge</li>
-                                    <li>HobbesLink_LaserEngraver</li>
-                                    <li>HobbesLink_Incinerator</li>
-                                </value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+									<li>HobbesLink_Still</li>
+									<li>HobbesLink_Rotovape</li>
+									<li>HobbesLink_TabletopCentrifuge</li>
+									<li>HobbesLink_TabletopStove</li>
+									<li>HobbesLink_TabletopLabTubeRack</li>
+								</value>
                             </li>
                         </operations>
                     </match>

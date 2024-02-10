@@ -5,20 +5,20 @@
 	NEStove | #cooking
 -->
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>TOT's RimNewEast</li>
-		</mods>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>TOT's RimNewEast</li>
+        </mods>
 
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="NEStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
                     <match Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="NEStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                         <value>
-            
+
                         </value>
                     </match>
                     <nomatch Class="PatchOperationAdd">
@@ -26,7 +26,7 @@
                         <value>
                             <li Class="CompProperties_AffectedByFacilities">
                                 <linkableFacilities>
-            
+
                                 </linkableFacilities>
                             </li>
                         </value>
@@ -46,7 +46,7 @@
                                 <xpath>Defs/ThingDef[defName="NEStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>GL_Cupboard</li>
-						            <li>GL_TablewareShelf</li>
+                                    <li>GL_TablewareShelf</li>
                                 </value>
                             </li>
                         </operations>
@@ -57,6 +57,7 @@
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>Gloomy Extra - Kitchen</li>
+                        <li>Gloomy Extra - Kitchen (Continued)</li>
                     </mods>
 
                     <match Class="PatchOperationSequence">
@@ -66,7 +67,7 @@
                                 <xpath>Defs/ThingDef[defName="NEStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
                                     <li>SM_Sink</li>
-						            <li>SM_KitchenCupboard_A</li>
+                                    <li>SM_KitchenCupboard_A</li>
                                     <li>SM_KitchenCupboard_B</li>
                                     <li>SM_KitchenCupboard_C</li>
                                 </value>
@@ -76,23 +77,23 @@
                 </li>
 
                 <!-- ========== Medieval Overhaul ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medieval Overhaul</li>
-					</mods>
-			
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- NEStove -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- NEStove -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="NEStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-									<li>DankPyon_RusticCookingTools</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                                    <li>DankPyon_RusticCookingTools</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== More Linkables ========== -->
                 <li Class="PatchOperationFindMod">
@@ -114,23 +115,23 @@
                 </li>
 
                 <!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-			
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- NEStove -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Production</li>
+                    </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- NEStove -->
                             <li Class="PatchOperationAdd">
                                 <xpath>Defs/ThingDef[defName="NEStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                                 <value>
-									<li>VFE_KitchenSinkCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
+                                    <li>VFE_KitchenSinkCabinet</li>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
 
                 <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
                 <li Class="PatchOperationFindMod">

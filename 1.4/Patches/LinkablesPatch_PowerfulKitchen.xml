@@ -14,46 +14,47 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-                <!-- ========== GloomyFurniture ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>GloomyFurniture</li>
-                    </mods>
+				<!-- ========== GloomyFurniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture</li>
+					</mods>
 
-                    <match Class="PatchOperationSequence">
-                        <operations>
-                            <!-- RLE_KitchenTable -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>GL_Cupboard</li>
-						            <li>GL_TablewareShelf</li>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                </li>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_KitchenTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Cupboard</li>
+									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 
-                <!-- ========== Gloomy Extra - Kitchen ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Gloomy Extra - Kitchen</li>
-                    </mods>
+				<!-- ========== Gloomy Extra - Kitchen ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen</li>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+					</mods>
 
-                    <match Class="PatchOperationSequence">
-                        <operations>
-                            <!-- RLE_KitchenTable -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>SM_Sink</li>
-						            <li>SM_KitchenCupboard_A</li>
-                                    <li>SM_KitchenCupboard_B</li>
-                                    <li>SM_KitchenCupboard_C</li>
-                                </value>
-                            </li>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_KitchenTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
 
-                            <!-- RLE_ElectButcher -->
+							<!-- RLE_ElectButcher -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="RLE_ElectButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
@@ -64,22 +65,22 @@
 									<li>SM_KitchenCupboard_C</li>
 								</value>
 							</li>
-                        </operations>
-                    </match>
-                </li>
+						</operations>
+					</match>
+				</li>
 
-                <!-- ========== Medieval Overhaul ========== -->
+				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Medieval Overhaul</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- RLE_KitchenTable -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>DankPyon_RusticCookingTools</li>
 								</value>
 							</li>
@@ -87,7 +88,7 @@
 					</match>
 				</li>
 
-                <!-- ========== More Linkables ========== -->
+				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>More Linkables</li>
@@ -96,9 +97,9 @@
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- RLE_KitchenTable -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>KitchenCupboard</li>
 								</value>
 							</li>
@@ -114,18 +115,18 @@
 					</match>
 				</li>
 
-                <!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Furniture Expanded - Production</li>
 					</mods>
-			
+
 					<match Class="PatchOperationSequence">
 						<operations>
 							<!-- RLE_KitchenTable -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>
 							</li>
@@ -133,24 +134,24 @@
 					</match>
 				</li>
 
-                <!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>WorkBench Support - More Linkable Facilities -</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                        <operations>
-                            <!-- RLE_KitchenTable -->
-                            <li Class="PatchOperationAdd">
-                                <xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                                <value>
-                                    <li>Link_KitchenGoods</li>
-                                    <li>Link_KitchenBoost</li>
-                                    <li>Link_UniversalCabinet</li>
-                                </value>
-                            </li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_KitchenTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_KitchenGoods</li>
+									<li>Link_KitchenBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
 
-                            <!-- RLE_ElectButcher -->
+							<!-- RLE_ElectButcher -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName = "RLE_ElectButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
@@ -159,10 +160,10 @@
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
-                        </operations>
-                    </match>
-                </li>
-            </operations>
-        </match>
-    </Operation>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

@@ -37,7 +37,7 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-						    <!-- VFE_TableSmithyLargeGas -->
+							<!-- VFE_TableSmithyLargeGas -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="VFE_TableSmithyLargeGas"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
@@ -45,11 +45,18 @@
 									<li>HobbesLink_3DPrinter</li>
 									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
-									<li>HobbesLink_Autoclave</li>
 									<li>HobbesLink_Centrifuge</li>
 									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
 									<li>HobbesLink_Incinerator</li>
+									<li>HobbesLink_Still</li>
+									<li>HobbesLink_Rotovape</li>
+									<li>HobbesLink_TabletopCentrifuge</li>
+									<li>HobbesLink_TabletopStove</li>
+									<li>HobbesLink_TabletopLabTubeRack</li>
 								</value>
 							</li>
 						</operations>
@@ -80,6 +87,8 @@
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Gloomy Extra - Kitchen</li>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
 					</mods>
 
 					<match Class="PatchOperationSequence">

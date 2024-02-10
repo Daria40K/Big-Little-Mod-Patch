@@ -312,6 +312,7 @@
 			<li Class="PatchOperationFindMod">
 				<mods>
 					<li>Gloomy Extra - Kitchen</li>
+					<li>Gloomy Extra - Kitchen (Continued)</li>
 				</mods>
 
 				<match Class="PatchOperationSequence">
@@ -324,6 +325,29 @@
 								<li>SM_KitchenCupboard_A</li>
 								<li>SM_KitchenCupboard_B</li>
 								<li>SM_KitchenCupboard_C</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+
+			<!-- ========== [MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture ========== -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture</li>
+				</mods>
+
+				<match Class="PatchOperationSequence">
+					<operations>
+						<!-- BasicBedBase -->
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+							<value>
+								<li>MUS_Gothicstyle_BedsideTable</li>
+								<li>MUS_Gothicstyle_Wardrobe</li>
+								<li>MUS_Gothicstyle_Mirror</li>
+								<li>MUS_Gothicstyle_SmallRoundTable</li>
+								<li>MUS_Gothicstyle_Cupboard</li>
 							</value>
 						</li>
 					</operations>

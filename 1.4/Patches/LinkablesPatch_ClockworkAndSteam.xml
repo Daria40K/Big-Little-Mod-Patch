@@ -180,15 +180,21 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="ClockworkBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_3DPrinter</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Lathe</li>
-									<li>HobbesLink_Vice</li>
 									<li>HobbesLink_Autoclave</li>
 									<li>HobbesLink_Centrifuge</li>
-									<li>HobbesLink_LaserEngraver</li>
 									<li>HobbesLink_Incinerator</li>
+									<li>HobbesLink_PersonalComputer</li>
+									<li>HobbesLink_TabletopCentrifuge</li>
+									<li>HobbesLink_TabletopStove</li>
+									<li>HobbesLink_TabletopLabMachine</li>
+									<li>HobbesLink_TabletopOscilloscope</li>
+									<li>HobbesLink_TabletopLabScanner</li>
+									<li>HobbesLink_TabletopLabTubeRack</li>
+									<li>HobbesLink_TabletopLabMicroscope</li>
+									<li>HobbesLink_BotanicalEnclosure</li>
+									<li>HobbesLink_ServerRack</li>
+									<li>HobbesLink_Still</li>
+									<li>HobbesLink_Rotovape</li>
 								</value>
 							</li>
 						</operations>
