@@ -125,6 +125,24 @@
 					</match>
 				</li>
 
+				<!-- ========== Edo Themed Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Edo Themed Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OuterRimBedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OuterRimBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HSFancy_Tatami</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+
 				<!-- ========== Erin's Cottage Collection ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

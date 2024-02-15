@@ -579,4 +579,11 @@
 		<assemblyVersion>2.68.0</assemblyVersion>
 		<content>Added support for [MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture, Vanilla Plants Expanded - Mushrooms and Gloomy Extra - Kitchen (Continued)|Updated support for Even More Linkables|Fixed support for [sd] Goodnight (Continued)</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v2.69.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_2_69_0</defName>
+		<assemblyVersion>2.69.0</assemblyVersion>
+		<content>Added support for Edo Themed Expansion</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
