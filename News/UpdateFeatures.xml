@@ -586,4 +586,11 @@
 		<assemblyVersion>2.69.0</assemblyVersion>
 		<content>Added support for Edo Themed Expansion</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.0.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_0_0</defName>
+		<assemblyVersion>3.0.0</assemblyVersion>
+		<content>Added support for Rimworld v1.5, not all supported mods have been patched for this version yet.</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

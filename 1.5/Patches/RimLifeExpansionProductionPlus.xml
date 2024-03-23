@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimLife Expansion Production Plus</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ComponentMT | RLE_SmelterTable | RLE_ExpandedRockChunkCutter | RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ComponentMT" or @Name="RLE_SmelterTable" or defName="RLE_ExpandedRockChunkCutter" or defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ElectButcher | RLE_ExpandedButcherMeatMaker | RLE_KitchenTable | RLE_ComponentMT | RLE_SmelterTable | RLE_ExpandedRockChunkCutter | RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ElectButcher" or defName="RLE_ExpandedButcherMeatMaker" or @Name="RLE_KitchenTable" or defName="RLE_ComponentMT" or @Name="RLE_SmelterTable" or defName="RLE_ExpandedRockChunkCutter" or defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ComponentMT | RLE_SmelterTable | RLE_ExpandedRockChunkCutter | RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ComponentMT" or @Name="RLE_SmelterTable" or defName="RLE_ExpandedRockChunkCutter" or defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Dark Ages : Medieval Tools ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Dark Ages : Medieval Tools</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ElectButcher | RLE_ExpandedButcherMeatMaker -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ElectButcher" or defName="RLE_ExpandedButcherMeatMaker"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_ButcheringTools</li>
+								</value>
+							</li>
+							<!-- RLE_ExpandedRockChunkCutter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ExpandedRockChunkCutter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_StonecuttingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Even More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ComponentMT | RLE_SmelterTable | RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ComponentMT" or @Name="RLE_SmelterTable" or defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_Incinerator</li>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_LaserEngraver</li>
+								</value>
+							</li>
+							<!-- RLE_ExpandedRockChunkCutter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ExpandedRockChunkCutter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_Incinerator</li>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ElectButcher | RLE_ExpandedButcherMeatMaker -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ElectButcher" or defName="RLE_ExpandedButcherMeatMaker"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_ButcherShelf</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
+							<!-- RLE_KitchenTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GloomyFurniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_KitchenTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Cupboard</li>
+									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ElectButcher | RLE_ExpandedButcherMeatMaker | RLE_KitchenTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ElectButcher" or defName="RLE_ExpandedButcherMeatMaker" or @Name="RLE_KitchenTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>KitchenCupboard</li>
+								</value>
+							</li>
+							<!-- RLE_ComponentMT | RLE_SmelterTable | RLE_ExpandedRockChunkCutter | RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ComponentMT" or @Name="RLE_SmelterTable" or defName="RLE_ExpandedRockChunkCutter" or defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ComponentMT | RLE_SmelterTable | RLE_ExpandedRockChunkCutter | RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ComponentMT" or @Name="RLE_SmelterTable" or defName="RLE_ExpandedRockChunkCutter" or defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukAssemblyRobot</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony Vanilla (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukRefineryUpgradeA</li>
+									<li>SadjuukRefineryUpgradeB</li>
+									<li>SadjuukRefineryUpgradeC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== VGP Garden Gourmet ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>VGP Garden Gourmet</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_KitchenTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ElectButcher | RLE_ExpandedButcherMeatMaker -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ElectButcher" or defName="RLE_ExpandedButcherMeatMaker"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_ButcherGoods</li>
+									<li>Link_ButcherBoost</li>
+								</value>
+							</li>
+							<!-- RLE_KitchenTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_KitchenGoods</li>
+									<li>Link_KitchenBoost</li>
+								</value>
+							</li>
+							<!-- RLE_ComponentMT -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ComponentMT"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_FabricationBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- RLE_SmelterTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RLE_SmelterTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmelterGoods</li>
+									<li>Link_SmelterBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- RLE_ExpandedRockChunkCutter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ExpandedRockChunkCutter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_StoneCutterGoods</li>
+									<li>Link_StoneCutterBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_RefineryBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
