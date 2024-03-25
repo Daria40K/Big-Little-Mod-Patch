@@ -58,32 +58,32 @@
 									<li>HobbesLink_TabletopCentrifuge</li>
 									<li>HobbesLink_TabletopStove</li>
 									<li>HobbesLink_TabletopLabTubeRack</li>
-									<li>HobbesLink_Centrifuge</li>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Centrifuge</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 							<!-- CS_MaterialsBench -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="CS_MaterialsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
-									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 						</operations>
@@ -101,8 +101,6 @@
 								<xpath>Defs/ThingDef[defName="CS_NanoTech_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TableBionics</li>
-									<li>TableBionics</li>
-									<li>TableOrgans</li>
 									<li>TableOrgans</li>
 								</value>
 							</li>

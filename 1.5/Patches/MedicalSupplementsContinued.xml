@@ -89,16 +89,16 @@
 									<li>HobbesLink_TabletopCentrifuge</li>
 									<li>HobbesLink_TabletopStove</li>
 									<li>HobbesLink_TabletopLabTubeRack</li>
-									<li>HobbesLink_Centrifuge</li>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Centrifuge</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 						</operations>

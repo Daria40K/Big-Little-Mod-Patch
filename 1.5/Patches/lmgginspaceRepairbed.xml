@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Erin's Japanese Furniture</li>
+			<li>[lmgginspace] Repair bed</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
@@ -33,9 +33,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -50,9 +50,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
@@ -67,9 +67,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ClutterBasicLocker</li>
 									<li>ClutterCabinetA</li>
@@ -85,9 +85,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
@@ -103,9 +103,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -126,9 +126,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -143,9 +143,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -161,9 +161,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -190,9 +190,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LSK_SHS_Dresser</li>
 									<li>LSK_SHS_Bedside_Table</li>
@@ -210,9 +210,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Erin_FutonA | Erin_FutonB | Erin_DoubleFutonA | Erin_DoubleFutonB -->
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>

@@ -316,47 +316,47 @@
 									<li>HobbesLink_TabletopCentrifuge</li>
 									<li>HobbesLink_TabletopStove</li>
 									<li>HobbesLink_TabletopLabTubeRack</li>
-									<li>HobbesLink_Centrifuge</li>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_Centrifuge</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 							<!-- FabricationBench | TableMachining | TableSculpting | ElectricSmelter | FueledSmithy | ElectricSmithy | HandTailoringBench | ElectricTailoringBench | ElectricCrematorium | BiofuelRefinery -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="FabricationBench" or defName="TableMachining" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
-									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 							<!-- TableStonecutter -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="TableStonecutter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 						</operations>
@@ -426,6 +426,24 @@
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== High Tech Laboratory Facilities (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>High Tech Laboratory Facilities (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LabStation</li>
+									<li>LabTerminal</li>
 								</value>
 							</li>
 						</operations>
@@ -628,10 +646,41 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>RLE_AuxiliaryCoolingUnit</li>
 									<li>RLE_ReactionAccelerator</li>
 									<li>RLE_ImpurityFiltrationUnit</li>
-									<li>RLE_AuxiliaryCoolingUnit</li>
 									<li>RLE_PreReactor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers (No Dubs Bad Hygiene)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+									<li>RP_Server</li>
+									<li>RP_SuperComputer</li>
+									<li>Rimputer_quantumcomputer</li>
+								</value>
+							</li>
+							<!-- SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
 								</value>
 							</li>
 						</operations>
@@ -904,8 +953,8 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_RefineryBoost</li>
 									<li>Link_UniversalCabinet</li>
+									<li>Link_RefineryBoost</li>
 								</value>
 							</li>
 						</operations>
@@ -926,6 +975,26 @@
 									<li>LSK_SHS_Bedside_Table</li>
 									<li>LSK_SHS_Bookshelf</li>
 									<li>LSK_SHS_Bookshelf_empty</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MUS_Gothicstyle_Cupboard</li>
+									<li>MUS_Gothicstyle_Wardrobe</li>
+									<li>MUS_Gothicstyle_Mirror</li>
+									<li>MUS_Gothicstyle_BedsideTable</li>
 								</value>
 							</li>
 						</operations>

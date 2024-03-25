@@ -193,16 +193,16 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
-									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 						</operations>
@@ -329,6 +329,25 @@
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers (No Dubs Bad Hygiene)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
 								</value>
 							</li>
 						</operations>
@@ -492,6 +511,26 @@
 									<li>LSK_SHS_Bedside_Table</li>
 									<li>LSK_SHS_Bookshelf</li>
 									<li>LSK_SHS_Bookshelf_empty</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MUS_Gothicstyle_Cupboard</li>
+									<li>MUS_Gothicstyle_Wardrobe</li>
+									<li>MUS_Gothicstyle_Mirror</li>
+									<li>MUS_Gothicstyle_BedsideTable</li>
 								</value>
 							</li>
 						</operations>

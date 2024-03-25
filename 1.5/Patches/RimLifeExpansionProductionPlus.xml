@@ -94,31 +94,31 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="RLE_ComponentMT" or @Name="RLE_SmelterTable" or defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
-									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 							<!-- RLE_ExpandedRockChunkCutter -->
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="RLE_ExpandedRockChunkCutter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 						</operations>
@@ -310,8 +310,8 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_RefineryBoost</li>
 									<li>Link_UniversalCabinet</li>
+									<li>Link_RefineryBoost</li>
 								</value>
 							</li>
 						</operations>

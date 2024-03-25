@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Cyber Fauna 1.4</li>
+			<li>RimApps (Continued)</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- TableBlue | TableGreen | TableOrange | TablePurple | TableRed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- TableBlue | TableGreen | TableOrange | TablePurple | TableRed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -49,9 +49,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- TableBlue | TableGreen | TableOrange | TablePurple | TableRed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -66,43 +66,20 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- TableBlue | TableGreen | TableOrange | TablePurple | TableRed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Still</li>
-									<li>HobbesLink_Rotovape</li>
-									<li>HobbesLink_TabletopCentrifuge</li>
-									<li>HobbesLink_TabletopStove</li>
-									<li>HobbesLink_TabletopLabTubeRack</li>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
 									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
 									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
-									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
 									<li>HobbesLink_Incinerator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Expanded Prosthetics and Organ Engineering - Forked</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- AnimalLab -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>TableBionics</li>
-									<li>TableOrgans</li>
 								</value>
 							</li>
 						</operations>
@@ -115,9 +92,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- TableBlue | TableGreen | TableOrange | TablePurple | TableRed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -134,13 +111,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- TableBlue | TableGreen | TableOrange | TablePurple | TableRed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
-									<li>RLE_CMTCleaner</li>
 								</value>
 							</li>
 						</operations>
@@ -153,9 +129,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- TableBlue | TableGreen | TableOrange | TablePurple | TableRed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -175,9 +151,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- TableBlue | TableGreen | TableOrange | TablePurple | TableRed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
 								</value>

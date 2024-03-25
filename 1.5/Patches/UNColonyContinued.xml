@@ -95,16 +95,16 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="SadjuukMetalworkingBench" or defName="SadjuukMetalworkingLineB" or defName="SadjuukAssemblyLineB" or defName="SadjuukBessemerConverter" or defName="SadjuukOpenHearthFurnace" or defName="SadjuukElectricArcFurnace" or defName="SadjuukRefineryA" or defName="SadjuukRefineryB" or defName="SadjuukRefineryC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Incinerator</li>
 									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
-									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
 						</operations>
@@ -157,9 +157,9 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="SadjuukRefineryA" or defName="SadjuukRefineryB" or defName="SadjuukRefineryC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>RLE_AuxiliaryCoolingUnit</li>
 									<li>RLE_ReactionAccelerator</li>
 									<li>RLE_ImpurityFiltrationUnit</li>
-									<li>RLE_AuxiliaryCoolingUnit</li>
 									<li>RLE_PreReactor</li>
 								</value>
 							</li>
@@ -214,8 +214,8 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="SadjuukRefineryA" or defName="SadjuukRefineryB" or defName="SadjuukRefineryC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_RefineryBoost</li>
 									<li>Link_UniversalCabinet</li>
+									<li>Link_RefineryBoost</li>
 								</value>
 							</li>
 						</operations>
