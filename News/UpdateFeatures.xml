@@ -600,5 +600,12 @@
 		<assemblyVersion>3.1.0</assemblyVersion>
 		<content>RimWorld v1.5|Added support for High Tech Laboratory Facilities (Continued), [lmgginspace] Repair bed, MIM - WH40k Weapons, RimApps (Continued) and Resource Replicator [1.0-&gt;1.4]</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.2.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_2_0</defName>
+		<assemblyVersion>3.2.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for Comigo's Adequate Cooking Expanded, Daily furniture 塔林家具 and Nuclear Energy</content>
+	</HugsLib.UpdateFeatureDef>
 	
 </Defs>
