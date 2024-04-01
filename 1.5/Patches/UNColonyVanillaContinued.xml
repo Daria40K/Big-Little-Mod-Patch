@@ -140,6 +140,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Alpha Memes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Memes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedroomBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedroomBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AM_AncientLockerBank</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>CTS - Complete Tech Solutions (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukHospitalBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukHospitalBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Clutter Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -588,6 +622,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Sparkling Worlds - Full Mod ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Full Mod</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchCA -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Sparkling Worlds - Modular Core - Reduced features ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Modular Core - Reduced features</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchCA -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -605,6 +673,51 @@
 									<li>SadjuukLathe</li>
 									<li>SadjuukMilling</li>
 									<li>SadjuukAssemblyRobot</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchCA | SadjuukResearchAA | SadjuukResearchBA -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchCA" or defName="SadjuukResearchAA" or defName="SadjuukResearchBA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
+							<!-- SadjuukBedroomBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedroomBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_LightEndTable</li>
+									<li>Table_Wardrobe</li>
+									<li>Table_RoyalEndTable</li>
+									<li>Table_RoyalDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Spacer Module</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedroomBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedroomBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_IlluminatedEndTable</li>
+									<li>Table_IlluminatedDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -651,6 +764,25 @@
 									<li>LSK_SHS_Bedside_Table</li>
 									<li>LSK_SHS_Bookshelf</li>
 									<li>LSK_SHS_Bookshelf_empty</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedroomBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedroomBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_IdanasN</li>
+									<li>LTS_IdanasD</li>
+									<li>LTS_KoppangD</li>
 								</value>
 							</li>
 						</operations>

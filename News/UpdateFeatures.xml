@@ -607,5 +607,11 @@
 		<assemblyVersion>3.2.0</assemblyVersion>
 		<content>RimWorld v1.5|Added support for Comigo's Adequate Cooking Expanded, Daily furniture 塔林家具 and Nuclear Energy</content>
 	</HugsLib.UpdateFeatureDef>
-	
+
+	<!-- v3.3.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_3_0</defName>
+		<assemblyVersion>3.3.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for Alpha Bees, Alpha Genes, Alpha Memes, CTS - Complete Tech Solutions (Continued), Vanilla Furniture Expanded, Vanilla Brewing Expanded - Coffees and Teas, Vanilla Cooking Expanded, Vanilla Cooking Expanded - Sushi, Vanilla Furniture Expanded - Production, Vanilla Furniture Expanded - Spacer Module, Vanilla Genetics Expanded, Vanilla Genetics Expanded - More Lab Stuff, Sparkling Worlds - Full Mod, Sparkling Worlds - Modular Core - Reduced features, Rimsenal - Core, Rimsenal - Federation Faction Pack, Rimsenal - Feral Faction Pack, Rimsenal - Spacer Faction Pack, Obsidia Expansion and [LTS]Furnishing||RimWorld v1.4|Added support for Alpha Bees, Alpha Genes, Alpha Memes, Antiquities, Nuclear Energy</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

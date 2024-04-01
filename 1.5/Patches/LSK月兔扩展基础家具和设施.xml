@@ -60,6 +60,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Alpha Memes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Memes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LSK_RB_BasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LSK_RB_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AM_AncientLockerBank</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Clutter Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -214,6 +231,63 @@
 									<li>SadjuukBedroomUpgradeCF</li>
 									<li>SadjuukBedroomUpgradeCC</li>
 									<li>SadjuukBedroomUpgradeCD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LSK_RB_BasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LSK_RB_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_LightEndTable</li>
+									<li>Table_Wardrobe</li>
+									<li>Table_RoyalEndTable</li>
+									<li>Table_RoyalDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Spacer Module</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LSK_RB_BasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LSK_RB_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_IlluminatedEndTable</li>
+									<li>Table_IlluminatedDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LSK_RB_BasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LSK_RB_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_IdanasN</li>
+									<li>LTS_IdanasD</li>
+									<li>LTS_KoppangD</li>
 								</value>
 							</li>
 						</operations>

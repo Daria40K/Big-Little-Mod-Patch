@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimsenal - Spacer Faction Pack</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GloomyFurniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Cupboard</li>
+									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
+									<li>DankPyon_TableBaking</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>KitchenCupboard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== VGP Garden Gourmet ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>VGP Garden Gourmet</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_KitchenSinkCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_KitchenGoods</li>
+									<li>Link_KitchenBoost</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_Sink</li>
+									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SurvivalStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

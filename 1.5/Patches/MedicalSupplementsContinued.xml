@@ -56,6 +56,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>CTS - Complete Tech Solutions (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MSMedicalMat | MSMedicalMatSpacer | MSMedicalMatUltra | MSMedicalMatEarly -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MSMedicalMat" or defName="MSMedicalMatSpacer" or defName="MSMedicalMatUltra" or defName="MSMedicalMatEarly"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -254,6 +271,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MSStimLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MSStimLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_DrugCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -268,6 +302,23 @@
 									<li>Link_DrugLabGoods</li>
 									<li>Link_DrugLabBoost</li>
 									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MSStimLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MSStimLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_Fridge</li>
 								</value>
 							</li>
 						</operations>

@@ -370,6 +370,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Sparkling Worlds - Full Mod ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Full Mod</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_ResearchBenchNecron -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Sparkling Worlds - Modular Core - Reduced features ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Modular Core - Reduced features</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_ResearchBenchNecron -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -411,6 +445,54 @@
 									<li>SadjuukResearchUpgradeCB</li>
 									<li>SadjuukResearchUpgradeCC</li>
 									<li>SadjuukResearchUpgradeCD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_ResearchBenchNecron -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_FabricationBenchNecron | EMGC_FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_FabricationBenchNecron" or defName="EMGC_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_FabricationCabinet</li>
+								</value>
+							</li>
+							<!-- EMGC_FueledSmithy | EMGC_ElectricSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMGC_FueledSmithy" or defName="EMGC_ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_SmithyCabinet</li>
+								</value>
+							</li>
+							<!-- EMGC_HandTailoringBench | EMGC_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_TailorCabinet</li>
 								</value>
 							</li>
 						</operations>

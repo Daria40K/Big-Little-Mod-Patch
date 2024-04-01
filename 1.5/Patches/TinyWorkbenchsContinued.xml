@@ -482,6 +482,68 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_SimpleResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_SimpleResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_FueledStoveMini" or defName="TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_KitchenSinkCabinet</li>
+								</value>
+							</li>
+							<!-- TWB_DrugLabMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_DrugCabinet</li>
+								</value>
+							</li>
+							<!-- TWB_TableMachiningMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+							<!-- TWB_FueledSmithyMini | TWB_ElectricSmithyMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_SmithyCabinet</li>
+								</value>
+							</li>
+							<!-- TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_TailorCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -574,6 +636,31 @@
 									<li>Link_TailorGoods</li>
 									<li>Link_TailorBoost</li>
 									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_FueledStoveMini" or defName="TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_Sink</li>
+									<li>LTS_Fridge</li>
+								</value>
+							</li>
+							<!-- TWB_DrugLabMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_Fridge</li>
 								</value>
 							</li>
 						</operations>

@@ -150,6 +150,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Genetics Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Genetics Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableSimpleProsthetic | TableBionics | TableBionics | TableOrgans | TableOrgans -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableSimpleProsthetic" or defName="TableBionics" or defName="TableBionics" or defName="TableOrgans" or defName="TableOrgans"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GR_NutrientVat</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
