@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Mechanoid Bench 3</li>
+			<li>Wisteria Corporation (Continued)</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -49,9 +49,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unobtainer_I</li>
 									<li>SNS_Linkable_CosmicDrawer_I</li>
@@ -72,9 +72,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
 								</value>
@@ -89,9 +89,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -106,9 +106,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
@@ -132,9 +132,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>
@@ -149,9 +149,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
@@ -169,9 +169,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -188,9 +188,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -207,9 +207,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -226,11 +226,10 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>ucp_vise</li>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
 									<li>ucp_hammer</li>
@@ -250,9 +249,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -267,9 +266,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -289,11 +288,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>VFE_MachiningCabinet</li>
+									<li>VFE_FabricationCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -306,9 +305,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VVE_GarageCabinet</li>
 								</value>
@@ -323,9 +322,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -341,12 +340,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_MachiningGoods</li>
-									<li>Link_MachiningBoost</li>
+									<li>Link_FabricationBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -360,9 +358,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechanoidBench_Bench -->
+							<!-- S_WC_NANO_FAB -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechanoidBench_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

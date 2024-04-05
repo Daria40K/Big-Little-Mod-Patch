@@ -424,6 +424,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimAccents ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimAccents</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XJ3K7F9L_Wardrobe_I</li>
+									<li>XJ3K7F9L_Wardrobe_II</li>
+									<li>XJ3K7F9L_Endtable_I</li>
+									<li>XJ3K7F9L_Endtable_II</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RimLife Expansion Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

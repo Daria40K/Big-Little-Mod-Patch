@@ -356,6 +356,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimAccents ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimAccents</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LSK_RB_BasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LSK_RB_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XJ3K7F9L_Wardrobe_I</li>
+									<li>XJ3K7F9L_Wardrobe_II</li>
+									<li>XJ3K7F9L_Endtable_I</li>
+									<li>XJ3K7F9L_Endtable_II</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RimLife Expansion Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
