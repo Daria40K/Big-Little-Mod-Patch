@@ -560,6 +560,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MSStimLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MSStimLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -574,6 +591,23 @@
 									<li>Link_DrugLabGoods</li>
 									<li>Link_DrugLabBoost</li>
 									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MSMedicalMat | MSMedicalMatSpacer | MSMedicalMatUltra | MSMedicalMatEarly -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MSMedicalMat" or defName="MSMedicalMatSpacer" or defName="MSMedicalMatUltra" or defName="MSMedicalMatEarly"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
 								</value>
 							</li>
 						</operations>

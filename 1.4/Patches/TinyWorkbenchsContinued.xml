@@ -440,6 +440,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Archotech Garbage Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_FueledStoveMini | TWB_ElectricStoveMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_FueledStoveMini" or defName="TWB_ElectricStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -888,6 +905,23 @@
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_DrugLabMini | TWB_TableMachiningMini | TWB_TableSculptingMini | TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableSculptingMini" or defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
 								</value>
 							</li>
 						</operations>

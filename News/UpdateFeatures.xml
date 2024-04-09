@@ -621,4 +621,11 @@
 		<assemblyVersion>3.4.0</assemblyVersion>
 		<content>RimWorld v1.5|Added support for RimAccents, Electric Art Bench (Continued), Expanded Woodworking (Continued), Ilya Tech - Core (Continued), [JGH] Mechanoid Bench 3, Outer Rim - Core, Outer Rim - Furniture and Decor, Outland - Core and Wisteria Corporation (Continued)||RimWorld v1.4|Added support for RimAccents, Electric Art Bench (Continued), Exotic Arsenal (Continued), Ilya Tech - Core (Continued), [JAIL] Prison Bed, [JGH] Mechanoid Bench 3, Wisteria Corporation (Continued)</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.5.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_5_0</defName>
+		<assemblyVersion>3.5.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for More Furniture (Continued), UN-Furniture (Continued), Anty the war ant race, [sd] Goodnight (Continued), Vanilla Factions Expanded - Pirates||RimWorld v1.4|Added support for Electric Stonecutting Table, [KR] Star Wars Bacta, More Archotech Garbage Reupload, WallStuff, Super Multi-Analyzer, Brain In a Jar and Research Assistants</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

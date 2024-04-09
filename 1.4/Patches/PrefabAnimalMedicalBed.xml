@@ -311,6 +311,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ThatCodyGuy_PrefabMedicalAnimalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ThatCodyGuy_PrefabMedicalAnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [LYN] Nanotech Overpower ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

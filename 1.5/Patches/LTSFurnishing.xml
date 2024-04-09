@@ -224,6 +224,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2Dresser</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTableLight</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -329,6 +350,28 @@
 									<li>SadjuukBedroomUpgradeCF</li>
 									<li>SadjuukBedroomUpgradeCC</li>
 									<li>SadjuukBedroomUpgradeCD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
 								</value>
 							</li>
 						</operations>

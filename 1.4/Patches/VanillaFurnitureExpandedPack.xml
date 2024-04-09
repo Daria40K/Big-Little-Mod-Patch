@@ -235,6 +235,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Archotech Garbage Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -453,6 +470,23 @@
 								<value>
 									<li>Link_KitchenGoods</li>
 									<li>Link_KitchenBoost</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FFE_AnimalMedTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FFE_AnimalMedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
 								</value>
 							</li>
 						</operations>

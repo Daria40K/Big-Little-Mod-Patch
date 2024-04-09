@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anty the war ant race</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyCopyTableMachining | AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining" or defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyTableButcher | AntyCopyTableMachining | AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyTableButcher" or defName="AntyCopyTableMachining" or defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_RestoringPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>CTS - Complete Tech Solutions (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyCopyTableMachining | AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining" or defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Dark Ages : Medieval Tools ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Dark Ages : Medieval Tools</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyTableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyTableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_ButcheringTools</li>
+								</value>
+							</li>
+							<!-- AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_TailoringTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Even More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyCopyTableMachining | AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining" or defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyTableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyTableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_ButcherShelf</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical IV ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IV</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalIV</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical IVs ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IVs</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IV_Blood</li>
+									<li>IV_Nutrition</li>
+									<li>IV_Painkiller</li>
+									<li>IV_Antibiotics</li>
+									<li>IV_Anesthetic</li>
+									<li>IV_Blood_Electric</li>
+									<li>IV_Nutrition_Electric</li>
+									<li>IV_Painkiller_Electric</li>
+									<li>IV_Antibiotics_Electric</li>
+									<li>IV_Anesthetic_Electric</li>
+									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical Supplements (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical Supplements (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MS_DStand</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyTableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyTableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>KitchenCupboard</li>
+								</value>
+							</li>
+							<!-- AntyCopyTableMachining | AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining" or defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SurgicalLamp</li>
+									<li>SurgicalInstruments</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyCopyTableMachining | AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining" or defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_BasicWorkbench</li>
+									<li>Outland_Forge</li>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_AirCondition</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyCopyTableMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+							<!-- AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyCopyTableMachining | AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining" or defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukAssemblyRobot</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony Vanilla (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukHospitalUpgradeBA</li>
+									<li>SadjuukHospitalUpgradeBB</li>
+									<li>SadjuukHospitalUpgradeCA</li>
+									<li>SadjuukHospitalUpgradeCB</li>
+									<li>SadjuukHospitalUpgradeCD</li>
+									<li>SadjuukHospitalUpgradeCE</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukSurgeryAA</li>
+									<li>SadjuukSurgeryAB</li>
+									<li>SadjuukSurgeryAC</li>
+									<li>SadjuukSurgeryAD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyCopyTableMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+							<!-- AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_TailorCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyTableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyTableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_ButcherGoods</li>
+									<li>Link_ButcherBoost</li>
+								</value>
+							</li>
+							<!-- AntyCopyTableMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_TailorGoods</li>
+									<li>Link_TailorBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

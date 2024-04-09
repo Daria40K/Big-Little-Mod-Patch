@@ -165,6 +165,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -316,6 +333,26 @@
 									<li>SadjuukResearchUpgradeCB</li>
 									<li>SadjuukResearchUpgradeCC</li>
 									<li>SadjuukResearchUpgradeCD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukResearchBA</li>
+									<li>SadjuukResearchBB</li>
+									<li>SadjuukResearchBC</li>
+									<li>SadjuukResearchBD</li>
 								</value>
 							</li>
 						</operations>

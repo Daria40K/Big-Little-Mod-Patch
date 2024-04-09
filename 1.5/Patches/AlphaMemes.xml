@@ -264,6 +264,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2Dresser</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTableLight</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -389,6 +410,38 @@
 									<li>SadjuukHospitalUpgradeCB</li>
 									<li>SadjuukHospitalUpgradeCD</li>
 									<li>SadjuukHospitalUpgradeCE</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+							<!-- AM_AncientOperatingTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_AncientOperatingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukSurgeryAA</li>
+									<li>SadjuukSurgeryAB</li>
+									<li>SadjuukSurgeryAC</li>
+									<li>SadjuukSurgeryAD</li>
 								</value>
 							</li>
 						</operations>

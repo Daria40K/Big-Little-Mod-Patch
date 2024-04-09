@@ -217,6 +217,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Brain In a Jar ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Brain In a Jar</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>BrainInAJar</li>
+									<li>DualBrain</li>
+									<li>QuadBrain</li>
+									<li>MasterBrain</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Clutter Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -645,6 +665,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Archotech Garbage Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -928,6 +965,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Research Assistants ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Research Assistants</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchPad</li>
+									<li>ResearchComputer</li>
+									<li>ResearchSubAIComputer</li>
+									<li>ResearchAIComputer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rim-Effect: Asari and Reapers ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1121,6 +1178,23 @@
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Super Multi-Analyzer ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Super Multi-Analyzer</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SuperMultiAnalyzer</li>
 								</value>
 							</li>
 						</operations>
@@ -1453,6 +1527,23 @@
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_BaseProductionBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RVFFA_BaseProductionBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
 								</value>
 							</li>
 						</operations>

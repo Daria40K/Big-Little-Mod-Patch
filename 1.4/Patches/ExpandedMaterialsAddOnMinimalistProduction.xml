@@ -285,6 +285,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Archotech Garbage Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MP_SmallStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -535,6 +552,23 @@
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MP_SmallMachiningTable | MP_SmallStoneworkerTable | MP_SmallSmithy | MP_SmallTailoringTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MP_SmallMachiningTable" or defName="MP_SmallStoneworkerTable" or defName="MP_SmallSmithy" or defName="MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
 								</value>
 							</li>
 						</operations>

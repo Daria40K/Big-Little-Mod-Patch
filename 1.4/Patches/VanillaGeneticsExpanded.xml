@@ -341,6 +341,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GR_TissueGrinder | GR_GeneticsTinkeringTable | GR_GeneticExtractionTable | GR_GeneRecombinator | GR_TissueGrowingVat -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GR_TissueGrinder" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrowingVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

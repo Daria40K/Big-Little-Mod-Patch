@@ -259,6 +259,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Brain In a Jar ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Brain In a Jar</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>BrainInAJar</li>
+									<li>DualBrain</li>
+									<li>QuadBrain</li>
+									<li>MasterBrain</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -911,6 +931,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Archotech Garbage Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
+								</value>
+							</li>
+							<!-- ElectricStove | FueledStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1216,6 +1260,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Research Assistants ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Research Assistants</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchPad</li>
+									<li>ResearchComputer</li>
+									<li>ResearchSubAIComputer</li>
+									<li>ResearchAIComputer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rim-Effect: Asari and Reapers ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1496,6 +1560,23 @@
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Super Multi-Analyzer ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Super Multi-Analyzer</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SuperMultiAnalyzer</li>
 								</value>
 							</li>
 						</operations>
@@ -2095,6 +2176,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DrugLab | FabricationBench | TableMachining | TableSculpting | ElectricSmelter | FueledSmithy | ElectricSmithy | TableStonecutter | HandTailoringBench | ElectricTailoringBench | ElectricCrematorium | BiofuelRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DrugLab" or defName="FabricationBench" or defName="TableMachining" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableStonecutter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -2235,6 +2333,23 @@
 								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VBY_XCom_ShadowChamber</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
 								</value>
 							</li>
 						</operations>

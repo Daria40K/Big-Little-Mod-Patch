@@ -42,6 +42,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Anty the war ant race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Anty the war ant race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_ElectButcher | RLE_ExpandedButcherMeatMaker -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_ElectButcher" or defName="RLE_ExpandedButcherMeatMaker"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AT_Chart</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
