@@ -628,4 +628,13 @@
 		<assemblyVersion>3.5.0</assemblyVersion>
 		<content>RimWorld v1.5|Added support for More Furniture (Continued), UN-Furniture (Continued), Anty the war ant race, [sd] Goodnight (Continued), Vanilla Factions Expanded - Pirates||RimWorld v1.4|Added support for Electric Stonecutting Table, [KR] Star Wars Bacta, More Archotech Garbage Reupload, WallStuff, Super Multi-Analyzer, Brain In a Jar and Research Assistants</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.6.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_6_0</defName>
+		<assemblyVersion>3.6.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for GloomyFurniture (Continued), Medieval Overhaul, Vanilla Furniture Expanded - Medical Module, Alpha Animals, Animal Medical Bed 1.5, Fast regen medical beds 1.5, Glitter Tech Classic, Glitter Tech Classic (No Surgery), Vanilla Helixien Gas Expanded, Vanilla Plants Expanded - More Plants and Vanilla Races Expanded - Android||
+			
+		RimWorld v1.4|Added support for Alpha Animals, Animal Medical Bed 1.5, Fast regen medical beds 1.5, GloomyFurniture (Continued) and Vanilla Plants Expanded - More Plants</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

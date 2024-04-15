@@ -240,6 +240,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== GloomyFurniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MP_SmallStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MP_SmallStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Cupboard</li>
+									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

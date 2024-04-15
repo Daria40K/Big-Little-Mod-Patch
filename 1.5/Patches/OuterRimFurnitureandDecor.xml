@@ -172,6 +172,29 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== GloomyFurniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OuterRim_CorellianBed | OuterRim_CorellianDoubleBed | OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OuterRim_CorellianBed" or defName="OuterRim_CorellianDoubleBed" or defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RGK_Dresser</li>
+									<li>RGK_EndTable</li>
+									<li>RGK_EndTableWithLamp</li>
+									<li>RGK_EndTableWithLampE</li>
+									<li>WardrobeA</li>
+									<li>WardrobeB</li>
+									<li>GL_Teddy</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -184,6 +207,31 @@
 								<xpath>Defs/ThingDef[defName="OuterRim_CorellianBed" or defName="OuterRim_CorellianDoubleBed" or defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OuterRim_CorellianBed | OuterRim_CorellianDoubleBed | OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OuterRim_CorellianBed" or defName="OuterRim_CorellianDoubleBed" or defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RusticChest</li>
+									<li>DankPyon_MetalStrongbox</li>
+									<li>DankPyon_RoyalChest</li>
+									<li>DankPyon_RusticDresser</li>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RoyalCloset</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RoyalDresser</li>
 								</value>
 							</li>
 						</operations>

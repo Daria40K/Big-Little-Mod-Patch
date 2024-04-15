@@ -165,6 +165,57 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== GloomyFurniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Bookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RoyalBookshelf</li>
+									<li>DankPyon_Book_MilitaryBlades</li>
+									<li>DankPyon_Book_NobleBlades</li>
+									<li>DankPyon_Book_MilitaryMaces</li>
+									<li>DankPyon_Book_NobleMaces</li>
+									<li>DankPyon_Book_MilitaryPolearms</li>
+									<li>DankPyon_Book_NoblePolearms</li>
+									<li>DankPyon_Book_Crossbow</li>
+									<li>DankPyon_Book_HeavyCrossbow</li>
+									<li>DankPyon_Book_Steel</li>
+									<li>DankPyon_Book_Gunpowder</li>
+									<li>DankPyon_Book_Tar</li>
+									<li>DankPyon_Book_GreatBow</li>
+									<li>DankPyon_Book_WarBow</li>
+									<li>DankPyon_Book_IntermediateCooking</li>
+									<li>DankPyon_Book_AdvancedCooking</li>
+									<li>DankPyon_Book_BallistaRepeater</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -370,6 +421,23 @@
 								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Medical Module</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Facility_ResearchCounter</li>
 								</value>
 							</li>
 						</operations>

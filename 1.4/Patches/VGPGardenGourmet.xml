@@ -63,6 +63,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== GloomyFurniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Oven | ElectricOven | HandCanningstove | Canningstove | FueledCandyTable | CandyTable | GrindStone | ElectricGrindStone -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Oven" or defName="ElectricOven" or defName="HandCanningstove" or defName="Canningstove" or defName="FueledCandyTable" or defName="CandyTable" or defName="GrindStone" or defName="ElectricGrindStone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Cupboard</li>
+									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
