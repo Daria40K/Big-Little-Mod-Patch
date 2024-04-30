@@ -84,6 +84,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableDrugLabElectric | VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_FueledSmelter | VFE_TableSmithyLarge | VFE_TableStonecutterElectric | VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -261,6 +278,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GrimWorld 40,000 - Core Imperialis</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableDrugLabElectric | VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_FueledSmelter | VFE_TableSmithyLarge | VFE_TableStonecutterElectric | VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_VehicleToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical Supplements (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -388,6 +422,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Smokeleaf Industry Reborn ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Smokeleaf Industry Reborn</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableDrugLabElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TrimmingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableDrugLabElectric | VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_FueledSmelter | VFE_TableSmithyLarge | VFE_TableStonecutterElectric | VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -422,6 +490,41 @@
 								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_ComponentFabricationBench | VFE_TableMachiningLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableDrugLabElectric | VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_FueledSmelter | VFE_TableSmithyLarge | VFE_TableStonecutterElectric | VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
 								</value>
 							</li>
 						</operations>

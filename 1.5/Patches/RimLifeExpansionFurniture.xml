@@ -180,6 +180,41 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Edo Themed Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Edo Themed Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HSFancy_Tatami</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Erin's Cottage Collection ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Erin's Cottage Collection</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CCot_CottageDresser</li>
+									<li>CCot_CottageEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GloomyFurniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -414,6 +449,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tate's Tiny Furniture Mod ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tate's Tiny Furniture Mod</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TatesTinyFurnitureMod_Dresser</li>
+									<li>TatesTinyFurnitureMod_BedQuiltSingle</li>
+									<li>TatesTinyFurnitureMod_BedQuiltDouble</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -487,6 +541,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Ancients</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_AdHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_AdHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEA_AncientVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Empire ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Empire</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEE_RoyalMirror</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Vanilla Furniture Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -538,6 +626,89 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded Pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded Pack</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>FFE_Mirror</li>
+									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Plants Expanded - Mushrooms ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Plants Expanded - Mushrooms</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VPE_Plant_Lullabloom</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>vt_curio</li>
+									<li>VaultWardrobeA</li>
+									<li>VaultWardrobeB</li>
+									<li>vt_EndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_luxcommode</li>
+								</value>
+							</li>
+							<!-- RLE_AdHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_AdHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vaultmedical</li>
+									<li>Vaultmedicallamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_AdHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_AdHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
 								</value>
 							</li>
 						</operations>

@@ -633,8 +633,13 @@
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
 		<defName>BigLittleModPatch_3_6_0</defName>
 		<assemblyVersion>3.6.0</assemblyVersion>
-		<content>RimWorld v1.5|Added support for GloomyFurniture (Continued), Medieval Overhaul, Vanilla Furniture Expanded - Medical Module, Alpha Animals, Animal Medical Bed 1.5, Fast regen medical beds 1.5, Glitter Tech Classic, Glitter Tech Classic (No Surgery), Vanilla Helixien Gas Expanded, Vanilla Plants Expanded - More Plants and Vanilla Races Expanded - Android||
-			
-		RimWorld v1.4|Added support for Alpha Animals, Animal Medical Bed 1.5, Fast regen medical beds 1.5, GloomyFurniture (Continued) and Vanilla Plants Expanded - More Plants</content>
+		<content>RimWorld v1.5|Added support for GloomyFurniture (Continued), Medieval Overhaul, Vanilla Furniture Expanded - Medical Module, Alpha Animals, Animal Medical Bed 1.5, Fast regen medical beds 1.5, Glitter Tech Classic, Glitter Tech Classic (No Surgery), Vanilla Helixien Gas Expanded, Vanilla Plants Expanded - More Plants and Vanilla Races Expanded - Android||RimWorld v1.4|Added support for Alpha Animals, Animal Medical Bed 1.5, Fast regen medical beds 1.5, GloomyFurniture (Continued) and Vanilla Plants Expanded - More Plants</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.7.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_7_0</defName>
+		<assemblyVersion>3.7.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for A Dog Said... Animal Prosthetics, Apini Playable Race, Continued!, Astra Militarum Imperial Guard Core Mod v2.5, GrimWorld 40,000 - Core Imperialis, Tactical Charged Gear (Continued), Appliances Expanded, A Rim Reborn - Core, A RimWorld of Magic, Vanilla Factions Expanded - Ancients, Vault-Tec - Handy things for your vault!, [CP] DOOM, Smokeleaf Industry Reborn, [KR] Star Wars Bacta, Dubs Rimatomics, Edo Themed Expansion, Electric Stonecutting Table, Erin's Cottage Collection, EverythingTable, Exotic Arsenal (Continued), HALO - UNSC Faction, Helixien Gas Production, [JAIL] Prison Bed, Large Animal Beds, MakaiTech, Mechanoid Foundry, Nano Repair Tech, Single Royal Beds, Swords (Continued), The Complete Drug Overhaul (Continued), The Heaven Forged Celestial, Vanilla Factions Expanded - Classical, Vanilla Furniture Expanded Pack, Vanilla Recycling Expanded, Vanilla Vehicles Expanded, VFE - Ancients: Vault Technology, Xeva Faction, [XND] Carpenter Tables (Continued)||RimWorld v1.4|Added support for A Dog Said... Animal Prosthetics</content>
 	</HugsLib.UpdateFeatureDef>
 </Defs>

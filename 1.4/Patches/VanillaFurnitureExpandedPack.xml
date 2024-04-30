@@ -8,31 +8,6 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- FFE_CookingTable -->
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="FFE_CookingTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-					<nomatch Class="PatchOperationConditional">
-						<xpath>Defs/ThingDef[defName="FFE_CookingTable"]/comps</xpath>
-						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="FFE_CookingTable"]/comps</xpath>
-							<value>
-								<li Class="CompProperties_AffectedByFacilities">
-									<linkableFacilities />
-								</li>
-							</value>
-						</match>
-						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="FFE_CookingTable"]</xpath>
-							<value>
-								<comps>
-									<li Class="CompProperties_AffectedByFacilities">
-										<linkableFacilities/>
-									</li>
-								</comps>
-							</value>
-						</nomatch>
-					</nomatch>
-				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -57,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -98,9 +73,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SM_Sink</li>
 									<li>SM_KitchenCupboard_A</li>
@@ -118,9 +93,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
@@ -136,9 +111,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
@@ -242,9 +217,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
 									<li>DankPyon_TableBaking</li>
@@ -260,9 +235,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchoCookingAssistant</li>
 								</value>
@@ -277,9 +252,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>KitchenCupboard</li>
 								</value>
@@ -378,9 +353,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
 								</value>
@@ -430,9 +405,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>
@@ -482,9 +457,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_KitchenGoods</li>
 									<li>Link_KitchenBoost</li>
@@ -517,9 +492,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<!-- FFE_MeatMincer | FFE_CookingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
@@ -535,9 +510,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FFE_CookingTable | FFE_MeatMincer | FFE_AnimalMedTable -->
+							<!-- FFE_MeatMincer | FFE_CookingTable | FFE_AnimalMedTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer" or defName="FFE_AnimalMedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FFE_MeatMincer" or defName="FFE_CookingTable" or defName="FFE_AnimalMedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

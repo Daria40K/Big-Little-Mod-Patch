@@ -67,6 +67,43 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Apini Playable Race, Continued! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Apini Playable Race, Continued!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ApiniNectarStill</li>
+									<li>ApiniProstheticsTable</li>
+									<li>ApitechTable</li>
+									<li>ApitechSynthesizer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants | WVC_Ultra_GarbageRecyclerBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants" or defName="WVC_Ultra_GarbageRecyclerBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -144,6 +181,23 @@
 								<value>
 									<li>TableBionics</li>
 									<li>TableOrgans</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GrimWorld 40,000 - Core Imperialis</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants | WVC_Ultra_GarbageRecyclerBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants" or defName="WVC_Ultra_GarbageRecyclerBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_VehicleToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -234,6 +288,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants | WVC_Ultra_GarbageRecyclerBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants" or defName="WVC_Ultra_GarbageRecyclerBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -268,6 +339,24 @@
 								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GR_NutrientVat</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants | WVC_Ultra_GarbageRecyclerBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants" or defName="WVC_Ultra_GarbageRecyclerBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
 								</value>
 							</li>
 						</operations>

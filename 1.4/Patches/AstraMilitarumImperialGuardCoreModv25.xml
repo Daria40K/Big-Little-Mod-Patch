@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Astra Militarum Imperial Guard Core Mod v2.41</li>
+			<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">

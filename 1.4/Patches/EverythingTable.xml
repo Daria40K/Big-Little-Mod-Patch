@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -49,9 +49,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unobtainer_I</li>
 									<li>SNS_Linkable_CosmicDrawer_I</li>
@@ -65,16 +65,16 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.41 ========== -->
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Astra Militarum Imperial Guard Core Mod v2.41</li>
+						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
 								</value>
@@ -89,9 +89,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -106,9 +106,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
@@ -132,9 +132,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>
@@ -149,9 +149,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
@@ -169,9 +169,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -188,9 +188,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -207,9 +207,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -225,9 +225,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
@@ -243,9 +243,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -260,9 +260,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -282,9 +282,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -300,9 +300,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -317,9 +317,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
 								</value>
@@ -334,9 +334,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ETable_Base -->
+							<!-- ET_CraftingTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="ETable_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ET_CraftingTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

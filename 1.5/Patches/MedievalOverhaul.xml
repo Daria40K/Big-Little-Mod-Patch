@@ -144,6 +144,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench" or defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Clutter Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -279,6 +296,41 @@
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Edo Themed Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Edo Themed Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HSFancy_Tatami</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Erin's Cottage Collection ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Erin's Cottage Collection</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CCot_CottageDresser</li>
+									<li>CCot_CottageEndTable</li>
 								</value>
 							</li>
 						</operations>
@@ -427,6 +479,23 @@
 								<xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Bookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GrimWorld 40,000 - Core Imperialis</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench" or defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_VehicleToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -675,6 +744,42 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench" or defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tate's Tiny Furniture Mod ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tate's Tiny Furniture Mod</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TatesTinyFurnitureMod_Dresser</li>
+									<li>TatesTinyFurnitureMod_BedQuiltSingle</li>
+									<li>TatesTinyFurnitureMod_BedQuiltDouble</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -787,6 +892,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Factions Expanded - Empire ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Empire</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEE_RoyalMirror</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Vanilla Furniture Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -875,6 +997,72 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded Pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded Pack</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>FFE_Mirror</li>
+									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Plants Expanded - Mushrooms ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Plants Expanded - Mushrooms</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VPE_Plant_Lullabloom</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>vt_curio</li>
+									<li>VaultWardrobeA</li>
+									<li>VaultWardrobeB</li>
+									<li>vt_EndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_luxcommode</li>
+								</value>
+							</li>
+							<!-- DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench" or defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
 								</value>
 							</li>
 						</operations>

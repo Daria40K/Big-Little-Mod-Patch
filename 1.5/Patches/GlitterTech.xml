@@ -81,6 +81,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- PharmaTable | Matterfab | Electrolyzer | RobAssem -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="PharmaTable" or defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -157,6 +174,23 @@
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
 									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GrimWorld 40,000 - Core Imperialis</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- PharmaTable | Matterfab | Electrolyzer | RobAssem -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="PharmaTable" or defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_VehicleToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -341,6 +375,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Smokeleaf Industry Reborn ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Smokeleaf Industry Reborn</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- PharmaTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TrimmingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- PharmaTable | Matterfab | Electrolyzer | RobAssem -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="PharmaTable" or defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -405,6 +473,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Ancients</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ambTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEA_AncientVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -447,6 +532,49 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Matterfab | Electrolyzer | RobAssem -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- PharmaTable | Matterfab | Electrolyzer | RobAssem -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="PharmaTable" or defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+							<!-- ambTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vaultmedical</li>
+									<li>Vaultmedicallamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -469,6 +597,23 @@
 								<value>
 									<li>Link_FabricationBoost</li>
 									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ambTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
 								</value>
 							</li>
 						</operations>
