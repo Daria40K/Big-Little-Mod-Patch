@@ -744,6 +744,56 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_Furnace -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Furnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_hammer</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+								</value>
+							</li>
+							<!-- DankPyon_Anvil -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Anvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+									<li>ucp_wrench</li>
+								</value>
+							</li>
+							<!-- DankPyon_SpinningWheel | DankPyon_TailorsBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_measure</li>
+									<li>ucp_scraps</li>
+									<li>ucp_textileroll</li>
+									<li>ucp_pencil</li>
+								</value>
+							</li>
+							<!-- DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tactical Charged Gear (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1179,6 +1229,23 @@
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_ButchersBlock | DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_StoneOvenLarge | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone | DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock" or defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_StoneOvenLarge" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone" or defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench" or defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

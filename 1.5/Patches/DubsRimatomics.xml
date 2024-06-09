@@ -555,6 +555,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Save Our Ship 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Save Our Ship 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchotechUplink</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Sparkling Worlds - Full Mod ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -589,6 +606,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableRimatomicsMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tactical Charged Gear (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -601,6 +642,25 @@
 								<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tech Raiding [1.1](continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tech Raiding [1.1](continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LostAnalyzer</li>
+									<li>BrutalAnalyzer</li>
+									<li>MechaAnalyzer</li>
 								</value>
 							</li>
 						</operations>
@@ -797,6 +857,23 @@
 									<li>Link_MachiningGoods</li>
 									<li>Link_MachiningBoost</li>
 									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableRimatomicsMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

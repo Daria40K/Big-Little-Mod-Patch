@@ -2,12 +2,37 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Exotic Arsenal (Continued)</li>
+			<li>[LYN] Nanotech Overpower</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- Nanofabricator -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="Nanofabricator"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -15,9 +40,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,9 +57,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -49,9 +74,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
 								</value>
@@ -66,9 +91,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -83,9 +108,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
@@ -109,9 +134,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>
@@ -126,9 +151,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
@@ -146,9 +171,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -165,9 +190,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -184,9 +209,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -202,9 +227,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
@@ -220,9 +245,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -237,9 +262,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -259,9 +284,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -277,28 +302,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Nanofabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Nanofabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [LYN] Nanotech Overpower ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[LYN] Nanotech Overpower</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Exotic_Bench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

@@ -659,6 +659,52 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ImperialFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImperialFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+							<!-- ImperialWeaponFab | ImperialArmorFab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImperialWeaponFab" or defName="ImperialArmorFab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+							<!-- IG_ImperialCONFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="IG_ImperialCONFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_hammer</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tactical Charged Gear (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -785,6 +831,23 @@
 									<li>SadjuukSurgeryAB</li>
 									<li>SadjuukSurgeryAC</li>
 									<li>SadjuukSurgeryAD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ushankas Luciferium Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ushankas Luciferium Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ImpHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImpHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>USH_LuciferiumMedicalSimulator</li>
 								</value>
 							</li>
 						</operations>
@@ -1105,6 +1168,23 @@
 								<xpath>Defs/ThingDef[defName="ImperialMedicalFab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ImperialMedicalFab | ImperialFabricator | ImperialWeaponFab | ImperialArmorFab | IG_ImperialCONFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImperialMedicalFab" or defName="ImperialFabricator" or defName="ImperialWeaponFab" or defName="ImperialArmorFab" or defName="IG_ImperialCONFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

@@ -642,4 +642,11 @@
 		<assemblyVersion>3.7.0</assemblyVersion>
 		<content>RimWorld v1.5|Added support for A Dog Said... Animal Prosthetics, Apini Playable Race, Continued!, Astra Militarum Imperial Guard Core Mod v2.5, GrimWorld 40,000 - Core Imperialis, Tactical Charged Gear (Continued), Appliances Expanded, A Rim Reborn - Core, A RimWorld of Magic, Vanilla Factions Expanded - Ancients, Vault-Tec - Handy things for your vault!, [CP] DOOM, Smokeleaf Industry Reborn, [KR] Star Wars Bacta, Dubs Rimatomics, Edo Themed Expansion, Electric Stonecutting Table, Erin's Cottage Collection, EverythingTable, Exotic Arsenal (Continued), HALO - UNSC Faction, Helixien Gas Production, [JAIL] Prison Bed, Large Animal Beds, MakaiTech, Mechanoid Foundry, Nano Repair Tech, Single Royal Beds, Swords (Continued), The Complete Drug Overhaul (Continued), The Heaven Forged Celestial, Vanilla Factions Expanded - Classical, Vanilla Furniture Expanded Pack, Vanilla Recycling Expanded, Vanilla Vehicles Expanded, VFE - Ancients: Vault Technology, Xeva Faction, [XND] Carpenter Tables (Continued)||RimWorld v1.4|Added support for A Dog Said... Animal Prosthetics</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.8.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_8_0</defName>
+		<assemblyVersion>3.8.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for Ushankas Luciferium Expansion, [LYN] Nanotech Overpower, Tabletop Decorations, Tech Raiding [1.1](continued), Fallout - Nuka Cola Collection, Kurin, The Three Tailed Fox [Deluxe Edition], NewRatkinPlus||RimWorld v1.4|Added support for Save Our Ship 2</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

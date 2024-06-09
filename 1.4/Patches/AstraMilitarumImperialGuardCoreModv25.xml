@@ -1359,9 +1359,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ImperialMedicalFab | ImperialFabricator | ImperialWeaponFab | ImperialArmorFab | ImpHospitalBed | IG_ImperialCONFabricator -->
+							<!-- ImperialMedicalFab | ImperialFabricator | ImperialWeaponFab | ImperialArmorFab | IG_ImperialCONFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ImperialMedicalFab" or defName="ImperialFabricator" or defName="ImperialWeaponFab" or defName="ImperialArmorFab" or defName="ImpHospitalBed" or defName="IG_ImperialCONFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ImperialMedicalFab" or defName="ImperialFabricator" or defName="ImperialWeaponFab" or defName="ImperialArmorFab" or defName="IG_ImperialCONFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

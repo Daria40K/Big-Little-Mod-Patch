@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Exotic Arsenal (Continued)</li>
+			<li>Kurin, The Three Tailed Fox [Deluxe Edition]</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -49,9 +49,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
 								</value>
@@ -66,11 +66,28 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Dark Ages : Medieval Tools ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Dark Ages : Medieval Tools</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Kurin_Electric_Tailoring_Bench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_TailoringTools</li>
 								</value>
 							</li>
 						</operations>
@@ -83,9 +100,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
@@ -109,9 +126,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>
@@ -126,9 +143,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
@@ -146,9 +163,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -165,9 +182,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -184,9 +201,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -202,12 +219,14 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>ucp_toolbox</li>
-									<li>ucp_screwdrivers</li>
+									<li>ucp_measure</li>
+									<li>ucp_scraps</li>
+									<li>ucp_textileroll</li>
+									<li>ucp_pencil</li>
 								</value>
 							</li>
 						</operations>
@@ -220,9 +239,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -237,9 +256,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -252,6 +271,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Kurin_Electric_Tailoring_Bench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_TailorCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -259,9 +295,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -277,10 +313,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>Link_TailorGoods</li>
+									<li>Link_TailorBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -294,9 +332,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Exotic_Bench -->
+							<!-- Kurin_Electric_Tailoring_Bench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Exotic_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

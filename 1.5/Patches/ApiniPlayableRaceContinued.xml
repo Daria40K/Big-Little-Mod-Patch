@@ -538,6 +538,28 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniNectarStill | ApiniNectarStill | ApiniProstheticsTable | ApiniProstheticsTable | ApitechTable | ApitechTable | ApitechSynthesizer | ApitechSynthesizer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechTable" or defName="ApitechSynthesizer" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tactical Charged Gear (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -836,6 +858,23 @@
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
 									<li>LTS_KoppangD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniNectarStill | ApiniNectarStill | ApiniProstheticsTable | ApiniProstheticsTable | ApitechTable | ApitechTable | ApitechSynthesizer | ApitechSynthesizer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechTable" or defName="ApitechSynthesizer" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

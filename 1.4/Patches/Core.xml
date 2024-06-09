@@ -1534,6 +1534,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Save Our Ship 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Save Our Ship 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchotechUplink</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Smokeleaf Industry Reborn ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -2454,9 +2471,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Brewery | TableButcher | ElectricStove | FueledStove | DrugLab | FabricationBench | TableMachining | HospitalBed | TableSculpting | ElectricSmelter | FueledSmithy | ElectricSmithy | TableStonecutter | HandTailoringBench | ElectricTailoringBench | ElectricCrematorium | BiofuelRefinery -->
+							<!-- Brewery | TableButcher | ElectricStove | FueledStove | DrugLab | FabricationBench | TableMachining | TableSculpting | ElectricSmelter | FueledSmithy | ElectricSmithy | TableStonecutter | HandTailoringBench | ElectricTailoringBench | ElectricCrematorium | BiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Brewery" or defName="TableButcher" or defName="ElectricStove" or defName="FueledStove" or defName="DrugLab" or defName="FabricationBench" or defName="TableMachining" or defName="HospitalBed" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableStonecutter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Brewery" or defName="TableButcher" or defName="ElectricStove" or defName="FueledStove" or defName="DrugLab" or defName="FabricationBench" or defName="TableMachining" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableStonecutter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

@@ -1274,6 +1274,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Save Our Ship 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Save Our Ship 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_SpacerTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchotechUplink</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Sparkling Worlds - Full Mod ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1926,9 +1943,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RE_ManufacturingBench | RE_PrefabMedicalBed -->
+							<!-- RE_ManufacturingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench" or defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

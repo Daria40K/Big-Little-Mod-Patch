@@ -328,6 +328,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- PoweredCultivationBench | MedicinalsLab | SmokeleafAutoTrimmer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="PoweredCultivationBench" or defName="MedicinalsLab" or defName="SmokeleafAutoTrimmer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

@@ -1336,9 +1336,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEA_AncientCookingStation | VFEA_AncientCryptosleepSuspender | VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop -->
+							<!-- VFEA_AncientCookingStation | VFEA_ElectricMendingStation | VFEA_FueledMendingStation | VFEA_AncientWorkshop -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEA_AncientCookingStation" or defName="VFEA_AncientCryptosleepSuspender" or defName="VFEA_ElectricMendingStation" or defName="VFEA_FueledMendingStation" or defName="VFEA_AncientWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VFEA_AncientCookingStation" or defName="VFEA_ElectricMendingStation" or defName="VFEA_FueledMendingStation" or defName="VFEA_AncientWorkshop"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

@@ -239,6 +239,39 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukMetalworkingBench | SadjuukMetalworkingLineB | SadjuukAssemblyLineB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukMetalworkingBench" or defName="SadjuukMetalworkingLineB" or defName="SadjuukAssemblyLineB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+							<!-- SadjuukBessemerConverter | SadjuukOpenHearthFurnace | SadjuukElectricArcFurnace -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukBessemerConverter" or defName="SadjuukOpenHearthFurnace" or defName="SadjuukElectricArcFurnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_hammer</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tactical Charged Gear (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -358,6 +391,23 @@
 								<value>
 									<li>Link_UniversalCabinet</li>
 									<li>Link_RefineryBoost</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukMetalworkingBench | SadjuukMetalworkingLineB | SadjuukAssemblyLineB | SadjuukBessemerConverter | SadjuukOpenHearthFurnace | SadjuukElectricArcFurnace | SadjuukRefineryA | SadjuukRefineryB | SadjuukRefineryC -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukMetalworkingBench" or defName="SadjuukMetalworkingLineB" or defName="SadjuukAssemblyLineB" or defName="SadjuukBessemerConverter" or defName="SadjuukOpenHearthFurnace" or defName="SadjuukElectricArcFurnace" or defName="SadjuukRefineryA" or defName="SadjuukRefineryB" or defName="SadjuukRefineryC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>
