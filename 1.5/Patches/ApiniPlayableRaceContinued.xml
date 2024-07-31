@@ -361,6 +361,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniHoneycombBed_S | ApiniHoneycombBed_L -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniHoneycombBed_S" or defName="ApiniHoneycombBed_L"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -533,6 +550,41 @@
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
 									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniNectarStill | ApiniNectarStill | ApiniProstheticsTable | ApiniProstheticsTable | ApitechTable | ApitechTable | ApitechSynthesizer | ApitechSynthesizer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechTable" or defName="ApitechSynthesizer" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Small Dresser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Dresser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniHoneycombBed_S | ApiniHoneycombBed_L -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniHoneycombBed_S" or defName="ApiniHoneycombBed_L"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SmallDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -807,6 +859,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniNectarStill | ApiniNectarStill | ApiniProstheticsTable | ApiniProstheticsTable | ApitechTable | ApitechTable | ApitechSynthesizer | ApitechSynthesizer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechTable" or defName="ApitechSynthesizer" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -895,6 +964,26 @@
 									<li>MUS_Gothicstyle_Wardrobe</li>
 									<li>MUS_Gothicstyle_Mirror</li>
 									<li>MUS_Gothicstyle_BedsideTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>kyon's Furniture|地中海风格家具|Mediterranean</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniHoneycombBed_S | ApiniHoneycombBed_L -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniHoneycombBed_S" or defName="ApiniHoneycombBed_L"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Mediterranean_EndTable</li>
+									<li>Mediterranean_Wardrobe</li>
+									<li>Mediterranean_Drape_a</li>
+									<li>Mediterranean_Drape_b</li>
 								</value>
 							</li>
 						</operations>

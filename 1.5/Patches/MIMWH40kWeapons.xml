@@ -119,6 +119,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Archon Multi-Analyzer ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Archon Multi-Analyzer</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_ResearchBenchNecron -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoMultiAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -580,6 +597,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_FabricationBenchNecron | EMGC_FabricationBench | EMNC_NecronSmelter | EMGC_FueledSmithy | EMGC_ElectricSmithy | EMGC_HandTailoringBench | EMGC_ElectricTailoringBench | EMNC_NecronTomb -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_FabricationBenchNecron" or defName="EMGC_FabricationBench" or defName="EMNC_NecronSmelter" or defName="EMGC_FueledSmithy" or defName="EMGC_ElectricSmithy" or defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench" or defName="EMNC_NecronTomb"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -957,6 +992,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_FabricationBenchNecron | EMGC_FabricationBench | EMNC_NecronSmelter | EMGC_FueledSmithy | EMGC_ElectricSmithy | EMGC_HandTailoringBench | EMGC_ElectricTailoringBench | EMNC_NecronTomb -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_FabricationBenchNecron" or defName="EMGC_FabricationBench" or defName="EMNC_NecronSmelter" or defName="EMGC_FueledSmithy" or defName="EMGC_ElectricSmithy" or defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench" or defName="EMNC_NecronTomb"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1012,6 +1064,23 @@
 								<xpath>Defs/ThingDef[defName="EMNC_NecronTomb"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== XCOM - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>XCOM - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_ResearchBenchNecron -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VBY_XCom_ShadowChamber</li>
 								</value>
 							</li>
 						</operations>

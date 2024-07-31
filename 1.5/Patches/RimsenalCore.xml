@@ -196,6 +196,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GDTable | YPTable | JITable | TETable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tabletop Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -306,6 +324,23 @@
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GDTable | YPTable | JITable | TETable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
 								</value>
 							</li>
 						</operations>

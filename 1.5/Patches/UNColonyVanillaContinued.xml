@@ -157,6 +157,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Archon Multi-Analyzer ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Archon Multi-Analyzer</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchCA -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoMultiAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -598,6 +615,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedroomBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedroomBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical IV ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -924,6 +958,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukRefineryA -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukRefineryA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -998,6 +1050,23 @@
 								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchotechUplink</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Small Dresser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Dresser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedroomBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedroomBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SmallDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -1368,6 +1437,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukRefineryA -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukRefineryA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1389,6 +1475,23 @@
 								<value>
 									<li>Link_UniversalCabinet</li>
 									<li>Link_RefineryBoost</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== XCOM - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>XCOM - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchCA -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchCA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VBY_XCom_ShadowChamber</li>
 								</value>
 							</li>
 						</operations>
@@ -1482,6 +1585,26 @@
 									<li>MUS_Gothicstyle_Wardrobe</li>
 									<li>MUS_Gothicstyle_Mirror</li>
 									<li>MUS_Gothicstyle_BedsideTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>kyon's Furniture|地中海风格家具|Mediterranean</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedroomBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedroomBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Mediterranean_EndTable</li>
+									<li>Mediterranean_Wardrobe</li>
+									<li>Mediterranean_Drape_a</li>
+									<li>Mediterranean_Drape_b</li>
 								</value>
 							</li>
 						</operations>

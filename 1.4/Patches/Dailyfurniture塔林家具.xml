@@ -211,6 +211,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ADH_bed_Single_A_A_FURNITURE | ADH_bed_Single_B_A_FURNITURE | ADH_bed_double_A_A_FURNITURE | ADH_bed_double_B_A_FURNITURE -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ADH_bed_Single_A_A_FURNITURE" or defName="ADH_bed_Single_B_A_FURNITURE" or defName="ADH_bed_double_A_A_FURNITURE" or defName="ADH_bed_double_B_A_FURNITURE"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

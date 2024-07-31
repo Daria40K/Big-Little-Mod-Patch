@@ -436,6 +436,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OutlandBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical Supplements (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -634,6 +651,41 @@
 									<li>RLE_ReactionAccelerator</li>
 									<li>RLE_ImpurityFiltrationUnit</li>
 									<li>RLE_PreReactor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Small Dresser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Dresser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OutlandBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SmallDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -1070,6 +1122,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1244,6 +1313,26 @@
 									<li>MUS_Gothicstyle_Wardrobe</li>
 									<li>MUS_Gothicstyle_Mirror</li>
 									<li>MUS_Gothicstyle_BedsideTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>kyon's Furniture|地中海风格家具|Mediterranean</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OutlandBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Mediterranean_EndTable</li>
+									<li>Mediterranean_Wardrobe</li>
+									<li>Mediterranean_Drape_a</li>
+									<li>Mediterranean_Drape_b</li>
 								</value>
 							</li>
 						</operations>

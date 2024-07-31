@@ -247,6 +247,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SDBuildingBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SDBuildingBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

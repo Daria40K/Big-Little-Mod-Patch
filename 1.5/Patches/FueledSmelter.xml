@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fueled Smelter</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- FueledSmelter -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="FueledSmelter"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Even More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GrimWorld 40,000 - Core Imperialis</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_VehicleToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+									<li>DankPyon_QuenchingBucket</li>
+									<li>DankPyon_Grinder</li>
+									<li>DankPyon_Bellows</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_BasicWorkbench</li>
+									<li>Outland_Forge</li>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_hammer</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukAssemblyRobot</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmelterGoods</li>
+									<li>Link_SmelterBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

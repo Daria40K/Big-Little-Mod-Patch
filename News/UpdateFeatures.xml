@@ -649,4 +649,11 @@
 		<assemblyVersion>3.8.0</assemblyVersion>
 		<content>RimWorld v1.5|Added support for Ushankas Luciferium Expansion, [LYN] Nanotech Overpower, Tabletop Decorations, Tech Raiding [1.1](continued), Fallout - Nuka Cola Collection, Kurin, The Three Tailed Fox [Deluxe Edition], NewRatkinPlus||RimWorld v1.4|Added support for Save Our Ship 2</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.9.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_9_0</defName>
+		<assemblyVersion>3.9.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for Comigo's Nutrition (Continued), Cyber Fauna (Continued), Fueled Smelter, kyon's Furniture地中海风格家具Mediterranean, Mechalit Core v2 (Continued), Mechalit Faction v2 (Continued), RimThunder - Core, Small Dresser, [SZ]Super Mechneko - 超级机械猫娘 and WallStuff||RimWorld v1.4|Added support for Archon Multi-Analyzer, Mechalit Core v2 (Continued) and Mechalit Faction v2 (Continued)</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

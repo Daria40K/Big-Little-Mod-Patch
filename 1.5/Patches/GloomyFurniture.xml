@@ -433,6 +433,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -679,6 +696,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GL_FueledSmithy | GL_ElectricSmithy | GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -712,6 +747,23 @@
 									<li>RP_MechanicalCalculator</li>
 									<li>RP_DifferenceEngine</li>
 									<li>Colony Tape Storage</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Small Dresser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Dresser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SmallDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -1074,6 +1126,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GL_FueledSmithy | GL_ElectricSmithy | GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1197,6 +1266,26 @@
 									<li>MUS_Gothicstyle_Wardrobe</li>
 									<li>MUS_Gothicstyle_Mirror</li>
 									<li>MUS_Gothicstyle_BedsideTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>kyon's Furniture|地中海风格家具|Mediterranean</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Mediterranean_EndTable</li>
+									<li>Mediterranean_Wardrobe</li>
+									<li>Mediterranean_Drape_a</li>
+									<li>Mediterranean_Drape_b</li>
 								</value>
 							</li>
 						</operations>

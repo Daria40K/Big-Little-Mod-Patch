@@ -305,6 +305,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical IV ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

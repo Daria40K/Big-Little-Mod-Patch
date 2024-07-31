@@ -518,6 +518,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -706,6 +723,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench" or defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -739,6 +774,23 @@
 									<li>RP_MechanicalCalculator</li>
 									<li>RP_DifferenceEngine</li>
 									<li>Colony Tape Storage</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Small Dresser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Dresser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SmallDresser</li>
 								</value>
 							</li>
 						</operations>
@@ -1118,6 +1170,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench" or defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1266,6 +1335,26 @@
 									<li>MUS_Gothicstyle_Wardrobe</li>
 									<li>MUS_Gothicstyle_Mirror</li>
 									<li>MUS_Gothicstyle_BedsideTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>kyon's Furniture|地中海风格家具|Mediterranean</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_BedLog | DankPyon_BedWicker | DankPyon_BedWickerDouble | DankPyon_StrawBed | DankPyon_StrawBedDouble | DankPyon_BedFur | DankPyon_BedFurDouble | DankPyon_RoyalTudorBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_BedLog" or defName="DankPyon_BedWicker" or defName="DankPyon_BedWickerDouble" or defName="DankPyon_StrawBed" or defName="DankPyon_StrawBedDouble" or defName="DankPyon_BedFur" or defName="DankPyon_BedFurDouble" or defName="DankPyon_RoyalTudorBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Mediterranean_EndTable</li>
+									<li>Mediterranean_Wardrobe</li>
+									<li>Mediterranean_Drape_a</li>
+									<li>Mediterranean_Drape_b</li>
 								</value>
 							</li>
 						</operations>
