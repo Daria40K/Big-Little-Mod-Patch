@@ -656,4 +656,11 @@
 		<assemblyVersion>3.9.0</assemblyVersion>
 		<content>RimWorld v1.5|Added support for Comigo's Nutrition (Continued), Cyber Fauna (Continued), Fueled Smelter, kyon's Furniture地中海风格家具Mediterranean, Mechalit Core v2 (Continued), Mechalit Faction v2 (Continued), RimThunder - Core, Small Dresser, [SZ]Super Mechneko - 超级机械猫娘 and WallStuff||RimWorld v1.4|Added support for Archon Multi-Analyzer, Mechalit Core v2 (Continued) and Mechalit Faction v2 (Continued)</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.10.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_10_0</defName>
+		<assemblyVersion>3.10.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for Advanced Electric Stove (Continued) and Avaritia 无尽贪婪</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
