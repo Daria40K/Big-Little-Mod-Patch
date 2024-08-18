@@ -134,23 +134,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEA_VT_AncientSmeltStation | VFEA_VT_AncientSculptor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSmeltStation" or defName="VFEA_VT_AncientSculptor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

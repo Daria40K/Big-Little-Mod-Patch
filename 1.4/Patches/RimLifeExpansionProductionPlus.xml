@@ -255,9 +255,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RLE_ComponentMT | RLE_SmelterTable | RLE_ExpandedRockChunkCutter | RLE_ExpandedChemfuelRefiningReactor | RLE_ChemicalFiberProcessingMachine | RLE_SyntheticResinProcessingMachine -->
+							<!-- RLE_ComponentMT -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="RLE_ComponentMT" or @Name="RLE_SmelterTable" or defName="RLE_ExpandedRockChunkCutter" or defName="RLE_ExpandedChemfuelRefiningReactor" or defName="RLE_ChemicalFiberProcessingMachine" or defName="RLE_SyntheticResinProcessingMachine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RLE_ComponentMT"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>

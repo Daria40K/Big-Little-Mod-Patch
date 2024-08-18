@@ -365,9 +365,9 @@
 									<li>GW_Cogitator</li>
 								</value>
 							</li>
-							<!-- EMNC_FabricationBenchNecron | EMGC_FabricationBench | EMNC_NecronSmelter | EMGC_FueledSmithy | EMGC_ElectricSmithy | EMGC_HandTailoringBench | EMGC_ElectricTailoringBench | EMNC_NecronTomb -->
+							<!-- EMNC_FabricationBenchNecron | EMGC_FabricationBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="EMNC_FabricationBenchNecron" or defName="EMGC_FabricationBench" or defName="EMNC_NecronSmelter" or defName="EMGC_FueledSmithy" or defName="EMGC_ElectricSmithy" or defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench" or defName="EMNC_NecronTomb"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EMNC_FabricationBenchNecron" or defName="EMGC_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>

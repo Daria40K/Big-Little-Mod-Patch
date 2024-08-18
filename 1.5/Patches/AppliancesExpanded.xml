@@ -183,23 +183,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- CA_ChemfuelSmelter | CA_ChemfuelSmithy | CA_ChemfuelCrematorium -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -728,23 +711,6 @@
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- CE_FueledSmithyLarge -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
 								</value>
 							</li>
 						</operations>

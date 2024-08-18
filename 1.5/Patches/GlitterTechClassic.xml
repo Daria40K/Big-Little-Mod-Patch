@@ -133,23 +133,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- GTBenchBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Medical IV ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

@@ -107,23 +107,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- PoweredCultivationBench | MedicinalsLab | SmokeleafAutoTrimmer -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="PoweredCultivationBench" or defName="MedicinalsLab" or defName="SmokeleafAutoTrimmer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Medical Supplements (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

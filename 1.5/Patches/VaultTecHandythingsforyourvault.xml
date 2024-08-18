@@ -403,9 +403,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- vt_workbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>
@@ -666,6 +666,27 @@
 									<li>Outland_EndTable</li>
 									<li>Outland_EndTableWithLamp</li>
 									<li>Outland_Wardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RR's Dieselpunk Furniture pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RR's Dieselpunk Furniture pack</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RRHeronaWardrobe</li>
+									<li>RRTaragonaWardrobe</li>
+									<li>RRDresser</li>
+									<li>RRFelzenEndtable</li>
+									<li>RRKarvinaEndtable</li>
 								</value>
 							</li>
 						</operations>

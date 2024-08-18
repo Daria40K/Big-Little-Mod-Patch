@@ -209,9 +209,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- PharmaTable | Matterfab | Electrolyzer | RobAssem -->
+							<!-- Matterfab | Electrolyzer | RobAssem -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="PharmaTable" or defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>

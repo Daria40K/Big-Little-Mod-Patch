@@ -586,13 +586,6 @@
 									<li>GW_Cogitator</li>
 								</value>
 							</li>
-							<!-- SadjuukRefineryA -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukRefineryA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
 						</operations>
 					</match>
 				</li>

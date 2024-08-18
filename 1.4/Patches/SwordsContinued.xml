@@ -125,23 +125,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LS_AncestralForge -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LS_AncestralForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

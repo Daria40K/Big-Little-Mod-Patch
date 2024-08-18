@@ -735,9 +735,9 @@
 									<li>GW_Cogitator</li>
 								</value>
 							</li>
-							<!-- DrugLab | FabricationBench | TableMachining | TableSculpting | ElectricSmelter | FueledSmithy | ElectricSmithy | TableStonecutter | HandTailoringBench | ElectricTailoringBench | ElectricCrematorium | BiofuelRefinery -->
+							<!-- FabricationBench | TableMachining -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="DrugLab" or defName="FabricationBench" or defName="TableMachining" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableStonecutter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FabricationBench" or defName="TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>

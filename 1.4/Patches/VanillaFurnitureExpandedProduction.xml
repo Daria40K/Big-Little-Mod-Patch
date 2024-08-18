@@ -308,9 +308,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFE_TableDrugLabElectric | VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_FueledSmelter | VFE_TableSmithyLarge | VFE_TableStonecutterElectric | VFE_TableTailorLarge -->
+							<!-- VFE_ComponentFabricationBench | VFE_TableMachiningLarge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>

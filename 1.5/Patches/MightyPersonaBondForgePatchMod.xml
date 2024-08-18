@@ -2,19 +2,26 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Fueled Smelter</li>
+			<li>Mighty Persona Bond Forge Patch Mod</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- FueledSmelter -->
+				<!-- ========== Obsidia Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Obsidia Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+				<!-- OE_PersonaBondTable -->
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
 					<nomatch Class="PatchOperationConditional">
-						<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps</xpath>
+						<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps</xpath>
 						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps</xpath>
+							<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps</xpath>
 							<value>
 								<li Class="CompProperties_AffectedByFacilities">
 									<linkableFacilities />
@@ -22,7 +29,7 @@
 							</value>
 						</match>
 						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="FueledSmelter"]</xpath>
+							<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]</xpath>
 							<value>
 								<comps>
 									<li Class="CompProperties_AffectedByFacilities">
@@ -40,9 +47,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -57,9 +64,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -74,9 +81,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
 								</value>
@@ -91,9 +98,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -108,9 +115,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
@@ -127,6 +134,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GrimWorld 40,000 - Core Imperialis</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_PersonaBondTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_VehicleToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -134,9 +158,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
@@ -154,9 +178,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -173,9 +197,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -192,12 +216,13 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
 								</value>
 							</li>
 						</operations>
@@ -210,9 +235,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RTC_ToolShelf</li>
 									<li>RTC_BlastCabinet</li>
@@ -228,13 +253,18 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
 									<li>ucp_hammer</li>
-									<li>ucp_tongs</li>
-									<li>ucp_ballpeen</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
 								</value>
 							</li>
 						</operations>
@@ -247,9 +277,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -264,9 +294,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -279,6 +309,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_PersonaBondTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_PersonaBondTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -286,9 +350,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -304,9 +368,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -321,12 +385,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_SmelterGoods</li>
-									<li>Link_SmelterBoost</li>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -340,13 +404,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- FueledSmelter -->
+							<!-- OE_PersonaBondTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
+						</operations>
+					</match>
+				</li>
 						</operations>
 					</match>
 				</li>

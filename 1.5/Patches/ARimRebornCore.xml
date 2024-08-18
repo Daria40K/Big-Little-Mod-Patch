@@ -207,9 +207,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherMachineTable | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_GlamourTable -->
+							<!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherMachineTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherMachineTable" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_GlamourTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherMachineTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>

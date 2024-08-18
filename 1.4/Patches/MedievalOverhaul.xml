@@ -485,23 +485,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- DankPyon_Furnace | DankPyon_Anvil | DankPyon_SpinningWheel | DankPyon_TailorsBench | DankPyon_Trestle | DankPyon_Workbench | DankPyon_JewelryBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_SpinningWheel" or defName="DankPyon_TailorsBench" or defName="DankPyon_Trestle" or defName="DankPyon_Workbench" or defName="DankPyon_JewelryBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

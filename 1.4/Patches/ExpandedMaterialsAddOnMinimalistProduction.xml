@@ -265,9 +265,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MP_SmallMachiningTable | MP_SmallStoneworkerTable | MP_SmallSmithy | MP_SmallTailoringTable -->
+							<!-- MP_SmallMachiningTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MP_SmallMachiningTable" or defName="MP_SmallStoneworkerTable" or defName="MP_SmallSmithy" or defName="MP_SmallTailoringTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MP_SmallMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>

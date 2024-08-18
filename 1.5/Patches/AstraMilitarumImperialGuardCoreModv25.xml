@@ -346,9 +346,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ImperialMedicalFab | ImperialFabricator | ImperialWeaponFab | ImperialArmorFab | IG_ImperialCONFabricator -->
+							<!-- ImperialFabricator | ImperialWeaponFab | ImperialArmorFab -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ImperialMedicalFab" or defName="ImperialFabricator" or defName="ImperialWeaponFab" or defName="ImperialArmorFab" or defName="IG_ImperialCONFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="ImperialFabricator" or defName="ImperialWeaponFab" or defName="ImperialArmorFab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>
@@ -602,6 +602,27 @@
 									<li>Outland_EndTable</li>
 									<li>Outland_EndTableWithLamp</li>
 									<li>Outland_Wardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RR's Dieselpunk Furniture pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RR's Dieselpunk Furniture pack</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ImpDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImpDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RRHeronaWardrobe</li>
+									<li>RRTaragonaWardrobe</li>
+									<li>RRDresser</li>
+									<li>RRFelzenEndtable</li>
+									<li>RRKarvinaEndtable</li>
 								</value>
 							</li>
 						</operations>

@@ -555,13 +555,6 @@
 									<li>GW_Cogitator</li>
 								</value>
 							</li>
-							<!-- RVFFA_BaseProductionBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RVFFA_BaseProductionBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
 						</operations>
 					</match>
 				</li>
