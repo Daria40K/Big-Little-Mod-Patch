@@ -870,6 +870,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [RH2] Uncle Boris' - Used Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[RH2] Uncle Boris' - Used Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RH2_ClassicFootlocker</li>
+									<li>RH2_MilitaryCrateDresser</li>
+									<li>RH2_LampEndTable</li>
+									<li>RH2_DoubleWardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

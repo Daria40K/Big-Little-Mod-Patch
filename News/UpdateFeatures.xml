@@ -677,4 +677,11 @@
 		<assemblyVersion>3.12.0</assemblyVersion>
 		<content>RimWorld v1.5|Added support for [LTS]Ammunition - Framework</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.13.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_13_0</defName>
+		<assemblyVersion>3.13.0</assemblyVersion>
+		<content>RimWorld v1.5|Added support for Super Size Bed! and [RH2] Uncle Boris' - Used Furniture||RimWorld v1.4|Added support for Super Size Bed! and [RH2] Uncle Boris' - Used Furniture</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

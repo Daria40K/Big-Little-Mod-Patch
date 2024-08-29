@@ -1415,6 +1415,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [RH2] Uncle Boris' - Used Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[RH2] Uncle Boris' - Used Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RH2_ClassicFootlocker</li>
+									<li>RH2_MilitaryCrateDresser</li>
+									<li>RH2_LampEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [sd] medicaddons (unofficial) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

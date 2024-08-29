@@ -954,6 +954,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [RH2] Uncle Boris' - Used Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[RH2] Uncle Boris' - Used Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RH2_ClassicFootlocker</li>
+									<li>RH2_MilitaryCrateDresser</li>
+									<li>RH2_LampEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [sd] medicaddons (unofficial) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

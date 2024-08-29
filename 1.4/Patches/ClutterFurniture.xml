@@ -1053,6 +1053,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [RH2] Uncle Boris' - Used Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[RH2] Uncle Boris' - Used Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RH2_ClassicFootlocker</li>
+									<li>RH2_MilitaryCrateDresser</li>
+									<li>RH2_LampEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[LTS]Furnishing</li>
+			<li>[RH2] Uncle Boris' - Used Furniture</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
@@ -33,9 +33,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -50,18 +50,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
-								</value>
-							</li>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
 								</value>
 							</li>
 						</operations>
@@ -74,9 +67,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AM_AncientLockerBank</li>
 								</value>
@@ -91,9 +84,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ClutterBasicLocker</li>
 									<li>ClutterCabinetA</li>
@@ -109,9 +102,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ADH_light_A_A_FURNITURE</li>
 									<li>ADH_light_B_A_FURNITURE</li>
@@ -145,9 +138,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
@@ -163,9 +156,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HSFancy_Tatami</li>
 								</value>
@@ -180,32 +173,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageDresser</li>
 									<li>CCot_CottageEndTable</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Gloomy Extra - Kitchen (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SM_Sink</li>
-									<li>SM_KitchenCupboard_A</li>
-									<li>SM_KitchenCupboard_B</li>
-									<li>SM_KitchenCupboard_C</li>
 								</value>
 							</li>
 						</operations>
@@ -218,9 +191,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -229,14 +202,6 @@
 									<li>WardrobeA</li>
 									<li>WardrobeB</li>
 									<li>GL_Teddy</li>
-								</value>
-							</li>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GL_Cupboard</li>
-									<li>GL_TablewareShelf</li>
 								</value>
 							</li>
 						</operations>
@@ -249,9 +214,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -260,14 +225,6 @@
 									<li>WardrobeA</li>
 									<li>WardrobeB</li>
 									<li>GL_Teddy</li>
-								</value>
-							</li>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GL_Cupboard</li>
-									<li>GL_TablewareShelf</li>
 								</value>
 							</li>
 						</operations>
@@ -280,9 +237,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -297,9 +254,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -314,9 +271,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RusticChest</li>
@@ -329,14 +286,6 @@
 									<li>DankPyon_RoyalDresser</li>
 								</value>
 							</li>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_RusticCookingTools</li>
-									<li>DankPyon_TableBaking</li>
-								</value>
-							</li>
 						</operations>
 					</match>
 				</li>
@@ -347,32 +296,15 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2Dresser</li>
 									<li>Anon2EndTable</li>
 									<li>Anon2RoyalEndTable</li>
 									<li>Anon2EndTableLight</li>
 									<li>Anon2RoyalEndTableLight</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>KitchenCupboard</li>
 								</value>
 							</li>
 						</operations>
@@ -385,9 +317,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -407,9 +339,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneEndTable</li>
@@ -431,9 +363,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -452,9 +384,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -470,9 +402,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SmallDresser</li>
 								</value>
@@ -487,9 +419,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TatesTinyFurnitureMod_Dresser</li>
 									<li>TatesTinyFurnitureMod_BedQuiltSingle</li>
@@ -506,9 +438,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -535,9 +467,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -550,23 +482,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== VGP Garden Gourmet ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>VGP Garden Gourmet</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CookingTools</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Vanilla Factions Expanded - Empire ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -574,9 +489,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
 								</value>
@@ -591,31 +506,14 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_LightEndTable</li>
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFE_KitchenSinkCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -628,9 +526,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -646,9 +544,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -664,9 +562,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VPE_Plant_Lullabloom</li>
 								</value>
@@ -681,9 +579,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>VaultWardrobeA</li>
@@ -697,24 +595,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WorkBench Support - More Linkable Facilities -</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_KitchenGoods</li>
-									<li>Link_KitchenBoost</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== [LSK]月兔扩展——基础家具和设施 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -722,9 +602,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LSK_SHS_Dresser</li>
 									<li>LSK_SHS_Bedside_Table</li>
@@ -735,18 +615,20 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>[LYN] Nanotech Overpower</li>
+						<li>[LTS]Furnishing</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>LYN_Nanocabinet</li>
+									<li>LTS_IdanasN</li>
+									<li>LTS_IdanasD</li>
+									<li>LTS_KoppangD</li>
 								</value>
 							</li>
 						</operations>
@@ -759,34 +641,14 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>
 									<li>MUS_Gothicstyle_Mirror</li>
 									<li>MUS_Gothicstyle_BedsideTable</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [RH2] Uncle Boris' - Used Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[RH2] Uncle Boris' - Used Furniture</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LTS_BedBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RH2_ClassicFootlocker</li>
-									<li>RH2_MilitaryCrateDresser</li>
-									<li>RH2_LampEndTable</li>
-									<li>RH2_DoubleWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -799,9 +661,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- LTS_BedBase -->
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Mediterranean_EndTable</li>
 									<li>Mediterranean_Wardrobe</li>

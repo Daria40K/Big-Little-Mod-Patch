@@ -2,37 +2,12 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Edo Themed Expansion</li>
+			<li>Super Size Bed!</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- HSKamado | HSElectricKamado -->
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-					<nomatch Class="PatchOperationConditional">
-						<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps</xpath>
-						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps</xpath>
-							<value>
-								<li Class="CompProperties_AffectedByFacilities">
-									<linkableFacilities />
-								</li>
-							</value>
-						</match>
-						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]</xpath>
-							<value>
-								<comps>
-									<li Class="CompProperties_AffectedByFacilities">
-										<linkableFacilities/>
-									</li>
-								</comps>
-							</value>
-						</nomatch>
-					</nomatch>
-				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -40,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
@@ -58,9 +33,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -75,18 +50,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
-								</value>
-							</li>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
 								</value>
 							</li>
 						</operations>
@@ -99,9 +67,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AM_AncientLockerBank</li>
 								</value>
@@ -116,9 +84,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ClutterBasicLocker</li>
 									<li>ClutterCabinetA</li>
@@ -134,9 +102,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ADH_light_A_A_FURNITURE</li>
 									<li>ADH_light_B_A_FURNITURE</li>
@@ -170,12 +138,29 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Edo Themed Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Edo Themed Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HSFancy_Tatami</li>
 								</value>
 							</li>
 						</operations>
@@ -188,32 +173,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageDresser</li>
 									<li>CCot_CottageEndTable</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Gloomy Extra - Kitchen (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SM_Sink</li>
-									<li>SM_KitchenCupboard_A</li>
-									<li>SM_KitchenCupboard_B</li>
-									<li>SM_KitchenCupboard_C</li>
 								</value>
 							</li>
 						</operations>
@@ -226,9 +191,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -237,14 +202,6 @@
 									<li>WardrobeA</li>
 									<li>WardrobeB</li>
 									<li>GL_Teddy</li>
-								</value>
-							</li>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GL_Cupboard</li>
-									<li>GL_TablewareShelf</li>
 								</value>
 							</li>
 						</operations>
@@ -257,9 +214,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -268,14 +225,6 @@
 									<li>WardrobeA</li>
 									<li>WardrobeB</li>
 									<li>GL_Teddy</li>
-								</value>
-							</li>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GL_Cupboard</li>
-									<li>GL_TablewareShelf</li>
 								</value>
 							</li>
 						</operations>
@@ -288,9 +237,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -305,9 +254,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -322,9 +271,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RusticChest</li>
@@ -338,31 +287,6 @@
 									<li>DankPyon_RoyalDresser</li>
 								</value>
 							</li>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_RusticCookingTools</li>
-									<li>DankPyon_TableBaking</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Archotech Garbage Reupload ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Archotech Garbage Reupload</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ArchoCookingAssistant</li>
-								</value>
-							</li>
 						</operations>
 					</match>
 				</li>
@@ -373,32 +297,15 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2Dresser</li>
 									<li>Anon2EndTable</li>
 									<li>Anon2RoyalEndTable</li>
 									<li>Anon2EndTableLight</li>
 									<li>Anon2RoyalEndTableLight</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>KitchenCupboard</li>
 								</value>
 							</li>
 						</operations>
@@ -411,9 +318,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -433,9 +340,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneEndTable</li>
@@ -457,9 +364,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PRF_QuartzPylon</li>
 								</value>
@@ -474,9 +381,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -496,9 +403,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>XJ3K7F9L_Wardrobe_I</li>
 									<li>XJ3K7F9L_Wardrobe_II</li>
@@ -516,9 +423,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -534,9 +441,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RVFFA_IlluminateEndTable</li>
 								</value>
@@ -551,9 +458,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>StuffedDollSmall</li>
 									<li>StuffedDollLarge</li>
@@ -569,9 +476,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TatesTinyFurnitureMod_Dresser</li>
 									<li>TatesTinyFurnitureMod_BedQuiltSingle</li>
@@ -588,9 +495,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -617,9 +524,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -632,23 +539,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== VGP Garden Gourmet ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>VGP Garden Gourmet</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CookingTools</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Vanilla Factions Expanded - Empire ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -656,9 +546,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
 								</value>
@@ -673,31 +563,14 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_LightEndTable</li>
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFE_KitchenSinkCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -710,9 +583,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -728,9 +601,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -746,9 +619,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VPE_Plant_Lullabloom</li>
 								</value>
@@ -763,9 +636,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>VaultWardrobeA</li>
@@ -779,24 +652,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WorkBench Support - More Linkable Facilities -</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_KitchenGoods</li>
-									<li>Link_KitchenBoost</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== [LSK]月兔扩展——基础家具和设施 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -804,9 +659,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LSK_SHS_Dresser</li>
 									<li>LSK_SHS_Bedside_Table</li>
@@ -824,38 +679,13 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
 									<li>LTS_KoppangD</li>
-								</value>
-							</li>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LTS_Sink</li>
-									<li>LTS_Fridge</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [LYN] Nanotech Overpower ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[LYN] Nanotech Overpower</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HSKamado | HSElectricKamado -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HSKamado" or defName="HSElectricKamado"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -868,9 +698,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>
@@ -888,9 +718,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RH2_ClassicFootlocker</li>
 									<li>RH2_MilitaryCrateDresser</li>
