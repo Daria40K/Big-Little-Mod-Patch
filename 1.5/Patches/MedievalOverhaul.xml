@@ -783,6 +783,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_ButchersBlock | DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_StoneOvenLarge | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock" or defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_StoneOvenLarge" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Dresser ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

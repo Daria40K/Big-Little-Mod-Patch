@@ -2,19 +2,19 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Comigo's Nutrition</li>
+			<li>Rimstro</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- COMIGO_SmallerElectricStove -->
+				<!-- RS_Microwave -->
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<xpath>Defs/ThingDef[defName="RS_Microwave"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
 					<nomatch Class="PatchOperationConditional">
-						<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps</xpath>
+						<xpath>Defs/ThingDef[defName="RS_Microwave"]/comps</xpath>
 						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps</xpath>
+							<xpath>Defs/ThingDef[defName="RS_Microwave"]/comps</xpath>
 							<value>
 								<li Class="CompProperties_AffectedByFacilities">
 									<linkableFacilities />
@@ -22,32 +22,7 @@
 							</value>
 						</match>
 						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]</xpath>
-							<value>
-								<comps>
-									<li Class="CompProperties_AffectedByFacilities">
-										<linkableFacilities/>
-									</li>
-								</comps>
-							</value>
-						</nomatch>
-					</nomatch>
-				</li>
-				<!-- COMIGO_SmallerBrewery -->
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-					<nomatch Class="PatchOperationConditional">
-						<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery"]/comps</xpath>
-						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery"]/comps</xpath>
-							<value>
-								<li Class="CompProperties_AffectedByFacilities">
-									<linkableFacilities />
-								</li>
-							</value>
-						</match>
-						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery"]</xpath>
+							<xpath>Defs/ThingDef[defName="RS_Microwave"]</xpath>
 							<value>
 								<comps>
 									<li Class="CompProperties_AffectedByFacilities">
@@ -65,9 +40,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerBrewery | COMIGO_SmallerButcherTable | COMIGO_SmallerElectricStove -->
+							<!-- RS_stove | RS_Doma | RS_stove | RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery" or defName="COMIGO_SmallerButcherTable" or defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_stove" or defName="RS_Doma" or defName="RS_stove" or defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -82,9 +57,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerButcherTable -->
+							<!-- RS_Doma | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerButcherTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Doma" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AT_Chart</li>
 								</value>
@@ -99,16 +74,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerBrewery -->
+							<!-- RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DA_MixingBarrel</li>
 								</value>
 							</li>
-							<!-- COMIGO_SmallerButcherTable -->
+							<!-- RS_Doma | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerButcherTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Doma" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DA_ButcheringTools</li>
 								</value>
@@ -123,9 +98,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerBrewery | COMIGO_SmallerElectricStove -->
+							<!-- RS_stove | RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery" or defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_stove" or defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SM_Sink</li>
 									<li>SM_KitchenCupboard_A</li>
@@ -133,9 +108,9 @@
 									<li>SM_KitchenCupboard_C</li>
 								</value>
 							</li>
-							<!-- COMIGO_SmallerButcherTable -->
+							<!-- RS_Doma | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerButcherTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Doma" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SM_Sink</li>
 									<li>SM_ButcherShelf</li>
@@ -154,9 +129,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerElectricStove -->
+							<!-- RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
@@ -172,9 +147,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerElectricStove -->
+							<!-- RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
@@ -190,9 +165,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerElectricStove -->
+							<!-- RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
 									<li>DankPyon_TableBaking</li>
@@ -208,31 +183,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerBrewery | COMIGO_SmallerButcherTable | COMIGO_SmallerElectricStove -->
+							<!-- RS_stove | RS_Doma | RS_stove | RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery" or defName="COMIGO_SmallerButcherTable" or defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_stove" or defName="RS_Doma" or defName="RS_stove" or defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>KitchenCupboard</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Rimstro ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rimstro</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- COMIGO_SmallerBrewery | COMIGO_SmallerButcherTable | COMIGO_SmallerElectricStove -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery" or defName="COMIGO_SmallerButcherTable" or defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RS_Counter</li>
-									<li>RS_stove</li>
-									<li>RS_KitchenHood</li>
-									<li>RS_TopShelf</li>
 								</value>
 							</li>
 						</operations>
@@ -245,9 +200,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerElectricStove -->
+							<!-- RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
 								</value>
@@ -262,9 +217,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerElectricStove -->
+							<!-- RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>
@@ -279,25 +234,25 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerBrewery -->
+							<!-- RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_BreweryGoods</li>
 									<li>Link_BreweryBoost</li>
 								</value>
 							</li>
-							<!-- COMIGO_SmallerButcherTable -->
+							<!-- RS_Doma | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerButcherTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Doma" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_ButcherGoods</li>
 									<li>Link_ButcherBoost</li>
 								</value>
 							</li>
-							<!-- COMIGO_SmallerElectricStove -->
+							<!-- RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_KitchenGoods</li>
 									<li>Link_KitchenBoost</li>
@@ -313,9 +268,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerElectricStove -->
+							<!-- RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
@@ -331,9 +286,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- COMIGO_SmallerBrewery | COMIGO_SmallerButcherTable | COMIGO_SmallerElectricStove -->
+							<!-- RS_stove | RS_Doma | RS_stove | RS_Blender | RS_Pot | RS_Microwave | RS_stove | RS_stove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="COMIGO_SmallerBrewery" or defName="COMIGO_SmallerButcherTable" or defName="COMIGO_SmallerElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RS_stove" or defName="RS_Doma" or defName="RS_stove" or defName="RS_Blender" or defName="RS_Pot" or defName="RS_Microwave" or defName="RS_stove" or defName="RS_stove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

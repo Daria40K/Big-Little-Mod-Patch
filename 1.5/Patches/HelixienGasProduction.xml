@@ -268,6 +268,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableStoveLargeGas -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStoveLargeGas"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tabletop Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
