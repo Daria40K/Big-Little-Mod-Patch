@@ -1089,6 +1089,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Cloth_Processing</li>
+									<li>OA_RK_Cloth_Processing_B</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

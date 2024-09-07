@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>VGP Garden Fabrics</li>
+			<li>[SYR] Prosthetic Table (Continued)</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,11 +32,54 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ambition of the Cosmic ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ambition of the Cosmic</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableSyrProsthetics -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unobtainer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_II</li>
+									<li>SNS_Linkable_CosmicDrawer_III</li>
+									<li>SNS_Linkable_CosmicCall_I</li>
+									<li>SNS_Linkable_CosmicCall_II</li>
+									<li>SNS_Linkable_CosmicCall_III</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Apini Playable Race, Continued! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Apini Playable Race, Continued!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableSyrProsthetics -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ApiniNectarStill</li>
+									<li>ApiniProstheticsTable</li>
+									<li>ApitechTable</li>
+									<li>ApitechSynthesizer</li>
 								</value>
 							</li>
 						</operations>
@@ -49,9 +92,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
 								</value>
@@ -66,28 +109,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Dark Ages : Medieval Tools ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Dark Ages : Medieval Tools</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableLoom | TableElecLoom -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DA_TailoringTools</li>
 								</value>
 							</li>
 						</operations>
@@ -100,20 +126,43 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>HobbesLink_Still</li>
+									<li>HobbesLink_Rotovape</li>
+									<li>HobbesLink_TabletopCentrifuge</li>
+									<li>HobbesLink_TabletopStove</li>
+									<li>HobbesLink_TabletopLabTubeRack</li>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
 									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
 									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
-									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Centrifuge</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
 									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableSyrProsthetics -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TableBionics</li>
+									<li>TableOrgans</li>
 								</value>
 							</li>
 						</operations>
@@ -126,9 +175,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
@@ -146,9 +195,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -165,9 +214,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -184,30 +233,13 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== RimThunder - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimThunder - Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableLoom | TableElecLoom -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RTC_ToolShelf</li>
-									<li>RTC_BlastCabinet</li>
+									<li>RLE_CMTCleaner</li>
 								</value>
 							</li>
 						</operations>
@@ -220,14 +252,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>ucp_measure</li>
-									<li>ucp_scraps</li>
-									<li>ucp_textileroll</li>
-									<li>ucp_pencil</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
 								</value>
 							</li>
 						</operations>
@@ -240,9 +274,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -257,9 +291,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -272,18 +306,18 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<!-- ========== Vanilla Genetics Expanded ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
+						<li>Vanilla Genetics Expanded</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>VFE_TailorCabinet</li>
+									<li>GR_NutrientVat</li>
 								</value>
 							</li>
 						</operations>
@@ -296,9 +330,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -314,9 +348,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -331,12 +365,10 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_TailorGoods</li>
-									<li>Link_TailorBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -350,29 +382,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TableLoom | TableElecLoom -->
+							<!-- TableSyrProsthetics -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableSyrProsthetics"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[OA]Ratkin Faction: Oberonia aurea</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableLoom | TableElecLoom -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OA_RK_Cloth_Processing</li>
-									<li>OA_RK_Cloth_Processing_B</li>
 								</value>
 							</li>
 						</operations>

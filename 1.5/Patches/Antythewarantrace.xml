@@ -732,6 +732,48 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Cloth_Processing</li>
+									<li>OA_RK_Cloth_Processing_B</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [sd] medicaddons (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[sd] medicaddons (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>sd_medicaddons_medieval_surg_washpan</li>
+									<li>sd_medicaddons_medieval_surg_instruments</li>
+									<li>sd_medicaddons_medieval_surg_lamp</li>
+									<li>sd_medicaddons_industrial_surg_instruments</li>
+									<li>sd_medicaddons_industrial_surg_lamp</li>
+									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+									<li>sd_medicaddons_spacer_surg_instruments</li>
+									<li>sd_medicaddons_spacer_surg_lamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

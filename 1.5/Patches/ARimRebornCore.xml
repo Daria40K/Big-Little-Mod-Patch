@@ -599,6 +599,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_GlamourTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_GlamourTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Cloth_Processing</li>
+									<li>OA_RK_Cloth_Processing_B</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

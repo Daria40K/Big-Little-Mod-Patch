@@ -515,6 +515,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Multi-Analyzers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Multi-Analyzers</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_ResearchBenchNecron -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HCTechprintAnalyzer</li>
+									<li>HCLargeMultiAnalyzer</li>
+									<li>HCShardMultiAnalyzer</li>
+									<li>HCArchoMultiAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Outer Rim - Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1115,6 +1135,33 @@
 								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RogueServitor_BladeCenter_BandNode</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_ResearchBenchNecron -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Rese_A</li>
+									<li>OA_RK_Rese_B</li>
+									<li>OA_RK_Rese_C</li>
+								</value>
+							</li>
+							<!-- EMGC_HandTailoringBench | EMGC_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Cloth_Processing</li>
+									<li>OA_RK_Cloth_Processing_B</li>
 								</value>
 							</li>
 						</operations>
