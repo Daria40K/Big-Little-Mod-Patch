@@ -698,4 +698,11 @@
 		<assemblyVersion>3.15.0</assemblyVersion>
 		<content>Added support for [sd] medicaddons (Continued), [OA]Ratkin Faction: Oberonia aurea, [SYR] Prosthetic Table (Continued) and More Multi-Analyzers</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.16.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_16_0</defName>
+		<assemblyVersion>3.16.0</assemblyVersion>
+		<content>Updated support for Expanded Materials - Metals</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
