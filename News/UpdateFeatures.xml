@@ -705,4 +705,11 @@
 		<assemblyVersion>3.16.0</assemblyVersion>
 		<content>Updated support for Expanded Materials - Metals</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.17.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_17_0</defName>
+		<assemblyVersion>3.17.0</assemblyVersion>
+		<content>Added support for Project RimFactory Revived</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
