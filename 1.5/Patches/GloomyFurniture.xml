@@ -444,15 +444,24 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>DankPyon_RoyalCloset</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RoyalDresser</li>
 									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RusticTallEndTable</li>
 									<li>DankPyon_RusticChest</li>
 									<li>DankPyon_MetalStrongbox</li>
 									<li>DankPyon_RoyalChest</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RusticCloset</li>
-									<li>DankPyon_RoyalCloset</li>
-									<li>DankPyon_RoyalEndTable</li>
-									<li>DankPyon_RoyalDresser</li>
+									<li>DankPyon_RusticCloset1x2c</li>
+								</value>
+							</li>
+							<!-- GL_TableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_TableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
 								</value>
 							</li>
 							<!-- RGK_FueledStove | GL_ElectricStove -->
@@ -467,34 +476,26 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>DankPyon_RusticBookshelf</li>
 									<li>DankPyon_RoyalBookshelf</li>
-									<li>DankPyon_Book_MilitaryBlades</li>
-									<li>DankPyon_Book_NobleBlades</li>
-									<li>DankPyon_Book_MilitaryMaces</li>
-									<li>DankPyon_Book_NobleMaces</li>
-									<li>DankPyon_Book_MilitaryPolearms</li>
-									<li>DankPyon_Book_NoblePolearms</li>
-									<li>DankPyon_Book_Crossbow</li>
-									<li>DankPyon_Book_HeavyCrossbow</li>
-									<li>DankPyon_Book_Steel</li>
-									<li>DankPyon_Book_Gunpowder</li>
-									<li>DankPyon_Book_Tar</li>
-									<li>DankPyon_Book_GreatBow</li>
-									<li>DankPyon_Book_WarBow</li>
-									<li>DankPyon_Book_IntermediateCooking</li>
-									<li>DankPyon_Book_AdvancedCooking</li>
-									<li>DankPyon_Book_BallistaRepeater</li>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RusticBookshelf1x2c</li>
 								</value>
 							</li>
-							<!-- GL_FueledSmithy | GL_ElectricSmithy | GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<!-- GL_FueledSmithy | GL_ElectricSmithy -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
 									<li>DankPyon_Grinder</li>
 									<li>DankPyon_Bellows</li>
+								</value>
+							</li>
+							<!-- GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -634,6 +635,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ponpeco Furnitures : Kids' Room ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ponpeco Furnitures : Kids' Room</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PFK_EndTable</li>
+									<li>PFK_Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RR's Dieselpunk Furniture pack ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -650,6 +669,26 @@
 									<li>RRDresser</li>
 									<li>RRFelzenEndtable</li>
 									<li>RRKarvinaEndtable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RR's Furniture pack-Collection Rapture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RR's Furniture pack-Collection Rapture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RRHeronaWardrobe</li>
+									<li>RRTaragonaWardrobe</li>
+									<li>RRDresser</li>
+									<li>RRDresserTwo</li>
 								</value>
 							</li>
 						</operations>
@@ -986,6 +1025,48 @@
 								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GL_TableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_TableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_CleaverRack</li>
+									<li>VFEM2_CarvingBoard</li>
+								</value>
+							</li>
+							<!-- RGK_SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_NotesStack</li>
+									<li>VFEM2_ResearchBoard</li>
+								</value>
+							</li>
+							<!-- GL_FueledSmithy | GL_ElectricSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+							<!-- GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_TailoringLoom</li>
+									<li>VFEM2_MannequinStand</li>
 								</value>
 							</li>
 						</operations>

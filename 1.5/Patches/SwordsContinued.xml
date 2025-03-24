@@ -259,6 +259,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LS_AncestralForge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LS_AncestralForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

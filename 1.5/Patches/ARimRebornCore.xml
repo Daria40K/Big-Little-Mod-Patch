@@ -237,9 +237,6 @@
 								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherMachineTable" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_GlamourTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_QuenchingBucket</li>
-									<li>DankPyon_Grinder</li>
-									<li>DankPyon_Bellows</li>
 								</value>
 							</li>
 						</operations>
@@ -440,6 +437,24 @@
 								<xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_GlamourTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_GlamourTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_TailoringLoom</li>
+									<li>VFEM2_MannequinStand</li>
 								</value>
 							</li>
 						</operations>

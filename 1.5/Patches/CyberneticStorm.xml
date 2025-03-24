@@ -173,9 +173,6 @@
 								<xpath>Defs/ThingDef[defName="CS_NanoTech_Bench" or defName="CS_MaterialsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_QuenchingBucket</li>
-									<li>DankPyon_Grinder</li>
-									<li>DankPyon_Bellows</li>
 								</value>
 							</li>
 						</operations>

@@ -114,9 +114,6 @@
 								<xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building" or defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_QuenchingBucket</li>
-									<li>DankPyon_Grinder</li>
-									<li>DankPyon_Bellows</li>
 								</value>
 							</li>
 						</operations>

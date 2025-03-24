@@ -438,29 +438,21 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>DankPyon_RusticBookshelf</li>
 									<li>DankPyon_RoyalBookshelf</li>
-									<li>DankPyon_Book_MilitaryBlades</li>
-									<li>DankPyon_Book_NobleBlades</li>
-									<li>DankPyon_Book_MilitaryMaces</li>
-									<li>DankPyon_Book_NobleMaces</li>
-									<li>DankPyon_Book_MilitaryPolearms</li>
-									<li>DankPyon_Book_NoblePolearms</li>
-									<li>DankPyon_Book_Crossbow</li>
-									<li>DankPyon_Book_HeavyCrossbow</li>
-									<li>DankPyon_Book_Steel</li>
-									<li>DankPyon_Book_Gunpowder</li>
-									<li>DankPyon_Book_Tar</li>
-									<li>DankPyon_Book_GreatBow</li>
-									<li>DankPyon_Book_WarBow</li>
-									<li>DankPyon_Book_IntermediateCooking</li>
-									<li>DankPyon_Book_AdvancedCooking</li>
-									<li>DankPyon_Book_BallistaRepeater</li>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RusticBookshelf1x2c</li>
 								</value>
 							</li>
-							<!-- EMNC_FabricationBenchNecron | EMGC_FabricationBench | EMNC_NecronSmelter | EMGC_FueledSmithy | EMGC_ElectricSmithy | EMGC_HandTailoringBench | EMGC_ElectricTailoringBench | EMNC_NecronTomb -->
+							<!-- EMNC_FabricationBenchNecron | EMGC_FabricationBench | EMGC_HandTailoringBench | EMGC_ElectricTailoringBench | EMNC_NecronTomb -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="EMNC_FabricationBenchNecron" or defName="EMGC_FabricationBench" or defName="EMNC_NecronSmelter" or defName="EMGC_FueledSmithy" or defName="EMGC_ElectricSmithy" or defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench" or defName="EMNC_NecronTomb"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="EMNC_FabricationBenchNecron" or defName="EMGC_FabricationBench" or defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench" or defName="EMNC_NecronTomb"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+							<!-- EMNC_NecronSmelter | EMGC_FueledSmithy | EMGC_ElectricSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_NecronSmelter" or defName="EMGC_FueledSmithy" or defName="EMGC_ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
@@ -907,6 +899,40 @@
 								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VED_AncientDatabase</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_ResearchBenchNecron -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_ResearchBenchNecron"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_NotesStack</li>
+									<li>VFEM2_ResearchBoard</li>
+								</value>
+							</li>
+							<!-- EMNC_NecronSmelter | EMGC_FueledSmithy | EMGC_ElectricSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_NecronSmelter" or defName="EMGC_FueledSmithy" or defName="EMGC_ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+							<!-- EMGC_HandTailoringBench | EMGC_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_TailoringLoom</li>
+									<li>VFEM2_MannequinStand</li>
 								</value>
 							</li>
 						</operations>

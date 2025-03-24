@@ -141,14 +141,21 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEA_VT_AncientSmeltStation | VFEA_VT_AncientSculptor -->
+							<!-- VFEA_VT_AncientSmeltStation -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSmeltStation" or defName="VFEA_VT_AncientSculptor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSmeltStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
 									<li>DankPyon_Grinder</li>
 									<li>DankPyon_Bellows</li>
+								</value>
+							</li>
+							<!-- VFEA_VT_AncientSculptor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSculptor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -290,6 +297,32 @@
 									<li>SadjuukLathe</li>
 									<li>SadjuukMilling</li>
 									<li>SadjuukAssemblyRobot</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFEA_VT_AncientSmeltStation -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSmeltStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+							<!-- VFEA_VT_AncientSculptor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSculptor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_ChiselRack</li>
+									<li>VFEM2_StoneClamp</li>
 								</value>
 							</li>
 						</operations>

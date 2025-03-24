@@ -137,9 +137,9 @@
 								<xpath>Defs/ThingDef[defName="ADVDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_QuenchingBucket</li>
-									<li>DankPyon_Grinder</li>
-									<li>DankPyon_Bellows</li>
+									<li>DankPyon_VialsTable</li>
+									<li>DankPyon_HerbTable</li>
+									<li>DankPyon_Alembic</li>
 								</value>
 							</li>
 						</operations>

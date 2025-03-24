@@ -163,9 +163,6 @@
 								<xpath>Defs/ThingDef[defName="OE_PersonaBondTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_QuenchingBucket</li>
-									<li>DankPyon_Grinder</li>
-									<li>DankPyon_Bellows</li>
 								</value>
 							</li>
 						</operations>

@@ -198,14 +198,21 @@
 									<li>DankPyon_TableBaking</li>
 								</value>
 							</li>
-							<!-- CA_ChemfuelSmelter | CA_ChemfuelSmithy | CA_ChemfuelCrematorium -->
+							<!-- CA_ChemfuelSmelter | CA_ChemfuelSmithy -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
 									<li>DankPyon_Grinder</li>
 									<li>DankPyon_Bellows</li>
+								</value>
+							</li>
+							<!-- CA_ChemfuelCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -412,6 +419,24 @@
 								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelSmelter | CA_ChemfuelSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
 								</value>
 							</li>
 						</operations>
@@ -940,6 +965,24 @@
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_FueledSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
 								</value>
 							</li>
 						</operations>

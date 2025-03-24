@@ -482,20 +482,39 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>DankPyon_RoyalCloset</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RoyalDresser</li>
 									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RusticTallEndTable</li>
 									<li>DankPyon_RusticChest</li>
 									<li>DankPyon_MetalStrongbox</li>
 									<li>DankPyon_RoyalChest</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RusticCloset</li>
-									<li>DankPyon_RoyalCloset</li>
-									<li>DankPyon_RoyalEndTable</li>
-									<li>DankPyon_RoyalDresser</li>
+									<li>DankPyon_RusticCloset1x2c</li>
 								</value>
 							</li>
-							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+							<!-- Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+									<li>DankPyon_VialsTable</li>
+									<li>DankPyon_HerbTable</li>
+									<li>DankPyon_Alembic</li>
+								</value>
+							</li>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
@@ -592,6 +611,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ponpeco Furnitures : Kids' Room ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ponpeco Furnitures : Kids' Room</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OutlandBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PFK_EndTable</li>
+									<li>PFK_Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RR's Dieselpunk Furniture pack ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -608,6 +645,26 @@
 									<li>RRDresser</li>
 									<li>RRFelzenEndtable</li>
 									<li>RRKarvinaEndtable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RR's Furniture pack-Collection Rapture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RR's Furniture pack-Collection Rapture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OutlandBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RRHeronaWardrobe</li>
+									<li>RRTaragonaWardrobe</li>
+									<li>RRDresser</li>
+									<li>RRDresserTwo</li>
 								</value>
 							</li>
 						</operations>
@@ -955,6 +1012,48 @@
 								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_StonePolisher</li>
+									<li>VFEM2_ArtToolStand</li>
+								</value>
+							</li>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+							<!-- Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_ChiselRack</li>
+									<li>VFEM2_StoneClamp</li>
+								</value>
+							</li>
+							<!-- Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_TailoringLoom</li>
+									<li>VFEM2_MannequinStand</li>
 								</value>
 							</li>
 						</operations>

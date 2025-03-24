@@ -712,4 +712,11 @@
 		<assemblyVersion>3.17.0</assemblyVersion>
 		<content>Added support for Project RimFactory Revived</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.18.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_18_0</defName>
+		<assemblyVersion>3.18.0</assemblyVersion>
+		<content>Added support for Lambda's Nuclear-Powered Stove, Ponpeco Furnitures : Kids' Room and RR's Furniture pack-Collection Rapture|Fixed support for Medieval Overhaul</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

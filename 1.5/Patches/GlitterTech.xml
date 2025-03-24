@@ -272,14 +272,21 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- PharmaTable | Matterfab | Electrolyzer | RobAssem -->
+							<!-- PharmaTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="PharmaTable" or defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_QuenchingBucket</li>
-									<li>DankPyon_Grinder</li>
-									<li>DankPyon_Bellows</li>
+									<li>DankPyon_VialsTable</li>
+									<li>DankPyon_HerbTable</li>
+									<li>DankPyon_Alembic</li>
+								</value>
+							</li>
+							<!-- Matterfab | Electrolyzer | RobAssem -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Matterfab" or defName="Electrolyzer" or defName="RobAssem"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -543,6 +550,23 @@
 								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEA_AncientVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ambTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SurgicalTools</li>
 								</value>
 							</li>
 						</operations>

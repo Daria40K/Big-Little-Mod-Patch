@@ -126,14 +126,21 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RK_FueledSmithy | RK_ElectricSmithy | RK_HandTailoringBench | RK_ElectricTailoringBench -->
+							<!-- RK_FueledSmithy | RK_ElectricSmithy -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="RK_FueledSmithy" or defName="RK_ElectricSmithy" or defName="RK_HandTailoringBench" or defName="RK_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RK_FueledSmithy" or defName="RK_ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 									<li>DankPyon_QuenchingBucket</li>
 									<li>DankPyon_Grinder</li>
 									<li>DankPyon_Bellows</li>
+								</value>
+							</li>
+							<!-- RK_HandTailoringBench | RK_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RK_HandTailoringBench" or defName="RK_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -289,6 +296,32 @@
 									<li>SadjuukLathe</li>
 									<li>SadjuukMilling</li>
 									<li>SadjuukAssemblyRobot</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RK_FueledSmithy | RK_ElectricSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RK_FueledSmithy" or defName="RK_ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+							<!-- RK_HandTailoringBench | RK_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RK_HandTailoringBench" or defName="RK_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_TailoringLoom</li>
+									<li>VFEM2_MannequinStand</li>
 								</value>
 							</li>
 						</operations>

@@ -275,15 +275,17 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>DankPyon_RoyalCloset</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RoyalDresser</li>
 									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RusticTallEndTable</li>
 									<li>DankPyon_RusticChest</li>
 									<li>DankPyon_MetalStrongbox</li>
 									<li>DankPyon_RoyalChest</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RusticCloset</li>
-									<li>DankPyon_RoyalCloset</li>
-									<li>DankPyon_RoyalEndTable</li>
-									<li>DankPyon_RoyalDresser</li>
+									<li>DankPyon_RusticCloset1x2c</li>
 								</value>
 							</li>
 						</operations>
@@ -356,6 +358,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ponpeco Furnitures : Kids' Room ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ponpeco Furnitures : Kids' Room</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PFK_EndTable</li>
+									<li>PFK_Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RR's Dieselpunk Furniture pack ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -372,6 +392,26 @@
 									<li>RRDresser</li>
 									<li>RRFelzenEndtable</li>
 									<li>RRKarvinaEndtable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RR's Furniture pack-Collection Rapture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RR's Furniture pack-Collection Rapture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RRHeronaWardrobe</li>
+									<li>RRTaragonaWardrobe</li>
+									<li>RRDresser</li>
+									<li>RRDresserTwo</li>
 								</value>
 							</li>
 						</operations>

@@ -156,9 +156,6 @@
 								<xpath>Defs/ThingDef[defName="GW_SM_TalonOfTheEmperor_ArmorBench" or defName="GW_SM_TalonOfTheEmperor_WeaponBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_QuenchingBucket</li>
-									<li>DankPyon_Grinder</li>
-									<li>DankPyon_Bellows</li>
 								</value>
 							</li>
 						</operations>
