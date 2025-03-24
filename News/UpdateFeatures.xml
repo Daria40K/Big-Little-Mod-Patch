@@ -719,4 +719,11 @@
 		<assemblyVersion>3.18.0</assemblyVersion>
 		<content>Added support for Lambda's Nuclear-Powered Stove, Ponpeco Furnitures : Kids' Room and RR's Furniture pack-Collection Rapture|Fixed support for Medieval Overhaul</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.19.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_19_0</defName>
+		<assemblyVersion>3.19.0</assemblyVersion>
+		<content>Added support for [1.5] Moyo - from the depth, More Archotech Garbage (Continued), Kraltech Industries Rebalanced and Paniel the Automata[1.5]|Updated support for Hospitals Extended, Biotechnology, Archotech Expanded, Combat Extended, Kraltech Industries, Kraltech Industries LITE and Malay Themed Expansion</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
