@@ -106,6 +106,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VCE_VegMilkExtractor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VCE_VegMilkExtractor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

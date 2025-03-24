@@ -202,6 +202,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Archotech Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Archotech Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -221,6 +238,23 @@
 								<xpath>Defs/ThingDef[defName="DrugLab" or defName="FabricationBench" or defName="TableMachining" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableStonecutter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Biotechnology ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotechnology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench | DrugLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench" or defName="DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Biotechnology_DNAHologram</li>
 								</value>
 							</li>
 						</operations>
@@ -730,6 +764,41 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Hospitals Extended ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Hospitals Extended</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench | SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench" or defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LabStation</li>
+									<li>LabTerminal</li>
+								</value>
+							</li>
+							<!-- HospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>sd_medicaddons_medieval_surg_washpan</li>
+									<li>sd_medicaddons_medieval_surg_instruments</li>
+									<li>sd_medicaddons_medieval_surg_lamp</li>
+									<li>sd_medicaddons_industrial_surg_instruments</li>
+									<li>sd_medicaddons_industrial_surg_lamp</li>
+									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+									<li>sd_medicaddons_spacer_surg_instruments</li>
+									<li>sd_medicaddons_spacer_surg_lamp</li>
+									<li>Wall_VitalsMonitor</li>
+									<li>Spacer_Wall_VitalsMonitor</li>
+									<li>CCP_LEDMedLight</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== MakaiTech ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -923,6 +992,30 @@
 									<li>DankPyon_QuenchingBucket</li>
 									<li>DankPyon_Grinder</li>
 									<li>DankPyon_Bellows</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
+								</value>
+							</li>
+							<!-- ElectricStove | FueledStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
 								</value>
 							</li>
 						</operations>
@@ -2230,6 +2323,23 @@
 								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VBY_XCom_ShadowChamber</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [1.5] Moyo - from the depth ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[1.5] Moyo - from the depth</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MoyoGRModule</li>
 								</value>
 							</li>
 						</operations>

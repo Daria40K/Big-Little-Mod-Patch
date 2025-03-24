@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Cyber Fauna 1.4</li>
+			<li>Combat Extended</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,31 +32,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Apini Playable Race, Continued! ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Apini Playable Race, Continued!</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- AnimalLab -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ApiniNectarStill</li>
-									<li>ApiniProstheticsTable</li>
-									<li>ApitechTable</li>
-									<li>ApitechSynthesizer</li>
 								</value>
 							</li>
 						</operations>
@@ -69,28 +49,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Biotechnology ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Biotechnology</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- AnimalLab -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Biotechnology_DNAHologram</li>
 								</value>
 							</li>
 						</operations>
@@ -103,9 +66,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -120,22 +83,17 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>HobbesLink_Still</li>
-									<li>HobbesLink_Rotovape</li>
-									<li>HobbesLink_TabletopCentrifuge</li>
-									<li>HobbesLink_TabletopStove</li>
-									<li>HobbesLink_TabletopLabTubeRack</li>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
 									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
 									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
-									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_LaserEngraver</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
 									<li>HobbesLink_Incinerator</li>
@@ -144,19 +102,18 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
+				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+						<li>GrimWorld 40,000 - Core Imperialis</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>TableBionics</li>
-									<li>TableOrgans</li>
+									<li>GW_VehicleToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -169,9 +126,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -186,9 +143,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -205,9 +162,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -224,9 +181,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -243,9 +200,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RTC_ToolShelf</li>
 									<li>RTC_BlastCabinet</li>
@@ -261,12 +218,14 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>ucp_vise</li>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
 									<li>ucp_aerosol</li>
 									<li>ucp_blueprint</li>
 									<li>ucp_wrench</li>
@@ -283,9 +242,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -300,9 +259,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -315,18 +274,35 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== Vanilla Genetics Expanded ========== -->
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Vanilla Genetics Expanded</li>
+						<li>Vanilla Furniture Expanded - Production</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>GR_NutrientVat</li>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AmmoBench | GunsmithingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -339,9 +315,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -357,9 +333,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -374,10 +350,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -391,9 +369,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AnimalLab -->
+							<!-- AmmoBench | GunsmithingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AnimalLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AmmoBench" or defName="GunsmithingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>

@@ -218,6 +218,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_ChemfuelStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Linkables ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -784,6 +801,23 @@
 									<li>DankPyon_QuenchingBucket</li>
 									<li>DankPyon_Grinder</li>
 									<li>DankPyon_Bellows</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
 								</value>
 							</li>
 						</operations>

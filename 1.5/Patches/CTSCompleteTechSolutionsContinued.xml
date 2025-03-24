@@ -98,6 +98,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Biotechnology ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotechnology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CTSAdvancedMedicineLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CTSAdvancedMedicineLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Biotechnology_DNAHologram</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -141,6 +158,33 @@
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
 									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Hospitals Extended ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Hospitals Extended</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CTSHiTechHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CTSHiTechHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>sd_medicaddons_medieval_surg_washpan</li>
+									<li>sd_medicaddons_medieval_surg_instruments</li>
+									<li>sd_medicaddons_medieval_surg_lamp</li>
+									<li>sd_medicaddons_industrial_surg_instruments</li>
+									<li>sd_medicaddons_industrial_surg_lamp</li>
+									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+									<li>sd_medicaddons_spacer_surg_instruments</li>
+									<li>sd_medicaddons_spacer_surg_lamp</li>
+									<li>Wall_VitalsMonitor</li>
+									<li>Spacer_Wall_VitalsMonitor</li>
+									<li>CCP_LEDMedLight</li>
 								</value>
 							</li>
 						</operations>

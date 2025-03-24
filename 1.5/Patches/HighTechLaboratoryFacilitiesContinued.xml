@@ -97,6 +97,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Archotech Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Archotech Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -109,6 +126,23 @@
 								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ResCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Biotechnology ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotechnology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Biotechnology_DNAHologram</li>
 								</value>
 							</li>
 						</operations>
@@ -289,6 +323,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Hospitals Extended ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Hospitals Extended</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LabStation</li>
+									<li>LabTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== MakaiTech ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -320,6 +372,23 @@
 									<li>DankPyon_RoyalBookshelf</li>
 									<li>DankPyon_RusticBookshelf</li>
 									<li>DankPyon_RusticBookshelf1x2c</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
 								</value>
 							</li>
 						</operations>
@@ -673,6 +742,23 @@
 								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VBY_XCom_ShadowChamber</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [1.5] Moyo - from the depth ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[1.5] Moyo - from the depth</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MoyoGRModule</li>
 								</value>
 							</li>
 						</operations>

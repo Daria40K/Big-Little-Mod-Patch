@@ -2,12 +2,37 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[KR] Star Wars Bacta</li>
+			<li>Hospitals Extended</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- AnimalMedic | AnimalMedicRobo -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -15,9 +40,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VitalsMonitor</li>
 								</value>
@@ -32,9 +57,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_RestoringPlush</li>
 								</value>
@@ -49,38 +74,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CTSAdvancedVitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Hospitals Extended ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Hospitals Extended</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- KR_Bacta -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>sd_medicaddons_medieval_surg_washpan</li>
-									<li>sd_medicaddons_medieval_surg_instruments</li>
-									<li>sd_medicaddons_medieval_surg_lamp</li>
-									<li>sd_medicaddons_industrial_surg_instruments</li>
-									<li>sd_medicaddons_industrial_surg_lamp</li>
-									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
-									<li>sd_medicaddons_spacer_surg_instruments</li>
-									<li>sd_medicaddons_spacer_surg_lamp</li>
-									<li>Wall_VitalsMonitor</li>
-									<li>Spacer_Wall_VitalsMonitor</li>
-									<li>CCP_LEDMedLight</li>
 								</value>
 							</li>
 						</operations>
@@ -93,9 +91,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalIV</li>
 								</value>
@@ -110,9 +108,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IV_Blood</li>
 									<li>IV_Nutrition</li>
@@ -137,9 +135,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MS_DStand</li>
 								</value>
@@ -154,9 +152,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SurgicalLamp</li>
 									<li>SurgicalInstruments</li>
@@ -172,9 +170,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_AirCondition</li>
 								</value>
@@ -189,9 +187,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukHospitalUpgradeBA</li>
 									<li>SadjuukHospitalUpgradeBB</li>
@@ -211,9 +209,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukSurgeryAA</li>
 									<li>SadjuukSurgeryAB</li>
@@ -231,9 +229,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>USH_LuciferiumMedicalSimulator</li>
 								</value>
@@ -248,9 +246,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEA_AncientVitalsMonitor</li>
 								</value>
@@ -265,9 +263,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEM2_SurgicalTools</li>
 								</value>
@@ -282,9 +280,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Facility_VitalsCentre</li>
 									<li>Facility_IVDrip</li>
@@ -300,12 +298,29 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vaultmedical</li>
 									<li>Vaultmedicallamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
 								</value>
 							</li>
 						</operations>
@@ -318,9 +333,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- KR_Bacta -->
+							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>sd_medicaddons_medieval_surg_washpan</li>
 									<li>sd_medicaddons_medieval_surg_instruments</li>

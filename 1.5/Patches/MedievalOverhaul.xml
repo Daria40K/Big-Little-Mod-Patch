@@ -108,6 +108,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Biotechnology ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotechnology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_AlchemyBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_AlchemyBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Biotechnology_DNAHologram</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Clutter Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -425,6 +442,23 @@
 								<value>
 									<li>DrugCabinet</li>
 									<li>DrugCabinetFridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_RusticCookingTable | DankPyon_StoneOven | DankPyon_StoneOvenLarge | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_RusticCookingTable" or defName="DankPyon_StoneOven" or defName="DankPyon_StoneOvenLarge" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
 								</value>
 							</li>
 						</operations>

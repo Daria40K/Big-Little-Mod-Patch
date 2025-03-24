@@ -399,6 +399,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Hospitals Extended ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Hospitals Extended</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LabStation</li>
+									<li>LabTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -496,6 +514,23 @@
 								<xpath>Defs/ThingDef[defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_FueledStove | GL_ElectricStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_FueledStove" or defName="GL_ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
 								</value>
 							</li>
 						</operations>
