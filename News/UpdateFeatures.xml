@@ -726,4 +726,11 @@
 		<assemblyVersion>3.19.0</assemblyVersion>
 		<content>Added support for [1.5] Moyo - from the depth, More Archotech Garbage (Continued), Kraltech Industries Rebalanced and Paniel the Automata[1.5]|Updated support for Hospitals Extended, Biotechnology, Archotech Expanded, Combat Extended, Kraltech Industries, Kraltech Industries LITE and Malay Themed Expansion</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.20.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_20_0</defName>
+		<assemblyVersion>3.20.0</assemblyVersion>
+		<content>Added support for Jewelry and Omni's Small Workbenches</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
