@@ -397,6 +397,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RR's Furniture pack-Collection Longyun ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RR's Furniture pack-Collection Longyun</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LSK_RB_BasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LSK_RB_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RRLincangDresser</li>
+									<li>RRDalianWardrobe</li>
+									<li>RRLijiangEndtable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RR's Furniture pack-Collection Rapture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -709,6 +728,24 @@
 									<li>Mediterranean_Wardrobe</li>
 									<li>Mediterranean_Drape_a</li>
 									<li>Mediterranean_Drape_b</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LSK_RB_BasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LSK_RB_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ChineseBedsideTable</li>
+									<li>HX_ChineseDressingTable</li>
 								</value>
 							</li>
 						</operations>

@@ -1602,6 +1602,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Omni_HiTechResearchBenchSmol | Omni_SimpleResearchBenchSmol -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Omni_HiTechResearchBenchSmol" or defName="Omni_SimpleResearchBenchSmol"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ChineseBookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>
