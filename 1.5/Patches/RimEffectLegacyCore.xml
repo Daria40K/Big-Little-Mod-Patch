@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>UN-Furniture (Continued)</li>
+			<li>Rim-Effect Legacy: Core</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,24 +15,31 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MultiAnalyzer</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_ManufacturingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+							<!-- RE_PrefabMedicalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VitalsMonitor</li>
 								</value>
@@ -47,9 +54,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -64,9 +71,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ServerRack</li>
 								</value>
@@ -81,9 +88,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AIUpliftAssistantAUA</li>
 								</value>
@@ -98,9 +105,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_WallPapersA</li>
 									<li>AKN_WallPapersB</li>
@@ -109,16 +116,23 @@
 									<li>AKN_PaperNotesC</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_ManufacturingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+							<!-- RE_PrefabMedicalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_RestoringPlush</li>
 								</value>
@@ -133,9 +147,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AM_AncientLockerBank</li>
 								</value>
@@ -150,9 +164,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchoMultiAnalyzer</li>
 								</value>
@@ -167,9 +181,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchoAnalyzer</li>
 								</value>
@@ -184,11 +198,18 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ResCogitator</li>
+								</value>
+							</li>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
 								</value>
 							</li>
 						</operations>
@@ -201,9 +222,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Biotechnology_DNAHologram</li>
 								</value>
@@ -218,9 +239,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>BrainInAJar</li>
 									<li>DualBrain</li>
@@ -238,9 +259,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CTSAdvancedVitalsMonitor</li>
 								</value>
@@ -255,9 +276,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ClutterBasicLocker</li>
 									<li>ClutterCabinetA</li>
@@ -273,14 +294,31 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PotatoBattery</li>
 									<li>HeartInAJar</li>
 									<li>CC_RoyalJelly</li>
 									<li>Thrumbone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
 								</value>
 							</li>
 						</operations>
@@ -293,9 +331,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ADH_light_A_A_FURNITURE</li>
 									<li>ADH_light_B_A_FURNITURE</li>
@@ -329,9 +367,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ResearchReactor</li>
 									<li>WeaponsBench</li>
@@ -348,9 +386,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricAuroraCore</li>
 								</value>
@@ -365,9 +403,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
@@ -383,9 +421,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HSFancy_Tatami</li>
 								</value>
@@ -400,9 +438,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageDresser</li>
 									<li>CCot_CottageEndTable</li>
@@ -418,9 +456,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_PersonalComputer</li>
 									<li>HobbesLink_Still</li>
@@ -439,6 +477,22 @@
 									<li>HobbesLink_Incinerator</li>
 								</value>
 							</li>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Lathe</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -449,16 +503,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Bookshelf</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -479,16 +533,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Bookshelf</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -509,11 +563,18 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_Cogitator</li>
+								</value>
+							</li>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_VehicleToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -526,9 +587,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HALO_UNSC_ResearchTerminal</li>
 								</value>
@@ -543,9 +604,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LabStation</li>
 									<li>LabTerminal</li>
@@ -561,17 +622,17 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LabStation</li>
 									<li>LabTerminal</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>sd_medicaddons_medieval_surg_washpan</li>
 									<li>sd_medicaddons_medieval_surg_instruments</li>
@@ -596,9 +657,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Makai_Powerlink_Relay</li>
 								</value>
@@ -613,9 +674,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -630,9 +691,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -647,9 +708,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalIV</li>
 								</value>
@@ -664,9 +725,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IV_Blood</li>
 									<li>IV_Nutrition</li>
@@ -691,9 +752,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IV_Blood</li>
 									<li>IV_Nutrition</li>
@@ -718,9 +779,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MS_DStand</li>
 								</value>
@@ -735,18 +796,18 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RoyalBookshelf</li>
 									<li>DankPyon_RusticBookshelf</li>
 									<li>DankPyon_RusticBookshelf1x2c</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RoyalCloset</li>
 									<li>DankPyon_RoyalEndTable</li>
@@ -761,6 +822,13 @@
 									<li>DankPyon_RusticCloset1x2c</li>
 								</value>
 							</li>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
@@ -771,9 +839,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchoDecipherAI</li>
 								</value>
@@ -788,16 +856,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2FileCabinet</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2Dresser</li>
 									<li>Anon2EndTable</li>
@@ -816,27 +884,29 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AdvancedMultiAnalyzer</li>
 									<li>ToolCabinetC</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_ManufacturingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+							<!-- RE_PrefabMedicalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SurgicalLamp</li>
 									<li>SurgicalInstruments</li>
-								</value>
-							</li>
-							<!-- SadjuukResearchAA | SadjuukResearchAB -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinetC</li>
 								</value>
 							</li>
 						</operations>
@@ -849,9 +919,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HCTechprintAnalyzer</li>
 									<li>HCLargeMultiAnalyzer</li>
@@ -869,9 +939,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_HypertechTerminal</li>
 									<li>OuterRim_HypertechTerminalWide</li>
@@ -887,9 +957,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -902,6 +972,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_BasicWorkbench</li>
+									<li>Outland_Forge</li>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Outland - Furniture & Decor ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -909,17 +998,17 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneBookshelf</li>
 									<li>Outland_Bookshelf</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneEndTable</li>
@@ -941,9 +1030,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PFK_EndTable</li>
 									<li>PFK_Dresser</li>
@@ -959,9 +1048,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -980,9 +1069,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRLincangDresser</li>
 									<li>RRDalianWardrobe</li>
@@ -999,9 +1088,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -1019,40 +1108,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_AsariTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Rim-Effect Legacy: Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rim-Effect Legacy: Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SadjuukResearchAC -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RE_AllianceTerminal</li>
-								</value>
-							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RE_PrefabDresser</li>
-									<li>RE_PrefabEndTable</li>
-									<li>RE_PrefabEndTableWithLamp</li>
-									<li>RE_PrefabBedsideTable</li>
-									<li>RE_PrefabBedsideTableLamp</li>
-									<li>RE_PrefabWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1065,9 +1125,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_AsariTerminal</li>
 								</value>
@@ -1082,16 +1142,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_AllianceTerminal</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -1111,19 +1171,56 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_AirCondition</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -1136,9 +1233,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RP_MechanicalCalculator</li>
 									<li>RP_DifferenceEngine</li>
@@ -1146,15 +1243,6 @@
 									<li>RP_Server</li>
 									<li>RP_SuperComputer</li>
 									<li>Rimputer_quantumcomputer</li>
-								</value>
-							</li>
-							<!-- SadjuukResearchAA | SadjuukResearchAB -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RP_MechanicalCalculator</li>
-									<li>RP_DifferenceEngine</li>
-									<li>RP_TapeStorage</li>
 								</value>
 							</li>
 						</operations>
@@ -1167,9 +1255,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RP_MechanicalCalculator</li>
 									<li>RP_DifferenceEngine</li>
@@ -1177,15 +1265,6 @@
 									<li>RP_Server</li>
 									<li>RP_SuperComputer</li>
 									<li>Rimputer_quantumcomputer</li>
-								</value>
-							</li>
-							<!-- SadjuukResearchAA | SadjuukResearchAB -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RP_MechanicalCalculator</li>
-									<li>RP_DifferenceEngine</li>
-									<li>Colony Tape Storage</li>
 								</value>
 							</li>
 						</operations>
@@ -1198,9 +1277,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchotechUplink</li>
 								</value>
@@ -1215,9 +1294,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SmallDresser</li>
 								</value>
@@ -1232,9 +1311,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ComputingSystemSW</li>
 								</value>
@@ -1249,11 +1328,51 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -1266,9 +1385,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TatesTinyFurnitureMod_Dresser</li>
 									<li>TatesTinyFurnitureMod_BedQuiltSingle</li>
@@ -1285,13 +1404,35 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LostAnalyzer</li>
 									<li>BrutalAnalyzer</li>
 									<li>MechaAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukAssemblyRobot</li>
 								</value>
 							</li>
 						</operations>
@@ -1304,9 +1445,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukResearchUpgradeAA</li>
 									<li>SadjuukResearchUpgradeBA</li>
@@ -1318,9 +1459,9 @@
 									<li>SadjuukResearchUpgradeCD</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -1337,9 +1478,9 @@
 									<li>SadjuukBedroomUpgradeCD</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukHospitalUpgradeBA</li>
 									<li>SadjuukHospitalUpgradeBB</li>
@@ -1349,16 +1490,46 @@
 									<li>SadjuukHospitalUpgradeCE</li>
 								</value>
 							</li>
-							<!-- SadjuukResearchAA | SadjuukResearchAB -->
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>SadjuukResearchUpgradeAA</li>
-									<li>SadjuukResearchUpgradeBA</li>
-									<li>SadjuukResearchUpgradeBB</li>
-									<li>SadjuukResearchUpgradeBC</li>
-									<li>SadjuukResearchUpgradeCA</li>
-									<li>SadjuukResearchUpgradeCB</li>
+									<li>SadjuukResearchBA</li>
+									<li>SadjuukResearchBB</li>
+									<li>SadjuukResearchBC</li>
+									<li>SadjuukResearchBD</li>
+								</value>
+							</li>
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukFurnitureAA</li>
+									<li>SadjuukFurnitureAB</li>
+									<li>SadjuukFurnitureAC</li>
+									<li>SadjuukFurnitureBA</li>
+									<li>SadjuukFurnitureBB</li>
+									<li>SadjuukFurnitureBC</li>
+								</value>
+							</li>
+							<!-- RE_PrefabMedicalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukSurgeryAA</li>
+									<li>SadjuukSurgeryAB</li>
+									<li>SadjuukSurgeryAC</li>
+									<li>SadjuukSurgeryAD</li>
 								</value>
 							</li>
 						</operations>
@@ -1371,9 +1542,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>USH_LuciferiumMedicalSimulator</li>
 								</value>
@@ -1388,9 +1559,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VED_AncientDatabase</li>
 								</value>
@@ -1405,9 +1576,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEA_AncientVitalsMonitor</li>
 								</value>
@@ -1422,9 +1593,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
 								</value>
@@ -1439,17 +1610,17 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEM2_NotesStack</li>
 									<li>VFEM2_ResearchBoard</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEM2_SurgicalTools</li>
 								</value>
@@ -1464,16 +1635,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Misc_FileCabinet</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_LightEndTable</li>
 									<li>Table_Wardrobe</li>
@@ -1491,19 +1662,36 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Facility_ResearchCounter</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Facility_VitalsCentre</li>
 									<li>Facility_IVDrip</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_FabricationCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -1516,9 +1704,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -1534,9 +1722,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -1552,11 +1740,28 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VPE_Plant_Lullabloom</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -1569,9 +1774,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>VaultWardrobeA</li>
@@ -1582,12 +1787,37 @@
 									<li>vt_luxcommode</li>
 								</value>
 							</li>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_ManufacturingBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+							<!-- RE_PrefabMedicalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vaultmedical</li>
 									<li>Vaultmedicallamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
 								</value>
 							</li>
 						</operations>
@@ -1600,12 +1830,20 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_ResearchGoods</li>
 									<li>Link_ResearchBoost</li>
+								</value>
+							</li>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_FabricationBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -1618,9 +1856,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VBY_XCom_ShadowChamber</li>
 								</value>
@@ -1635,9 +1873,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MoyoGRModule</li>
 								</value>
@@ -1652,9 +1890,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalStandDroid</li>
 								</value>
@@ -1669,9 +1907,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LSK_SHS_Dresser</li>
 									<li>LSK_SHS_Bedside_Table</li>
@@ -1689,13 +1927,30 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
 									<li>LTS_KoppangD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -1708,9 +1963,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>
@@ -1728,9 +1983,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RogueServitor_BladeCenter_BandNode</li>
 								</value>
@@ -1745,9 +2000,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OA_RK_Rese_A</li>
 									<li>OA_RK_Rese_B</li>
@@ -1764,9 +2019,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RH2_ClassicFootlocker</li>
 									<li>RH2_MilitaryCrateDresser</li>
@@ -1784,9 +2039,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukSurgeryBaseB -->
+							<!-- RE_PrefabMedicalBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabMedicalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>sd_medicaddons_medieval_surg_washpan</li>
 									<li>sd_medicaddons_medieval_surg_instruments</li>
@@ -1808,9 +2063,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Mediterranean_EndTable</li>
 									<li>Mediterranean_Wardrobe</li>
@@ -1828,16 +2083,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SadjuukResearchAC | SadjuukResearchAA | SadjuukResearchAB -->
+							<!-- RE_SpacerTechResearchBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SadjuukResearchAC" or defName="SadjuukResearchAA" or defName="SadjuukResearchAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_SpacerTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ChineseBookshelf</li>
 								</value>
 							</li>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<!-- RE_PrefabBed | RE_PrefabDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="RE_PrefabBed" or defName="RE_PrefabDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ChineseBedsideTable</li>
 									<li>HX_ChineseDressingTable</li>
