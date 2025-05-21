@@ -182,6 +182,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== IV Drug Infuser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>IV Drug Infuser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MSMedicalMat | MSMedicalMatSpacer | MSMedicalMatUltra | MSMedicalMatEarly -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MSMedicalMat" or defName="MSMedicalMatSpacer" or defName="MSMedicalMatUltra" or defName="MSMedicalMatEarly"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IVDrugInfuser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical IV ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

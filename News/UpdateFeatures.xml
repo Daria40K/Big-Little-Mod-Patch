@@ -747,4 +747,11 @@
 		<assemblyVersion>3.22.0</assemblyVersion>
 		<content>Added support for Medical IVs Fork, Rim-Effect Legacy: Core, Rim-Effect Legacy: Asari and Reapers, Rim-Effect Legacy: Extended Cut, Rim-Effect Renegade: Core, Rim-Effect Renegade: Asari and Reapers, Rim-Effect Renegade: Extended Cut, Rhino's WORKBENCH., GrimWorld 40,000 - Aspectus Imperialis, GrimWorld 40,000 - Sabbat's Blight and [RH2] Helldivers: Super Firearms</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.23.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_23_0</defName>
+		<assemblyVersion>3.23.0</assemblyVersion>
+		<content>Added support for IV Drug Infuser</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

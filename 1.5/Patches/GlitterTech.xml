@@ -240,6 +240,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== IV Drug Infuser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>IV Drug Infuser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ambTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IVDrugInfuser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical IV ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

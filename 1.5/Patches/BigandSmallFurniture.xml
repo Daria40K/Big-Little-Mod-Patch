@@ -86,6 +86,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== IV Drug Infuser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>IV Drug Infuser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BS_MegaUniversalBed | BS_BigHospitalBed | BS_SmolHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="BS_MegaUniversalBed" or defName="BS_BigHospitalBed" or defName="BS_SmolHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IVDrugInfuser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical IV ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
