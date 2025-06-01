@@ -230,6 +230,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== HRG164hjo's PGI Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>HRG164hjo's PGI Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SSB_SuperBedBase | SSB_SuperRoyalBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SSB_SuperBedBase" or @Name="SSB_SuperRoyalBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PGI_PerfectEndtable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

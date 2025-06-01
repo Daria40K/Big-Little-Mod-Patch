@@ -2,12 +2,37 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Clutter Furniture</li>
+			<li>HRG164hjo's PGI Overpower</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- PGI_PSpotBase -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -15,17 +40,17 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
 								</value>
 							</li>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -40,9 +65,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -57,16 +82,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
 							</li>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -81,9 +106,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AM_AncientLockerBank</li>
 								</value>
@@ -98,11 +123,29 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Clutter Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Clutter Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- PGI_PBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ClutterBasicLocker</li>
+									<li>ClutterCabinetA</li>
 								</value>
 							</li>
 						</operations>
@@ -115,9 +158,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -132,9 +175,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ADH_light_A_A_FURNITURE</li>
 									<li>ADH_light_B_A_FURNITURE</li>
@@ -168,9 +211,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
@@ -186,9 +229,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HSFancy_Tatami</li>
 								</value>
@@ -203,9 +246,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageDresser</li>
 									<li>CCot_CottageEndTable</li>
@@ -221,9 +264,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
@@ -247,9 +290,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -270,9 +313,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -286,40 +329,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SteelRefiner -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_VehicleToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== HRG164hjo's PGI Overpower ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>HRG164hjo's PGI Overpower</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>PGI_PerfectEndtable</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Mechalit Core v2 (1.4) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -327,9 +336,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -344,9 +353,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -361,9 +370,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RoyalCloset</li>
 									<li>DankPyon_RoyalEndTable</li>
@@ -378,9 +387,9 @@
 									<li>DankPyon_RusticCloset1x2c</li>
 								</value>
 							</li>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -395,9 +404,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2Dresser</li>
 									<li>Anon2EndTable</li>
@@ -416,9 +425,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -435,9 +444,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -457,9 +466,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -476,9 +485,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneEndTable</li>
@@ -500,9 +509,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PFK_EndTable</li>
 									<li>PFK_Dresser</li>
@@ -518,9 +527,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -539,9 +548,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRLincangDresser</li>
 									<li>RRDalianWardrobe</li>
@@ -558,9 +567,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -578,9 +587,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -600,9 +609,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -622,9 +631,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -640,18 +649,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RLE_PowerStabilizer</li>
-									<li>RLE_IntegratedManagementDevice</li>
-									<li>RLE_CMTCleaner</li>
-								</value>
-							</li>
-							<!-- FurnitureAssembler -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -667,9 +667,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RTC_ToolShelf</li>
 									<li>RTC_BlastCabinet</li>
@@ -685,9 +685,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SmallDresser</li>
 								</value>
@@ -702,22 +702,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_toolbox</li>
-									<li>ucp_screwdrivers</li>
-									<li>ucp_hammer</li>
-									<li>ucp_aerosol</li>
-									<li>ucp_blueprint</li>
-									<li>ucp_wrench</li>
-									<li>ucp_roboarm</li>
-								</value>
-							</li>
-							<!-- FurnitureAssembler -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
@@ -733,9 +720,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -750,9 +737,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TatesTinyFurnitureMod_Dresser</li>
 									<li>TatesTinyFurnitureMod_BedQuiltSingle</li>
@@ -769,9 +756,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -791,9 +778,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -820,9 +807,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -842,9 +829,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
 								</value>
@@ -859,31 +846,14 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_LightEndTable</li>
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SteelRefiner -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFE_FabricationCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -896,9 +866,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -914,9 +884,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -932,28 +902,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VPE_Plant_Lullabloom</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Vehicles Expanded ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Vehicles Expanded</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SteelRefiner -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VVE_GarageCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -966,9 +919,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>VaultWardrobeA</li>
@@ -979,9 +932,9 @@
 									<li>vt_luxcommode</li>
 								</value>
 							</li>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -997,9 +950,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -1014,17 +967,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_FabricationBoost</li>
-									<li>Link_UniversalCabinet</li>
-								</value>
-							</li>
-							<!-- FurnitureAssembler -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
 								</value>
@@ -1039,9 +984,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LSK_SHS_Dresser</li>
 									<li>LSK_SHS_Bedside_Table</li>
@@ -1059,9 +1004,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
@@ -1078,9 +1023,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SteelRefiner | FurnitureAssembler -->
+							<!-- PGI_PSpotBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SteelRefiner" or defName="FurnitureAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PSpotBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>
@@ -1095,9 +1040,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>
@@ -1115,9 +1060,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RH2_ClassicFootlocker</li>
 									<li>RH2_MilitaryCrateDresser</li>
@@ -1135,9 +1080,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Mediterranean_EndTable</li>
 									<li>Mediterranean_Wardrobe</li>
@@ -1155,9 +1100,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ClutterSleepingPod | ClutterDoubleEkieBed | ClutterSlabBed | ClutterDoubleSlabBed -->
+							<!-- PGI_PBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="PGI_PBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ChineseBedsideTable</li>
 									<li>HX_ChineseDressingTable</li>

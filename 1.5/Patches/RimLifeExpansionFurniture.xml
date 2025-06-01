@@ -261,6 +261,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== HRG164hjo's PGI Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>HRG164hjo's PGI Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PGI_PerfectEndtable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Hospitals Extended ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

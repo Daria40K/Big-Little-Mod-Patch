@@ -754,4 +754,11 @@
 		<assemblyVersion>3.23.0</assemblyVersion>
 		<content>Added support for IV Drug Infuser</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v3.24.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_3_24_0</defName>
+		<assemblyVersion>3.24.0</assemblyVersion>
+		<content>Added support for HRG164hjo's PGI Overpower and [WYD] Advanced Medicine</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
