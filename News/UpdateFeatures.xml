@@ -761,4 +761,10 @@
 		<assemblyVersion>3.24.0</assemblyVersion>
 		<content>Added support for HRG164hjo's PGI Overpower and [WYD] Advanced Medicine</content>
 	</HugsLib.UpdateFeatureDef>
+	<!-- v4.0.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_0_0</defName>
+		<assemblyVersion>4.0.0</assemblyVersion>
+		<content>Rimworld v1.5: Added support for Reel's Expanded Storage|Rimworld v1.6: Added support for GloomyFurniture (Continued), RR's Furniture pack-Collection Longyun, RR's Furniture pack-Collection Rapture, VGP Garden Canning and GP Garden Gourmet</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
