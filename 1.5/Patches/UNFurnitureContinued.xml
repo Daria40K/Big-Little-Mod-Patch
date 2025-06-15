@@ -266,6 +266,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Commercial Server ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Commercial Server</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ServerSilver</li>
+									<li>ServerGold</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Curious Curios ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -437,6 +455,23 @@
 									<li>HobbesLink_Autoclave</li>
 									<li>HobbesLink_Centrifuge</li>
 									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GiTS Cybernetic Equipment ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GiTS Cybernetic Equipment</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukSurgeryBaseB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>gitsAnchorConsole</li>
 								</value>
 							</li>
 						</operations>

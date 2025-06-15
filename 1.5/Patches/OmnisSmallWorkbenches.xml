@@ -231,6 +231,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Commercial Server ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Commercial Server</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Omni_HiTechResearchBenchSmol -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Omni_HiTechResearchBenchSmol"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ServerSilver</li>
+									<li>ServerGold</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Curious Curios ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

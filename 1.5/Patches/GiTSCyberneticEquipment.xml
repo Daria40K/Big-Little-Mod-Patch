@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Glitter Tech Classic (No Surgery)</li>
+			<li>GiTS Cybernetic Equipment</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,18 +15,18 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VitalsMonitor</li>
-								</value>
-							</li>
-							<!-- GTBenchBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
+								</value>
+							</li>
+							<!-- gitsCyberbodyAnchor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VitalsMonitor</li>
 								</value>
 							</li>
 						</operations>
@@ -39,18 +39,38 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+							<!-- gitsCyberbodyAnchor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_RestoringPlush</li>
 								</value>
 							</li>
-							<!-- GTBenchBase -->
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Apini Playable Race, Continued! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Apini Playable Race, Continued!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>AKN_MotivatingPlush</li>
+									<li>ApiniNectarStill</li>
+									<li>ApiniProstheticsTable</li>
+									<li>ApitechTable</li>
+									<li>ApitechSynthesizer</li>
 								</value>
 							</li>
 						</operations>
@@ -63,11 +83,28 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Biotechnology ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotechnology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- gitsCyberneticsWorkbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Biotechnology_DNAHologram</li>
 								</value>
 							</li>
 						</operations>
@@ -80,9 +117,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CTSAdvancedVitalsMonitor</li>
 								</value>
@@ -97,9 +134,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -114,17 +151,22 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>HobbesLink_Still</li>
+									<li>HobbesLink_Rotovape</li>
+									<li>HobbesLink_TabletopCentrifuge</li>
+									<li>HobbesLink_TabletopStove</li>
+									<li>HobbesLink_TabletopLabTubeRack</li>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
 									<li>HobbesLink_RobotAssistant</li>
 									<li>HobbesLink_Lathe</li>
 									<li>HobbesLink_Spacer_Lathe</li>
 									<li>HobbesLink_Vice</li>
-									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_Centrifuge</li>
 									<li>HobbesLink_IndustrialOven</li>
 									<li>HobbesLink_ConveyorBelt</li>
 									<li>HobbesLink_Incinerator</li>
@@ -133,18 +175,19 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== GiTS Cybernetic Equipment ========== -->
+				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>GiTS Cybernetic Equipment</li>
+						<li>Expanded Prosthetics and Organ Engineering - Forked</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>gitsAnchorConsole</li>
+									<li>TableBionics</li>
+									<li>TableOrgans</li>
 								</value>
 							</li>
 						</operations>
@@ -157,9 +200,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>sd_medicaddons_medieval_surg_washpan</li>
 									<li>sd_medicaddons_medieval_surg_instruments</li>
@@ -184,9 +227,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IVDrugInfuser</li>
 								</value>
@@ -201,9 +244,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalIV</li>
 								</value>
@@ -218,9 +261,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IV_Blood</li>
 									<li>IV_Nutrition</li>
@@ -245,9 +288,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IV_Blood</li>
 									<li>IV_Nutrition</li>
@@ -272,9 +315,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MS_DStand</li>
 								</value>
@@ -289,9 +332,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -306,21 +349,21 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SurgicalLamp</li>
-									<li>SurgicalInstruments</li>
-								</value>
-							</li>
-							<!-- GTBenchBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
+								</value>
+							</li>
+							<!-- gitsCyberbodyAnchor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SurgicalLamp</li>
+									<li>SurgicalInstruments</li>
 								</value>
 							</li>
 						</operations>
@@ -333,9 +376,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -352,9 +395,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_AirCondition</li>
 								</value>
@@ -369,12 +412,13 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
 								</value>
 							</li>
 						</operations>
@@ -387,9 +431,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RTC_ToolShelf</li>
 									<li>RTC_BlastCabinet</li>
@@ -405,12 +449,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
 								</value>
 							</li>
 						</operations>
@@ -423,9 +471,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -440,9 +488,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -462,9 +510,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukHospitalUpgradeBA</li>
 									<li>SadjuukHospitalUpgradeBB</li>
@@ -484,9 +532,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukSurgeryAA</li>
 									<li>SadjuukSurgeryAB</li>
@@ -504,9 +552,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>USH_LuciferiumMedicalSimulator</li>
 								</value>
@@ -521,9 +569,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEA_AncientVitalsMonitor</li>
 								</value>
@@ -538,9 +586,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEM2_SurgicalTools</li>
 								</value>
@@ -555,12 +603,29 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Facility_VitalsCentre</li>
 									<li>Facility_IVDrip</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Genetics Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Genetics Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- gitsCyberneticsWorkbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GR_NutrientVat</li>
 								</value>
 							</li>
 						</operations>
@@ -573,20 +638,20 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Vaultmedical</li>
-									<li>Vaultmedicallamp</li>
-								</value>
-							</li>
-							<!-- GTBenchBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
+								</value>
+							</li>
+							<!-- gitsCyberbodyAnchor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vaultmedical</li>
+									<li>Vaultmedicallamp</li>
 								</value>
 							</li>
 						</operations>
@@ -599,9 +664,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -616,9 +681,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
 								</value>
@@ -633,9 +698,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalStandDroid</li>
 								</value>
@@ -650,9 +715,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GTBenchBase -->
+							<!-- gitsCyberneticsWorkbench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>
@@ -667,9 +732,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- ambTable -->
+							<!-- gitsCyberbodyAnchor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>sd_medicaddons_medieval_surg_washpan</li>
 									<li>sd_medicaddons_medieval_surg_instruments</li>

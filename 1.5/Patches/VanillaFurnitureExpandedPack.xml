@@ -66,6 +66,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== GiTS Cybernetic Equipment ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GiTS Cybernetic Equipment</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FFE_AnimalMedTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FFE_AnimalMedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>gitsAnchorConsole</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

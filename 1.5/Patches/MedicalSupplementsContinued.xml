@@ -155,6 +155,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== GiTS Cybernetic Equipment ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GiTS Cybernetic Equipment</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MSMedicalMat | MSMedicalMatSpacer | MSMedicalMatUltra | MSMedicalMatEarly -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MSMedicalMat" or defName="MSMedicalMatSpacer" or defName="MSMedicalMatUltra" or defName="MSMedicalMatEarly"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>gitsAnchorConsole</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Hospitals Extended ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
