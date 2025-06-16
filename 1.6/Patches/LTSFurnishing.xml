@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>RR's Furniture pack-Collection Rapture</li>
+			<li>[LTS]Furnishing</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RRBasicBedBase | RRCrib -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
@@ -33,9 +33,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RRBasicBedBase | RRCrib -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -50,9 +50,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RRBasicBedBase | RRCrib -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -61,6 +61,14 @@
 									<li>WardrobeA</li>
 									<li>WardrobeB</li>
 									<li>GL_Teddy</li>
+								</value>
+							</li>
+							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Cupboard</li>
+									<li>GL_TablewareShelf</li>
 								</value>
 							</li>
 						</operations>
@@ -73,13 +81,33 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RRBasicBedBase | RRCrib -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRLincangDresser</li>
 									<li>RRDalianWardrobe</li>
 									<li>RRLijiangEndtable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RR's Furniture pack-Collection Rapture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RR's Furniture pack-Collection Rapture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RRHeronaWardrobe</li>
+									<li>RRTaragonaWardrobe</li>
+									<li>RRDresser</li>
+									<li>RRDresserTwo</li>
 								</value>
 							</li>
 						</operations>
@@ -92,9 +120,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RRBasicBedBase | RRCrib -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -110,9 +138,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RRBasicBedBase | RRCrib -->
+							<!-- LTS_BedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -132,20 +160,18 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== [LTS]Furnishing ========== -->
+				<!-- ========== VGP Garden Gourmet ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>[LTS]Furnishing</li>
+						<li>VGP Garden Gourmet</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- RRBasicBedBase | RRCrib -->
+							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>LTS_IdanasN</li>
-									<li>LTS_IdanasD</li>
-									<li>LTS_KoppangD</li>
+									<li>CookingTools</li>
 								</value>
 							</li>
 						</operations>

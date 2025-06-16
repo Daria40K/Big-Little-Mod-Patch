@@ -8,6 +8,41 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EndTable</li>
+									<li>Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ideology [Official DLC]  ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ideology [Official DLC] </li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GloomyFurniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -46,6 +81,72 @@
 									<li>RRTaragonaWardrobe</li>
 									<li>RRDresser</li>
 									<li>RRDresserTwo</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_KazariKatana</li>
+									<li>RLE_Kouro</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony Vanilla (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukBedroomUpgradeAA</li>
+									<li>SadjuukBedroomUpgradeAB</li>
+									<li>SadjuukBedroomUpgradeAF</li>
+									<li>SadjuukBedroomUpgradeAC</li>
+									<li>SadjuukBedroomUpgradeBA</li>
+									<li>SadjuukBedroomUpgradeBB</li>
+									<li>SadjuukBedroomUpgradeBF</li>
+									<li>SadjuukBedroomUpgradeBC</li>
+									<li>SadjuukBedroomUpgradeCA</li>
+									<li>SadjuukBedroomUpgradeCB</li>
+									<li>SadjuukBedroomUpgradeCF</li>
+									<li>SadjuukBedroomUpgradeCC</li>
+									<li>SadjuukBedroomUpgradeCD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_IdanasN</li>
+									<li>LTS_IdanasD</li>
+									<li>LTS_KoppangD</li>
 								</value>
 							</li>
 						</operations>

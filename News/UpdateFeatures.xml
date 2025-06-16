@@ -775,4 +775,11 @@
 		<assemblyVersion>4.1.0</assemblyVersion>
 		<content>Rimworld v1.5: Added support for Archotech Forge, Commercial Server and GiTS Cybernetic Equipment|Rimworld v1.6: Added support for Archotech Forge, GiTS Cybernetic Equipment, Obsidia Expansion, Rimsenal - Spacer Faction Pack, Sparkling Worlds - Full Mod and Sparkling Worlds - Modular Core - Reduced features</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.2.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_2_0</defName>
+		<assemblyVersion>4.2.0</assemblyVersion>
+		<content>Rimworld v1.6: Added support for Electric Art Bench (Continued), Expanded Prosthetics and Organ Engineering - Forked, [JGH] Mechanoid Bench 3, [LTS]Ammunition - Framework, [LTS]Furnishing, RimApps (Continued), RimLife Expansion Furniture, Rimsenal - Core, Rimsenal - Feral Faction Pack, [sd] medicaddons (Continued), UN-Colony Vanilla (Continued), VGP Garden Dyes, VGP Garden Fabrics, VGP Garden Fabrics Simplified, Weapons of the Gods (Continued) and [WYD] Advanced Medicine</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

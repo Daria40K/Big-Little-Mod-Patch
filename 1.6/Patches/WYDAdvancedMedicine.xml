@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Obsidia Expansion</li>
+			<li>[WYD] Advanced Medicine</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OE_BionicTable | OE_AmalgamVat | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
+							<!-- WYD_AdvancedDrugLab -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OE_BionicTable" or defName="OE_AmalgamVat" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="WYD_AdvancedDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -25,19 +25,18 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
+				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+						<li>[LTS]Furnishing</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- OE_BionicTable | OE_AmalgamVat -->
+							<!-- WYD_AdvancedDrugLab -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="OE_BionicTable" or defName="OE_AmalgamVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="WYD_AdvancedDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>TableBionics</li>
-									<li>TableOrgans</li>
+									<li>LTS_Fridge</li>
 								</value>
 							</li>
 						</operations>
