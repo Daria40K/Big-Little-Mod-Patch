@@ -308,6 +308,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mediterranean Furniture|地中海风格家具 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mediterranean Furniture|地中海风格家具</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Mediterranean_EndTable</li>
+									<li>Mediterranean_Wardrobe</li>
+									<li>Mediterranean_Drape_a</li>
+									<li>Mediterranean_Drape_b</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -768,26 +788,6 @@
 									<li>RH2_MilitaryCrateDresser</li>
 									<li>RH2_LampEndTable</li>
 									<li>RH2_DoubleWardrobe</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>kyon's Furniture|地中海风格家具|Mediterranean</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- RRBasicBedBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="RRBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Mediterranean_EndTable</li>
-									<li>Mediterranean_Wardrobe</li>
-									<li>Mediterranean_Drape_a</li>
-									<li>Mediterranean_Drape_b</li>
 								</value>
 							</li>
 						</operations>

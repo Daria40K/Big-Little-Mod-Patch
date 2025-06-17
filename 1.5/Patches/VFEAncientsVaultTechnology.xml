@@ -280,28 +280,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== UN-Colony (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Colony (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEA_VT_AncientSmeltStation | VFEA_VT_AncientSculptor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSmeltStation" or defName="VFEA_VT_AncientSculptor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukShaper</li>
-									<li>SadjuukGrinding</li>
-									<li>SadjuukWeldingRobot</li>
-									<li>SadjuukLathe</li>
-									<li>SadjuukMilling</li>
-									<li>SadjuukAssemblyRobot</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -403,6 +381,28 @@
 								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSmeltStation" or defName="VFEA_VT_AncientSculptor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [Legacy] UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[Legacy] UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFEA_VT_AncientSmeltStation | VFEA_VT_AncientSculptor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFEA_VT_AncientSmeltStation" or defName="VFEA_VT_AncientSculptor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukAssemblyRobot</li>
 								</value>
 							</li>
 						</operations>

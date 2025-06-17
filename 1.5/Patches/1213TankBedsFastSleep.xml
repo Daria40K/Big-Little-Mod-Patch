@@ -488,6 +488,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mediterranean Furniture|地中海风格家具 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mediterranean Furniture|地中海风格家具</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Mediterranean_EndTable</li>
+									<li>Mediterranean_Wardrobe</li>
+									<li>Mediterranean_Drape_a</li>
+									<li>Mediterranean_Drape_b</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Furniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1134,26 +1154,6 @@
 									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
 									<li>sd_medicaddons_spacer_surg_instruments</li>
 									<li>sd_medicaddons_spacer_surg_lamp</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>kyon's Furniture|地中海风格家具|Mediterranean</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TB_TankBed | TB_TankBedDouble | TB_TankBedPrototype -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TB_TankBed" or defName="TB_TankBedDouble" or defName="TB_TankBedPrototype"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Mediterranean_EndTable</li>
-									<li>Mediterranean_Wardrobe</li>
-									<li>Mediterranean_Drape_a</li>
-									<li>Mediterranean_Drape_b</li>
 								</value>
 							</li>
 						</operations>

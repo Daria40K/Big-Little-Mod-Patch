@@ -850,10 +850,10 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== [1.5] Moyo - from the depth ========== -->
+				<!-- ========== [1.6] Moyo - from the depth ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>[1.5] Moyo - from the depth</li>
+						<li>[1.6] Moyo - from the depth</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
@@ -898,6 +898,23 @@
 									<li>OA_RK_Rese_A</li>
 									<li>OA_RK_Rese_B</li>
 									<li>OA_RK_Rese_C</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [TY2.0]溪谷联邦 Aquila2.0-Valley ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[TY2.0]溪谷联邦 Aquila2.0-Valley</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TY_Scientific_research</li>
 								</value>
 							</li>
 						</operations>

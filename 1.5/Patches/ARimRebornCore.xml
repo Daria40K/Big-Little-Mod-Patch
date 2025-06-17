@@ -420,28 +420,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== UN-Colony (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Colony (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherMachineTable | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_GlamourTable -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherMachineTable" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_GlamourTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukShaper</li>
-									<li>SadjuukGrinding</li>
-									<li>SadjuukWeldingRobot</li>
-									<li>SadjuukLathe</li>
-									<li>SadjuukMilling</li>
-									<li>SadjuukAssemblyRobot</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== VGP Garden Gourmet ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -626,6 +604,28 @@
 								<xpath>Defs/ThingDef[defName="ARR_AetherPrepTable" or defName="ARR_AetherPrepTableLinked" or defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherMachineTable" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_GlamourTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [Legacy] UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[Legacy] UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ARR_AetherCraftTable | ARR_AetherCraftTableLinked | ARR_AetherMachineTable | ARR_AetherTailorTable | ARR_AetherTailorTableLinked | ARR_GlamourTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ARR_AetherCraftTable" or defName="ARR_AetherCraftTableLinked" or defName="ARR_AetherMachineTable" or defName="ARR_AetherTailorTable" or defName="ARR_AetherTailorTableLinked" or defName="ARR_GlamourTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukAssemblyRobot</li>
 								</value>
 							</li>
 						</operations>

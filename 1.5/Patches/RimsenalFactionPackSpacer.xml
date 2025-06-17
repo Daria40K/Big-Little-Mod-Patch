@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Rimsenal - Spacer Faction Pack</li>
+			<li>Rimsenal Faction Pack - Spacer</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">

@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[1.5] Moyo - from the depth</li>
+			<li>Rimsenal Faction Pack - Feral</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -49,9 +49,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
 								</value>
@@ -66,9 +66,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -83,9 +83,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
@@ -109,9 +109,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>
@@ -126,9 +126,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -143,9 +143,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -162,9 +162,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -181,9 +181,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -200,9 +200,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RTC_ToolShelf</li>
 									<li>RTC_BlastCabinet</li>
@@ -218,10 +218,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
+									<li>ucp_vise</li>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
 									<li>ucp_hammer</li>
@@ -241,33 +242,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== UN-Colony (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Colony (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Moyo_FabricationBench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukShaper</li>
-									<li>SadjuukGrinding</li>
-									<li>SadjuukWeldingRobot</li>
-									<li>SadjuukLathe</li>
-									<li>SadjuukMilling</li>
-									<li>SadjuukAssemblyRobot</li>
 								</value>
 							</li>
 						</operations>
@@ -280,11 +259,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>VFE_FabricationCabinet</li>
+									<li>VFE_MachiningCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -297,9 +276,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VVE_GarageCabinet</li>
 								</value>
@@ -314,9 +293,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -332,9 +311,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -349,11 +328,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_FabricationBoost</li>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -367,11 +347,33 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Moyo_FabricationBench -->
+							<!-- FeralTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Moyo_FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [Legacy] UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[Legacy] UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FeralTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FeralTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukAssemblyRobot</li>
 								</value>
 							</li>
 						</operations>

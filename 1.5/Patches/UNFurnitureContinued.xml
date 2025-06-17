@@ -833,6 +833,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mediterranean Furniture|地中海风格家具 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mediterranean Furniture|地中海风格家具</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Mediterranean_EndTable</li>
+									<li>Mediterranean_Wardrobe</li>
+									<li>Mediterranean_Drape_a</li>
+									<li>Mediterranean_Drape_b</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Archotech Garbage (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1714,10 +1734,10 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== [1.5] Moyo - from the depth ========== -->
+				<!-- ========== [1.6] Moyo - from the depth ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>[1.5] Moyo - from the depth</li>
+						<li>[1.6] Moyo - from the depth</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
@@ -1863,6 +1883,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [TY2.0]溪谷联邦 Aquila2.0-Valley ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[TY2.0]溪谷联邦 Aquila2.0-Valley</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TY_Scientific_research</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [sd] medicaddons (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1882,26 +1919,6 @@
 									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
 									<li>sd_medicaddons_spacer_surg_instruments</li>
 									<li>sd_medicaddons_spacer_surg_lamp</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== kyon's Furniture|地中海风格家具|Mediterranean ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>kyon's Furniture|地中海风格家具|Mediterranean</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Mediterranean_EndTable</li>
-									<li>Mediterranean_Wardrobe</li>
-									<li>Mediterranean_Drape_a</li>
-									<li>Mediterranean_Drape_b</li>
 								</value>
 							</li>
 						</operations>

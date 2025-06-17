@@ -782,4 +782,11 @@
 		<assemblyVersion>4.2.0</assemblyVersion>
 		<content>Rimworld v1.6: Added support for Electric Art Bench (Continued), Expanded Prosthetics and Organ Engineering - Forked, [JGH] Mechanoid Bench 3, [LTS]Ammunition - Framework, [LTS]Furnishing, RimApps (Continued), RimLife Expansion Furniture, Rimsenal - Core, Rimsenal - Feral Faction Pack, [sd] medicaddons (Continued), UN-Colony Vanilla (Continued), VGP Garden Dyes, VGP Garden Fabrics, VGP Garden Fabrics Simplified, Weapons of the Gods (Continued) and [WYD] Advanced Medicine</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.3.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_3_0</defName>
+		<assemblyVersion>4.3.0</assemblyVersion>
+		<content>Rimworld v1.5: Added support for [1.6] Moyo - from the depth, [1.6] Moyo - Light in the Abyss, [TY2.0]天鹰核心 Aquila2.0 Core, [TY2.0]溪谷联邦 Aquila2.0-Valley, CeleTech Arsenal MKIII, RH2] Faction: V.O.I.D., Wolfein Race, 碳烤鱿鱼丝的传奇武器包 and 碳烤鱿鱼丝的传奇铠甲包(续)/TKYYS's The legendary armor(Continued)|Fixed Support for Mediterranean Furniture|地中海风格家具, [Legacy] UN-Colony (Continued), Rimsenal Faction Pack - Federation, Rimsenal Faction Pack - Feral, Rimsenal Faction Pack - Spacer, Save Our Ship 2 and Modern Bed (1.4+)||Rimworld v1.6: Added support for [1.6] Moyo - from the depth, [1.6] Moyo - Light in the Abyss, Anomaly [Official DLC], CeleTech Arsenal MKIII, IV Drug Infuser, [Mech]Pavia-RogueServitor|帕维亚-失控机仆, [TY2.0]溪谷联邦 Aquila2.0-Valley, [TY2.0]溪谷联邦 Aquila2.0-Valley, Mediterranean Furniture|地中海风格家具, Modern Bed (1.4+), Rimsenal Faction Pack - Federation, Wolfein Race and 碳烤鱿鱼丝的传奇武器包, 碳烤鱿鱼丝的传奇铠甲包(续)/TKYYS's The legendary armor(Continued)</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>UN-Colony (Continued)</li>
+			<li>[Legacy] UN-Colony (Continued)</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">

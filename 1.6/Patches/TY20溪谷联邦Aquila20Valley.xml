@@ -2,12 +2,29 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Rimsenal - Spacer Faction Pack</li>
+			<li>[TY2.0]溪谷联邦 Aquila2.0-Valley</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_Nano_industrial_manufacturing_station | TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station" or defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GloomyFurniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -15,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SurvivalStation -->
+							<!-- TY_A_XG_PengRenTai -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TY_A_XG_PengRenTai"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
@@ -33,9 +50,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SurvivalStation -->
+							<!-- TY_A_XG_PengRenTai -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TY_A_XG_PengRenTai"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
 								</value>
@@ -50,9 +67,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SurvivalStation -->
+							<!-- TY_A_XG_PengRenTai -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SurvivalStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TY_A_XG_PengRenTai"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
