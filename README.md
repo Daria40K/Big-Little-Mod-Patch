@@ -5,8 +5,14 @@
 ## Download
 - [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2710382569)
 - [GitHub](https://github.com/Daria40K/Big-Little-Mod-Patch/releases)
+- [NexusMods]
 
 ## Mod Support
+- [Rimworld v1.3 List]
+- [Rimworld v1.4 List]
+- [Rimworld v1.5 List]
+
+### Rimworld v1.6 List
 - [Advanced Brewery](https://github.com/StarterCraft/Rimworld-Advanced-Brewery) (Production links)
 - [Advanced Electric Stove](https://steamcommunity.com/sharedfiles/filedetails/?id=2054487688) (Production links)
 - [[RWY]Advanced Mechanoid Warfare](https://steamcommunity.com/sharedfiles/filedetails/?id=2119930282) (Production links)

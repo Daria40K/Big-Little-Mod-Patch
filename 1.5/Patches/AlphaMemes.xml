@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
@@ -40,9 +40,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -57,9 +57,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
@@ -98,9 +98,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ClutterBasicLocker</li>
 									<li>ClutterCabinetA</li>
@@ -116,9 +116,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ADH_light_A_A_FURNITURE</li>
 									<li>ADH_light_B_A_FURNITURE</li>
@@ -152,9 +152,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
@@ -170,9 +170,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HSFancy_Tatami</li>
 								</value>
@@ -187,9 +187,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageDresser</li>
 									<li>CCot_CottageEndTable</li>
@@ -222,9 +222,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -245,9 +245,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -268,9 +268,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PGI_PerfectEndtable</li>
 								</value>
@@ -329,9 +329,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -346,9 +346,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -451,9 +451,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RoyalCloset</li>
 									<li>DankPyon_RoyalEndTable</li>
@@ -478,9 +478,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Mediterranean_EndTable</li>
 									<li>Mediterranean_Wardrobe</li>
@@ -498,9 +498,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2Dresser</li>
 									<li>Anon2EndTable</li>
@@ -537,9 +537,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -559,9 +559,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneEndTable</li>
@@ -583,9 +583,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PFK_EndTable</li>
 									<li>PFK_Dresser</li>
@@ -601,9 +601,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -622,9 +622,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRLincangDresser</li>
 									<li>RRDalianWardrobe</li>
@@ -641,9 +641,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -661,9 +661,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -683,9 +683,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -705,9 +705,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -723,6 +723,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimVali: Far From Avalon ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimVali: Far From Avalon</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RVFFA_IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Dresser ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -730,9 +747,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SmallDresser</li>
 								</value>
@@ -747,9 +764,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TatesTinyFurnitureMod_Dresser</li>
 									<li>TatesTinyFurnitureMod_BedQuiltSingle</li>
@@ -766,9 +783,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -807,9 +824,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -873,9 +890,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
 								</value>
@@ -907,9 +924,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_LightEndTable</li>
 									<li>Table_Wardrobe</li>
@@ -945,9 +962,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -963,9 +980,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
@@ -981,9 +998,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VPE_Plant_Lullabloom</li>
 								</value>
@@ -998,9 +1015,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>VaultWardrobeA</li>
@@ -1046,9 +1063,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LSK_SHS_Dresser</li>
 									<li>LSK_SHS_Bedside_Table</li>
@@ -1066,9 +1083,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
@@ -1085,9 +1102,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>
@@ -1105,9 +1122,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RH2_ClassicFootlocker</li>
 									<li>RH2_MilitaryCrateDresser</li>
@@ -1149,14 +1166,429 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- AM_StoneBedroll | AM_AncientBed | AM_AncientDoubleBed -->
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="AM_StoneBedroll" or defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ChineseBedsideTable</li>
 									<li>HX_ChineseDressingTable</li>
 								</value>
 							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Anomaly [Official DLC] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Anomaly [Official DLC]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_RestoringPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>CTS - Complete Tech Solutions (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GiTS Cybernetic Equipment ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GiTS Cybernetic Equipment</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>gitsAnchorConsole</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Hospitals Extended ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Hospitals Extended</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>sd_medicaddons_medieval_surg_washpan</li>
+									<li>sd_medicaddons_medieval_surg_instruments</li>
+									<li>sd_medicaddons_medieval_surg_lamp</li>
+									<li>sd_medicaddons_industrial_surg_instruments</li>
+									<li>sd_medicaddons_industrial_surg_lamp</li>
+									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+									<li>sd_medicaddons_spacer_surg_instruments</li>
+									<li>sd_medicaddons_spacer_surg_lamp</li>
+									<li>Wall_VitalsMonitor</li>
+									<li>Spacer_Wall_VitalsMonitor</li>
+									<li>CCP_LEDMedLight</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== IV Drug Infuser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>IV Drug Infuser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IVDrugInfuser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical IV ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IV</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalIV</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical IVs ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IVs</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IV_Blood</li>
+									<li>IV_Nutrition</li>
+									<li>IV_Painkiller</li>
+									<li>IV_Antibiotics</li>
+									<li>IV_Anesthetic</li>
+									<li>IV_Blood_Electric</li>
+									<li>IV_Nutrition_Electric</li>
+									<li>IV_Painkiller_Electric</li>
+									<li>IV_Antibiotics_Electric</li>
+									<li>IV_Anesthetic_Electric</li>
+									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical IVs Fork ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IVs Fork</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IV_Blood</li>
+									<li>IV_Nutrition</li>
+									<li>IV_Painkiller</li>
+									<li>IV_Antibiotics</li>
+									<li>IV_Anesthetic</li>
+									<li>IV_Blood_Electric</li>
+									<li>IV_Nutrition_Electric</li>
+									<li>IV_Painkiller_Electric</li>
+									<li>IV_Antibiotics_Electric</li>
+									<li>IV_Anesthetic_Electric</li>
+									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical Supplements (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical Supplements (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MS_DStand</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SurgicalLamp</li>
+									<li>SurgicalInstruments</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_AirCondition</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony Vanilla (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukHospitalUpgradeBA</li>
+									<li>SadjuukHospitalUpgradeBB</li>
+									<li>SadjuukHospitalUpgradeCA</li>
+									<li>SadjuukHospitalUpgradeCB</li>
+									<li>SadjuukHospitalUpgradeCD</li>
+									<li>SadjuukHospitalUpgradeCE</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukSurgeryAA</li>
+									<li>SadjuukSurgeryAB</li>
+									<li>SadjuukSurgeryAC</li>
+									<li>SadjuukSurgeryAD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ushankas Luciferium Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ushankas Luciferium Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>USH_LuciferiumMedicalSimulator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Ancients ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Ancients</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEA_AncientVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SurgicalTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Medical Module</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Facility_VitalsCentre</li>
+									<li>Facility_IVDrip</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vaultmedical</li>
+									<li>Vaultmedicallamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [sd] medicaddons (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[sd] medicaddons (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_CubicHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_CubicHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>sd_medicaddons_medieval_surg_washpan</li>
+									<li>sd_medicaddons_medieval_surg_instruments</li>
+									<li>sd_medicaddons_medieval_surg_lamp</li>
+									<li>sd_medicaddons_industrial_surg_instruments</li>
+									<li>sd_medicaddons_industrial_surg_lamp</li>
+									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+									<li>sd_medicaddons_spacer_surg_instruments</li>
+									<li>sd_medicaddons_spacer_surg_lamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 						</operations>
 					</match>
 				</li>

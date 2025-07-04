@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Jewelry</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LaserTableSculpting -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LaserTableSculpting"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LaserTableSculpting -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LaserTableSculpting"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

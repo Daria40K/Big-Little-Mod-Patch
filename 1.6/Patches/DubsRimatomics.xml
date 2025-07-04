@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Rimatomics</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MultiAnalyzer</li>
+								</value>
+							</li>
+							<!-- TableRimatomicsMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Brain In a Jar ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Brain In a Jar</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>BrainInAJar</li>
+									<li>DualBrain</li>
+									<li>QuadBrain</li>
+									<li>MasterBrain</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Commercial Server ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Commercial Server</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ServerSilver</li>
+									<li>ServerGold</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GloomyFurniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Bookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableRimatomicsMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Sparkling Worlds - Full Mod ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Full Mod</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Sparkling Worlds - Modular Core - Reduced features ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Sparkling Worlds - Modular Core - Reduced features</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ComputingSystemSW</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony Vanilla (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukResearchUpgradeAA</li>
+									<li>SadjuukResearchUpgradeBA</li>
+									<li>SadjuukResearchUpgradeBB</li>
+									<li>SadjuukResearchUpgradeBC</li>
+									<li>SadjuukResearchUpgradeCA</li>
+									<li>SadjuukResearchUpgradeCB</li>
+									<li>SadjuukResearchUpgradeCC</li>
+									<li>SadjuukResearchUpgradeCD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableRimatomicsMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [1.6] Moyo - from the depth ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[1.6] Moyo - from the depth</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MoyoGRModule</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [Mech]Pavia-RogueServitor|帕维亚-失控机仆 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[Mech]Pavia-RogueServitor|帕维亚-失控机仆</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RogueServitor_BladeCenter_BandNode</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Rese_A</li>
+									<li>OA_RK_Rese_B</li>
+									<li>OA_RK_Rese_C</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [TY2.0]溪谷联邦 Aquila2.0-Valley ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[TY2.0]溪谷联邦 Aquila2.0-Valley</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- NuclearResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TY_Scientific_research</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

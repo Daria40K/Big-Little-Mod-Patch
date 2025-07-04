@@ -560,6 +560,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimVali: Far From Avalon ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimVali: Far From Avalon</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MUS_Gothicstyle_DoubleSofa | MUS_Gothicstyle_Sofa | MUS_Gothicstyle_Bed | MUS_Gothicstyle_DoubleBed | MUS_Gothicstyle_CoffinBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_DoubleSofa" or defName="MUS_Gothicstyle_Sofa" or defName="MUS_Gothicstyle_Bed" or defName="MUS_Gothicstyle_DoubleBed" or defName="MUS_Gothicstyle_CoffinBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RVFFA_IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Dresser ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

@@ -75,6 +75,77 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Alpha Memes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Memes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AM_AncientLockerBank</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Anty the war ant race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Anty the war ant race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AT_Chart</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Brain In a Jar ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Brain In a Jar</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>BrainInAJar</li>
+									<li>DualBrain</li>
+									<li>QuadBrain</li>
+									<li>MasterBrain</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>CTS - Complete Tech Solutions (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CTSAdvancedVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Commercial Server ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -88,6 +159,25 @@
 								<value>
 									<li>ServerSilver</li>
 									<li>ServerGold</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Dubs Rimatomics ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Dubs Rimatomics</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchReactor</li>
+									<li>WeaponsBench</li>
+									<li>PlutoniumProcessor</li>
 								</value>
 							</li>
 						</operations>
@@ -165,6 +255,33 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Medical IVs Fork ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IVs Fork</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>IV_Blood</li>
+									<li>IV_Nutrition</li>
+									<li>IV_Painkiller</li>
+									<li>IV_Antibiotics</li>
+									<li>IV_Anesthetic</li>
+									<li>IV_Blood_Electric</li>
+									<li>IV_Nutrition_Electric</li>
+									<li>IV_Painkiller_Electric</li>
+									<li>IV_Antibiotics_Electric</li>
+									<li>IV_Anesthetic_Electric</li>
+									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Mediterranean Furniture|地中海风格家具 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -180,6 +297,76 @@
 									<li>Mediterranean_Wardrobe</li>
 									<li>Mediterranean_Drape_a</li>
 									<li>Mediterranean_Drape_b</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoDecipherAI</li>
+								</value>
+							</li>
+							<!-- ElectricStove | FueledStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench | SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench" or defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2FileCabinet</li>
+								</value>
+							</li>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2Dresser</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTableLight</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ponpeco Furnitures : Kids' Room ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ponpeco Furnitures : Kids' Room</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PFK_EndTable</li>
+									<li>PFK_Dresser</li>
 								</value>
 							</li>
 						</operations>
@@ -244,6 +431,69 @@
 								<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_AirCondition</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DrugLab | TableSculpting | ElectricSmelter | HandTailoringBench | ElectricTailoringBench | ElectricCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DrugLab" or defName="TableSculpting" or defName="ElectricSmelter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+							<!-- FabricationBench | TableMachining | FueledSmithy | ElectricSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FabricationBench" or defName="TableMachining" or defName="FueledSmithy" or defName="ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+							<!-- TableStonecutter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableStonecutter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_DustCollectionUnit</li>
+								</value>
+							</li>
+							<!-- BiofuelRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_AuxiliaryCoolingUnit</li>
+									<li>RLE_ReactionAccelerator</li>
+									<li>RLE_ImpurityFiltrationUnit</li>
+									<li>RLE_PreReactor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimVali: Far From Avalon ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimVali: Far From Avalon</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RVFFA_IlluminateEndTable</li>
 								</value>
 							</li>
 						</operations>
@@ -376,6 +626,103 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench | SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench" or defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_LightEndTable</li>
+									<li>Table_Wardrobe</li>
+									<li>Table_RoyalEndTable</li>
+									<li>Table_RoyalDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ElectricStove | FueledStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_KitchenSinkCabinet</li>
+								</value>
+							</li>
+							<!-- DrugLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_DrugCabinet</li>
+								</value>
+							</li>
+							<!-- FabricationBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_FabricationCabinet</li>
+								</value>
+							</li>
+							<!-- TableMachining -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableMachining"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+							<!-- FueledSmithy | ElectricSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FueledSmithy" or defName="ElectricSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_SmithyCabinet</li>
+								</value>
+							</li>
+							<!-- HandTailoringBench | ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HandTailoringBench" or defName="ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_TailorCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Spacer Module</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_IlluminatedEndTable</li>
+									<li>Table_IlluminatedDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [1.6] Moyo - from the depth ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -388,6 +735,23 @@
 								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MoyoGRModule</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [KR] Star Wars Bacta ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[KR] Star Wars Bacta</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalStandDroid</li>
 								</value>
 							</li>
 						</operations>
@@ -427,6 +791,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MUS_Gothicstyle_Cupboard</li>
+									<li>MUS_Gothicstyle_Wardrobe</li>
+									<li>MUS_Gothicstyle_Mirror</li>
+									<li>MUS_Gothicstyle_BedsideTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [Mech]Pavia-RogueServitor|帕维亚-失控机仆 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -439,6 +823,33 @@
 								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RogueServitor_BladeCenter_BandNode</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Rese_A</li>
+									<li>OA_RK_Rese_B</li>
+									<li>OA_RK_Rese_C</li>
+								</value>
+							</li>
+							<!-- HandTailoringBench | ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HandTailoringBench" or defName="ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Cloth_Processing</li>
+									<li>OA_RK_Cloth_Processing_B</li>
 								</value>
 							</li>
 						</operations>

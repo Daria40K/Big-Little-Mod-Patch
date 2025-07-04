@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>WVC - Ultra Expansion II</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- WVC_Ultra_GarbageRecyclerBench -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="WVC_Ultra_GarbageRecyclerBench"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="WVC_Ultra_GarbageRecyclerBench"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="WVC_Ultra_GarbageRecyclerBench"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="WVC_Ultra_GarbageRecyclerBench"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants | WVC_Ultra_GarbageRecyclerBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants" or defName="WVC_Ultra_GarbageRecyclerBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TableBionics</li>
+									<li>TableOrgans</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+							<!-- WVC_Ultra_GarbageRecyclerBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="WVC_Ultra_GarbageRecyclerBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

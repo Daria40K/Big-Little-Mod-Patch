@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[XND] Carpenter Tables (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- TableCarpenter -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="TableCarpenter"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="TableCarpenter"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="TableCarpenter"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="TableCarpenter"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableCarpenter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableCarpenter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableCarpenter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableCarpenter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

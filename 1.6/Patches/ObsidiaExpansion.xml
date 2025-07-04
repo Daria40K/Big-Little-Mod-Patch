@@ -43,6 +43,49 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_BionicTable | OE_AmalgamVat | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_BionicTable" or defName="OE_AmalgamVat" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_SynthesisPrinter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_SynthesisPrinter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_FabricationCabinet</li>
+								</value>
+							</li>
+							<!-- OE_ArmorStation | OE_WeaponWorkbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

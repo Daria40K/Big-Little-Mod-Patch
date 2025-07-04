@@ -1,0 +1,232 @@
+## Rimworld v1.5 List
+
+Ideology [Official DLC] 
+A Dog Said... Animal Prosthetics
+A Rim Reborn - Core
+A RimWorld of Magic
+ACS - Advanced Commercial Server
+AI Uplifting Assistant
+Advanced Electric Stove (Continued)
+Akeron - Decorations
+Alpha Animals
+Alpha Bees
+Alpha Genes
+Alpha Memes
+Animal Medical Bed 1.5
+Anty the war ant race
+Apini Playable Race, Continued!
+Appliances Expanded
+Archon Multi-Analyzer
+Archotech Expanded
+Archotech Forge
+Astra Militarum Imperial Guard Core Mod v2.5
+Avaritia 无尽贪婪
+Big and Small Furniture
+Biotechnology
+Brain In a Jar
+CTS - Complete Tech Solutions (Continued)
+CeleTech Arsenal MKIII
+Clutter Furniture
+Combat Extended
+Comigo's Nutrition (Continued)
+Commercial Server
+Crypto-Tech : Craftable
+Curious Curios
+Cyber Fauna (Continued)
+Cybernetic Storm
+Daily furniture 塔林家具
+Dark Ages : Medieval Tools
+Destiny 2 Exotic Weapons
+Dubs Rimatomics
+Eccentric Tech - Core
+Eccentric Tech - Spacer Furniture
+Edo Themed Expansion
+Electric Art Bench (Continued)
+Electric Butcher Table (Continued)
+Electric Stonecutting Table
+Erin's Cottage Collection
+Erin's Japanese Furniture
+Even More Linkables
+EverythingTable
+Exotic Arsenal (Continued)
+Expanded Materials - Metals
+Expanded Prosthetics and Organ Engineering - Forked
+Expanded Woodworking (Continued)
+Fallout - Nuka Cola Collection
+Fast regen medical beds 1.5
+Fueled Smelter
+Fueled Smelter + Crematorium(continued)
+Geyser Cooking Revived (Continued)
+GiTS Cybernetic Equipment
+Glitter Tech
+Glitter Tech Classic
+Glitter Tech Classic (No Surgery)
+Gloomy Extra - Kitchen (Continued)
+GloomyFurniture
+GloomyFurniture (Continued)
+GrimWorld 40,000 - Aspectus Imperialis
+GrimWorld 40,000 - Core Imperialis
+GrimWorld 40,000 - Sabbat's Blight
+GrimWorld 40,000 - Talons of the Emperor
+HALO - UNSC Faction
+HRG164hjo's PGI Overpower
+Helixien Gas Production
+High Tech Laboratory Facilities (Continued)
+IV Drug Infuser
+Ilya Tech - Core (Continued)
+Jewelry
+KitchenStove
+Kraltech Industries
+Kraltech Industries LITE
+Kraltech Industries Rebalanced
+Kurin, The Three Tailed Fox [Deluxe Edition]
+Lambda's Nuclear-Powered Stove
+Large Animal Beds
+MIM - WH40k Weapons
+MakaiTech
+Malay Themed Expansion
+Mechalit Core v2 (Continued)
+Mechalit Faction v2 (Continued)
+Mechanoid Foundry
+Medical IV
+Medical IVs Fork
+Medical Supplements (Continued)
+Medieval Overhaul
+Medieval Things: Geysers
+Mediterranean Furniture|地中海风格家具
+Mighty Persona Bond Forge Patch Mod
+Modern Bed (1.4+)
+More Archotech Garbage (Continued)
+More Furniture (Continued)
+More Linkables
+More Multi-Analyzers
+Nano Repair Tech
+NewRatkinPlus
+Nuclear Energy
+Obsidia Expansion
+Omni's Small Workbenches
+Outer Rim - Chiss Ascendancy
+Outer Rim - Core
+Outer Rim - Furniture and Decor
+Outer Rim - Galactic Empire
+Outer Rim - Galactic Republic
+Outer Rim - Mandalore
+Outer Rim - Old Republic
+Outer Rim - Rebel Alliance
+Outland - Core
+Outland - Furniture & Decor
+Paniel the Automata[1.5]
+Persona Bond Forge
+Ponpeco Furnitures : Kids' Room
+Project RimFactory Revived
+RBSE Hardcore Edition
+RIMkea
+RR's Dieselpunk Furniture pack
+RR's Furniture pack-Collection Longyun
+RR's Furniture pack-Collection Rapture
+Rah's Bionics and Surgery Expansion
+Reel's Expanded Storage
+Resource Replicator [1.0->1.4]
+Rhino's WORKBENCH.
+Rim-Effect Legacy: Asari and Reapers
+Rim-Effect Legacy: Core
+Rim-Effect Legacy: Extended Cut
+Rim-Effect Renegade: Asari and Reapers
+Rim-Effect Renegade: Core
+Rim-Effect Renegade: Extended Cut
+RimApps (Continued)
+RimLife Expansion Furniture
+RimLife Expansion Production Plus
+RimThunder - Core
+Rimputers (No Dubs Bad Hygiene)
+Rimputers 1.5
+Rimsenal - Core
+Rimsenal Faction Pack - Federation
+Rimsenal Faction Pack - Feral
+Rimsenal Faction Pack - Spacer
+Rimstro
+Save Our Ship 2
+Single Royal Beds
+Small Dresser
+Smokeleaf Industry Reborn
+Sparkling Worlds - Full Mod
+Sparkling Worlds - Modular Core - Reduced features
+Super Size Bed!
+Swords (Continued)
+Tabletop Decorations
+Tactical Charged Gear (Continued)
+Tate's Tiny Furniture Mod
+Tech Raiding [1.1](continued)
+The Complete Drug Overhaul (Continued)
+The Heaven Forged Celestial
+Tiny Workbenchs (Continued)
+UN-Colony Vanilla (Continued)
+UN-Furniture (Continued)
+Ushankas Luciferium Expansion
+VFE - Ancients: Computers Not Junk
+VFE - Ancients: Vault Technology
+VGP Garden Canning
+VGP Garden Dyes
+VGP Garden Fabrics
+VGP Garden Fabrics Simplified
+VGP Garden Gourmet
+Vanilla Brewing Expanded - Coffees and Teas
+Vanilla Cooking Expanded
+Vanilla Cooking Expanded - Sushi
+Vanilla Factions Expanded - Ancients
+Vanilla Factions Expanded - Classical
+Vanilla Factions Expanded - Empire
+Vanilla Factions Expanded - Medieval 2
+Vanilla Factions Expanded - Pirates
+Vanilla Furniture Expanded
+Vanilla Furniture Expanded - Medical Module
+Vanilla Furniture Expanded - Power
+Vanilla Furniture Expanded - Production
+Vanilla Furniture Expanded - Spacer Module
+Vanilla Furniture Expanded Pack
+Vanilla Genetics Expanded
+Vanilla Genetics Expanded - More Lab Stuff
+Vanilla Helixien Gas Expanded
+Vanilla Plants Expanded - More Plants
+Vanilla Plants Expanded - Mushrooms
+Vanilla Quests Expanded - Deadlife
+Vanilla Races Expanded - Android
+Vanilla Recycling Expanded
+Vanilla Vehicles Expanded
+Vault-Tec - Handy things for your vault!
+WVC - Ultra Expansion II
+Weapons of the Gods (Continued)
+Wisteria Corporation (Continued)
+Wolfein Race
+WorkBench Support - More Linkable Facilities -
+Xeva Faction
+[1.6] Moyo - Light in the Abyss
+[1.6] Moyo - from the depth
+[CP] DOOM
+[JAIL] Prison Bed
+[JDS] StarWars - Armory
+[JGH] Mechanoid Bench 3
+[KR] Star Wars Bacta
+[LSK]月兔扩展——基础家具和设施
+[LTS]Ammunition - Framework
+[LTS]Furnishing
+[LYN] Nanotech Overpower
+[Legacy] UN-Colony (Continued)
+[MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture
+[Mech]Pavia-RogueServitor|帕维亚-失控机仆
+[OA]Ratkin Faction: Oberonia aurea
+[RH2] Faction: V.O.I.D.
+[RH2] Helldivers: Super Firearms
+[RH2] Uncle Boris' - Used Furniture
+[SYR] Prosthetic Table (Continued)
+[SZ]Super Mechneko - 超级机械猫娘
+[TY2.0]天鹰核心 Aquila2.0 Core 
+[TY2.0]溪谷联邦 Aquila2.0-Valley
+[WYD] Advanced Medicine
+[XND] Carpenter Tables (Continued)
+[lmgginspace] Repair bed
+[sd] Goodnight (Continued)
+[sd] medicaddons (Continued)
+华夏扩展 Chinese Comprehensive Expansion
+碳烤鱿鱼丝的传奇武器包
+碳烤鱿鱼丝的传奇铠甲包(续)/TKYYS's The legendary armor(Continued)

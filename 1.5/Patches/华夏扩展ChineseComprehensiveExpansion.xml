@@ -535,6 +535,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimVali: Far From Avalon ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimVali: Far From Avalon</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_bunk | HX_TraditionalBedA | HX_ElectricBedA | HX_TraditionalBedB | HX_ElectricBedB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_bunk" or defName="HX_TraditionalBedA" or defName="HX_ElectricBedA" or defName="HX_TraditionalBedB" or defName="HX_ElectricBedB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RVFFA_IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Dresser ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

@@ -516,6 +516,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimVali: Far From Avalon ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimVali: Far From Avalon</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RVFFA_IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Dresser ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

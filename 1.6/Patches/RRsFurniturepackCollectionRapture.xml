@@ -43,6 +43,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Alpha Memes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Memes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBasicBedBase | RRCrib -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AM_AncientLockerBank</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GloomyFurniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -86,6 +103,45 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBasicBedBase | RRCrib -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2Dresser</li>
+									<li>Anon2EndTable</li>
+									<li>Anon2RoyalEndTable</li>
+									<li>Anon2EndTableLight</li>
+									<li>Anon2RoyalEndTableLight</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ponpeco Furnitures : Kids' Room ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ponpeco Furnitures : Kids' Room</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBasicBedBase | RRCrib -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PFK_EndTable</li>
+									<li>PFK_Dresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RR's Furniture pack-Collection Longyun ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -123,6 +179,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimVali: Far From Avalon ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimVali: Far From Avalon</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBasicBedBase | RRCrib -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RVFFA_IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -152,6 +225,44 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBasicBedBase | RRCrib -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_LightEndTable</li>
+									<li>Table_Wardrobe</li>
+									<li>Table_RoyalEndTable</li>
+									<li>Table_RoyalDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Spacer Module ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Spacer Module</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBasicBedBase | RRCrib -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Table_IlluminatedEndTable</li>
+									<li>Table_IlluminatedDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -166,6 +277,26 @@
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
 									<li>LTS_KoppangD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RRBasicBedBase | RRCrib -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MUS_Gothicstyle_Cupboard</li>
+									<li>MUS_Gothicstyle_Wardrobe</li>
+									<li>MUS_Gothicstyle_Mirror</li>
+									<li>MUS_Gothicstyle_BedsideTable</li>
 								</value>
 							</li>
 						</operations>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Production</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- VFE_FueledSmelter -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableDrugLabElectric | VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_FueledSmelter | VFE_TableSmithyLarge | VFE_TableStonecutterElectric | VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Anty the war ant race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Anty the war ant race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableButcherElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AT_Chart</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GloomyFurniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Cupboard</li>
+									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableDrugLabElectric | VFE_FueledSmelter | VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_FueledSmelter" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+							<!-- VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_TableSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_TableSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+							<!-- VFE_TableStonecutterElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_DustCollectionUnit</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== VGP Garden Gourmet ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>VGP Garden Gourmet</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_Sink</li>
+									<li>LTS_Fridge</li>
+								</value>
+							</li>
+							<!-- VFE_TableDrugLabElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Cloth_Processing</li>
+									<li>OA_RK_Cloth_Processing_B</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
