@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[JDS] The Forge - Anvil</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForgeFabricationbench | JDSForge | JDSAnvil | JDSWorkBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForgeFabricationbench" or defName="JDSForge" or defName="JDSAnvil" or defName="JDSWorkBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForgeFabricationbench | JDSForge | JDSAnvil | JDSWorkBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForgeFabricationbench" or defName="JDSForge" or defName="JDSAnvil" or defName="JDSWorkBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForgeFabricationbench | JDSForge | JDSAnvil | JDSWorkBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForgeFabricationbench" or defName="JDSForge" or defName="JDSAnvil" or defName="JDSWorkBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForgeFabricationbench | JDSAnvil -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForgeFabricationbench" or defName="JDSAnvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+							<!-- JDSForge | JDSWorkBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForge" or defName="JDSWorkBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForge | JDSAnvil -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForge" or defName="JDSAnvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForgeFabricationbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForgeFabricationbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_FabricationCabinet</li>
+								</value>
+							</li>
+							<!-- JDSAnvil -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSAnvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_SmithyCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForgeFabricationbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForgeFabricationbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForgeFabricationbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForgeFabricationbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_FabricationBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- JDSForge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmelterGoods</li>
+									<li>Link_SmelterBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- JDSAnvil -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSAnvil"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmithingGoods</li>
+									<li>Link_SmithingBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- JDSWorkBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSWorkBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -32,6 +32,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VEF_AdvancedAnimalImplantsTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VEF_AdvancedAnimalImplantsTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -45,6 +62,25 @@
 								<value>
 									<li>TableBionics</li>
 									<li>TableOrgans</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VEF_AdvancedAnimalImplantsTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VEF_AdvancedAnimalImplantsTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
 								</value>
 							</li>
 						</operations>
@@ -64,6 +100,41 @@
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
 									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Genetics Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Genetics Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VEF_AdvancedAnimalImplantsTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VEF_AdvancedAnimalImplantsTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GR_NutrientVat</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VEF_AdvancedAnimalImplantsTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VEF_AdvancedAnimalImplantsTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_FabricationBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 						</operations>

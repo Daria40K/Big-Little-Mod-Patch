@@ -43,6 +43,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CanningFactory -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CanningFactory"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>KitchenCupboard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== VGP Garden Gourmet ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -72,6 +89,24 @@
 								<xpath>Defs/ThingDef[defName="CanningFactory"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_KitchenSinkCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CanningFactory -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CanningFactory"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_KitchenGoods</li>
+									<li>Link_KitchenBoost</li>
 								</value>
 							</li>
 						</operations>

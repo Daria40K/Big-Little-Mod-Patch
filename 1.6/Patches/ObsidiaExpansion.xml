@@ -25,6 +25,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_BionicTable | OE_AmalgamVat | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_BionicTable" or defName="OE_AmalgamVat" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -38,6 +55,25 @@
 								<value>
 									<li>TableBionics</li>
 									<li>TableOrgans</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_BionicTable | OE_AmalgamVat | OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_BionicTable" or defName="OE_AmalgamVat" or defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
 								</value>
 							</li>
 						</operations>
@@ -81,6 +117,67 @@
 								<xpath>Defs/ThingDef[defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Genetics Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Genetics Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_BionicTable | OE_AmalgamVat -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_BionicTable" or defName="OE_AmalgamVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GR_NutrientVat</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_SynthesisPrinter | OE_ArmorStation | OE_WeaponWorkbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_SynthesisPrinter" or defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OE_BionicTable | OE_AmalgamVat | OE_SynthesisPrinter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_BionicTable" or defName="OE_AmalgamVat" or defName="OE_SynthesisPrinter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_FabricationBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- OE_ArmorStation | OE_WeaponWorkbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OE_ArmorStation" or defName="OE_WeaponWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 						</operations>

@@ -67,6 +67,54 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableDrugLabElectric | VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_FueledSmelter | VFE_TableSmithyLarge | VFE_TableStonecutterElectric | VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Dark Ages : Medieval Tools ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Dark Ages : Medieval Tools</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableButcherElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_ButcheringTools</li>
+								</value>
+							</li>
+							<!-- VFE_TableStonecutterElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_StonecuttingTools</li>
+								</value>
+							</li>
+							<!-- VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_TailoringTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GloomyFurniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -97,6 +145,32 @@
 								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableButcherElectric | VFE_TableStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableButcherElectric" or defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>KitchenCupboard</li>
+								</value>
+							</li>
+							<!-- VFE_TableDrugLabElectric | VFE_ComponentFabricationBench | VFE_TableMachiningLarge | VFE_FueledSmelter | VFE_TableSmithyLarge | VFE_TableStonecutterElectric | VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric" or defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge" or defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge" or defName="VFE_TableStonecutterElectric" or defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
 								</value>
 							</li>
 						</operations>
@@ -150,6 +224,153 @@
 								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableButcherElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_CleaverRack</li>
+									<li>VFEM2_CarvingBoard</li>
+								</value>
+							</li>
+							<!-- VFE_FueledSmelter | VFE_TableSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_FueledSmelter" or defName="VFE_TableSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+							<!-- VFE_TableStonecutterElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_ChiselRack</li>
+									<li>VFEM2_StoneClamp</li>
+								</value>
+							</li>
+							<!-- VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_TailoringLoom</li>
+									<li>VFEM2_MannequinStand</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_ComponentFabricationBench | VFE_TableMachiningLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_ComponentFabricationBench" or defName="VFE_TableMachiningLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFE_TableButcherElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableButcherElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_ButcherGoods</li>
+									<li>Link_ButcherBoost</li>
+								</value>
+							</li>
+							<!-- VFE_TableStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_KitchenGoods</li>
+									<li>Link_KitchenBoost</li>
+								</value>
+							</li>
+							<!-- VFE_TableDrugLabElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_DrugLabGoods</li>
+									<li>Link_DrugLabBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VFE_ComponentFabricationBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_ComponentFabricationBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_FabricationBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VFE_TableMachiningLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableMachiningLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VFE_FueledSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmelterGoods</li>
+									<li>Link_SmelterBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VFE_TableSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmithingGoods</li>
+									<li>Link_SmithingBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VFE_TableStonecutterElectric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_StoneCutterGoods</li>
+									<li>Link_StoneCutterBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VFE_TableTailorLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFE_TableTailorLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_TailorGoods</li>
+									<li>Link_TailorBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 						</operations>

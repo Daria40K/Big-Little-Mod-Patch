@@ -25,6 +25,42 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SerumCentrifuge | BioferriteShaper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SerumCentrifuge" or defName="BioferriteShaper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SerumCentrifuge | BioferriteShaper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SerumCentrifuge" or defName="BioferriteShaper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RimLife Expansion Production Plus ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -71,6 +107,51 @@
 								<xpath>Defs/ThingDef[defName="BioferriteShaper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Vehicles Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Vehicles Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BioferriteShaper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="BioferriteShaper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VVE_GarageCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SerumCentrifuge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SerumCentrifuge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_DrugLabGoods</li>
+									<li>Link_DrugLabBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- BioferriteShaper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="BioferriteShaper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 						</operations>
