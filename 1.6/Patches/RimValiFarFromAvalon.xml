@@ -644,6 +644,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ushankas Glittertech Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ushankas Glittertech Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>USH_ResearchProbe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Vanilla Factions Expanded - Empire ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -833,6 +850,26 @@
 									<li>MUS_Gothicstyle_Wardrobe</li>
 									<li>MUS_Gothicstyle_Mirror</li>
 									<li>MUS_Gothicstyle_BedsideTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [MUS]太空基地家具Space Base Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[MUS]太空基地家具Space Base Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_Beanbag | RVFFA_BeanbagAlternate | RVFFA_Plush | RVFFA_BasePillowPile | RVFFA_BedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_Beanbag" or defName="RVFFA_BeanbagAlternate" or defName="RVFFA_Plush" or @Name="RVFFA_BasePillowPile" or @Name="RVFFA_BedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MUS_SpaceBase_Lockers</li>
+									<li>MUS_SpaceBase_LockersV</li>
+									<li>MUS_SpaceBase_Cabinet</li>
+									<li>MUS_SpaceBase_CabinetV</li>
 								</value>
 							</li>
 						</operations>

@@ -473,6 +473,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [MUS]太空基地家具Space Base Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[MUS]太空基地家具Space Base Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MUS_SpaceBase_Lockers</li>
+									<li>MUS_SpaceBase_LockersV</li>
+									<li>MUS_SpaceBase_Cabinet</li>
+									<li>MUS_SpaceBase_CabinetV</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>

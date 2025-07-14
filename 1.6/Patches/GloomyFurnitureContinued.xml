@@ -804,6 +804,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [MUS]太空基地家具Space Base Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[MUS]太空基地家具Space Base Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MUS_SpaceBase_Lockers</li>
+									<li>MUS_SpaceBase_LockersV</li>
+									<li>MUS_SpaceBase_Cabinet</li>
+									<li>MUS_SpaceBase_CabinetV</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

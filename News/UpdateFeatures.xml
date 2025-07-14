@@ -803,4 +803,11 @@
 		<assemblyVersion>4.5.0</assemblyVersion>
 		<content>Rimworld v1.6: Added support for Advanced Electric Stove (Continued), Cybernetic Storm, Destiny 2 Exotic Weapons, Eccentric Tech - Core, Eccentric Tech - Spacer Furniture, Edo Themed Expansion, Electric Stonecutting Table, EverythingTable, Exotic Arsenal (Continued), Expanded Materials - Metals, Expanded Woodworking (Continued), Geyser Cooking Revived (Continued), Glitter Tech, Glitter Tech Classic, Glitter Tech Classic (No Surgery), Ilya Tech - Core (Continued), [JDS] The Forge - Anvil, Kurin, The Three Tailed Fox [Deluxe Edition], Large Animal Beds, [lmgginspace] Repair bed, Mechalit Core v2 (Continued), More Linkables, Outer Rim - Core, Outer Rim - Furniture and Decor, Paniel the Automata[1.6], Rhino's WORKBENCH., Rim-Effect Renegade: Core, Rim-Effect Renegade: Extended Cut, UN-Furniture (Continued), Vanilla Cooking Expanded - Sushi, Vanilla Factions Expanded - Classical, Vanilla Factions Expanded - Medieval 2, Vanilla Furniture Expanded - Medical Module, Vanilla Genetics Expanded, Vanilla Genetics Expanded - More Lab Stuff, Vanilla Plants Expanded - More Plants, Vanilla Quests Expanded - Deadlife, Vanilla Races Expanded - Android, Vanilla Recycling Expanded, Vanilla Vehicles Expanded, WorkBench Support - More Linkable Facilities -|Fixed support for Vanilla Furniture Expanded</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.6.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_6_0</defName>
+		<assemblyVersion>4.6.0</assemblyVersion>
+		<content>Rimworld v1.6: Added support for Tinkering Bench and Biohacking Station, Ushankas Glittertech Expansion and [MUS]太空基地家具Space Base Furniture</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
