@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ambition of the Cosmic [Continued]</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Apini Playable Race, Continued! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Apini Playable Race, Continued!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ApiniNectarStill</li>
+									<li>ApiniProstheticsTable</li>
+									<li>ApitechTable</li>
+									<li>ApitechSynthesizer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TableBionics</li>
+									<li>TableOrgans</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Genetics Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Genetics Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GR_NutrientVat</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_FabricationBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

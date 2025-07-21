@@ -67,6 +67,49 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ambition of the Cosmic [Continued]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaLab | Gasconverter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaLab" or defName="Gasconverter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unobtainer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_II</li>
+									<li>SNS_Linkable_CosmicDrawer_III</li>
+									<li>SNS_Linkable_CosmicCall_I</li>
+									<li>SNS_Linkable_CosmicCall_II</li>
+									<li>SNS_Linkable_CosmicCall_III</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Apini Playable Race, Continued! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Apini Playable Race, Continued!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ApiniNectarStill</li>
+									<li>ApiniProstheticsTable</li>
+									<li>ApitechTable</li>
+									<li>ApitechSynthesizer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -119,6 +162,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Erin's Cottage Collection ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Erin's Cottage Collection</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EliteBed" or defName="EliteDoubleBed" or defName="FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CCot_CottageDresser</li>
+									<li>CCot_CottageEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -155,6 +216,40 @@
 									<li>WardrobeA</li>
 									<li>WardrobeB</li>
 									<li>GL_Teddy</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EliteBed" or defName="EliteDoubleBed" or defName="FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RoyalCloset</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RoyalDresser</li>
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RusticTallEndTable</li>
+									<li>DankPyon_RusticChest</li>
+									<li>DankPyon_MetalStrongbox</li>
+									<li>DankPyon_RoyalChest</li>
+									<li>DankPyon_RusticDresser</li>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RusticCloset1x2c</li>
+								</value>
+							</li>
+							<!-- MechaLab | Gasconverter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaLab" or defName="Gasconverter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -375,6 +470,59 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Small Dresser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Dresser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EliteBed" or defName="EliteDoubleBed" or defName="FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SmallDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+							<!-- Gasconverter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Gasconverter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_measure</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -548,6 +696,54 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EliteBed" or defName="EliteDoubleBed" or defName="FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>vt_curio</li>
+									<li>VaultWardrobeA</li>
+									<li>VaultWardrobeB</li>
+									<li>vt_EndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_luxcommode</li>
+								</value>
+							</li>
+							<!-- MechaLab | Gasconverter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaLab" or defName="Gasconverter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaLab | Gasconverter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaLab" or defName="Gasconverter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -620,6 +816,51 @@
 									<li>MUS_SpaceBase_LockersV</li>
 									<li>MUS_SpaceBase_Cabinet</li>
 									<li>MUS_SpaceBase_CabinetV</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [RH2] Uncle Boris' - Used Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[RH2] Uncle Boris' - Used Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EliteBed" or defName="EliteDoubleBed" or defName="FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RH2_ClassicFootlocker</li>
+									<li>RH2_MilitaryCrateDresser</li>
+									<li>RH2_LampEndTable</li>
+									<li>RH2_DoubleWardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EliteBed | EliteDoubleBed | FirstClassBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EliteBed" or defName="EliteDoubleBed" or defName="FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ChineseBedsideTable</li>
+									<li>HX_ChineseDressingTable</li>
+								</value>
+							</li>
+							<!-- MechaLab | Gasconverter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaLab" or defName="Gasconverter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ToolCabinet</li>
 								</value>
 							</li>
 						</operations>

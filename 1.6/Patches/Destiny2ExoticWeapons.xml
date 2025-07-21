@@ -25,6 +25,29 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ambition of the Cosmic [Continued]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EngramDecoder -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unobtainer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_II</li>
+									<li>SNS_Linkable_CosmicDrawer_III</li>
+									<li>SNS_Linkable_CosmicCall_I</li>
+									<li>SNS_Linkable_CosmicCall_II</li>
+									<li>SNS_Linkable_CosmicCall_III</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -37,6 +60,23 @@
 								<xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EngramDecoder -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -79,6 +119,59 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EngramDecoder -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EngramDecoder -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EngramDecoder -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -91,6 +184,23 @@
 								<xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EngramDecoder -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ToolCabinet</li>
 								</value>
 							</li>
 						</operations>

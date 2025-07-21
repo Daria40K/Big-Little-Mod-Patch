@@ -810,4 +810,11 @@
 		<assemblyVersion>4.6.0</assemblyVersion>
 		<content>Rimworld v1.6: Added support for Tinkering Bench and Biohacking Station, Ushankas Glittertech Expansion and [MUS]太空基地家具Space Base Furniture</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.7.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_7_0</defName>
+		<assemblyVersion>4.7.0</assemblyVersion>
+		<content>Rimworld v1.6: Added support for Altered Carbon 2: ReSleeved, Ambition of the Cosmic [Continued], Apini Playable Race, Continued!, Archotech Expanded, Area Rugs 2.0, Crypto-Tech : Craftable, Erin's Cottage Collection, Curious Curios, Erin's Japanese Furniture, Faster Healing Bed, High Tech Laboratory Facilities (Continued), MakaiTech, Mechanoid Upgrades, Medical IV, Medieval Overhaul, More Multi-Analyzers, Nano Repair Tech, Recraft Unique Weapon, Small Dresser, Tabletop Decorations, [RH2] Uncle Boris' - Used Furniture, Super Size Bed!, Ushankas Luciferium Expansion, Vanilla Helixien Gas Expanded, Vault-Tec - Handy things for your vault!, WallStuff, 华夏扩展 Chinese Comprehensive Expansion</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

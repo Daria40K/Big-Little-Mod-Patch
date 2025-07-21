@@ -32,6 +32,29 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ambition of the Cosmic [Continued]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unobtainer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_II</li>
+									<li>SNS_Linkable_CosmicDrawer_III</li>
+									<li>SNS_Linkable_CosmicCall_I</li>
+									<li>SNS_Linkable_CosmicCall_II</li>
+									<li>SNS_Linkable_CosmicCall_III</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -117,6 +140,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Medical IV ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IV</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GlitterworldHospitalBedSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalIV</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical IVs Fork ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -139,6 +179,23 @@
 									<li>IV_Antibiotics_Electric</li>
 									<li>IV_Anesthetic_Electric</li>
 									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
 								</value>
 							</li>
 						</operations>
@@ -215,6 +272,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaniteAssemblySW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_measure</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+							<!-- TableWeaverSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_measure</li>
+									<li>ucp_scraps</li>
+									<li>ucp_textileroll</li>
+									<li>ucp_pencil</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -252,6 +343,23 @@
 									<li>SadjuukSurgeryAB</li>
 									<li>SadjuukSurgeryAC</li>
 									<li>SadjuukSurgeryAD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ushankas Luciferium Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ushankas Luciferium Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GlitterworldHospitalBedSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>USH_LuciferiumMedicalSimulator</li>
 								</value>
 							</li>
 						</operations>
@@ -341,6 +449,49 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+							<!-- GlitterworldHospitalBedSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vaultmedical</li>
+									<li>Vaultmedicallamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -422,6 +573,23 @@
 									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
 									<li>sd_medicaddons_spacer_surg_instruments</li>
 									<li>sd_medicaddons_spacer_surg_lamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ToolCabinet</li>
 								</value>
 							</li>
 						</operations>

@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Helixien Gas Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- VHGE_GasPoweredCrematorium | VHGE_GasPoweredStove | VHGE_GasPoweredRefinery -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredStove" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredStove" or defName="VHGE_GasPoweredRefinery"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredStove" or defName="VHGE_GasPoweredRefinery"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredStove" or defName="VHGE_GasPoweredRefinery"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy | VHGE_GasPoweredCrematorium | VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy" or defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ambition of the Cosmic [Continued]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy | VHGE_GasPoweredCrematorium | VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy" or defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unobtainer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_II</li>
+									<li>SNS_Linkable_CosmicDrawer_III</li>
+									<li>SNS_Linkable_CosmicCall_I</li>
+									<li>SNS_Linkable_CosmicCall_II</li>
+									<li>SNS_Linkable_CosmicCall_III</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy | VHGE_GasPoweredCrematorium | VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy" or defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GloomyFurniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Cupboard</li>
+									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
+									<li>DankPyon_TableBaking</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+									<li>DankPyon_QuenchingBucket</li>
+									<li>DankPyon_Grinder</li>
+									<li>DankPyon_Bellows</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredCrematorium | VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Archotech Garbage (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Archotech Garbage (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ArchoCookingAssistant</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>KitchenCupboard</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy | VHGE_GasPoweredCrematorium | VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy" or defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_CMTCleaner</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_AuxiliaryCoolingUnit</li>
+									<li>RLE_ReactionAccelerator</li>
+									<li>RLE_ImpurityFiltrationUnit</li>
+									<li>RLE_PreReactor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_hammer</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+									<li>ucp_wrench</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony Vanilla (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukRefineryUpgradeA</li>
+									<li>SadjuukRefineryUpgradeB</li>
+									<li>SadjuukRefineryUpgradeC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== VGP Garden Gourmet ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>VGP Garden Gourmet</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CookingTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_KitchenSinkCabinet</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_SmithyCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy | VHGE_GasPoweredCrematorium | VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy" or defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy | VHGE_GasPoweredCrematorium | VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy" or defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_KitchenGoods</li>
+									<li>Link_KitchenBoost</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmelterGoods</li>
+									<li>Link_SmelterBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmithingGoods</li>
+									<li>Link_SmithingBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_UniversalCabinet</li>
+									<li>Link_RefineryBoost</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LTS]Furnishing ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LTS]Furnishing</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LTS_Sink</li>
+									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_stoves</li>
+								</value>
+							</li>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy | VHGE_GasPoweredCrematorium | VHGE_GasPoweredRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy" or defName="VHGE_GasPoweredCrematorium" or defName="VHGE_GasPoweredRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

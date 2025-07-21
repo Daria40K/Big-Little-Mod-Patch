@@ -119,6 +119,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Erin's Cottage Collection ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Erin's Cottage Collection</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CCot_CottageDresser</li>
+									<li>CCot_CottageEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GiTS Cybernetic Equipment ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -193,6 +211,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Medical IV ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical IV</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_AdHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_AdHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MedicalIV</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medical IVs Fork ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -215,6 +250,33 @@
 									<li>IV_Antibiotics_Electric</li>
 									<li>IV_Anesthetic_Electric</li>
 									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RoyalCloset</li>
+									<li>DankPyon_RoyalEndTable</li>
+									<li>DankPyon_RoyalDresser</li>
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RusticTallEndTable</li>
+									<li>DankPyon_RusticChest</li>
+									<li>DankPyon_MetalStrongbox</li>
+									<li>DankPyon_RoyalChest</li>
+									<li>DankPyon_RusticDresser</li>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RusticCloset1x2c</li>
 								</value>
 							</li>
 						</operations>
@@ -397,6 +459,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Small Dresser ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Dresser</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SmallDresser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -465,6 +544,23 @@
 									<li>SadjuukSurgeryAB</li>
 									<li>SadjuukSurgeryAC</li>
 									<li>SadjuukSurgeryAD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ushankas Luciferium Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ushankas Luciferium Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RLE_AdHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_AdHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>USH_LuciferiumMedicalSimulator</li>
 								</value>
 							</li>
 						</operations>
@@ -576,6 +672,37 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>vt_curio</li>
+									<li>VaultWardrobeA</li>
+									<li>VaultWardrobeB</li>
+									<li>vt_EndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_luxcommode</li>
+								</value>
+							</li>
+							<!-- RLE_AdHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RLE_AdHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vaultmedical</li>
+									<li>Vaultmedicallamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [KR] Star Wars Bacta ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -652,6 +779,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [RH2] Uncle Boris' - Used Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[RH2] Uncle Boris' - Used Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RH2_ClassicFootlocker</li>
+									<li>RH2_MilitaryCrateDresser</li>
+									<li>RH2_LampEndTable</li>
+									<li>RH2_DoubleWardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [sd] medicaddons (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -671,6 +818,24 @@
 									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
 									<li>sd_medicaddons_spacer_surg_instruments</li>
 									<li>sd_medicaddons_spacer_surg_lamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- REL_WoolBed | REL_WoolDoubleBed | REL_Bed | RLE_DoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ChineseBedsideTable</li>
+									<li>HX_ChineseDressingTable</li>
 								</value>
 							</li>
 						</operations>

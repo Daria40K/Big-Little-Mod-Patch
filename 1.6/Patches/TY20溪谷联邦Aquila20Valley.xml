@@ -25,6 +25,29 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ambition of the Cosmic [Continued]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_Nano_industrial_manufacturing_station | TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station" or defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unobtainer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_II</li>
+									<li>SNS_Linkable_CosmicDrawer_III</li>
+									<li>SNS_Linkable_CosmicCall_I</li>
+									<li>SNS_Linkable_CosmicCall_II</li>
+									<li>SNS_Linkable_CosmicCall_III</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -55,6 +78,41 @@
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_XG_PengRenTai -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_XG_PengRenTai"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
+									<li>DankPyon_TableBaking</li>
+								</value>
+							</li>
+							<!-- TY_A_Nano_industrial_manufacturing_station -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+							<!-- TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+									<li>DankPyon_QuenchingBucket</li>
+									<li>DankPyon_Grinder</li>
+									<li>DankPyon_Bellows</li>
 								</value>
 							</li>
 						</operations>
@@ -125,6 +183,41 @@
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_Nano_industrial_manufacturing_station -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_measure</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+							<!-- TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_toolbox</li>
+									<li>ucp_hammer</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
 								</value>
 							</li>
 						</operations>
@@ -206,6 +299,41 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_Nano_industrial_manufacturing_station | TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station" or defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_Nano_industrial_manufacturing_station | TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station" or defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -255,6 +383,30 @@
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_XG_PengRenTai -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_XG_PengRenTai"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_stoves</li>
+								</value>
+							</li>
+							<!-- TY_A_Nano_industrial_manufacturing_station | TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station" or defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ToolCabinet</li>
 								</value>
 							</li>
 						</operations>

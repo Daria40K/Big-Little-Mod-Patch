@@ -26,6 +26,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Oven | ElectricOven | HandCanningstove | Canningstove | FueledCandyTable | CandyTable | GrindStone | ElectricGrindStone -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Oven" or defName="ElectricOven" or defName="HandCanningstove" or defName="Canningstove" or defName="FueledCandyTable" or defName="CandyTable" or defName="GrindStone" or defName="ElectricGrindStone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RusticCookingTools</li>
+									<li>DankPyon_TableBaking</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== More Archotech Garbage (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -108,6 +126,23 @@
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Oven | ElectricOven | HandCanningstove | Canningstove | FueledCandyTable | CandyTable | GrindStone | ElectricGrindStone -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Oven" or defName="ElectricOven" or defName="HandCanningstove" or defName="Canningstove" or defName="FueledCandyTable" or defName="CandyTable" or defName="GrindStone" or defName="ElectricGrindStone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_stoves</li>
 								</value>
 							</li>
 						</operations>
