@@ -8,9 +8,9 @@
 - [NexusMods]
 
 ## Mod Support
-- [Rimworld v1.3 List]
-- [Rimworld v1.4 List]
-- [Rimworld v1.5 List]
+- [Rimworld v1.3 List](https://github.com/Daria40K/Big-Little-Mod-Patch/blob/main/ModList1.3.md)
+- [Rimworld v1.4 List](https://github.com/Daria40K/Big-Little-Mod-Patch/blob/main/ModList1.4.md)
+- [Rimworld v1.5 List](https://github.com/Daria40K/Big-Little-Mod-Patch/blob/main/ModList1.5.md)
 
 ### Rimworld v1.6 List
 - [Advanced Brewery](https://github.com/StarterCraft/Rimworld-Advanced-Brewery) (Production links)
