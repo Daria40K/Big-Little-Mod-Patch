@@ -433,6 +433,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== HALO - UNSC Faction (1.6) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>HALO - UNSC Faction (1.6)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HALO_UNSC_ResearchTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== High Tech Laboratory Facilities (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -800,6 +817,57 @@
 									<li>OuterRim_CoruscantEndTable</li>
 									<li>OuterRim_TatooineDresser</li>
 									<li>OuterRim_TatooineEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DrugLab | FabricationBench | TableMachining | TableSculpting | ElectricSmelter | FueledSmithy | ElectricSmithy | TableStonecutter | HandTailoringBench | ElectricTailoringBench | ElectricCrematorium | BiofuelRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DrugLab" or defName="FabricationBench" or defName="TableMachining" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableStonecutter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_BasicWorkbench</li>
+									<li>Outland_Forge</li>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Outland - Furniture & Decor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Furniture &amp; Decor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HiTechResearchBench | SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HiTechResearchBench" or defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_StoneBookshelf</li>
+									<li>Outland_Bookshelf</li>
+								</value>
+							</li>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_StoneDresser</li>
+									<li>Outland_StoneEndTable</li>
+									<li>Outland_StoneEndTableWithLamp</li>
+									<li>Outland_StoneWardrobe</li>
+									<li>Outland_Dresser</li>
+									<li>Outland_EndTable</li>
+									<li>Outland_EndTableWithLamp</li>
+									<li>Outland_Wardrobe</li>
 								</value>
 							</li>
 						</operations>

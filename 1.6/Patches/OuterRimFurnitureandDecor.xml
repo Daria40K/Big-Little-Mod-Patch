@@ -221,6 +221,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Outland - Furniture & Decor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Furniture &amp; Decor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OuterRim_CorellianBed | OuterRim_CorellianDoubleBed | OuterRim_CoruscantBed | OuterRim_CoruscantDoubleBed | OuterRim_GenericBed | OuterRim_TatooineBed | OuterRim_TatooineDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OuterRim_CorellianBed" or defName="OuterRim_CorellianDoubleBed" or defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_StoneDresser</li>
+									<li>Outland_StoneEndTable</li>
+									<li>Outland_StoneEndTableWithLamp</li>
+									<li>Outland_StoneWardrobe</li>
+									<li>Outland_Dresser</li>
+									<li>Outland_EndTable</li>
+									<li>Outland_EndTableWithLamp</li>
+									<li>Outland_Wardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Ponpeco Furnitures : Kids' Room ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

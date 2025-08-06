@@ -817,4 +817,11 @@
 		<assemblyVersion>4.7.0</assemblyVersion>
 		<content>Rimworld v1.6: Added support for Altered Carbon 2: ReSleeved, Ambition of the Cosmic [Continued], Apini Playable Race, Continued!, Archotech Expanded, Area Rugs 2.0, Crypto-Tech : Craftable, Erin's Cottage Collection, Curious Curios, Erin's Japanese Furniture, Faster Healing Bed, High Tech Laboratory Facilities (Continued), MakaiTech, Mechanoid Upgrades, Medical IV, Medieval Overhaul, More Multi-Analyzers, Nano Repair Tech, Recraft Unique Weapon, Small Dresser, Tabletop Decorations, [RH2] Uncle Boris' - Used Furniture, Super Size Bed!, Ushankas Luciferium Expansion, Vanilla Helixien Gas Expanded, Vault-Tec - Handy things for your vault!, WallStuff, 华夏扩展 Chinese Comprehensive Expansion</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.8.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_8_0</defName>
+		<assemblyVersion>4.8.0</assemblyVersion>
+		<content>Rimworld v1.6: Added support for HALO - UNSC Faction (1.6), KitchenStove, Outland - Core, Outland - Furniture &amp; Decor, Tiny Workbenchs (Continued)</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

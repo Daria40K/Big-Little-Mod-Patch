@@ -334,6 +334,49 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniNectarStill | ApiniNectarStill | ApiniProstheticsTable | ApiniProstheticsTable | ApitechTable | ApitechTable | ApitechSynthesizer | ApitechSynthesizer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniNectarStill" or defName="ApiniNectarStill" or defName="ApiniProstheticsTable" or defName="ApiniProstheticsTable" or defName="ApitechTable" or defName="ApitechTable" or defName="ApitechSynthesizer" or defName="ApitechSynthesizer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_BasicWorkbench</li>
+									<li>Outland_Forge</li>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Outland - Furniture & Decor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Furniture &amp; Decor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniHoneycombBed_S | ApiniHoneycombBed_L -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniHoneycombBed_S" or defName="ApiniHoneycombBed_L"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_StoneDresser</li>
+									<li>Outland_StoneEndTable</li>
+									<li>Outland_StoneEndTableWithLamp</li>
+									<li>Outland_StoneWardrobe</li>
+									<li>Outland_Dresser</li>
+									<li>Outland_EndTable</li>
+									<li>Outland_EndTableWithLamp</li>
+									<li>Outland_Wardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Ponpeco Furnitures : Kids' Room ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

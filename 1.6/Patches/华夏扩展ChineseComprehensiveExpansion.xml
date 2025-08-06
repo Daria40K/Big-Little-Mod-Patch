@@ -359,6 +359,49 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_CeramicKiln_fuel | HX_CeramicKiln_Electric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_CeramicKiln_fuel" or defName="HX_CeramicKiln_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_BasicWorkbench</li>
+									<li>Outland_Forge</li>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Outland - Furniture & Decor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Furniture &amp; Decor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_bunk | HX_TraditionalBedA | HX_ElectricBedA | HX_TraditionalBedB | HX_ElectricBedB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_bunk" or defName="HX_TraditionalBedA" or defName="HX_ElectricBedA" or defName="HX_TraditionalBedB" or defName="HX_ElectricBedB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_StoneDresser</li>
+									<li>Outland_StoneEndTable</li>
+									<li>Outland_StoneEndTableWithLamp</li>
+									<li>Outland_StoneWardrobe</li>
+									<li>Outland_Dresser</li>
+									<li>Outland_EndTable</li>
+									<li>Outland_EndTableWithLamp</li>
+									<li>Outland_Wardrobe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Ponpeco Furnitures : Kids' Room ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
