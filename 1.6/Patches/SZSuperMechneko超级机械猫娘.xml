@@ -25,6 +25,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SZMechNeko_NekoAssemblier -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SZMechNeko_NekoAssemblier"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

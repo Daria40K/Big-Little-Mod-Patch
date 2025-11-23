@@ -25,6 +25,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- S_WC_NANO_FAB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="S_WC_NANO_FAB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

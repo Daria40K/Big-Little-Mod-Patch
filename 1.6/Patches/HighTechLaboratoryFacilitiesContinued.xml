@@ -25,6 +25,61 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== ACS - Advanced Commercial Server ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>ACS - Advanced Commercial Server</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ServerRack</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== AI Uplifting Assistant ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>AI Uplifting Assistant</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AIUpliftAssistantAUA</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_WallPapersA</li>
+									<li>AKN_WallPapersB</li>
+									<li>AKN_PaperNotesA</li>
+									<li>AKN_PaperNotesB</li>
+									<li>AKN_PaperNotesC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

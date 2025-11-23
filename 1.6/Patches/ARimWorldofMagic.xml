@@ -2,37 +2,12 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Outer Rim - Core</li>
+			<li>A RimWorld of Magic</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- HypertechFabricatorBase -->
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-					<nomatch Class="PatchOperationConditional">
-						<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps</xpath>
-						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps</xpath>
-							<value>
-								<li Class="CompProperties_AffectedByFacilities">
-									<linkableFacilities />
-								</li>
-							</value>
-						</match>
-						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]</xpath>
-							<value>
-								<comps>
-									<li Class="CompProperties_AffectedByFacilities">
-										<linkableFacilities/>
-									</li>
-								</comps>
-							</value>
-						</nomatch>
-					</nomatch>
-				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -40,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -57,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -74,9 +49,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unobtainer_I</li>
 									<li>SNS_Linkable_CosmicDrawer_I</li>
@@ -97,9 +72,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -114,9 +89,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -131,9 +106,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -150,9 +125,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -169,13 +144,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
-									<li>RLE_CMTCleaner</li>
 								</value>
 							</li>
 						</operations>
@@ -188,52 +162,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
-									<li>ucp_hammer</li>
-									<li>ucp_measure</li>
-									<li>ucp_aerosol</li>
-									<li>ucp_blueprint</li>
-									<li>ucp_wrench</li>
-									<li>ucp_roboarm</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HypertechFabricatorBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFE_FabricationCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Vehicles Expanded ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Vehicles Expanded</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HypertechFabricatorBase -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VVE_GarageCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -246,9 +180,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -264,9 +198,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -281,11 +215,10 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_FabricationBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -299,9 +232,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HypertechFabricatorBase -->
+							<!-- TableGemcutting | TableMagicPrinter | TableArcaneForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[@Name="HypertechFabricatorBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ToolCabinet</li>
 								</value>

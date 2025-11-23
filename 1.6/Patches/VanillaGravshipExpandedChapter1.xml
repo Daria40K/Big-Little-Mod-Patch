@@ -2,37 +2,12 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vault-Tec - Handy things for your vault!</li>
+			<li>Vanilla Gravship Expanded - Chapter 1</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- VTElectricStove -->
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-					<nomatch Class="PatchOperationConditional">
-						<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps</xpath>
-						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps</xpath>
-							<value>
-								<li Class="CompProperties_AffectedByFacilities">
-									<linkableFacilities />
-								</li>
-							</value>
-						</match>
-						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="VTElectricStove"]</xpath>
-							<value>
-								<comps>
-									<li Class="CompProperties_AffectedByFacilities">
-										<linkableFacilities/>
-									</li>
-								</comps>
-							</value>
-						</nomatch>
-					</nomatch>
-				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -40,24 +15,24 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
 								</value>
 							</li>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
 							</li>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VitalsMonitor</li>
 								</value>
@@ -72,9 +47,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -89,23 +64,23 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
 							</li>
-							<!-- VTElectricStove | vt_workbench | vt_megabore -->
+							<!-- VGE_CompactStove | VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove" or defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove" or defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
 							</li>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_RestoringPlush</li>
 								</value>
@@ -120,9 +95,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AM_AncientLockerBank</li>
 								</value>
@@ -137,9 +112,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unobtainer_I</li>
 									<li>SNS_Linkable_CosmicDrawer_I</li>
@@ -160,9 +135,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CTSAdvancedVitalsMonitor</li>
 								</value>
@@ -177,11 +152,28 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Dark Ages : Medieval Tools ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Dark Ages : Medieval Tools</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CompactTailor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactTailor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_TailoringTools</li>
 								</value>
 							</li>
 						</operations>
@@ -194,9 +186,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
@@ -212,9 +204,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HSFancy_Tatami</li>
 								</value>
@@ -229,9 +221,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageDresser</li>
 									<li>CCot_CottageEndTable</li>
@@ -247,9 +239,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>gitsAnchorConsole</li>
 								</value>
@@ -264,9 +256,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -277,9 +269,9 @@
 									<li>GL_Teddy</li>
 								</value>
 							</li>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
@@ -295,9 +287,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IVDrugInfuser</li>
 								</value>
@@ -312,9 +304,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -329,9 +321,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalIV</li>
 								</value>
@@ -346,9 +338,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IV_Blood</li>
 									<li>IV_Nutrition</li>
@@ -373,9 +365,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RoyalCloset</li>
 									<li>DankPyon_RoyalEndTable</li>
@@ -390,19 +382,39 @@
 									<li>DankPyon_RusticCloset1x2c</li>
 								</value>
 							</li>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RusticCookingTools</li>
 									<li>DankPyon_TableBaking</li>
 								</value>
 							</li>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- VGE_CompactDrugLab -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
+									<li>DankPyon_VialsTable</li>
+									<li>DankPyon_HerbTable</li>
+									<li>DankPyon_Alembic</li>
+								</value>
+							</li>
+							<!-- VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+							<!-- VGE_CompactSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+									<li>DankPyon_QuenchingBucket</li>
+									<li>DankPyon_Grinder</li>
+									<li>DankPyon_Bellows</li>
 								</value>
 							</li>
 						</operations>
@@ -415,9 +427,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Mediterranean_EndTable</li>
 									<li>Mediterranean_Wardrobe</li>
@@ -435,9 +447,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ArchoCookingAssistant</li>
 								</value>
@@ -452,9 +464,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2Dresser</li>
 									<li>Anon2EndTable</li>
@@ -473,25 +485,25 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>KitchenCupboard</li>
 								</value>
 							</li>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
 								</value>
 							</li>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SurgicalLamp</li>
 									<li>SurgicalInstruments</li>
@@ -507,9 +519,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -529,9 +541,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -548,9 +560,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneEndTable</li>
@@ -572,9 +584,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PFK_EndTable</li>
 									<li>PFK_Dresser</li>
@@ -590,9 +602,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRLincangDresser</li>
 									<li>RRDalianWardrobe</li>
@@ -609,9 +621,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -629,9 +641,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -651,17 +663,17 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
 								</value>
 							</li>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_AirCondition</li>
 								</value>
@@ -676,21 +688,31 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- vt_workbench -->
+							<!-- VGE_CompactDrugLab | VGE_CompactTailor -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactTailor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+							<!-- VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
 									<li>RLE_CMTCleaner</li>
 								</value>
 							</li>
-							<!-- vt_megabore -->
+							<!-- VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>RLE_PowerStabilizer</li>
-									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_AuxiliaryCoolingUnit</li>
+									<li>RLE_ReactionAccelerator</li>
+									<li>RLE_ImpurityFiltrationUnit</li>
+									<li>RLE_PreReactor</li>
 								</value>
 							</li>
 						</operations>
@@ -703,9 +725,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RVFFA_IlluminateEndTable</li>
 								</value>
@@ -720,9 +742,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SmallDresser</li>
 								</value>
@@ -737,9 +759,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- vt_workbench -->
+							<!-- VGE_CompactFabBench -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
@@ -751,12 +773,42 @@
 									<li>ucp_roboarm</li>
 								</value>
 							</li>
-							<!-- vt_megabore -->
+							<!-- VGE_CompactMachiningTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_vise</li>
+									<li>ucp_toolbox</li>
+									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_measure</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_blueprint</li>
+									<li>ucp_wrench</li>
+									<li>ucp_roboarm</li>
+								</value>
+							</li>
+							<!-- VGE_CompactSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
+									<li>ucp_hammer</li>
+									<li>ucp_aerosol</li>
+									<li>ucp_tongs</li>
+									<li>ucp_ballpeen</li>
+									<li>ucp_wrench</li>
+								</value>
+							</li>
+							<!-- VGE_CompactTailor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactTailor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_measure</li>
+									<li>ucp_scraps</li>
+									<li>ucp_textileroll</li>
+									<li>ucp_pencil</li>
 								</value>
 							</li>
 						</operations>
@@ -769,9 +821,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -788,9 +840,9 @@
 									<li>SadjuukBedroomUpgradeCD</li>
 								</value>
 							</li>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukHospitalUpgradeBA</li>
 									<li>SadjuukHospitalUpgradeBB</li>
@@ -798,6 +850,15 @@
 									<li>SadjuukHospitalUpgradeCB</li>
 									<li>SadjuukHospitalUpgradeCD</li>
 									<li>SadjuukHospitalUpgradeCE</li>
+								</value>
+							</li>
+							<!-- VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukRefineryUpgradeA</li>
+									<li>SadjuukRefineryUpgradeB</li>
+									<li>SadjuukRefineryUpgradeC</li>
 								</value>
 							</li>
 						</operations>
@@ -810,9 +871,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -822,9 +883,9 @@
 									<li>SadjuukFurnitureBC</li>
 								</value>
 							</li>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukSurgeryAA</li>
 									<li>SadjuukSurgeryAB</li>
@@ -842,9 +903,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>USH_LuciferiumMedicalSimulator</li>
 								</value>
@@ -859,9 +920,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CookingTools</li>
 								</value>
@@ -876,9 +937,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
 								</value>
@@ -893,11 +954,27 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEM2_SurgicalTools</li>
+								</value>
+							</li>
+							<!-- VGE_CompactSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_SmithingAnvil</li>
+									<li>VFEM2_ForgeBellows</li>
+								</value>
+							</li>
+							<!-- VGE_CompactTailor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactTailor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_TailoringLoom</li>
+									<li>VFEM2_MannequinStand</li>
 								</value>
 							</li>
 						</operations>
@@ -910,9 +987,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
@@ -929,9 +1006,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Facility_VitalsCentre</li>
 									<li>Facility_IVDrip</li>
@@ -947,18 +1024,46 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_KitchenSinkCabinet</li>
 								</value>
 							</li>
-							<!-- vt_workbench -->
+							<!-- VGE_CompactDrugLab -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_DrugCabinet</li>
+								</value>
+							</li>
+							<!-- VGE_CompactFabBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_FabricationCabinet</li>
+								</value>
+							</li>
+							<!-- VGE_CompactMachiningTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_MachiningCabinet</li>
+								</value>
+							</li>
+							<!-- VGE_CompactSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_SmithyCabinet</li>
+								</value>
+							</li>
+							<!-- VGE_CompactTailor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactTailor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_TailorCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -971,29 +1076,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Gravship Expanded - Chapter 1 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Gravship Expanded - Chapter 1</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VGE_CrewLockers</li>
 								</value>
 							</li>
 						</operations>
@@ -1006,9 +1094,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VPE_Plant_Lullabloom</li>
 								</value>
@@ -1023,11 +1111,50 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- vt_workbench -->
+							<!-- VGE_CompactFabBench | VGE_CompactMachiningTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VVE_GarageCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CrewBunkBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>vt_curio</li>
+									<li>VaultWardrobeA</li>
+									<li>VaultWardrobeB</li>
+									<li>vt_EndTable</li>
+									<li>vt_commode</li>
+									<li>vt_luxEndTable</li>
+									<li>vt_luxcommode</li>
+								</value>
+							</li>
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+							<!-- VGE_MedbayBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vaultmedical</li>
+									<li>Vaultmedicallamp</li>
 								</value>
 							</li>
 						</operations>
@@ -1040,9 +1167,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -1057,27 +1184,64 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_KitchenGoods</li>
 									<li>Link_KitchenBoost</li>
 								</value>
 							</li>
-							<!-- vt_workbench -->
+							<!-- VGE_CompactDrugLab -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_DrugLabGoods</li>
+									<li>Link_DrugLabBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VGE_CompactFabBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_FabricationBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
-							<!-- vt_megabore -->
+							<!-- VGE_CompactMachiningTable -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_MachiningGoods</li>
+									<li>Link_MachiningBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VGE_CompactSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_SmithingGoods</li>
+									<li>Link_SmithingBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VGE_CompactTailor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactTailor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_TailorGoods</li>
+									<li>Link_TailorBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+							<!-- VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
+									<li>Link_RefineryBoost</li>
 								</value>
 							</li>
 						</operations>
@@ -1090,9 +1254,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalStandDroid</li>
 								</value>
@@ -1107,20 +1271,27 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
 									<li>LTS_KoppangD</li>
 								</value>
 							</li>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_Sink</li>
+									<li>LTS_Fridge</li>
+								</value>
+							</li>
+							<!-- VGE_CompactDrugLab -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
 									<li>LTS_Fridge</li>
 								</value>
 							</li>
@@ -1134,9 +1305,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>
@@ -1154,14 +1325,32 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_SpaceBase_Lockers</li>
 									<li>MUS_SpaceBase_LockersV</li>
 									<li>MUS_SpaceBase_Cabinet</li>
 									<li>MUS_SpaceBase_CabinetV</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CompactTailor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactTailor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Cloth_Processing</li>
+									<li>OA_RK_Cloth_Processing_B</li>
 								</value>
 							</li>
 						</operations>
@@ -1174,9 +1363,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RH2_ClassicFootlocker</li>
 									<li>RH2_MilitaryCrateDresser</li>
@@ -1194,9 +1383,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HospitalBedVault -->
+							<!-- VGE_MedbayBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>sd_medicaddons_medieval_surg_washpan</li>
 									<li>sd_medicaddons_medieval_surg_instruments</li>
@@ -1218,24 +1407,24 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<!-- VGE_CrewBunkBed -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ChineseBedsideTable</li>
 									<li>HX_ChineseDressingTable</li>
 								</value>
 							</li>
-							<!-- VTElectricStove -->
+							<!-- VGE_CompactStove -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_stoves</li>
 								</value>
 							</li>
-							<!-- vt_workbench | vt_megabore -->
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ToolCabinet</li>
 								</value>

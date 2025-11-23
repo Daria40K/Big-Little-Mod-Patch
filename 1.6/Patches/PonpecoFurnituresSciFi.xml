@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Modern Bed (1.4+)</li>
+			<li>Ponpeco Furnitures : Sci-Fi</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,9 +15,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
@@ -33,9 +33,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
 								</value>
@@ -50,9 +50,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
 								</value>
@@ -67,9 +67,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AM_AncientLockerBank</li>
 								</value>
@@ -84,9 +84,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
@@ -102,9 +102,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HSFancy_Tatami</li>
 								</value>
@@ -119,9 +119,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageDresser</li>
 									<li>CCot_CottageEndTable</li>
@@ -137,9 +137,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -160,9 +160,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -177,9 +177,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RoyalCloset</li>
 									<li>DankPyon_RoyalEndTable</li>
@@ -204,9 +204,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Mediterranean_EndTable</li>
 									<li>Mediterranean_Wardrobe</li>
@@ -224,9 +224,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2Dresser</li>
 									<li>Anon2EndTable</li>
@@ -245,9 +245,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -267,9 +267,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneEndTable</li>
@@ -291,9 +291,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PFK_EndTable</li>
 									<li>PFK_Dresser</li>
@@ -309,9 +309,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRLincangDresser</li>
 									<li>RRDalianWardrobe</li>
@@ -328,9 +328,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -348,9 +348,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -370,9 +370,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
@@ -388,9 +388,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RVFFA_IlluminateEndTable</li>
 								</value>
@@ -405,9 +405,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SmallDresser</li>
 								</value>
@@ -422,9 +422,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -451,9 +451,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -473,9 +473,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
 								</value>
@@ -490,9 +490,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
@@ -509,9 +509,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -527,9 +527,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VGE_CrewLockers</li>
 								</value>
@@ -544,9 +544,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VPE_Plant_Lullabloom</li>
 								</value>
@@ -561,9 +561,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>VaultWardrobeA</li>
@@ -584,9 +584,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
@@ -603,9 +603,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>
@@ -623,9 +623,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_SpaceBase_Lockers</li>
 									<li>MUS_SpaceBase_LockersV</li>
@@ -643,9 +643,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RH2_ClassicFootlocker</li>
 									<li>RH2_MilitaryCrateDresser</li>
@@ -663,9 +663,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<!-- PFSBasicBedBase -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ChineseBedsideTable</li>
 									<li>HX_ChineseDressingTable</li>

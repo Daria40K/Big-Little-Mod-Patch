@@ -32,6 +32,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AntyTableButcher | AntyCopyTableMachining | AntyCopyTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AntyTableButcher" or defName="AntyCopyTableMachining" or defName="AntyCopyTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+							<!-- AT_Superregenerationdevice -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AT_Superregenerationdevice"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_RestoringPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

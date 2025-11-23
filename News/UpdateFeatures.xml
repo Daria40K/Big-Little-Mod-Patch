@@ -824,4 +824,11 @@
 		<assemblyVersion>4.8.0</assemblyVersion>
 		<content>Rimworld v1.6: Added support for HALO - UNSC Faction (1.6), KitchenStove, Outland - Core, Outland - Furniture &amp; Decor, Tiny Workbenchs (Continued)</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.9.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_9_0</defName>
+		<assemblyVersion>4.9.0</assemblyVersion>
+		<content>Rimworld v1.6: Added support for ACS - Advanced Commercial Server, AI Uplifting Assistant, Akeron - Decorations, Appliances Expanded, A RimWorld of Magic, Avaritia 无尽贪婪, Ponpeco Furnitures : Sci-Fi, Vanilla Gravship Expanded - Chapter 1</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
