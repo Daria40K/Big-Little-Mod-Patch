@@ -559,6 +559,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- PFK_Bedroll -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="PFK_Bedroll"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

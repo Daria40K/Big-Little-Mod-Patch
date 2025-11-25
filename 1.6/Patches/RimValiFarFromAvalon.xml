@@ -1197,6 +1197,37 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountedMultiAnalyzer</li>
+								</value>
+							</li>
+							<!-- RVFFA_Beanbag | RVFFA_BeanbagAlternate | RVFFA_Plush | RVFFA_BasePillowPile | RVFFA_BedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_Beanbag" or defName="RVFFA_BeanbagAlternate" or defName="RVFFA_Plush" or @Name="RVFFA_BasePillowPile" or @Name="RVFFA_BedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+							<!-- RVFFA_BaseProductionBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RVFFA_BaseProductionBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

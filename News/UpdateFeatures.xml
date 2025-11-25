@@ -831,4 +831,11 @@
 		<assemblyVersion>4.9.0</assemblyVersion>
 		<content>Rimworld v1.6: Added support for ACS - Advanced Commercial Server, AI Uplifting Assistant, Akeron - Decorations, Appliances Expanded, A RimWorld of Magic, Avaritia 无尽贪婪, Ponpeco Furnitures : Sci-Fi, Vanilla Gravship Expanded - Chapter 1</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.10.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_10_0</defName>
+		<assemblyVersion>4.10.0</assemblyVersion>
+		<content>Rimworld v1.6: Added support for WallStuffV2</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

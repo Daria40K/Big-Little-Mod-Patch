@@ -1177,6 +1177,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CrewBunkBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

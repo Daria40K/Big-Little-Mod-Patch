@@ -776,6 +776,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [KR] Star Wars Bacta ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

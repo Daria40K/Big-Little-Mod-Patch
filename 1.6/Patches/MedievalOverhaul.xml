@@ -906,6 +906,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_RoyalTudorBed | DankPyon_BasicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_RoyalTudorBed" or @Name="DankPyon_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+							<!-- DankPyon_Cauldron | DankPyon_AlchemyBench | DankPyon_Smelter | DankPyon_Kiln | DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_Trestle | DankPyon_SawTable | DankPyon_Workbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Cauldron" or defName="DankPyon_AlchemyBench" or defName="DankPyon_Smelter" or defName="DankPyon_Kiln" or defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_Trestle" or defName="DankPyon_SawTable" or defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

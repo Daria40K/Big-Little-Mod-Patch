@@ -1050,6 +1050,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+							<!-- vt_workbench | vt_megabore -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

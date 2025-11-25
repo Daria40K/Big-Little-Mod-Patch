@@ -577,6 +577,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

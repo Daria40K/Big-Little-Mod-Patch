@@ -739,6 +739,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

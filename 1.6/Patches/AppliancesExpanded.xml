@@ -384,6 +384,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelSmelter | CA_ChemfuelSmithy | CA_ChemfuelCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -806,6 +823,23 @@
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_FueledSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>

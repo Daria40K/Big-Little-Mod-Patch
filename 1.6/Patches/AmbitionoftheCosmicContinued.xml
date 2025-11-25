@@ -245,6 +245,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Table_SNS_BionicCraftingStation_GenI | Table_SNS_BionicCraftingStation_GenII | Table_SNS_BionicCraftingStation_GenIII -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

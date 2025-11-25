@@ -1149,6 +1149,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallMountedMultiAnalyzer</li>
+								</value>
+							</li>
+							<!-- TWB_DrugLabMini | TWB_FabricationBenchMini | TWB_TableMachiningMini | TWB_TableSculptingMini | TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini" or defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableSculptingMini" or defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
