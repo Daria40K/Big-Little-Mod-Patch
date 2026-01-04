@@ -300,6 +300,28 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VHGE_GasPoweredSmelter | VHGE_GasPoweredSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter" or defName="VHGE_GasPoweredSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukAssemblyRobot</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

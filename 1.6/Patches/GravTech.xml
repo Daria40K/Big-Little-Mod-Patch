@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Sparkling Worlds - Full Mod</li>
+			<li>GravTech</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,16 +15,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
 							</li>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VitalsMonitor</li>
 								</value>
@@ -39,16 +39,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
 							</li>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_RestoringPlush</li>
 								</value>
@@ -63,9 +63,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unobtainer_I</li>
 									<li>SNS_Linkable_CosmicDrawer_I</li>
@@ -86,9 +86,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CTSAdvancedVitalsMonitor</li>
 								</value>
@@ -103,28 +103,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Dark Ages : Medieval Tools ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Dark Ages : Medieval Tools</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DA_TailoringTools</li>
 								</value>
 							</li>
 						</operations>
@@ -137,9 +120,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>gitsAnchorConsole</li>
 								</value>
@@ -154,9 +137,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IVDrugInfuser</li>
 								</value>
@@ -171,9 +154,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalIV</li>
 								</value>
@@ -188,9 +171,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>IV_Blood</li>
 									<li>IV_Nutrition</li>
@@ -215,9 +198,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -232,18 +215,18 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
 								</value>
 							</li>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SurgicalLamp</li>
 									<li>SurgicalInstruments</li>
@@ -259,9 +242,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -278,9 +261,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_AirCondition</li>
 								</value>
@@ -295,21 +278,13 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
 									<li>RLE_CMTCleaner</li>
-								</value>
-							</li>
-							<!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RLE_PowerStabilizer</li>
-									<li>RLE_IntegratedManagementDevice</li>
 								</value>
 							</li>
 						</operations>
@@ -322,9 +297,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
@@ -334,16 +309,6 @@
 									<li>ucp_blueprint</li>
 									<li>ucp_wrench</li>
 									<li>ucp_roboarm</li>
-								</value>
-							</li>
-							<!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_measure</li>
-									<li>ucp_scraps</li>
-									<li>ucp_textileroll</li>
-									<li>ucp_pencil</li>
 								</value>
 							</li>
 						</operations>
@@ -356,9 +321,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -378,9 +343,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukHospitalUpgradeBA</li>
 									<li>SadjuukHospitalUpgradeBB</li>
@@ -400,9 +365,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukSurgeryAA</li>
 									<li>SadjuukSurgeryAB</li>
@@ -420,9 +385,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>USH_LuciferiumMedicalSimulator</li>
 								</value>
@@ -437,19 +402,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEM2_SurgicalTools</li>
-								</value>
-							</li>
-							<!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFEM2_TailoringLoom</li>
-									<li>VFEM2_MannequinStand</li>
 								</value>
 							</li>
 						</operations>
@@ -462,9 +419,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Facility_VitalsCentre</li>
 									<li>Facility_IVDrip</li>
@@ -480,18 +437,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_FabricationCabinet</li>
-								</value>
-							</li>
-							<!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFE_TailorCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -504,9 +454,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VVE_GarageCabinet</li>
 								</value>
@@ -521,17 +471,17 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
 								</value>
 							</li>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vaultmedical</li>
 									<li>Vaultmedicallamp</li>
@@ -547,9 +497,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -564,9 +514,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -581,20 +531,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_FabricationBoost</li>
-									<li>Link_UniversalCabinet</li>
-								</value>
-							</li>
-							<!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_TailorGoods</li>
-									<li>Link_TailorBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -608,29 +549,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MedicalStandDroid</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[OA]Ratkin Faction: Oberonia aurea</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableWeaverSW -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OA_RK_Cloth_Processing</li>
-									<li>OA_RK_Cloth_Processing_B</li>
 								</value>
 							</li>
 						</operations>
@@ -643,9 +566,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GlitterworldHospitalBedSW -->
+							<!-- AdvShip_TimeFasterPod -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>sd_medicaddons_medieval_surg_washpan</li>
 									<li>sd_medicaddons_medieval_surg_instruments</li>
@@ -667,9 +590,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- MechaniteAssemblySW | TableWeaverSW -->
+							<!-- GravForge -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="MechaniteAssemblySW" or defName="TableWeaverSW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ToolCabinet</li>
 								</value>

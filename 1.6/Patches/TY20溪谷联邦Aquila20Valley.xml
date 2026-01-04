@@ -259,6 +259,28 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_Nano_industrial_manufacturing_station | TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station" or defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukAssemblyRobot</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== VGP Garden Gourmet ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

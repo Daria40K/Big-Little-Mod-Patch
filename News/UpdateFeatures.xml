@@ -838,4 +838,11 @@
 		<assemblyVersion>4.10.0</assemblyVersion>
 		<content>Rimworld v1.6: Added support for WallStuffV2</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.11.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_11_0</defName>
+		<assemblyVersion>4.11.0</assemblyVersion>
+		<content>Added support for UN-Colony (Continued), Blue Archive Furniture, Daily furniture 塔林家具 1.6, Ponpeco Furnitures : Sci-Fi, GravTech, [RH2] Helldivers: Super Firearms, Sunset Technology 3, YASTM (Yet Another Star Trek Mod)</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

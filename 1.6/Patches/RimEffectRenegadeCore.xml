@@ -207,6 +207,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Blue Archive Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Blue Archive Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_PrefabDoubleBed | RE_PrefabBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabDoubleBed" or defName="RE_PrefabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Tea_party_Bed_curtains</li>
+									<li>Trinity_SideTable</li>
+									<li>SideTablewithlamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Brain In a Jar ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -294,6 +313,42 @@
 								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Daily furniture 塔林家具 1.6 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Daily furniture 塔林家具 1.6</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_PrefabDoubleBed | RE_PrefabBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabDoubleBed" or defName="RE_PrefabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ADH_light_A_A_FURNITURE</li>
+									<li>ADH_light_B_A_FURNITURE</li>
+									<li>ADH_light_E_A_FURNITURE</li>
+									<li>ADH_clock_A_A_FURNITURE</li>
+									<li>ADH_cabinet_A_A_FURNITURE</li>
+									<li>ADH_cabinet_A_B_FURNITURE</li>
+									<li>ADH_cabinet_A_C_FURNITURE</li>
+									<li>ADH_cabinet_A_D_FURNITURE</li>
+									<li>ADH_book_A_A_FURNITURE</li>
+									<li>ADH_book_A_B_FURNITURE</li>
+									<li>ADH_EndTable_A_A_FURNITURE</li>
+									<li>ADH_rug_A_A_FURNITURE</li>
+									<li>ADH_rug_B_A_FURNITURE</li>
+									<li>ADH_rug_C_A_FURNITURE</li>
+									<li>ADH_rug_D_A_FURNITURE</li>
+									<li>ADH_rug_E_A_FURNITURE</li>
+									<li>ADH_rug_F_A_FURNITURE</li>
+									<li>ADH_rug_G_A_FURNITURE</li>
+									<li>ADH_rug_H_A_FURNITURE</li>
+									<li>ADH_rug_I_A_FURNITURE</li>
 								</value>
 							</li>
 						</operations>
@@ -837,6 +892,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Ponpeco Furnitures : Sci-Fi ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ponpeco Furnitures : Sci-Fi</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_PrefabDoubleBed | RE_PrefabBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_PrefabDoubleBed" or defName="RE_PrefabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PFS_EndTable</li>
+									<li>PFS_DresserA</li>
+									<li>PFS_DresserB</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RR's Furniture pack-Collection Longyun ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1041,6 +1115,28 @@
 									<li>ucp_blueprint</li>
 									<li>ucp_wrench</li>
 									<li>ucp_roboarm</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RE_ManufacturingBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RE_ManufacturingBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukShaper</li>
+									<li>SadjuukGrinding</li>
+									<li>SadjuukWeldingRobot</li>
+									<li>SadjuukMilling</li>
+									<li>SadjuukLathe</li>
+									<li>SadjuukAssemblyRobot</li>
 								</value>
 							</li>
 						</operations>
