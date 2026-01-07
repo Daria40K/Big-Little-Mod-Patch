@@ -50,6 +50,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -450,6 +467,25 @@
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Oktober's Scrap-Tek ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Oktober's Scrap-Tek</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OutlandBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OK_Scrap_DresserAncient</li>
+									<li>OK_Scrap_EndTableAncient</li>
+									<li>OK_Scrap_LightEndTableAncient</li>
 								</value>
 							</li>
 						</operations>

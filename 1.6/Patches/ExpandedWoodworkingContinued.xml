@@ -25,6 +25,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TableWoodworking | ElectricTableWoodworking -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TableWoodworking" or defName="ElectricTableWoodworking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

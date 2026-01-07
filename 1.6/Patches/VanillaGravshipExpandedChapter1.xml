@@ -57,6 +57,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -562,6 +579,25 @@
 								<value>
 									<li>SurgicalLamp</li>
 									<li>SurgicalInstruments</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Oktober's Scrap-Tek ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Oktober's Scrap-Tek</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CrewBunkBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OK_Scrap_DresserAncient</li>
+									<li>OK_Scrap_EndTableAncient</li>
+									<li>OK_Scrap_LightEndTableAncient</li>
 								</value>
 							</li>
 						</operations>

@@ -82,6 +82,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- vt_workbench | vt_megabore -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -550,6 +567,25 @@
 								<value>
 									<li>SurgicalLamp</li>
 									<li>SurgicalInstruments</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Oktober's Scrap-Tek ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Oktober's Scrap-Tek</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OK_Scrap_DresserAncient</li>
+									<li>OK_Scrap_EndTableAncient</li>
+									<li>OK_Scrap_LightEndTableAncient</li>
 								</value>
 							</li>
 						</operations>

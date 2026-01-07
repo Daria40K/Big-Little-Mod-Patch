@@ -50,6 +50,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_CeramicKiln_fuel | HX_CeramicKiln_Electric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_CeramicKiln_fuel" or defName="HX_CeramicKiln_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -411,6 +428,25 @@
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Oktober's Scrap-Tek ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Oktober's Scrap-Tek</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_bunk | HX_TraditionalBedA | HX_ElectricBedA | HX_TraditionalBedB | HX_ElectricBedB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_bunk" or defName="HX_TraditionalBedA" or defName="HX_ElectricBedA" or defName="HX_TraditionalBedB" or defName="HX_ElectricBedB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OK_Scrap_DresserAncient</li>
+									<li>OK_Scrap_EndTableAncient</li>
+									<li>OK_Scrap_LightEndTableAncient</li>
 								</value>
 							</li>
 						</operations>

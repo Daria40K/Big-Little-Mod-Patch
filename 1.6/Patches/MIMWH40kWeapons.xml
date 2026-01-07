@@ -91,6 +91,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- EMNC_FabricationBenchNecron | EMGC_FabricationBench | EMNC_NecronSmelter | EMGC_FueledSmithy | EMGC_ElectricSmithy | EMGC_HandTailoringBench | EMGC_ElectricTailoringBench | EMNC_NecronTomb -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="EMNC_FabricationBenchNecron" or defName="EMGC_FabricationBench" or defName="EMNC_NecronSmelter" or defName="EMGC_FueledSmithy" or defName="EMGC_ElectricSmithy" or defName="EMGC_HandTailoringBench" or defName="EMGC_ElectricTailoringBench" or defName="EMNC_NecronTomb"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

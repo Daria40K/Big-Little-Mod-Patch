@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Xeva Faction</li>
+			<li>Adeptus Mechanicus: Armoury</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -15,28 +15,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Adeptus Mechanicus: Armoury</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- XFTTable | XFModTable -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinetShelf</li>
 								</value>
 							</li>
 						</operations>
@@ -49,9 +32,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -66,9 +49,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unobtainer_I</li>
 									<li>SNS_Linkable_CosmicDrawer_I</li>
@@ -89,9 +72,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -106,9 +89,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -123,9 +106,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -142,9 +125,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -161,9 +144,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -180,9 +163,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ucp_vise</li>
 									<li>ucp_toolbox</li>
@@ -205,9 +188,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -227,9 +210,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFE_MachiningCabinet</li>
 								</value>
@@ -244,9 +227,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VVE_GarageCabinet</li>
 								</value>
@@ -261,9 +244,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -279,9 +262,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -296,9 +279,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -313,9 +296,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_MachiningGoods</li>
 									<li>Link_MachiningBoost</li>
@@ -332,9 +315,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- XFTTable | XFModTable -->
+							<!-- OG_TableMachining_Base -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="XFTTable" or defName="XFModTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[@Name="OG_TableMachining_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ToolCabinet</li>
 								</value>

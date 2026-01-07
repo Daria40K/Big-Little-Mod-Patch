@@ -91,6 +91,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_BaseProductionBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RVFFA_BaseProductionBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -661,6 +678,25 @@
 									<li>HCLargeMultiAnalyzer</li>
 									<li>HCShardMultiAnalyzer</li>
 									<li>HCArchoMultiAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Oktober's Scrap-Tek ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Oktober's Scrap-Tek</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_Beanbag | RVFFA_BeanbagAlternate | RVFFA_Plush | RVFFA_BasePillowPile | RVFFA_BedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_Beanbag" or defName="RVFFA_BeanbagAlternate" or defName="RVFFA_Plush" or @Name="RVFFA_BasePillowPile" or @Name="RVFFA_BedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OK_Scrap_DresserAncient</li>
+									<li>OK_Scrap_EndTableAncient</li>
+									<li>OK_Scrap_LightEndTableAncient</li>
 								</value>
 							</li>
 						</operations>

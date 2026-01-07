@@ -25,6 +25,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- JDSForgeFabricationbench | JDSForge | JDSAnvil | JDSWorkBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="JDSForgeFabricationbench" or defName="JDSForge" or defName="JDSAnvil" or defName="JDSWorkBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Akeron - Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

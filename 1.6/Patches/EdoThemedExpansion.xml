@@ -358,6 +358,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Oktober's Scrap-Tek ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Oktober's Scrap-Tek</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OK_Scrap_DresserAncient</li>
+									<li>OK_Scrap_EndTableAncient</li>
+									<li>OK_Scrap_LightEndTableAncient</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Outer Rim - Furniture and Decor ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
