@@ -284,6 +284,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [HMC]Wall Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HMC]Wall Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BS_MegaUniversalBed | BS_BigHospitalBed | BS_SmolHospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="BS_MegaUniversalBed" or defName="BS_BigHospitalBed" or defName="BS_SmolHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HMC_Wall_Vitals_Monitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [KR] Star Wars Bacta ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

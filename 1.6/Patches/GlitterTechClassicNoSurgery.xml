@@ -495,6 +495,30 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [HMC]Wall Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HMC]Wall Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ambTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ambTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HMC_Wall_Vitals_Monitor</li>
+								</value>
+							</li>
+							<!-- GTBenchBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="GTBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [KR] Star Wars Bacta ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

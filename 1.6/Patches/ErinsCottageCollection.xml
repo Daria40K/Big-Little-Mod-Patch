@@ -555,6 +555,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Small Bedroom Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Bedroom Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CCol_QuiltedBed" or defName="CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>X86_SmallDresser</li>
+									<li>X86_SmallWardrobe</li>
+									<li>X86_EndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Dresser ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -803,6 +822,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [FM] Furniture Expanded Pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[FM] Furniture Expanded Pack</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CCol_QuiltedBed" or defName="CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>FFE_Mirror</li>
+									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -910,6 +947,28 @@
 								<xpath>Defs/ThingDef[defName="CCol_WoodStove" or defName="CCol_ChemfuelStove" or defName="CCol_ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_stoves</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 联合轻工家具拓展-UF Light Industries Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>联合轻工家具拓展-UF Light Industries Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CCol_QuiltedBed | CCol_QuiltedDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CCol_QuiltedBed" or defName="CCol_QuiltedDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>UFLI_CabinetA</li>
+									<li>UFLI_CabinetB</li>
+									<li>UFLI_CabinetC</li>
+									<li>UFLI_CabinetD</li>
+									<li>UFLI_CabinetE</li>
+									<li>UFLI_Endtable</li>
 								</value>
 							</li>
 						</operations>

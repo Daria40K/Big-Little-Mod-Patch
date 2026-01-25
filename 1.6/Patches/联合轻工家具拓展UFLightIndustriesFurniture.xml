@@ -2,12 +2,37 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vanilla Factions Expanded - Medieval 2</li>
+			<li>联合轻工家具拓展-UF Light Industries Furniture</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- UFLI_CabinetA -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="UFLI_CabinetA"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="UFLI_CabinetA"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="UFLI_CabinetA"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="UFLI_CabinetA"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -15,19 +40,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EndTable</li>
 									<li>Dresser</li>
-								</value>
-							</li>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -40,28 +58,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SleepAccelerator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Adeptus Mechanicus: Armoury</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinetShelf</li>
 								</value>
 							</li>
 						</operations>
@@ -74,18 +75,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_ComfortingPlush</li>
-								</value>
-							</li>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
 								</value>
 							</li>
 						</operations>
@@ -98,34 +92,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AM_AncientLockerBank</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Ambition of the Cosmic [Continued]</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SNS_Linkable_Unobtainer_I</li>
-									<li>SNS_Linkable_CosmicDrawer_I</li>
-									<li>SNS_Linkable_CosmicDrawer_II</li>
-									<li>SNS_Linkable_CosmicDrawer_III</li>
-									<li>SNS_Linkable_CosmicCall_I</li>
-									<li>SNS_Linkable_CosmicCall_II</li>
-									<li>SNS_Linkable_CosmicCall_III</li>
 								</value>
 							</li>
 						</operations>
@@ -138,30 +109,13 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Tea_party_Bed_curtains</li>
 									<li>Trinity_SideTable</li>
 									<li>SideTablewithlamp</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Cybernetic Storm ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Cybernetic Storm</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CS_ReAnalyser</li>
 								</value>
 							</li>
 						</operations>
@@ -174,9 +128,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ADH_light_A_A_FURNITURE</li>
 									<li>ADH_light_B_A_FURNITURE</li>
@@ -210,9 +164,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EccentricFurniture_EndTable</li>
 									<li>EccentricFurniture_EndTableIlluminated</li>
@@ -228,9 +182,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HSFancy_Tatami</li>
 								</value>
@@ -245,9 +199,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CCot_CottageDresser</li>
 									<li>CCot_CottageEndTable</li>
@@ -263,9 +217,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RGK_Dresser</li>
 									<li>RGK_EndTable</li>
@@ -286,9 +240,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>EliteDresserMeh</li>
 								</value>
@@ -303,9 +257,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_RoyalCloset</li>
 									<li>DankPyon_RoyalEndTable</li>
@@ -320,16 +274,6 @@
 									<li>DankPyon_RusticCloset1x2c</li>
 								</value>
 							</li>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_VialsTable</li>
-									<li>DankPyon_HerbTable</li>
-									<li>DankPyon_Alembic</li>
-								</value>
-							</li>
 						</operations>
 					</match>
 				</li>
@@ -340,9 +284,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Mediterranean_EndTable</li>
 									<li>Mediterranean_Wardrobe</li>
@@ -360,34 +304,15 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Anon2Dresser</li>
 									<li>Anon2EndTable</li>
 									<li>Anon2RoyalEndTable</li>
 									<li>Anon2EndTableLight</li>
 									<li>Anon2RoyalEndTableLight</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinetA</li>
-									<li>ToolCabinetB</li>
-									<li>ToolCabinetC</li>
 								</value>
 							</li>
 						</operations>
@@ -400,9 +325,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OK_Scrap_DresserAncient</li>
 									<li>OK_Scrap_EndTableAncient</li>
@@ -419,9 +344,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>OuterRim_CorellianDresser</li>
 									<li>OuterRim_CorellianEndTable</li>
@@ -434,25 +359,6 @@
 						</operations>
 					</match>
 				</li>
-				<!-- ========== Outland - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outland - Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Outland_BasicWorkbench</li>
-									<li>Outland_Forge</li>
-									<li>Outland_Grindstone</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
 				<!-- ========== Outland - Furniture & Decor ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -460,9 +366,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_StoneDresser</li>
 									<li>Outland_StoneEndTable</li>
@@ -484,9 +390,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PFK_EndTable</li>
 									<li>PFK_Dresser</li>
@@ -502,9 +408,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>PFS_EndTable</li>
 									<li>PFS_DresserA</li>
@@ -521,9 +427,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRLincangDresser</li>
 									<li>RRDalianWardrobe</li>
@@ -540,9 +446,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RRHeronaWardrobe</li>
 									<li>RRTaragonaWardrobe</li>
@@ -560,9 +466,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_PrefabDresser</li>
 									<li>RE_PrefabEndTable</li>
@@ -582,30 +488,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_KazariKatana</li>
 									<li>RLE_Kouro</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== RimLife Expansion Production Plus ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimLife Expansion Production Plus</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RLE_PowerStabilizer</li>
-									<li>RLE_IntegratedManagementDevice</li>
 								</value>
 							</li>
 						</operations>
@@ -618,9 +506,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RVFFA_IlluminateEndTable</li>
 								</value>
@@ -635,9 +523,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>X86_SmallDresser</li>
 									<li>X86_SmallWardrobe</li>
@@ -654,9 +542,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SmallDresser</li>
 								</value>
@@ -671,9 +559,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukBedroomUpgradeAA</li>
 									<li>SadjuukBedroomUpgradeAB</li>
@@ -700,9 +588,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukFurnitureAA</li>
 									<li>SadjuukFurnitureAB</li>
@@ -722,9 +610,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VFEE_RoyalMirror</li>
 								</value>
@@ -739,30 +627,13 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFE_DrugCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -775,9 +646,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
@@ -793,9 +664,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VGE_CrewLockers</li>
 								</value>
@@ -810,9 +681,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VPE_Plant_Lullabloom</li>
 								</value>
@@ -827,9 +698,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>vt_curio</li>
 									<li>VaultWardrobeA</li>
@@ -838,31 +709,6 @@
 									<li>vt_commode</li>
 									<li>vt_luxEndTable</li>
 									<li>vt_luxcommode</li>
-								</value>
-							</li>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Vt_server</li>
-									<li>vtcompter</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>WallToolBoard</li>
 								</value>
 							</li>
 						</operations>
@@ -875,37 +721,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallMountableSleepAccelerator</li>
-								</value>
-							</li>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>WallToolBoard</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WorkBench Support - More Linkable Facilities -</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_DrugLabGoods</li>
-									<li>Link_DrugLabBoost</li>
-									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -918,29 +738,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [HMC]Wall Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[HMC]Wall Furniture</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>HMC_Wall_Tool_Cabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -953,20 +756,13 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
 									<li>LTS_KoppangD</li>
-								</value>
-							</li>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LTS_Fridge</li>
 								</value>
 							</li>
 						</operations>
@@ -979,9 +775,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_Gothicstyle_Cupboard</li>
 									<li>MUS_Gothicstyle_Wardrobe</li>
@@ -999,9 +795,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>MUS_SpaceBase_Lockers</li>
 									<li>MUS_SpaceBase_LockersV</li>
@@ -1019,9 +815,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RH2_ClassicFootlocker</li>
 									<li>RH2_MilitaryCrateDresser</li>
@@ -1039,41 +835,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
+							<!-- UFLI_Bed | UFLI_DoubleBed | UFLI_TripleBed | UFLI_4PBed | UFLI_Crib | UFLI_CabinetA -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="UFLI_Bed" or defName="UFLI_DoubleBed" or defName="UFLI_TripleBed" or defName="UFLI_4PBed" or defName="UFLI_Crib" or defName="UFLI_CabinetA"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ChineseBedsideTable</li>
 									<li>HX_ChineseDressingTable</li>
-								</value>
-							</li>
-							<!-- VFEM2_AlchemicalWorkbench | VFEM2_AlchemicalWorkbench_Electric -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench" or defName="VFEM2_AlchemicalWorkbench_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>HX_ToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== 联合轻工家具拓展-UF Light Industries Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>联合轻工家具拓展-UF Light Industries Furniture</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- VFEM2_FurBed | VFEM2_DoubleFurBed -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>UFLI_CabinetA</li>
-									<li>UFLI_CabinetB</li>
-									<li>UFLI_CabinetC</li>
-									<li>UFLI_CabinetD</li>
-									<li>UFLI_CabinetE</li>
-									<li>UFLI_Endtable</li>
 								</value>
 							</li>
 						</operations>

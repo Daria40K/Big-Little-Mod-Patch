@@ -852,4 +852,11 @@
 		<assemblyVersion>4.12.0</assemblyVersion>
 		<content>Added support for Adeptus Mechanicus: Armoury and Oktober's Scrap-Tek</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.13.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_13_0</defName>
+		<assemblyVersion>4.13.0</assemblyVersion>
+		<content>Added support for Small Bedroom Furniture, Small Biofuel Refinery, Small Butcher Table, Small Stoves, [FM] Furniture Expanded Pack, 联合轻工家具拓展-UF Light Industries Furniture and [HMC]Wall Furniture</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

@@ -1002,6 +1002,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Small Bedroom Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Small Bedroom Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>X86_SmallDresser</li>
+									<li>X86_SmallWardrobe</li>
+									<li>X86_EndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Dresser ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1389,6 +1408,48 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [FM] Furniture Expanded Pack ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[FM] Furniture Expanded Pack</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>FFE_Mirror</li>
+									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HMC]Wall Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HMC]Wall Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukResearchAC -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SadjuukResearchAC"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HMC_Wall_Multi_Analyzer</li>
+								</value>
+							</li>
+							<!-- SadjuukSurgeryBaseB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukSurgeryBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HMC_Wall_Vitals_Monitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [KR] Star Wars Bacta ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1582,6 +1643,28 @@
 								<value>
 									<li>HX_ChineseBedsideTable</li>
 									<li>HX_ChineseDressingTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 联合轻工家具拓展-UF Light Industries Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>联合轻工家具拓展-UF Light Industries Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>UFLI_CabinetA</li>
+									<li>UFLI_CabinetB</li>
+									<li>UFLI_CabinetC</li>
+									<li>UFLI_CabinetD</li>
+									<li>UFLI_CabinetE</li>
+									<li>UFLI_Endtable</li>
 								</value>
 							</li>
 						</operations>

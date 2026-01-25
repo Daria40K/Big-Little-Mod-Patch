@@ -381,6 +381,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [HMC]Wall Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HMC]Wall Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CS_NanoTech_Bench | CS_MaterialsBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CS_NanoTech_Bench" or defName="CS_MaterialsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

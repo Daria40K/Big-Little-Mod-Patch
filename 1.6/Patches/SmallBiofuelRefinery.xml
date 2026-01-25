@@ -2,12 +2,37 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Rhino's WORKBENCH.</li>
+			<li>Small Biofuel Refinery</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- XER_SmallBiofuelRefinery -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -15,9 +40,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,9 +57,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetShelf</li>
 								</value>
@@ -49,9 +74,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -66,9 +91,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unobtainer_I</li>
 									<li>SNS_Linkable_CosmicDrawer_I</li>
@@ -89,9 +114,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -106,9 +131,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -123,9 +148,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
@@ -142,9 +167,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
@@ -161,30 +186,33 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>RLE_PowerStabilizer</li>
-									<li>RLE_IntegratedManagementDevice</li>
+									<li>RLE_AuxiliaryCoolingUnit</li>
+									<li>RLE_ReactionAccelerator</li>
+									<li>RLE_ImpurityFiltrationUnit</li>
+									<li>RLE_PreReactor</li>
 								</value>
 							</li>
 						</operations>
 					</match>
 				</li>
-				<!-- ========== Tabletop Decorations ========== -->
+				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
-						<li>Tabletop Decorations</li>
+						<li>UN-Colony Vanilla (Continued)</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>ucp_toolbox</li>
-									<li>ucp_screwdrivers</li>
+									<li>SadjuukRefineryUpgradeA</li>
+									<li>SadjuukRefineryUpgradeB</li>
+									<li>SadjuukRefineryUpgradeC</li>
 								</value>
 							</li>
 						</operations>
@@ -197,9 +225,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -215,9 +243,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -232,9 +260,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -249,11 +277,12 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Link_UniversalCabinet</li>
+									<li>Link_RefineryBoost</li>
 								</value>
 							</li>
 						</operations>
@@ -266,9 +295,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Tool_Cabinet</li>
 								</value>
@@ -283,9 +312,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- HandWorkbench -->
+							<!-- XER_SmallBiofuelRefinery -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HandWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ToolCabinet</li>
 								</value>
