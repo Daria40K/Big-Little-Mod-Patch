@@ -309,6 +309,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Vitals Monitor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Vitals Monitor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ST_Starfleet_Biobed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ST_Starfleet_Biobed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ST_Starfleet_Biobed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ST_Starfleet_Biobed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_MedicalControlPanel</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [HMC]Wall Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

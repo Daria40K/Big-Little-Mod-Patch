@@ -361,6 +361,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- WVC_Ultra_WorkBenches_Implants | WVC_Ultra_GarbageRecyclerBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="WVC_Ultra_WorkBenches_Implants" or defName="WVC_Ultra_GarbageRecyclerBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

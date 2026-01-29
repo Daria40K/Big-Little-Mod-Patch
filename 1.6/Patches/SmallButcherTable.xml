@@ -93,6 +93,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- XER_SmallTableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="XER_SmallTableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -106,6 +126,24 @@
 								<value>
 									<li>VFEM2_CleaverRack</li>
 									<li>VFEM2_CarvingBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- XER_SmallTableButcher -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="XER_SmallTableButcher"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
 								</value>
 							</li>
 						</operations>

@@ -1267,6 +1267,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Brewery | TableButcher | ElectricStove | FueledStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Brewery" or defName="TableButcher" or defName="ElectricStove" or defName="FueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Bedroom Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1726,6 +1746,8 @@
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
+									<li>VFE_CoffeeTable</li>
+									<li>VFE_RoyalWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1821,6 +1843,7 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+									<li>VFES_Table_IlluminatedWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1916,6 +1939,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Sleep Accelerator ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Sleep Accelerator</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wall Vitals Monitor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Vitals Monitor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WallStuff ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1959,6 +2016,44 @@
 								<xpath>Defs/ThingDef[defName="DrugLab" or defName="FabricationBench" or defName="TableMachining" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableStonecutter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- BasicBedBase | Bedroll | BedrollDouble -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_Wardrobe</li>
+									<li>Wolfein_Bookcase</li>
+									<li>Wolfein_BedsideTable</li>
+									<li>Wolfein_LowCabinet</li>
+									<li>Wolfein_2x3_Carpet</li>
+									<li>Wolfein_3x3_Carpet</li>
+									<li>Wolfein_Doormat</li>
+								</value>
+							</li>
+							<!-- Brewery | TableButcher | ElectricStove | FueledStove | DrugLab | FabricationBench | TableMachining | TableSculpting | ElectricSmelter | FueledSmithy | ElectricSmithy | TableStonecutter | HandTailoringBench | ElectricTailoringBench | ElectricCrematorium | BiofuelRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Brewery" or defName="TableButcher" or defName="ElectricStove" or defName="FueledStove" or defName="DrugLab" or defName="FabricationBench" or defName="TableMachining" or defName="TableSculpting" or defName="ElectricSmelter" or defName="FueledSmithy" or defName="ElectricSmithy" or defName="TableStonecutter" or defName="HandTailoringBench" or defName="ElectricTailoringBench" or defName="ElectricCrematorium" or defName="BiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
+								</value>
+							</li>
+							<!-- HospitalBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_MedicalControlPanel</li>
 								</value>
 							</li>
 						</operations>

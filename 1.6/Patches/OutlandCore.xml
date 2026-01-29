@@ -1022,6 +1022,8 @@
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
+									<li>VFE_CoffeeTable</li>
+									<li>VFE_RoyalWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1085,6 +1087,7 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+									<li>VFES_Table_IlluminatedWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1189,6 +1192,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Sleep Accelerator ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Sleep Accelerator</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OutlandBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WallStuff ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1225,6 +1245,37 @@
 								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OutlandBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_Wardrobe</li>
+									<li>Wolfein_Bookcase</li>
+									<li>Wolfein_BedsideTable</li>
+									<li>Wolfein_LowCabinet</li>
+									<li>Wolfein_2x3_Carpet</li>
+									<li>Wolfein_3x3_Carpet</li>
+									<li>Wolfein_Doormat</li>
+								</value>
+							</li>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
 								</value>
 							</li>
 						</operations>

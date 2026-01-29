@@ -507,6 +507,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Vitals Monitor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Vitals Monitor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AdvShip_TimeFasterPod -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WallStuff ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -536,6 +553,31 @@
 								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GravForge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GravForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
+								</value>
+							</li>
+							<!-- AdvShip_TimeFasterPod -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AdvShip_TimeFasterPod"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_MedicalControlPanel</li>
 								</value>
 							</li>
 						</operations>

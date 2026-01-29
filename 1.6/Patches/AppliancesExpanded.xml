@@ -266,6 +266,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_ChemfuelStove | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tabletop Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -435,6 +455,24 @@
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_ChemfuelStove | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer | CA_ChemfuelSmelter | CA_ChemfuelSmithy | CA_ChemfuelCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer" or defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
 								</value>
 							</li>
 						</operations>
@@ -792,6 +830,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tabletop Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -943,6 +1001,24 @@
 								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelStoveLarge | CE_FueledSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
 								</value>
 							</li>
 						</operations>

@@ -8,6 +8,31 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- Seat_Cushion -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Seat_Cushion"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="Seat_Cushion"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="Seat_Cushion"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="Seat_Cushion"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -608,6 +633,7 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+									<li>VFES_Table_IlluminatedWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -670,6 +696,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Sleep Accelerator ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Sleep Accelerator</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Bed_Kingsize | VFE_ChiseledBedBase | VFE_SimpleBedBase | VFE_ErgonomicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Bed_Kingsize" or @Name="VFE_ChiseledBedBase" or @Name="VFE_SimpleBedBase" or @Name="VFE_ErgonomicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WallStuffV2 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -682,6 +725,39 @@
 								<xpath>Defs/ThingDef[defName="Bed_Kingsize" or @Name="VFE_ChiseledBedBase" or @Name="VFE_SimpleBedBase" or @Name="VFE_ErgonomicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Bed_Kingsize | VFE_ChiseledBedBase | VFE_SimpleBedBase | VFE_ErgonomicBedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Bed_Kingsize" or @Name="VFE_ChiseledBedBase" or @Name="VFE_SimpleBedBase" or @Name="VFE_ErgonomicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_Wardrobe</li>
+									<li>Wolfein_Bookcase</li>
+									<li>Wolfein_BedsideTable</li>
+									<li>Wolfein_LowCabinet</li>
+									<li>Wolfein_2x3_Carpet</li>
+									<li>Wolfein_3x3_Carpet</li>
+									<li>Wolfein_Doormat</li>
+								</value>
+							</li>
+							<!-- Seat_RoyalArmchair | VFE_ModularCouch | Seat_Cushion -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Seat_RoyalArmchair" or defName="VFE_ModularCouch" or defName="Seat_Cushion"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_Bookcase</li>
+									<li>Wolfein_2x3_Carpet</li>
+									<li>Wolfein_3x3_Carpet</li>
+									<li>Wolfein_Doormat</li>
 								</value>
 							</li>
 						</operations>

@@ -548,6 +548,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Bedroom Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -683,6 +703,8 @@
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
+									<li>VFE_CoffeeTable</li>
+									<li>VFE_RoyalWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -718,6 +740,7 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+									<li>VFES_Table_IlluminatedWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -780,6 +803,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Sleep Accelerator ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Sleep Accelerator</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WallStuffV2 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -792,6 +832,37 @@
 								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallMountableSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_Wardrobe</li>
+									<li>Wolfein_Bookcase</li>
+									<li>Wolfein_BedsideTable</li>
+									<li>Wolfein_LowCabinet</li>
+									<li>Wolfein_2x3_Carpet</li>
+									<li>Wolfein_3x3_Carpet</li>
+									<li>Wolfein_Doormat</li>
+								</value>
+							</li>
+							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
 								</value>
 							</li>
 						</operations>

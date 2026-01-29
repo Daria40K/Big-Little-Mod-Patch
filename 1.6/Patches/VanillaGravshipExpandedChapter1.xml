@@ -845,6 +845,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CompactStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Bedroom Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1145,6 +1165,8 @@
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
+									<li>VFE_CoffeeTable</li>
+									<li>VFE_RoyalWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1233,6 +1255,7 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+									<li>VFES_Table_IlluminatedWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1311,6 +1334,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Sleep Accelerator ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Sleep Accelerator</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CrewBunkBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wall Vitals Monitor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Vitals Monitor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_MedbayBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WallStuff ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1347,6 +1404,44 @@
 								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CrewBunkBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_Wardrobe</li>
+									<li>Wolfein_Bookcase</li>
+									<li>Wolfein_BedsideTable</li>
+									<li>Wolfein_LowCabinet</li>
+									<li>Wolfein_2x3_Carpet</li>
+									<li>Wolfein_3x3_Carpet</li>
+									<li>Wolfein_Doormat</li>
+								</value>
+							</li>
+							<!-- VGE_CompactStove | VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove" or defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
+								</value>
+							</li>
+							<!-- VGE_MedbayBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_MedicalControlPanel</li>
 								</value>
 							</li>
 						</operations>

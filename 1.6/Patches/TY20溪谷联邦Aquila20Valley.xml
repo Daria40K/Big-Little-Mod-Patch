@@ -241,6 +241,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_XG_PengRenTai -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_XG_PengRenTai"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Tabletop Decorations ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -421,6 +441,24 @@
 								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station" or defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_XG_PengRenTai | TY_A_Nano_industrial_manufacturing_station | TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_XG_PengRenTai" or defName="TY_A_Nano_industrial_manufacturing_station" or defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
 								</value>
 							</li>
 						</operations>

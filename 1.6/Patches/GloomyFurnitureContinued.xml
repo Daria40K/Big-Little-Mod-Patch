@@ -780,6 +780,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GL_TableButcher | RGK_FueledStove | GL_ElectricStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_TableButcher" or defName="RGK_FueledStove" or defName="GL_ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Bedroom Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1034,6 +1054,8 @@
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
+									<li>VFE_CoffeeTable</li>
+									<li>VFE_RoyalWardrobe</li>
 								</value>
 							</li>
 							<!-- RGK_SimpleResearchBench -->
@@ -1107,6 +1129,7 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+									<li>VFES_Table_IlluminatedWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1177,6 +1200,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Sleep Accelerator ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Sleep Accelerator</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WallStuff ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1213,6 +1253,37 @@
 								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_Wardrobe</li>
+									<li>Wolfein_Bookcase</li>
+									<li>Wolfein_BedsideTable</li>
+									<li>Wolfein_LowCabinet</li>
+									<li>Wolfein_2x3_Carpet</li>
+									<li>Wolfein_3x3_Carpet</li>
+									<li>Wolfein_Doormat</li>
+								</value>
+							</li>
+							<!-- GL_TableButcher | RGK_FueledStove | GL_ElectricStove | GL_FueledSmithy | GL_ElectricSmithy | GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_TableButcher" or defName="RGK_FueledStove" or defName="GL_ElectricStove" or defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
 								</value>
 							</li>
 						</operations>

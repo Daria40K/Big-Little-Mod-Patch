@@ -823,6 +823,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimstro ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimstro</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VTElectricStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VTElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RS_Counter</li>
+									<li>RS_stove</li>
+									<li>RS_KitchenHood</li>
+									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Bedroom Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1068,6 +1088,8 @@
 									<li>Table_Wardrobe</li>
 									<li>Table_RoyalEndTable</li>
 									<li>Table_RoyalDresser</li>
+									<li>VFE_CoffeeTable</li>
+									<li>VFE_RoyalWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1128,6 +1150,7 @@
 								<value>
 									<li>Table_IlluminatedEndTable</li>
 									<li>Table_IlluminatedDresser</li>
+									<li>VFES_Table_IlluminatedWardrobe</li>
 								</value>
 							</li>
 						</operations>
@@ -1184,6 +1207,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Wall Sleep Accelerator ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Sleep Accelerator</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallSleepAccelerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wall Vitals Monitor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wall Vitals Monitor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HospitalBedVault -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>XER_WallVitalsMonitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== WallStuff ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1220,6 +1277,44 @@
 								<xpath>Defs/ThingDef[defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Bed_Vault | Bed_DoubleVault | Bed_luxDoubleVault -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Bed_Vault" or defName="Bed_DoubleVault" or defName="Bed_luxDoubleVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_Wardrobe</li>
+									<li>Wolfein_Bookcase</li>
+									<li>Wolfein_BedsideTable</li>
+									<li>Wolfein_LowCabinet</li>
+									<li>Wolfein_2x3_Carpet</li>
+									<li>Wolfein_3x3_Carpet</li>
+									<li>Wolfein_Doormat</li>
+								</value>
+							</li>
+							<!-- VTElectricStove | vt_workbench | vt_megabore -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VTElectricStove" or defName="vt_workbench" or defName="vt_megabore"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
+								</value>
+							</li>
+							<!-- HospitalBedVault -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HospitalBedVault"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_MedicalControlPanel</li>
 								</value>
 							</li>
 						</operations>
