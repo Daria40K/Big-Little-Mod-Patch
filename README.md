@@ -5,7 +5,7 @@
 ## Download
 - [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2710382569)
 - [GitHub](https://github.com/Daria40K/Big-Little-Mod-Patch/releases)
-- [NexusMods]
+- [NexusMods](https://www.nexusmods.com/rimworld/mods/401)
 
 ## Mod Support
 - [Rimworld v1.3 List](https://github.com/Daria40K/Big-Little-Mod-Patch/blob/main/ModList1.3.md)
