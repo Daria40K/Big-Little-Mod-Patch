@@ -225,6 +225,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 1.6 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 1.6</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -762,6 +779,26 @@
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LSK]月兔扩展——基础家具和设施 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LSK]月兔扩展——基础家具和设施</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RH2_BarrackBed | RH2_OfficerDoubleBed | RH2_CanvasBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RH2_BarrackBed" or defName="RH2_OfficerDoubleBed" or defName="RH2_CanvasBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LSK_SHS_Dresser</li>
+									<li>LSK_SHS_Bedside_Table</li>
+									<li>LSK_SHS_Bookshelf</li>
+									<li>LSK_SHS_Bookshelf_empty</li>
 								</value>
 							</li>
 						</operations>

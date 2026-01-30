@@ -228,6 +228,47 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.61 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.61</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResCogitator</li>
+								</value>
+							</li>
+							<!-- TWB_DrugLabMini | TWB_FabricationBenchMini | TWB_TableMachiningMini | TWB_TableSculptingMini | TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini" or defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableSculptingMini" or defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Biotechnology ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotechnology</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini | TWB_DrugLabMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini" or defName="TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Biotechnology_DNAHologram</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Brain In a Jar ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -377,6 +418,146 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Even More Linkables Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_Autoclave</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_Incinerator</li>
+									<li>HobbesLink_PersonalComputer</li>
+									<li>HobbesLink_Still</li>
+									<li>HobbesLink_Rotovape</li>
+									<li>HobbesLink_TabletopCentrifuge</li>
+									<li>HobbesLink_TabletopStove</li>
+									<li>HobbesLink_TabletopLabMachine</li>
+									<li>HobbesLink_TabletopOscilloscope</li>
+									<li>HobbesLink_TabletopLabScanner</li>
+									<li>HobbesLink_TabletopLabTubeRack</li>
+									<li>HobbesLink_TabletopLabMicroscope</li>
+									<li>HobbesLink_BotanicalEnclosure</li>
+									<li>HobbesLink_ServerRack</li>
+								</value>
+							</li>
+							<!-- TWB_BreweryMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_BreweryMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Still</li>
+									<li>HobbesLink_Rotovape</li>
+								</value>
+							</li>
+							<!-- TWB_TableButcherMini | TWB_TableStonecutterMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_TableButcherMini" or defName="TWB_TableStonecutterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+							<!-- TWB_ElectricStoveMini | TWB_FueledStoveMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_ElectricStoveMini" or defName="TWB_FueledStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+							<!-- TWB_DrugLabMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Centrifuge</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+									<li>HobbesLink_Still</li>
+									<li>HobbesLink_Rotovape</li>
+									<li>HobbesLink_TabletopCentrifuge</li>
+									<li>HobbesLink_TabletopStove</li>
+									<li>HobbesLink_TabletopLabTubeRack</li>
+								</value>
+							</li>
+							<!-- TWB_FabricationBenchMini | TWB_TableMachiningMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+							<!-- TWB_TableSculptingMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_TableSculptingMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+							<!-- TWB_ElectricSmelterMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_ElectricSmelterMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_BreweryMini | TWB_ElectricStoveMini | TWB_FueledStoveMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_BreweryMini" or defName="TWB_ElectricStoveMini" or defName="TWB_FueledStoveMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
+							<!-- TWB_TableButcherMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_TableButcherMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_ButcherShelf</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GloomyFurniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -397,6 +578,30 @@
 								<value>
 									<li>GL_Cupboard</li>
 									<li>GL_TablewareShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GrimWorld 40,000 - Core Imperialis</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_Cogitator</li>
+								</value>
+							</li>
+							<!-- TWB_FabricationBenchMini | TWB_TableMachiningMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GW_VehicleToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -449,6 +654,24 @@
 								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Makai_Powerlink_Relay</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical Supplements (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical Supplements (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_DrugLabMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DrugCabinet</li>
+									<li>DrugCabinetFridge</li>
 								</value>
 							</li>
 						</operations>
@@ -759,6 +982,87 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_DrugLabMini | TWB_FabricationBenchMini | TWB_TableMachiningMini | TWB_TableSculptingMini | TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini" or defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableSculptingMini" or defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+									<li>RTC_EngineHanger</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers (No Dubs Bad Hygiene)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+									<li>RP_Server</li>
+									<li>RP_SuperComputer</li>
+									<li>Rimputer_quantumcomputer</li>
+								</value>
+							</li>
+							<!-- TWB_SimpleResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_SimpleResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Rimputers 1.6 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers 1.6</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>Colony Tape Storage</li>
+									<li>RP_Server</li>
+									<li>RP_SuperComputer</li>
+									<li>Rimputer_quantumcomputer</li>
+								</value>
+							</li>
+							<!-- TWB_SimpleResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_SimpleResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>Colony Tape Storage</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimstro ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -895,6 +1199,23 @@
 									<li>ucp_scraps</li>
 									<li>ucp_textileroll</li>
 									<li>ucp_pencil</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_DrugLabMini | TWB_FabricationBenchMini | TWB_TableMachiningMini | TWB_TableSculptingMini | TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini" or defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableSculptingMini" or defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -1239,9 +1560,16 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- TWB_BreweryMini | TWB_TableButcherMini | TWB_ElectricStoveMini | TWB_FueledStoveMini | TWB_DrugLabMini | TWB_FabricationBenchMini | TWB_TableMachiningMini | TWB_TableSculptingMini | TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<!-- TWB_BreweryMini | TWB_TableButcherMini -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TWB_BreweryMini" or defName="TWB_TableButcherMini" or defName="TWB_ElectricStoveMini" or defName="TWB_FueledStoveMini" or defName="TWB_DrugLabMini" or defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableSculptingMini" or defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="TWB_BreweryMini" or defName="TWB_TableButcherMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_SurveillanceCamera</li>
+								</value>
+							</li>
+							<!-- TWB_ElectricStoveMini | TWB_FueledStoveMini | TWB_DrugLabMini | TWB_FabricationBenchMini | TWB_TableMachiningMini | TWB_TableSculptingMini | TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_ElectricStoveMini" or defName="TWB_FueledStoveMini" or defName="TWB_DrugLabMini" or defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini" or defName="TWB_TableSculptingMini" or defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Wolfein_OfficeDesk</li>
 									<li>Wolfein_SurveillanceCamera</li>
@@ -1271,6 +1599,7 @@
 								<value>
 									<li>Link_BreweryGoods</li>
 									<li>Link_BreweryBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 							<!-- TWB_TableButcherMini -->
@@ -1279,6 +1608,7 @@
 								<value>
 									<li>Link_ButcherGoods</li>
 									<li>Link_ButcherBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 							<!-- TWB_ElectricStoveMini | TWB_FueledStoveMini -->
@@ -1287,6 +1617,7 @@
 								<value>
 									<li>Link_KitchenGoods</li>
 									<li>Link_KitchenBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 							<!-- TWB_DrugLabMini -->
@@ -1424,6 +1755,23 @@
 								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini | TWB_BreweryMini | TWB_TableButcherMini | TWB_ElectricStoveMini | TWB_FueledStoveMini | TWB_DrugLabMini | TWB_FabricationBenchMini | TWB_TableMachiningMini | TWB_SimpleResearchBenchMini | TWB_TableSculptingMini | TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini" or defName="TWB_BreweryMini" or defName="TWB_TableButcherMini" or defName="TWB_ElectricStoveMini" or defName="TWB_FueledStoveMini" or defName="TWB_DrugLabMini" or defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini" or defName="TWB_SimpleResearchBenchMini" or defName="TWB_TableSculptingMini" or defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

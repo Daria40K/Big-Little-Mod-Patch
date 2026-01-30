@@ -107,6 +107,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.61 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.61</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelSmelter | CA_ChemfuelSmithy | CA_ChemfuelCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -119,6 +136,79 @@
 								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Even More Linkables Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_ChemfuelStove | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+							<!-- CA_ChemfuelSmelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+							<!-- CA_ChemfuelSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+							<!-- CA_ChemfuelCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_ChemfuelStove | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
 								</value>
 							</li>
 						</operations>
@@ -266,6 +356,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelSmelter | CA_ChemfuelSmithy | CA_ChemfuelCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+									<li>RTC_EngineHanger</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimstro ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -322,6 +431,23 @@
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelSmelter | CA_ChemfuelSmithy | CA_ChemfuelCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -491,6 +617,7 @@
 								<value>
 									<li>Link_KitchenGoods</li>
 									<li>Link_KitchenBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 							<!-- CA_ChemfuelSmelter -->
@@ -551,6 +678,23 @@
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_ChemfuelStove | CE_ChemfuelDeepFrier | CE_ChemfuelGrill | CE_AirFryer | CA_ChemfuelSmelter | CA_ChemfuelSmithy | CA_ChemfuelCrematorium -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="CE_ChemfuelDeepFrier" or defName="CE_ChemfuelGrill" or defName="CE_AirFryer" or defName="CA_ChemfuelSmelter" or defName="CA_ChemfuelSmithy" or defName="CA_ChemfuelCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -686,6 +830,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.61 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.61</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_FueledSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Cybernetic Storm ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -698,6 +859,60 @@
 								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Even More Linkables Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+							<!-- CE_FueledSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_CNCMachine</li>
+									<li>HobbesLink_3DPrinter</li>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_Spacer_Lathe</li>
+									<li>HobbesLink_Vice</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+									<li>HobbesLink_Incinerator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelStoveLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
 								</value>
 							</li>
 						</operations>
@@ -830,6 +1045,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_FueledSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+									<li>RTC_EngineHanger</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimstro ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -868,6 +1102,23 @@
 									<li>ucp_tongs</li>
 									<li>ucp_ballpeen</li>
 									<li>ucp_wrench</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CE_FueledSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -1037,6 +1288,7 @@
 								<value>
 									<li>Link_KitchenGoods</li>
 									<li>Link_KitchenBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 							<!-- CE_FueledSmithyLarge -->
@@ -1081,6 +1333,23 @@
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- CA_ChemfuelStoveLarge | CE_FueledSmithyLarge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge" or defName="CE_FueledSmithyLarge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

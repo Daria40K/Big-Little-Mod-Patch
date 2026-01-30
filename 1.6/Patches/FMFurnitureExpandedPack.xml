@@ -91,6 +91,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Even More Linkables Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_IndustrialOven</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GiTS Cybernetic Equipment ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -103,6 +122,26 @@
 								<xpath>Defs/ThingDef[defName="FFE_AnimalMedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>gitsAnchorConsole</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Gloomy Extra - Kitchen (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Gloomy Extra - Kitchen (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SM_Sink</li>
+									<li>SM_KitchenCupboard_A</li>
+									<li>SM_KitchenCupboard_B</li>
+									<li>SM_KitchenCupboard_C</li>
 								</value>
 							</li>
 						</operations>
@@ -182,6 +221,23 @@
 									<li>IV_Antibiotics_Electric</li>
 									<li>IV_Anesthetic_Electric</li>
 									<li>IV_Multi_Electric</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medical Supplements (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medical Supplements (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FFE_AnimalMedTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FFE_AnimalMedTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>MS_DStand</li>
 								</value>
 							</li>
 						</operations>
@@ -485,6 +541,7 @@
 								<value>
 									<li>Link_KitchenGoods</li>
 									<li>Link_KitchenBoost</li>
+									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -537,6 +594,23 @@
 								<value>
 									<li>LTS_Sink</li>
 									<li>LTS_Fridge</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- FFE_CookingTable | FFE_MeatMincer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="FFE_CookingTable" or defName="FFE_MeatMincer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

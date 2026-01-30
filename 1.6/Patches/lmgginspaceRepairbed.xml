@@ -225,6 +225,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Mechalit Core v2 1.6 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 1.6</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -762,6 +779,26 @@
 								<value>
 									<li>FFE_Mirror</li>
 									<li>FFE_Divider</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LSK]月兔扩展——基础家具和设施 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LSK]月兔扩展——基础家具和设施</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LMGG_Thing_RepairDoubleBed | LMGG_Thing_RepairBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LSK_SHS_Dresser</li>
+									<li>LSK_SHS_Bedside_Table</li>
+									<li>LSK_SHS_Bookshelf</li>
+									<li>LSK_SHS_Bookshelf_empty</li>
 								</value>
 							</li>
 						</operations>

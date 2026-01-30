@@ -131,6 +131,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.61 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.61</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OK_ScrapBench | OK_Scrapper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OK_ScrapBench" or defName="OK_Scrapper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Blue Archive Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -256,6 +273,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Even More Linkables Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OK_ScrapBench | OK_Scrapper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OK_ScrapBench" or defName="OK_Scrapper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== GloomyFurniture (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -283,6 +318,23 @@
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Mechalit Core v2 (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OK_ScrapBedAncient -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OK_ScrapBedAncient"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>EliteDresserMeh</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Mechalit Core v2 1.6 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Mechalit Core v2 1.6</li>
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
@@ -589,6 +641,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OK_ScrapBench | OK_Scrapper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OK_ScrapBench" or defName="OK_Scrapper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+									<li>RTC_EngineHanger</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RimVali: Far From Avalon ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -655,6 +726,23 @@
 								<value>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OK_ScrapBench | OK_Scrapper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OK_ScrapBench" or defName="OK_Scrapper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -974,6 +1062,26 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [LSK]月兔扩展——基础家具和设施 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LSK]月兔扩展——基础家具和设施</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OK_ScrapBedAncient -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OK_ScrapBedAncient"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LSK_SHS_Dresser</li>
+									<li>LSK_SHS_Bedside_Table</li>
+									<li>LSK_SHS_Bookshelf</li>
+									<li>LSK_SHS_Bookshelf_empty</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -988,6 +1096,23 @@
 									<li>LTS_IdanasN</li>
 									<li>LTS_IdanasD</li>
 									<li>LTS_KoppangD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- OK_ScrapBench | OK_Scrapper -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="OK_ScrapBench" or defName="OK_Scrapper"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>
