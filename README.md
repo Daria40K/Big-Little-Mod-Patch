@@ -13,119 +13,238 @@
 - [Rimworld v1.5 List](https://github.com/Daria40K/Big-Little-Mod-Patch/blob/main/ModList1.5.md)
 
 ### Rimworld v1.6 List
-- [Advanced Brewery](https://github.com/StarterCraft/Rimworld-Advanced-Brewery) (Production links)
-- [Advanced Electric Stove](https://steamcommunity.com/sharedfiles/filedetails/?id=2054487688) (Production links)
-- [[RWY]Advanced Mechanoid Warfare](https://steamcommunity.com/sharedfiles/filedetails/?id=2119930282) (Production links)
-- [AI Uplifting Assistant](https://steamcommunity.com/sharedfiles/filedetails/?id=1227757287) (Research links)
-- [Akeron - Decorations](https://steamcommunity.com/sharedfiles/filedetails/?id=2755025925) (Furniture & Production links)
-- [Animal Medical Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2016958187) (Furniture links)
-- [Appliances Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2869098359) (Production links)
-- [Archotech Re-Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2351084803) (Research links)
-- [Area Rugs 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=1988111624) (Production links)
-- [Apini Playable Race, Continued!](https://steamcommunity.com/sharedfiles/filedetails/?id=2204437968) (Furniture & Production links)
-- [A Rim Reborn - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2659227786) (Production links)
-- [Australden's Fusion Weapons Pack Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2560174265) (Production links)
-- [Clockwork And Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1736127702) (Production & Research links - partial support)
-- [Comigo's Adequate Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2553865508) (Production links)
-- [Comigo's Nutrition](https://steamcommunity.com/sharedfiles/filedetails/?id=2546863371) (Production links)
-- [Commercial Server](https://steamcommunity.com/sharedfiles/filedetails/?id=1714455977) (Research links)
-- [CTS - Complete Tech Solutions (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2291310971) (Furniture links)
-- [Curious Curios](https://steamcommunity.com/sharedfiles/filedetails/?id=2877810737) (Research links)
-- [Cybernetic Storm](https://steamcommunity.com/sharedfiles/filedetails/?id=959147004) (Production links)
-- [Cyber Fauna 1.3](https://steamcommunity.com/sharedfiles/filedetails/?id=1548649032) (Production links)
-- [Eccentric Tech - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2552623545) (Research links)
-- [Erin's Japanese Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2354938860) (Furniture links)
-- [EverythingTable](https://steamcommunity.com/sharedfiles/filedetails/?id=2803969589) (Production links)
-- [Expanded Materials Add-On - Minimalist Production](https://steamcommunity.com/sharedfiles/filedetails/?id=2564410016) (Production links)
-- [Expanded Materials - Metals](https://steamcommunity.com/sharedfiles/filedetails/?id=2259837114) (Production links)
-- [[LITE]Expanded Materials - Metals](https://steamcommunity.com/sharedfiles/filedetails/?id=2434786884) (Production links)
-- [Expanded Materials - Plastics](https://steamcommunity.com/sharedfiles/filedetails/?id=2465263608) (Production links)
-- [Expanded Prosthetics and Organ Engineering - Forked](https://steamcommunity.com/sharedfiles/filedetails/?id=1949064302) (Production links)
-- [Fast regen 1.4](https://steamcommunity.com/sharedfiles/filedetails/?id=943925765) (Furniture links)
-- [[LTS]Furnishing](https://steamcommunity.com/sharedfiles/filedetails/?id=2567438519) (Furniture links)
-- [Geyser Cooking Revived (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2803663308) (Production links)
-- [Glitter Tech](https://steamcommunity.com/sharedfiles/filedetails/?id=2558099206) (Production links)
-- [GloomyFurniture](https://steamcommunity.com/sharedfiles/filedetails/?id=1558635181) (Furniture & Production links)
-- [Gloomy Extra - Kitchen](https://steamcommunity.com/sharedfiles/filedetails/?id=1730938407) (Production links)
-- [[sd] Goodnight (Continued)](url=https://steamcommunity.com/sharedfiles/filedetails/?id=2019045154) (Furniture links)
-- [HALO - UNSC Faction](https://steamcommunity.com/sharedfiles/filedetails/?id=2851992615) (Production & Research links)
-- [Ideology [Official DLC]](https://store.steampowered.com/app/1392840/RimWorld__Ideology/)
-- [Mechalit Core v2 (1.4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2659987145) (Furniture links)
-- [Mechalit Faction v2 (1.4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2660600094) (Production links)
-- [Mechanoid Bench 3](https://steamcommunity.com/sharedfiles/filedetails/?id=2793336382) (Production links)
-- [Mechanoid Foundry](https://steamcommunity.com/sharedfiles/filedetails/?id=2743980081) (Production links)
-- [[sd] medicaddons (unofficial)](https://steamcommunity.com/sharedfiles/filedetails/?id=2012914831) (Furniture links)
-- [Medical IVs](https://steamcommunity.com/sharedfiles/filedetails/?id=1424438685) (Furniture links)
-- [Medical Supplements](https://steamcommunity.com/sharedfiles/filedetails/?id=2195037369) (Furniture links)
-- [Medieval Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067) (Furniture, Production & Research links)
-- [More Archotech Garbage Reupload](https://steamcommunity.com/sharedfiles/filedetails/?id=2391102796) (Research links)
-- [More Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2565302299) (Furniture links)
-- [More Linkables](https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207) (Production & Research links)
-- [Modern Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2430249387) (Furniture links)
-- [Modern Bed (1.4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2888914698) (Furniture links)
-- [Moyo-From the depth](https://steamcommunity.com/workshop/filedetails/?id=2182305386) (Production links)
-- [Nanotech Overpower](https://steamcommunity.com/sharedfiles/filedetails/?id=2547371232) (Production links)
-- [NeuTech Advanced Medical Pod](https://steamcommunity.com/sharedfiles/filedetails/?id=2560301153) (Furniture links)
-- [Obsidia Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2519492373) (Production links)
-- [Outer Rim - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2919227155) (Production links)
-- [Outer Rim - Chiss Ascendancy](https://steamcommunity.com/sharedfiles/filedetails/?id=2919962538) (Production links)
-- [Outer Rim - Galactic Empire](https://steamcommunity.com/sharedfiles/filedetails/?id=2919248699) (Production links)
-- [Outer Rim - Furniture and Decor](https://steamcommunity.com/sharedfiles/filedetails/?id=2919553599) (Furniture links)
-- [Outer Rim - Mandalore](https://steamcommunity.com/sharedfiles/filedetails/?id=2920516629) (Production links)
-- [Outer Rim - Old Republic](https://steamcommunity.com/sharedfiles/filedetails/?id=2926855407) (Production links)
-- [Outer Rim - Rebel Alliance](https://steamcommunity.com/sharedfiles/filedetails/?id=2919249903) (Production links)
-- [[O21] Outland - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2755501685) (Production & Research links)
-- [Outland - Furniture & Decor](https://steamcommunity.com/sharedfiles/filedetails/?id=2897435739) (Furniture & Research links)
-- [Powerful Kitchen](https://steamcommunity.com/sharedfiles/filedetails/?id=2310644681) (Production links)
-- [Powerful Smelter](https://steamcommunity.com/sharedfiles/filedetails/?id=2331001560) (Production links)
-- [Prefab Animal Medical Bed](https://steamcommunity.com/sharedfiles/filedetails/?id=2706396418) (Furniture links)
-- [Rah's Bionics and Surgery Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=850429707) (Production links)
-- [Research Assistants](https://steamcommunity.com/sharedfiles/filedetails/?id=2659862896) (Research links)
-- [RimBees](https://steamcommunity.com/sharedfiles/filedetails/?id=1558161673) (Production links)
-- [Rim-Effect: Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2479560240) (Research links)
-- [Rim-Effect: Asari and Reapers](https://steamcommunity.com/sharedfiles/filedetails/?id=2651149728) (Research links)
-- [Rim-Effect: Extended Cut](https://steamcommunity.com/sharedfiles/filedetails/?id=2479492267) (Production links)
-- [RIMkea](https://steamcommunity.com/sharedfiles/filedetails/?id=769201959) (Furniture links)
-- [RimLife Expansion Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2309537905) (Furniture links)
-- [Rimsenal - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=725947920) (Production links)
-- [Rimsenal - Federation Faction Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=736172213) (Production links)
-- [Rimsenal - Feral Faction Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=736207111) (Production links)
-- [Rimputers](https://steamcommunity.com/sharedfiles/filedetails/?id=2795070262) (Research links)
-- [Rimputers (No Dubs Bad Hygiene)](https://steamcommunity.com/sharedfiles/filedetails/?id=2798666741) (Research links)
-- [RimVali: Cuisine](https://steamcommunity.com/sharedfiles/filedetails/?id=2564607618) (Production links)
-- [RimVali: Far From Avalon](https://steamcommunity.com/sharedfiles/filedetails/?id=2180380125) (Furniture, Production & Research links)
-- [Science Never Stops: Ambition of the Cosmic](https://steamcommunity.com/sharedfiles/filedetails/?id=1802857253) (Production & Research links)
-- [Smokeleaf Industry Reborn](https://steamcommunity.com/sharedfiles/filedetails/?id=2018570327) (Production links)
-- [[JPT] Soft Warm Beds](https://steamcommunity.com/sharedfiles/filedetails/?id=1713295858) (Furniture links)
-- [Sparkling Worlds - Full Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1123043922) (Research links)
-- [StuffedDoll](https://steamcommunity.com/sharedfiles/filedetails/?id=1937192602) (Furniture links)
-- [Swords (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2155363020) (Production links)
-- [[SZ]Super Mechneko - 超级机械猫娘](https://steamcommunity.com/sharedfiles/filedetails/?id=2128611954) (Production links)
-- [Tabletop Decorations](https://steamcommunity.com/sharedfiles/filedetails/?id=2535771403) (Production links)
-- [[1.2, 1.3] Tank Beds (Fast Sleep)](https://steamcommunity.com/sharedfiles/filedetails/?id=2020858426) (Furniture links)
-- [Tech Raiding [1.1] (continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2103664182) (Research links)
-- [The Complete Drug Overhaul (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2810368217) (Production links)
-- [[JDS] The Forge - Anvil](https://steamcommunity.com/sharedfiles/filedetails/?id=1967561500) (Production links)
-- [Tiny Workbenchs (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2387981423) (Production links)
-- [TOT's RimNewEast](https://steamcommunity.com/sharedfiles/filedetails/?id=2889214085) (Production links)
-- [UN-Colony Vanilla (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2894831795) (Furniture, Production & Research links)
-- [UN-Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2019774854) (Furniture, Production & Research links)
-- [Ushankas Luciferium Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2809422332) (Production links)
-- [Vanilla Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519) (Production links)
-- [Vanilla Cooking Expanded - Sushi](https://steamcommunity.com/sharedfiles/filedetails/?id=2158539170) (Production links)
-- [Vanilla Factions Expanded - Ancients](https://steamcommunity.com/sharedfiles/filedetails/?id=2654846754) (Furniture & Production links)
-- [Vanilla Furniture Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143) (Furniture links)
-- [Vanilla Furniture Expanded - Medical Module](https://steamcommunity.com/sharedfiles/filedetails/?id=1718191613) (Furniture links)
-- [Vanilla Furniture Expanded - Power](https://steamcommunity.com/sharedfiles/filedetails/?id=2062943477) (Production links)
-- [Vanilla Furniture Expanded - Production](https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632) (Production links)
-- [Vanilla Furniture Expanded - Spacer Module](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079) (Furniture links)
-- [Vanilla Genetics Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2801160906) (Production links)
-- [Vanilla Genetics Expanded - More Lab Stuff](https://steamcommunity.com/sharedfiles/filedetails/?id=2810324444) (Production links)
-- [Vault-Tec - Handy things for your vault!](https://steamcommunity.com/sharedfiles/filedetails/?id=1888778429) (Furniture & Production links)
-- [WallStuff](https://steamcommunity.com/sharedfiles/filedetails/?id=1994340640) (Production links)
-- [Wall Vitals Monitor](https://steamcommunity.com/sharedfiles/filedetails/?id=1334289344) (Furniture links)
-- [What the hack?!](https://steamcommunity.com/sharedfiles/filedetails/?id=1505914869) (Production links)
-- [WorkBench Support - More Linkable Facilities -](https://steamcommunity.com/sharedfiles/filedetails/?id=2238610692) (Production & Research links)
-- [WVC - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2875630809)(Furniture links)
-- [Xenite Industries](https://steamcommunity.com/sharedfiles/filedetails/?id=2008073296) (Production links)
-- [Xenite Industries: Mechanite District](https://steamcommunity.com/sharedfiles/filedetails/?id=2008073831) (Production links)
+- Core
+- Anomaly [Official DLC]
+- Ideology [Official DLC] 
+- A Rim Reborn - Core
+- A RimWorld of Magic
+- ACS - Advanced Commercial Server
+- AI Uplifting Assistant
+- Adeptus Mechanicus: Armoury
+- Advanced Electric Stove (Continued)
+- Akeron - Decorations
+- Alpha Animals
+- Alpha Bees
+- Alpha Genes
+- Alpha Memes
+- Altered Carbon 2: ReSleeved
+- Ambition of the Cosmic [Continued]
+- Ammunition Manufactory
+- Animal Medical Bed 1.5
+- Anty the war ant race
+- Apini Playable Race, Continued!
+- Appliances Expanded
+- Archotech Expanded
+- Archotech Forge
+- Area Rugs 2.0
+- Astra Militarum Imperial Guard Core Mod v2.61
+- Avaritia 无尽贪婪
+- BM's Races: Doberkins
+- Big and Small Furniture
+- Biotechnology
+- Blue Archive Furniture
+- Brain In a Jar
+- CTS - Complete Tech Solutions (Continued)
+- CeleTech Arsenal MKIII
+- Combat Extended
+- Comigo's Nutrition (Continued)
+- Commercial Server
+- Crypto-Tech : Craftable
+- Curious Curios
+- Cyber Fauna (Continued)
+- Cybernetic Storm
+- Daily furniture 塔林家具
+- Daily furniture 塔林家具 1.6
+- Dark Ages : Medieval Tools
+- Destiny 2 Exotic Weapons
+- Dubs Rimatomics
+- Eccentric Tech - Core
+- Eccentric Tech - Spacer Furniture
+- Edo Themed Expansion
+- Electric Art Bench (Continued)
+- Electric Butcher Table
+- Electric Stonecutting Table
+- Erin's Cottage Collection
+- Erin's Japanese Furniture
+- Even More Linkables Reupload
+- EverythingTable
+- Exotic Arsenal (Continued)
+- Expanded Materials - Metals
+- Expanded Prosthetics and Organ Engineering - Forked
+- Expanded Woodworking (Continued)
+- Fallout Drinks
+- Fast regen 1.6
+- Faster Healing Bed
+- Fueled Smelter + Crematorium(continued)
+- Geyser Cooking Revived (Continued)
+- GiTS Cybernetic Equipment
+- Glitter Tech
+- Glitter Tech Classic
+- Glitter Tech Classic (No Surgery)
+- Gloomy Extra - Kitchen (Continued)
+- GloomyFurniture (Continued)
+- GravTech
+- GrimWorld 40,000 - Core Imperialis
+- GrimWorld 40,000 - Talons of the Emperor
+- HALO - UNSC Faction (1.6)
+- Helixien Gas Production
+- High Tech Laboratory Facilities (Continued)
+- IV Drug Infuser
+- Ilya Tech - Core (Continued)
+- Industrial Age - Objects and Furniture (Continued)
+- Jewelry
+- KitchenStove
+- Kurin, The Three Tailed Fox [Deluxe Edition]
+- Lambda's Nuclear-Powered Stove
+- Large Animal Beds
+- MIM - WH40k Weapons
+- MakaiTech
+- Mechalit Core v2 (Continued)
+- Mechalit Core v2 1.6
+- Mechalit Faction v2 1.6
+- Mechanoid Foundry
+- Mechanoid Upgrades
+- Medical IV
+- Medical IVs Fork
+- Medical Supplements (Continued)
+- Medieval Overhaul
+- Medieval Things: Geysers
+- Mediterranean Furniture|地中海风格家具
+- Mighty Persona Bond Forge Patch Mod
+- Modern Bed (1.4+)
+- More Archotech Garbage (Continued)
+- More Furniture (Continued)
+- More Linkables
+- More Multi-Analyzers
+- Nano Repair Tech
+- Nuclear Energy
+- Obsidia Expansion
+- Oktober's Scrap-Tek
+- Outer Rim - Core
+- Outer Rim - Furniture and Decor
+- Outland - Core
+- Outland - Furniture & Decor
+- Paniel the Automata[1.6]
+- Persona Bond Forge
+- Ponpeco Furnitures : Kids' Room
+- Ponpeco Furnitures : Sci-Fi
+- Project RimFactory Revived
+- RBSE
+- RBSE Hardcore Edition
+- RIMkea (Continued)
+- RR's Furniture pack-Collection Longyun
+- RR's Furniture pack-Collection Rapture
+- Recraft Unique Weapon
+- Reel's Expanded Storage
+- Rhino's WORKBENCH.
+- Rim-Effect Renegade: Asari and Reapers
+- Rim-Effect Renegade: Core
+- Rim-Effect Renegade: Extended Cut
+- RimApps (Continued)
+- RimLife Expansion Furniture
+- RimLife Expansion Production Plus
+- RimThunder - Core
+- RimVali: Far From Avalon
+- Rimputers (No Dubs Bad Hygiene)
+- Rimputers 1.6
+- Rimsenal - Core
+- Rimsenal Faction Pack - Federation
+- Rimsenal Faction Pack - Feral
+- Rimsenal Faction Pack - Spacer
+- Rimstro
+- Rimstro Farming Expansion
+- Rimzone: Sons and Daughters of Helghan
+- Ryuu's Electric Art Bench
+- Ryuu's Electric Stonecutter's Table
+- Segmentum - Children of the Omnissiah
+- Small Bedroom Furniture
+- Small Biofuel Refinery
+- Small Butcher Table
+- Small Dresser
+- Small Stoves
+- Sparkling Worlds - Full Mod
+- Sparkling Worlds - Modular Core - Reduced features
+- Sunset Technology 3
+- Sunset Weapon Technology 2
+- Super Size Bed!
+- Swords (Continued)
+- Tabletop Decorations
+- Tactical Charged Gear (Continued)
+- The Complete Drug Overhaul (Continued)
+- Tinkering Bench and Biohacking Station
+- Tiny Workbenchs (Continued)
+- UN-Colony (Continued)
+- UN-Colony Vanilla (Continued)
+- UN-Furniture (Continued)
+- Ushankas Glittertech Expansion
+- Ushankas Luciferium Expansion
+- VGP Garden Canning
+- VGP Garden Dyes
+- VGP Garden Fabrics
+- VGP Garden Fabrics Simplified
+- VGP Garden Gourmet
+- Vanilla Brewing Expanded - Coffees and Teas
+- Vanilla Cooking Expanded
+- Vanilla Cooking Expanded - Bakery
+- Vanilla Cooking Expanded - Sushi
+- Vanilla Factions Expanded - Classical
+- Vanilla Factions Expanded - Empire
+- Vanilla Factions Expanded - Medieval 2
+- Vanilla Factions Expanded - Pirates
+- Vanilla Furniture Expanded
+- Vanilla Furniture Expanded - Medical Module
+- Vanilla Furniture Expanded - Production
+- Vanilla Furniture Expanded - Spacer Module
+- Vanilla Genetics Expanded
+- Vanilla Genetics Expanded - More Lab Stuff
+- Vanilla Gravship Expanded - Chapter 1
+- Vanilla Helixien Gas Expanded
+- Vanilla Plants Expanded - More Plants
+- Vanilla Plants Expanded - Mushrooms
+- Vanilla Quests Expanded - Deadlife
+- Vanilla Races Expanded - Android
+- Vanilla Recycling Expanded
+- Vanilla Vehicles Expanded
+- Vault-Tec - Handy things for your vault!
+- WVC - Ultra Expansion II
+- Wall Sleep Accelerator
+- Wall Vitals Monitor
+- WallStuff
+- WallStuffV2
+- Weapons of the Gods (Continued)
+- Wisteria Corporation (Continued)
+- Wolfein Race
+- WorkBench Support - More Linkable Facilities -
+- Xeva Faction
+- YASTM (Yet Another Star Trek Mod)
+- [1.6] Moyo - Light in the Abyss
+- [1.6] Moyo - from the depth
+- [FM] Furniture Expanded Pack
+- [HMC]Wall Furniture
+- [JDS] The Forge - Anvil
+- [JGH] Mechanoid Bench 3
+- [KR] Star Wars Bacta
+- [LSK]月兔扩展——基础家具和设施
+- [LTS]Ammunition - Framework
+- [LTS]Furnishing
+- [LYN] Nanotech Overpower
+- [MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture
+- [MUS]太空基地家具Space Base Furniture
+- [Mech]Pavia-RogueServitor|帕维亚-失控机仆
+- [OA]Ratkin Faction: Oberonia aurea
+- [RH2] Faction: V.O.I.D.
+- [RH2] Helldivers: Super Firearms
+- [RH2] Uncle Boris' - Used Furniture
+- [SYR] Prosthetic Table (Continued)
+- [SZ]Super Mechneko - 超级机械猫娘
+- [TY2.0]天鹰核心 Aquila2.0 Core 
+- [TY2.0]溪谷联邦 Aquila2.0-Valley
+- [WYD] Advanced Medicine
+- [XND] Carpenter Tables (Continued)
+- [lmgginspace] Repair bed
+- [sd] Goodnight (Continued)
+- [sd] medicaddons (Continued)
+- 华夏扩展 Chinese Comprehensive Expansion
+- 碳烤鱿鱼丝的传奇武器包
+- 碳烤鱿鱼丝的传奇铠甲包(续)/TKYYS's The legendary armor(Continued)
+- 联合轻工家具拓展-UF Light Industries Furniture
