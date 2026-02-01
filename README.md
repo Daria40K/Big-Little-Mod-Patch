@@ -13,9 +13,8 @@
 - [Rimworld v1.5 List](https://github.com/Daria40K/Big-Little-Mod-Patch/blob/main/ModList1.5.md)
 
 ### Rimworld v1.6 List
-- Core
 - Anomaly [Official DLC]
-- Ideology [Official DLC] 
+- Ideology [Official DLC]
 - A Rim Reborn - Core
 - A RimWorld of Magic
 - ACS - Advanced Commercial Server
@@ -147,7 +146,7 @@
 - RimVali: Far From Avalon
 - Rimputers (No Dubs Bad Hygiene)
 - Rimputers 1.6
-- Rimsenal - Core
+- Rimsenal: Murder diversified
 - Rimsenal Faction Pack - Federation
 - Rimsenal Faction Pack - Feral
 - Rimsenal Faction Pack - Spacer
@@ -237,7 +236,7 @@
 - [RH2] Uncle Boris' - Used Furniture
 - [SYR] Prosthetic Table (Continued)
 - [SZ]Super Mechneko - 超级机械猫娘
-- [TY2.0]天鹰核心 Aquila2.0 Core 
+- [TY2.0]天鹰核心 Aquila2.0 Core
 - [TY2.0]溪谷联邦 Aquila2.0-Valley
 - [WYD] Advanced Medicine
 - [XND] Carpenter Tables (Continued)
@@ -248,3 +247,19 @@
 - 碳烤鱿鱼丝的传奇武器包
 - 碳烤鱿鱼丝的传奇铠甲包(续)/TKYYS's The legendary armor(Continued)
 - 联合轻工家具拓展-UF Light Industries Furniture
+- Craftable Imperial Tech
+- El's Archeology
+- Guns Galore - Core
+- Kraltech Industries (1.6) (Continued)
+- Kraltech Industries Rebalanced (1.6)
+- More Toolboxes
+- Progression: Attire
+- Reese's Avali Race
+- Research Data
+- RimServers
+- Road to the Ultimate Material
+- The Minacator(A Partial 1x1 Fabricator)
+- Vaults of Vagar: Wargear Upgrades
+- [HYE] Nanotech Overpower
+- [RH2] Rimmu-Nation² - Weapons
+- [sx] Smaller Simple Research Bench
