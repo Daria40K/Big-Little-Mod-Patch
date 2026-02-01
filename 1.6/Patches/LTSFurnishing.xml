@@ -262,6 +262,51 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Legacy of The Rim - Men of the West ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Men of the West</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_GondorNobleWarderobe</li>
+									<li>LOTR_GondorNobleEndTable</li>
+									<li>LOTR_GondorNobleDresser</li>
+									<li>LOTR_NobleChest1x1c</li>
+									<li>LOTR_NobleChest2x1c</li>
+									<li>LOTR_SimpleCloset</li>
+									<li>LOTR_SimpleDresser</li>
+									<li>LOTR_SimpleEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Legacy of The Rim - Shadow of the East ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Shadow of the East</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_BedBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcCloset</li>
+									<li>LOTR_OrcDresser</li>
+									<li>LOTR_OrcEndTable</li>
+									<li>LOTR_OrcChest1x1c</li>
+									<li>LOTR_OrcChest1x2c</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Mechalit Core v2 (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

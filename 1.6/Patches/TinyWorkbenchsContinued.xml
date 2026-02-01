@@ -642,6 +642,93 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Legacy of The Rim - Men of the West ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Men of the West</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_HiTechResearchBenchMini | TWB_SimpleResearchBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini" or defName="TWB_SimpleResearchBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_GondorNobleBookshelf</li>
+								</value>
+							</li>
+							<!-- TWB_DrugLabMini | TWB_TableSculptingMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini" or defName="TWB_TableSculptingMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+							<!-- TWB_FabricationBenchMini | TWB_TableMachiningMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_QuenchingBucket</li>
+									<li>LOTR_QuenchingTrough</li>
+									<li>LOTR_Grinder</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+							<!-- TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_QuenchingBucket</li>
+									<li>LOTR_QuenchingTrough</li>
+									<li>LOTR_Grinder</li>
+									<li>LOTR_Bellows</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Legacy of The Rim - Shadow of the East ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Shadow of the East</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TWB_DrugLabMini | TWB_TableSculptingMini | TWB_TableStonecutterMini | TWB_HandTailoringBenchMini | TWB_ElectricTailoringBenchMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_DrugLabMini" or defName="TWB_TableSculptingMini" or defName="TWB_TableStonecutterMini" or defName="TWB_HandTailoringBenchMini" or defName="TWB_ElectricTailoringBenchMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+							<!-- TWB_FabricationBenchMini | TWB_TableMachiningMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_FabricationBenchMini" or defName="TWB_TableMachiningMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcQuenchingBucket</li>
+									<li>LOTR_OrcGrindingWheel</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+							<!-- TWB_ElectricSmelterMini | TWB_FueledSmithyMini | TWB_ElectricSmithyMini -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TWB_ElectricSmelterMini" or defName="TWB_FueledSmithyMini" or defName="TWB_ElectricSmithyMini"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcQuenchingBucket</li>
+									<li>LOTR_OrcGrindingWheel</li>
+									<li>LOTR_OrcBellows</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== MakaiTech ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

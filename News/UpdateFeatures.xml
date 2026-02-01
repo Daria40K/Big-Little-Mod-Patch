@@ -880,4 +880,11 @@
 		<assemblyVersion>4.16.0</assemblyVersion>
 		<content>Added support for Craftable Imperial Tech, El's Archeology, Guns Galore - Core, Kraltech Industries (1.6) (Continued), Kraltech Industries Rebalanced (1.6), More Toolboxes, Progression: Attire, Reese's Avali Race, Research Data, RimServers, Road to the Ultimate Material, The Minacator(A Partial 1x1 Fabricator), Vaults of Vagar: Wargear Upgrades, [HYE] Nanotech Overpower, [RH2] Rimmu-Nation² - Weapons and [sx] Smaller Simple Research Bench|Updated support for Rimsenal: Murder diversified</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.17.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_17_0</defName>
+		<assemblyVersion>4.17.0</assemblyVersion>
+		<content>Added support for Legacy of The Rim - Men of the West, Legacy of The Rim - Shadow of the East and Talias Furnaces</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

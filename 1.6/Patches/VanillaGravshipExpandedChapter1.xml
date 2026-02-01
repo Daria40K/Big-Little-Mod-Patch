@@ -511,6 +511,111 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Legacy of The Rim - Men of the West ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Men of the West</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CrewBunkBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_GondorNobleWarderobe</li>
+									<li>LOTR_GondorNobleEndTable</li>
+									<li>LOTR_GondorNobleDresser</li>
+									<li>LOTR_NobleChest1x1c</li>
+									<li>LOTR_NobleChest2x1c</li>
+									<li>LOTR_SimpleCloset</li>
+									<li>LOTR_SimpleDresser</li>
+									<li>LOTR_SimpleEndTable</li>
+								</value>
+							</li>
+							<!-- VGE_CompactDrugLab | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+							<!-- VGE_CompactFabBench | VGE_CompactMachiningTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_QuenchingBucket</li>
+									<li>LOTR_QuenchingTrough</li>
+									<li>LOTR_Grinder</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+							<!-- VGE_CompactSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_QuenchingBucket</li>
+									<li>LOTR_QuenchingTrough</li>
+									<li>LOTR_Grinder</li>
+									<li>LOTR_Bellows</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Legacy of The Rim - Shadow of the East ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Shadow of the East</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CrewBunkBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CrewBunkBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcCloset</li>
+									<li>LOTR_OrcDresser</li>
+									<li>LOTR_OrcEndTable</li>
+									<li>LOTR_OrcChest1x1c</li>
+									<li>LOTR_OrcChest1x2c</li>
+								</value>
+							</li>
+							<!-- VGE_CompactDrugLab | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+							<!-- VGE_CompactFabBench | VGE_CompactMachiningTable -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcQuenchingBucket</li>
+									<li>LOTR_OrcGrindingWheel</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+							<!-- VGE_CompactSmithy -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcQuenchingBucket</li>
+									<li>LOTR_OrcGrindingWheel</li>
+									<li>LOTR_OrcBellows</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Mechalit Core v2 (Continued) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

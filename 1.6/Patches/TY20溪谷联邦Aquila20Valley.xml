@@ -216,6 +216,70 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Legacy of The Rim - Men of the West ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Men of the West</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_Nano_industrial_manufacturing_station -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_QuenchingBucket</li>
+									<li>LOTR_QuenchingTrough</li>
+									<li>LOTR_Grinder</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+							<!-- TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_QuenchingBucket</li>
+									<li>LOTR_QuenchingTrough</li>
+									<li>LOTR_Grinder</li>
+									<li>LOTR_Bellows</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Legacy of The Rim - Shadow of the East ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Shadow of the East</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- TY_A_Nano_industrial_manufacturing_station -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Nano_industrial_manufacturing_station"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcQuenchingBucket</li>
+									<li>LOTR_OrcGrindingWheel</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+							<!-- TY_A_Workbench_Building | TY_A_Corpse_Oil_Smelter -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TY_A_Workbench_Building" or defName="TY_A_Corpse_Oil_Smelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcQuenchingBucket</li>
+									<li>LOTR_OrcGrindingWheel</li>
+									<li>LOTR_OrcBellows</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Medieval Overhaul ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
