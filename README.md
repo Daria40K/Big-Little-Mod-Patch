@@ -263,3 +263,6 @@
 - [HYE] Nanotech Overpower
 - [RH2] Rimmu-Nation² - Weapons
 - [sx] Smaller Simple Research Bench
+- Legacy of The Rim - Men of the West
+- Legacy of The Rim - Shadow of the East
+- Talias Furnaces
