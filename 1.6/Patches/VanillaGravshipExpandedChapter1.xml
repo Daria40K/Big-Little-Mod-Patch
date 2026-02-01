@@ -768,6 +768,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Oktober's Scrap-Tek ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -928,6 +949,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Reese's Avali Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Reese's Avali Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CompactFabBench | VGE_CompactTailor -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactFabBench" or defName="VGE_CompactTailor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ReeseAvali_Nanoloom</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rim-Effect Renegade: Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1063,6 +1101,23 @@
 									<li>RS_stove</li>
 									<li>RS_KitchenHood</li>
 									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -1775,6 +1830,23 @@
 								<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Vitals_Monitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- VGE_CompactStove | VGE_CompactDrugLab | VGE_CompactFabBench | VGE_CompactMachiningTable | VGE_CompactSmithy | VGE_CompactTailor | VGE_CompactRefinery -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="VGE_CompactStove" or defName="VGE_CompactDrugLab" or defName="VGE_CompactFabBench" or defName="VGE_CompactMachiningTable" or defName="VGE_CompactSmithy" or defName="VGE_CompactTailor" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

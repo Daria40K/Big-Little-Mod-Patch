@@ -588,6 +588,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_Cauldron | DankPyon_AlchemyBench | DankPyon_Smelter | DankPyon_Kiln | DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_Trestle | DankPyon_SawTable | DankPyon_Workbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Cauldron" or defName="DankPyon_AlchemyBench" or defName="DankPyon_Smelter" or defName="DankPyon_Kiln" or defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_Trestle" or defName="DankPyon_SawTable" or defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Oktober's Scrap-Tek ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -875,6 +896,23 @@
 									<li>RS_stove</li>
 									<li>RS_KitchenHood</li>
 									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_Cauldron | DankPyon_AlchemyBench | DankPyon_Smelter | DankPyon_Kiln | DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_Trestle | DankPyon_SawTable | DankPyon_Workbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_Cauldron" or defName="DankPyon_AlchemyBench" or defName="DankPyon_Smelter" or defName="DankPyon_Kiln" or defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_Trestle" or defName="DankPyon_SawTable" or defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -1438,6 +1476,23 @@
 								<xpath>Defs/ThingDef[defName="DankPyon_Cauldron" or defName="DankPyon_AlchemyBench" or defName="DankPyon_Smelter" or defName="DankPyon_Kiln" or defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_Trestle" or defName="DankPyon_SawTable" or defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- DankPyon_StoneOven | DankPyon_StoneOvenLarge | DankPyon_Grill | DankPyon_StewPot | DankPyon_Millstone | DankPyon_Cauldron | DankPyon_AlchemyBench | DankPyon_Smelter | DankPyon_Kiln | DankPyon_Furnace | DankPyon_Anvil | DankPyon_StonecuttingSpot | DankPyon_Trestle | DankPyon_SawTable | DankPyon_Workbench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="DankPyon_StoneOven" or defName="DankPyon_StoneOvenLarge" or defName="DankPyon_Grill" or defName="DankPyon_StewPot" or defName="DankPyon_Millstone" or defName="DankPyon_Cauldron" or defName="DankPyon_AlchemyBench" or defName="DankPyon_Smelter" or defName="DankPyon_Kiln" or defName="DankPyon_Furnace" or defName="DankPyon_Anvil" or defName="DankPyon_StonecuttingSpot" or defName="DankPyon_Trestle" or defName="DankPyon_SawTable" or defName="DankPyon_Workbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

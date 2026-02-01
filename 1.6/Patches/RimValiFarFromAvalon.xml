@@ -797,6 +797,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_BaseProductionBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RVFFA_BaseProductionBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Oktober's Scrap-Tek ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1000,6 +1021,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Research Data ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Research Data</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchSampleBench</li>
+									<li>ArchotechAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rim-Effect Renegade: Asari and Reapers ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1082,6 +1121,25 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== RimServers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimServers</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SERVERS_MakeshiftServer</li>
+									<li>SERVERS_ResearchServer</li>
+									<li>SERVERS_DoubleResearchServer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== RimThunder - Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -1140,6 +1198,30 @@
 									<li>RP_Server</li>
 									<li>RP_SuperComputer</li>
 									<li>Rimputer_quantumcomputer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_OriginCommunicator</li>
+								</value>
+							</li>
+							<!-- RVFFA_BaseProductionBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="RVFFA_BaseProductionBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -1681,6 +1763,23 @@
 								<xpath>Defs/ThingDef[@Name="RVFFA_BaseProductionBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_ResearchBench | RVFFA_BaseProductionBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_ResearchBench" or @Name="RVFFA_BaseProductionBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

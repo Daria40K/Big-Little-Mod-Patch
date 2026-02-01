@@ -651,6 +651,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Oktober's Scrap-Tek ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -792,6 +813,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Reese's Avali Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Reese's Avali Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ReeseAvali_Nanoloom</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rim-Effect Renegade: Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -909,6 +947,23 @@
 								<xpath>Defs/ThingDef[@Name="OutlandBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RVFFA_IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -1622,6 +1677,23 @@
 								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_Forge | Outland_BasicWorkbench | Outland_BasicWorkbench | Outland_FormingWorkbench | Outland_Forge | Outland_Forge | Outland_BasicWorkbench | Outland_Forge -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_BasicWorkbench" or defName="Outland_FormingWorkbench" or defName="Outland_Forge" or defName="Outland_Forge" or defName="Outland_BasicWorkbench" or defName="Outland_Forge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

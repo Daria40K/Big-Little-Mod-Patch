@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[sx] Smaller Simple Research Bench</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- SmallSimpleResearchBench -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_WallPapersA</li>
+									<li>AKN_WallPapersB</li>
+									<li>AKN_PaperNotesA</li>
+									<li>AKN_PaperNotesB</li>
+									<li>AKN_PaperNotesC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Curious Curios ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Curious Curios</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>PotatoBattery</li>
+									<li>HeartInAJar</li>
+									<li>CC_RoyalJelly</li>
+									<li>Thrumbone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== GloomyFurniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GL_Bookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_RoyalBookshelf</li>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RusticBookshelf1x2c</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Anon2FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Outland - Furniture & Decor ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Furniture &amp; Decor</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_StoneBookshelf</li>
+									<li>Outland_Bookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Reel's Expanded Storage ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Reel's Expanded Storage</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ReelStorageBookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Research Data ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Research Data</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchSampleBench</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimServers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimServers</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SERVERS_MakeshiftServer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers (No Dubs Bad Hygiene)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>RP_TapeStorage</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Rimputers 1.6 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimputers 1.6</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RP_MechanicalCalculator</li>
+									<li>RP_DifferenceEngine</li>
+									<li>Colony Tape Storage</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Colony Vanilla (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukResearchUpgradeAA</li>
+									<li>SadjuukResearchUpgradeBA</li>
+									<li>SadjuukResearchUpgradeBB</li>
+									<li>SadjuukResearchUpgradeBC</li>
+									<li>SadjuukResearchUpgradeCA</li>
+									<li>SadjuukResearchUpgradeCB</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== UN-Furniture (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>UN-Furniture (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SadjuukResearchBA</li>
+									<li>SadjuukResearchBB</li>
+									<li>SadjuukResearchBC</li>
+									<li>SadjuukResearchBD</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_NotesStack</li>
+									<li>VFEM2_ResearchBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Misc_FileCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Medical Module</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Facility_ResearchCounter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SmallSimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ChineseBookshelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

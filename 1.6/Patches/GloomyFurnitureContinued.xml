@@ -627,6 +627,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GL_FueledSmithy | GL_ElectricSmithy | GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Oktober's Scrap-Tek ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -812,6 +833,40 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Reese's Avali Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Reese's Avali Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ReeseAvali_Nanoloom</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Research Data ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Research Data</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchSampleBench</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rim-Effect Renegade: Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -874,6 +929,23 @@
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimServers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimServers</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_SimpleResearchBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SERVERS_MakeshiftServer</li>
 								</value>
 							</li>
 						</operations>
@@ -968,6 +1040,23 @@
 									<li>RS_stove</li>
 									<li>RS_KitchenHood</li>
 									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GL_FueledSmithy | GL_ElectricSmithy | GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -1562,6 +1651,23 @@
 								<xpath>Defs/ThingDef[defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- GL_TableButcher | RGK_FueledStove | GL_ElectricStove | RGK_SimpleResearchBench | GL_FueledSmithy | GL_ElectricSmithy | GL_HandTailoringBench | GL_ElectricTailoringBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="GL_TableButcher" or defName="RGK_FueledStove" or defName="GL_ElectricStove" or defName="RGK_SimpleResearchBench" or defName="GL_FueledSmithy" or defName="GL_ElectricSmithy" or defName="GL_HandTailoringBench" or defName="GL_ElectricTailoringBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

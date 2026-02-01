@@ -680,6 +680,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ImperialMedicalFab | ImperialFabricator | ImperialWeaponFab | ImperialArmorFab | IG_ImperialCONFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImperialMedicalFab" or defName="ImperialFabricator" or defName="ImperialWeaponFab" or defName="ImperialArmorFab" or defName="IG_ImperialCONFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Oktober's Scrap-Tek ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -840,6 +861,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Reese's Avali Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Reese's Avali Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ImperialFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImperialFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ReeseAvali_Nanoloom</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rim-Effect Renegade: Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -945,6 +983,23 @@
 								<xpath>Defs/ThingDef[defName="ImpDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RVFFA_IlluminateEndTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ImperialMedicalFab | ImperialFabricator | ImperialWeaponFab | ImperialArmorFab | IG_ImperialCONFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImperialMedicalFab" or defName="ImperialFabricator" or defName="ImperialWeaponFab" or defName="ImperialArmorFab" or defName="IG_ImperialCONFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -1580,6 +1635,23 @@
 								<xpath>Defs/ThingDef[defName="ImpHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Vitals_Monitor</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ImperialMedicalFab | ImperialFabricator | ImperialWeaponFab | ImperialArmorFab | IG_ImperialCONFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ImperialMedicalFab" or defName="ImperialFabricator" or defName="ImperialWeaponFab" or defName="ImperialArmorFab" or defName="IG_ImperialCONFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

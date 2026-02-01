@@ -250,6 +250,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- XER_SmallElectricStove | XER_SmallFueledStove -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="XER_SmallElectricStove" or defName="XER_SmallFueledStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [LTS]Furnishing ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

@@ -961,6 +961,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- LTS_StoveBenchBase | LTS_GrainMill -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase" or defName="LTS_GrainMill"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== [LSK]月兔扩展——基础家具和设施 ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

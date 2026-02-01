@@ -194,6 +194,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RH2Bench_SEAFMachiningBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RH2Bench_SEAFMachiningBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Outland - Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -246,6 +267,23 @@
 									<li>RTC_ToolShelf</li>
 									<li>RTC_BlastCabinet</li>
 									<li>RTC_EngineHanger</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RH2Bench_SEAFMachiningBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RH2Bench_SEAFMachiningBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -450,6 +488,23 @@
 								<xpath>Defs/ThingDef[defName="RH2Bench_SEAFMachiningBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RH2Bench_SEAFMachiningBench -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RH2Bench_SEAFMachiningBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

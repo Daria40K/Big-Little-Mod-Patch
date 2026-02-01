@@ -531,6 +531,24 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Research Data ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Research Data</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Doberkin_MultiAnalyzer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Doberkin_MultiAnalyzer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ResearchSampleBench</li>
+									<li>ArchotechAnalyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rim-Effect Renegade: Asari and Reapers ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -560,6 +578,25 @@
 								<xpath>Defs/ThingDef[defName="Doberkin_MultiAnalyzer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RE_AllianceTerminal</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimServers ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimServers</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Doberkin_MultiAnalyzer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Doberkin_MultiAnalyzer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SERVERS_MakeshiftServer</li>
+									<li>SERVERS_ResearchServer</li>
+									<li>SERVERS_DoubleResearchServer</li>
 								</value>
 							</li>
 						</operations>
@@ -604,6 +641,23 @@
 									<li>RP_Server</li>
 									<li>RP_SuperComputer</li>
 									<li>Rimputer_quantumcomputer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Doberkin_MultiAnalyzer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Doberkin_MultiAnalyzer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_OriginCommunicator</li>
 								</value>
 							</li>
 						</operations>
@@ -820,6 +874,23 @@
 								<xpath>Defs/ThingDef[defName="Doberkin_MultiAnalyzer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Multi_Analyzer</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- Doberkin_MultiAnalyzer -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="Doberkin_MultiAnalyzer"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>

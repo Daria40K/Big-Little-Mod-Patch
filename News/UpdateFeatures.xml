@@ -873,4 +873,11 @@
 		<assemblyVersion>4.15.0</assemblyVersion>
 		<content>Added support for Animal Medical Bed 1.5, A Rim Reborn - Core, Astra Militarum Imperial Guard Core Mod v2.61, Biotechnology, BM's Races: Doberkins, Combat Extended, Comigo's Nutrition (Continued), Electric Butcher Table, Even More Linkables Reupload, Fallout Drinks, Fast regen 1.6, GrimWorld 40,000 - Core Imperialis, GrimWorld 40,000 - Talons of the Emperor, Helixien Gas Production, Industrial Age - Objects and Furniture (Continued), Lambda's Nuclear-Powered Stove, [LSK]月兔扩展——基础家具和设施, [LYN] Nanotech Overpower, Mechalit Core v2 1.6, Mechalit Faction v2 1.6, Mechanoid Foundry, Medical Supplements (Continued), Medieval Things: Geysers, Nuclear Energy, Project RimFactory Revived, RBSE, RBSE Hardcore Edition, Tactical Charged Gear (Continued), [RH2] Faction: V.O.I.D., RIMkea (Continued), RimThunder - Core, Rimzone: Sons and Daughters of Helghan, Ryuu's Electric Art Bench, Ryuu's Electric Stonecutter's Table, Segmentum - Children of the Omnissiah, Sunset Weapon Technology 2, Swords (Continued), Tactical Charged Gear (Continued), The Complete Drug Overhaul (Continued), Vanilla Cooking Expanded - Bakery</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.16.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_16_0</defName>
+		<assemblyVersion>4.16.0</assemblyVersion>
+		<content>Added support for Craftable Imperial Tech, El's Archeology, Guns Galore - Core, Kraltech Industries (1.6) (Continued), Kraltech Industries Rebalanced (1.6), More Toolboxes, Progression: Attire, Reese's Avali Race, Research Data, RimServers, Road to the Ultimate Material, The Minacator(A Partial 1x1 Fabricator), Vaults of Vagar: Wargear Upgrades, [HYE] Nanotech Overpower, [RH2] Rimmu-Nation² - Weapons and [sx] Smaller Simple Research Bench|Updated support for Rimsenal: Murder diversified</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

@@ -2,12 +2,37 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Rimsenal - Core</li>
+			<li>The Minacator(A Partial 1x1 Fabricator)</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- MiniFabricator -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities />
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="MiniFabricator"]</xpath>
+							<value>
+								<comps>
+									<li Class="CompProperties_AffectedByFacilities">
+										<linkableFacilities/>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</nomatch>
+				</li>
 				<!-- ========== Core ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -15,9 +40,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinet</li>
 								</value>
@@ -32,9 +57,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetShelf</li>
 								</value>
@@ -49,9 +74,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>AKN_MotivatingPlush</li>
 								</value>
@@ -66,9 +91,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SNS_Linkable_Unobtainer_I</li>
 									<li>SNS_Linkable_CosmicDrawer_I</li>
@@ -89,9 +114,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ManCogitator</li>
 								</value>
@@ -106,9 +131,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>CS_ReAnalyser</li>
 								</value>
@@ -123,9 +148,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HobbesLink_CNCMachine</li>
 									<li>HobbesLink_3DPrinter</li>
@@ -148,9 +173,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>GW_VehicleToolCabinet</li>
 								</value>
@@ -165,9 +190,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>DankPyon_ToolRack</li>
 								</value>
@@ -182,13 +207,34 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>ToolCabinetA</li>
 									<li>ToolCabinetB</li>
 									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MiniFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -201,13 +247,30 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Outland_BasicWorkbench</li>
 									<li>Outland_Forge</li>
 									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Reese's Avali Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Reese's Avali Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MiniFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ReeseAvali_Nanoloom</li>
 								</value>
 							</li>
 						</operations>
@@ -220,9 +283,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RLE_PowerStabilizer</li>
 									<li>RLE_IntegratedManagementDevice</li>
@@ -239,13 +302,30 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>RTC_ToolShelf</li>
 									<li>RTC_BlastCabinet</li>
 									<li>RTC_EngineHanger</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MiniFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -258,11 +338,10 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>ucp_vise</li>
 									<li>ucp_toolbox</li>
 									<li>ucp_screwdrivers</li>
 									<li>ucp_hammer</li>
@@ -283,9 +362,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>TCToolCabinet</li>
 								</value>
@@ -300,9 +379,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>SadjuukShaper</li>
 									<li>SadjuukGrinding</li>
@@ -322,11 +401,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>VFE_MachiningCabinet</li>
+									<li>VFE_FabricationCabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -339,9 +418,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>VVE_GarageCabinet</li>
 								</value>
@@ -356,9 +435,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Vt_server</li>
 									<li>vtcompter</li>
@@ -374,9 +453,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -391,9 +470,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>WallToolBoard</li>
 								</value>
@@ -408,9 +487,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>Wolfein_OfficeDesk</li>
 									<li>Wolfein_SurveillanceCamera</li>
@@ -426,12 +505,11 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
-									<li>Link_MachiningGoods</li>
-									<li>Link_MachiningBoost</li>
+									<li>Link_FabricationBoost</li>
 									<li>Link_UniversalCabinet</li>
 								</value>
 							</li>
@@ -445,11 +523,28 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- MiniFabricator -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>
@@ -462,9 +557,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>LYN_Nanocabinet</li>
 								</value>
@@ -479,9 +574,9 @@
 					</mods>
 					<match Class="PatchOperationSequence">
 						<operations>
-							<!-- GDTable | YPTable | JITable | TETable -->
+							<!-- MiniFabricator -->
 							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="GDTable" or defName="YPTable" or defName="JITable" or defName="TETable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<xpath>Defs/ThingDef[defName="MiniFabricator"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HX_ToolCabinet</li>
 								</value>

@@ -517,6 +517,27 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_CeramicKiln_fuel | HX_CeramicKiln_Electric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_CeramicKiln_fuel" or defName="HX_CeramicKiln_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Oktober's Scrap-Tek ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>
@@ -786,6 +807,23 @@
 									<li>RS_stove</li>
 									<li>RS_KitchenHood</li>
 									<li>RS_TopShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_CeramicKiln_fuel | HX_CeramicKiln_Electric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_CeramicKiln_fuel" or defName="HX_CeramicKiln_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
 								</value>
 							</li>
 						</operations>
@@ -1258,6 +1296,23 @@
 								<xpath>Defs/ThingDef[defName="HX_CeramicKiln_fuel" or defName="HX_CeramicKiln_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 								<value>
 									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_FoodSteamer_fuel | HX_FoodSteamer_electric | HX_TraditionalFuelStoves | HX_ElectricStove | HX_ShellingMachine | HX_Sheller | HX_TraditionalManualPestle | HX_CeramicKiln_fuel | HX_CeramicKiln_Electric -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_FoodSteamer_fuel" or defName="HX_FoodSteamer_electric" or defName="HX_TraditionalFuelStoves" or defName="HX_ElectricStove" or defName="HX_ShellingMachine" or defName="HX_Sheller" or defName="HX_TraditionalManualPestle" or defName="HX_CeramicKiln_fuel" or defName="HX_CeramicKiln_Electric"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
 								</value>
 							</li>
 						</operations>
