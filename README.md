@@ -266,3 +266,11 @@
 - Legacy of The Rim - Men of the West
 - Legacy of The Rim - Shadow of the East
 - Talias Furnaces
+- Comigo's Adequate Cooking Continued
+- Cotton Industry
+- juc - Ancient Buildings
+- Rimframe: Vatgrown Hate
+- Rimframe: Vatgrown Home!
+- Vanilla Cooking Expanded
+- [JDS] Exiled Dawn
+- [JDS] StarWars - Armory

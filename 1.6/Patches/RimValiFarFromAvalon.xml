@@ -1227,6 +1227,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimframe: Vatgrown Home! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimframe: Vatgrown Home!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RVFFA_Beanbag | RVFFA_BeanbagAlternate | RVFFA_Plush | RVFFA_BasePillowPile | RVFFA_BedWithQualityBase -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RVFFA_Beanbag" or defName="RVFFA_BeanbagAlternate" or defName="RVFFA_Plush" or @Name="RVFFA_BasePillowPile" or @Name="RVFFA_BedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GrineerWallLamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

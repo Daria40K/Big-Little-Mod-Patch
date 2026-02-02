@@ -687,6 +687,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimframe: Vatgrown Home! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimframe: Vatgrown Home!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- AM_AncientBed | AM_AncientDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AM_AncientBed" or defName="AM_AncientDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GrineerWallLamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Bedroom Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

@@ -860,6 +860,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimframe: Vatgrown Home! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimframe: Vatgrown Home!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HX_bunk | HX_TraditionalBedA | HX_ElectricBedA | HX_TraditionalBedB | HX_ElectricBedB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HX_bunk" or defName="HX_TraditionalBedA" or defName="HX_ElectricBedA" or defName="HX_TraditionalBedB" or defName="HX_ElectricBedB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GrineerWallLamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimstro ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

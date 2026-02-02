@@ -657,6 +657,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimframe: Vatgrown Home! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimframe: Vatgrown Home!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- HS_RoughFuton | HS_FancyFutonDouble | HS_FancyFuton -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="HS_RoughFuton" or defName="HS_FancyFutonDouble" or defName="HS_FancyFuton"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GrineerWallLamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimstro ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

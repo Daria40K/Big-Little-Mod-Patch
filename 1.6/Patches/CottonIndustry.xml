@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Cotton Industry</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ========== Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Adeptus Mechanicus: Armoury ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Adeptus Mechanicus: Armoury</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetShelf</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Akeron - Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Akeron - Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>AKN_MotivatingPlush</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Ambition of the Cosmic [Continued] ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Ambition of the Cosmic [Continued]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>SNS_Linkable_Unobtainer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_I</li>
+									<li>SNS_Linkable_CosmicDrawer_II</li>
+									<li>SNS_Linkable_CosmicDrawer_III</li>
+									<li>SNS_Linkable_CosmicCall_I</li>
+									<li>SNS_Linkable_CosmicCall_II</li>
+									<li>SNS_Linkable_CosmicCall_III</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.61 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Astra Militarum Imperial Guard Core Mod v2.61</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ManCogitator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Cybernetic Storm ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Cybernetic Storm</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>CS_ReAnalyser</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Dark Ages : Medieval Tools ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Dark Ages : Medieval Tools</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DA_TailoringTools</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Even More Linkables Reupload ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Even More Linkables Reupload</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HobbesLink_RobotAssistant</li>
+									<li>HobbesLink_LaserEngraver</li>
+									<li>HobbesLink_ConveyorBelt</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Legacy of The Rim - Men of the West ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Men of the West</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_ToolRack</li>
+									<li>LOTR_ToolTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Legacy of The Rim - Shadow of the East ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Legacy of The Rim - Shadow of the East</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LOTR_OrcToolRack</li>
+									<li>LOTR_OrcToolTable</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Medieval Overhaul ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>DankPyon_ToolRack</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Linkables ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Linkables</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ToolCabinetA</li>
+									<li>ToolCabinetB</li>
+									<li>ToolCabinetC</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== More Toolboxes ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>More Toolboxes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>T2ToolCabinet</li>
+									<li>T3ToolCabinet</li>
+									<li>T4ToolCabinet</li>
+									<li>T5ToolCabinet</li>
+									<li>T6ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Outland - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Outland - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Outland_BasicWorkbench</li>
+									<li>Outland_Forge</li>
+									<li>Outland_Grindstone</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Reese's Avali Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Reese's Avali Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ReeseAvali_Nanoloom</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimLife Expansion Production Plus ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimLife Expansion Production Plus</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLE_PowerStabilizer</li>
+									<li>RLE_IntegratedManagementDevice</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== RimThunder - Core ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RimThunder - Core</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RTC_ToolShelf</li>
+									<li>RTC_BlastCabinet</li>
+									<li>RTC_EngineHanger</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Road to the Ultimate Material ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Road to the Ultimate Material</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>RLELink_AICoreOperator</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tabletop Decorations ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tabletop Decorations</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>ucp_measure</li>
+									<li>ucp_scraps</li>
+									<li>ucp_textileroll</li>
+									<li>ucp_pencil</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Tactical Charged Gear (Continued) ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Tactical Charged Gear (Continued)</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>TCToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval 2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFEM2_TailoringLoom</li>
+									<li>VFEM2_MannequinStand</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Production</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>VFE_TailorCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vault-Tec - Handy things for your vault!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Vt_server</li>
+									<li>vtcompter</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuff ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuff</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WallStuffV2 ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WallStuffV2</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>WallToolBoard</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== Wolfein Race ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Wolfein Race</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Wolfein_OfficeDesk</li>
+									<li>Wolfein_SurveillanceCamera</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>WorkBench Support - More Linkable Facilities -</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>Link_TailorGoods</li>
+									<li>Link_TailorBoost</li>
+									<li>Link_UniversalCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HMC]Wall Furniture ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HMC]Wall Furniture</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HMC_Wall_Tool_Cabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [HYE] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[HYE] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [LYN] Nanotech Overpower ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[LYN] Nanotech Overpower</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>LYN_Nanocabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[OA]Ratkin Faction: Oberonia aurea</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>OA_RK_Cloth_Processing</li>
+									<li>OA_RK_Cloth_Processing_B</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>华夏扩展 Chinese Comprehensive Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RT_CottonIndustry_WeaverWheel -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RT_CottonIndustry_WeaverWheel"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>HX_ToolCabinet</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

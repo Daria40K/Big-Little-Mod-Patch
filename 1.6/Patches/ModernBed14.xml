@@ -553,6 +553,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimframe: Vatgrown Home! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimframe: Vatgrown Home!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SC_ModernBed | SC_ModernBedMetal | SC_ModernBedDouble | SC_ModernBedDoubleMetal -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GrineerWallLamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Small Bedroom Furniture ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

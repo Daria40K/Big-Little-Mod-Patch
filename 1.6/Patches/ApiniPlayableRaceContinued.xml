@@ -818,6 +818,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimframe: Vatgrown Home! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimframe: Vatgrown Home!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- ApiniHoneycombBed_S | ApiniHoneycombBed_L -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ApiniHoneycombBed_S" or defName="ApiniHoneycombBed_L"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GrineerWallLamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Road to the Ultimate Material ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

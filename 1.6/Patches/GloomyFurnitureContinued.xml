@@ -1078,6 +1078,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimframe: Vatgrown Home! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimframe: Vatgrown Home!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RGK_bedSingle | RGK_bedSingleB | RGK_bedDouble | RGK_bedDoubleB | GL_ClassyDoubleBed -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="RGK_bedSingle" or defName="RGK_bedSingleB" or defName="RGK_bedDouble" or defName="RGK_bedDoubleB" or defName="GL_ClassyDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GrineerWallLamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

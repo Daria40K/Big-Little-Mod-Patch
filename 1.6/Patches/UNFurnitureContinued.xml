@@ -1221,6 +1221,23 @@
 						</operations>
 					</match>
 				</li>
+				<!-- ========== Rimframe: Vatgrown Home! ========== -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rimframe: Vatgrown Home!</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- SadjuukBedBaseA | SadjuukBedBaseB -->
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[@Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+								<value>
+									<li>GrineerWallLamp</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
 				<li Class="PatchOperationFindMod">
 					<mods>

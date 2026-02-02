@@ -887,4 +887,11 @@
 		<assemblyVersion>4.17.0</assemblyVersion>
 		<content>Added support for Legacy of The Rim - Men of the West, Legacy of The Rim - Shadow of the East and Talias Furnaces</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v4.18.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_4_18_0</defName>
+		<assemblyVersion>4.18.0</assemblyVersion>
+		<content>Added support for Comigo's Adequate Cooking Continued, Cotton Industry, juc - Ancient Buildings, Rimframe: Vatgrown Hate, Rimframe: Vatgrown Home!, Vanilla Cooking Expanded, [JDS] Exiled Dawn, [JDS] StarWars - Armory</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
