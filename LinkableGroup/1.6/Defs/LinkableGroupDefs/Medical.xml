@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Medical</defName>
+        <group>Medical</group>
+        <facilities>
+            <li MayRequire="moistestwhale.gitscyberneticequipment,">gitsAnchorConsole</li>
+            <li MayRequire="ludeon.rimworld,">VitalsMonitor</li>
+            <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_medieval_surg_washpan</li>
+            <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_medieval_surg_instruments</li>
+            <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_medieval_surg_lamp</li>
+            <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_industrial_surg_instruments</li>
+            <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_industrial_surg_lamp</li>
+            <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_spacer_surg_vitalsmonitor</li>
+            <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_spacer_surg_instruments</li>
+            <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_spacer_surg_lamp</li>
+            <li MayRequire="daylight.rimlifeexfurmod,">RLE_AirCondition</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeBA</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeBB</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCA</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCB</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCD</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCE</li>
+            <li MayRequire="akaster.ivdruginfuser,">IVDrugInfuser</li>
+            <li MayRequire="kenobirock.bacta,">MedicalStandDroid</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Blood</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Nutrition</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Painkiller</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Antibiotics</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Blood_Electric</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Nutrition_Electric</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Painkiller_Electric</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Antibiotics_Electric</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Anesthetic</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Anesthetic_Electric</li>
+            <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Multi_Electric</li>
+            <li MayRequire="mlie.cts,">CTSAdvancedVitalsMonitor</li>
+            <li MayRequire="vanillaexpanded.vfemedical,">Facility_VitalsCentre</li>
+            <li MayRequire="vanillaexpanded.vfemedical,">Facility_IVDrip</li>
+            <li MayRequire="oskarpotocki.vfe.medieval2,">VFEM2_SurgicalTools</li>
+            <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAA</li>
+            <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAB</li>
+            <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAC</li>
+            <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAD</li>
+            <li MayRequire="4loris4.morelinkables,">SurgicalInstruments</li>
+            <li MayRequire="4loris4.morelinkables,">SurgicalLamp</li>
+            <li MayRequire="leion247138.medicalhiv,">MedicalIV</li>
+            <li MayRequire="ushanka.luciferiumexpansion,">USH_LuciferiumMedicalSimulator</li>
+            <li MayRequire="twink.vaultfurniture,">Vaultmedical</li>
+            <li MayRequire="twink.vaultfurniture,">Vaultmedicallamp</li>
+            <li MayRequire="akn.decorations,">AKN_RestoringPlush</li>
+            <li MayRequire="hmc.wall.furniture,">HMC_Wall_Vitals_Monitor</li>
+            <li MayRequire="xercaine.wallvitalsmonitor,">XER_WallVitalsMonitor</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_MedicalControlPanel</li>
+            <li MayRequire="mlie.medicalsupplements,">MS_DStand</li>
+        </facilities>
+        <affected>
+            <li MayRequire="albion.sparklingworlds.full">GlitterworldHospitalBedSW</li>
+            <li MayRequire="albion.sparklingworlds.core">GlitterworldHospitalBedSW</li>
+            <li MayRequire="moistestwhale.gitscyberneticequipment">gitsCyberbodyAnchor</li>
+            <li MayRequire="ludeon.rimworld">HospitalBed</li>
+            <li MayRequire="daylight.rimlifeexfurmod">RLE_AdHospitalBed</li>
+            <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalBase</li>
+            <li MayRequire="kenobirock.bacta">KR_Bacta</li>
+            <li MayRequire="mlie.cts">CTSHiTechHospitalBed</li>
+            <li MayRequire="redmattis.bsfurniture">BS_MegaUniversalBed</li>
+            <li MayRequire="redmattis.bsfurniture">BS_BigHospitalBed</li>
+            <li MayRequire="redmattis.bsfurniture">BS_SmolHospitalBed</li>
+            <li MayRequire="roo.antyracemod">AT_Superregenerationdevice</li>
+            <li MayRequire="sarg.alphamemes">AM_AncientOperatingTable</li>
+            <li MayRequire="sarg.alphamemes,ludeon.rimworld.anomaly">AM_CubicHospitalBed</li>
+            <li MayRequire="vanillaexpanded.vfemedical">Bed_OperatingTable</li>
+            <li MayRequire="vanillaexpanded.vfemedical">Bed_CryptoBed</li>
+            <li MayRequire="mlie.unfurniture">SadjuukSurgeryBaseB</li>
+            <li MayRequire="rimeffectrenegade.core">RE_PrefabMedicalBed</li>
+            <li MayRequire="cucumpear.animalbeds">MedPetBedWithQualityBase</li>
+            <li MayRequire="gt.sam.glittertechns">ambTable</li>
+            <li MayRequire="gt.sam.glittertech">ambTable</li>
+            <li MayRequire="xavior.glittertech">ambTable</li>
+            <li MayRequire="sshark.fasterhealingbed">FastMedicalBed</li>
+            <li MayRequire="hlx.ultratechalteredcarbon">AC_SleeveCasket</li>
+            <li MayRequire="ogre.nanorepairtech">Ogre_NanoTech_HospitalBed</li>
+            <li MayRequire="twink.vaultfurniture">HospitalBedVault</li>
+            <li MayRequire="vanillaexpanded.gravship">VGE_MedbayBed</li>
+            <li MayRequire="moofoo.star.trek.faction">ST_Starfleet_Biobed</li>
+            <li MayRequire="als.gravtech">AdvShip_TimeFasterPod</li>
+            <li MayRequire="farxmai2.vfestandalone">FFE_AnimalMedTable</li>
+            <li MayRequire="melondove.wolfeinrace">Wolfein_MedicalBed</li>
+            <li MayRequire="godlyannihilator.animalmedicalbed">SUN_MedicalAnimalBed</li>
+            <li MayRequire="qx.astramilitarum">ImpHospitalBed</li>
+            <li MayRequire="daniledman.fastregen">HerbBede</li>
+            <li MayRequire="daniledman.fastregen">MedBed</li>
+            <li MayRequire="daniledman.fastregen">IIMed</li>
+            <li MayRequire="daniledman.fastregen">AnimalMedicRobo</li>
+            <li MayRequire="daniledman.fastregen">AnimalMedic</li>
+            <li MayRequire="mlie.medicalsupplements">MSMedicalMat</li>
+            <li MayRequire="mlie.medicalsupplements">MSMedicalMatSpacer</li>
+            <li MayRequire="mlie.medicalsupplements">MSMedicalMatUltra</li>
+            <li MayRequire="mlie.medicalsupplements">MSMedicalMatEarly</li>
+            <li MayRequire="daylight.lrultimatematt">RLE_AllCureBed</li>
+            <li MayRequire="jtc.grineerfurniture">AlloyHospitalBed</li>
+            <li MayRequire="juc.ancientbuildings">AncientOperatingTable</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

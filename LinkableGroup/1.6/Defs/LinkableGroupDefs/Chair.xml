@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Chair</defName>
+        <group>Chair</group>
+        <facilities>
+            <li MayRequire="vanillaexpanded.vfecore,">VFE_CoffeeTable</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_Bookcase</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_2x3_Carpet</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_3x3_Carpet</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_Doormat</li>
+        </facilities>
+        <affected>
+            <li MayRequire="vanillaexpanded.vfecore">Seat_RoyalArmchair</li>
+            <li MayRequire="vanillaexpanded.vfecore">VFE_ModularCouch</li>
+            <li MayRequire="vanillaexpanded.vfecore">Seat_Cushion</li>
+            <li MayRequire="vanillaexpanded.vfespacer">Seat_AdvChair</li>
+            <li MayRequire="vanillaexpanded.vfespacer">VFES_ModernArmchair</li>
+            <li MayRequire="vanillaexpanded.vfespacer">VFES_ModernCouch</li>
+            <li MayRequire="melondove.wolfeinrace">Wolfein_OfficeChair</li>
+            <li MayRequire="lat.rimstro">RS_Sofachair</li>
+            <li MayRequire="lat.rimstro">RS_Stool</li>
+            <li MayRequire="zal.rimkea">SITEGGArmchair</li>
+            <li MayRequire="zal.rimkea">CHILLEGGCouch</li>
+            <li MayRequire="zal.rimkea">SITTSLABChair</li>
+            <li MayRequire="zal.rimkea">STAMMRESTChair</li>
+            <li MayRequire="zal.rimkea">PILREKLINCouch</li>
+            <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Sofa</li>
+            <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Double_Sofa</li>
+            <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Double_2Sofa</li>
+            <li MayRequire="lotr.menofthewest">LOTR_GondorNobleChair</li>
+            <li MayRequire="lotr.menofthewest">LOTR_SimpleChair</li>
+            <li MayRequire="lotr.shadowoftheeast">LOTR_OrcChair</li>
+            <li MayRequire="jtc.grineerfurniture">GArmchair</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

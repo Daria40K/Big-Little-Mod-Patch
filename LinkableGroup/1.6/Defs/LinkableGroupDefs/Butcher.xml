@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Butcher</defName>
+        <group>Butcher</group>
+        <facilities>
+            <li MayRequire="roo.antyracemod,">AT_Chart</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_ButcherGoods</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_ButcherBoost</li>
+            <li MayRequire="oskarpotocki.vfe.medieval2,">VFEM2_CleaverRack</li>
+            <li MayRequire="oskarpotocki.vfe.medieval2,">VFEM2_CarvingBoard</li>
+            <li MayRequire="4loris4.morelinkables,">KitchenCupboard</li>
+            <li MayRequire="van.datools,">DA_ButcheringTools</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_RusticCookingTools</li>
+            <li MayRequire="akn.decorations,">AKN_MotivatingPlush</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_SurveillanceCamera</li>
+            <li MayRequire="lat.rimstro,">RS_Counter</li>
+            <li MayRequire="lat.rimstro,">RS_KitchenHood</li>
+            <li MayRequire="lat.rimstro,">RS_TopShelf</li>
+            <li MayRequire="lat.rimstro,">RS_stove</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ConveyorBelt</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_RobotAssistant</li>
+            <li MayRequire="zal.gloomyextrakitchen,">SM_Sink</li>
+            <li MayRequire="zal.gloomyextrakitchen,">SM_ButcherShelf</li>
+            <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_A</li>
+            <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_B</li>
+            <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_C</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+            <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+            <li MayRequire="hye.nto,">LYN_Nanocabinet</li>
+        </facilities>
+        <affected>
+            <li MayRequire="gloomy.furniture.continued">GL_TableButcher</li>
+            <li MayRequire="ludeon.rimworld">TableButcher</li>
+            <li MayRequire="vanillaexpanded.vfeproduction">VFE_TableButcherElectric</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_ElectButcher</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_ExpandedButcherMeatMaker</li>
+            <li MayRequire="roo.antyracemod">AntyTableButcher</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_TableButcherMini</li>
+            <li MayRequire="xercaine.smallbutchertable">XER_SmallTableButcher</li>
+            <li MayRequire="lat.rimstro">RS_Doma</li>
+            <li MayRequire="lat.rimstro">RS_stove</li>
+            <li MayRequire="mlie.comigosnutrition">COMIGO_SmallerButcherTable</li>
+            <li MayRequire="skullog.ebt">ElectricTableButcher</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

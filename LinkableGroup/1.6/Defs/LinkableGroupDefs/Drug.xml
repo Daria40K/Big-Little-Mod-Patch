@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Drug</defName>
+        <group>Drug</group>
+        <facilities>
+            <li MayRequire="limetreesnake.furnishing,">LTS_Fridge</li>
+            <li MayRequire="ludeon.rimworld,">ToolCabinet</li>
+            <li MayRequire="vanillaexpanded.vfeproduction,">VFE_DrugCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps,">RLE_IntegratedManagementDevice</li>
+            <li MayRequire="daylight.rlesexpansionproductps,">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_DrugLabGoods</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_DrugLabBoost</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetC</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetA</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetB</li>
+            <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+            <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion,">HX_ToolCabinet</li>
+            <li MayRequire="para0234.snsambitioncosmic,">SNS_Linkable_Unobtainer_I</li>
+            <li MayRequire="para0234.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_I</li>
+            <li MayRequire="para0234.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_II</li>
+            <li MayRequire="para0234.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_III</li>
+            <li MayRequire="para0234.snsambitioncosmic,">SNS_Linkable_CosmicCall_I</li>
+            <li MayRequire="para0234.snsambitioncosmic,">SNS_Linkable_CosmicCall_II</li>
+            <li MayRequire="para0234.snsambitioncosmic,">SNS_Linkable_CosmicCall_III</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_ToolRack</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_VialsTable</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_HerbTable</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_Alembic</li>
+            <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+            <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+            <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+            <li MayRequire="neronix17.outland.core,">Outland_BasicWorkbench</li>
+            <li MayRequire="neronix17.outland.core,">Outland_Forge</li>
+            <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+            <li MayRequire="akn.decorations,">AKN_MotivatingPlush</li>
+            <li MayRequire="arcjc007.wallstuffv2,">WallToolBoard</li>
+            <li MayRequire="ogliss.admech.armoury,">ToolCabinetShelf</li>
+            <li MayRequire="hmc.wall.furniture,">HMC_Wall_Tool_Cabinet</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_SurveillanceCamera</li>
+            <li MayRequire="scorpio.biotechnology,">Biotechnology_DNAHologram</li>
+            <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_OfficeDesk</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Centrifuge</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_IndustrialOven</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ConveyorBelt</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Incinerator</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_RobotAssistant</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Still</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Rotovape</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopCentrifuge</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopStove</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopLabTubeRack</li>
+            <li MayRequire="mlie.medicalsupplements,">DrugCabinet</li>
+            <li MayRequire="mlie.medicalsupplements,">DrugCabinetFridge</li>
+            <li MayRequire="rimthunder.core,">RTC_ToolShelf</li>
+            <li MayRequire="rimthunder.core,">RTC_BlastCabinet</li>
+            <li MayRequire="rimthunder.core,">RTC_EngineHanger</li>
+            <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+            <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T2ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T3ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T4ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T5ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T6ToolCabinet</li>
+            <li MayRequire="hye.nto,">LYN_Nanocabinet</li>
+            <li MayRequire="daylight.lrultimatematt,">RLELink_AICoreOperator</li>
+            <li MayRequire="lotr.menofthewest,">LOTR_ToolRack</li>
+            <li MayRequire="lotr.menofthewest,">LOTR_ToolTable</li>
+            <li MayRequire="lotr.shadowoftheeast,">LOTR_OrcToolRack</li>
+            <li MayRequire="lotr.shadowoftheeast,">LOTR_OrcToolTable</li>
+        </facilities>
+        <affected>
+            <li MayRequire="wyr3d.advancedmedicine">WYD_AdvancedDrugLab</li>
+            <li MayRequire="ludeon.rimworld">DrugLab</li>
+            <li MayRequire="ludeon.rimworld.anomaly">SerumCentrifuge</li>
+            <li MayRequire="vanillaexpanded.vfeproduction">VFE_TableDrugLabElectric</li>
+            <li MayRequire="mlie.cts">CTSAdvancedMedicineLab</li>
+            <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_AlchemicalWorkbench</li>
+            <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_AlchemicalWorkbench_Electric</li>
+            <li MayRequire="xavior.glittertech">PharmaTable</li>
+            <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Cauldron</li>
+            <li MayRequire="dankpyon.medieval.overhaul">DankPyon_AlchemyBench</li>
+            <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
+            <li MayRequire="neronix17.outland.core">Outland_Forge</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_DrugLabMini</li>
+            <li MayRequire="vanillaexpanded.gravship">VGE_CompactDrugLab</li>
+            <li MayRequire="qx.astramilitarum">ImperialMedicalFab</li>
+            <li MayRequire="mlie.medicalsupplements">MSStimLab</li>
+            <li MayRequire="zal.drugoverhaul">ADVDrugLab</li>
+            <li MayRequire="hye.nto">Nanobiolab</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

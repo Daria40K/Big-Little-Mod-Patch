@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Book</defName>
+        <group>Book</group>
+        <facilities>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_ToolRack</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_PaperHangingRack</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_QuillAndInkwell</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_Stack_Books</li>
+            <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_Stack_Paper</li>
+            <li MayRequire="ucp.tabletopdecorations,">ucp_pencil</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_SurveillanceCamera</li>
+            <li MayRequire="melondove.wolfeinrace,">Wolfein_OfficeDesk</li>
+        </facilities>
+        <affected>
+            <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Book_ScribeTable</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>
