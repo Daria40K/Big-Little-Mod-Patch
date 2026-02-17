@@ -146,6 +146,8 @@
             <li MayRequire="cgf1.gunsgalorecore">CGF1_MWP_Building_Gunsmith_Old</li>
             <li MayRequire="cgf1.gunsgalorecore">CGF1_MWP_Building_Gunsmith</li>
             <li MayRequire="m3.continued.jangodsoul.starwars.bti">JDS_Blastech_Workbench</li>
+            <li MayRequire="ru.craftableweaponuni">Ru_UniqueWeaponBench</li>
+            <li MayRequire="fdp.rimzone.core">RZ_StalkerWorkbench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

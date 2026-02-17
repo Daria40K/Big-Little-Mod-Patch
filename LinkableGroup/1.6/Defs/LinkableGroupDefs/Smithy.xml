@@ -111,6 +111,7 @@
             <li MayRequire="mlie.swords">LS_AncestralForge</li>
             <li MayRequire="lotr.menofthewest">LOTR_Anvil</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcAnvil</li>
+            <li MayRequire="sharpie.eldenrima">ER_EldenForge</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

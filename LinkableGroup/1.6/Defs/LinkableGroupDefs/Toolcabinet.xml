@@ -117,6 +117,11 @@
             <li MayRequire="mlie.coalexpanded">CoalCrematorium</li>
             <li MayRequire="lotr.menofthewest">LOTR_Workbench</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcWorkbench</li>
+            <li MayRequire="madman.toolsofthetrade">CraftingWorkBench</li>
+            <li MayRequire="cb745.overpoweredgaming">CB745_BuildingBaseFour</li>
+            <li MayRequire="untamo.apothecary.expansion">Untamo_AYApothecaryTable_Basic</li>
+            <li MayRequire="untamo.apothecary.expansion">Untamo_AYApothecaryTable_Intermediate</li>
+            <li MayRequire="untamo.apothecary.expansion">Untamo_AYApothecaryTable_Advanced</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

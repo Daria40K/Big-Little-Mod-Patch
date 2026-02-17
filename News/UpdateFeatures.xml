@@ -915,4 +915,11 @@
 		<assemblyVersion>5.0.1</assemblyVersion>
 		<content>Minor fixes</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.1.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_5_1_0</defName>
+		<assemblyVersion>5.1.0</assemblyVersion>
+		<content>Added support for Apothecary Expansion, Craftable Unique Weapon, Elden Rim: Armory, Medieval Madness: Tools of the Trade, OverPowered Gaming and RimZone Core</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
