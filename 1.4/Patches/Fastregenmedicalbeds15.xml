@@ -1,383 +1,123 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Fast regen medical beds 1.5</li>
-		</mods>
-
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<!-- AnimalMedic | AnimalMedicRobo -->
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]</xpath>
-					<nomatch Class="PatchOperationConditional">
-						<xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps</xpath>
-						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps</xpath>
-							<value>
-								<li Class="CompProperties_AffectedByFacilities">
-									<linkableFacilities />
-								</li>
-							</value>
-						</match>
-						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="AnimalMedic" or defName="AnimalMedicRobo"]</xpath>
-							<value>
-								<comps>
-									<li Class="CompProperties_AffectedByFacilities">
-										<linkableFacilities/>
-									</li>
-								</comps>
-							</value>
-						</nomatch>
-					</nomatch>
-				</li>
-				<!-- ========== Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Akeron - Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron - Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_RestoringPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>CTS - Complete Tech Solutions (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CTSAdvancedVitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Hospitals Extended ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Hospitals Extended</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CCP_LEDMedLight</li>
-									<li>sd_medicaddons_medieval_surg_washpan</li>
-									<li>sd_medicaddons_medieval_surg_instruments</li>
-									<li>sd_medicaddons_medieval_surg_lamp</li>
-									<li>sd_medicaddons_industrial_surg_instruments</li>
-									<li>sd_medicaddons_industrial_surg_lamp</li>
-									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
-									<li>sd_medicaddons_spacer_surg_instruments</li>
-									<li>sd_medicaddons_spacer_surg_lamp</li>
-									<li>Wall_VitalsMonitor</li>
-									<li>Spacer_Wall_VitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medical IV ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medical IV</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>MedicalIV</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medical IVs ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medical IVs</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>IV_Blood</li>
-									<li>IV_Nutrition</li>
-									<li>IV_Painkiller</li>
-									<li>IV_Antibiotics</li>
-									<li>IV_Anesthetic</li>
-									<li>IV_Blood_Electric</li>
-									<li>IV_Nutrition_Electric</li>
-									<li>IV_Painkiller_Electric</li>
-									<li>IV_Antibiotics_Electric</li>
-									<li>IV_Anesthetic_Electric</li>
-									<li>IV_Multi_Electric</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medical Supplements (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medical Supplements (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>MS_DStand</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SurgicalLamp</li>
-									<li>SurgicalInstruments</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== RimLife Expansion Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimLife Expansion Furniture</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RLE_AirCondition</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Colony Vanilla (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukHospitalUpgradeBA</li>
-									<li>SadjuukHospitalUpgradeBB</li>
-									<li>SadjuukHospitalUpgradeCA</li>
-									<li>SadjuukHospitalUpgradeCB</li>
-									<li>SadjuukHospitalUpgradeCD</li>
-									<li>SadjuukHospitalUpgradeCE</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== UN-Furniture (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Furniture (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukSurgeryAA</li>
-									<li>SadjuukSurgeryAB</li>
-									<li>SadjuukSurgeryAC</li>
-									<li>SadjuukSurgeryAD</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Ushankas Luciferium Expansion ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Ushankas Luciferium Expansion</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>USH_LuciferiumMedicalSimulator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Factions Expanded - Ancients ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Factions Expanded - Ancients</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFEA_AncientVitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Medical Module</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Facility_VitalsCentre</li>
-									<li>Facility_IVDrip</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vault-Tec - Handy things for your vault!</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Vaultmedical</li>
-									<li>Vaultmedicallamp</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Wall Vitals Monitor ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Wall Vitals Monitor</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Wall_M_VitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [KR] Star Wars Bacta ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[KR] Star Wars Bacta</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>MedicalStandDroid</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [sd] medicaddons (unofficial) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[sd] medicaddons (unofficial)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- HerbBede | MedBed | IIMed | AnimalMedic | AnimalMedicRobo -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>sd_medicaddons_medieval_surg_washpan</li>
-									<li>sd_medicaddons_medieval_surg_instruments</li>
-									<li>sd_medicaddons_medieval_surg_lamp</li>
-									<li>sd_medicaddons_industrial_surg_instruments</li>
-									<li>sd_medicaddons_industrial_surg_lamp</li>
-									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
-									<li>sd_medicaddons_spacer_surg_instruments</li>
-									<li>sd_medicaddons_spacer_surg_lamp</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-			</operations>
-		</match>
-	</Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Fast regen medical beds 1.5</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="AnimalMedic"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="AnimalMedic"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="AnimalMedic"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="AnimalMedic"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="AnimalMedicRobo"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="AnimalMedicRobo"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="AnimalMedicRobo"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="AnimalMedicRobo"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="HerbBede" or defName="MedBed" or defName="IIMed" or defName="AnimalMedic" or defName="AnimalMedicRobo"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="zymex.hospitalsextended,">CCP_LEDMedLight</li>
+                        <li MayRequire="zzz.wallvitalsmonitor,">Wall_M_VitalsMonitor</li>
+                        <li MayRequire="zymex.medicaddons,">sd_medicaddons_medieval_surg_washpan</li>
+                        <li MayRequire="zymex.medicaddons,">sd_medicaddons_medieval_surg_instruments</li>
+                        <li MayRequire="zymex.medicaddons,">sd_medicaddons_medieval_surg_lamp</li>
+                        <li MayRequire="zymex.medicaddons,">sd_medicaddons_industrial_surg_instruments</li>
+                        <li MayRequire="zymex.medicaddons,">sd_medicaddons_industrial_surg_lamp</li>
+                        <li MayRequire="zymex.medicaddons,">sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                        <li MayRequire="zymex.medicaddons,">sd_medicaddons_spacer_surg_instruments</li>
+                        <li MayRequire="zymex.medicaddons,">sd_medicaddons_spacer_surg_lamp</li>
+                        <li MayRequire="knight.medicalivs,">IV_Blood</li>
+                        <li MayRequire="knight.medicalivs,">IV_Nutrition</li>
+                        <li MayRequire="knight.medicalivs,">IV_Painkiller</li>
+                        <li MayRequire="knight.medicalivs,">IV_Antibiotics</li>
+                        <li MayRequire="knight.medicalivs,">IV_Anesthetic</li>
+                        <li MayRequire="knight.medicalivs,">IV_Blood_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Nutrition_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Painkiller_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Antibiotics_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Anesthetic_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Multi_Electric</li>
+                        <li MayRequire="vanillaexpanded.vfea,">VFEA_AncientVitalsMonitor</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_medieval_surg_washpan</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_medieval_surg_instruments</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_medieval_surg_lamp</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_industrial_surg_instruments</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_industrial_surg_lamp</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_spacer_surg_instruments</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_spacer_surg_lamp</li>
+                        <li MayRequire="zymex.hospitalsextended,">Wall_VitalsMonitor</li>
+                        <li MayRequire="zymex.hospitalsextended,">Spacer_Wall_VitalsMonitor</li>
+                        <li MayRequire="moistestwhale.gitscyberneticequipment,">gitsAnchorConsole</li>
+                        <li MayRequire="ludeon.rimworld,">VitalsMonitor</li>
+                        <li MayRequire="daylight.rimlifeexfurmod,">RLE_AirCondition</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeBA</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeBB</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCA</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCB</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCD</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCE</li>
+                        <li MayRequire="kenobirock.bacta,">MedicalStandDroid</li>
+                        <li MayRequire="mlie.cts,">CTSAdvancedVitalsMonitor</li>
+                        <li MayRequire="vanillaexpanded.vfemedical,">Facility_VitalsCentre</li>
+                        <li MayRequire="vanillaexpanded.vfemedical,">Facility_IVDrip</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAA</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAB</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAC</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAD</li>
+                        <li MayRequire="4loris4.morelinkables,">SurgicalInstruments</li>
+                        <li MayRequire="4loris4.morelinkables,">SurgicalLamp</li>
+                        <li MayRequire="leion247138.medicalhiv,">MedicalIV</li>
+                        <li MayRequire="ushanka.luciferiumexpansion,">USH_LuciferiumMedicalSimulator</li>
+                        <li MayRequire="twink.vaultfurniture,">Vaultmedical</li>
+                        <li MayRequire="twink.vaultfurniture,">Vaultmedicallamp</li>
+                        <li MayRequire="akn.decorations,">AKN_RestoringPlush</li>
+                        <li MayRequire="mlie.medicalsupplements,">MS_DStand</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>

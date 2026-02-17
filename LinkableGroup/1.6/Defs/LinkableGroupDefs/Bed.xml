@@ -161,7 +161,6 @@
             <li MayRequire="xale86.smallbedroomfurniture,">X86_EndTable</li>
             <li MayRequire="farxmai2.vfestandalone,">FFE_Mirror</li>
             <li MayRequire="farxmai2.vfestandalone,">FFE_Divider</li>
-            <li MayRequire="kindseal.ufli,">UFLI_CabinetA</li>
             <li MayRequire="kindseal.ufli,">UFLI_CabinetB</li>
             <li MayRequire="kindseal.ufli,">UFLI_CabinetC</li>
             <li MayRequire="kindseal.ufli,">UFLI_CabinetD</li>
@@ -197,6 +196,7 @@
             <li MayRequire="lotr.shadowoftheeast,">LOTR_OrcChest1x1c</li>
             <li MayRequire="lotr.shadowoftheeast,">LOTR_OrcChest1x2c</li>
             <li MayRequire="jtc.grineerfurniture,">GrineerWallLamp</li>
+            <li MayRequire="kindseal.ufli,">UFLI_CabinetA</li>
         </facilities>
         <affected>
             <li MayRequire="gloomy.furniture.continued">RGK_bedSingle</li>
@@ -300,7 +300,6 @@
             <li MayRequire="kindseal.ufli">UFLI_TripleBed</li>
             <li MayRequire="kindseal.ufli">UFLI_4PBed</li>
             <li MayRequire="kindseal.ufli">UFLI_Crib</li>
-            <li MayRequire="kindseal.ufli">UFLI_CabinetA</li>
             <li MayRequire="melondove.wolfeinrace">Wolfein_SingleBed</li>
             <li MayRequire="melondove.wolfeinrace">Wolfein_DoubleBed</li>
             <li MayRequire="melondove.wolfeinrace,Ludeon.RimWorld.Biotech">Wolfein_Crib</li>

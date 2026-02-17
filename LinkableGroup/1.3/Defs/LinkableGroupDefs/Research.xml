@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Research</defName>
+        <group>Research</group>
+        <facilities>
+            <li MayRequire="neronix17.outland.core,">Outland_Bookshelf</li>
+            <li MayRequire="joeyjoejoeshabidoo.rimputers,">RP_MechanicalCalculator</li>
+            <li MayRequire="joeyjoejoeshabidoo.rimputers,">RP_DifferenceEngine</li>
+            <li MayRequire="joeyjoejoeshabidoo.rimputers,">RP_TapeStorage</li>
+            <li MayRequire="solaris.furniturebase,">GL_Bookshelf</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeAA</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeBA</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeBB</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeBC</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeCA</li>
+            <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeCB</li>
+            <li MayRequire="vanillaexpanded.vfecore,">Misc_FileCabinet</li>
+            <li MayRequire="mlie.morefurniture,">Anon2FileCabinet</li>
+            <li MayRequire="vanillaexpanded.vfemedical,">Facility_ResearchCounter</li>
+            <li MayRequire="mlie.unfurniture,">SadjuukResearchBA</li>
+            <li MayRequire="mlie.unfurniture,">SadjuukResearchBB</li>
+            <li MayRequire="mlie.unfurniture,">SadjuukResearchBC</li>
+            <li MayRequire="mlie.unfurniture,">SadjuukResearchBD</li>
+            <li MayRequire="hol.rimputersforked,">RP_DifferenceEngine</li>
+            <li MayRequire="hol.rimputersforked,">RP_MechanicalCalculator</li>
+            <li MayRequire="hol.rimputersforked,">RP_TapeStorage</li>
+            <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">RP_MechanicalCalculator</li>
+            <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">RP_DifferenceEngine</li>
+            <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">Colony Tape Storage</li>
+            <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+            <li MayRequire="ninoss.rimservers,">SERVERS_MakeshiftServer</li>
+        </facilities>
+        <affected>
+            <li MayRequire="solaris.furniturebase">RGK_SimpleResearchBench</li>
+            <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchAA</li>
+            <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchBA</li>
+            <li MayRequire="mlie.unfurniture">SadjuukResearchAA</li>
+            <li MayRequire="mlie.unfurniture">SadjuukResearchAB</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

@@ -1,943 +1,158 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>High Tech Laboratory Facilities (Continued)</li>
-		</mods>
-
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<!-- ========== Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>MultiAnalyzer</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== ACS - Advanced Commercial Server ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>ACS - Advanced Commercial Server</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ServerRack</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== AI Uplifting Assistant ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>AI Uplifting Assistant</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AIUpliftAssistantAUA</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Akeron - Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron - Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_WallPapersA</li>
-									<li>AKN_WallPapersB</li>
-									<li>AKN_PaperNotesA</li>
-									<li>AKN_PaperNotesB</li>
-									<li>AKN_PaperNotesC</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Archon Multi-Analyzer ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Archon Multi-Analyzer</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ArchoMultiAnalyzer</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Archotech Expanded ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Archotech Expanded</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ArchoAnalyzer</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ResCogitator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Biotechnology ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Biotechnology</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Biotechnology_DNAHologram</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Brain In a Jar ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Brain In a Jar</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>BrainInAJar</li>
-									<li>DualBrain</li>
-									<li>QuadBrain</li>
-									<li>MasterBrain</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Commercial Server ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Commercial Server</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ServerSilver</li>
-									<li>ServerGold</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Curious Curios ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Curious Curios</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>PotatoBattery</li>
-									<li>HeartInAJar</li>
-									<li>CC_RoyalJelly</li>
-									<li>Thrumbone</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Dubs Rimatomics ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Dubs Rimatomics</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ResearchReactor</li>
-									<li>WeaponsBench</li>
-									<li>PlutoniumProcessor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Eccentric Tech - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Eccentric Tech - Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>EccentricAuroraCore</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Even More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Even More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>HobbesLink_PersonalComputer</li>
-									<li>HobbesLink_Still</li>
-									<li>HobbesLink_Rotovape</li>
-									<li>HobbesLink_TabletopCentrifuge</li>
-									<li>HobbesLink_TabletopStove</li>
-									<li>HobbesLink_TabletopLabMachine</li>
-									<li>HobbesLink_TabletopOscilloscope</li>
-									<li>HobbesLink_TabletopLabScanner</li>
-									<li>HobbesLink_TabletopLabTubeRack</li>
-									<li>HobbesLink_TabletopLabMicroscope</li>
-									<li>HobbesLink_BotanicalEnclosure</li>
-									<li>HobbesLink_ServerRack</li>
-									<li>HobbesLink_Autoclave</li>
-									<li>HobbesLink_Centrifuge</li>
-									<li>HobbesLink_Incinerator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== GloomyFurniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GloomyFurniture</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GL_Bookshelf</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== GloomyFurniture (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GloomyFurniture (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GL_Bookshelf</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== GrimWorld 40,000 - Core Imperialis ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>GrimWorld 40,000 - Core Imperialis</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GW_Cogitator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== HALO - UNSC Faction ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>HALO - UNSC Faction</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>HALO_UNSC_ResearchTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Hospitals Extended ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Hospitals Extended</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LabStation</li>
-									<li>LabTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== MakaiTech ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>MakaiTech</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Makai_Powerlink_Relay</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medieval Overhaul ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medieval Overhaul</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_RoyalBookshelf</li>
-									<li>DankPyon_RusticBookshelf</li>
-									<li>DankPyon_RusticBookshelf1x2c</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Archotech Garbage (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Archotech Garbage (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ArchoDecipherAI</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Furniture (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Furniture (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Anon2FileCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AdvancedMultiAnalyzer</li>
-									<li>ToolCabinetC</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Multi-Analyzers ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Multi-Analyzers</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>HCTechprintAnalyzer</li>
-									<li>HCLargeMultiAnalyzer</li>
-									<li>HCShardMultiAnalyzer</li>
-									<li>HCArchoMultiAnalyzer</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Outer Rim - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outer Rim - Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OuterRim_HypertechTerminal</li>
-									<li>OuterRim_HypertechTerminalWide</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Outland - Furniture & Decor ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outland - Furniture &amp; Decor</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Outland_StoneBookshelf</li>
-									<li>Outland_Bookshelf</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Reel's Expanded Storage ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Reel's Expanded Storage</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ReelStorageBookshelf</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Rim-Effect Legacy: Asari and Reapers ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rim-Effect Legacy: Asari and Reapers</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RE_AsariTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Rim-Effect Legacy: Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rim-Effect Legacy: Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RE_AllianceTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Rim-Effect Renegade: Asari and Reapers ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rim-Effect Renegade: Asari and Reapers</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RE_AsariTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Rim-Effect Renegade: Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rim-Effect Renegade: Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RE_AllianceTerminal</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Rimputers (No Dubs Bad Hygiene) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rimputers (No Dubs Bad Hygiene)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RP_MechanicalCalculator</li>
-									<li>RP_DifferenceEngine</li>
-									<li>RP_TapeStorage</li>
-									<li>RP_Server</li>
-									<li>RP_SuperComputer</li>
-									<li>Rimputer_quantumcomputer</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Rimputers 1.5 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Rimputers 1.5</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RP_MechanicalCalculator</li>
-									<li>RP_DifferenceEngine</li>
-									<li>Colony Tape Storage</li>
-									<li>RP_Server</li>
-									<li>RP_SuperComputer</li>
-									<li>Rimputer_quantumcomputer</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Save Our Ship 2 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Save Our Ship 2</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ArchotechUplink</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Sparkling Worlds - Full Mod ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Sparkling Worlds - Full Mod</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ComputingSystemSW</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Sparkling Worlds - Modular Core - Reduced features ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Sparkling Worlds - Modular Core - Reduced features</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ComputingSystemSW</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Tech Raiding [1.1](continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tech Raiding [1.1](continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LostAnalyzer</li>
-									<li>BrutalAnalyzer</li>
-									<li>MechaAnalyzer</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Colony Vanilla (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukResearchUpgradeAA</li>
-									<li>SadjuukResearchUpgradeBA</li>
-									<li>SadjuukResearchUpgradeBB</li>
-									<li>SadjuukResearchUpgradeBC</li>
-									<li>SadjuukResearchUpgradeCA</li>
-									<li>SadjuukResearchUpgradeCB</li>
-									<li>SadjuukResearchUpgradeCC</li>
-									<li>SadjuukResearchUpgradeCD</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== UN-Furniture (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Furniture (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukResearchBA</li>
-									<li>SadjuukResearchBB</li>
-									<li>SadjuukResearchBC</li>
-									<li>SadjuukResearchBD</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== VFE - Ancients: Computers Not Junk ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>VFE - Ancients: Computers Not Junk</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VED_AncientDatabase</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Factions Expanded - Medieval 2</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFEM2_NotesStack</li>
-									<li>VFEM2_ResearchBoard</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Misc_FileCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Medical Module</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Facility_ResearchCounter</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WorkBench Support - More Linkable Facilities -</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_ResearchGoods</li>
-									<li>Link_ResearchBoost</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== XCOM - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>XCOM - Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VBY_XCom_ShadowChamber</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [1.6] Moyo - from the depth ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[1.6] Moyo - from the depth</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>MoyoGRModule</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [Mech]Pavia-RogueServitor|帕维亚-失控机仆 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[Mech]Pavia-RogueServitor|帕维亚-失控机仆</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RogueServitor_BladeCenter_BandNode</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [OA]Ratkin Faction: Oberonia aurea ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[OA]Ratkin Faction: Oberonia aurea</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>OA_RK_Rese_A</li>
-									<li>OA_RK_Rese_B</li>
-									<li>OA_RK_Rese_C</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [TY2.0]溪谷联邦 Aquila2.0-Valley ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[TY2.0]溪谷联邦 Aquila2.0-Valley</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>TY_Scientific_research</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== 华夏扩展 Chinese Comprehensive Expansion ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>华夏扩展 Chinese Comprehensive Expansion</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- LabStation | LabStation | LabTerminal | LabTerminal -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="LabStation" or defName="LabStation" or defName="LabTerminal" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>HX_ChineseBookshelf</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-			</operations>
-		</match>
-	</Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>High Tech Laboratory Facilities (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LabStation" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_PersonalComputer</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Still</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Rotovape</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopCentrifuge</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopStove</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopLabMachine</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopOscilloscope</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopLabScanner</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopLabTubeRack</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopLabMicroscope</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_BotanicalEnclosure</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_ServerRack</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Autoclave</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Centrifuge</li>
+                        <li MayRequire="solaris.furniturebase,">GL_Bookshelf</li>
+                        <li MayRequire="harkon.halo.unscfaction,">HALO_UNSC_ResearchTerminal</li>
+                        <li MayRequire="farxmai2.computersnotjunk,">VED_AncientDatabase</li>
+                        <li MayRequire="kentington.saveourship2,">ArchotechUplink</li>
+                        <li MayRequire="techraiding.velcroboy333,">LostAnalyzer</li>
+                        <li MayRequire="techraiding.velcroboy333,">BrutalAnalyzer</li>
+                        <li MayRequire="techraiding.velcroboy333,">MechaAnalyzer</li>
+                        <li MayRequire="xcomcore.velcroboy333,">VBY_XCom_ShadowChamber</li>
+                        <li MayRequire="nuanki.archoomnianalyzer,">ArchoMultiAnalyzer</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Incinerator</li>
+                        <li MayRequire="zymex.hospitalsextended,">LabStation</li>
+                        <li MayRequire="zymex.hospitalsextended,">LabTerminal</li>
+                        <li MayRequire="rimeffect.core,">RE_AllianceTerminal</li>
+                        <li MayRequire="rimeffect.asarireapers,">RE_AsariTerminal</li>
+                        <li MayRequire="gloomy.furniture.continued,">GL_Bookshelf</li>
+                        <li MayRequire="albion.sparklingworlds.full,">ComputingSystemSW</li>
+                        <li MayRequire="albion.sparklingworlds.core,">ComputingSystemSW</li>
+                        <li MayRequire="spesscarp.commercialserver,">ServerSilver</li>
+                        <li MayRequire="spesscarp.commercialserver,">ServerGold</li>
+                        <li MayRequire="ludeon.rimworld,">MultiAnalyzer</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeAA</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeBA</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeBB</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeBC</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeCA</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeCB</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeCC</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukResearchUpgradeCD</li>
+                        <li MayRequire="nemonian.my,">MoyoGRModule</li>
+                        <li MayRequire="tyll.valley,">TY_Scientific_research</li>
+                        <li MayRequire="rogueservitor.mechanoids,">RogueServitor_BladeCenter_BandNode</li>
+                        <li MayRequire="oark.ratkinfaction.oberoniaaurea,">OA_RK_Rese_A</li>
+                        <li MayRequire="oark.ratkinfaction.oberoniaaurea,">OA_RK_Rese_B</li>
+                        <li MayRequire="oark.ratkinfaction.oberoniaaurea,">OA_RK_Rese_C</li>
+                        <li MayRequire="vanillaexpanded.vfecore,">Misc_FileCabinet</li>
+                        <li MayRequire="mlie.morefurniture,">Anon2FileCabinet</li>
+                        <li MayRequire="zal.morearchotechgarbage,">ArchoDecipherAI</li>
+                        <li MayRequire="dubwise.rimatomics,">ResearchReactor</li>
+                        <li MayRequire="dubwise.rimatomics,">WeaponsBench</li>
+                        <li MayRequire="dubwise.rimatomics,">PlutoniumProcessor</li>
+                        <li MayRequire="translucency.braininajar.latest,">BrainInAJar</li>
+                        <li MayRequire="translucency.braininajar.latest,">DualBrain</li>
+                        <li MayRequire="translucency.braininajar.latest,">QuadBrain</li>
+                        <li MayRequire="translucency.braininajar.latest,">MasterBrain</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_ResearchGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_ResearchBoost</li>
+                        <li MayRequire="vanillaexpanded.vfemedical,">Facility_ResearchCounter</li>
+                        <li MayRequire="oskarpotocki.vfe.medieval2,">VFEM2_NotesStack</li>
+                        <li MayRequire="oskarpotocki.vfe.medieval2,">VFEM2_ResearchBoard</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukResearchBA</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukResearchBB</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukResearchBC</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukResearchBD</li>
+                        <li MayRequire="rimeffectrenegade.asarireapers,">RE_AsariTerminal</li>
+                        <li MayRequire="rimeffectrenegade.core,">RE_AllianceTerminal</li>
+                        <li MayRequire="reel.expanded.storage,">ReelStorageBookshelf</li>
+                        <li MayRequire="neronix17.outerrim.core,">OuterRim_HypertechTerminal</li>
+                        <li MayRequire="neronix17.outerrim.core,">OuterRim_HypertechTerminalWide</li>
+                        <li MayRequire="4loris4.morelinkables,">AdvancedMultiAnalyzer</li>
+                        <li MayRequire="4loris4.morelinkables,">ToolCabinetC</li>
+                        <li MayRequire="aelanna.eccentrictech.core,">EccentricAuroraCore</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion,">HX_ChineseBookshelf</li>
+                        <li MayRequire="yanzihko.ae,">ArchoAnalyzer</li>
+                        <li MayRequire="drenzyme.curiouscurios,">PotatoBattery</li>
+                        <li MayRequire="drenzyme.curiouscurios,">HeartInAJar</li>
+                        <li MayRequire="drenzyme.curiouscurios,">CC_RoyalJelly</li>
+                        <li MayRequire="drenzyme.curiouscurios,">Thrumbone</li>
+                        <li MayRequire="mlie.hightechlaboratoryfacilities,">LabStation</li>
+                        <li MayRequire="mlie.hightechlaboratoryfacilities,">LabStation</li>
+                        <li MayRequire="mlie.hightechlaboratoryfacilities,">LabTerminal</li>
+                        <li MayRequire="mlie.hightechlaboratoryfacilities,">LabTerminal</li>
+                        <li MayRequire="aranmaho.makai,">Makai_Powerlink_Relay</li>
+                        <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_RoyalBookshelf</li>
+                        <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_RusticBookshelf</li>
+                        <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_RusticBookshelf1x2c</li>
+                        <li MayRequire="happycam.multianalyzers,">HCTechprintAnalyzer</li>
+                        <li MayRequire="happycam.multianalyzers,">HCLargeMultiAnalyzer</li>
+                        <li MayRequire="happycam.multianalyzers,">HCShardMultiAnalyzer</li>
+                        <li MayRequire="happycam.multianalyzers,">HCArchoMultiAnalyzer</li>
+                        <li MayRequire="neronix17.outland.furnitureanddecor,">Outland_StoneBookshelf</li>
+                        <li MayRequire="neronix17.outland.furnitureanddecor,">Outland_Bookshelf</li>
+                        <li MayRequire="harkon.halo.unscfaction,">HALO_UNSC_ResearchTerminal</li>
+                        <li MayRequire="georodin.advancedcommercialserver,">ServerRack</li>
+                        <li MayRequire="albion.aiuplift,">AIUpliftAssistantAUA</li>
+                        <li MayRequire="akn.decorations,">AKN_WallPapersA</li>
+                        <li MayRequire="akn.decorations,">AKN_WallPapersB</li>
+                        <li MayRequire="akn.decorations,">AKN_PaperNotesA</li>
+                        <li MayRequire="akn.decorations,">AKN_PaperNotesB</li>
+                        <li MayRequire="akn.decorations,">AKN_PaperNotesC</li>
+                        <li MayRequire="scorpio.biotechnology,">Biotechnology_DNAHologram</li>
+                        <li MayRequire="qx.astramilitarum,">ResCogitator</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Autoclave</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Centrifuge</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Incinerator</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_PersonalComputer</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Still</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Rotovape</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopCentrifuge</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopStove</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopLabMachine</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopOscilloscope</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopLabScanner</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopLabTubeRack</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopLabMicroscope</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_BotanicalEnclosure</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ServerRack</li>
+                        <li MayRequire="grimworld.core,">GW_Cogitator</li>
+                        <li MayRequire="hol.rimputersforked,">RP_DifferenceEngine</li>
+                        <li MayRequire="hol.rimputersforked,">RP_MechanicalCalculator</li>
+                        <li MayRequire="hol.rimputersforked,">RP_TapeStorage</li>
+                        <li MayRequire="hol.rimputersforked,">RP_Server</li>
+                        <li MayRequire="hol.rimputersforked,">RP_SuperComputer</li>
+                        <li MayRequire="hol.rimputersforked,">Rimputer_quantumcomputer</li>
+                        <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">RP_MechanicalCalculator</li>
+                        <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">RP_DifferenceEngine</li>
+                        <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">Colony Tape Storage</li>
+                        <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">RP_Server</li>
+                        <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">RP_SuperComputer</li>
+                        <li MayRequire="joeyjoejoeshabidoo.rimputers1.4,">Rimputer_quantumcomputer</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                        <li MayRequire="ninoss.rimservers,">SERVERS_MakeshiftServer</li>
+                        <li MayRequire="ninoss.rimservers,">SERVERS_ResearchServer</li>
+                        <li MayRequire="ninoss.rimservers,">SERVERS_DoubleResearchServer</li>
+                        <li MayRequire="kongkim.researchdata,">ResearchSampleBench</li>
+                        <li MayRequire="kongkim.researchdata,">ArchotechAnalyzer</li>
+                        <li MayRequire="daylight.lrultimatematt,">RLE_OriginCommunicator</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>

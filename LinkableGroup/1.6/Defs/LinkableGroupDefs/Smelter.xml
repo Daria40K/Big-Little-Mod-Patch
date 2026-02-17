@@ -120,6 +120,7 @@
             <li MayRequire="lotr.menofthewest">LOTR_Furnace</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcFurnace</li>
             <li MayRequire="jtc.grineer">G_Alloysmelter</li>
+            <li MayRequire="argon.expandedmaterials.masonry">EM_Kiln</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

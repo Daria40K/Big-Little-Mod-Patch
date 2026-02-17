@@ -1,755 +1,168 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>GiTS Cybernetic Equipment</li>
-		</mods>
-
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<!-- ========== Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinet</li>
-								</value>
-							</li>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Akeron - Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron - Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
-								</value>
-							</li>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_RestoringPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Apini Playable Race, Continued! ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Apini Playable Race, Continued!</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ApiniNectarStill</li>
-									<li>ApiniProstheticsTable</li>
-									<li>ApitechTable</li>
-									<li>ApitechSynthesizer</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ManCogitator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Biotechnology ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Biotechnology</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Biotechnology_DNAHologram</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== CTS - Complete Tech Solutions (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>CTS - Complete Tech Solutions (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CTSAdvancedVitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Cybernetic Storm ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Cybernetic Storm</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CS_ReAnalyser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Even More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Even More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>HobbesLink_Still</li>
-									<li>HobbesLink_Rotovape</li>
-									<li>HobbesLink_TabletopCentrifuge</li>
-									<li>HobbesLink_TabletopStove</li>
-									<li>HobbesLink_TabletopLabTubeRack</li>
-									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_3DPrinter</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Lathe</li>
-									<li>HobbesLink_Spacer_Lathe</li>
-									<li>HobbesLink_Vice</li>
-									<li>HobbesLink_Centrifuge</li>
-									<li>HobbesLink_IndustrialOven</li>
-									<li>HobbesLink_ConveyorBelt</li>
-									<li>HobbesLink_Incinerator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Expanded Prosthetics and Organ Engineering - Forked ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Expanded Prosthetics and Organ Engineering - Forked</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>TableBionics</li>
-									<li>TableOrgans</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Hospitals Extended ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Hospitals Extended</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>sd_medicaddons_medieval_surg_washpan</li>
-									<li>sd_medicaddons_medieval_surg_instruments</li>
-									<li>sd_medicaddons_medieval_surg_lamp</li>
-									<li>sd_medicaddons_industrial_surg_instruments</li>
-									<li>sd_medicaddons_industrial_surg_lamp</li>
-									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
-									<li>sd_medicaddons_spacer_surg_instruments</li>
-									<li>sd_medicaddons_spacer_surg_lamp</li>
-									<li>Wall_VitalsMonitor</li>
-									<li>Spacer_Wall_VitalsMonitor</li>
-									<li>CCP_LEDMedLight</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== IV Drug Infuser ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>IV Drug Infuser</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>IVDrugInfuser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medical IV ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medical IV</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>MedicalIV</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medical IVs ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medical IVs</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>IV_Blood</li>
-									<li>IV_Nutrition</li>
-									<li>IV_Painkiller</li>
-									<li>IV_Antibiotics</li>
-									<li>IV_Anesthetic</li>
-									<li>IV_Blood_Electric</li>
-									<li>IV_Nutrition_Electric</li>
-									<li>IV_Painkiller_Electric</li>
-									<li>IV_Antibiotics_Electric</li>
-									<li>IV_Anesthetic_Electric</li>
-									<li>IV_Multi_Electric</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medical IVs Fork ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medical IVs Fork</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>IV_Blood</li>
-									<li>IV_Nutrition</li>
-									<li>IV_Painkiller</li>
-									<li>IV_Antibiotics</li>
-									<li>IV_Anesthetic</li>
-									<li>IV_Blood_Electric</li>
-									<li>IV_Nutrition_Electric</li>
-									<li>IV_Painkiller_Electric</li>
-									<li>IV_Antibiotics_Electric</li>
-									<li>IV_Anesthetic_Electric</li>
-									<li>IV_Multi_Electric</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medical Supplements (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medical Supplements (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>MS_DStand</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medieval Overhaul ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medieval Overhaul</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_ToolRack</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinetA</li>
-									<li>ToolCabinetB</li>
-									<li>ToolCabinetC</li>
-								</value>
-							</li>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SurgicalLamp</li>
-									<li>SurgicalInstruments</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Outland - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outland - Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Outland_BasicWorkbench</li>
-									<li>Outland_Forge</li>
-									<li>Outland_Grindstone</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== RimLife Expansion Furniture ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimLife Expansion Furniture</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RLE_AirCondition</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== RimLife Expansion Production Plus ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimLife Expansion Production Plus</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RLE_PowerStabilizer</li>
-									<li>RLE_IntegratedManagementDevice</li>
-									<li>RLE_CMTCleaner</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== RimThunder - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimThunder - Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RTC_ToolShelf</li>
-									<li>RTC_BlastCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Tabletop Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tabletop Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_toolbox</li>
-									<li>ucp_screwdrivers</li>
-									<li>ucp_aerosol</li>
-									<li>ucp_blueprint</li>
-									<li>ucp_wrench</li>
-									<li>ucp_roboarm</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Tactical Charged Gear (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tactical Charged Gear (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>TCToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== UN-Colony Vanilla (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Colony Vanilla (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukHospitalUpgradeBA</li>
-									<li>SadjuukHospitalUpgradeBB</li>
-									<li>SadjuukHospitalUpgradeCA</li>
-									<li>SadjuukHospitalUpgradeCB</li>
-									<li>SadjuukHospitalUpgradeCD</li>
-									<li>SadjuukHospitalUpgradeCE</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== UN-Furniture (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Furniture (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukSurgeryAA</li>
-									<li>SadjuukSurgeryAB</li>
-									<li>SadjuukSurgeryAC</li>
-									<li>SadjuukSurgeryAD</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Ushankas Luciferium Expansion ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Ushankas Luciferium Expansion</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>USH_LuciferiumMedicalSimulator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Factions Expanded - Ancients ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Factions Expanded - Ancients</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFEA_AncientVitalsMonitor</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Factions Expanded - Medieval 2 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Factions Expanded - Medieval 2</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFEM2_SurgicalTools</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Medical Module ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Medical Module</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Facility_VitalsCentre</li>
-									<li>Facility_IVDrip</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Genetics Expanded ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Genetics Expanded</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>GR_NutrientVat</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vault-Tec - Handy things for your vault!</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Vt_server</li>
-									<li>vtcompter</li>
-								</value>
-							</li>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Vaultmedical</li>
-									<li>Vaultmedicallamp</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>WallToolBoard</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WorkBench Support - More Linkable Facilities -</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_UniversalCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [KR] Star Wars Bacta ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[KR] Star Wars Bacta</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>MedicalStandDroid</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [LYN] Nanotech Overpower ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[LYN] Nanotech Overpower</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LYN_Nanocabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [Legacy] UN-Colony (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[Legacy] UN-Colony (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberneticsWorkbench -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukShaper</li>
-									<li>SadjuukGrinding</li>
-									<li>SadjuukWeldingRobot</li>
-									<li>SadjuukLathe</li>
-									<li>SadjuukMilling</li>
-									<li>SadjuukAssemblyRobot</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [sd] medicaddons (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[sd] medicaddons (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- gitsCyberbodyAnchor -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>sd_medicaddons_medieval_surg_washpan</li>
-									<li>sd_medicaddons_medieval_surg_instruments</li>
-									<li>sd_medicaddons_medieval_surg_lamp</li>
-									<li>sd_medicaddons_industrial_surg_instruments</li>
-									<li>sd_medicaddons_industrial_surg_lamp</li>
-									<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
-									<li>sd_medicaddons_spacer_surg_instruments</li>
-									<li>sd_medicaddons_spacer_surg_lamp</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-			</operations>
-		</match>
-	</Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>GiTS Cybernetic Equipment</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Still</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Rotovape</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopCentrifuge</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopStove</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_TabletopLabTubeRack</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Centrifuge</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Incinerator</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_CNCMachine</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_RobotAssistant</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Spacer_Lathe</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_3DPrinter</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Lathe</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Vice</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_IndustrialOven</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_ConveyorBelt</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukShaper</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukGrinding</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukWeldingRobot</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukLathe</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukMilling</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukAssemblyRobot</li>
+                        <li MayRequire="vat.epoeforked,">TableBionics</li>
+                        <li MayRequire="vat.epoeforked,">TableBionics</li>
+                        <li MayRequire="vat.epoeforked,">TableOrgans</li>
+                        <li MayRequire="vat.epoeforked,">TableOrgans</li>
+                        <li MayRequire="ludeon.rimworld,">ToolCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps,">RLE_CMTCleaner</li>
+                        <li MayRequire="daylight.rlesexpansionproductps,">RLE_IntegratedManagementDevice</li>
+                        <li MayRequire="daylight.rlesexpansionproductps,">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_FabricationBoost</li>
+                        <li MayRequire="vanillaexpanded.vgeneticse,">GR_NutrientVat</li>
+                        <li MayRequire="4loris4.morelinkables,">ToolCabinetC</li>
+                        <li MayRequire="4loris4.morelinkables,">ToolCabinetA</li>
+                        <li MayRequire="4loris4.morelinkables,">ToolCabinetB</li>
+                        <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+                        <li MayRequire="sera.apinialienrace,">ApiniNectarStill</li>
+                        <li MayRequire="sera.apinialienrace,">ApiniNectarStill</li>
+                        <li MayRequire="sera.apinialienrace,">ApiniProstheticsTable</li>
+                        <li MayRequire="sera.apinialienrace,">ApiniProstheticsTable</li>
+                        <li MayRequire="sera.apinialienrace,">ApitechTable</li>
+                        <li MayRequire="sera.apinialienrace,">ApitechTable</li>
+                        <li MayRequire="sera.apinialienrace,">ApitechSynthesizer</li>
+                        <li MayRequire="sera.apinialienrace,">ApitechSynthesizer</li>
+                        <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_ToolRack</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_toolbox</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_screwdrivers</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_aerosol</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_blueprint</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_wrench</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_roboarm</li>
+                        <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+                        <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+                        <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_BasicWorkbench</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_Forge</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+                        <li MayRequire="akn.decorations,">AKN_MotivatingPlush</li>
+                        <li MayRequire="scorpio.biotechnology,">Biotechnology_DNAHologram</li>
+                        <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_3DPrinter</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Vice</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_IndustrialOven</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ConveyorBelt</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Incinerator</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_RobotAssistant</li>
+                        <li MayRequire="rimthunder.core,">RTC_ToolShelf</li>
+                        <li MayRequire="rimthunder.core,">RTC_BlastCabinet</li>
+                        <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T2ToolCabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T3ToolCabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T4ToolCabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T5ToolCabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T6ToolCabinet</li>
+                        <li MayRequire="daylight.lrultimatematt,">RLELink_AICoreOperator</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="knight.medicalivs,">IV_Blood</li>
+                        <li MayRequire="knight.medicalivs,">IV_Nutrition</li>
+                        <li MayRequire="knight.medicalivs,">IV_Painkiller</li>
+                        <li MayRequire="knight.medicalivs,">IV_Antibiotics</li>
+                        <li MayRequire="knight.medicalivs,">IV_Anesthetic</li>
+                        <li MayRequire="knight.medicalivs,">IV_Blood_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Nutrition_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Painkiller_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Antibiotics_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Anesthetic_Electric</li>
+                        <li MayRequire="knight.medicalivs,">IV_Multi_Electric</li>
+                        <li MayRequire="vanillaexpanded.vfea,">VFEA_AncientVitalsMonitor</li>
+                        <li MayRequire="zymex.hospitalsextended,">CCP_LEDMedLight</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_medieval_surg_washpan</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_medieval_surg_instruments</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_medieval_surg_lamp</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_industrial_surg_instruments</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_industrial_surg_lamp</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_spacer_surg_instruments</li>
+                        <li MayRequire="zymex.hospitalsextended,">sd_medicaddons_spacer_surg_lamp</li>
+                        <li MayRequire="zymex.hospitalsextended,">Wall_VitalsMonitor</li>
+                        <li MayRequire="zymex.hospitalsextended,">Spacer_Wall_VitalsMonitor</li>
+                        <li MayRequire="moistestwhale.gitscyberneticequipment,">gitsAnchorConsole</li>
+                        <li MayRequire="ludeon.rimworld,">VitalsMonitor</li>
+                        <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_medieval_surg_washpan</li>
+                        <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_medieval_surg_instruments</li>
+                        <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_medieval_surg_lamp</li>
+                        <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_industrial_surg_instruments</li>
+                        <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_industrial_surg_lamp</li>
+                        <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_spacer_surg_vitalsmonitor</li>
+                        <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_spacer_surg_instruments</li>
+                        <li MayRequire="mlie.sdmedicaddons,">sd_medicaddons_spacer_surg_lamp</li>
+                        <li MayRequire="daylight.rimlifeexfurmod,">RLE_AirCondition</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeBA</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeBB</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCA</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCB</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCD</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukHospitalUpgradeCE</li>
+                        <li MayRequire="akaster.ivdruginfuser,">IVDrugInfuser</li>
+                        <li MayRequire="kenobirock.bacta,">MedicalStandDroid</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Blood</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Nutrition</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Painkiller</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Antibiotics</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Blood_Electric</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Nutrition_Electric</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Painkiller_Electric</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Antibiotics_Electric</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Anesthetic</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Anesthetic_Electric</li>
+                        <li MayRequire="cantaloupetheclown.medicalivsfork,">IV_Multi_Electric</li>
+                        <li MayRequire="mlie.cts,">CTSAdvancedVitalsMonitor</li>
+                        <li MayRequire="vanillaexpanded.vfemedical,">Facility_VitalsCentre</li>
+                        <li MayRequire="vanillaexpanded.vfemedical,">Facility_IVDrip</li>
+                        <li MayRequire="oskarpotocki.vfe.medieval2,">VFEM2_SurgicalTools</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAA</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAB</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAC</li>
+                        <li MayRequire="mlie.unfurniture,">SadjuukSurgeryAD</li>
+                        <li MayRequire="4loris4.morelinkables,">SurgicalInstruments</li>
+                        <li MayRequire="4loris4.morelinkables,">SurgicalLamp</li>
+                        <li MayRequire="leion247138.medicalhiv,">MedicalIV</li>
+                        <li MayRequire="ushanka.luciferiumexpansion,">USH_LuciferiumMedicalSimulator</li>
+                        <li MayRequire="twink.vaultfurniture,">Vaultmedical</li>
+                        <li MayRequire="twink.vaultfurniture,">Vaultmedicallamp</li>
+                        <li MayRequire="akn.decorations,">AKN_RestoringPlush</li>
+                        <li MayRequire="mlie.medicalsupplements,">MS_DStand</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>

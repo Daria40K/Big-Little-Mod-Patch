@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Brewery</defName>
+        <group>Brewery</group>
+        <facilities>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_BreweryGoods</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_BreweryBoost</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+            <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+        </facilities>
+        <affected>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_BreweryMini</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

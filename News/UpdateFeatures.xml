@@ -901,4 +901,11 @@
 		<assemblyVersion>4.19.0</assemblyVersion>
 		<content>Added support for Linkable Groups</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.0.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_5_0_0</defName>
+		<assemblyVersion>5.0.0</assemblyVersion>
+		<content>Reworked all patches. Reduced total mod size by 50%. Load times should improve also.</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

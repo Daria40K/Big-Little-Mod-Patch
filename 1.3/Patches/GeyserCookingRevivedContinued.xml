@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Geyser Cooking Revived (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="GCS_Stove"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="GCS_Stove"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="GCS_Stove"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="GCS_Stove"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="GCS_advStove"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="GCS_advStove"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="GCS_advStove"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="GCS_advStove"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="GCS_Stove" or defName="GCS_advStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="solaris.furniturebase,">GL_Cupboard</li>
+                        <li MayRequire="solaris.furniturebase,">GL_TablewareShelf</li>
+                        <li MayRequire="mrkociak.morearchotechstuffandthingsreupload,">ArchoCookingAssistant</li>
+                        <li MayRequire="dismarzero.vgp.vgpgardengourmet,">CookingTools</li>
+                        <li MayRequire="vanillaexpanded.vfeproduction,">VFE_KitchenSinkCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_KitchenGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_KitchenBoost</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

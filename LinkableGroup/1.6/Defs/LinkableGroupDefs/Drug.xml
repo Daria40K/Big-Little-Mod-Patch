@@ -52,7 +52,6 @@
             <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopStove</li>
             <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_TabletopLabTubeRack</li>
             <li MayRequire="mlie.medicalsupplements,">DrugCabinet</li>
-            <li MayRequire="mlie.medicalsupplements,">DrugCabinetFridge</li>
             <li MayRequire="rimthunder.core,">RTC_ToolShelf</li>
             <li MayRequire="rimthunder.core,">RTC_BlastCabinet</li>
             <li MayRequire="rimthunder.core,">RTC_EngineHanger</li>

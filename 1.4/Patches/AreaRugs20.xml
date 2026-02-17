@@ -1,371 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Area Rugs 2.0</li>
-		</mods>
-
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<!-- ========== Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Akeron - Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Akeron - Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>AKN_MotivatingPlush</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Ambition of the Cosmic ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Ambition of the Cosmic</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SNS_Linkable_Unobtainer_I</li>
-									<li>SNS_Linkable_CosmicDrawer_I</li>
-									<li>SNS_Linkable_CosmicDrawer_II</li>
-									<li>SNS_Linkable_CosmicDrawer_III</li>
-									<li>SNS_Linkable_CosmicCall_I</li>
-									<li>SNS_Linkable_CosmicCall_II</li>
-									<li>SNS_Linkable_CosmicCall_III</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Astra Militarum Imperial Guard Core Mod v2.5 ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Astra Militarum Imperial Guard Core Mod v2.5</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ManCogitator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Cybernetic Storm ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Cybernetic Storm</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>CS_ReAnalyser</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Dark Ages : Medieval Tools ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Dark Ages : Medieval Tools</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DA_TailoringTools</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Even More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Even More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>HobbesLink_CNCMachine</li>
-									<li>HobbesLink_3DPrinter</li>
-									<li>HobbesLink_RobotAssistant</li>
-									<li>HobbesLink_Lathe</li>
-									<li>HobbesLink_Spacer_Lathe</li>
-									<li>HobbesLink_Vice</li>
-									<li>HobbesLink_LaserEngraver</li>
-									<li>HobbesLink_IndustrialOven</li>
-									<li>HobbesLink_ConveyorBelt</li>
-									<li>HobbesLink_Incinerator</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Medieval Overhaul ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Medieval Overhaul</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>DankPyon_ToolRack</li>
-									<li>DankPyon_QuenchingBucket</li>
-									<li>DankPyon_Grinder</li>
-									<li>DankPyon_Bellows</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== More Linkables ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>More Linkables</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ToolCabinetA</li>
-									<li>ToolCabinetB</li>
-									<li>ToolCabinetC</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Outland - Core ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Outland - Core</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Outland_BasicWorkbench</li>
-									<li>Outland_Forge</li>
-									<li>Outland_Grindstone</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== RimLife Expansion Production Plus ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>RimLife Expansion Production Plus</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>RLE_PowerStabilizer</li>
-									<li>RLE_IntegratedManagementDevice</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Tabletop Decorations ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tabletop Decorations</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>ucp_measure</li>
-									<li>ucp_scraps</li>
-									<li>ucp_textileroll</li>
-									<li>ucp_pencil</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Tactical Charged Gear (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Tactical Charged Gear (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>TCToolCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== UN-Colony (Continued) ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>UN-Colony (Continued)</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>SadjuukShaper</li>
-									<li>SadjuukGrinding</li>
-									<li>SadjuukWeldingRobot</li>
-									<li>SadjuukLathe</li>
-									<li>SadjuukMilling</li>
-									<li>SadjuukAssemblyRobot</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vanilla Furniture Expanded - Production ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Production</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>VFE_TailorCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== Vault-Tec - Handy things for your vault! ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vault-Tec - Handy things for your vault!</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Vt_server</li>
-									<li>vtcompter</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== WallStuff ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WallStuff</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>WallToolBoard</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== WorkBench Support - More Linkable Facilities - ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>WorkBench Support - More Linkable Facilities -</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>Link_TailorGoods</li>
-									<li>Link_TailorBoost</li>
-									<li>Link_UniversalCabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<!-- ========== [LYN] Nanotech Overpower ========== -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[LYN] Nanotech Overpower</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<!-- TableRugMaking -->
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-								<value>
-									<li>LYN_Nanocabinet</li>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-			</operations>
-		</match>
-	</Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Area Rugs 2.0</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="TableRugMaking"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Incinerator</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_CNCMachine</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_RobotAssistant</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Spacer_Lathe</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_3DPrinter</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Lathe</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Vice</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_IndustrialOven</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_ConveyorBelt</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_LaserEngraver</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_Unobtainer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_III</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_III</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukShaper</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukGrinding</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukWeldingRobot</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukLathe</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukMilling</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukAssemblyRobot</li>
+                        <li MayRequire="ludeon.rimworld,">ToolCabinet</li>
+                        <li MayRequire="vanillaexpanded.vfeproduction,">VFE_TailorCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps,">RLE_IntegratedManagementDevice</li>
+                        <li MayRequire="daylight.rlesexpansionproductps,">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_TailorGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_TailorBoost</li>
+                        <li MayRequire="4loris4.morelinkables,">ToolCabinetC</li>
+                        <li MayRequire="4loris4.morelinkables,">ToolCabinetA</li>
+                        <li MayRequire="4loris4.morelinkables,">ToolCabinetB</li>
+                        <li MayRequire="van.datools,">DA_TailoringTools</li>
+                        <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_measure</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_scraps</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_textileroll</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_pencil</li>
+                        <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+                        <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+                        <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_BasicWorkbench</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_Forge</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+                        <li MayRequire="akn.decorations,">AKN_MotivatingPlush</li>
+                        <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_LaserEngraver</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ConveyorBelt</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_RobotAssistant</li>
+                        <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T2ToolCabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T3ToolCabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T4ToolCabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T5ToolCabinet</li>
+                        <li MayRequire="xion.moretoolboxes,">T6ToolCabinet</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>

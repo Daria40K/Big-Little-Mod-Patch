@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Power</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="VPE_GasStove"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="VPE_GasStove"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="VPE_GasStove"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="VPE_GasStove"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="VPE_GasCrematorium"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="VPE_GasCrematorium"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="VPE_GasCrematorium"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="VPE_GasCrematorium"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="VPE_GasBiofuelRefinery"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="VPE_GasBiofuelRefinery"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="VPE_GasBiofuelRefinery"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="VPE_GasBiofuelRefinery"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VPE_GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="solaris.furniturebase,">GL_Cupboard</li>
+                        <li MayRequire="solaris.furniturebase,">GL_TablewareShelf</li>
+                        <li MayRequire="mrkociak.morearchotechstuffandthingsreupload,">ArchoCookingAssistant</li>
+                        <li MayRequire="dismarzero.vgp.vgpgardengourmet,">CookingTools</li>
+                        <li MayRequire="vanillaexpanded.vfeproduction,">VFE_KitchenSinkCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_KitchenGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_KitchenBoost</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VPE_GasSmelter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_Unobtainer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_III</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_III</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukShaper</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukGrinding</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukWeldingRobot</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukLathe</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukMilling</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukAssemblyRobot</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_SmelterGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_SmelterBoost</li>
+                        <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_toolbox</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_hammer</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_tongs</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_ballpeen</li>
+                        <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+                        <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+                        <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+                        <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+                        <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VPE_GasSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_Unobtainer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_III</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_III</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukShaper</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukGrinding</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukWeldingRobot</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukLathe</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukMilling</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukAssemblyRobot</li>
+                        <li MayRequire="vanillaexpanded.vfeproduction,">VFE_SmithyCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_SmithingGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_SmithingBoost</li>
+                        <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_toolbox</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_screwdrivers</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_hammer</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_aerosol</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_tongs</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_ballpeen</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_wrench</li>
+                        <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+                        <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+                        <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+                        <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+                        <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VPE_GasCrematorium"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_Unobtainer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_III</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_III</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukShaper</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukGrinding</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukWeldingRobot</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukLathe</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukMilling</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukAssemblyRobot</li>
+                        <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_toolbox</li>
+                        <li MayRequire="ucp.tabletopdecorations,">ucp_screwdrivers</li>
+                        <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+                        <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+                        <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+                        <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+                        <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VPE_GasBiofuelRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_Unobtainer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_III</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_I</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_II</li>
+                        <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_III</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukShaper</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukGrinding</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukWeldingRobot</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukLathe</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukMilling</li>
+                        <li MayRequire="mlie.uncolony,">SadjuukAssemblyRobot</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukRefineryUpgradeA</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukRefineryUpgradeB</li>
+                        <li MayRequire="mlie.uncolonyvanilla,">SadjuukRefineryUpgradeC</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_RefineryBoost</li>
+                        <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+                        <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+                        <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+                        <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+                        <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+                        <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+                        <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
