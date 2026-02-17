@@ -34,15 +34,15 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="KitchenStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
-                        <li MayRequire="solaris.furniturebase,">GL_Cupboard</li>
-                        <li MayRequire="solaris.furniturebase,">GL_TablewareShelf</li>
-                        <li MayRequire="mrkociak.morearchotechstuffandthingsreupload,">ArchoCookingAssistant</li>
-                        <li MayRequire="dismarzero.vgp.vgpgardengourmet,">CookingTools</li>
-                        <li MayRequire="vanillaexpanded.vfeproduction,">VFE_KitchenSinkCabinet</li>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_KitchenGoods</li>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_KitchenBoost</li>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
-                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                        <li MayRequire="solaris.furniturebase">GL_Cupboard</li>
+                        <li MayRequire="solaris.furniturebase">GL_TablewareShelf</li>
+                        <li MayRequire="mrkociak.morearchotechstuffandthingsreupload">ArchoCookingAssistant</li>
+                        <li MayRequire="dismarzero.vgp.vgpgardengourmet">CookingTools</li>
+                        <li MayRequire="vanillaexpanded.vfeproduction">VFE_KitchenSinkCabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_KitchenGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_KitchenBoost</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto">LYN_Nanocabinet</li>
                     </value>
                 </li>
             </operations>

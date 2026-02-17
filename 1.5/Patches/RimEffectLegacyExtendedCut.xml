@@ -34,35 +34,35 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RE_PreFabStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
-                        <li MayRequire="solaris.furniturebase,">GL_Cupboard</li>
-                        <li MayRequire="solaris.furniturebase,">GL_TablewareShelf</li>
-                        <li MayRequire="gloomy.furniture.continued,">GL_Cupboard</li>
-                        <li MayRequire="gloomy.furniture.continued,">GL_TablewareShelf</li>
-                        <li MayRequire="dismarzero.vgp.vgpgardengourmet,">CookingTools</li>
-                        <li MayRequire="limetreesnake.furnishing,">LTS_Sink</li>
-                        <li MayRequire="limetreesnake.furnishing,">LTS_Fridge</li>
-                        <li MayRequire="vanillaexpanded.vfeproduction,">VFE_KitchenSinkCabinet</li>
-                        <li MayRequire="zal.morearchotechgarbage,">ArchoCookingAssistant</li>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_KitchenGoods</li>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_KitchenBoost</li>
-                        <li MayRequire="4loris4.morelinkables,">KitchenCupboard</li>
-                        <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_RusticCookingTools</li>
-                        <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_TableBaking</li>
-                        <li MayRequire="akn.decorations,">AKN_MotivatingPlush</li>
-                        <li MayRequire="lat.rimstro,">RS_Counter</li>
-                        <li MayRequire="lat.rimstro,">RS_KitchenHood</li>
-                        <li MayRequire="lat.rimstro,">RS_TopShelf</li>
-                        <li MayRequire="lat.rimstro,">RS_stove</li>
-                        <li MayRequire="lat.rimstro,">RS_stove</li>
-                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_IndustrialOven</li>
-                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ConveyorBelt</li>
-                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_RobotAssistant</li>
-                        <li MayRequire="zal.gloomyextrakitchen,">SM_Sink</li>
-                        <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_A</li>
-                        <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_B</li>
-                        <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_C</li>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
-                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                        <li MayRequire="solaris.furniturebase">GL_Cupboard</li>
+                        <li MayRequire="solaris.furniturebase">GL_TablewareShelf</li>
+                        <li MayRequire="gloomy.furniture.continued">GL_Cupboard</li>
+                        <li MayRequire="gloomy.furniture.continued">GL_TablewareShelf</li>
+                        <li MayRequire="dismarzero.vgp.vgpgardengourmet">CookingTools</li>
+                        <li MayRequire="limetreesnake.furnishing">LTS_Sink</li>
+                        <li MayRequire="limetreesnake.furnishing">LTS_Fridge</li>
+                        <li MayRequire="vanillaexpanded.vfeproduction">VFE_KitchenSinkCabinet</li>
+                        <li MayRequire="zal.morearchotechgarbage">ArchoCookingAssistant</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_KitchenGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_KitchenBoost</li>
+                        <li MayRequire="4loris4.morelinkables">KitchenCupboard</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_RusticCookingTools</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TableBaking</li>
+                        <li MayRequire="akn.decorations">AKN_MotivatingPlush</li>
+                        <li MayRequire="lat.rimstro">RS_Counter</li>
+                        <li MayRequire="lat.rimstro">RS_KitchenHood</li>
+                        <li MayRequire="lat.rimstro">RS_TopShelf</li>
+                        <li MayRequire="lat.rimstro">RS_stove</li>
+                        <li MayRequire="lat.rimstro">RS_stove</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_IndustrialOven</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_RobotAssistant</li>
+                        <li MayRequire="zal.gloomyextrakitchen">SM_Sink</li>
+                        <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_A</li>
+                        <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_B</li>
+                        <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_C</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto">LYN_Nanocabinet</li>
                     </value>
                 </li>
             </operations>

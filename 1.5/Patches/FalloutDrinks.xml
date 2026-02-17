@@ -10,26 +10,26 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="NukaColaWorkbench" or defName="SunsetWorkbench" or defName="VimWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_BreweryGoods</li>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_BreweryBoost</li>
-                        <li MayRequire="4loris4.morelinkables,">KitchenCupboard</li>
-                        <li MayRequire="van.datools,">DA_MixingBarrel</li>
-                        <li MayRequire="dankpyon.medieval.overhaul,">DankPyon_RusticCookingTools</li>
-                        <li MayRequire="akn.decorations,">AKN_MotivatingPlush</li>
-                        <li MayRequire="lat.rimstro,">RS_Counter</li>
-                        <li MayRequire="lat.rimstro,">RS_KitchenHood</li>
-                        <li MayRequire="lat.rimstro,">RS_TopShelf</li>
-                        <li MayRequire="lat.rimstro,">RS_stove</li>
-                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ConveyorBelt</li>
-                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_RobotAssistant</li>
-                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Still</li>
-                        <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Rotovape</li>
-                        <li MayRequire="zal.gloomyextrakitchen,">SM_Sink</li>
-                        <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_A</li>
-                        <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_B</li>
-                        <li MayRequire="zal.gloomyextrakitchen,">SM_KitchenCupboard_C</li>
-                        <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
-                        <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_BreweryGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_BreweryBoost</li>
+                        <li MayRequire="4loris4.morelinkables">KitchenCupboard</li>
+                        <li MayRequire="van.datools">DA_MixingBarrel</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_RusticCookingTools</li>
+                        <li MayRequire="akn.decorations">AKN_MotivatingPlush</li>
+                        <li MayRequire="lat.rimstro">RS_Counter</li>
+                        <li MayRequire="lat.rimstro">RS_KitchenHood</li>
+                        <li MayRequire="lat.rimstro">RS_TopShelf</li>
+                        <li MayRequire="lat.rimstro">RS_stove</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_RobotAssistant</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_Still</li>
+                        <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_Rotovape</li>
+                        <li MayRequire="zal.gloomyextrakitchen">SM_Sink</li>
+                        <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_A</li>
+                        <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_B</li>
+                        <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_C</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="lyn.nto">LYN_Nanocabinet</li>
                     </value>
                 </li>
             </operations>
