@@ -70,6 +70,7 @@
             <li MayRequire="neronix17.outland.core">Outland_Forge</li>
             <li MayRequire="mlie.tinyworkbenchs">TWB_TableStonecutterMini</li>
             <li MayRequire="ryuu.rimworld.electricstonecutterstable">ElectricStonecuttersTable</li>
+            <li MayRequire="xercaine.tribal.furniture">XER_TribalTableStonecutter</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

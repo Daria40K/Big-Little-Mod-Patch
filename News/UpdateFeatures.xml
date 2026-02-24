@@ -922,4 +922,11 @@
 		<assemblyVersion>5.1.0</assemblyVersion>
 		<content>Added support for Apothecary Expansion, Craftable Unique Weapon, Elden Rim: Armory, Medieval Madness: Tools of the Trade, OverPowered Gaming and RimZone Core</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.2.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_5_2_0</defName>
+		<assemblyVersion>5.2.0</assemblyVersion>
+		<content>Added support for Dragon's Ores Utilities, Medieval Chemfuel, Medieval Things: Medical, More Sleep Accelerators, Sleep Tighter and Tribal Furniture|Fixed support for [TY2.0]溪谷联邦 Aquila2.0-Valley</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

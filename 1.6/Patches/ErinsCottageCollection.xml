@@ -275,6 +275,14 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcChest1x2c</li>
                         <li MayRequire="jtc.grineerfurniture">GrineerWallLamp</li>
                         <li MayRequire="kindseal.ufli">UFLI_CabinetA</li>
+                        <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
+                        <li MayRequire="widgelem.lavenderandsleep">LavenderDiffuser</li>
+                        <li MayRequire="amch.moresleepaccelerator">LargeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">RangeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">WallMountedSleepAccelerator</li>
+                        <li MayRequire="tyll.valley">TY_XGyg</li>
+                        <li MayRequire="tyll.valley">TY_bedside_ShuZhuangTai</li>
+                        <li MayRequire="tyll.valley">TY_bedside_table</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

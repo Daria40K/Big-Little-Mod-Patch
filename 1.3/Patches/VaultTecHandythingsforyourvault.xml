@@ -105,6 +105,9 @@
                         <li MayRequire="twink.vaultfurniture">vt_curio</li>
                         <li MayRequire="daria40k.mightypersonabondforgepatch">fghfghfgh</li>
                         <li MayRequire="daniledman.mechalitcore">EliteDresserMeh</li>
+                        <li MayRequire="amch.moresleepaccelerator">LargeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">RangeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">WallMountedSleepAccelerator</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

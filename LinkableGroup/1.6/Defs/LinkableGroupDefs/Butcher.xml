@@ -42,6 +42,7 @@
             <li MayRequire="lat.rimstro">RS_stove</li>
             <li MayRequire="mlie.comigosnutrition">COMIGO_SmallerButcherTable</li>
             <li MayRequire="skullog.ebt">ElectricTableButcher</li>
+            <li MayRequire="xercaine.tribal.furniture">XER_TribalTableButcher</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

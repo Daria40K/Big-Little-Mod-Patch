@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Toolcabinet</defName>
+        <group>Toolcabinet</group>
+        <facilities>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Incinerator</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_CNCMachine</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_RobotAssistant</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Spacer_Lathe</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_3DPrinter</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Lathe</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Vice</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_IndustrialOven</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_ConveyorBelt</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_LaserEngraver</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_II</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_Unobtainer_I</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_I</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_III</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_I</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_II</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_III</li>
+            <li MayRequire="mlie.uncolony,">SadjuukShaper</li>
+            <li MayRequire="mlie.uncolony,">SadjuukGrinding</li>
+            <li MayRequire="mlie.uncolony,">SadjuukWeldingRobot</li>
+            <li MayRequire="mlie.uncolony,">SadjuukLathe</li>
+            <li MayRequire="mlie.uncolony,">SadjuukMilling</li>
+            <li MayRequire="mlie.uncolony,">SadjuukAssemblyRobot</li>
+            <li MayRequire="ludeon.rimworld,">ToolCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps,">RLE_IntegratedManagementDevice</li>
+            <li MayRequire="daylight.rlesexpansionproductps,">RLE_PowerStabilizer</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetC</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetA</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetB</li>
+            <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+            <li MayRequire="ucp.tabletopdecorations,">ucp_toolbox</li>
+            <li MayRequire="ucp.tabletopdecorations,">ucp_screwdrivers</li>
+            <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+            <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+            <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+            <li MayRequire="neronix17.outland.core,">Outland_BasicWorkbench</li>
+            <li MayRequire="neronix17.outland.core,">Outland_BasicWorkbench</li>
+            <li MayRequire="neronix17.outland.core,">Outland_Forge</li>
+            <li MayRequire="neronix17.outland.core,">Outland_Forge</li>
+            <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+            <li MayRequire="akn.decorations,">AKN_MotivatingPlush</li>
+            <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ConveyorBelt</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_RobotAssistant</li>
+            <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+            <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T2ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T3ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T4ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T5ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T6ToolCabinet</li>
+        </facilities>
+        <affected>
+            <li MayRequire="neronix17.clutterfurniture">FurnitureAssembler</li>
+            <li MayRequire="ravvy.amw">AMW_Salvager</li>
+            <li MayRequire="explodoboy.snsambitioncosmic">Table_SNS_Unobtainer</li>
+            <li MayRequire="explodoboy.snsambitioncosmic">Table_SNS_Constructor</li>
+            <li MayRequire="explodoboy.snsambitioncosmic">Table_SNS_CosmicDrawer</li>
+            <li MayRequire="explodoboy.snsambitioncosmic">Table_SNS_CosmicCall</li>
+            <li MayRequire="prf.materials">PRF_GrindStone</li>
+            <li MayRequire="stevezero.repairablegear">RG_RepairBenchBase</li>
+            <li MayRequire="a3i.rimmods.resourcereplicator">ResourceReplicator</li>
+            <li MayRequire="a3i.rimmods.resourcereplicator">OrganicReplicator</li>
+            <li MayRequire="a3i.rimmods.resourcereplicator">MedicinalReplicator</li>
+            <li MayRequire="mfmfwolf.edfii.edf">EDF_Workstation</li>
+            <li MayRequire="create.ancientcelestial">SZ_DanFurnace</li>
+            <li MayRequire="vanillaexpanded.vfea">VFEA_ElectricMendingStation</li>
+            <li MayRequire="vanillaexpanded.vfea">VFEA_FueledMendingStation</li>
+            <li MayRequire="vanillaexpanded.vfea">VFEA_AncientWorkshop</li>
+            <li MayRequire="jangodsoul.fallout.nukacola">Fallout_Cola_Station</li>
+            <li MayRequire="dismarzero.vgp.vgpgardendyes">BarrelDye</li>
+            <li MayRequire="mlie.rimapps">TableBlue</li>
+            <li MayRequire="mlie.rimapps">TableGreen</li>
+            <li MayRequire="mlie.rimapps">TableOrange</li>
+            <li MayRequire="mlie.rimapps">TablePurple</li>
+            <li MayRequire="mlie.rimapps">TableRed</li>
+            <li MayRequire="mlie.weaponsofthegods">DarkProd</li>
+            <li MayRequire="ludeon.rimworld">ElectricCrematorium</li>
+            <li MayRequire="mlie.xndcarpentertables">TableCarpenter</li>
+            <li MayRequire="wvc.sergkart.ultraexpansion">WVC_Ultra_GarbageRecyclerBench</li>
+            <li MayRequire="oskarpotocki.vfe.pirates">VFEP_WarcasketFoundry</li>
+            <li MayRequire="nesi.rimvaliffarw">RVFFA_BaseProductionBench</li>
+            <li MayRequire="emitbreaker.mim.wh40k.weapons">EMNC_NecronTomb</li>
+            <li MayRequire="fueledsmelter.velcroboy333">VBY_FueledCrematorium</li>
+            <li MayRequire="sarg.rimbees">RB_Beekeeping_Workbench_Building</li>
+            <li MayRequire="sarg.rimbees">RB_Honey_Centrifuge</li>
+            <li MayRequire="sarg.rimbees">RB_Advanced_Honey_Centrifuge</li>
+            <li MayRequire="vanillaexpanded.recycling">VRecyclingE_RecyclingWorkbench</li>
+            <li MayRequire="vanillaexpanded.recycling">VRecyclingE_ElectricRecyclingWorkbench</li>
+            <li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+            <li MayRequire="zal.arsenalexotic">Exotic_Bench</li>
+            <li MayRequire="yrtwof.everythingtable">ET_CraftingTable</li>
+            <li MayRequire="d2.exotic.weapons">EngramDecoder</li>
+            <li MayRequire="vanillaexpanded.helixiengas">VHGE_GasPoweredCrematorium</li>
+            <li MayRequire="twink.vaultfurniture">vt_megabore</li>
+            <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
+            <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
+            <li MayRequire="neronix17.outland.core">Outland_FormingWorkbench</li>
+            <li MayRequire="neronix17.outland.core">Outland_Forge</li>
+            <li MayRequire="neronix17.outland.core">Outland_Forge</li>
+            <li MayRequire="torann.arimworldofmagic">TableGemcutting</li>
+            <li MayRequire="torann.arimworldofmagic">TableMagicPrinter</li>
+            <li MayRequire="torann.arimworldofmagic">TableArcaneForge</li>
+            <li MayRequire="scpchemfuel.appliances">CA_ChemfuelCrematorium</li>
+            <li MayRequire="scorpio.mechanoidfoundry">MF_MechanoidFoundry</li>
+            <li MayRequire="mlie.coalexpanded">CoalCrematorium</li>
+            <li MayRequire="madman.toolsofthetrade">CraftingWorkBench</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

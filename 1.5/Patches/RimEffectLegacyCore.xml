@@ -53,7 +53,6 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCC</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCD</li>
                         <li MayRequire="nemonian.my">MoyoGRModule</li>
-                        <li MayRequire="tyll.valley">TY_Scientific_research</li>
                         <li MayRequire="rogueservitor.mechanoids">RogueServitor_BladeCenter_BandNode</li>
                         <li MayRequire="oark.ratkinfaction.oberoniaaurea">OA_RK_Rese_A</li>
                         <li MayRequire="oark.ratkinfaction.oberoniaaurea">OA_RK_Rese_B</li>
@@ -150,6 +149,7 @@
                         <li MayRequire="kongkim.researchdata">ResearchSampleBench</li>
                         <li MayRequire="kongkim.researchdata">ArchotechAnalyzer</li>
                         <li MayRequire="daylight.lrultimatematt">RLE_OriginCommunicator</li>
+                        <li MayRequire="tyll.valley">TY_Scientific_research</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -331,6 +331,12 @@
                         <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Bookshelf</li>
                         <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Bookshelf_empty</li>
                         <li MayRequire="jtc.grineerfurniture">GrineerWallLamp</li>
+                        <li MayRequire="widgelem.lavenderandsleep">LavenderDiffuser</li>
+                        <li MayRequire="amch.moresleepaccelerator">LargeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">RangeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">WallMountedSleepAccelerator</li>
+                        <li MayRequire="tyll.valley">TY_XGyg</li>
+                        <li MayRequire="tyll.valley">TY_bedside_table</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -476,6 +482,8 @@
                         <li MayRequire="twink.vaultfurniture">Vaultmedicallamp</li>
                         <li MayRequire="akn.decorations">AKN_RestoringPlush</li>
                         <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
+                        <li MayRequire="salvador143.mthings.medical">MThingsMedicalHealerStand</li>
+                        <li MayRequire="tyll.valley">TY_A_XG_LBTreatmentStation_Building</li>
                     </value>
                 </li>
             </operations>

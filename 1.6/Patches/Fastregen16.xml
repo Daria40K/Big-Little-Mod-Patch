@@ -107,6 +107,9 @@
                         <li MayRequire="xercaine.wallvitalsmonitor">XER_WallVitalsMonitor</li>
                         <li MayRequire="melondove.wolfeinrace">Wolfein_MedicalControlPanel</li>
                         <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
+                        <li MayRequire="salvador143.mthings.medical">MThingsMedicalHealerStand</li>
+                        <li MayRequire="tyll.valley">TY_A_XG_LBTreatmentStation_Building</li>
+                        <li MayRequire="tyll.valley">TY_A_XG_MedicalStation</li>
                     </value>
                 </li>
             </operations>

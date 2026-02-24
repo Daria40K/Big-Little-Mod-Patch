@@ -78,6 +78,7 @@
                         <li MayRequire="kongkim.researchdata">ResearchSampleBench</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="lotr.menofthewest">LOTR_GondorNobleBookshelf</li>
+                        <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
                     </value>
                 </li>
             </operations>

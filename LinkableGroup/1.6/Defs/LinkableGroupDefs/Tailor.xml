@@ -98,6 +98,7 @@
             <li MayRequire="ferny.progressionattire">Ferny_VanityTable</li>
             <li MayRequire="ferny.progressionattire">Ferny_CostumingTable</li>
             <li MayRequire="tiberiurabi.rtcottonindustry">RT_CottonIndustry_WeaverWheel</li>
+            <li MayRequire="xercaine.tribal.furniture">XER_TribalTailoringBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

@@ -53,6 +53,9 @@
             <li MayRequire="xercaine.wallvitalsmonitor,">XER_WallVitalsMonitor</li>
             <li MayRequire="melondove.wolfeinrace,">Wolfein_MedicalControlPanel</li>
             <li MayRequire="mlie.medicalsupplements,">MS_DStand</li>
+            <li MayRequire="salvador143.mthings.medical,">MThingsMedicalHealerStand</li>
+            <li MayRequire="tyll.valley,">TY_A_XG_LBTreatmentStation_Building</li>
+            <li MayRequire="tyll.valley,">TY_A_XG_MedicalStation</li>
         </facilities>
         <affected>
             <li MayRequire="albion.sparklingworlds.full">GlitterworldHospitalBedSW</li>
@@ -100,6 +103,8 @@
             <li MayRequire="daylight.lrultimatematt">RLE_AllCureBed</li>
             <li MayRequire="jtc.grineerfurniture">AlloyHospitalBed</li>
             <li MayRequire="juc.ancientbuildings">AncientOperatingTable</li>
+            <li MayRequire="salvador143.mthings.medical">MThingsGeysersCoreHealingCot</li>
+            <li MayRequire="dragonking.dragonsoresutilities">LoveliHospitalBed</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

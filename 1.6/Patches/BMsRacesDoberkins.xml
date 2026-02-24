@@ -49,7 +49,6 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCC</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCD</li>
                         <li MayRequire="nemonian.my">MoyoGRModule</li>
-                        <li MayRequire="tyll.valley">TY_Scientific_research</li>
                         <li MayRequire="rogueservitor.mechanoids">RogueServitor_BladeCenter_BandNode</li>
                         <li MayRequire="oark.ratkinfaction.oberoniaaurea">OA_RK_Rese_A</li>
                         <li MayRequire="oark.ratkinfaction.oberoniaaurea">OA_RK_Rese_B</li>
@@ -155,6 +154,9 @@
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="daylight.lrultimatematt">RLE_OriginCommunicator</li>
                         <li MayRequire="lotr.menofthewest">LOTR_GondorNobleBookshelf</li>
+                        <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
+                        <li MayRequire="dragonking.dragonsoresutilities">Cryppolyzer</li>
+                        <li MayRequire="tyll.valley">TY_Scientific_research</li>
                     </value>
                 </li>
             </operations>

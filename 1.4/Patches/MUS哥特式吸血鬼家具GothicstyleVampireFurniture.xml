@@ -176,6 +176,9 @@
                         <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Bedside_Table</li>
                         <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Bookshelf</li>
                         <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Bookshelf_empty</li>
+                        <li MayRequire="amch.moresleepaccelerator">LargeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">RangeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">WallMountedSleepAccelerator</li>
                     </value>
                 </li>
             </operations>

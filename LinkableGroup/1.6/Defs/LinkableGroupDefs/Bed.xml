@@ -197,6 +197,15 @@
             <li MayRequire="lotr.shadowoftheeast,">LOTR_OrcChest1x2c</li>
             <li MayRequire="jtc.grineerfurniture,">GrineerWallLamp</li>
             <li MayRequire="kindseal.ufli,">UFLI_CabinetA</li>
+            <li MayRequire="kindseal.ufli,">UFLI_CabinetF</li>
+            <li MayRequire="widgelem.lavenderandsleep,">LavenderDiffuser</li>
+            <li MayRequire="amch.moresleepaccelerator,">LargeSleepAccelerator</li>
+            <li MayRequire="amch.moresleepaccelerator,">RangeSleepAccelerator</li>
+            <li MayRequire="amch.moresleepaccelerator,">WallMountedSleepAccelerator</li>
+            <li MayRequire="zed.0xff.vnpe.connectedbed,">VNPE_BedConnector</li>
+            <li MayRequire="tyll.valley,">TY_XGyg</li>
+            <li MayRequire="tyll.valley,">TY_bedside_ShuZhuangTai</li>
+            <li MayRequire="tyll.valley,">TY_bedside_table</li>
         </facilities>
         <affected>
             <li MayRequire="gloomy.furniture.continued">RGK_bedSingle</li>
@@ -324,6 +333,7 @@
             <li MayRequire="continued.morebedscloth">TDoubleBedBase</li>
             <li MayRequire="continued.morebedscloth">TRoyalBedBase</li>
             <li MayRequire="juc.ancientbuildings">AncientBed</li>
+            <li MayRequire="moofoo.star.trek.faction">ST_Bed</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

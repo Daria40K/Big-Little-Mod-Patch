@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Smelter</defName>
+        <group>Smelter</group>
+        <facilities>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Incinerator</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_CNCMachine</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_RobotAssistant</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Spacer_Lathe</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_3DPrinter</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Lathe</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_Vice</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_IndustrialOven</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_ConveyorBelt</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables,">HobbesLink_LaserEngraver</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_II</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_Unobtainer_I</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_I</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicDrawer_III</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_I</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_II</li>
+            <li MayRequire="explodoboy.snsambitioncosmic,">SNS_Linkable_CosmicCall_III</li>
+            <li MayRequire="mlie.uncolony,">SadjuukShaper</li>
+            <li MayRequire="mlie.uncolony,">SadjuukGrinding</li>
+            <li MayRequire="mlie.uncolony,">SadjuukWeldingRobot</li>
+            <li MayRequire="mlie.uncolony,">SadjuukLathe</li>
+            <li MayRequire="mlie.uncolony,">SadjuukMilling</li>
+            <li MayRequire="mlie.uncolony,">SadjuukAssemblyRobot</li>
+            <li MayRequire="ludeon.rimworld,">ToolCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps,">RLE_IntegratedManagementDevice</li>
+            <li MayRequire="daylight.rlesexpansionproductps,">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_SmelterGoods</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_SmelterBoost</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetC</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetA</li>
+            <li MayRequire="4loris4.morelinkables,">ToolCabinetB</li>
+            <li MayRequire="elstrages.cyberneticstorm,">CS_ReAnalyser</li>
+            <li MayRequire="ucp.tabletopdecorations,">ucp_toolbox</li>
+            <li MayRequire="ucp.tabletopdecorations,">ucp_hammer</li>
+            <li MayRequire="ucp.tabletopdecorations,">ucp_tongs</li>
+            <li MayRequire="ucp.tabletopdecorations,">ucp_ballpeen</li>
+            <li MayRequire="twink.vaultfurniture,">vtcompter</li>
+            <li MayRequire="twink.vaultfurniture,">Vt_server</li>
+            <li MayRequire="arcjc007.wallstuff,">WallToolBoard</li>
+            <li MayRequire="neronix17.outland.core,">Outland_BasicWorkbench</li>
+            <li MayRequire="neronix17.outland.core,">Outland_Forge</li>
+            <li MayRequire="neronix17.outland.core,">Outland_Grindstone</li>
+            <li MayRequire="akn.decorations,">AKN_MotivatingPlush</li>
+            <li MayRequire="qx.astramilitarum,">ManCogitator</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Vice</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_IndustrialOven</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_ConveyorBelt</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_Incinerator</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16,">HobbesLink_RobotAssistant</li>
+            <li MayRequire="mlie.tacticalchargedgear,">TCToolCabinet</li>
+            <li MayRequire="daylight.wbsmorelinkf,">Link_UniversalCabinet</li>
+            <li MayRequire="lyn.nto,">LYN_Nanocabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T2ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T3ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T4ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T5ToolCabinet</li>
+            <li MayRequire="xion.moretoolboxes,">T6ToolCabinet</li>
+        </facilities>
+        <affected>
+            <li MayRequire="mlie.uncolony">SadjuukBessemerConverter</li>
+            <li MayRequire="mlie.uncolony">SadjuukOpenHearthFurnace</li>
+            <li MayRequire="mlie.uncolony">SadjuukElectricArcFurnace</li>
+            <li MayRequire="prf.materials">PRF_FueledStoneSmelter</li>
+            <li MayRequire="prf.materials">PRF_FurnaceIV</li>
+            <li MayRequire="farxmai2.vaulttechnology">VFEA_VT_AncientSmeltStation</li>
+            <li MayRequire="ludeon.rimworld">ElectricSmelter</li>
+            <li MayRequire="vanillaexpanded.vfeproduction">VFE_FueledSmelter</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_SmelterTable</li>
+            <li MayRequire="emitbreaker.mim.wh40k.weapons">EMNC_NecronSmelter</li>
+            <li MayRequire="fueledsmelter.velcroboy333">FueledSmelter</li>
+            <li MayRequire="argon.expandedmaterials.metals">EM_FueledAlloyFurnace</li>
+            <li MayRequire="argon.expandedmaterials.metals">EM_ElectricAlloyFurnace</li>
+            <li MayRequire="vanillaexpanded.helixiengas">VHGE_GasPoweredSmelter</li>
+            <li MayRequire="aranmaho.makai">Makai_PrimordialForge</li>
+            <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
+            <li MayRequire="neronix17.outland.core">Outland_Forge</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_ElectricSmelterMini</li>
+            <li MayRequire="scpchemfuel.appliances">CA_ChemfuelSmelter</li>
+            <li MayRequire="qx.astramilitarum">IG_ImperialCONFabricator</li>
+            <li MayRequire="mlie.coalexpanded">CoalSmelter</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

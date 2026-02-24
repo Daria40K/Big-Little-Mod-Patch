@@ -150,6 +150,8 @@
                         <li MayRequire="twink.vaultfurniture">Vaultmedicallamp</li>
                         <li MayRequire="akn.decorations">AKN_RestoringPlush</li>
                         <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
+                        <li MayRequire="salvador143.mthings.medical">MThingsMedicalHealerStand</li>
+                        <li MayRequire="tyll.valley">TY_A_XG_LBTreatmentStation_Building</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

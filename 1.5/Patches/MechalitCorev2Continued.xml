@@ -186,6 +186,12 @@
                         <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Bookshelf</li>
                         <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Bookshelf_empty</li>
                         <li MayRequire="jtc.grineerfurniture">GrineerWallLamp</li>
+                        <li MayRequire="widgelem.lavenderandsleep">LavenderDiffuser</li>
+                        <li MayRequire="amch.moresleepaccelerator">LargeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">RangeSleepAccelerator</li>
+                        <li MayRequire="amch.moresleepaccelerator">WallMountedSleepAccelerator</li>
+                        <li MayRequire="tyll.valley">TY_XGyg</li>
+                        <li MayRequire="tyll.valley">TY_bedside_table</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

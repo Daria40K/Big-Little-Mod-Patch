@@ -68,6 +68,7 @@
             <li MayRequire="neronix17.outland.core">Outland_Forge</li>
             <li MayRequire="mlie.tinyworkbenchs">TWB_TableSculptingMini</li>
             <li MayRequire="ryuu.rimworld.electricartbench">ElectricArtBench</li>
+            <li MayRequire="xercaine.tribal.furniture">XER_TribalTableSculpting</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

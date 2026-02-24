@@ -119,6 +119,8 @@
             <li MayRequire="mlie.coalexpanded">CoalGrill</li>
             <li MayRequire="comigogames.patches.vcesugargrain">COMIGO_ElectricMill</li>
             <li MayRequire="comigogames.patches.vcesugargrain">COMIGO_Quernstone</li>
+            <li MayRequire="xercaine.tribal.furniture">XER_TribalFueledStove</li>
+            <li MayRequire="atrumchalybs.medievalchemfuel">GasStove</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

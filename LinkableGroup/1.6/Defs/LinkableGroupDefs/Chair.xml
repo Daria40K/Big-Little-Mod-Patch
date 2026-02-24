@@ -32,6 +32,8 @@
             <li MayRequire="lotr.menofthewest">LOTR_SimpleChair</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcChair</li>
             <li MayRequire="jtc.grineerfurniture">GArmchair</li>
+            <li MayRequire="kindseal.ufli">UFLI_Couch</li>
+            <li MayRequire="moofoo.star.trek.faction">ST_ShipChair</li>
         </affected>
     </LinkableGroupDef>
 </Defs>
