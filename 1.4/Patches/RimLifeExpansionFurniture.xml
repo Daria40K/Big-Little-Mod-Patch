@@ -5,7 +5,6 @@
             <li>RimLife Expansion Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="REL_WoolBed" or defName="REL_WoolDoubleBed" or defName="REL_Bed" or defName="RLE_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

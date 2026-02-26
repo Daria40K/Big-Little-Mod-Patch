@@ -5,7 +5,6 @@
             <li>[sx] Smaller Simple Research Bench</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="SmallSimpleResearchBench"][not(comps)]</xpath>

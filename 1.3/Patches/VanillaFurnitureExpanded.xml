@@ -5,7 +5,6 @@
             <li>Vanilla Furniture Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Bed_Kingsize" or defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_Simple" or defName="Bed_StoneSlab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

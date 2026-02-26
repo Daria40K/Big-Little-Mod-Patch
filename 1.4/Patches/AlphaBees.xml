@@ -5,7 +5,6 @@
             <li>Alpha Bees</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RB_Beekeeping_Workbench_Building" or defName="RB_Honey_Centrifuge" or defName="RB_Advanced_Honey_Centrifuge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

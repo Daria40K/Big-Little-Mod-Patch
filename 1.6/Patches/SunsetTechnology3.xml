@@ -5,7 +5,6 @@
             <li>Sunset Technology 3</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Tablecy" or defName="AdvancedProductionPlatform_cy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

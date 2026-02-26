@@ -5,7 +5,6 @@
             <li>Fast regen 1.6</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="AnimalMedicRobo"][not(comps)]</xpath>

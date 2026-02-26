@@ -5,7 +5,6 @@
             <li>Astra Militarum Imperial Guard Core Mod v2.61</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="PlanetaryCoreExractor"][not(comps)]</xpath>
@@ -235,6 +234,8 @@
                         <li MayRequire="tyll.valley">TY_XGyg</li>
                         <li MayRequire="tyll.valley">TY_bedside_ShuZhuangTai</li>
                         <li MayRequire="tyll.valley">TY_bedside_table</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_HANS_EndTable</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_MERCURY_Dresser</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

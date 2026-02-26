@@ -5,7 +5,6 @@
             <li>HRG164hjo's PGI Overpower</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[@Name="PGI_PSpotBase"][not(comps)]</xpath>

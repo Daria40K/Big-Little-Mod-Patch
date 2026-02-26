@@ -127,6 +127,7 @@
             <li MayRequire="kindseal.ufli,">UFLI_CabinetF</li>
             <li MayRequire="dragonking.dragonsoresutilities,">Cryppolyzer</li>
             <li MayRequire="tyll.valley,">TY_Scientific_research</li>
+            <li MayRequire="tw.nrh.furniture,">NRH_HANS_Bookshelf</li>
         </facilities>
         <affected>
             <li MayRequire="ludeon.rimworld">HiTechResearchBench</li>

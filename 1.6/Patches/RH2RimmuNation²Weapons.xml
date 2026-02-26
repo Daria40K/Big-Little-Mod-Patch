@@ -5,7 +5,6 @@
             <li>[RH2] Rimmu-Nation² - Weapons</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RNBench_CQB" or defName="RNBench_LBW" or defName="RNBench_HeavyWeapons"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

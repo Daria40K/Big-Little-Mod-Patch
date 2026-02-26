@@ -5,7 +5,6 @@
             <li>RimApps (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="TableBlue" or defName="TableGreen" or defName="TableOrange" or defName="TablePurple" or defName="TableRed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

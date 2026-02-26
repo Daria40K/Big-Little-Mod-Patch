@@ -5,7 +5,6 @@
             <li>Tiny Workbenchs (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="TWB_ElectricStoveMini"][not(comps)]</xpath>
@@ -229,6 +228,7 @@
                         <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
                         <li MayRequire="dragonking.dragonsoresutilities">Cryppolyzer</li>
                         <li MayRequire="tyll.valley">TY_Scientific_research</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -612,6 +612,7 @@
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="lotr.menofthewest">LOTR_GondorNobleBookshelf</li>
                         <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

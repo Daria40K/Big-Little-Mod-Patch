@@ -5,7 +5,6 @@
             <li>Mechalit Core v2 (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="EliteBed" or defName="EliteDoubleBed" or defName="FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

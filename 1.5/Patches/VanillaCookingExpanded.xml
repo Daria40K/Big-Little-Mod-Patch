@@ -5,7 +5,6 @@
             <li>Vanilla Cooking Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="VCE_Grill" or defName="VCE_DeepFrier" or defName="VCE_CanningMachine" or defName="VCE_CondimentPrepTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

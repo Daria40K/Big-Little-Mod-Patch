@@ -5,7 +5,6 @@
             <li>Obsidia Expansion</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="OE_BionicTable" or defName="OE_AmalgamVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

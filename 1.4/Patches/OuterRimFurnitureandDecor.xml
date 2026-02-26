@@ -5,7 +5,6 @@
             <li>Outer Rim - Furniture and Decor</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="OuterRim_CorellianBed" or defName="OuterRim_CorellianDoubleBed" or defName="OuterRim_CoruscantBed" or defName="OuterRim_CoruscantDoubleBed" or defName="OuterRim_GenericBed" or defName="OuterRim_TatooineBed" or defName="OuterRim_TatooineDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

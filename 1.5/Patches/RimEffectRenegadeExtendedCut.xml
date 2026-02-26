@@ -5,7 +5,6 @@
             <li>Rim-Effect Renegade: Extended Cut</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="RE_PreFabStove"][not(comps)]</xpath>

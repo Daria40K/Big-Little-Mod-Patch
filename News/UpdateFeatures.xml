@@ -929,4 +929,11 @@
 		<assemblyVersion>5.2.0</assemblyVersion>
 		<content>Added support for Dragon's Ores Utilities, Medieval Chemfuel, Medieval Things: Medical, More Sleep Accelerators, Sleep Tighter and Tribal Furniture|Fixed support for [TY2.0]溪谷联邦 Aquila2.0-Valley</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.3.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_5_3_0</defName>
+		<assemblyVersion>5.3.0</assemblyVersion>
+		<content>Added support for [TW1.6]新复古家居 Neo-Retro Haus Furniture</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

@@ -5,7 +5,6 @@
             <li>Tinkering Bench and Biohacking Station</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="TM_Tinkerbench" or defName="TM_Biohacker"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

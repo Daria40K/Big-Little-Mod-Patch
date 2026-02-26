@@ -5,7 +5,6 @@
             <li>VGP Garden Gourmet</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Oven" or defName="ElectricOven" or defName="HandCanningstove" or defName="Canningstove" or defName="FueledCandyTable" or defName="CandyTable" or defName="GrindStone" or defName="ElectricGrindStone"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

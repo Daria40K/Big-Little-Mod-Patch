@@ -34,6 +34,10 @@
             <li MayRequire="jtc.grineerfurniture">GArmchair</li>
             <li MayRequire="kindseal.ufli">UFLI_Couch</li>
             <li MayRequire="moofoo.star.trek.faction">ST_ShipChair</li>
+            <li MayRequire="tw.nrh.furniture">NRH_SANDMONArmchair</li>
+            <li MayRequire="tw.nrh.furniture">NRH_SANDMON_LongSofa</li>
+            <li MayRequire="tw.nrh.furniture">NRH_SANDMON_FabricArmchair</li>
+            <li MayRequire="tw.nrh.furniture">NRH_SANDMON_FabricSofa</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

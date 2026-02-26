@@ -5,7 +5,6 @@
             <li>Modern Bed (1.4+)</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -211,6 +210,8 @@
                         <li MayRequire="tyll.valley">TY_XGyg</li>
                         <li MayRequire="tyll.valley">TY_bedside_ShuZhuangTai</li>
                         <li MayRequire="tyll.valley">TY_bedside_table</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_HANS_EndTable</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_MERCURY_Dresser</li>
                     </value>
                 </li>
             </operations>

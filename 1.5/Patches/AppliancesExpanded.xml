@@ -5,7 +5,6 @@
             <li>Appliances Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="CE_ChemfuelStove"][not(comps)]</xpath>

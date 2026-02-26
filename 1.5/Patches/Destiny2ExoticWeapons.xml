@@ -5,7 +5,6 @@
             <li>Destiny 2 Exotic Weapons</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="EngramDecoder"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

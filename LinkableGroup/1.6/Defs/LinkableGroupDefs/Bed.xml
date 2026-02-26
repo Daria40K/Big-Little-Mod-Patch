@@ -206,6 +206,8 @@
             <li MayRequire="tyll.valley,">TY_XGyg</li>
             <li MayRequire="tyll.valley,">TY_bedside_ShuZhuangTai</li>
             <li MayRequire="tyll.valley,">TY_bedside_table</li>
+            <li MayRequire="tw.nrh.furniture,">NRH_HANS_EndTable</li>
+            <li MayRequire="tw.nrh.furniture,">NRH_MERCURY_Dresser</li>
         </facilities>
         <affected>
             <li MayRequire="gloomy.furniture.continued">RGK_bedSingle</li>
@@ -217,7 +219,6 @@
             <li MayRequire="resurrectionem.furniture">RRBasicBedBase</li>
             <li MayRequire="resurrectionem.furniture">RRCrib</li>
             <li MayRequire="limetreesnake.furnishing">LTS_BedBase</li>
-            <li MayRequire="ludeon.rimworld">BasicBedBase</li>
             <li MayRequire="ludeon.rimworld">Bedroll</li>
             <li MayRequire="ludeon.rimworld">BedrollDouble</li>
             <li MayRequire="daylight.rimlifeexfurmod">REL_WoolBed</li>
@@ -334,6 +335,7 @@
             <li MayRequire="continued.morebedscloth">TRoyalBedBase</li>
             <li MayRequire="juc.ancientbuildings">AncientBed</li>
             <li MayRequire="moofoo.star.trek.faction">ST_Bed</li>
+            <li MayRequire="ludeon.rimworld">BasicBedBase</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

@@ -5,7 +5,6 @@
             <li>RimLife Expansion Production Plus</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RLE_ElectButcher" or defName="RLE_ExpandedButcherMeatMaker"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

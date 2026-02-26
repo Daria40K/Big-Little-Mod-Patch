@@ -5,7 +5,6 @@
             <li>Big and Small Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BS_MegaUniversalBed" or defName="BS_BigHospitalBed" or defName="BS_SmolHospitalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

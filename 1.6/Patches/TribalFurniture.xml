@@ -5,7 +5,6 @@
             <li>Tribal Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="XER_TribalFueledStove"][not(comps)]</xpath>
@@ -168,6 +167,7 @@
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="lotr.menofthewest">LOTR_GondorNobleBookshelf</li>
                         <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

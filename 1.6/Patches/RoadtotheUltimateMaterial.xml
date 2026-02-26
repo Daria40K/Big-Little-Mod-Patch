@@ -5,7 +5,6 @@
             <li>Road to the Ultimate Material</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="LR_SmallFabBench" or defName="LR_SmallFabBenchUltra" or defName="LR_CIR"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

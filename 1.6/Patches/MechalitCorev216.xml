@@ -5,7 +5,6 @@
             <li>Mechalit Core v2 1.6</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="EliteBed" or defName="EliteDoubleBed" or defName="FirstClassBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -211,6 +210,8 @@
                         <li MayRequire="tyll.valley">TY_XGyg</li>
                         <li MayRequire="tyll.valley">TY_bedside_ShuZhuangTai</li>
                         <li MayRequire="tyll.valley">TY_bedside_table</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_HANS_EndTable</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_MERCURY_Dresser</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

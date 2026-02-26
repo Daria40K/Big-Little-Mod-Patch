@@ -5,7 +5,6 @@
             <li>OverPowered Gaming</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name="CB745_BuildingBaseFour"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

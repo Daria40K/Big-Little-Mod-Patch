@@ -5,7 +5,6 @@
             <li>Segmentum - Children of the Omnissiah</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="Seg_COTO_CraftingTable"][not(comps)]</xpath>

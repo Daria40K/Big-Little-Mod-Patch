@@ -5,7 +5,6 @@
             <li>Fast regen medical beds 1.5</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="AnimalMedic"][not(comps)]</xpath>

@@ -5,7 +5,6 @@
             <li>Daily furniture 塔林家具</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ADH_bed_Single_A_A_FURNITURE" or defName="ADH_bed_Single_B_A_FURNITURE" or defName="ADH_bed_double_A_A_FURNITURE" or defName="ADH_bed_double_B_A_FURNITURE"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

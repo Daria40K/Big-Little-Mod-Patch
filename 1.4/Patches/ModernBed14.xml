@@ -5,7 +5,6 @@
             <li>Modern Bed (1.4+)</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="SC_ModernBed" or defName="SC_ModernBedMetal" or defName="SC_ModernBedDouble" or defName="SC_ModernBedDoubleMetal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

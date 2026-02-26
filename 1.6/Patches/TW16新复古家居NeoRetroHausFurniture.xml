@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[TW1.6]新复古家居 Neo-Retro Haus Furniture</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="NRH_SANDMONArmchair"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="NRH_SANDMONArmchair"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="NRH_SANDMONArmchair"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="NRH_SANDMONArmchair"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="NRH_SANDMON_LongSofa"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="NRH_SANDMON_LongSofa"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="NRH_SANDMON_LongSofa"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="NRH_SANDMON_LongSofa"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="NRH_SANDMON_FabricArmchair"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="NRH_SANDMON_FabricArmchair"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="NRH_SANDMON_FabricArmchair"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="NRH_SANDMON_FabricArmchair"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="NRH_SANDMON_FabricSofa"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="NRH_SANDMON_FabricSofa"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="NRH_SANDMON_FabricSofa"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="NRH_SANDMON_FabricSofa"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="NRH_SANDMONArmchair" or defName="NRH_SANDMON_LongSofa" or defName="NRH_SANDMON_FabricArmchair" or defName="NRH_SANDMON_FabricSofa"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="vanillaexpanded.vfecore">VFE_CoffeeTable</li>
+                        <li MayRequire="melondove.wolfeinrace">Wolfein_Bookcase</li>
+                        <li MayRequire="melondove.wolfeinrace">Wolfein_2x3_Carpet</li>
+                        <li MayRequire="melondove.wolfeinrace">Wolfein_3x3_Carpet</li>
+                        <li MayRequire="melondove.wolfeinrace">Wolfein_Doormat</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

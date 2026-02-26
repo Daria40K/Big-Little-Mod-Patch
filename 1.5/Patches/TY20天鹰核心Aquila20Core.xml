@@ -5,7 +5,6 @@
             <li>[TY2.0]天鹰核心 Aquila2.0 Core </li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ShengWuWork"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

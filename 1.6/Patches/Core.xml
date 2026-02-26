@@ -296,10 +296,11 @@
                     <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
                     <li MayRequire="dragonking.dragonsoresutilities">Cryppolyzer</li>
                     <li MayRequire="tyll.valley">TY_Scientific_research</li>
+                    <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <xpath>Defs/ThingDef[defName="Bedroll" or defName="BedrollDouble" or @Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                 <value>
                     <li MayRequire="gloomy.furniture.continued">RGK_Dresser</li>
                     <li MayRequire="gloomy.furniture.continued">RGK_EndTable</li>
@@ -502,6 +503,8 @@
                     <li MayRequire="tyll.valley">TY_XGyg</li>
                     <li MayRequire="tyll.valley">TY_bedside_ShuZhuangTai</li>
                     <li MayRequire="tyll.valley">TY_bedside_table</li>
+                    <li MayRequire="tw.nrh.furniture">NRH_HANS_EndTable</li>
+                    <li MayRequire="tw.nrh.furniture">NRH_MERCURY_Dresser</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
@@ -942,6 +945,7 @@
                     <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                     <li MayRequire="lotr.menofthewest">LOTR_GondorNobleBookshelf</li>
                     <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
+                    <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">

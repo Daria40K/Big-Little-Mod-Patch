@@ -5,7 +5,6 @@
             <li>Vanilla Plants Expanded - More Plants</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="VCE_VegMilkExtractor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

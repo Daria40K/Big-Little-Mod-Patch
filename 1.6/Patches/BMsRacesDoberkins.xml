@@ -5,7 +5,6 @@
             <li>BM's Races: Doberkins</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="Doberkin_MultiAnalyzer"][not(comps)]</xpath>
@@ -157,6 +156,7 @@
                         <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
                         <li MayRequire="dragonking.dragonsoresutilities">Cryppolyzer</li>
                         <li MayRequire="tyll.valley">TY_Scientific_research</li>
+                        <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
                     </value>
                 </li>
             </operations>

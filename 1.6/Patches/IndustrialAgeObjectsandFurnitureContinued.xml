@@ -5,7 +5,6 @@
             <li>Industrial Age - Objects and Furniture (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="WoodStoveFurnace"][not(comps)]</xpath>

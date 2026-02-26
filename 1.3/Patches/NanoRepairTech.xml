@@ -5,7 +5,6 @@
             <li>Nano Repair Tech</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Ogre_NanoTech_Bed" or defName="Ogre_NanoTech_RoyalBed" or defName="Ogre_NanoTech_DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

@@ -319,7 +319,7 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <xpath>Defs/ThingDef[defName="Bedroll" or defName="BedrollDouble" or @Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                 <value>
                     <li MayRequire="neronix17.clutterfurniture">ClutterBasicLocker</li>
                     <li MayRequire="neronix17.clutterfurniture">ClutterCabinetA</li>

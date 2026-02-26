@@ -49,6 +49,7 @@
             <li MayRequire="hye.nto,">LYN_Nanocabinet</li>
             <li MayRequire="lotr.menofthewest,">LOTR_GondorNobleBookshelf</li>
             <li MayRequire="kindseal.ufli,">UFLI_CabinetF</li>
+            <li MayRequire="tw.nrh.furniture,">NRH_HANS_Bookshelf</li>
         </facilities>
         <affected>
             <li MayRequire="gloomy.furniture.continued">RGK_SimpleResearchBench</li>
