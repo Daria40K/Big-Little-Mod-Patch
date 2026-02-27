@@ -5,6 +5,7 @@
             <li>Small Stoves</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="XER_SmallElectricStove"][not(comps)]</xpath>

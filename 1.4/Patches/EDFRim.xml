@@ -5,6 +5,7 @@
             <li>EDF Rim</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="EDF_FabricBench" or defName="EDF_NanoBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

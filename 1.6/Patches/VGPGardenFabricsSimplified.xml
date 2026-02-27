@@ -5,6 +5,7 @@
             <li>VGP Garden Fabrics Simplified</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="TableLoom" or defName="TableElecLoom"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

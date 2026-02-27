@@ -5,6 +5,7 @@
             <li>A RimWorld of Magic</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="TableGemcutting" or defName="TableMagicPrinter" or defName="TableArcaneForge"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

@@ -5,6 +5,7 @@
             <li>Ryuu's Electric Stonecutter's Table</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ElectricStonecuttersTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

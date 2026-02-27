@@ -5,6 +5,7 @@
             <li>Vanilla Races Expanded - Android</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="VREA_AndroidPartWorkbench" or defName="VREA_AndroidCreationStation"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

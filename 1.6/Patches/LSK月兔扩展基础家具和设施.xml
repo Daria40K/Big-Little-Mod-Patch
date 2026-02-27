@@ -5,6 +5,7 @@
             <li>[LSK]月兔扩展——基础家具和设施</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="LSK_SHS_Sofa"][not(comps)]</xpath>

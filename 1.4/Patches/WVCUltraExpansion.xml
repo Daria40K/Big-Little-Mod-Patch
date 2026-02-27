@@ -5,6 +5,7 @@
             <li>WVC - Ultra Expansion</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name="WVC_BuildingBed_Base"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

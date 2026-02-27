@@ -5,6 +5,7 @@
             <li>Erin's Japanese Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Erin_FutonA" or defName="Erin_FutonB" or defName="Erin_DoubleFutonA" or defName="Erin_DoubleFutonB"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

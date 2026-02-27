@@ -5,6 +5,7 @@
             <li>Malay Themed Expansion</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="NSTRDapur"][not(comps)]</xpath>

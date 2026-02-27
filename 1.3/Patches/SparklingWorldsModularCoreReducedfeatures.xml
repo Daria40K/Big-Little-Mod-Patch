@@ -5,6 +5,7 @@
             <li>Sparkling Worlds - Modular Core - Reduced features</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

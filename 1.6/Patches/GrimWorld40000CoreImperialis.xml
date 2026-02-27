@@ -5,6 +5,7 @@
             <li>GrimWorld 40,000 - Core Imperialis</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="GW_Furnace"][not(comps)]</xpath>

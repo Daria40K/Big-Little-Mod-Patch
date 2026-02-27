@@ -5,6 +5,7 @@
             <li>Expanded Materials - Metals</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="EM_FueledAlloyFurnace" or defName="EM_ElectricAlloyFurnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

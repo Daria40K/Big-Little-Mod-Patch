@@ -5,6 +5,7 @@
             <li>[KR] Star Wars Bacta</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="KR_Bacta"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

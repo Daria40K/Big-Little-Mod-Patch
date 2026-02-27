@@ -5,6 +5,7 @@
             <li>Vault-Tec - Handy things for your vault!</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="VTElectricStove"][not(comps)]</xpath>

@@ -5,6 +5,7 @@
             <li>[XND] Carpenter Tables (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="TableCarpenter"][not(comps)]</xpath>

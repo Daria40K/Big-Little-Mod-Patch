@@ -5,6 +5,7 @@
             <li>[lmgginspace] Repair bed</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="LMGG_Thing_RepairDoubleBed" or defName="LMGG_Thing_RepairBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

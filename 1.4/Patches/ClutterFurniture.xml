@@ -5,6 +5,7 @@
             <li>Clutter Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ClutterSleepingPod" or defName="ClutterDoubleEkieBed" or defName="ClutterSlabBed" or defName="ClutterDoubleSlabBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

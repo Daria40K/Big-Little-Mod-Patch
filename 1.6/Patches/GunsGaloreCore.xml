@@ -5,6 +5,7 @@
             <li>Guns Galore - Core</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CGF1_MWP_Building_Gunsmith_Old" or defName="CGF1_MWP_Building_Gunsmith"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

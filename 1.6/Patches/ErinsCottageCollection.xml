@@ -5,6 +5,7 @@
             <li>Erin's Cottage Collection</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="CCol_WoodStove"][not(comps)]</xpath>

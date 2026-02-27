@@ -5,6 +5,7 @@
             <li>Vanilla Genetics Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="GR_TissueGrinder" or defName="GR_GeneticsTinkeringTable" or defName="GR_GeneticExtractionTable" or defName="GR_GeneRecombinator" or defName="GR_TissueGrowingVat"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

@@ -5,6 +5,7 @@
             <li>Legacy of The Rim - Men of the West</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="LOTR_GondorNobleChair"][not(comps)]</xpath>

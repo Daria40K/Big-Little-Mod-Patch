@@ -5,6 +5,7 @@
             <li>Fueled Smelter + Crematorium(continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="FueledSmelter"][not(comps)]</xpath>

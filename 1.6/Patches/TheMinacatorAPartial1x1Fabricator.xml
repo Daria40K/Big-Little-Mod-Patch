@@ -5,6 +5,7 @@
             <li>The Minacator(A Partial 1x1 Fabricator)</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="MiniFabricator"][not(comps)]</xpath>

@@ -5,6 +5,7 @@
             <li>联合轻工家具拓展-UF Light Industries Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="UFLI_Couch"][not(comps)]</xpath>

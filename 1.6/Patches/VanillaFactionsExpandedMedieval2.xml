@@ -5,6 +5,7 @@
             <li>Vanilla Factions Expanded - Medieval 2</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="VFEM2_FurBed" or defName="VFEM2_DoubleFurBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

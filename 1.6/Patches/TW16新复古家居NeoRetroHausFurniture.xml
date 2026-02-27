@@ -5,6 +5,7 @@
             <li>[TW1.6]新复古家居 Neo-Retro Haus Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="NRH_SANDMONArmchair"][not(comps)]</xpath>

@@ -5,6 +5,7 @@
             <li>Ammunition Manufactory</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="AmmunitionManufactory"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

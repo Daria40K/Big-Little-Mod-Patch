@@ -5,6 +5,7 @@
             <li>Expanded Prosthetics and Organ Engineering - Forked</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="TableSimpleProsthetic" or defName="TableBionics" or defName="TableOrgans"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

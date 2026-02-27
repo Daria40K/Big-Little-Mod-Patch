@@ -5,6 +5,7 @@
             <li>YASTM (Yet Another Star Trek Mod)</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="ST_Starfleet_Biobed"][not(comps)]</xpath>

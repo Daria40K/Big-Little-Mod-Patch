@@ -5,6 +5,7 @@
             <li>Expanded Materials Add-On - Minimalist Production</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="MP_SmallStove"][not(comps)]</xpath>

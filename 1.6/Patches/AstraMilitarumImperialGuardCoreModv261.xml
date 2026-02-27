@@ -5,6 +5,7 @@
             <li>Astra Militarum Imperial Guard Core Mod v2.61</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="PlanetaryCoreExractor"][not(comps)]</xpath>

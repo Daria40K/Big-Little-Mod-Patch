@@ -5,6 +5,7 @@
             <li>RR's Furniture pack-Collection Rapture</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name="RRBasicBedBase" or defName="RRCrib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

@@ -5,6 +5,7 @@
             <li>Ambition of the Cosmic [Continued]</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Table_SNS_BionicCraftingStation_GenI" or defName="Table_SNS_BionicCraftingStation_GenII" or defName="Table_SNS_BionicCraftingStation_GenIII"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

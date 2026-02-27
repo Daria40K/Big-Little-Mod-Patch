@@ -5,6 +5,7 @@
             <li>Mechanoid Upgrades</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="MU_BasicUpgradesAssembler" or defName="MU_AdvancedUpgradesAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

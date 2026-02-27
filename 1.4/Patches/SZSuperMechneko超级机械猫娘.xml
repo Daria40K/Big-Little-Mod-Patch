@@ -5,6 +5,7 @@
             <li>[SZ]Super Mechneko - 超级机械猫娘</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="SZMechNeko_NekoAssemblier"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

@@ -5,6 +5,7 @@
             <li>Apothecary Expansion</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Untamo_AYApothecaryTable_Basic" or defName="Untamo_AYApothecaryTable_Intermediate" or defName="Untamo_AYApothecaryTable_Advanced"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

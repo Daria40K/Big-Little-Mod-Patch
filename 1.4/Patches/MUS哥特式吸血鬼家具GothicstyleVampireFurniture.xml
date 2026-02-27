@@ -5,6 +5,7 @@
             <li>[MUS]哥特式吸血鬼家具 Gothicstyle Vampire Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="MUS_Gothicstyle_CoffinBed"][not(comps)]</xpath>

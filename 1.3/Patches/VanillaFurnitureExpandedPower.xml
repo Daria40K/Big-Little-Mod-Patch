@@ -5,6 +5,7 @@
             <li>Vanilla Furniture Expanded - Power</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="VPE_GasStove"][not(comps)]</xpath>

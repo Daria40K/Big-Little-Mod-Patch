@@ -5,6 +5,7 @@
             <li>Kurin, The Three Tailed Fox [Deluxe Edition]</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Kurin_Electric_Tailoring_Bench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

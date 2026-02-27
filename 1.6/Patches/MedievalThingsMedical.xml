@@ -5,6 +5,7 @@
             <li>Medieval Things: Medical</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="MThingsGeysersCoreHealingCot"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

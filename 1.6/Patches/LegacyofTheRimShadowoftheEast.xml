@@ -5,6 +5,7 @@
             <li>Legacy of The Rim - Shadow of the East</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="LOTR_OrcChair"][not(comps)]</xpath>

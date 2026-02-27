@@ -5,6 +5,7 @@
             <li>[FM] Furniture Expanded Pack</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="FFE_AnimalMedTable"][not(comps)]</xpath>

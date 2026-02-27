@@ -5,6 +5,7 @@
             <li>[MUS]太空基地家具Space Base Furniture</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="MUS_SpaceBase_Bed" or defName="MUS_SpaceBase_BedV" or defName="MUS_SpaceBase_DoubleBed" or defName="MUS_SpaceBase_DoubleBedV" or defName="MUS_SpaceBase_Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

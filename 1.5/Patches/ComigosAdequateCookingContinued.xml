@@ -5,6 +5,7 @@
             <li>Comigo's Adequate Cooking Continued</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="COMIGO_ElectricMill"][not(comps)]</xpath>

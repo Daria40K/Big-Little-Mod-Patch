@@ -5,6 +5,7 @@
             <li>[RH2] Faction: V.O.I.D.</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RH2_CorpoBed" or defName="RH2_CorpoDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

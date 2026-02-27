@@ -5,6 +5,7 @@
             <li>High Tech Laboratory Facilities (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="LabStation" or defName="LabTerminal"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

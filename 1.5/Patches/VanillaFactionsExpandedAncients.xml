@@ -5,6 +5,7 @@
             <li>Vanilla Factions Expanded - Ancients</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="VFEA_AncientCookingStation"][not(comps)]</xpath>

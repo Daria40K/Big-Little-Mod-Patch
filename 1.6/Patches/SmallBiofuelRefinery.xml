@@ -5,6 +5,7 @@
             <li>Small Biofuel Refinery</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="XER_SmallBiofuelRefinery"][not(comps)]</xpath>

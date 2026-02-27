@@ -5,6 +5,7 @@
             <li>Altered Carbon: Ultratech Unleashed</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="VFEU_SleeveCasket"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>

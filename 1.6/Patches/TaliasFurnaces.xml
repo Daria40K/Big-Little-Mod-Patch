@@ -5,6 +5,7 @@
             <li>Talias Furnaces</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="talias_ElectricFurnace"][not(comps)]</xpath>

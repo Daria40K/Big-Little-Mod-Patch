@@ -5,6 +5,7 @@
             <li>Fallout - Nuka Cola Collection</li>
         </mods>
         <match Class="PatchOperationSequence">
+            <success>Always</success>
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Fallout_Cola_Station"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
