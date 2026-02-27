@@ -94,7 +94,6 @@
             <li MayRequire="mlie.syrprosthetictable">TableSyrProsthetics</li>
             <li MayRequire="wvc.sergkart.ultraexpansion">WVC_Ultra_WorkBenches_Implants</li>
             <li MayRequire="mlie.cyberfauna">AnimalLab</li>
-            <li MayRequire="sarg.alphaanimals,spoonshortage.adogsaidanimalprosthetics">VEF_AdvancedAnimalImplantsTable</li>
             <li MayRequire="vanillaexpanded.vgeneticsemorelabstuff">GR_GenetrainerBench</li>
             <li MayRequire="vanillaexpanded.vgeneticse">GR_TissueGrinder</li>
             <li MayRequire="vanillaexpanded.vgeneticse">GR_GeneticsTinkeringTable</li>

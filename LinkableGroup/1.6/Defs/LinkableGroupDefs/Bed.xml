@@ -300,7 +300,6 @@
             <li MayRequire="twink.vaultfurniture">Bed_DoubleVault</li>
             <li MayRequire="twink.vaultfurniture">Bed_luxDoubleVault</li>
             <li MayRequire="neronix17.outland.core">OutlandBedBase</li>
-            <li MayRequire="ponpeco.pfsf">PFSBasicBedBase</li>
             <li MayRequire="vanillaexpanded.gravship">VGE_CrewBunkBed</li>
             <li MayRequire="jxw.dailyfurniturecontinued">ADH_BedBase</li>
             <li MayRequire="mlmlmlm.bluearchivefurniture">TrinityBedBase</li>
@@ -336,6 +335,7 @@
             <li MayRequire="juc.ancientbuildings">AncientBed</li>
             <li MayRequire="moofoo.star.trek.faction">ST_Bed</li>
             <li MayRequire="ludeon.rimworld">BasicBedBase</li>
+            <li MayRequire="ponpeco.pfsf">PFSBasicBedBase</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <xpath>Defs/ThingDef[@Name="PFSBasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
                         <li MayRequire="gloomy.furniture.continued">RGK_Dresser</li>
                         <li MayRequire="gloomy.furniture.continued">RGK_EndTable</li>

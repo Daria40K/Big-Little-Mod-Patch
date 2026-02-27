@@ -936,4 +936,11 @@
 		<assemblyVersion>5.3.0</assemblyVersion>
 		<content>Added support for [TW1.6]新复古家居 Neo-Retro Haus Furniture</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.3.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_5_3_1</defName>
+		<assemblyVersion>5.3.1</assemblyVersion>
+		<content>Fixed some bugs</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
