@@ -106,11 +106,11 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="NRH_SANDMONArmchair" or defName="NRH_SANDMON_LongSofa" or defName="NRH_SANDMON_FabricArmchair" or defName="NRH_SANDMON_FabricSofa"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
-                        <li MayRequire="vanillaexpanded.vfecore">VFE_CoffeeTable</li>
                         <li MayRequire="melondove.wolfeinrace">Wolfein_Bookcase</li>
                         <li MayRequire="melondove.wolfeinrace">Wolfein_2x3_Carpet</li>
                         <li MayRequire="melondove.wolfeinrace">Wolfein_3x3_Carpet</li>
                         <li MayRequire="melondove.wolfeinrace">Wolfein_Doormat</li>
+                        <li MayRequire="vanillaexpanded.vfecore">VFE_CoffeeTable</li>
                     </value>
                 </li>
             </operations>

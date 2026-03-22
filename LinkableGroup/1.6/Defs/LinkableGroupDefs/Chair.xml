@@ -4,11 +4,11 @@
         <defName>BigLittleModPatch_Chair</defName>
         <group>Chair</group>
         <facilities>
-            <li MayRequire="vanillaexpanded.vfecore,">VFE_CoffeeTable</li>
-            <li MayRequire="melondove.wolfeinrace,">Wolfein_Bookcase</li>
-            <li MayRequire="melondove.wolfeinrace,">Wolfein_2x3_Carpet</li>
-            <li MayRequire="melondove.wolfeinrace,">Wolfein_3x3_Carpet</li>
-            <li MayRequire="melondove.wolfeinrace,">Wolfein_Doormat</li>
+            <li MayRequire="melondove.wolfeinrace">Wolfein_Bookcase</li>
+            <li MayRequire="melondove.wolfeinrace">Wolfein_2x3_Carpet</li>
+            <li MayRequire="melondove.wolfeinrace">Wolfein_3x3_Carpet</li>
+            <li MayRequire="melondove.wolfeinrace">Wolfein_Doormat</li>
+            <li MayRequire="vanillaexpanded.vfecore">VFE_CoffeeTable</li>
         </facilities>
         <affected>
             <li MayRequire="vanillaexpanded.vfecore">Seat_RoyalArmchair</li>
@@ -38,6 +38,10 @@
             <li MayRequire="tw.nrh.furniture">NRH_SANDMON_LongSofa</li>
             <li MayRequire="tw.nrh.furniture">NRH_SANDMON_FabricArmchair</li>
             <li MayRequire="tw.nrh.furniture">NRH_SANDMON_FabricSofa</li>
+            <li MayRequire="misstall.furniture">MF_Armchair</li>
+            <li MayRequire="misstall.furniture">MF_Couch</li>
+            <li MayRequire="keeptpa.nivariandraconiture">NivarianSofa</li>
+            <li MayRequire="keeptpa.nivariandraconiture">NivarianLongSofa</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

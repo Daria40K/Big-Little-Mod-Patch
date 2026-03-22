@@ -943,4 +943,11 @@
 		<assemblyVersion>5.3.1</assemblyVersion>
 		<content>Fixed some bugs</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.4.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_5_4_0</defName>
+		<assemblyVersion>5.4.0</assemblyVersion>
+		<content>Added support for EDF Rim, Fueled Smelter, Misstall's Furniture, Nivarian Race: Draconiture, Simple Immersion - VBE Coffees and Teas, Vanilla Gravship Expanded - Expanded</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

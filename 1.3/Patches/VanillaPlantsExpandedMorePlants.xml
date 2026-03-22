@@ -7,18 +7,32 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="VCE_VegMilkExtractor"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vcooke">
+                    <xpath>Defs/ThingDef[VCE_VegMilkExtractor]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
                         <li MayRequire="solaris.furniturebase">GL_Cupboard</li>
                         <li MayRequire="solaris.furniturebase">GL_TablewareShelf</li>
-                        <li MayRequire="mrkociak.morearchotechstuffandthingsreupload">ArchoCookingAssistant</li>
-                        <li MayRequire="dismarzero.vgp.vgpgardengourmet">CookingTools</li>
-                        <li MayRequire="vanillaexpanded.vfeproduction">VFE_KitchenSinkCabinet</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_KitchenGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_KitchenBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="vanillaexpanded.vfeproduction">VFE_KitchenSinkCabinet</li>
+                        <li MayRequire="dismarzero.vgp.vgpgardengourmet">CookingTools</li>
                         <li MayRequire="lyn.nto">LYN_Nanocabinet</li>
+                        <li MayRequire="mrkociak.morearchotechstuffandthingsreupload">ArchoCookingAssistant</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li MayRequire="solaris.furniturebase">GL_Cupboard</li>
+                        <li MayRequire="solaris.furniturebase">GL_TablewareShelf</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_KitchenGoods</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_KitchenBoost</li>
+                        <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="vanillaexpanded.vfeproduction">VFE_KitchenSinkCabinet</li>
+                        <li MayRequire="dismarzero.vgp.vgpgardengourmet">CookingTools</li>
+                        <li MayRequire="lyn.nto">LYN_Nanocabinet</li>
+                        <li MayRequire="mrkociak.morearchotechstuffandthingsreupload">ArchoCookingAssistant</li>
                     </value>
                 </li>
             </operations>
