@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <OutputPath>../Assemblies/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <RootNamespace>BigLittleModPatch</RootNamespace>
+    <AssemblyName>BigLittleModPatch</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Set this to your RimWorld install folder -->
+    <RimWorldPath Condition="'$(RimWorldPath)' == '' And Exists('C:\Program Files (x86)\Steam\steamapps\common\RimWorld')">C:\Program Files (x86)\Steam\steamapps\common\RimWorld</RimWorldPath>
+    <RimWorldPath Condition="'$(RimWorldPath)' == '' And Exists('$(HOME)/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app')">$(HOME)/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app</RimWorldPath>
+    <RimWorldPath Condition="'$(RimWorldPath)' == '' And Exists('$(HOME)/.steam/steam/steamapps/common/RimWorld')">$(HOME)/.steam/steam/steamapps/common/RimWorld</RimWorldPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldPath)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldPath)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
