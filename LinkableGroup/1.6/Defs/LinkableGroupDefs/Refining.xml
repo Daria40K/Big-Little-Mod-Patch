@@ -62,6 +62,7 @@
             <li MayRequire="lotr.menofthewest">LOTR_ToolTable</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
@@ -79,6 +80,8 @@
             <li MayRequire="mlie.uncolony">SadjuukRefineryC</li>
             <li MayRequire="xercaine.smallbiofuelrefinery">XER_SmallBiofuelRefinery</li>
             <li MayRequire="jtc.grineer">G_Grokdrulmix</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallBiofuelRefinery</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumBiofuelRefinery</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

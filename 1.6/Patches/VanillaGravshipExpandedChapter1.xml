@@ -222,6 +222,7 @@
                         <li MayRequire="keeptpa.nivariandraconiture">NivarianEndTable</li>
                         <li MayRequire="keeptpa.nivariandraconiture">NivarianDresser</li>
                         <li MayRequire="xale86.smallbedroomfurniture">X86_BedsideCarpet</li>
+                        <li MayRequire="xercaine.furniture.small">SmallDresser</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -328,6 +329,7 @@
                         <li MayRequire="lotr.menofthewest">LOTR_ToolTable</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -413,6 +415,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcQuenchingBucket</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -499,6 +502,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcQuenchingBucket</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -645,6 +649,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -712,6 +717,7 @@
                         <li MayRequire="lotr.menofthewest">LOTR_ToolTable</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -775,6 +781,7 @@
                         <li MayRequire="lotr.menofthewest">LOTR_ToolTable</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
             </operations>

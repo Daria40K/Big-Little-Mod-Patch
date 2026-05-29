@@ -172,6 +172,7 @@
                         <li MayRequire="kongkim.researchdata">ResearchSampleBench</li>
                         <li MayRequire="kongkim.researchdata">ArchotechAnalyzer</li>
                         <li MayRequire="daylight.lrultimatematt">RLE_OriginCommunicator</li>
+                        <li MayRequire="aoba.fortress.industrial">FT_ENIAC</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

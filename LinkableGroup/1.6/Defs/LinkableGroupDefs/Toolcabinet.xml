@@ -54,6 +54,7 @@
             <li MayRequire="lotr.menofthewest">LOTR_ToolTable</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
@@ -122,6 +123,11 @@
             <li MayRequire="soa.compactworkbenches">SOA_CompactCarvingBench</li>
             <li MayRequire="soa.compactworkbenches,vanillaexpanded.recycling">SOA_CompactRecyclingBench</li>
             <li MayRequire="soa.compactworkbenches,dd.unofficial.notfood.mendandrecycle">SOA_CompactMendingBench</li>
+            <li MayRequire="aoba.fortress.industrial.concrete">IC_PortableConcrete</li>
+            <li MayRequire="aoba.fortress.industrial.concrete.teddy.extension.patch">IC_PortableConcrete_Power</li>
+            <li MayRequire="aoba.fortress.industrial" />
+            <li MayRequire="xercaine.furniture.small">XER_SmallElectricCrematorium</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumElectricCrematorium</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

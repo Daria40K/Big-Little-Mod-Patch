@@ -28,8 +28,6 @@
             <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Sofa</li>
             <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Double_Sofa</li>
             <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_SHS_Double_2Sofa</li>
-            <li MayRequire="lotr.menofthewest">LOTR_GondorNobleChair</li>
-            <li MayRequire="lotr.menofthewest">LOTR_SimpleChair</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcChair</li>
             <li MayRequire="jtc.grineerfurniture">GArmchair</li>
             <li MayRequire="kindseal.ufli">UFLI_Couch</li>

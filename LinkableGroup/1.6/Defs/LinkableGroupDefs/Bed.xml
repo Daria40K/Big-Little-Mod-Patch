@@ -216,6 +216,7 @@
             <li MayRequire="keeptpa.nivariandraconiture">NivarianEndTable</li>
             <li MayRequire="keeptpa.nivariandraconiture">NivarianDresser</li>
             <li MayRequire="xale86.smallbedroomfurniture">X86_BedsideCarpet</li>
+            <li MayRequire="xercaine.furniture.small">SmallDresser</li>
         </facilities>
         <affected>
             <li MayRequire="heis.edo.themed.expansion">HS_RoughFuton</li>
@@ -346,6 +347,8 @@
             <li MayRequire="moofoo.star.trek.faction">ST_Bed</li>
             <li MayRequire="mlmlmlm.bluearchivefurniture4">CarrierBedBase</li>
             <li MayRequire="misstall.furniture">MF_BasicBedBase</li>
+            <li MayRequire="dorian00.polyrepairbed">LMGG_Thing_RepairTripleBed</li>
+            <li MayRequire="dorian00.polyrepairbed">LMGG_Thing_RepairQuadBed</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

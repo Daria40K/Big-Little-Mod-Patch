@@ -69,6 +69,7 @@
             <li MayRequire="lotr.menofthewest">LOTR_ToolTable</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="xavior.glittertech">PharmaTable</li>
@@ -89,6 +90,8 @@
             <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Cauldron</li>
             <li MayRequire="vanillaexpanded.gravship">VGE_CompactDrugLab</li>
             <li MayRequire="hye.nto">Nanobiolab</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallDrugLab</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumDrugLab</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

@@ -85,6 +85,7 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcQuenchingBucket</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
@@ -148,6 +149,8 @@
             <li MayRequire="m3.continued.jangodsoul.starwars.bti">JDS_Blastech_Workbench</li>
             <li MayRequire="ru.craftableweaponuni">Ru_UniqueWeaponBench</li>
             <li MayRequire="fdp.rimzone.core">RZ_StalkerWorkbench</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallTableMachining</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumTableMachining</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

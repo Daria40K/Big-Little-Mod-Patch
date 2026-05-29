@@ -342,6 +342,7 @@
                         <li MayRequire="keeptpa.nivariandraconiture">NivarianEndTable</li>
                         <li MayRequire="keeptpa.nivariandraconiture">NivarianDresser</li>
                         <li MayRequire="xale86.smallbedroomfurniture">X86_BedsideCarpet</li>
+                        <li MayRequire="xercaine.furniture.small">SmallDresser</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

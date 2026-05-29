@@ -84,6 +84,7 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcQuenchingBucket</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="xavior.glittertech">Matterfab</li>
@@ -150,6 +151,10 @@
             <li MayRequire="daylight.lrultimatematt">LR_CIR</li>
             <li MayRequire="jtc.grineer">G_Foundry</li>
             <li MayRequire="m3.continued.jangodsoul.exileddawn">JDS_ED_FabricationWorkBench</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallFabricationBench</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumFabricationBench</li>
+            <li MayRequire="redacted.segmentum.childrenoftheomnissiah,vanillaexpanded.vchemfuele">Seg_COTO_CraftingTableChemfuel</li>
+            <li MayRequire="redacted.segmentum.childrenoftheomnissiah,VanillaExpanded.HelixienGas">Seg_COTO_CraftingTableHelixien</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

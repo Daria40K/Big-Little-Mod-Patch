@@ -79,6 +79,7 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
@@ -123,6 +124,10 @@
             <li MayRequire="jtc.grineer">G_Alloysmelter</li>
             <li MayRequire="argon.expandedmaterials.masonry">EM_Kiln</li>
             <li MayRequire="xercaine.fueledsmelter">XER_ChemfuelPoweredSmelter</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallElectricSmelter</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumElectricSmelter</li>
+            <li MayRequire="redacted.segmentum.childrenoftheomnissiah,vanillaexpanded.vchemfuele">Seg_COTO_CeramiteFurnaceChemfuel</li>
+            <li MayRequire="redacted.segmentum.childrenoftheomnissiah">Seg_COTO_CeramiteFurnaceHelixien</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

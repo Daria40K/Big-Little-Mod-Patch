@@ -47,7 +47,6 @@
             <li MayRequire="ninoss.rimservers">SERVERS_MakeshiftServer</li>
             <li MayRequire="kongkim.researchdata">ResearchSampleBench</li>
             <li MayRequire="hye.nto">LYN_Nanocabinet</li>
-            <li MayRequire="lotr.menofthewest">LOTR_GondorNobleBookshelf</li>
             <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
             <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
         </facilities>
@@ -60,9 +59,11 @@
             <li MayRequire="ludeon.rimworld">SimpleResearchBench</li>
             <li MayRequire="gloomy.furniture.continued">RGK_SimpleResearchBench</li>
             <li MayRequire="sxatter.smallresearchbench">SmallSimpleResearchBench</li>
-            <li MayRequire="lotr.menofthewest">LOTR_GondorResearchBenchSimple</li>
+            <li MayRequire="lotr.menofthewest">LOTR_HumanResearchBenchSimple</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcResearchBench</li>
             <li MayRequire="xercaine.tribal.furniture">XER_TribalResearchBench</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallSimpleResearchBench</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumSimpleResearchBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

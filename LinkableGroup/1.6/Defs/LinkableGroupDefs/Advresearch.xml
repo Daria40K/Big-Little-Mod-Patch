@@ -122,10 +122,11 @@
             <li MayRequire="kongkim.researchdata">ArchotechAnalyzer</li>
             <li MayRequire="hye.nto">LYN_Nanocabinet</li>
             <li MayRequire="daylight.lrultimatematt">RLE_OriginCommunicator</li>
-            <li MayRequire="lotr.menofthewest">LOTR_GondorNobleBookshelf</li>
             <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
             <li MayRequire="dragonking.dragonsoresutilities">Cryppolyzer</li>
             <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
+            <li MayRequire="aoba.fortress.industrial">FT_ENIAC</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallMultiAnalyzer</li>
         </facilities>
         <affected>
             <li MayRequire="mlie.unfurniture">SadjuukResearchAC</li>
@@ -141,6 +142,8 @@
             <li MayRequire="rimeffectrenegade.core">RE_SpacerTechResearchBench</li>
             <li MayRequire="mlie.tinyworkbenchs">TWB_HiTechResearchBenchMini</li>
             <li MayRequire="blackmarket420.xenotype.doberkin">Doberkin_MultiAnalyzer</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallHiTechResearchBench</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumHiTechResearchBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

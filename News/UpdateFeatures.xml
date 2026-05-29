@@ -950,4 +950,11 @@
 		<assemblyVersion>5.4.0</assemblyVersion>
 		<content>Added support for EDF Rim, Fueled Smelter, Misstall's Furniture, Nivarian Race: Draconiture, Simple Immersion - VBE Coffees and Teas, Vanilla Gravship Expanded - Expanded</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.5.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_5_5_0</defName>
+		<assemblyVersion>5.5.0</assemblyVersion>
+		<content>Fix duplicate linkableFacilities causing broken facility links by talonos2 (thank you)|Added support for Small Furniture, Industrial concrete, Industrial concrete - Extension Patch, Fortifications - Industrial, Fortification Industrial - Citadel, Stoneborn - Cuisine|Updated support for Legacy of The Rim - Men of the West</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

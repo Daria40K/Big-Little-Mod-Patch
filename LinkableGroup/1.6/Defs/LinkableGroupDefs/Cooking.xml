@@ -122,6 +122,14 @@
             <li MayRequire="atrumchalybs.medievalchemfuel">GasStove</li>
             <li MayRequire="nishe.sicoffeesandteas">SI_TeaCounterBase</li>
             <li MayRequire="mlmlmlm.bluearchivefurniture4">Mini_Kitchen</li>
+            <li MayRequire="det.sbcuisine">SC_HotGrill</li>
+            <li MayRequire="det.sbcuisine">SC_DwarvenOven</li>
+            <li MayRequire="det.sbcuisine">SC_PrepTable</li>
+            <li MayRequire="aoba.fortress.industrial.citadel">FTC_FieldKitchen</li>
+            <li MayRequire="xercaine.furniture.small">XER_MiniElectricStove</li>
+            <li MayRequire="xercaine.furniture.small">XER_MiniFueledStove</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallElectricStove</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallFueledStove</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

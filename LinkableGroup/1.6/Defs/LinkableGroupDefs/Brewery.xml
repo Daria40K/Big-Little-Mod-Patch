@@ -37,6 +37,8 @@
             <li MayRequire="samael.falloutdrinks">NukaColaWorkbench</li>
             <li MayRequire="samael.falloutdrinks">SunsetWorkbench</li>
             <li MayRequire="samael.falloutdrinks">VimWorkbench</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallBrewery</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumBrewery</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

@@ -7,54 +7,6 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
-                <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="LOTR_GondorNobleChair"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="LOTR_GondorNobleChair"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="LOTR_GondorNobleChair"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="LOTR_GondorNobleChair"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
-                <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="LOTR_SimpleChair"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="LOTR_SimpleChair"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="LOTR_SimpleChair"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="LOTR_SimpleChair"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name="LOTR_NobleBedBase" or @Name="LOTR_BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
@@ -270,10 +222,11 @@
                         <li MayRequire="keeptpa.nivariandraconiture">NivarianEndTable</li>
                         <li MayRequire="keeptpa.nivariandraconiture">NivarianDresser</li>
                         <li MayRequire="xale86.smallbedroomfurniture">X86_BedsideCarpet</li>
+                        <li MayRequire="xercaine.furniture.small">SmallDresser</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="LOTR_GondorResearchBenchSimple"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <xpath>Defs/ThingDef[defName="LOTR_HumanResearchBenchSimple"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
                         <li MayRequire="akn.decorations">AKN_WallPapersA</li>
                         <li MayRequire="akn.decorations">AKN_WallPapersB</li>
@@ -318,7 +271,6 @@
                         <li MayRequire="ninoss.rimservers">SERVERS_MakeshiftServer</li>
                         <li MayRequire="kongkim.researchdata">ResearchSampleBench</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
-                        <li MayRequire="lotr.menofthewest">LOTR_GondorNobleBookshelf</li>
                         <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
                         <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
                     </value>
@@ -401,6 +353,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -490,6 +443,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -545,16 +499,7 @@
                         <li MayRequire="lotr.menofthewest">LOTR_ToolTable</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="LOTR_GondorNobleChair" or defName="LOTR_SimpleChair"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-                    <value>
-                        <li MayRequire="melondove.wolfeinrace">Wolfein_Bookcase</li>
-                        <li MayRequire="melondove.wolfeinrace">Wolfein_2x3_Carpet</li>
-                        <li MayRequire="melondove.wolfeinrace">Wolfein_3x3_Carpet</li>
-                        <li MayRequire="melondove.wolfeinrace">Wolfein_Doormat</li>
-                        <li MayRequire="vanillaexpanded.vfecore">VFE_CoffeeTable</li>
+                        <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                     </value>
                 </li>
             </operations>

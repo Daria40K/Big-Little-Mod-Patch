@@ -88,6 +88,7 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
@@ -113,6 +114,10 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcAnvil</li>
             <li MayRequire="sharpie.eldenrima">ER_EldenForge</li>
             <li MayRequire="atrumchalybs.medievalchemfuel">GasSmithy</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallFueledSmithy</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallElectricSmithy</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumFueledSmithy</li>
+            <li MayRequire="xercaine.furniture.small">XER_MediumElectricSmithy</li>
         </affected>
     </LinkableGroupDef>
 </Defs>
