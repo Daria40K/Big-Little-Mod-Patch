@@ -64,6 +64,7 @@
             <li MayRequire="xercaine.tribal.furniture">XER_TribalResearchBench</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallSimpleResearchBench</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumSimpleResearchBench</li>
+            <li MayRequire="milple.koreanstylefurniture">milple_SimpleResearchBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

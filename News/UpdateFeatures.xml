@@ -957,4 +957,11 @@
 		<assemblyVersion>5.5.0</assemblyVersion>
 		<content>Fix duplicate linkableFacilities causing broken facility links by talonos2 (thank you)|Added support for Small Furniture, Industrial concrete, Industrial concrete - Extension Patch, Fortifications - Industrial, Fortification Industrial - Citadel, Stoneborn - Cuisine|Updated support for Legacy of The Rim - Men of the West</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.6.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_5_6_0</defName>
+		<assemblyVersion>5.6.0</assemblyVersion>
+		<content>Added support for Korean Style Furniture and More Useful Materials</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

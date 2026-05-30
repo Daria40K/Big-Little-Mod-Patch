@@ -130,6 +130,7 @@
             <li MayRequire="xercaine.furniture.small">XER_MiniFueledStove</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallElectricStove</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallFueledStove</li>
+            <li MayRequire="milple.koreanstylefurniture">milple_FueledStove</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

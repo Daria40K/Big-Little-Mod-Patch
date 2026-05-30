@@ -223,6 +223,13 @@
                         <li MayRequire="keeptpa.nivariandraconiture">NivarianDresser</li>
                         <li MayRequire="xale86.smallbedroomfurniture">X86_BedsideCarpet</li>
                         <li MayRequire="xercaine.furniture.small">SmallDresser</li>
+                        <li MayRequire="milple.koreanstylefurniture">milple_BEndTable</li>
+                        <li MayRequire="milple.koreanstylefurniture">milple_EndTable</li>
+                        <li MayRequire="milple.koreanstylefurniture">milple_EndTableHigh</li>
+                        <li MayRequire="milple.koreanstylefurniture">milple_BDresser</li>
+                        <li MayRequire="milple.koreanstylefurniture">milple_DresserSmall</li>
+                        <li MayRequire="milple.koreanstylefurniture">milple_Dresser</li>
+                        <li MayRequire="milple.koreanstylefurniture">milple_DresserHigh</li>
                     </value>
                 </li>
             </operations>

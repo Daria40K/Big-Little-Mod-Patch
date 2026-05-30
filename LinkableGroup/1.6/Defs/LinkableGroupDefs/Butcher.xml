@@ -45,6 +45,7 @@
             <li MayRequire="xercaine.tribal.furniture">XER_TribalTableButcher</li>
             <li MayRequire="xercaine.furniture.small">XER_MiniTableButcher</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallTableButcher</li>
+            <li MayRequire="milple.koreanstylefurniture">milple_TableButcher</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

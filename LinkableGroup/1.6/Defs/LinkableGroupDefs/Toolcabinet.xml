@@ -128,6 +128,7 @@
             <li MayRequire="aoba.fortress.industrial" />
             <li MayRequire="xercaine.furniture.small">XER_SmallElectricCrematorium</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumElectricCrematorium</li>
+            <li MayRequire="cn.moreusefulmaterials">MUM_MaterialsWorkshop</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

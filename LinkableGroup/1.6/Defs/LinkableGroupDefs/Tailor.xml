@@ -104,6 +104,7 @@
             <li MayRequire="xercaine.furniture.small">XER_SmallElectricTailoringBench</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumHandTailoringBench</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumElectricTailoringBench</li>
+            <li MayRequire="milple.koreanstylefurniture">milple_HandTailoringBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

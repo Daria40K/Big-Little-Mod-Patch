@@ -39,6 +39,7 @@
             <li MayRequire="samael.falloutdrinks">VimWorkbench</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallBrewery</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumBrewery</li>
+            <li MayRequire="milple.koreanstylefurniture">milple_Brewery</li>
         </affected>
     </LinkableGroupDef>
 </Defs>
