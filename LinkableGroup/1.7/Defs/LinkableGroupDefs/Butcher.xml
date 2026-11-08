@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <LinkableGroupDef>
+        <defName>BigLittleModPatch_Butcher</defName>
+        <group>Butcher</group>
+        <facilities>
+            <li MayRequire="akn.decorations">AKN_MotivatingPlush</li>
+            <li MayRequire="zal.gloomyextrakitchen">SM_Sink</li>
+            <li MayRequire="zal.gloomyextrakitchen">SM_ButcherShelf</li>
+            <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_A</li>
+            <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_B</li>
+            <li MayRequire="zal.gloomyextrakitchen">SM_KitchenCupboard_C</li>
+            <li MayRequire="4loris4.morelinkables">KitchenCupboard</li>
+            <li MayRequire="daylight.wbsmorelinkf">Link_ButcherGoods</li>
+            <li MayRequire="daylight.wbsmorelinkf">Link_ButcherBoost</li>
+            <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="van.datools">DA_ButcheringTools</li>
+            <li MayRequire="roo.antyracemod">AT_Chart</li>
+            <li MayRequire="lyn.nto">LYN_Nanocabinet</li>
+            <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_CleaverRack</li>
+            <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_CarvingBoard</li>
+            <li MayRequire="dankpyon.medieval.overhaul">DankPyon_RusticCookingTools</li>
+            <li MayRequire="melondove.wolfeinrace">Wolfein_SurveillanceCamera</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_RobotAssistant</li>
+            <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
+            <li MayRequire="hye.nto">LYN_Nanocabinet</li>
+            <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+        </facilities>
+        <affected>
+            <li MayRequire="solaris.furniturebase">GL_TableButcher</li>
+            <li MayRequire="vanillaexpanded.vfeproduction">VFE_TableButcherElectric</li>
+            <li MayRequire="ludeon.rimworld">TableButcher</li>
+            <li MayRequire="zal.ebt">ElectricTableButcher</li>
+            <li MayRequire="roo.antyracemod">AntyTableButcher</li>
+            <li MayRequire="gloomy.furniture.continued">GL_TableButcher</li>
+            <li MayRequire="mlie.comigosnutrition">COMIGO_SmallerButcherTable</li>
+            <li MayRequire="omni.smallworkbenches">Omni_TableButcherSmol</li>
+            <li MayRequire="xercaine.smallbutchertable">XER_SmallTableButcher</li>
+            <li MayRequire="skullog.ebt">ElectricTableButcher</li>
+            <li MayRequire="xercaine.tribal.furniture">XER_TribalTableButcher</li>
+            <li MayRequire="xercaine.furniture.small">XER_MiniTableButcher</li>
+            <li MayRequire="xercaine.furniture.small">XER_SmallTableButcher</li>
+            <li MayRequire="milple.koreanstylefurniture">milple_TableButcher</li>
+            <li MayRequire="kindseal.ufli">UFLI_Butcher</li>
+        </affected>
+    </LinkableGroupDef>
+</Defs>

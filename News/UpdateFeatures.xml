@@ -964,4 +964,11 @@
 		<assemblyVersion>5.6.0</assemblyVersion>
 		<content>Added support for Korean Style Furniture and More Useful Materials</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v6.0.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_6_0_0</defName>
+		<assemblyVersion>6.0.0</assemblyVersion>
+		<content>Added support for RimWorld v1.7</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
