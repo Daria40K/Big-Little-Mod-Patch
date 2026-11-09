@@ -978,4 +978,11 @@
 		<assemblyVersion>6.1.0</assemblyVersion>
 		<content>## RimWorld v1.6|- Fixed support for Mechalit Core v2, Fast regen 1.7, Vanilla Furniture Expanded||## RimWorld v1.7|- Added support for Small Furniture Next</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v6.1.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_6_1_1</defName>
+		<assemblyVersion>6.1.0</assemblyVersion>
+		<content>Minor fixes</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

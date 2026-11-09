@@ -49,9 +49,6 @@
             <li MayRequire="scpchemfuel.appliances,vanillaexpanded.vfeproduction">CA_ChemfuelStoveLarge</li>
             <li MayRequire="scpchemfuel.appliances">CE_ChemfuelStove</li>
             <li MayRequire="twink.vaultfurniture">VTElectricStove</li>
-            <li MayRequire="farxmai2.vanillafurnitureexpandedpack">FFE_CookingTable</li>
-            <li MayRequire="farxmai2.vanillafurnitureexpandedpack">FFE_MeatMincer</li>
-            <li MayRequire="vanillaexpanded.vfea">VFEA_AncientCookingStation</li>
             <li MayRequire="vanillaexpanded.vcookesushi">VCE_SushiPrepTable</li>
             <li MayRequire="vanillaexpanded.vcooke">VCE_Grill</li>
             <li MayRequire="vanillaexpanded.vcooke">VCE_DeepFrier</li>

@@ -15,13 +15,6 @@
             <li MayRequire="vanillaexpanded.vfemedical">Facility_IVDrip</li>
             <li MayRequire="twink.vaultfurniture">Vaultmedical</li>
             <li MayRequire="twink.vaultfurniture">Vaultmedicallamp</li>
-            <li MayRequire="vanillaexpanded.vfea">VFEA_AncientVitalsMonitor</li>
-            <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeBA</li>
-            <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeBB</li>
-            <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCA</li>
-            <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCB</li>
-            <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCD</li>
-            <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCE</li>
             <li MayRequire="ludeon.rimworld">VitalsMonitor</li>
             <li MayRequire="daylight.rimlifeexfurmod">RLE_AirCondition</li>
             <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
@@ -74,9 +67,6 @@
             <li MayRequire="vanillaexpanded.vfemedical">Bed_CryptoBed</li>
             <li MayRequire="redmattis.bsfurniture">BS_SmolHospitalBed</li>
             <li MayRequire="twink.vaultfurniture">HospitalBedVault</li>
-            <li MayRequire="farxmai2.vanillafurnitureexpandedpack">FFE_AnimalMedTable</li>
-            <li MayRequire="vanillaexpanded.vfea">VFEA_AncientCryptosleepSuspender</li>
-            <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalBase</li>
             <li MayRequire="albion.sparklingworlds.full">GlitterworldHospitalBedSW</li>
             <li MayRequire="ludeon.rimworld">HospitalBed</li>
             <li MayRequire="daylight.rimlifeexfurmod">RLE_AdHospitalBed</li>

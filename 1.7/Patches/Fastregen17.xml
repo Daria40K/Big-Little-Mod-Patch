@@ -69,13 +69,6 @@
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_IVDrip</li>
                         <li MayRequire="twink.vaultfurniture">Vaultmedical</li>
                         <li MayRequire="twink.vaultfurniture">Vaultmedicallamp</li>
-                        <li MayRequire="vanillaexpanded.vfea">VFEA_AncientVitalsMonitor</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeBA</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeBB</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCA</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCB</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCD</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCE</li>
                         <li>VitalsMonitor</li>
                         <li MayRequire="daylight.rimlifeexfurmod">RLE_AirCondition</li>
                         <li MayRequire="mlie.medicalsupplements">MS_DStand</li>

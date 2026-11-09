@@ -94,14 +94,6 @@
                         <li MayRequire="georodin.advancedcommercialserver">ServerRack</li>
                         <li MayRequire="albion.aiuplift">AIUpliftAssistantAUA</li>
                         <li MayRequire="vanillaexpanded.vfecore">Misc_FileCabinet</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeAA</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeBA</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeBB</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeBC</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCA</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCB</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCC</li>
-                        <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCD</li>
                         <li MayRequire="albion.sparklingworlds.full">ComputingSystemSW</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenI</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenII</li>

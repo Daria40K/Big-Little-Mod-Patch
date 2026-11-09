@@ -80,9 +80,6 @@
             <li MayRequire="neronix17.clutterfurniture">FurnitureAssembler</li>
             <li MayRequire="wvc.sergkart.ultraexpansion">WVC_Ultra_GarbageRecyclerBench</li>
             <li MayRequire="twink.vaultfurniture">vt_megabore</li>
-            <li MayRequire="vanillaexpanded.vfea">VFEA_ElectricMendingStation</li>
-            <li MayRequire="vanillaexpanded.vfea">VFEA_FueledMendingStation</li>
-            <li MayRequire="vanillaexpanded.vfea">VFEA_AncientWorkshop</li>
             <li MayRequire="explodoboy.snsambitioncosmic">Table_SNS_Unobtainer</li>
             <li MayRequire="explodoboy.snsambitioncosmic">Table_SNS_Constructor</li>
             <li MayRequire="explodoboy.snsambitioncosmic">Table_SNS_CosmicDrawer</li>
