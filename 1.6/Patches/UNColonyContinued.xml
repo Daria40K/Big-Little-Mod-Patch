@@ -104,30 +104,6 @@
                     </nomatch>
                 </li>
                 <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="SadjuukRefineryA"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="SadjuukRefineryA"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="SadjuukRefineryA"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="SadjuukRefineryA"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
-                <li Class="PatchOperationConditional">
                     <xpath>Defs/ThingDef[defName="SadjuukRefineryB"][not(comps)]</xpath>
                     <match Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="SadjuukRefineryB"]</xpath>
@@ -259,6 +235,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -340,6 +317,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -396,6 +374,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -460,6 +439,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

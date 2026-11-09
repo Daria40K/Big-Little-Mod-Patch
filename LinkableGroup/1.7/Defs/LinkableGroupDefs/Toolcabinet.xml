@@ -21,6 +21,8 @@
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
             <li MayRequire="neronix17.outland.core">Outland_Grindstone</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
             <li MayRequire="twink.vaultfurniture">Vt_server</li>
             <li MayRequire="twink.vaultfurniture">vtcompter</li>
             <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unobtainer_I</li>
@@ -65,6 +67,8 @@
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
             <li MayRequire="xercaine.furniture.small,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+            <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
@@ -138,6 +142,12 @@
             <li MayRequire="xercaine.furniture.small">XER_SmallElectricCrematorium</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumElectricCrematorium</li>
             <li MayRequire="cn.moreusefulmaterials">MUM_MaterialsWorkshop</li>
+            <li MayRequire="rpr13.smallfurniture,OskarPotocki.VFE.Classical">XER_SmallCraftingBench</li>
+            <li MayRequire="rpr13.smallfurniture,OskarPotocki.VFE.Classical">XER_MediumCraftingBench</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.recycling">XER_SmallRecyclingWorkbench</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.recycling">XER_MediumRecyclingWorkbench</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.recycling">XER_SmallElectricRecyclingWorkbench</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.recycling">XER_MediumElectricRecyclingWorkbench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

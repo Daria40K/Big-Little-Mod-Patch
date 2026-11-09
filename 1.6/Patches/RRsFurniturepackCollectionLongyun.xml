@@ -7,6 +7,30 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name="RRBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
@@ -33,6 +57,7 @@
                         <li MayRequire="twink.vaultfurniture">vt_commode</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxEndTable</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxcommode</li>
+                        <li MayRequire="vanillaexpanded.vfecore">Table_LightEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_Wardrobe</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalDresser</li>

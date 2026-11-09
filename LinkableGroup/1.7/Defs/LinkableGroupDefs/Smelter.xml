@@ -23,6 +23,8 @@
             <li MayRequire="daylight.wbsmorelinkf">Link_SmelterGoods</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_SmelterBoost</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
             <li MayRequire="twink.vaultfurniture">Vt_server</li>
             <li MayRequire="twink.vaultfurniture">vtcompter</li>
             <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unobtainer_I</li>
@@ -81,12 +83,15 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_SmelterTable</li>
             <li MayRequire="vanillaexpanded.helixiengas">VHGE_GasPoweredSmelter</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_FueledSmelter</li>
             <li MayRequire="scpchemfuel.appliances">CA_ChemfuelSmelter</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_ElectricSmelterMini</li>
             <li MayRequire="ludeon.rimworld">ElectricSmelter</li>
             <li MayRequire="fueledsmelter.velcroboy333">FueledSmelter</li>
             <li MayRequire="qx.astramilitarum">IG_ImperialCONFabricator</li>
@@ -121,6 +126,9 @@
             <li MayRequire="xercaine.fueledsmelter">XER_ChemfuelPoweredSmelter</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallElectricSmelter</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumElectricSmelter</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallElectricSmelter</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_SmallFueledSmelter</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_MediumFueledSmelter</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

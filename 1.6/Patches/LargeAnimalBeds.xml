@@ -7,6 +7,30 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[@Name="MedPetBedWithQualityBase"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[@Name="MedPetBedWithQualityBase"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[@Name="MedPetBedWithQualityBase"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[@Name="MedPetBedWithQualityBase"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name="MedPetBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>

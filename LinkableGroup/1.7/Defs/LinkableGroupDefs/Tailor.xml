@@ -23,6 +23,8 @@
             <li MayRequire="daylight.wbsmorelinkf">Link_TailorGoods</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_TailorBoost</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_TailorCabinet</li>
             <li MayRequire="twink.vaultfurniture">Vt_server</li>
             <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -74,6 +76,7 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="solaris.furniturebase">GL_HandTailoringBench</li>
@@ -84,8 +87,12 @@
             <li MayRequire="dismarzero.vgp.vgpgardenfabrics">TableElecLoom</li>
             <li MayRequire="dismarzero.vgp.vgpgardenfabricssimplified">TableLoom</li>
             <li MayRequire="dismarzero.vgp.vgpgardenfabricssimplified">TableElecLoom</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_HandTailoringBenchMini</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_ElectricTailoringBenchMini</li>
+            <li MayRequire="albion.sparklingworlds.full">TableWeaverSW</li>
             <li MayRequire="ludeon.rimworld">HandTailoringBench</li>
             <li MayRequire="ludeon.rimworld">ElectricTailoringBench</li>
+            <li MayRequire="albion.sparklingworlds.core">TableWeaverSW</li>
             <li MayRequire="solaris.ratkinracemod">RK_HandTailoringBench</li>
             <li MayRequire="solaris.ratkinracemod">RK_ElectricTailoringBench</li>
             <li MayRequire="thegoofyone.arearugs">TableRugMaking</li>
@@ -110,6 +117,10 @@
             <li MayRequire="xercaine.furniture.small">XER_MediumHandTailoringBench</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumElectricTailoringBench</li>
             <li MayRequire="milple.koreanstylefurniture">milple_HandTailoringBench</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallHandTailoringBench</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallElectricTailoringBench</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MediumHandTailoringBench</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MediumElectricTailoringBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

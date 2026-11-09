@@ -23,6 +23,9 @@
             <li MayRequire="daylight.wbsmorelinkf">Link_MachiningGoods</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_MachiningBoost</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_MachiningCabinet</li>
             <li MayRequire="twink.vaultfurniture">Vt_server</li>
             <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -81,10 +84,13 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+            <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_TableMachiningLarge</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_TableMachiningMini</li>
             <li MayRequire="ludeon.rimworld">TableMachining</li>
             <li MayRequire="obsidiaexpansion.core">OE_ArmorStation</li>
             <li MayRequire="obsidiaexpansion.core">OE_WeaponWorkbench</li>
@@ -142,6 +148,10 @@
             <li MayRequire="ogliss.admech.armoury,None">OGDE_TableMachining</li>
             <li MayRequire="ogliss.admech.armoury,None">OGO_TableMachining</li>
             <li MayRequire="ogliss.admech.armoury,None">OGT_TableMachining</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallTableMachining</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MediumTableMachining</li>
+            <li MayRequire="rpr13.smallfurniture,ceteam.combatextended">XER_SmallAmmoBench</li>
+            <li MayRequire="rpr13.smallfurniture,ceteam.combatextended">XER_MediumAmmoBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

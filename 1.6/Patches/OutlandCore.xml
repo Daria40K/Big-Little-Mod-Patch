@@ -33,6 +33,7 @@
                         <li MayRequire="twink.vaultfurniture">vt_commode</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxEndTable</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxcommode</li>
+                        <li MayRequire="vanillaexpanded.vfecore">Table_LightEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_Wardrobe</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalDresser</li>
@@ -306,6 +307,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -377,6 +379,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -463,6 +466,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -550,6 +554,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -611,6 +616,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -692,6 +698,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -782,6 +789,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -843,6 +851,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -911,6 +920,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -967,6 +977,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -1031,6 +1042,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

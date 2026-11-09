@@ -34,6 +34,8 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_DrugLabGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_DrugLabBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_DrugCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -92,6 +94,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -115,6 +118,9 @@
                         <li MayRequire="neronix17.outland.core">Outland_Grindstone</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_FabricationBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_FabricationCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -174,6 +180,8 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+                        <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -182,6 +190,10 @@
                         <li MayRequire="akn.decorations">AKN_RestoringPlush</li>
                         <li MayRequire="4loris4.morelinkables">SurgicalLamp</li>
                         <li MayRequire="4loris4.morelinkables">SurgicalInstruments</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAD</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_VitalsCentre</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_IVDrip</li>
                         <li MayRequire="twink.vaultfurniture">Vaultmedical</li>
@@ -194,6 +206,7 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCD</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCE</li>
                         <li>VitalsMonitor</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_AirCondition</li>
                         <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
                         <li MayRequire="leion247138.medicalhiv">MedicalIV</li>
                         <li MayRequire="zymex.hospitalsextended">sd_medicaddons_medieval_surg_washpan</li>

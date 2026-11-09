@@ -28,7 +28,10 @@
         </facilities>
         <affected>
             <li MayRequire="solaris.furniturebase">GL_TableButcher</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_ElectButcher</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_ExpandedButcherMeatMaker</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_TableButcherElectric</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_TableButcherMini</li>
             <li MayRequire="ludeon.rimworld">TableButcher</li>
             <li MayRequire="zal.ebt">ElectricTableButcher</li>
             <li MayRequire="roo.antyracemod">AntyTableButcher</li>
@@ -42,6 +45,10 @@
             <li MayRequire="xercaine.furniture.small">XER_SmallTableButcher</li>
             <li MayRequire="milple.koreanstylefurniture">milple_TableButcher</li>
             <li MayRequire="kindseal.ufli">UFLI_Butcher</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MiniTableButcher</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallTableButcher</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_SmallElectricButcher</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_MediumElectricButcher</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

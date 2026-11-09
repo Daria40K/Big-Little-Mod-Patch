@@ -33,6 +33,7 @@
                         <li MayRequire="twink.vaultfurniture">vt_commode</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxEndTable</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxcommode</li>
+                        <li MayRequire="vanillaexpanded.vfecore">Table_LightEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_Wardrobe</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalDresser</li>
@@ -266,6 +267,7 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="mlmlmlm.bluearchivefurniture4">Mini_KitchenB</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

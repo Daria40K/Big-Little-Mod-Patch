@@ -114,6 +114,9 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_MachiningGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_MachiningBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_MachiningCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -172,6 +175,8 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+                        <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -196,6 +201,8 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_TailorGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_TailorBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_TailorCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -247,6 +254,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
                     </value>
                 </li>
             </operations>

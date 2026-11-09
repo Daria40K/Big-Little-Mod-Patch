@@ -31,6 +31,9 @@
             <li MayRequire="neronix17.outerrim.core">OuterRim_HypertechTerminalWide</li>
             <li MayRequire="rimeffect.core">RE_AllianceTerminal</li>
             <li MayRequire="mlie.unfurniture">SadjuukResearchBA</li>
+            <li MayRequire="mlie.unfurniture">SadjuukResearchBB</li>
+            <li MayRequire="mlie.unfurniture">SadjuukResearchBC</li>
+            <li MayRequire="mlie.unfurniture">SadjuukResearchBD</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_ResearchGoods</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_ResearchBoost</li>
             <li MayRequire="vanillaexpanded.vfemedical">Facility_ResearchCounter</li>
@@ -45,6 +48,7 @@
             <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCB</li>
             <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCC</li>
             <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCD</li>
+            <li MayRequire="albion.sparklingworlds.full">ComputingSystemSW</li>
             <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenI</li>
             <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenII</li>
             <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenIII</li>
@@ -67,10 +71,17 @@
             <li MayRequire="dubwise.rimatomics">ResearchReactor</li>
             <li MayRequire="dubwise.rimatomics">WeaponsBench</li>
             <li MayRequire="dubwise.rimatomics">PlutoniumProcessor</li>
+            <li MayRequire="albion.sparklingworlds.core">ComputingSystemSW</li>
             <li MayRequire="yanzihko.ae">ArchoAnalyzer</li>
             <li MayRequire="rimeffect.asarireapers">RE_AsariTerminal</li>
             <li MayRequire="xcomcore.velcroboy333">VBY_XCom_ShadowChamber</li>
             <li MayRequire="neronix17.outland.core">Outland_Bookshelf</li>
+            <li MayRequire="hol.rimputersforked">RP_MechanicalCalculator</li>
+            <li MayRequire="hol.rimputersforked">RP_DifferenceEngine</li>
+            <li MayRequire="hol.rimputersforked">RP_TapeStorage</li>
+            <li MayRequire="hol.rimputersforked">RP_Server</li>
+            <li MayRequire="hol.rimputersforked">RP_SuperComputer</li>
+            <li MayRequire="hol.rimputersforked">Rimputer_quantumcomputer</li>
             <li MayRequire="aranmaho.makai">Makai_Powerlink_Relay</li>
             <li MayRequire="harkon.halo.unscfaction">HALO_UNSC_ResearchTerminal</li>
             <li MayRequire="grimworld.core">GW_Cogitator</li>
@@ -134,10 +145,12 @@
             <li MayRequire="xercaine.furniture.small">XER_SmallMultiAnalyzer</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
             <li MayRequire="kindseal.ufli,adaptive.storage.framework">UFLI_Bookshelf_AS</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallMultiAnalyzer</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outerrim.core">OuterRim_HypertechResearchBench</li>
             <li MayRequire="rimeffect.core">RE_SpacerTechResearchBench</li>
+            <li MayRequire="mlie.unfurniture">SadjuukResearchAC</li>
             <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchCA</li>
             <li MayRequire="ludeon.rimworld">HiTechResearchBench</li>
             <li MayRequire="mlie.hightechlaboratoryfacilities">LabStation</li>
@@ -148,9 +161,12 @@
             <li MayRequire="omni.smallworkbenches">Omni_HiTechResearchBenchSmol</li>
             <li MayRequire="rimeffectrenegade.core">RE_SpacerTechResearchBench</li>
             <li MayRequire="rimeffect.core">RE_SpacerTechResearchBench</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_HiTechResearchBenchMini</li>
             <li MayRequire="blackmarket420.xenotype.doberkin">Doberkin_MultiAnalyzer</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallHiTechResearchBench</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumHiTechResearchBench</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallHiTechResearchBench</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MediumHiTechResearchBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

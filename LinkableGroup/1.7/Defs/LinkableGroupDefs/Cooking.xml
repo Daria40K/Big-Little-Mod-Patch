@@ -42,6 +42,7 @@
             <li MayRequire="heis.edo.themed.expansion">HSElectricKamado</li>
             <li MayRequire="solaris.furniturebase">RGK_FueledStove</li>
             <li MayRequire="solaris.furniturebase">GL_ElectricStove</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_KitchenTable</li>
             <li MayRequire="cixwow.helixiengasproduction">VFE_TableStoveLargeGas</li>
             <li MayRequire="vanillaexpanded.helixiengas">VHGE_GasPoweredStove</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_TableStoveLarge</li>
@@ -56,6 +57,8 @@
             <li MayRequire="vanillaexpanded.vcooke">VCE_DeepFrier</li>
             <li MayRequire="vanillaexpanded.vcooke">VCE_CanningMachine</li>
             <li MayRequire="vanillaexpanded.vcooke">VCE_CondimentPrepTable</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_FueledStoveMini</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_ElectricStoveMini</li>
             <li MayRequire="ludeon.rimworld">ElectricStove</li>
             <li MayRequire="ludeon.rimworld">FueledStove</li>
             <li MayRequire="rimeffect.extendedcut">RE_PreFabStove</li>
@@ -138,6 +141,15 @@
             <li MayRequire="milple.koreanstylefurniture">milple_FueledStove</li>
             <li MayRequire="zal.morearchotechgarbage,None">MAG_ArchotechCookingStove</li>
             <li MayRequire="kindseal.ufli">UFLI_stove</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MiniElectricStove</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MiniFueledStove</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallElectricStove</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallFueledStove</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vcookesushi">XER_SmallSushiPrepTable</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vcookesushi">XER_MediumSushiPrepTable</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vcookehaute">XER_SmallElectricHauteSection</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vcookehaute">XER_MediumElectricHauteSection</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vcooke">XER_SmallCondimentPrepTable</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

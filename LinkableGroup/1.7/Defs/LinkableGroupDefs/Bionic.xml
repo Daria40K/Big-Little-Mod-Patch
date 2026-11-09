@@ -27,6 +27,9 @@
             <li MayRequire="neronix17.outland.core">Outland_Grindstone</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_FabricationBoost</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
             <li MayRequire="twink.vaultfurniture">Vt_server</li>
             <li MayRequire="twink.vaultfurniture">vtcompter</li>
             <li MayRequire="vanillaexpanded.vgeneticse">GR_NutrientVat</li>
@@ -82,6 +85,7 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="daniledman.mechalitcore">MechaLab</li>

@@ -25,6 +25,7 @@
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
         </facilities>
         <affected>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_BreweryMini</li>
             <li MayRequire="ludeon.rimworld">Brewery</li>
             <li MayRequire="mlie.comigosnutrition">COMIGO_SmallerBrewery</li>
             <li MayRequire="samael.falloutdrinks">NukaColaWorkbench</li>
@@ -33,6 +34,10 @@
             <li MayRequire="xercaine.furniture.small">XER_SmallBrewery</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumBrewery</li>
             <li MayRequire="milple.koreanstylefurniture">milple_Brewery</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallBrewery</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MediumBrewery</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vbrewe">XER_SmallTableBar</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vbrewe">XER_MediumTableBar</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

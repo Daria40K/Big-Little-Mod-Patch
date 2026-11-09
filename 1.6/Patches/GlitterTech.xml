@@ -7,78 +7,6 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
-                <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="Matterfab"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="Matterfab"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="Matterfab"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="Matterfab"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
-                <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="Electrolyzer"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="Electrolyzer"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="Electrolyzer"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="Electrolyzer"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
-                <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="RobAssem"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="RobAssem"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="RobAssem"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="RobAssem"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="PharmaTable"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
@@ -148,6 +76,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -234,6 +163,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

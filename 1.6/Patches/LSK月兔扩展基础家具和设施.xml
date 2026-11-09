@@ -105,6 +105,7 @@
                         <li MayRequire="twink.vaultfurniture">vt_commode</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxEndTable</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxcommode</li>
+                        <li MayRequire="vanillaexpanded.vfecore">Table_LightEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_Wardrobe</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalDresser</li>

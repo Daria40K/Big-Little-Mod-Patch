@@ -80,6 +80,7 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_Still</li>
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_Rotovape</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -109,6 +110,7 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_RobotAssistant</li>
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -145,6 +147,7 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="mlmlmlm.bluearchivefurniture4">Mini_KitchenB</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

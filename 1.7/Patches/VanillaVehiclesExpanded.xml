@@ -26,6 +26,8 @@
                         <li MayRequire="4loris4.morelinkables">ToolCabinetC</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_FabricationBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_FabricationCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -78,6 +80,8 @@
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="xercaine.furniture.small,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+                        <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
                     </value>
                 </li>
             </operations>

@@ -109,6 +109,9 @@
                         <li MayRequire="neronix17.outerrim.core">OuterRim_HypertechTerminalWide</li>
                         <li MayRequire="rimeffect.core">RE_AllianceTerminal</li>
                         <li MayRequire="mlie.unfurniture">SadjuukResearchBA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBD</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_ResearchGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_ResearchBoost</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_ResearchCounter</li>
@@ -123,6 +126,7 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCB</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCC</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCD</li>
+                        <li MayRequire="albion.sparklingworlds.full">ComputingSystemSW</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenI</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenII</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenIII</li>
@@ -145,10 +149,17 @@
                         <li MayRequire="dubwise.rimatomics">ResearchReactor</li>
                         <li MayRequire="dubwise.rimatomics">WeaponsBench</li>
                         <li MayRequire="dubwise.rimatomics">PlutoniumProcessor</li>
+                        <li MayRequire="albion.sparklingworlds.core">ComputingSystemSW</li>
                         <li MayRequire="yanzihko.ae">ArchoAnalyzer</li>
                         <li MayRequire="rimeffect.asarireapers">RE_AsariTerminal</li>
                         <li MayRequire="xcomcore.velcroboy333">VBY_XCom_ShadowChamber</li>
                         <li MayRequire="neronix17.outland.core">Outland_Bookshelf</li>
+                        <li MayRequire="hol.rimputersforked">RP_MechanicalCalculator</li>
+                        <li MayRequire="hol.rimputersforked">RP_DifferenceEngine</li>
+                        <li MayRequire="hol.rimputersforked">RP_TapeStorage</li>
+                        <li MayRequire="hol.rimputersforked">RP_Server</li>
+                        <li MayRequire="hol.rimputersforked">RP_SuperComputer</li>
+                        <li MayRequire="hol.rimputersforked">Rimputer_quantumcomputer</li>
                         <li MayRequire="aranmaho.makai">Makai_Powerlink_Relay</li>
                         <li MayRequire="harkon.halo.unscfaction">HALO_UNSC_ResearchTerminal</li>
                         <li MayRequire="grimworld.core">GW_Cogitator</li>
@@ -212,6 +223,7 @@
                         <li MayRequire="xercaine.furniture.small">XER_SmallMultiAnalyzer</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="kindseal.ufli,adaptive.storage.framework">UFLI_Bookshelf_AS</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallMultiAnalyzer</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -304,6 +316,8 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_DrugLabGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_DrugLabBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_DrugCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -362,6 +376,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -386,6 +401,9 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_MachiningGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_MachiningBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_MachiningCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -444,6 +462,8 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+                        <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -457,6 +477,9 @@
                         <li MayRequire="solaris.furniturebase">GL_Bookshelf</li>
                         <li MayRequire="4loris4.morelinkables">ToolCabinetC</li>
                         <li MayRequire="mlie.unfurniture">SadjuukResearchBA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBD</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_ResearchCounter</li>
                         <li MayRequire="vanillaexpanded.vfecore">Misc_FileCabinet</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeAA</li>
@@ -469,6 +492,9 @@
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_Bookshelf</li>
                         <li MayRequire="mlie.morefurniture">Anon2FileCabinet</li>
                         <li MayRequire="neronix17.outland.core">Outland_Bookshelf</li>
+                        <li MayRequire="hol.rimputersforked">RP_MechanicalCalculator</li>
+                        <li MayRequire="hol.rimputersforked">RP_DifferenceEngine</li>
+                        <li MayRequire="hol.rimputersforked">RP_TapeStorage</li>
                         <li MayRequire="lyn.nto">LYN_Nanocabinet</li>
                         <li MayRequire="gloomy.furniture.continued">GL_Bookshelf</li>
                         <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_NotesStack</li>
@@ -505,6 +531,8 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_ArtGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_ArtBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unobtainer_I</li>
@@ -551,6 +579,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -575,6 +604,8 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_SmelterGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_SmelterBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unobtainer_I</li>
@@ -633,6 +664,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -657,6 +689,9 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_SmithingGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_SmithingBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_SmithyCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -720,6 +755,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -744,6 +780,8 @@
                         <li MayRequire="daylight.wbsmorelinkf">Link_TailorGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_TailorBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_TailorCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -795,6 +833,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
                     </value>
                 </li>
             </operations>

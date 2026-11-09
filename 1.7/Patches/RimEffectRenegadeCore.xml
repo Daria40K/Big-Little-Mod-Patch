@@ -37,6 +37,9 @@
                         <li MayRequire="neronix17.outerrim.core">OuterRim_HypertechTerminalWide</li>
                         <li MayRequire="rimeffect.core">RE_AllianceTerminal</li>
                         <li MayRequire="mlie.unfurniture">SadjuukResearchBA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukResearchBD</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_ResearchGoods</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_ResearchBoost</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_ResearchCounter</li>
@@ -51,6 +54,7 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCB</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCC</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukResearchUpgradeCD</li>
+                        <li MayRequire="albion.sparklingworlds.full">ComputingSystemSW</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenI</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenII</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unlocker_GenIII</li>
@@ -73,10 +77,17 @@
                         <li MayRequire="dubwise.rimatomics">ResearchReactor</li>
                         <li MayRequire="dubwise.rimatomics">WeaponsBench</li>
                         <li MayRequire="dubwise.rimatomics">PlutoniumProcessor</li>
+                        <li MayRequire="albion.sparklingworlds.core">ComputingSystemSW</li>
                         <li MayRequire="yanzihko.ae">ArchoAnalyzer</li>
                         <li MayRequire="rimeffect.asarireapers">RE_AsariTerminal</li>
                         <li MayRequire="xcomcore.velcroboy333">VBY_XCom_ShadowChamber</li>
                         <li MayRequire="neronix17.outland.core">Outland_Bookshelf</li>
+                        <li MayRequire="hol.rimputersforked">RP_MechanicalCalculator</li>
+                        <li MayRequire="hol.rimputersforked">RP_DifferenceEngine</li>
+                        <li MayRequire="hol.rimputersforked">RP_TapeStorage</li>
+                        <li MayRequire="hol.rimputersforked">RP_Server</li>
+                        <li MayRequire="hol.rimputersforked">RP_SuperComputer</li>
+                        <li MayRequire="hol.rimputersforked">Rimputer_quantumcomputer</li>
                         <li MayRequire="aranmaho.makai">Makai_Powerlink_Relay</li>
                         <li MayRequire="harkon.halo.unscfaction">HALO_UNSC_ResearchTerminal</li>
                         <li MayRequire="grimworld.core">GW_Cogitator</li>
@@ -140,6 +151,7 @@
                         <li MayRequire="xercaine.furniture.small">XER_SmallMultiAnalyzer</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="kindseal.ufli,adaptive.storage.framework">UFLI_Bookshelf_AS</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallMultiAnalyzer</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -162,6 +174,12 @@
                         <li MayRequire="rimeffect.core">RE_PrefabBedsideTable</li>
                         <li MayRequire="rimeffect.core">RE_PrefabBedsideTableLamp</li>
                         <li MayRequire="rimeffect.core">RE_PrefabWardrobe</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBC</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Cupboard</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Wardrobe</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Mirror</li>
@@ -198,6 +216,8 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukBedroomUpgradeCD</li>
                         <li>EndTable</li>
                         <li>Dresser</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_KazariKatana</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_Kouro</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneDresser</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneEndTable</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneEndTableWithLamp</li>
@@ -397,6 +417,10 @@
                         <li MayRequire="milple.koreanstylefurniture">milple_Dresser</li>
                         <li MayRequire="milple.koreanstylefurniture">milple_DresserHigh</li>
                         <li MayRequire="kindseal.ufli,adaptive.storage.framework">UFLI_Wardrobe_AS</li>
+                        <li MayRequire="rpr13.smallfurniture">SmallDresser</li>
+                        <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallRoyalDresser</li>
+                        <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallWardrobe</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallRoyalWardrobe</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -420,6 +444,9 @@
                         <li MayRequire="neronix17.outland.core">Outland_Grindstone</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_FabricationBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
                         <li MayRequire="vanillaexpanded.vfeproduction">VFE_FabricationCabinet</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -479,6 +506,8 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+                        <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -487,6 +516,10 @@
                         <li MayRequire="akn.decorations">AKN_RestoringPlush</li>
                         <li MayRequire="4loris4.morelinkables">SurgicalLamp</li>
                         <li MayRequire="4loris4.morelinkables">SurgicalInstruments</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAD</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_VitalsCentre</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_IVDrip</li>
                         <li MayRequire="twink.vaultfurniture">Vaultmedical</li>
@@ -499,6 +532,7 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCD</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCE</li>
                         <li>VitalsMonitor</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_AirCondition</li>
                         <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
                         <li MayRequire="leion247138.medicalhiv">MedicalIV</li>
                         <li MayRequire="zymex.hospitalsextended">sd_medicaddons_medieval_surg_washpan</li>

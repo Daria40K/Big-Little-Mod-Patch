@@ -31,54 +31,6 @@
                         </match>
                     </nomatch>
                 </li>
-                <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="VFES_ModernArmchair"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="VFES_ModernArmchair"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="VFES_ModernArmchair"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="VFES_ModernArmchair"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
-                <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="VFES_ModernCouch"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="VFES_ModernCouch"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="VFES_ModernCouch"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="VFES_ModernCouch"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name="VFES_AdvancedBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
@@ -105,6 +57,7 @@
                         <li MayRequire="twink.vaultfurniture">vt_commode</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxEndTable</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxcommode</li>
+                        <li MayRequire="vanillaexpanded.vfecore">Table_LightEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_Wardrobe</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalDresser</li>

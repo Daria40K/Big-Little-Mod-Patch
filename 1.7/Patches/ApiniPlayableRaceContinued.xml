@@ -27,6 +27,12 @@
                         <li MayRequire="rimeffect.core">RE_PrefabBedsideTable</li>
                         <li MayRequire="rimeffect.core">RE_PrefabBedsideTableLamp</li>
                         <li MayRequire="rimeffect.core">RE_PrefabWardrobe</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBC</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Cupboard</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Wardrobe</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Mirror</li>
@@ -63,6 +69,8 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukBedroomUpgradeCD</li>
                         <li>EndTable</li>
                         <li>Dresser</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_KazariKatana</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_Kouro</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneDresser</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneEndTable</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneEndTableWithLamp</li>
@@ -262,6 +270,10 @@
                         <li MayRequire="milple.koreanstylefurniture">milple_Dresser</li>
                         <li MayRequire="milple.koreanstylefurniture">milple_DresserHigh</li>
                         <li MayRequire="kindseal.ufli,adaptive.storage.framework">UFLI_Wardrobe_AS</li>
+                        <li MayRequire="rpr13.smallfurniture">SmallDresser</li>
+                        <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallRoyalDresser</li>
+                        <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallWardrobe</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallRoyalWardrobe</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -290,6 +302,9 @@
                         <li MayRequire="neronix17.outland.core">Outland_Grindstone</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_FabricationBoost</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
                         <li MayRequire="vanillaexpanded.vgeneticse">GR_NutrientVat</li>
@@ -345,6 +360,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
                     </value>
                 </li>
             </operations>

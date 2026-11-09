@@ -28,6 +28,8 @@
             <li MayRequire="daylight.wbsmorelinkf">Link_DrugLabGoods</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_DrugLabBoost</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_DrugCabinet</li>
             <li MayRequire="twink.vaultfurniture">Vt_server</li>
             <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -86,11 +88,13 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="xavior.glittertech">PharmaTable</li>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_TableDrugLabElectric</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_DrugLabMini</li>
             <li MayRequire="ludeon.rimworld">DrugLab</li>
             <li MayRequire="mlie.medicalsupplements">MSStimLab</li>
             <li MayRequire="qx.astramilitarum">ImperialMedicalFab</li>
@@ -106,6 +110,10 @@
             <li MayRequire="hye.nto">Nanobiolab</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallDrugLab</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumDrugLab</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallDrugLab</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MediumDrugLab</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_SmallElectricDrugLab</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_MediumElectricDrugLab</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

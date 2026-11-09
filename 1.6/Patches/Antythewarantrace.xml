@@ -34,6 +34,7 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_RobotAssistant</li>
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -121,6 +122,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -246,6 +248,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

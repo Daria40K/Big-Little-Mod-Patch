@@ -28,6 +28,7 @@
             <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_RobotAssistant</li>
             <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
             <li MayRequire="hye.nto">LYN_Nanocabinet</li>
+            <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
         </facilities>
         <affected>
             <li MayRequire="daylight.rlesexpansionproductps">RLE_ElectButcher</li>

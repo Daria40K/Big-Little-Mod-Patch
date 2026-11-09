@@ -51,6 +51,12 @@
                         <li MayRequire="rimeffect.core">RE_PrefabBedsideTable</li>
                         <li MayRequire="rimeffect.core">RE_PrefabBedsideTableLamp</li>
                         <li MayRequire="rimeffect.core">RE_PrefabWardrobe</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureAC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukFurnitureBC</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Cupboard</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Wardrobe</li>
                         <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Mirror</li>
@@ -87,6 +93,8 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukBedroomUpgradeCD</li>
                         <li>EndTable</li>
                         <li>Dresser</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_KazariKatana</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_Kouro</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneDresser</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneEndTable</li>
                         <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneEndTableWithLamp</li>
@@ -286,6 +294,10 @@
                         <li MayRequire="milple.koreanstylefurniture">milple_Dresser</li>
                         <li MayRequire="milple.koreanstylefurniture">milple_DresserHigh</li>
                         <li MayRequire="kindseal.ufli,adaptive.storage.framework">UFLI_Wardrobe_AS</li>
+                        <li MayRequire="rpr13.smallfurniture">SmallDresser</li>
+                        <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallRoyalDresser</li>
+                        <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallWardrobe</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallRoyalWardrobe</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -294,6 +306,10 @@
                         <li MayRequire="akn.decorations">AKN_RestoringPlush</li>
                         <li MayRequire="4loris4.morelinkables">SurgicalLamp</li>
                         <li MayRequire="4loris4.morelinkables">SurgicalInstruments</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAD</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_VitalsCentre</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_IVDrip</li>
                         <li MayRequire="twink.vaultfurniture">Vaultmedical</li>
@@ -306,6 +322,7 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCD</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCE</li>
                         <li>VitalsMonitor</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_AirCondition</li>
                         <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
                         <li MayRequire="leion247138.medicalhiv">MedicalIV</li>
                         <li MayRequire="zymex.hospitalsextended">sd_medicaddons_medieval_surg_washpan</li>
@@ -358,6 +375,7 @@
                         <li MayRequire="melondove.wolfeinrace">Wolfein_3x3_Carpet</li>
                         <li MayRequire="melondove.wolfeinrace">Wolfein_Doormat</li>
                         <li MayRequire="vanillaexpanded.vfecore">VFE_CoffeeTable</li>
+                        <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallCoffeeTable</li>
                     </value>
                 </li>
             </operations>

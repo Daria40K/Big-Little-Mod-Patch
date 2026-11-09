@@ -22,6 +22,9 @@
             <li MayRequire="neronix17.outland.core">Outland_Grindstone</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_FabricationBoost</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_CMTCleaner</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_FabricationCabinet</li>
             <li MayRequire="twink.vaultfurniture">Vt_server</li>
             <li MayRequire="twink.vaultfurniture">vtcompter</li>
@@ -81,6 +84,8 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+            <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="xavior.glittertech">Matterfab</li>
@@ -90,16 +95,19 @@
             <li MayRequire="neronix17.outerrim.core">OuterRim_HypertechFabricator</li>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
             <li MayRequire="rimeffect.core">RE_ManufacturingBench</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_ComponentMT</li>
             <li MayRequire="vanillaexpanded.vfeproduction">VFE_ComponentFabricationBench</li>
             <li MayRequire="neronix17.clutterfurniture">SteelRefiner</li>
             <li MayRequire="twink.vaultfurniture">vt_workbench</li>
             <li MayRequire="vanya.outsource.automechnekotest">SZMechNeko_NekoAssemblier</li>
+            <li MayRequire="albion.sparklingworlds.full">MechaniteAssemblySW</li>
             <li MayRequire="ludeon.rimworld">FabricationBench</li>
             <li MayRequire="obsidiaexpansion.core">OE_SynthesisPrinter</li>
             <li MayRequire="aelanna.eccentrictech.core">EccentricNanofabricator</li>
             <li MayRequire="aelanna.eccentrictech.core">EccentricNanoassembler</li>
             <li MayRequire="qx.astramilitarum">ImperialFabricator</li>
             <li MayRequire="elstrages.cyberneticstorm">CS_MaterialsBench</li>
+            <li MayRequire="albion.sparklingworlds.core">MechaniteAssemblySW</li>
             <li MayRequire="cp.doom">RHBench_UACFabricationBench</li>
             <li MayRequire="australden.fusion.weapons2.0">ParticleAssembler</li>
             <li MayRequire="ahndemi.panieltheautomata">PN_AutomatonBench</li>
@@ -124,6 +132,7 @@
             <li MayRequire="tyll.core">ShengWuWork</li>
             <li MayRequire="m3.continued.jangodsoul.theforge.anvil">JDSForgeFabricationbench</li>
             <li MayRequire="harkon.halo.unscfaction">HALO_UNSC_Assembler</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_FabricationBenchMini</li>
             <li MayRequire="vanillaexpanded.gravship">VGE_CompactFabBench</li>
             <li MayRequire="sunsetmoderteam.sunsettechnology3">Tablecy</li>
             <li MayRequire="sunsetmoderteam.sunsettechnology3">AdvancedProductionPlatform_cy</li>
@@ -145,6 +154,10 @@
             <li MayRequire="redacted.segmentum.childrenoftheomnissiah,vanillaexpanded.vchemfuele">Seg_COTO_CraftingTableChemfuel</li>
             <li MayRequire="redacted.segmentum.childrenoftheomnissiah,VanillaExpanded.HelixienGas">Seg_COTO_CraftingTableHelixien</li>
             <li MayRequire="shanaki97.starcraftarsenal">STerran_EngineeringBench</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallFabricationBench</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_SmallAssemblyBench</li>
+            <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_MediumAssemblyBench</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MediumFabricationBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

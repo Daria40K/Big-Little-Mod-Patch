@@ -7,30 +7,6 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
-                <li Class="PatchOperationConditional">
-                    <xpath>Defs/ThingDef[defName="TableCarpenter"][not(comps)]</xpath>
-                    <match Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="TableCarpenter"]</xpath>
-                        <value>
-                            <comps>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </comps>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationConditional">
-                        <xpath>Defs/ThingDef[defName="TableCarpenter"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="TableCarpenter"]/comps</xpath>
-                            <value>
-                                <li Class="CompProperties_AffectedByFacilities">
-                                    <linkableFacilities />
-                                </li>
-                            </value>
-                        </match>
-                    </nomatch>
-                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="TableCarpenter"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
@@ -85,6 +61,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

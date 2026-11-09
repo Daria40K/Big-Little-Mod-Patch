@@ -75,6 +75,7 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+            <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
         </facilities>
         <affected>
             <li MayRequire="daniledman.mechalitcore">MechaLab</li>
@@ -112,6 +113,7 @@
             <li MayRequire="rah.rbse">BionicWorkbench</li>
             <li MayRequire="rah.rbse">AdvancedMedicalStation</li>
             <li MayRequire="redacted.segmentum.childrenoftheomnissiah">Seg_COTO_AugmeticsTable</li>
+            <li MayRequire="rabo9d.godlyimplants">TableArch</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

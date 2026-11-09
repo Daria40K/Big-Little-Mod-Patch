@@ -27,6 +27,7 @@
             <li MayRequire="twink.vaultfurniture">vt_commode</li>
             <li MayRequire="twink.vaultfurniture">vt_luxEndTable</li>
             <li MayRequire="twink.vaultfurniture">vt_luxcommode</li>
+            <li MayRequire="vanillaexpanded.vfecore">Table_LightEndTable</li>
             <li MayRequire="vanillaexpanded.vfecore">Table_Wardrobe</li>
             <li MayRequire="vanillaexpanded.vfecore">Table_RoyalEndTable</li>
             <li MayRequire="vanillaexpanded.vfecore">Table_RoyalDresser</li>
@@ -332,7 +333,7 @@
             <li MayRequire="kindseal.ufli">UFLI_DoubleBed</li>
             <li MayRequire="kindseal.ufli">UFLI_TripleBed</li>
             <li MayRequire="kindseal.ufli">UFLI_4PBed</li>
-            <li MayRequire="kindseal.ufli">UFLI_Crib</li>
+            <li MayRequire="kindseal.ufli,Ludeon.RimWorld.Biotech">UFLI_Crib</li>
             <li MayRequire="melondove.wolfeinrace">Wolfein_SingleBed</li>
             <li MayRequire="melondove.wolfeinrace">Wolfein_DoubleBed</li>
             <li MayRequire="melondove.wolfeinrace,Ludeon.RimWorld.Biotech">Wolfein_Crib</li>

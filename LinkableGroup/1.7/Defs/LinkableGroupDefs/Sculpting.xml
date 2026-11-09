@@ -23,6 +23,8 @@
             <li MayRequire="daylight.wbsmorelinkf">Link_ArtGoods</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_ArtBoost</li>
             <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+            <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
             <li MayRequire="twink.vaultfurniture">Vt_server</li>
             <li MayRequire="twink.vaultfurniture">vtcompter</li>
             <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unobtainer_I</li>
@@ -69,16 +71,21 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
         </facilities>
         <affected>
             <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
+            <li MayRequire="mlie.tinyworkbenchs">TWB_TableSculptingMini</li>
             <li MayRequire="ludeon.rimworld">TableSculpting</li>
+            <li MayRequire="ryuu.rimworld.electricartbench">ElectricArtBench</li>
             <li MayRequire="zal.artbenchelectric">TableArtElectric</li>
             <li MayRequire="omni.smallworkbenches">Omni_TableSculptingSmol</li>
             <li MayRequire="kikohi.jewelry">LaserTableSculpting</li>
             <li MayRequire="xercaine.tribal.furniture">XER_TribalTableSculpting</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallTableSculpting</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumTableSculpting</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallTableSculpting</li>
+            <li MayRequire="rpr13.smallfurniture">XER_MediumTableSculpting</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

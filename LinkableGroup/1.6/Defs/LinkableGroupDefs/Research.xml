@@ -49,6 +49,7 @@
             <li MayRequire="hye.nto">LYN_Nanocabinet</li>
             <li MayRequire="kindseal.ufli">UFLI_CabinetF</li>
             <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
+            <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
         </facilities>
         <affected>
             <li MayRequire="mlie.unfurniture">SadjuukResearchAA</li>

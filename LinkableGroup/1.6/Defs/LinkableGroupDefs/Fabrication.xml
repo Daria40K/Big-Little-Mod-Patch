@@ -85,6 +85,7 @@
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcGrindingWheel</li>
             <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+            <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
         </facilities>
         <affected>
             <li MayRequire="xavior.glittertech">Matterfab</li>
@@ -155,6 +156,7 @@
             <li MayRequire="xercaine.furniture.small">XER_MediumFabricationBench</li>
             <li MayRequire="redacted.segmentum.childrenoftheomnissiah,vanillaexpanded.vchemfuele">Seg_COTO_CraftingTableChemfuel</li>
             <li MayRequire="redacted.segmentum.childrenoftheomnissiah,VanillaExpanded.HelixienGas">Seg_COTO_CraftingTableHelixien</li>
+            <li MayRequire="shanaki97.starcraftarsenal">STerran_EngineeringBench</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

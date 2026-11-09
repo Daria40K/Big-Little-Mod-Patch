@@ -7,6 +7,30 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="GasStove"][not(comps)]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="GasStove"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </comps>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="GasStove"]/comps[not(li[@Class="CompProperties_AffectedByFacilities"])]</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="GasStove"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_AffectedByFacilities">
+                                    <linkableFacilities />
+                                </li>
+                            </value>
+                        </match>
+                    </nomatch>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="GasStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
@@ -41,6 +65,7 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="mlmlmlm.bluearchivefurniture4">Mini_KitchenB</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -131,6 +156,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcBellows</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

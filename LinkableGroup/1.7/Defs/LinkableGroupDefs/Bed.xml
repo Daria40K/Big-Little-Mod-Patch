@@ -21,6 +21,12 @@
             <li MayRequire="rimeffect.core">RE_PrefabBedsideTable</li>
             <li MayRequire="rimeffect.core">RE_PrefabBedsideTableLamp</li>
             <li MayRequire="rimeffect.core">RE_PrefabWardrobe</li>
+            <li MayRequire="mlie.unfurniture">SadjuukFurnitureAA</li>
+            <li MayRequire="mlie.unfurniture">SadjuukFurnitureAB</li>
+            <li MayRequire="mlie.unfurniture">SadjuukFurnitureAC</li>
+            <li MayRequire="mlie.unfurniture">SadjuukFurnitureBA</li>
+            <li MayRequire="mlie.unfurniture">SadjuukFurnitureBB</li>
+            <li MayRequire="mlie.unfurniture">SadjuukFurnitureBC</li>
             <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Cupboard</li>
             <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Wardrobe</li>
             <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_Mirror</li>
@@ -57,6 +63,8 @@
             <li MayRequire="mlie.uncolonyvanilla">SadjuukBedroomUpgradeCD</li>
             <li MayRequire="ludeon.rimworld">EndTable</li>
             <li MayRequire="ludeon.rimworld">Dresser</li>
+            <li MayRequire="daylight.rimlifeexfurmod">RLE_KazariKatana</li>
+            <li MayRequire="daylight.rimlifeexfurmod">RLE_Kouro</li>
             <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneDresser</li>
             <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneEndTable</li>
             <li MayRequire="neronix17.outland.furnitureanddecor">Outland_StoneEndTableWithLamp</li>
@@ -256,6 +264,10 @@
             <li MayRequire="milple.koreanstylefurniture">milple_Dresser</li>
             <li MayRequire="milple.koreanstylefurniture">milple_DresserHigh</li>
             <li MayRequire="kindseal.ufli,adaptive.storage.framework">UFLI_Wardrobe_AS</li>
+            <li MayRequire="rpr13.smallfurniture">SmallDresser</li>
+            <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallRoyalDresser</li>
+            <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallWardrobe</li>
+            <li MayRequire="rpr13.smallfurniture">XER_SmallRoyalWardrobe</li>
         </facilities>
         <affected>
             <li MayRequire="heis.edo.themed.expansion">HS_RoughFuton</li>
@@ -271,6 +283,8 @@
             <li MayRequire="daniledman.mechalitcore">FirstClassBed</li>
             <li MayRequire="neronix17.outland.core">OutlandBedBase</li>
             <li MayRequire="rimeffect.core">RE_PrefabDoubleBed</li>
+            <li MayRequire="mlie.unfurniture">SadjuukBedBaseA</li>
+            <li MayRequire="mlie.unfurniture">SadjuukBedBaseB</li>
             <li MayRequire="rimeffect.core">RE_PrefabBed</li>
             <li MayRequire="mlie.sdgoodnight">SDGoodnightBedBase</li>
             <li MayRequire="mingtuwuxiang.gothicdecorative">MUS_Gothicstyle_DoubleSofa</li>
@@ -288,6 +302,10 @@
             <li MayRequire="mlie.uncolonyvanilla">SadjuukBedroomBase</li>
             <li MayRequire="ludeon.rimworld">Bedroll</li>
             <li MayRequire="ludeon.rimworld">BedrollDouble</li>
+            <li MayRequire="daylight.rimlifeexfurmod">REL_WoolBed</li>
+            <li MayRequire="daylight.rimlifeexfurmod">REL_WoolDoubleBed</li>
+            <li MayRequire="daylight.rimlifeexfurmod">REL_Bed</li>
+            <li MayRequire="daylight.rimlifeexfurmod">RLE_DoubleBed</li>
             <li MayRequire="spoonshortage.rimkea">PILFURBed</li>
             <li MayRequire="spoonshortage.rimkea">SNOREGGSingle</li>
             <li MayRequire="spoonshortage.rimkea">SNOREGGDouble</li>

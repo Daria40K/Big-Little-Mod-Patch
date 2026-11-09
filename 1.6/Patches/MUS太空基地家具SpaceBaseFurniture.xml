@@ -7,8 +7,8 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
-                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
-                    <xpath>Defs/ThingDef[MUS_SpaceBase_Crib]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MUS_SpaceBase_Bed" or defName="MUS_SpaceBase_BedV" or defName="MUS_SpaceBase_DoubleBed" or defName="MUS_SpaceBase_DoubleBedV"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
                         <li MayRequire="ludeon.rimworld.ideology">SleepAccelerator</li>
                         <li MayRequire="akn.decorations">AKN_ComfortingPlush</li>
@@ -33,6 +33,7 @@
                         <li MayRequire="twink.vaultfurniture">vt_commode</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxEndTable</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxcommode</li>
+                        <li MayRequire="vanillaexpanded.vfecore">Table_LightEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_Wardrobe</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalDresser</li>
@@ -232,8 +233,8 @@
                         <li MayRequire="milple.koreanstylefurniture">milple_DresserHigh</li>
                     </value>
                 </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="MUS_SpaceBase_Bed" or defName="MUS_SpaceBase_BedV" or defName="MUS_SpaceBase_DoubleBed" or defName="MUS_SpaceBase_DoubleBedV"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+                    <xpath>Defs/ThingDef[defName="MUS_SpaceBase_Crib"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
                         <li MayRequire="ludeon.rimworld.ideology">SleepAccelerator</li>
                         <li MayRequire="akn.decorations">AKN_ComfortingPlush</li>
@@ -258,6 +259,7 @@
                         <li MayRequire="twink.vaultfurniture">vt_commode</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxEndTable</li>
                         <li MayRequire="twink.vaultfurniture">vt_luxcommode</li>
+                        <li MayRequire="vanillaexpanded.vfecore">Table_LightEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_Wardrobe</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalEndTable</li>
                         <li MayRequire="vanillaexpanded.vfecore">Table_RoyalDresser</li>

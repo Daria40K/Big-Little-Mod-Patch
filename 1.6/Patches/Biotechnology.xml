@@ -133,6 +133,7 @@
                         <li MayRequire="tw.nrh.furniture">NRH_HANS_Bookshelf</li>
                         <li MayRequire="aoba.fortress.industrial">FT_ENIAC</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallMultiAnalyzer</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -209,6 +210,7 @@
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolRack</li>
                         <li MayRequire="lotr.shadowoftheeast">LOTR_OrcToolTable</li>
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

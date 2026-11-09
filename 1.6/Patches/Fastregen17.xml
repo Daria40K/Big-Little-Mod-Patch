@@ -2,7 +2,7 @@
 <Patch>
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Fast regen 1.6</li>
+            <li>Fast regen 1.7</li>
         </mods>
         <match Class="PatchOperationSequence">
             <success>Always</success>

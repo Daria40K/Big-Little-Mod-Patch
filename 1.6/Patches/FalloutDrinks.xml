@@ -32,6 +32,7 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_Still</li>
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_Rotovape</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
+                        <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                     </value>
                 </li>
             </operations>

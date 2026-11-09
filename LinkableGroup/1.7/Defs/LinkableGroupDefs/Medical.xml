@@ -7,6 +7,10 @@
             <li MayRequire="akn.decorations">AKN_RestoringPlush</li>
             <li MayRequire="4loris4.morelinkables">SurgicalLamp</li>
             <li MayRequire="4loris4.morelinkables">SurgicalInstruments</li>
+            <li MayRequire="mlie.unfurniture">SadjuukSurgeryAA</li>
+            <li MayRequire="mlie.unfurniture">SadjuukSurgeryAB</li>
+            <li MayRequire="mlie.unfurniture">SadjuukSurgeryAC</li>
+            <li MayRequire="mlie.unfurniture">SadjuukSurgeryAD</li>
             <li MayRequire="vanillaexpanded.vfemedical">Facility_VitalsCentre</li>
             <li MayRequire="vanillaexpanded.vfemedical">Facility_IVDrip</li>
             <li MayRequire="twink.vaultfurniture">Vaultmedical</li>
@@ -19,6 +23,7 @@
             <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCD</li>
             <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCE</li>
             <li MayRequire="ludeon.rimworld">VitalsMonitor</li>
+            <li MayRequire="daylight.rimlifeexfurmod">RLE_AirCondition</li>
             <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
             <li MayRequire="leion247138.medicalhiv">MedicalIV</li>
             <li MayRequire="zymex.hospitalsextended">sd_medicaddons_medieval_surg_washpan</li>
@@ -64,6 +69,7 @@
         </facilities>
         <affected>
             <li MayRequire="rimeffect.core">RE_PrefabMedicalBed</li>
+            <li MayRequire="mlie.unfurniture">SadjuukSurgeryBaseB</li>
             <li MayRequire="vanillaexpanded.vfemedical">Bed_OperatingTable</li>
             <li MayRequire="vanillaexpanded.vfemedical">Bed_CryptoBed</li>
             <li MayRequire="redmattis.bsfurniture">BS_SmolHospitalBed</li>
@@ -71,7 +77,9 @@
             <li MayRequire="farxmai2.vanillafurnitureexpandedpack">FFE_AnimalMedTable</li>
             <li MayRequire="vanillaexpanded.vfea">VFEA_AncientCryptosleepSuspender</li>
             <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalBase</li>
+            <li MayRequire="albion.sparklingworlds.full">GlitterworldHospitalBedSW</li>
             <li MayRequire="ludeon.rimworld">HospitalBed</li>
+            <li MayRequire="daylight.rimlifeexfurmod">RLE_AdHospitalBed</li>
             <li MayRequire="mlie.medicalsupplements">MSMedicalMat</li>
             <li MayRequire="mlie.medicalsupplements">MSMedicalMatSpacer</li>
             <li MayRequire="mlie.medicalsupplements">MSMedicalMatUltra</li>
@@ -83,6 +91,7 @@
             <li MayRequire="daniledman.fastregen">AnimalMedicRobo</li>
             <li MayRequire="qx.astramilitarum">ImpHospitalBed</li>
             <li MayRequire="cucumpear.animalbeds">MedPetBedWithQualityBase</li>
+            <li MayRequire="albion.sparklingworlds.core">GlitterworldHospitalBedSW</li>
             <li MayRequire="ogre.nanorepairtech">Ogre_NanoTech_HospitalBed</li>
             <li MayRequire="redmattis.bsfurniture">BS_BigHospitalBed</li>
             <li MayRequire="redmattis.bsfurniture">BS_MegaUniversalBed</li>

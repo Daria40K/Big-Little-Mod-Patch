@@ -13,6 +13,10 @@
                         <li MayRequire="akn.decorations">AKN_RestoringPlush</li>
                         <li MayRequire="4loris4.morelinkables">SurgicalLamp</li>
                         <li MayRequire="4loris4.morelinkables">SurgicalInstruments</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAA</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAB</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAC</li>
+                        <li MayRequire="mlie.unfurniture">SadjuukSurgeryAD</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_VitalsCentre</li>
                         <li MayRequire="vanillaexpanded.vfemedical">Facility_IVDrip</li>
                         <li MayRequire="twink.vaultfurniture">Vaultmedical</li>
@@ -25,6 +29,7 @@
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCD</li>
                         <li MayRequire="mlie.uncolonyvanilla">SadjuukHospitalUpgradeCE</li>
                         <li>VitalsMonitor</li>
+                        <li MayRequire="daylight.rimlifeexfurmod">RLE_AirCondition</li>
                         <li MayRequire="mlie.medicalsupplements">MS_DStand</li>
                         <li MayRequire="leion247138.medicalhiv">MedicalIV</li>
                         <li MayRequire="zymex.hospitalsextended">sd_medicaddons_medieval_surg_washpan</li>
@@ -89,6 +94,8 @@
                         <li MayRequire="neronix17.outland.core">Outland_BasicWorkbench</li>
                         <li MayRequire="neronix17.outland.core">Outland_Grindstone</li>
                         <li MayRequire="daylight.wbsmorelinkf">Link_UniversalCabinet</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_PowerStabilizer</li>
+                        <li MayRequire="daylight.rlesexpansionproductps">RLE_IntegratedManagementDevice</li>
                         <li MayRequire="twink.vaultfurniture">Vt_server</li>
                         <li MayRequire="twink.vaultfurniture">vtcompter</li>
                         <li MayRequire="explodoboy.snsambitioncosmic">SNS_Linkable_Unobtainer_I</li>
@@ -133,6 +140,8 @@
                         <li MayRequire="xercaine.furniture.small">XER_SmallToolCabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="xercaine.furniture.small,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
+                        <li MayRequire="rpr13.smallfurniture">XER_SmallToolCabinet</li>
+                        <li MayRequire="rpr13.smallfurniture,OskarPotocki.VanillaVehiclesExpanded">XER_SmallGarageCabinet</li>
                     </value>
                 </li>
             </operations>
