@@ -576,6 +576,9 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_Rotovape</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vbrewe">
@@ -600,6 +603,9 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_Rotovape</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -626,6 +632,9 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vfeproduction">
@@ -652,6 +661,9 @@
                         <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -689,6 +701,9 @@
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="kindseal.ufli">UFLI_Sink</li>
                         <li MayRequire="kindseal.ufli">UFLI_SteamOven</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vcookesushi">
@@ -726,6 +741,9 @@
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="kindseal.ufli">UFLI_Sink</li>
                         <li MayRequire="kindseal.ufli">UFLI_SteamOven</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vcookehaute">
@@ -763,6 +781,9 @@
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="kindseal.ufli">UFLI_Sink</li>
                         <li MayRequire="kindseal.ufli">UFLI_SteamOven</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vcooke">
@@ -800,6 +821,9 @@
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="kindseal.ufli">UFLI_Sink</li>
                         <li MayRequire="kindseal.ufli">UFLI_SteamOven</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

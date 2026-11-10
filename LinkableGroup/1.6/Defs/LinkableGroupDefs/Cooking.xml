@@ -36,6 +36,9 @@
             <li MayRequire="hye.nto">LYN_Nanocabinet</li>
             <li MayRequire="mlmlmlm.bluearchivefurniture4">Mini_KitchenB</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="ods.tavern">Tav_Kitchen</li>
+            <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+            <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
         </facilities>
         <affected>
             <li MayRequire="heis.edo.themed.expansion">HSKamado</li>
@@ -132,6 +135,7 @@
             <li MayRequire="xercaine.furniture.small">XER_SmallElectricStove</li>
             <li MayRequire="xercaine.furniture.small">XER_SmallFueledStove</li>
             <li MayRequire="milple.koreanstylefurniture">milple_FueledStove</li>
+            <li MayRequire="ods.tavern">Tav_Oven</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

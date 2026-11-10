@@ -302,6 +302,10 @@
                         <li MayRequire="milple.koreanstylefurniture">milple_DresserSmall</li>
                         <li MayRequire="milple.koreanstylefurniture">milple_Dresser</li>
                         <li MayRequire="milple.koreanstylefurniture">milple_DresserHigh</li>
+                        <li MayRequire="ods.tavern">Tav_EndTable</li>
+                        <li MayRequire="ods.tavern">Tav_Dresser</li>
+                        <li MayRequire="ods.tavern">Tav_Wardrobe</li>
+                        <li MayRequire="ods.tavern">Tav_1x1Wardrobe</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -339,6 +343,9 @@
                         <li MayRequire="hye.nto">LYN_Nanocabinet</li>
                         <li MayRequire="mlmlmlm.bluearchivefurniture4">Mini_KitchenB</li>
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

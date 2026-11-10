@@ -230,6 +230,10 @@
                         <li MayRequire="milple.koreanstylefurniture">milple_DresserSmall</li>
                         <li MayRequire="milple.koreanstylefurniture">milple_Dresser</li>
                         <li MayRequire="milple.koreanstylefurniture">milple_DresserHigh</li>
+                        <li MayRequire="ods.tavern">Tav_EndTable</li>
+                        <li MayRequire="ods.tavern">Tav_Dresser</li>
+                        <li MayRequire="ods.tavern">Tav_Wardrobe</li>
+                        <li MayRequire="ods.tavern">Tav_1x1Wardrobe</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">

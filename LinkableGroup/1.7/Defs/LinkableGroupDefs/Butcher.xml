@@ -25,6 +25,9 @@
             <li MayRequire="hobbes.bamba.evenmorelinkables16">HobbesLink_ConveyorBelt</li>
             <li MayRequire="hye.nto">LYN_Nanocabinet</li>
             <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
+            <li MayRequire="ods.tavern">Tav_Kitchen</li>
+            <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+            <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
         </facilities>
         <affected>
             <li MayRequire="solaris.furniturebase">GL_TableButcher</li>
@@ -49,6 +52,7 @@
             <li MayRequire="rpr13.smallfurniture">XER_SmallTableButcher</li>
             <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_SmallElectricButcher</li>
             <li MayRequire="rpr13.smallfurniture,vanillaexpanded.vfeproduction">XER_MediumElectricButcher</li>
+            <li MayRequire="ods.tavern">Tav_KitchenButch</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

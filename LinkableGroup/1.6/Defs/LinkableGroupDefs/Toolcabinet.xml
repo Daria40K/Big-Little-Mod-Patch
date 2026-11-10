@@ -130,6 +130,7 @@
             <li MayRequire="xercaine.furniture.small">XER_SmallElectricCrematorium</li>
             <li MayRequire="xercaine.furniture.small">XER_MediumElectricCrematorium</li>
             <li MayRequire="cn.moreusefulmaterials">MUM_MaterialsWorkshop</li>
+            <li MayRequire="ods.tavern">Tav_TableDecor</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

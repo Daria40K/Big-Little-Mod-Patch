@@ -985,4 +985,18 @@
 		<assemblyVersion>6.1.0</assemblyVersion>
 		<content>Minor fixes</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v6.1.1 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_6_1_1</defName>
+		<assemblyVersion>6.1.0</assemblyVersion>
+		<content>Minor fixes</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v6.2.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>BigLittleModPatch_6_2_0</defName>
+		<assemblyVersion>6.2.0</assemblyVersion>
+		<content>Added support for Tavern</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

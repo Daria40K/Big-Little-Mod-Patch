@@ -252,6 +252,10 @@
             <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallRoyalDresser</li>
             <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallWardrobe</li>
             <li MayRequire="rpr13.smallfurniture">XER_SmallRoyalWardrobe</li>
+            <li MayRequire="ods.tavern">Tav_EndTable</li>
+            <li MayRequire="ods.tavern">Tav_Dresser</li>
+            <li MayRequire="ods.tavern">Tav_Wardrobe</li>
+            <li MayRequire="ods.tavern">Tav_1x1Wardrobe</li>
         </facilities>
         <affected>
             <li MayRequire="heis.edo.themed.expansion">HS_RoughFuton</li>
@@ -387,6 +391,7 @@
             <li MayRequire="misstall.furniture">MF_BasicBedBase</li>
             <li MayRequire="dorian00.polyrepairbed">LMGG_Thing_RepairTripleBed</li>
             <li MayRequire="dorian00.polyrepairbed">LMGG_Thing_RepairQuadBed</li>
+            <li MayRequire="ods.tavern">Tav_BasicBedBase</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

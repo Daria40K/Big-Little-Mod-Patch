@@ -145,6 +145,7 @@
             <li MayRequire="rpr13.smallfurniture,vanillaexpanded.recycling">XER_MediumRecyclingWorkbench</li>
             <li MayRequire="rpr13.smallfurniture,vanillaexpanded.recycling">XER_SmallElectricRecyclingWorkbench</li>
             <li MayRequire="rpr13.smallfurniture,vanillaexpanded.recycling">XER_MediumElectricRecyclingWorkbench</li>
+            <li MayRequire="ods.tavern">Tav_TableDecor</li>
         </affected>
     </LinkableGroupDef>
 </Defs>

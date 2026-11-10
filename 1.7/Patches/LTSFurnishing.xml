@@ -258,6 +258,10 @@
                         <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallRoyalDresser</li>
                         <li MayRequire="rpr13.smallfurniture,VanillaExpanded.VFECore">XER_SmallWardrobe</li>
                         <li MayRequire="rpr13.smallfurniture">XER_SmallRoyalWardrobe</li>
+                        <li MayRequire="ods.tavern">Tav_EndTable</li>
+                        <li MayRequire="ods.tavern">Tav_Dresser</li>
+                        <li MayRequire="ods.tavern">Tav_Wardrobe</li>
+                        <li MayRequire="ods.tavern">Tav_1x1Wardrobe</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -295,6 +299,9 @@
                         <li MayRequire="suixiexiaoyou.universalworkcenter">UniversalWorkCenter</li>
                         <li MayRequire="kindseal.ufli">UFLI_Sink</li>
                         <li MayRequire="kindseal.ufli">UFLI_SteamOven</li>
+                        <li MayRequire="ods.tavern">Tav_Kitchen</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenShelfs</li>
+                        <li MayRequire="ods.tavern">Tav_KitchenCloset</li>
                     </value>
                 </li>
             </operations>
